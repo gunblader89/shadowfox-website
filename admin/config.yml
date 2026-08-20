@@ -9,7 +9,7 @@
 
 backend:
   name: github
-  repo: DEIN-GITHUB-NAME/shadowfox-website
+  repo: gunblader89/shadowfox-website
   branch: main
   base_url: https://sveltia-cms-auth.DEIN-SUBDOMAIN.workers.dev
 
