@@ -1,7 +1,7 @@
 /* Raider.IO — braucht keinen API-Key.
    Achtung: der fields-Parameter darf NICHT url-kodiert werden,
    sonst liefert Raider.IO stillschweigend nur das Basisprofil. */
-import { req, pool, ok, log } from "./util.mjs";
+import { req, pool, ok, log, fail, sleep } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
@@ -28,11 +28,21 @@ export async function guildProfile({ region, realm, name }) {
 }
 
 export async function characters(names, { region, realm }) {
-  const res = await pool(names, 4, async (n) => {
+  // Raider.IO drosselt schnelle Anfrageserien. Deshalb bewusst langsam:
+  // hoechstens zwei gleichzeitig, kurze Pause dazwischen, mehr Wiederholungen.
+  const errs = [];
+  const res = await pool(names, 2, async (n, i) => {
+    await sleep(i * 250);
     const url = `${BASE}/characters/profile?region=${region}&realm=${realm}`
               + `&name=${encodeURIComponent(n)}`
               + `&fields=gear,mythic_plus_scores_by_season:current`;
-    const c = await req(url, {}, 2);
+    let c;
+    try {
+      c = await req(url, {}, 4);
+    } catch (e) {
+      errs.push(`${n}: ${e.message.split("—")[0].trim()}`);
+      throw e;
+    }
     return {
       name: c.name,
       class: c.class,
@@ -48,7 +58,10 @@ export async function characters(names, { region, realm }) {
   ok(`Raider.IO: ${found.length}/${names.length} Charaktere geladen`);
   if (found.length < names.length) {
     const missing = names.filter((n, i) => !res[i]);
-    log(`nicht gefunden: ${missing.join(", ")}`);
+    log(`nicht geladen: ${missing.join(", ")}`);
+    // Echte Fehlerursache ins Protokoll, damit man nicht raten muss.
+    for (const e of errs.slice(0, 5)) fail(`   Grund — ${e}`);
+    if (errs.length > 5) log(`   … und ${errs.length - 5} weitere mit gleichem Muster`);
   }
   return found;
 }

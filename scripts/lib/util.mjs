@@ -21,8 +21,8 @@ export async function req(url, opts = {}, tries = 3) {
         }
       });
       clearTimeout(t);
-      if (res.status === 429) {                       // Rate Limit → warten
-        const wait = Number(res.headers.get("retry-after") ?? 5) * 1000;
+      if (res.status === 429 || res.status === 403) {   // Drosselung → warten
+        const wait = Number(res.headers.get("retry-after") ?? (3 * (i + 1))) * 1000;
         await sleep(wait);
         continue;
       }
@@ -31,7 +31,7 @@ export async function req(url, opts = {}, tries = 3) {
       return ct.includes("json") ? await res.json() : await res.text();
     } catch (e) {
       lastErr = e;
-      if (i < tries - 1) await sleep(800 * (i + 1));
+      if (i < tries - 1) await sleep(1200 * (i + 1) ** 2);
     }
   }
   throw lastErr;
