@@ -1,32 +1,32 @@
 {
   "reports": [
     {
-      "code": "gDHaGdxhM7Yvjq4Z",
-      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "difficulty": "Normal",
-      "date": "2026-08-20",
-      "durationMin": 493,
-      "duration": "8h 13m",
-      "kills": 1,
-      "wipes": 11,
-      "bestTryPct": 20.7,
-      "killedBosses": [
-        "The Twin Fangs"
-      ]
-    },
-    {
       "code": "KbyxpZWhNFnr2wAM",
       "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
       "title": "",
       "zone": "The Venomous Abyss",
       "difficulty": "Normal",
       "date": "2026-08-20",
-      "durationMin": 79,
-      "duration": "1h 19m",
+      "durationMin": 90,
+      "duration": "1h 30m",
       "kills": 1,
-      "wipes": 7,
+      "wipes": 9,
+      "bestTryPct": 20.7,
+      "killedBosses": [
+        "The Twin Fangs"
+      ]
+    },
+    {
+      "code": "gDHaGdxhM7Yvjq4Z",
+      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "difficulty": "Normal",
+      "date": "2026-08-20",
+      "durationMin": 504,
+      "duration": "8h 24m",
+      "kills": 1,
+      "wipes": 13,
       "bestTryPct": 20.7,
       "killedBosses": [
         "The Twin Fangs"
@@ -187,5 +187,5 @@
       "killedBosses": []
     }
   ],
-  "updatedAt": "2026-08-20T19:44:57.991Z"
+  "updatedAt": "2026-08-20T19:53:20.468Z"
 }
