@@ -1,6 +1,38 @@
 {
   "reports": [
     {
+      "code": "gDHaGdxhM7Yvjq4Z",
+      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "difficulty": "Normal",
+      "date": "2026-08-20",
+      "durationMin": 493,
+      "duration": "8h 13m",
+      "kills": 1,
+      "wipes": 11,
+      "bestTryPct": 20.7,
+      "killedBosses": [
+        "The Twin Fangs"
+      ]
+    },
+    {
+      "code": "KbyxpZWhNFnr2wAM",
+      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
+      "title": "",
+      "zone": "The Venomous Abyss",
+      "difficulty": "Normal",
+      "date": "2026-08-20",
+      "durationMin": 79,
+      "duration": "1h 19m",
+      "kills": 1,
+      "wipes": 7,
+      "bestTryPct": 20.7,
+      "killedBosses": [
+        "The Twin Fangs"
+      ]
+    },
+    {
       "code": "vZwFxpX6K1Qh4VAb",
       "url": "https://www.warcraftlogs.com/reports/vZwFxpX6K1Qh4VAb",
       "title": "The Venomous Abyss",
@@ -153,35 +185,7 @@
       "wipes": 22,
       "bestTryPct": 2.1,
       "killedBosses": []
-    },
-    {
-      "code": "ZmrjznAh6gy8RQLC",
-      "url": "https://www.warcraftlogs.com/reports/ZmrjznAh6gy8RQLC",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
-      "date": "2026-07-09",
-      "durationMin": 195,
-      "duration": "3h 15m",
-      "kills": 0,
-      "wipes": 22,
-      "bestTryPct": 1,
-      "killedBosses": []
-    },
-    {
-      "code": "PJCKtb4LyDNAm8Qc",
-      "url": "https://www.warcraftlogs.com/reports/PJCKtb4LyDNAm8Qc",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
-      "date": "2026-07-09",
-      "durationMin": 170,
-      "duration": "2h 50m",
-      "kills": 0,
-      "wipes": 22,
-      "bestTryPct": 1,
-      "killedBosses": []
     }
   ],
-  "updatedAt": "2026-08-20T17:29:53.589Z"
+  "updatedAt": "2026-08-20T19:44:57.991Z"
 }

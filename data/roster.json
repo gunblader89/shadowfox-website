@@ -31,54 +31,14 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Jisgarin"
     },
     {
-      "name": "Kischali",
-      "class": "Druid",
-      "spec": "Restoration",
-      "role": "HEALING",
-      "ilvl": 263,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/0/172762880-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Kischali"
-    },
-    {
-      "name": "Feire",
-      "class": "Evoker",
-      "spec": "Devastation",
+      "name": "Thessaly",
+      "class": "Rogue",
+      "spec": "Subtlety",
       "role": "DPS",
-      "ilvl": 282,
+      "ilvl": 288,
       "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Feire"
-    },
-    {
-      "name": "Narez",
-      "class": "Druid",
-      "spec": "Restoration",
-      "role": "HEALING",
-      "ilvl": 71,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/223/134768863-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Narez"
-    },
-    {
-      "name": "Miliim",
-      "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
-      "ilvl": 276,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
-    },
-    {
-      "name": "Narrwên",
-      "class": "Warlock",
-      "spec": "Demonology",
-      "role": "DPS",
-      "ilvl": 293,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/189/109002685-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Thessaly"
     },
     {
       "name": "Quon",
@@ -91,6 +51,26 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Quon"
     },
     {
+      "name": "Narrwên",
+      "class": "Warlock",
+      "spec": "Demonology",
+      "role": "DPS",
+      "ilvl": 293,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
+    },
+    {
+      "name": "Améthyst",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "role": "DPS",
+      "ilvl": 292,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/92/184270428-avatar.jpg?alt=/wow/static/images/2d/avatar/11-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Améthyst"
+    },
+    {
       "name": "Corvisstab",
       "class": "Rogue",
       "spec": "Subtlety",
@@ -101,26 +81,6 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
     },
     {
-      "name": "Rukiar",
-      "class": "Priest",
-      "spec": "Shadow",
-      "role": "DPS",
-      "ilvl": 262,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/231/183419111-avatar.jpg?alt=/wow/static/images/2d/avatar/1-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Rukiar"
-    },
-    {
-      "name": "Vay",
-      "class": "Shaman",
-      "spec": "Restoration",
-      "role": "HEALING",
-      "ilvl": 569,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/68/132577348-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Vay"
-    },
-    {
       "name": "Mardyn",
       "class": "Mage",
       "spec": "Arcane",
@@ -129,7 +89,17 @@
       "mplus": 0,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
+    },
+    {
+      "name": "Tiskarian",
+      "class": "Warrior",
+      "spec": null,
+      "role": null,
+      "ilvl": 107,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/25/182960921-avatar.jpg?alt=/wow/static/images/2d/avatar/1-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Tiskarian"
     }
   ],
-  "updatedAt": "2026-08-20T17:29:47.050Z"
+  "updatedAt": "2026-08-20T19:44:50.054Z"
 }

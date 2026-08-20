@@ -1121,7 +1121,7 @@
       "id": 199186198
     }
   ],
-  "updatedAt": "2026-08-20T17:29:55.876Z",
+  "updatedAt": "2026-08-20T19:44:59.879Z",
   "weeklyKeys": [
     {
       "name": "Hòbs",
@@ -1142,25 +1142,13 @@
       "rating": 0
     },
     {
-      "name": "Kischali",
+      "name": "Thessaly",
       "runsThisWeek": 0,
       "bestLevel": 0,
-      "rating": 0
+      "rating": 3002
     },
     {
-      "name": "Feire",
-      "runsThisWeek": 0,
-      "bestLevel": 0,
-      "rating": 0
-    },
-    {
-      "name": "Miliim",
-      "runsThisWeek": 0,
-      "bestLevel": 0,
-      "rating": 0
-    },
-    {
-      "name": "Fruchtzwerg",
+      "name": "Quon",
       "runsThisWeek": 0,
       "bestLevel": 0,
       "rating": 0
@@ -1172,7 +1160,7 @@
       "rating": 0
     },
     {
-      "name": "Quon",
+      "name": "Améthyst",
       "runsThisWeek": 0,
       "bestLevel": 0,
       "rating": 0
@@ -1184,25 +1172,13 @@
       "rating": 3242
     },
     {
-      "name": "Rukiar",
-      "runsThisWeek": 0,
-      "bestLevel": 0,
-      "rating": 860
-    },
-    {
-      "name": "Vay",
-      "runsThisWeek": 0,
-      "bestLevel": 0,
-      "rating": 0
-    },
-    {
-      "name": "Raiox",
-      "runsThisWeek": 0,
-      "bestLevel": 0,
-      "rating": 0
-    },
-    {
       "name": "Mardyn",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Tiskarian",
       "runsThisWeek": 0,
       "bestLevel": 0,
       "rating": 0
