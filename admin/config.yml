@@ -1,0 +1,186 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Redaktionssystem fuer die ShadowFox-Website.
+# ------------------------------------------------------------------
+# ANPASSEN vor dem ersten Start:
+#   repo:      auf euren GitHub-Benutzernamen und Repo-Namen aendern
+#   base_url:  die URL eures Login-Workers (siehe SETUP.md, Schritt 7)
+# ------------------------------------------------------------------
+
+backend:
+  name: github
+  repo: DEIN-GITHUB-NAME/shadowfox-website
+  branch: main
+  base_url: https://sveltia-cms-auth.DEIN-SUBDOMAIN.workers.dev
+
+# Wo hochgeladene Bilder landen
+media_folder: media
+public_folder: /media
+
+# Aenderungen gehen direkt live (kein Review-Workflow)
+publish_mode: simple
+
+collections:
+
+  # ---------- Boss-Taktiken ----------
+  - name: bosse
+    label: Boss-Taktiken
+    icon: swords
+    files:
+      - name: bosses
+        label: Alle Bosse
+        file: content/bosses.json
+        fields:
+          - label: Bosse
+            name: bosses
+            widget: list
+            label_singular: Boss
+            summary: '{{fields.name}} — {{fields.status}}'
+            collapsed: true
+            fields:
+              - { label: Name (deutsch), name: name, widget: string }
+              - { label: Name (englisch), name: nameEn, widget: string, required: false }
+              - label: Status
+                name: status
+                widget: select
+                options:
+                  - { label: Gelegt, value: down }
+                  - { label: Aktueller Boss, value: prog }
+                  - { label: Noch offen, value: open }
+              - { label: Kurzbeschreibung der Rolle, name: rolle, widget: string,
+                  hint: 'z. B. "Stack-Management & Soak-Rotation"' }
+              - { label: Wowhead-Kuerzel, name: slug, widget: string, required: false,
+                  hint: 'z. B. twin-fangs — daraus wird der Guide-Link gebaut' }
+              - { label: Worum es geht, name: intro, widget: text,
+                  hint: 'Ein bis zwei Saetze zur Kernidee des Kampfes' }
+              - label: Ansagen im Raid
+                name: ansagen
+                widget: list
+                label_singular: Ansage
+                summary: '{{fields.rolle}}: {{fields.text}}'
+                fields:
+                  - label: Wer
+                    name: rolle
+                    widget: select
+                    options: [Alle, Tanks, Heiler, DPS]
+                  - { label: Ansage, name: text, widget: text,
+                      hint: 'So formulieren, wie der Raidlead es ansagt. <em>Kursiv</em> hebt Faehigkeitennamen hervor.' }
+              - { label: Faehigkeiten, name: faehigkeiten, widget: list, required: false,
+                  hint: 'Namen der wichtigsten Faehigkeiten' }
+              - { label: Warnhinweis, name: hinweis, widget: text, required: false,
+                  hint: 'Erscheint gelb hervorgehoben. Leer lassen, wenn nicht noetig.' }
+
+  # ---------- Kader ----------
+  - name: kader
+    label: Raid-Kader
+    icon: group
+    files:
+      - name: raider
+        label: Spieler
+        file: content/raider.json
+        fields:
+          - label: Kader
+            name: raider
+            widget: list
+            label_singular: Spieler
+            summary: '{{fields.name}} — {{fields.klasse}} ({{fields.rolle}})'
+            fields:
+              - { label: Charaktername, name: name, widget: string,
+                  hint: 'Genau wie im Spiel — danach werden Item Level und M+ geholt.' }
+              - label: Klasse
+                name: klasse
+                widget: select
+                options: [Krieger, Paladin, Jäger, Schurke, Priester, Todesritter,
+                          Schamane, Magier, Hexenmeister, Mönch, Druide, Dämonenjäger, Rufer]
+              - label: Rolle im Raid
+                name: rolle
+                widget: select
+                options: [Tank, Heal, Melee, Ranged]
+              - { label: Gildenrang, name: gildenrang, widget: number, required: false,
+                  value_type: int, min: 0, max: 9 }
+              - { label: Zusatz, name: notiz, widget: string, required: false,
+                  hint: 'z. B. Offizier, Trial, Gildenmeisterin' }
+              - { label: Vorstellung, name: vorstellung, widget: text, required: false,
+                  hint: 'Ein bis zwei Saetze. Erscheint auf der Roster-Seite.' }
+              - { label: Aktiv im Kader, name: aktiv, widget: boolean, default: true,
+                  hint: 'Ausschalten statt loeschen, wenn jemand pausiert.' }
+
+  # ---------- Wissen ----------
+  - name: wissen
+    label: Wissens-Artikel
+    icon: menu_book
+    files:
+      - name: wissen
+        label: Artikel
+        file: content/wissen.json
+        fields:
+          - label: Artikel
+            name: artikel
+            widget: list
+            label_singular: Artikel
+            summary: '{{fields.titel}}'
+            fields:
+              - { label: Symbol, name: icon, widget: string, hint: 'Ein Emoji, z. B. ⚔️' }
+              - { label: Titel, name: titel, widget: string }
+              - { label: Text, name: text, widget: text }
+              - { label: Schlagwoerter, name: tags, widget: list, required: false }
+              - { label: Noch eine Vorlage, name: vorlage, widget: boolean, default: false,
+                  hint: 'Solange aktiv, erscheint der Artikel mit dem Hinweis "Vorlage".' }
+
+  # ---------- Termine & Grunddaten ----------
+  - name: allgemein
+    label: Gilde & Termine
+    icon: settings
+    files:
+      - name: site
+        label: Grunddaten der Gilde
+        file: content/site.json
+        fields:
+          - { label: Gildenname, name: name, widget: string }
+          - { label: Realm, name: realm, widget: string }
+          - { label: Region, name: region, widget: string }
+          - { label: Fraktion, name: faction, widget: string }
+          - { label: Raidtage, name: raidDays, widget: string }
+          - { label: Raidzeit, name: raidTime, widget: string }
+          - { label: Motto, name: motto, widget: text }
+          - label: Aktueller Raid
+            name: raid
+            widget: object
+            fields:
+              - { label: Name (deutsch), name: name, widget: string }
+              - { label: Name (englisch), name: en, widget: string }
+              - { label: Ort, name: zone, widget: string }
+              - { label: Patch, name: patch, widget: string }
+              - { label: Release, name: release, widget: string }
+              - { label: Anzahl Bosse, name: bosses, widget: number, value_type: int }
+          - label: Recruiting
+            name: recruit
+            widget: object
+            fields:
+              - { label: Gesuchte Klassen, name: open, widget: list }
+              - { label: Ansprechpartner (Discord), name: contacts, widget: list }
+          - { label: Checkliste vor dem Raid, name: checkliste, widget: list }
+          - label: Externe Profile
+            name: links
+            widget: object
+            fields:
+              - { label: Raider.IO, name: rio, widget: string }
+              - { label: Warcraft Logs, name: wcl, widget: string }
+              - { label: WoWProgress, name: wowp, widget: string }
+              - { label: Arsenal, name: armory, widget: string }
+              - { label: Raid auf Wowhead, name: zone, widget: string }
+              - { label: Raid-Guide, name: raidguide, widget: string }
+      - name: termine
+        label: Termine (falls ohne Raid-Helper)
+        file: content/termine.json
+        fields:
+          - label: Termine
+            name: termine
+            widget: list
+            summary: '{{fields.tag}} {{fields.datum}} — {{fields.fokus}}'
+            fields:
+              - { label: Wochentag, name: tag, widget: string }
+              - { label: Datum, name: datum, widget: string }
+              - { label: Zeit, name: zeit, widget: string }
+              - { label: Instanz, name: instanz, widget: string }
+              - { label: Fokus, name: fokus, widget: string }

@@ -1,0 +1,82 @@
+{
+  "artikel": [
+    {
+      "icon": "⚔️",
+      "titel": "Raidregeln",
+      "text": "Pünktlichkeit, Vorbereitung, Verhalten im Progress. Die Kurzfassung: 19:40 im Voice, repariert, mit gelesener Taktik.",
+      "tags": [
+        "Pflicht",
+        "Neue"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "💰",
+      "titel": "Loot-Regelung",
+      "text": "Wie Loot verteilt wird, wie Trials behandelt werden und wie ihr Wünsche im Voraus anmeldet.",
+      "tags": [
+        "Loot",
+        "Trial"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "🧩",
+      "titel": "Addons & WeakAuras",
+      "text": "Pflicht-Addons und das aktuelle WeakAura-Paket für Der Giftige Abgrund inklusive Import-Strings.",
+      "tags": [
+        "Setup",
+        "Pflicht"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "🧪",
+      "titel": "Konsumierbare",
+      "text": "Was jeder selbst mitbringt, was die Gildenbank stellt, Flask- und Food-Empfehlungen pro Rolle.",
+      "tags": [
+        "Konsum",
+        "Bank"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "📅",
+      "titel": "Abmeldung & Anwesenheit",
+      "text": "Abmeldungen bis wann und wo. Mo & Do sind die Raidtage — Bescheid geben statt wegbleiben.",
+      "tags": [
+        "Signup"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "🌱",
+      "titel": "Onboarding für Neue",
+      "text": "Deine ersten zwei Wochen bei ShadowFox: was du liest, wen du ansprichst, wie der Trial läuft.",
+      "tags": [
+        "Neue",
+        "Trial"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "🎧",
+      "titel": "Voice-Etikette",
+      "text": "Während Pulls reden nur Raidlead und Callouts. Diskussion in der Pause. Push-to-Talk.",
+      "tags": [
+        "Discord"
+      ],
+      "vorlage": true
+    },
+    {
+      "icon": "🔧",
+      "titel": "Char-Vorbereitung",
+      "text": "Wöchentliche Checkliste vor dem Reset: M+, Craft-Slots, Sockel, Verzauberungen, Vantus.",
+      "tags": [
+        "Gear",
+        "Wöchentlich"
+      ],
+      "vorlage": true
+    }
+  ]
+}

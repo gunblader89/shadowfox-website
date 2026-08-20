@@ -1,0 +1,25 @@
+{
+  "termine": [
+    {
+      "tag": "Montag",
+      "datum": "24.08.2026",
+      "zeit": "19:45 – 22:30",
+      "instanz": "Der Giftige Abgrund",
+      "fokus": "Normal weiter · Zwillingsfänge"
+    },
+    {
+      "tag": "Donnerstag",
+      "datum": "27.08.2026",
+      "zeit": "19:45 – 22:30",
+      "instanz": "Der Giftige Abgrund",
+      "fokus": "Normal abschließen, Heroisch antesten"
+    },
+    {
+      "tag": "Montag",
+      "datum": "31.08.2026",
+      "zeit": "19:45 – 22:30",
+      "instanz": "Der Giftige Abgrund",
+      "fokus": "Heroisch Progress"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ShadowFox",
+  "faction": "alliance",
+  "realm": "Blackmoore",
+  "region": "eu",
+  "profileUrl": "https://raider.io/guilds/eu/blackmoore/ShadowFox",
+  "raidProgression": {
+    "the-venomous-abyss": {
+      "summary": "5/8 N", "total_bosses": 8,
+      "normal_bosses_killed": 5, "heroic_bosses_killed": 0, "mythic_bosses_killed": 0
+    },
+    "tier-mn-1": {
+      "summary": "5/9 M", "total_bosses": 9,
+      "normal_bosses_killed": 9, "heroic_bosses_killed": 9, "mythic_bosses_killed": 5
+    }
+  },
+  "raidRankings": {
+    "the-venomous-abyss": { "normal": { "world": 4262, "region": 1927, "realm": 81 } },
+    "tier-mn-1": { "mythic": { "world": 4953, "region": 2219, "realm": 84 } }
+  },
+  "memberCount": 139,
+  "classCount": {
+    "Demon Hunter": 19, "Druid": 16, "Paladin": 13, "Warrior": 12, "Priest": 12,
+    "Monk": 11, "Mage": 11, "Warlock": 9, "Death Knight": 9, "Rogue": 8,
+    "Hunter": 8, "Shaman": 7, "Evoker": 4
+  },
+  "members": [],
+  "updatedAt": "2026-08-20T06:31:40.000Z",
+  "_hinweis": "Startwerte vom 20.08.2026. Werden beim ersten Lauf der GitHub Action ueberschrieben."
+}

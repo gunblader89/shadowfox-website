@@ -1,0 +1,13 @@
+{
+  "name": "shadowfox-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Gildenportal ShadowFox (Blackmoore-EU) — statische Seite plus Daten-Update-Script",
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "serve": "node --run serve:py || python3 -m http.server 8080",
+    "serve:py": "python3 -m http.server 8080"
+  },
+  "engines": { "node": ">=20" }
+}

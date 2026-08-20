@@ -1,0 +1,274 @@
+{
+  "raider": [
+    {
+      "name": "Hòbs",
+      "klasse": "Druide",
+      "rolle": "Heal",
+      "gildenrang": 0,
+      "notiz": "Gildenmeisterin",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Garódash",
+      "klasse": "Schamane",
+      "rolle": "Heal",
+      "gildenrang": 1,
+      "notiz": "Offizier",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Mercrixxus",
+      "klasse": "Krieger",
+      "rolle": "Tank",
+      "gildenrang": 1,
+      "notiz": "Offizier",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Hatto",
+      "klasse": "Jäger",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Xsythia",
+      "klasse": "Priester",
+      "rolle": "Heal",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Jisgarin",
+      "klasse": "Magier",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Chantallè",
+      "klasse": "Jäger",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Pepelim",
+      "klasse": "Todesritter",
+      "rolle": "Melee",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Kischali",
+      "klasse": "Druide",
+      "rolle": "Heal",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Sweetschi",
+      "klasse": "Magier",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Kitebrew",
+      "klasse": "Mönch",
+      "rolle": "Tank",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Jirawl",
+      "klasse": "Hexenmeister",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Moonlord",
+      "klasse": "Druide",
+      "rolle": "Melee",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Feire",
+      "klasse": "Rufer",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Márídá",
+      "klasse": "Paladin",
+      "rolle": "Heal",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Narez",
+      "klasse": "Paladin",
+      "rolle": "Melee",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Günnsham",
+      "klasse": "Schamane",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Miliim",
+      "klasse": "Dämonenjäger",
+      "rolle": "Melee",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Fruchtzwerg",
+      "klasse": "Schamane",
+      "rolle": "Heal",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Narrwên",
+      "klasse": "Hexenmeister",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Quon",
+      "klasse": "Druide",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Seitenleiste",
+      "klasse": "Magier",
+      "rolle": "Ranged",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Corvisstab",
+      "klasse": "Schurke",
+      "rolle": "Melee",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Rukiar",
+      "klasse": "Priester",
+      "rolle": "Heal",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Vay",
+      "klasse": "Todesritter",
+      "rolle": "Tank",
+      "gildenrang": 3,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Lesscy",
+      "klasse": "Priester",
+      "rolle": "Ranged",
+      "gildenrang": 4,
+      "notiz": "Trial",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Askái",
+      "klasse": "Dämonenjäger",
+      "rolle": "Melee",
+      "gildenrang": 5,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Raiox",
+      "klasse": "Schamane",
+      "rolle": "Melee",
+      "gildenrang": 5,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Druith",
+      "klasse": "Druide",
+      "rolle": "Tank",
+      "gildenrang": 5,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    },
+    {
+      "name": "Mardyn",
+      "klasse": "Magier",
+      "rolle": "Ranged",
+      "gildenrang": 5,
+      "notiz": "",
+      "vorstellung": "",
+      "aktiv": true
+    }
+  ]
+}

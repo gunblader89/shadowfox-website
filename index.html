@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShadowFox — Blackmoore EU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08090d; --elev:#0f1116; --panel:#12151c; --panel2:#171b24; --panel3:#1c212c;
+  --line:#222836; --line2:#2c3444;
+  --tx:#eaedf3; --tx2:#a2abbc; --tx3:#69738a;
+  --amber:#eab54e; --amber-d:#c98f2e; --amber-bg:rgba(234,181,78,.11);
+  --violet:#8f7ce8; --violet-bg:rgba(143,124,232,.12);
+  --green:#5ec48f; --green-bg:rgba(94,196,143,.1);
+  --blue:#6b9ce8; --blue-bg:rgba(107,156,232,.11);
+  --red:#e26b6b;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(880px 480px at 82% -10%,rgba(234,181,78,.075),transparent 62%),
+             radial-gradient(720px 440px at 6% 2%,rgba(143,124,232,.07),transparent 64%)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
+.wrap{max-width:1120px;margin:0 auto;padding:0 26px;position:relative;z-index:1}
+
+/* ---------- top ---------- */
+.top{position:sticky;top:0;z-index:60;background:rgba(8,9,13,.86);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:24px;height:64px}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand .mark{width:36px;height:36px;flex-shrink:0}
+.brand b{display:block;font-size:15px;font-weight:700;letter-spacing:-.3px;line-height:1.2}
+.brand span{display:block;font-size:11px;color:var(--tx3);letter-spacing:.4px;font-weight:500}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:8px 11px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
+nav a:hover{color:var(--tx);background:var(--panel)}
+nav a.on{color:var(--tx);background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2)}
+.top-r{margin-left:auto;display:flex;align-items:center;gap:9px;flex-shrink:0}
+.sbtn{display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
+.sbtn:hover{border-color:var(--line2);color:var(--tx2)}
+kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;background:#1b202a;border:1px solid #2b3242;color:var(--tx3)}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:10px;font-size:13.5px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
+.btn-p{background:var(--amber);color:#1a1305}
+.btn-p:hover{background:#f2c266}
+.btn-s{background:var(--panel);border-color:var(--line);color:var(--tx2)}
+.btn-s:hover{border-color:var(--line2);color:var(--tx)}
+
+.notice{background:var(--amber-bg);border-bottom:1px solid rgba(234,181,78,.18);font-size:12px;color:#e3ad4a;text-align:center;padding:7px 20px}
+main{padding:36px 0 90px}
+
+/* ---------- headings ---------- */
+.page-h{margin-bottom:26px}
+.page-h h1{font-size:29px;font-weight:700;letter-spacing:-.8px;line-height:1.15}
+.page-h p{font-size:14.5px;color:var(--tx2);margin-top:7px;max-width:660px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--tx3);margin-bottom:11px}
+h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
+.sec-sub{font-size:13.5px;color:var(--tx3);margin-bottom:16px}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.grid{display:grid;gap:13px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.muted{color:var(--tx3)}.soft{color:var(--tx2)}
+.mono{font-family:var(--mono);font-size:12.5px}
+
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.3px;padding:3px 9px;border-radius:100px;border:1px solid}
+.p-green{color:var(--green);border-color:rgba(94,196,143,.3);background:var(--green-bg)}
+.p-amber{color:var(--amber);border-color:rgba(234,181,78,.32);background:var(--amber-bg)}
+.p-violet{color:var(--violet);border-color:rgba(143,124,232,.32);background:var(--violet-bg)}
+.p-blue{color:var(--blue);border-color:rgba(107,156,232,.3);background:var(--blue-bg)}
+.p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
+.dot{width:5px;height:5px;border-radius:50%;background:currentColor}
+
+/* ---------- hero ---------- */
+.hero{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#101319 52%,#0b0d12 100%);position:relative;margin-bottom:16px}
+.hero::after{content:"";position:absolute;right:-120px;top:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.14),transparent 66%);pointer-events:none}
+.hero-in{padding:34px;position:relative;z-index:1;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.hero-mark{width:96px;height:96px;flex-shrink:0}
+.hero h1{font-size:42px;font-weight:800;letter-spacing:-1.4px;line-height:1;margin-bottom:9px}
+.hero .sub{font-size:14.5px;color:var(--tx2);max-width:520px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.chip{font-size:12.5px;padding:5px 11px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
+.chip b{color:var(--tx);font-weight:650}
+
+.progblock{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);width:100%}
+.progrow{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.progrow:last-child{margin-bottom:0}
+.progrow .lbl{width:78px;flex-shrink:0;font-size:12px;font-weight:650;color:var(--tx2)}
+.track{flex:1;height:8px;border-radius:100px;background:#1a1e28;overflow:hidden;min-width:80px}
+.fill{display:block;height:100%;border-radius:100px}
+.progrow .val{width:66px;text-align:right;flex-shrink:0;font-family:var(--mono);font-size:12px;color:var(--tx)}
+
+/* ---------- tiles ---------- */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{display:block;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
+.tile:hover{border-color:var(--line2);background:var(--panel2);transform:translateY(-2px)}
+.tile .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--panel3);border:1px solid var(--line2);font-size:16px;margin-bottom:12px}
+.tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
+.tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
+
+/* ---------- boss ---------- */
+.boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:9px;overflow:hidden;transition:.16s}
+.boss.open{border-color:var(--line2);background:var(--panel2)}
+.bhead{display:flex;align-items:center;gap:14px;padding:15px 18px;width:100%}
+.bnum{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;font-family:var(--mono);font-size:12px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx3)}
+.boss.open .bnum{background:var(--amber-bg);border-color:rgba(234,181,78,.3);color:var(--amber)}
+.bname{flex:1;min-width:0}
+.bname b{display:block;font-size:15px;font-weight:650;letter-spacing:-.2px}
+.bname span{display:block;font-size:12.5px;color:var(--tx3)}
+.chev{color:var(--tx3);transition:.2s;flex-shrink:0}
+.boss.open .chev{transform:rotate(180deg)}
+.bbody{display:none;padding:4px 18px 20px 62px}
+.boss.open .bbody{display:block}
+.bintro{font-size:13.5px;color:var(--tx2);padding:14px 16px;background:rgba(255,255,255,.022);border-left:2px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:18px}
+.blabel{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--tx3);font-weight:700;margin:18px 0 10px}
+.steps{list-style:none;display:flex;flex-direction:column;gap:9px}
+.step{display:flex;gap:11px;align-items:flex-start}
+.rtag{flex-shrink:0;width:60px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.5px;padding:3px 0;border-radius:6px;margin-top:2px;text-transform:uppercase}
+.r-alle{background:var(--panel3);color:var(--tx3);border:1px solid var(--line2)}
+.r-tanks{background:var(--blue-bg);color:var(--blue);border:1px solid rgba(107,156,232,.28)}
+.r-heiler{background:var(--green-bg);color:var(--green);border:1px solid rgba(94,196,143,.28)}
+.r-dps{background:var(--amber-bg);color:var(--amber);border:1px solid rgba(234,181,78,.28)}
+.step p{font-size:13.5px;color:var(--tx2);line-height:1.55}
+.abils{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.abil{font-size:11.5px;padding:3px 9px;border-radius:7px;background:#1a1f29;border:1px solid var(--line);color:var(--tx3);font-family:var(--mono)}
+.links{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.lchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;padding:7px 12px;border-radius:9px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
+.lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
+.warn{font-size:12.5px;color:#e3ad4a;background:var(--amber-bg);border:1px solid rgba(234,181,78,.22);border-radius:9px;padding:11px 14px;margin-top:16px;line-height:1.5}
+
+/* ---------- roster bars ---------- */
+.clsrow{display:flex;align-items:center;gap:12px;margin-bottom:7px}
+.clsrow .n{width:118px;flex-shrink:0;font-size:13px;font-weight:550}
+.clsrow .bar{flex:1;height:22px;border-radius:6px;background:#161a23;overflow:hidden;position:relative}
+.clsrow .bf{display:block;height:100%;border-radius:6px;opacity:.85}
+.clsrow .c{width:32px;text-align:right;font-family:var(--mono);font-size:12px;color:var(--tx2);flex-shrink:0}
+
+/* ---------- tables ---------- */
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.9px;color:var(--tx3);font-weight:700;padding:0 13px 11px;border-bottom:1px solid var(--line)}
+.tbl td{padding:12px 13px;border-bottom:1px solid var(--line);color:var(--tx2)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td b{color:var(--tx);font-weight:650}
+
+/* ---------- kb ---------- */
+.kbcard{padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
+.kbcard:hover{border-color:var(--line2);background:var(--panel2)}
+.kbcard h3{font-size:14.5px;font-weight:650;margin-bottom:6px;display:flex;align-items:center;gap:9px}
+.kbcard p{font-size:13px;color:var(--tx3);line-height:1.55}
+.kbtags{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px}
+.kbtag{font-size:10.5px;padding:2px 8px;border-radius:6px;background:#1a1f29;color:var(--tx3);border:1px solid var(--line)}
+
+/* ---------- search ---------- */
+.ovl{position:fixed;inset:0;z-index:100;display:none;background:rgba(5,6,9,.7);backdrop-filter:blur(7px);padding:10vh 20px 20px}
+.ovl.on{display:block}
+.sbox{max-width:640px;margin:0 auto;background:var(--elev);border:1px solid var(--line2);border-radius:17px;box-shadow:0 26px 80px rgba(0,0,0,.65);overflow:hidden}
+.sbox-t{display:flex;align-items:center;gap:12px;padding:17px 19px;border-bottom:1px solid var(--line)}
+.sbox input{flex:1;background:none;border:none;outline:none;color:var(--tx);font-size:16px;font-family:inherit}
+.sbox input::placeholder{color:var(--tx3)}
+.results{max-height:54vh;overflow-y:auto;padding:8px}
+.res{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:9px;cursor:pointer;transition:.1s}
+.res:hover,.res.sel{background:var(--panel2)}
+.res .ic{width:29px;height:29px;border-radius:8px;background:var(--panel);border:1px solid var(--line2);display:grid;place-items:center;font-size:13px;flex-shrink:0}
+.res .tx{flex:1;min-width:0}
+.res .tx b{display:block;font-size:13.5px;font-weight:600}
+.res .tx span{display:block;font-size:12px;color:var(--tx3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.res .cat{font-size:10.5px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
+.sbox-f{display:flex;gap:16px;padding:11px 19px;border-top:1px solid var(--line);font-size:11.5px;color:var(--tx3)}
+.empty{padding:36px 20px;text-align:center;color:var(--tx3);font-size:13.5px}
+
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12px;font-weight:650;color:var(--tx2);margin-bottom:6px}
+.field input,.field textarea,.field select{width:100%;padding:10px 13px;border-radius:9px;background:var(--elev);border:1px solid var(--line2);color:var(--tx);font:inherit;font-size:13.5px;outline:none;transition:.14s}
+.field input:focus,.field textarea:focus{border-color:#454f63;background:var(--panel2)}
+.field textarea{min-height:96px;resize:vertical}
+
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-size:12.5px}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+.fade{animation:f .34s ease}
+@keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+@media(max-width:940px){
+  .g4,.g3,.tiles{grid-template-columns:repeat(2,1fr)}
+  .top-in{height:auto;flex-wrap:wrap;padding:12px 0;gap:12px}
+  nav{order:3;width:100%}
+  .hero h1{font-size:32px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px}
+  .wrap{padding:0 16px}
+  .bbody{padding-left:18px}
+}
+@media(max-width:580px){
+  .g4,.g3,.g2,.tiles{grid-template-columns:1fr}
+  .sbtn span{display:none}
+  .rtag{width:52px}
+  .clsrow .n{width:92px;font-size:12px}
+}
+
+/* ===== v2: Tracker, Signups, Logs, Raider ===== */
+.badge-demo{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;font-weight:700;letter-spacing:.4px;padding:2px 8px;border-radius:100px;color:var(--violet);background:var(--violet-bg);border:1px solid rgba(143,124,232,.3)}
+.info{font-size:13px;color:var(--tx2);background:rgba(255,255,255,.022);border:1px solid var(--line);border-left:2px solid var(--violet);border-radius:0 10px 10px 0;padding:14px 16px;line-height:1.55;margin-bottom:20px}
+.info b{color:var(--tx)}
+.src{font-size:11.5px;color:var(--tx3);font-family:var(--mono);margin-top:8px;display:block}
+
+/* sortable table */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+table.trk th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700;padding:12px 11px;border-bottom:1px solid var(--line2);white-space:nowrap;cursor:pointer;user-select:none}
+table.trk th:hover{color:var(--tx2)}
+table.trk th.act{color:var(--amber)}
+table.trk th .ar{opacity:.5;font-size:9px;margin-left:3px}
+table.trk td{padding:11px 11px;border-bottom:1px solid var(--line);color:var(--tx2);white-space:nowrap}
+table.trk tr:last-child td{border-bottom:none}
+table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
+.pname{display:flex;align-items:center;gap:9px}
+.pdot{width:9px;height:9px;border-radius:3px;flex-shrink:0}
+.pname b{color:var(--tx);font-weight:650;font-size:13px}
+.pname i{font-style:normal;font-size:11px;color:var(--tx3);display:block}
+.num{font-family:var(--mono);font-size:12.5px;color:var(--tx)}
+.mini{height:6px;border-radius:100px;background:#1a1e28;overflow:hidden;width:56px;display:inline-block;vertical-align:middle;margin-right:8px}
+.mini i{display:block;height:100%;border-radius:100px}
+.vault{display:inline-flex;gap:3px}
+.vslot{width:15px;height:15px;border-radius:4px;border:1px solid var(--line2);background:#171b24}
+.vslot.on{background:var(--amber);border-color:var(--amber);box-shadow:0 0 8px rgba(234,181,78,.3)}
+.amp{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:650}
+.amp .b{width:8px;height:8px;border-radius:50%}
+.a-ok .b{background:var(--green)}.a-ok{color:var(--green)}
+.a-warn .b{background:var(--amber)}.a-warn{color:var(--amber)}
+.a-bad .b{background:var(--red)}.a-bad{color:var(--red)}
+
+/* ranking */
+.rank{display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:9px;background:var(--panel);border:1px solid var(--line);margin-bottom:6px;transition:.14s}
+.rank:hover{border-color:var(--line2)}
+.rank .pos{width:22px;font-family:var(--mono);font-size:12px;color:var(--tx3);flex-shrink:0;text-align:right}
+.rank .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.rank .vl{font-family:var(--mono);font-size:12.5px;color:var(--tx);flex-shrink:0}
+.rank.top .pos{color:var(--amber);font-weight:700}
+
+/* signups */
+.sig-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
+.sig-counts{display:flex;gap:9px;flex-wrap:wrap}
+.cnt{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:8px;border:1px solid}
+.c-yes{color:var(--green);border-color:rgba(94,196,143,.3);background:var(--green-bg)}
+.c-tent{color:var(--amber);border-color:rgba(234,181,78,.3);background:var(--amber-bg)}
+.c-no{color:var(--red);border-color:rgba(226,107,107,.3);background:rgba(226,107,107,.1)}
+.c-bench{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
+.sig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sig-col h4{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--tx3);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.sig-col h4 span{font-family:var(--mono);font-size:11px;color:var(--tx2)}
+.sig-p{display:flex;align-items:center;gap:8px;padding:6px 9px;border-radius:7px;background:var(--panel2);border:1px solid var(--line);margin-bottom:5px;font-size:12.5px}
+.sig-p .d{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+.sig-p .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sig-p .s{font-size:10.5px;color:var(--tx3);flex-shrink:0}
+
+/* log card */
+.logcard{border:1px solid var(--line2);border-radius:16px;overflow:hidden;background:linear-gradient(140deg,#181c26,#101319)}
+.logcard-t{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.logcard-b{padding:18px 20px}
+.parse{display:flex;align-items:center;gap:11px;padding:8px 0}
+.parse .p{width:44px;text-align:center;font-family:var(--mono);font-size:12.5px;font-weight:700;padding:3px 0;border-radius:6px;flex-shrink:0}
+.pk-leg{color:#e5cc80;background:rgba(229,204,128,.14);border:1px solid rgba(229,204,128,.3)}
+.pk-orange{color:#ff8000;background:rgba(255,128,0,.13);border:1px solid rgba(255,128,0,.3)}
+.pk-purple{color:#a335ee;background:rgba(163,53,238,.14);border:1px solid rgba(163,53,238,.32)}
+.pk-blue{color:#0070dd;background:rgba(0,112,221,.15);border:1px solid rgba(0,112,221,.35)}
+.pk-green{color:#1eff00;background:rgba(30,255,0,.1);border:1px solid rgba(30,255,0,.26)}
+.pk-grey{color:#8a8f99;background:rgba(138,143,153,.12);border:1px solid rgba(138,143,153,.25)}
+.parse .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.parse .mt{font-size:11.5px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
+
+/* raider cards */
+.rcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.rcard{display:flex;gap:14px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
+.rcard:hover{border-color:var(--line2);background:var(--panel2)}
+.rav{width:42px;height:42px;border-radius:11px;flex-shrink:0;display:grid;place-items:center;font-size:16px;font-weight:800;color:#0a0b0f}
+.rcard .hd{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:3px}
+.rcard .hd b{font-size:14.5px;font-weight:650}
+.rcard .hd em{font-style:normal;font-size:11.5px;color:var(--tx3)}
+.rcard p{font-size:12.5px;color:var(--tx3);line-height:1.5;margin-top:4px}
+.rcard .ph{font-size:12.5px;color:var(--tx3);line-height:1.5;margin-top:4px;font-style:italic;opacity:.75}
+
+/* integration map */
+.imap{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.ibox{padding:17px 18px;background:var(--panel);border:1px solid var(--line);border-radius:13px}
+.ibox .ih{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.ibox .ih b{font-size:14px;font-weight:650}
+.ibox p{font-size:12.5px;color:var(--tx3);line-height:1.55}
+.ibox code{font-family:var(--mono);font-size:11px;background:#1a1f29;border:1px solid var(--line2);padding:2px 6px;border-radius:5px;color:var(--tx2);display:inline-block;margin-top:9px;word-break:break-all;white-space:normal;line-height:1.9}
+.tag-live{font-size:10px;font-weight:700;letter-spacing:.4px;padding:2px 7px;border-radius:100px;margin-left:auto;flex-shrink:0}
+.t-ok{color:var(--green);background:var(--green-bg);border:1px solid rgba(94,196,143,.3)}
+.t-key{color:var(--amber);background:var(--amber-bg);border:1px solid rgba(234,181,78,.3)}
+.t-no{color:var(--red);background:rgba(226,107,107,.1);border:1px solid rgba(226,107,107,.3)}
+
+@media(max-width:940px){ .sig-grid{grid-template-columns:repeat(2,1fr)} .rcards,.imap{grid-template-columns:1fr} }
+@media(max-width:580px){ .sig-grid{grid-template-columns:1fr} }
+
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="fxShadow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8f7ce8"/><stop offset="100%" stop-color="#3b2f7a"/>
+    </linearGradient>
+    <linearGradient id="fxLight" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5cd72"/><stop offset="100%" stop-color="#d08e2c"/>
+    </linearGradient>
+    <symbol id="foxmark" viewBox="0 0 64 64">
+      <rect x="1" y="1" width="62" height="62" rx="17" fill="#0f1116" stroke="#2a3140" stroke-width="1.5"/>
+      <path d="M32 55 12.5 33.2 10.6 12.4 22.9 19.2 32 15.6Z" fill="url(#fxShadow)"/>
+      <path d="M32 55 51.5 33.2 53.4 12.4 41.1 19.2 32 15.6Z" fill="url(#fxLight)"/>
+      <path d="M21.4 30.6 27 33.2 22.8 35.6Z" fill="#0f1116"/>
+      <path d="M42.6 30.6 37 33.2 41.2 35.6Z" fill="#0f1116"/>
+      <path d="M32 40.4 34.7 43.1 32 45.6 29.3 43.1Z" fill="#0f1116"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="notice" id="notice"></div>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#/start">
+      <svg class="mark"><use href="#foxmark"/></svg>
+      <span><b>ShadowFox</b><span>BLACKMOORE · EU</span></span>
+    </a>
+    <nav id="nav"></nav>
+    <div class="top-r">
+      <button class="sbtn" id="openS">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Suchen</span><kbd class="kk">⌘K</kbd>
+      </button>
+      <a class="btn btn-p" href="#/bewerben">Bewerben</a>
+    </div>
+  </div>
+</header>
+
+<main><div class="wrap" id="view"></div></main>
+
+<footer><div class="wrap foot">
+  <div>ShadowFox · Blackmoore (EU) · Allianz · Raid: Mo &amp; Do, 19:45–22:30</div>
+  <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <a href="https://raider.io/guilds/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">Raider.IO</a>
+    <a href="https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">Warcraft Logs</a>
+    <a href="https://www.wowprogress.com/guild/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">WoWProgress</a>
+  </div>
+</div></footer>
+
+<div class="ovl" id="ovl"><div class="sbox">
+  <div class="sbox-t">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#69738a" stroke-width="2.3" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" placeholder="Boss, Mechanik, Regel, Termin …" autocomplete="off">
+    <kbd>ESC</kbd>
+  </div>
+  <div class="results" id="results"></div>
+  <div class="sbox-f">
+    <span><kbd>↑</kbd><kbd>↓</kbd> wählen</span><span><kbd>↵</kbd> öffnen</span>
+    <span style="margin-left:auto">Taktiken · Wissen · Termine · Roster</span>
+  </div>
+</div></div>
+
+<script>
+/* =====================================================================
+   ECHTE GILDENDATEN — Stand 20.08.2026
+   Quellen: Raider.IO API, WoWProgress, Wowhead DE, Icy Veins, 4Fansites
+   ===================================================================== */
+const G = {
+  name:"ShadowFox", realm:"Blackmoore", region:"EU (DE)", faction:"Allianz",
+  raidDays:"Montag & Donnerstag", raidTime:"19:45 – 22:30 Uhr",
+  members:139, stand:"20.08.2026",
+  raid:{ name:"Der Giftige Abgrund", en:"The Venomous Abyss", zone:"Die Gewundene Insel · Atal'Utek",
+         patch:"12.1", release:"19. August 2026", bosses:8,
+         nhc:5, hc:0, myth:0,
+         rank:{welt:"4.262", eu:"1.927", realm:"81"} },
+  season1:{ nhc:9, hc:9, myth:5, total:9, rank:{welt:"4.953", eu:"2.219", realm:"84"} },
+  links:{
+    rio:"https://raider.io/guilds/eu/blackmoore/ShadowFox",
+    wcl:"https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox",
+    wowp:"https://www.wowprogress.com/guild/eu/blackmoore/ShadowFox",
+    armory:"https://worldofwarcraft.blizzard.com/de-de/guild/eu/blackmoore/shadowfox",
+    zone:"https://www.wowhead.com/de/zone=16915/the-venomous-abyss",
+    raidguide:"https://www.icy-veins.com/wow/venomous-abyss-raid-guide"
+  },
+  recruit:{ open:["Dämonenjäger","Todesritter","Rufer"],
+            contacts:["KARTOFFELSAL#21265","Langhaloth#2412"],
+            motto:"Organisches Wachstum statt toxischem Progressdruck." }
+};
+
+const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
+
+const BOSSES = [
+  {
+    n:"Nek'zali die Seelenwinderin", en:"Nek'zali the Soulcoiler", st:"down",
+    role:"Add-Kontrolle & Brunnen", slug:"nekzali-the-soulcoiler",
+    intro:"Eine Schattenjägerin, die für ihre Beschwörung von Ula'tek lebendig begraben wurde. Der Kampf steht und fällt damit, dass keine Adds den Seelenwinderbrunnen erreichen.",
+    pts:[
+      ["DPS","Ruhelose Amani haben immer oberste Priorität. Kein Add darf den Seelenwinderbrunnen erreichen — jedes Add dort gibt dem Boss Energie."],
+      ["DPS","Der Schild <em>Grabesvorstoß</em> absorbiert Magieschaden (25 % Max-HP). Mit physischem Burst und Cleave aufbrechen, nicht mit Zaubern."],
+      ["Alle","<em>Essenzzerreißen</em>-Träger laufen sofort nach außen an den Rand. Der Knockback lässt Giftflächen zurück — die Mitte bleibt sauber."],
+      ["Tanks","Swap bei 5–6 Stacks <em>Aushöhlende Stöße</em> (−5 % Heilung pro Stack). Bei <em>Sperrfeuer der Besessenheit</em> zieht der Tank vom Raid weg."],
+      ["Alle","Niemand stirbt im Brunnen. Ein Tod dort startet sofort das <em>Seelenwinderritual</em>."],
+      ["Alle","Intermission bei 50 %: Echo von Jawae fokussieren. <em>Hungernder Scheiterhaufen</em> mit mindestens 8 Leuten im 10-Meter-Radius soaken."],
+      ["DPS","Phase 2 ist ein reiner Damage-Check. Alle CDs raus, sonst kommt <em>Entfesselte Wut</em> (+500 % Schaden, taunt-immun)."]
+    ],
+    abil:["Seelenwinderbrunnen","Essenzzerreißen","Aushöhlende Stöße","Grabesvorstoß","Hungernder Scheiterhaufen","Entschlingen"]
+  },
+  {
+    n:"Eingeschlossene Wächter", en:"Entombed Sentinels", st:"down",
+    role:"Zwei Gruppen & Zahlenrätsel", slug:"entombed-sentinels",
+    intro:"Zwei Schlangengolems, die getrennt gehalten werden müssen. Die Zwischenphase ist ein Zahlenpuzzle — wer das nicht kapiert, stirbt.",
+    pts:[
+      ["Alle","Zwei gleich starke Gruppen: <em>Atem von Ula'tek</em> links, <em>Blut von Ula'tek</em> rechts. Mindestens 40 Meter Abstand, sonst greift <em>Ula'teks Dominanz</em> mit 99 % Schadensreduktion."],
+      ["DPS","Beide Bosse auf gleichem HP-Stand halten. Sonst heilt in der Stasis-Phase der stärkere den schwächeren hoch."],
+      ["Alle","Bleib in deiner Gruppe. <em>Mal der Säure</em> und <em>Mal des Blutes</em> gemischt zu stapeln ist tödlich."],
+      ["Alle","<em>Ätzende Stasis</em>: Zahl über deinem Kopf ablesen, Partner suchen, sodass die Summe genau 4 ergibt. 1 sucht 3, 2 sucht 2. Nicht drüber."],
+      ["Tanks","Nach jeder Zwischenphase die Wächter tauschen — das resettet die Mark-Stacks beider Gruppen."],
+      ["Heiler","Atem-Seite: <em>Toxintropfen</em> sofort austreten. Blut-Seite: <em>Verseuchtes Blut</em> sofort dispellen."],
+      ["DPS","<em>Giftgerinnung</em>-Schleim instant fokussieren, der tickt über <em>Kontaminieren</em> Raidschaden."]
+    ],
+    abil:["Ula'teks Dominanz","Mal der Säure","Mal des Blutes","Ätzende Stasis","Spiraltoxine","Giftgerinnung","Verseuchtes Blut"]
+  },
+  {
+    n:"Vashnik der Bösartige", en:"Vashnik the Malignant", st:"down",
+    role:"Positionierung & Add-Stopp", slug:"vashnik-the-malignant",
+    intro:"In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte. Wo der Boss steht, entscheidet, welche Infusionen er bekommt.",
+    pts:[
+      ["Tanks","Vashnik vor jedem <em>Trinken</em> neu positionieren — er zieht immer aus den zwei nächsten Quellen. Rotation: Schatten + Flamme → Flamme + Blut → Blut + Schatten."],
+      ["DPS","Kein lebendes Gift erreicht die Mitte. Erreicht ein Add den <em>Bösartigen Hohlraum</em>, folgt <em>Heimtückische Explosion</em> mit massivem Raidschaden."],
+      ["DPS","Add-Prio: Brennende Gifte zuerst, dann Gerinnende, Verhüllte kann man CCen. Brennende zeitversetzt töten, nie gleichzeitig — sie explodieren beim Tod."],
+      ["Alle","<em>Entziehende Infektion</em>: mehrere laufen in den Kreis des Betroffenen, um den Heilungsabsorb wegzuknacken. Allein ist er nicht heilbar."],
+      ["Heiler","<em>Explodierende Infektion</em> erst dispellen, wenn der Träger frei steht — beim Entfernen kommt eine ätzende Explosion."],
+      ["Alle","<em>Stygische Infektion</em>: raus aus dem Raid, der Träger pulst Schaden im 6-Meter-Umkreis. <em>Pestschaum</em> immer an den Rand ablegen."],
+      ["Tanks","Swap bei <em>Triefende Fangzähne</em> (+200 % physischer Schaden). <em>Toxischer Dampf</em> stapelt permanent — Bloodlust am Pull, Heiler-CDs nach hinten planen."]
+    ],
+    abil:["Trinken","Toxischer Dampf","Triefende Fangzähne","Entziehende Infektion","Explodierende Infektion","Stygische Infektion","Pestschaum"]
+  },
+  {
+    n:"Die verirrten Entdecker", en:"The Lost Explorers", st:"down",
+    role:"Ratskampf & Fisch-Rotation", slug:"lost-explorers",
+    intro:"Drei besessene Tortollaner — Erster Maat Nama, Schriftrollengelehrte Iku und Händler Gebbo — kontrolliert vom unangreifbaren Mor'zahi.",
+    pts:[
+      ["Alle","Immer nur zwei Bosse zusammen für Cleave, den dritten mindestens 30 Meter weg. Sonst greift <em>Vereinte Verteidigung</em> mit 99 % Schadensreduktion."],
+      ["Alle","Kisten aufbrechen und <em>Widerliche Fische</em> sammeln. Gefüttert wird bei ca. 90 % Energie von Mor'zahi — sonst <em>Letzter Aufstieg</em> = Wipe. Reihenfolge: Gebbo, Nama, Iku. Jeder Boss nur einmal."],
+      ["Alle","Kistenaufbrechen rotieren, <em>Splitter</em> stapelt als Blutung. Und keine Kiste liegen lassen: nach 25 Sekunden kommt <em>Reliktriss</em> mit 2,5 Mio. Raidschaden."],
+      ["Alle","<em>Gewaltiger Bums</em>: drei Markierungen, Soaks dürfen sich nicht überlappen — eine Melee-Position und zwei getrennte Ranged-Spots. Danach raus aus dem <em>Nachbeben</em>."],
+      ["Alle","<em>Frostfeuersalve</em>: Feuer-Debuff in der Frostfläche löschen, Frost-Debuff in der Feuerfläche. Die Flächen dürfen sich niemals überlappen."],
+      ["DPS","<em>Eisgebundene Flammen</em> unterbrechen — feste Kick-Rotation. Melees baiten <em>Panzerwirbel</em> zur Plattformkante."],
+      ["DPS","Alle drei möglichst gleichzeitig legen. Stirbt einer zu früh, enragen die anderen."]
+    ],
+    abil:["Vereinte Verteidigung","Widerliche Fische","Letzter Aufstieg","Reliktriss","Gewaltiger Bums","Frostfeuersalve","Zerfetzende Splitter"]
+  },
+  {
+    n:"Sszorak", en:"Sszorak", st:"down",
+    role:"Wind, Knockbacks & Tank-Kombo", slug:"sszorak",
+    intro:"Eine in Ula'teks Gift gehüllte Bestie auf einer offenen Plattform. Wind und Positionierung bestimmen alles.",
+    pts:[
+      ["Tanks","<em>Raubzug des Apex-Raubtiers</em>: fünf Attacken in zufälliger Reihenfolge (2× Verwüstung, 2× Verstümmeln, 1× Sturm). Jeder Tank nimmt je eine Verwüstung und eine Verstümmelung."],
+      ["Alle","<em>Verwüstung</em> ist ein Frontalkegel — Boss wegdrehen, Tank-CD an. <em>Verstümmeln</em>: Raid stackt sofort, mindestens 5 Spieler."],
+      ["Tanks","<em>Zerfressenes Gift</em> bei etwa 6 Stacks abgeben. Den Swap so timen, dass er mit dem Apex-Wechsel zusammenfällt."],
+      ["Alle","<em>Giftige Flutwelle</em>: Debuff-Träger laufen auf die Marker, maximal einer pro Marker. Die Zysten immer gegenüber dem aktiven Windtunnel ablegen."],
+      ["Alle","<em>Zornige Winde</em>: Partner mit Gegenrichtung suchen und ineinander fliegen. Ihr prallt ab und landet wieder auf Position."],
+      ["DPS","<em>Heulender Maelstrom</em> ist die Burnphase — der Boss nimmt deutlich mehr Schaden. Alle Damage-CDs auf den 2-Minuten-Zyklus planen."]
+    ],
+    abil:["Raubzug des Apex-Raubtiers","Verwüstung","Verstümmeln","Zerfressenes Gift","Giftige Flutwelle","Zornige Winde","Heulender Maelstrom"]
+  },
+  {
+    n:"Die Zwillingsfänge", en:"The Twin Fangs", st:"prog",
+    role:"Stack-Management & Soak-Rotation", slug:"twin-fangs",
+    intro:"Vexhul und Ithraz — die ersten von Ula'teks Blut. Zwei getrennte Lebensbalken, aber ein gemeinsamer Timer: dein Giftstack.",
+    pts:[
+      ["Alle","<em>Ewiges Gift</em> ist die Uhr des Kampfes. Bei 10 Stacks bist du tot. Runter kommen die Stacks ausschließlich über <em>Gefräßiges Schmausen</em>."],
+      ["Alle","<em>Gefräßiges Schmausen</em>: drei Soak-Gruppen A, B, C nacheinander, je rund 7 Spieler. Niemand soakt doppelt — der Debuff <em>Gefüttert</em> verhindert das ohnehin."],
+      ["Tanks","<em>Ätzende Flut</em>: Vexhul kanalisiert 5 Sekunden auf den Tank und schiebt ihn weg — in Reichweite bleiben. Globulen einzeln soaken, nur Leute mit niedrigen Stacks."],
+      ["Alle","<em>Steinbrecher</em>: der Tank wird geknockt, drei Kreise erscheinen. Alle drei nacheinander soaken, danach Boss-Swap. Trifft keiner, frisst es der ganze Raid."],
+      ["DPS","<em>Giftiges Erwachen</em>: drei Schlangen in der Mitte, sofort umschwenken. <em>Ätzenden Speichel</em> wegdrehen und dann stehen bleiben."],
+      ["Alle","<em>Untertauchen</em>: gegen die Drehrichtung der <em>Verderblichen Flut</em> laufen und den Blutsturm-Kreisen ausweichen. Der Kampf muss vor dem dritten Untertauchen stehen."],
+      ["Alle","<em>Gerinnendes Ichor</em>-Träger raus an den Rand. Die zurückbleibenden Pfützen sind permanent — konsequent an die Außenkante."]
+    ],
+    abil:["Ewiges Gift","Gefräßiges Schmausen","Ätzende Flut","Steinbrecher","Giftiges Erwachen","Verderbliche Flut","Gerinnendes Ichor"]
+  },
+  {
+    n:"Der Gewundene Altar", en:"The Coiled Altar", st:"open",
+    role:"Phasenwechsel & Fixate", slug:"coiled-altar",
+    intro:"Der Geist von Malacrass befiehlt Zul'jan. Drei Phasen, jede mit eigener Kernmechanik — Phase 2 ist ein Blickkontakt-Rätsel.",
+    pts:[
+      ["Alle","Phase 1 — <em>Guillotine</em>: Gruppe A rein, mindestens 5 Mann. Der Axtwurf splittet den Schaden auf alle im 9-Meter-Radius. Auf Heroisch zwei Gruppen im Wechsel."],
+      ["Tanks","<em>Sever</em>: Taunt nach jedem Cast. Der Frontal zerstört eingesammelte Giftkugeln — also gezielt einsetzen."],
+      ["Alle","<em>Giftige Sturzflut</em>: Kugeln einsammeln und auf den Markern ablegen. Nie mehrere gleichzeitig zünden lassen."],
+      ["Alle","Phase 2 — <em>Zermürbende Fixierung</em>: nicht wegdrehen. Die <em>Manifestationen des Grauens</em> bewegen sich nur, wenn du sie nicht ansiehst. Fixierte schauen ihren Geist an."],
+      ["Alle","<em>Ewige Dämmerung</em>: Schleier zerschlagen und unterbrechen. <em>Gloombomb</em>-Träger spreaden nach außen, 5 Sekunden Timer."],
+      ["DPS","Zwischenphase <em>Das beanspruchte Gefäß</em>: Bloodlust rein, Zul'jan nimmt 100 % mehr Schaden. Fragmente gestaffelt abfangen, nie mehrere gleichzeitig."],
+      ["DPS","Phase 3 — <em>Vereinte Windung</em>: HP angleichen, beide müssen zusammen fallen, sonst Berserk."]
+    ],
+    abil:["Guillotine","Sever","Giftige Sturzflut","Zermürbende Fixierung","Manifestation des Grauens","Ewige Dämmerung","Vereinte Windung"]
+  },
+  {
+    n:"Ula'tek", en:"Ula'tek", st:"open",
+    role:"Eier-Kontrolle & Platzmanagement", slug:"ulatek",
+    intro:"Die große Schande des Amanireiches und Endboss des Tiers. Drei Phasen, in denen die nutzbare Fläche immer kleiner wird.",
+    pts:[
+      ["Tanks","Der Tank bleibt immer im Nahkampf. Verlässt er die Melee-Range, feuert <em>Unchecked Rage</em> Raidschaden. <em>Mutters Zorn</em> knockt weg — sofort zurücklaufen."],
+      ["Alle","<em>Ätzende Wellen</em> ausweichen und dabei von den Eiern fernhalten. Berührt eine Welle ein Ei, schlüpft es sofort."],
+      ["Alle","<em>Spektrale Windungen</em>: Raid stackt im Einschlag, der Schaden wird geteilt. Auf Heroisch Soak-Gruppen rotieren."],
+      ["DPS","<em>Zorn der Gefesselten</em> ist die Burnphase: das <em>Giftige Herz</em> liegt offen und nimmt 200 % mehr Schaden. Alles rein, dabei den Trümmern ausweichen."],
+      ["DPS","Phase 2: Eier vor dem Schlüpfen unterbrechen. Eine voll ausgereifte <em>Gefräßige Doomscale</em> stunnt den ganzen Raid 20 Sekunden — das ist der Wipe."],
+      ["Alle","<em>Schlangenbiss</em>: feste Partner-Paare. Wer hilft, bekommt <em>Volatile Purge</em> und explodiert nach 5 Sekunden — sofort spreaden."],
+      ["Alle","Phase 3 <em>Ula'teks Aufstieg</em>: die Plattform wird gefressen. Positionierung vorher absprechen, nicht improvisieren."]
+    ],
+    abil:["Ätzende Wellen","Mutters Zorn","Spektrale Windungen","Zorn der Gefesselten","Giftiges Herz","Schlangenbiss","Gefräßige Doomscale"],
+    warn:"Quellenlage zu Ula'tek ist noch dünn — Icy Veins hat den Boss-Guide zum Stand 20.08. noch nicht fertig. Diese Punkte stammen aus Wowhead und sind teils vorläufig. Nach den ersten eigenen Pulls überschreiben."
+  }
+];
+
+const CLASSES = [
+  ["Dämonenjäger",19,"#A330C9"],["Druide",16,"#FF7C0A"],["Paladin",13,"#F48CBA"],
+  ["Krieger",12,"#C69B6D"],["Priester",12,"#FFFFFF"],["Mönch",11,"#00FF98"],
+  ["Magier",11,"#3FC7EB"],["Hexenmeister",9,"#8788EE"],["Todesritter",9,"#C41E3A"],
+  ["Schurke",8,"#FFF468"],["Jäger",8,"#AAD372"],["Schamane",7,"#0070DD"],["Rufer",4,"#33937F"]
+];
+
+const KB = [
+  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. Die Kurzfassung: 19:40 im Voice, repariert, mit gelesener Taktik.",tags:["Pflicht","Neue"],todo:true},
+  {i:"💰",t:"Loot-Regelung",d:"Wie Loot verteilt wird, wie Trials behandelt werden und wie ihr Wünsche im Voraus anmeldet.",tags:["Loot","Trial"],todo:true},
+  {i:"🧩",t:"Addons & WeakAuras",d:"Pflicht-Addons und das aktuelle WeakAura-Paket für Der Giftige Abgrund inklusive Import-Strings.",tags:["Setup","Pflicht"],todo:true},
+  {i:"🧪",t:"Konsumierbare",d:"Was jeder selbst mitbringt, was die Gildenbank stellt, Flask- und Food-Empfehlungen pro Rolle.",tags:["Konsum","Bank"],todo:true},
+  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen bis wann und wo. Mo & Do sind die Raidtage — Bescheid geben statt wegbleiben.",tags:["Signup"],todo:true},
+  {i:"🌱",t:"Onboarding für Neue",d:"Deine ersten zwei Wochen bei ShadowFox: was du liest, wen du ansprichst, wie der Trial läuft.",tags:["Neue","Trial"],todo:true},
+  {i:"🎧",t:"Voice-Etikette",d:"Während Pulls reden nur Raidlead und Callouts. Diskussion in der Pause. Push-to-Talk.",tags:["Discord"],todo:true},
+  {i:"🔧",t:"Char-Vorbereitung",d:"Wöchentliche Checkliste vor dem Reset: M+, Craft-Slots, Sockel, Verzauberungen, Vantus.",tags:["Gear","Wöchentlich"],todo:true}
+];
+
+const TERMINE = [
+  {d:"Montag",dt:"24.08.2026",t:"19:45 – 22:30",z:"Der Giftige Abgrund",n:"Normal weiter · Zwillingsfänge"},
+  {d:"Donnerstag",dt:"27.08.2026",t:"19:45 – 22:30",z:"Der Giftige Abgrund",n:"Normal abschließen, Heroisch antesten"},
+  {d:"Montag",dt:"31.08.2026",t:"19:45 – 22:30",z:"Der Giftige Abgrund",n:"Heroisch Progress"}
+];
+
+const CHECK = [
+  "Flasks, Food und Runen für den ganzen Abend dabei",
+  "Aktuelles WeakAura-Paket importiert",
+  "Boss-Taktik auf dieser Seite gelesen — vor dem Raid, nicht währenddessen",
+  "Ausrüstung repariert, Sockel und Verzauberungen aktuell",
+  "19:40 im Voice, damit 19:45 gepullt werden kann"
+];
+
+
+/* =====================================================================
+   v2 — KADER, TRACKER, SIGNUPS, LOGS
+   Namen, Klassen und Gildenränge sind echt (Raider.IO-API, 20.08.2026).
+   Alle Zahlenwerte im Tracker sind BEISPIELWERTE zur Veranschaulichung.
+   ===================================================================== */
+const CMAP={Druide:"#FF7C0A",Schamane:"#0070DD",Krieger:"#C69B6D",Jäger:"#AAD372",
+  Priester:"#FFFFFF",Magier:"#3FC7EB",Todesritter:"#C41E3A",Mönch:"#00FF98",
+  Hexenmeister:"#8788EE",Paladin:"#F48CBA",Rufer:"#33937F",Dämonenjäger:"#A330C9",Schurke:"#FFF468"};
+
+/* n=Name, c=Klasse (echt), rk=Gildenrang (echt), r=Rolle, ilvl, mp=M+ Score,
+   mr=M+ Runs diese Woche, v=Vault-Slots, att=Attendance %, wl=Wishlist gepflegt */
+const KADER=[
+  {n:"Hòbs",c:"Druide",rk:0,r:"Heal",ilvl:290,mp:0,mr:0,v:0,att:100,wl:1,note:"Gildenmeisterin"},
+  {n:"Garódash",c:"Schamane",rk:1,r:"Heal",ilvl:287,mp:0,mr:0,v:0,att:100,wl:1,note:"Offizier"},
+  {n:"Mercrixxus",c:"Krieger",rk:1,r:"Tank",ilvl:284,mp:0,mr:0,v:0,att:94,wl:1,note:"Offizier"},
+  {n:"Hatto",c:"Jäger",rk:3,r:"Ranged",ilvl:283,mp:0,mr:0,v:0,att:94,wl:1},
+  {n:"Xsythia",c:"Priester",rk:3,r:"Heal",ilvl:281,mp:0,mr:0,v:0,att:88,wl:0},
+  {n:"Jisgarin",c:"Magier",rk:3,r:"Ranged",ilvl:289,mp:0,mr:0,v:0,att:100,wl:1},
+  {n:"Chantallè",c:"Jäger",rk:3,r:"Ranged",ilvl:279,mp:0,mr:0,v:0,att:75,wl:0},
+  {n:"Pepelim",c:"Todesritter",rk:3,r:"Melee",ilvl:285,mp:0,mr:0,v:0,att:94,wl:1},
+  {n:"Kischali",c:"Druide",rk:3,r:"Heal",ilvl:263,mp:0,mr:0,v:0,att:69,wl:0},
+  {n:"Sweetschi",c:"Magier",rk:3,r:"Ranged",ilvl:282,mp:0,mr:0,v:0,att:88,wl:1},
+  {n:"Kitebrew",c:"Mönch",rk:3,r:"Tank",ilvl:286,mp:0,mr:0,v:0,att:100,wl:1},
+  {n:"Jirawl",c:"Hexenmeister",rk:3,r:"Ranged",ilvl:284,mp:0,mr:0,v:0,att:94,wl:1},
+  {n:"Moonlord",c:"Druide",rk:3,r:"Melee",ilvl:280,mp:0,mr:0,v:0,att:81,wl:0},
+  {n:"Feire",c:"Rufer",rk:3,r:"Ranged",ilvl:288,mp:0,mr:0,v:0,att:100,wl:1},
+  {n:"Márídá",c:"Paladin",rk:3,r:"Heal",ilvl:283,mp:0,mr:0,v:0,att:88,wl:1},
+  {n:"Narez",c:"Paladin",rk:3,r:"Melee",ilvl:281,mp:0,mr:0,v:0,att:75,wl:0},
+  {n:"Günnsham",c:"Schamane",rk:3,r:"Ranged",ilvl:278,mp:0,mr:0,v:0,att:69,wl:0},
+  {n:"Miliim",c:"Dämonenjäger",rk:3,r:"Melee",ilvl:287,mp:0,mr:0,v:0,att:94,wl:1},
+  {n:"Fruchtzwerg",c:"Schamane",rk:3,r:"Heal",ilvl:282,mp:0,mr:0,v:0,att:88,wl:1},
+  {n:"Narrwên",c:"Hexenmeister",rk:3,r:"Ranged",ilvl:280,mp:0,mr:0,v:0,att:81,wl:1},
+  {n:"Quon",c:"Druide",rk:3,r:"Ranged",ilvl:284,mp:0,mr:0,v:0,att:94,wl:1},
+  {n:"Seitenleiste",c:"Magier",rk:3,r:"Ranged",ilvl:279,mp:0,mr:0,v:0,att:75,wl:0},
+  {n:"Corvisstab",c:"Schurke",rk:3,r:"Melee",ilvl:285,mp:0,mr:0,v:0,att:88,wl:1},
+  {n:"Rukiar",c:"Priester",rk:3,r:"Heal",ilvl:281,mp:0,mr:0,v:0,att:81,wl:1},
+  {n:"Vay",c:"Todesritter",rk:3,r:"Tank",ilvl:286,mp:0,mr:0,v:0,att:100,wl:1},
+  {n:"Lesscy",c:"Priester",rk:4,r:"Ranged",ilvl:277,mp:0,mr:0,v:0,att:63,wl:0,note:"Trial"},
+  {n:"Askái",c:"Dämonenjäger",rk:5,r:"Melee",ilvl:283,mp:0,mr:0,v:0,att:88,wl:1},
+  {n:"Raiox",c:"Schamane",rk:5,r:"Melee",ilvl:280,mp:0,mr:0,v:0,att:75,wl:0},
+  {n:"Druith",c:"Druide",rk:5,r:"Tank",ilvl:284,mp:0,mr:0,v:0,att:94,wl:1},
+  {n:"Mardyn",c:"Magier",rk:5,r:"Ranged",ilvl:282,mp:0,mr:0,v:0,att:88,wl:1}
+];
+/* Beispielwerte für M+ und Vault (Season 2 ist frisch gestartet, echte Scores stehen noch auf 0) */
+const DEMO_MP=[2814,2650,2402,2988,2210,3105,1840,2560,1320,2470,2740,2620,2080,2910,2480,1960,1540,2830,2380,2190,2700,1880,2760,2260,2590,1420,2520,1990,2640,2440];
+const DEMO_MR=[8,6,5,8,4,8,1,6,0,5,7,6,3,8,5,2,1,7,5,4,6,2,7,4,6,0,5,3,6,5];
+KADER.forEach((p,i)=>{p.mp=DEMO_MP[i];p.mr=DEMO_MR[i];p.v=Math.min(3,Math.floor(DEMO_MR[i]/2));});
+
+const ROLLEN={Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
+
+/* Raid-Helper-Event — Struktur exakt wie /api/event/{id} sie liefert */
+const EVENT={
+  title:"Der Giftige Abgrund — Normal/HC",
+  date:"24-8-2026", time:"19:45", closing:"24.08. 19:30",
+  leader:"Hòbs", channel:"#raid-anmeldung",
+  signups:KADER.map((p,i)=>({name:p.n,cls:p.c,role:p.r,
+    status: i<22?"primary": i<25?"tentative": i<28?"bench":"absence"}))
+};
+
+/* Warcraft Logs — Struktur wie reportData.reports sie liefert */
+const REPORTS=[
+  {code:"aB1cD2eF3gH4", d:"19.08.2026", t:"Der Giftige Abgrund", diff:"Normal",
+   kills:5, wipes:7, dur:"2h 41m", avg:88.4, live:true,
+   top:[["Feire","Rufer",94],["Jisgarin","Magier",91],["Miliim","Dämonenjäger",86],
+        ["Corvisstab","Schurke",78],["Quon","Druide",64]]},
+  {code:"jK5lM6nO7pQ8", d:"17.08.2026", t:"Season 1 — Mythisch", diff:"Mythisch",
+   kills:2, wipes:14, dur:"2h 55m", avg:84.1},
+  {code:"rS9tU0vW1xY2", d:"13.08.2026", t:"Season 1 — Mythisch", diff:"Mythisch",
+   kills:1, wipes:19, dur:"3h 02m", avg:82.7},
+  {code:"zA3bC4dE5fG6", d:"10.08.2026", t:"Season 1 — Heroisch", diff:"Heroisch",
+   kills:9, wipes:2, dur:"1h 18m", avg:91.2}
+];
+
+const INTEGR=[
+  {i:"📅",n:"Raid-Helper",st:"key",stt:"API-Key nötig",
+   d:"Eure bestehenden Signups aus dem Discord landen 1:1 auf der Website — Name, Klasse, Spec, Rolle, Status. Ihr ändert nichts an eurem Workflow, der Bot bleibt wie er ist.",
+   c:"GET raid-helper.dev/api/v3/servers/{serverId}/events → dann je Event: GET raid-helper.dev/api/event/{eventId}"},
+  {i:"📊",n:"Warcraft Logs",st:"key",stt:"OAuth Client",
+   d:"Nach jedem Raidabend werden die neuen Reports automatisch gezogen und als Karte auf der Startseite angezeigt — inklusive Parses pro Spieler.",
+   c:"POST warcraftlogs.com/oauth/token (client_credentials) → POST /api/v2/client mit reportData.reports(guildName:\"ShadowFox\", …)"},
+  {i:"📋",n:"WoWAudit",st:"key",stt:"Team-Key",
+   d:"Roster-Status, Attendance und Wishlists. Der Key ist pro Team und liegt in den Team-Einstellungen unter „API“. Achtung: erlaubt auch Schreibzugriffe — gehört niemals ins Frontend.",
+   c:"GET wowaudit.com/v1/characters · /v1/attendance · /v1/historical_data (Header: Authorization: Bearer <Team-Key>)"},
+  {i:"🟢",n:"Raider.IO",st:"ok",stt:"Ohne Key",
+   d:"Item Level, M+ Score und Raid-Progress pro Charakter — ganz ohne Registrierung. Genau diese Quelle liefert schon jetzt euren echten Progress oben auf der Startseite.",
+   c:"GET raider.io/api/v1/characters/profile?region=eu&realm=blackmoore&name=…&fields=gear,mythic_plus_scores_by_season:current"},
+  {i:"🛡️",n:"Blizzard-API",st:"key",stt:"OAuth Client",
+   d:"Die einzige Quelle für echte In-Game-Gildenränge und die abgeschlossenen M+-Runs der laufenden Woche. Damit wird aus „gefühlt aktiv“ eine Zahl.",
+   c:"GET /data/wow/guild/blackmoore/shadowfox/roster · /profile/wow/character/{realm}/{name}/mythic-keystone-profile"},
+  {i:"📄",n:"Google Sheet",st:"ok",stt:"Ohne Key",
+   d:"Falls ihr lieber bei einem Sheet bleibt: jedes veröffentlichte Google Sheet lässt sich direkt als Datenquelle anzapfen. Ihr pflegt im Sheet, die Website liest mit.",
+   c:"GET docs.google.com/spreadsheets/d/{ID}/gviz/tq?tqx=out:csv&sheet={Tabellenname}"},
+  {i:"🎬",n:"YouTube",st:"ok",stt:"Ohne Key",
+   d:"Neue Kill-Videos erscheinen automatisch, sobald sie hochgeladen sind. Kein API-Key, nur der Kanal-Feed.",
+   c:"GET youtube.com/feeds/videos.xml?channel_id={KANAL_ID}"},
+  {i:"🏆",n:"Great Vault",st:"no",stt:"Keine API",
+   d:"Blizzard bietet dafür keine Schnittstelle an — die Anfrage liegt seit 2021 unbeantwortet im Forum. Der M+-Teil lässt sich aus den Wochenruns ableiten, Raid und PvP nicht. Vollständig geht es nur über WoWAudit mit dessen Addon.",
+   c:"Ableitbar: /mythic-keystone-profile (nur M+-Anteil) · vollständig nur via WoWAudit"}
+];
+
+/* =====================================================================
+   VIEWS
+   ===================================================================== */
+const NAV=[["start","Start"],["raid","Taktiken"],["termine","Termine"],
+           ["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
+
+const IS_MAC=/Mac|iPhone|iPad/.test(navigator.userAgent);
+const KEY=IS_MAC?"⌘ K":"Strg K";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const strip=s=>String(s).replace(/<[^>]+>/g,"");
+const ext=(u,t)=>`<a class="lchip" href="${u}" target="_blank" rel="noopener">${t} <span style="opacity:.5">↗</span></a>`;
+const col=c=>CMAP[c]||"#888";
+const pk=p=>p>=99?"pk-leg":p>=95?"pk-orange":p>=75?"pk-purple":p>=50?"pk-blue":p>=25?"pk-green":"pk-grey";
+const ST={down:{cls:"p-green",tx:"Gelegt"},prog:{cls:"p-amber",tx:"Aktueller Boss"},open:{cls:"p-gray",tx:"Noch offen"}};
+const DEMO_BADGE=`<span class="badge-demo">Beispielwerte</span>`;
+const DEMO=()=> (KADER.some(p=>p.demo)||!LIVE.data) ? DEMO_BADGE : "";
+
+document.getElementById("notice").innerHTML =
+  `Vorab-Ansicht · Progress, Roster, Gildenränge und Bossmechaniken sind echt (Stand ${G.stand}) · Tracker-Zahlen, Signups und Logs sind Beispielwerte, bis die APIs angebunden sind`;
+
+/* ---------- wiederverwendbare Bausteine ---------- */
+function logCard(r,compact){
+  return `<div class="logcard">
+    <div class="logcard-t">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+          <span class="eyebrow" style="margin:0">${r.live?"Letzter Raidabend":"Raidabend"}</span>
+          ${r.live?`<span class="pill p-green"><span class="dot"></span>Neu</span>`:""}
+        </div>
+        <div style="font-size:19px;font-weight:700;letter-spacing:-.4px;margin-top:6px">${esc(r.t)}</div>
+        <div class="soft" style="font-size:13px">${esc(r.d)} · ${esc(r.diff)} · ${r.dur}</div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span class="chip">Kills <b>${r.kills}</b></span>
+        <span class="chip">Wipes <b>${r.wipes}</b></span>
+        ${r.top?`<span class="chip">Ø Parse <b>${r.avg}</b></span>`:(r.best!=null?`<span class="chip">Best Try <b>${r.best} %</b></span>`:"")}
+      </div>
+    </div>
+    ${(!r.top&&r.killed&&r.killed.length&&!compact)?`<div class="logcard-b">
+      <div class="eyebrow">Gelegte Bosse an dem Abend</div>
+      <div class="abils">${r.killed.map(k=>`<span class="abil">${esc(k)}</span>`).join("")}</div>
+      <div class="links" style="margin-top:14px">${ext(r.url||G.links.wcl,"Vollen Report öffnen")}<a class="lchip" href="#/logs">Alle Raidabende</a></div>
+    </div>`:""}
+    ${r.top&&!compact?`<div class="logcard-b">
+      <div class="eyebrow" style="display:flex;align-items:center;gap:8px">Beste Parses des Abends ${DEMO()}</div>
+      ${r.top.map(([n,c,p])=>`<div class="parse">
+        <span class="p ${pk(p)}">${p}</span>
+        <span class="nm" style="color:${col(c)}">${esc(n)}</span>
+        <span class="mt">${esc(c)}</span></div>`).join("")}
+      <div class="links" style="margin-top:14px">
+        ${ext(r.url||G.links.wcl,"Vollen Report öffnen")}
+        <a class="lchip" href="#/logs">Alle Raidabende</a>
+      </div>
+    </div>`:""}
+  </div>`;
+}
+
+function signupBlock(){
+  const by=s=>EVENT.signups.filter(x=>x.status===s);
+  const prim=by("primary");
+  const grp=r=>prim.filter(p=>p.role===r);
+  const cnt=(c,l,n)=>`<span class="cnt ${c}">${l} <b>${n}</b></span>`;
+  return `<div class="card">
+    <div class="sig-head">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+          <span class="eyebrow" style="margin:0">Anmeldung</span>${DEMO()}
+        </div>
+        <div style="font-size:17px;font-weight:650;margin-top:5px">${esc(EVENT.title)}</div>
+        <div class="soft" style="font-size:13px">${esc(EVENT.dateLabel||"Montag 24.08.")} · ${EVENT.time} Uhr · Raidlead ${esc(EVENT.leader)} · Anmeldeschluss ${esc(EVENT.closing)}</div>
+      </div>
+      <div class="sig-counts">
+        ${cnt("c-yes","✓ Zugesagt",prim.length)}
+        ${cnt("c-tent","? Unsicher",by("tentative").length)}
+        ${cnt("c-bench","≡ Bank",by("bench").length)}
+        ${cnt("c-no","✕ Ab",by("absence").length)}
+      </div>
+    </div>
+    <div class="sig-grid">
+      ${["Tank","Heal","Melee","Ranged"].map(r=>{
+        const g=grp(r);
+        return `<div class="sig-col">
+          <h4><span style="width:8px;height:8px;border-radius:2px;background:${ROLLEN[r]};display:inline-block"></span>${r} <span>${g.length}</span></h4>
+          ${g.map(p=>`<div class="sig-p"><span class="d" style="background:${col(p.cls)}"></span>
+            <span class="n">${esc(p.name)}</span><span class="s">${esc(p.cls.slice(0,4))}</span></div>`).join("")||`<div class="muted" style="font-size:12px">—</div>`}
+        </div>`;}).join("")}
+    </div>
+    <div class="links" style="margin-top:16px">
+      <a class="lchip" href="#/termine">Alle Termine</a>
+      <span class="lchip" style="cursor:default">💬 Anmeldung läuft weiter im Discord</span>
+    </div>
+  </div>`;
+}
+
+/* ---------- Seiten ---------- */
+const views={
+
+start(){
+  const r=G.raid, prog=BOSSES.find(b=>b.st==="prog");
+  const bar=(l,k,t,c)=>`<div class="progrow"><span class="lbl">${l}</span>
+    <span class="track"><span class="fill" style="width:${Math.round(k/t*100)}%;background:${c}"></span></span>
+    <span class="val">${k}/${t}</span></div>`;
+  return `
+  <section class="hero fade"><div class="hero-in">
+    <svg class="hero-mark"><use href="#foxmark"/></svg>
+    <div style="flex:1;min-width:260px">
+      <div class="eyebrow" style="margin-bottom:7px">${G.realm} · ${G.region} · ${G.faction}</div>
+      <h1>ShadowFox</h1>
+      <p class="sub">${esc(G.recruit.motto)} Zwei Raidabende die Woche, ${G.members} Mitglieder — und ab jetzt eine Stelle, an der die Taktik wirklich steht.</p>
+      <div class="hero-chips">
+        <span class="chip">Raid <b>${esc(G.raidDays)}</b></span>
+        <span class="chip">Zeit <b>${esc(G.raidTime)}</b></span>
+        <span class="chip">Realm-Rang <b>#${r.rank.realm}</b></span>
+      </div>
+    </div>
+    <div class="progblock">
+      <div class="eyebrow" style="margin-bottom:12px">${esc(r.name)} — aktueller Tier</div>
+      ${bar("Normal",r.nhc,r.bosses,"linear-gradient(90deg,#5ec48f,#8ad9b0)")}
+      ${bar("Heroisch",r.hc,r.bosses,"linear-gradient(90deg,#6b9ce8,#9dbdf0)")}
+      ${bar("Mythisch",r.myth,r.bosses,"linear-gradient(90deg,#8f7ce8,#c0b2f5)")}
+      <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap">
+        <span class="chip">Welt <b>#${r.rank.welt}</b></span>
+        <span class="chip">EU <b>#${r.rank.eu}</b></span>
+        <span class="chip">Season 1 <b>${G.season1.myth}/${G.season1.total} M</b></span>
+      </div>
+    </div>
+  </div></section>
+
+  <div class="grid g2 fade" style="margin-bottom:34px;align-items:start">
+    ${logCard(REPORTS[0])}
+    ${signupBlock()}
+  </div>
+
+  <h2 class="sec">Wo finde ich was?</h2>
+  <p class="sec-sub">Fünf Klicks decken fast alles ab. Für den Rest: <kbd class="kk">${KEY}</kbd> drücken und tippen.</p>
+  <div class="tiles fade" style="margin-bottom:34px">
+    <a class="tile" href="#/raid"><span class="ic">🎯</span><b>Taktik zum aktuellen Boss</b><span>${esc(prog.n)} — Ansagen nach Rolle</span></a>
+    <a class="tile" href="#/termine"><span class="ic">📅</span><b>Wann raiden wir?</b><span>${esc(G.raidDays)}, ${esc(G.raidTime)}</span></a>
+    <a class="tile" href="#/tracker"><span class="ic">📈</span><b>Wer ist wie aktiv?</b><span>Item Level, M+, Vault, Anwesenheit</span></a>
+    <a class="tile" href="#/wissen"><span class="ic">📖</span><b>Regeln & Setup</b><span>Addons, Loot, Konsum, Onboarding</span></a>
+  </div>
+
+  <h2 class="sec">Unsere Profile</h2>
+  <p class="sec-sub">Die echten externen Seiten der Gilde — genau von hier kommen die Daten oben.</p>
+  <div class="links fade">
+    ${ext(G.links.rio,"📊 Raider.IO")}${ext(G.links.wcl,"📈 Warcraft Logs")}
+    ${ext(G.links.wowp,"📋 WoWProgress")}${ext(G.links.armory,"🛡️ Arsenal")}
+    ${ext(G.links.zone,"🗺️ Raid auf Wowhead")}
+  </div>`;
+},
+
+raid(){
+  const r=G.raid;
+  return `
+  <div class="page-h fade">
+    <h1>${esc(r.name)}</h1>
+    <p>${esc(r.en)} · ${r.bosses} Bosse · ${esc(r.zone)} · seit ${esc(r.release)}.
+       Jeder Boss hat die Kernidee, die konkreten Ansagen nach Rolle und die Fähigkeitennamen. Klick einen Boss an.</p>
+    <div class="hero-chips" style="margin-top:14px">
+      <span class="chip">Normal <b>${r.nhc}/${r.bosses}</b></span>
+      <span class="chip">Heroisch <b>${r.hc}/${r.bosses}</b></span>
+      <span class="chip">Mythisch <b>${r.myth}/${r.bosses}</b></span>
+    </div>
+  </div>
+  <div class="fade">
+  ${BOSSES.map((b,i)=>{const s=ST[b.st];return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
+    <button class="bhead" onclick="document.getElementById('b${i}').classList.toggle('open')">
+      <span class="bnum">${i+1}</span>
+      <span class="bname"><b>${esc(b.n)}</b><span>${esc(b.role)} · ${esc(b.en)}</span></span>
+      <span class="pill ${s.cls}"><span class="dot"></span>${s.tx}</span>
+      <svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="bbody">
+      <div class="bintro">${esc(b.intro)}</div>
+      <div class="blabel">Ansagen im Raid</div>
+      <ul class="steps">${b.pts.map(([ro,tx])=>`<li class="step"><span class="rtag r-${ro.toLowerCase()}">${ro}</span><p>${tx}</p></li>`).join("")}</ul>
+      <div class="blabel">Fähigkeiten</div>
+      <div class="abils">${b.abil.map(a=>`<span class="abil">${esc(a)}</span>`).join("")}</div>
+      ${b.warn?`<div class="warn">⚠️ ${esc(b.warn)}</div>`:""}
+      <div class="links">${ext(WH(b.slug),"Wowhead-Guide (DE)")}${ext(G.links.wcl,"Unsere Logs")}</div>
+    </div></div>`;}).join("")}
+  </div>`;
+},
+
+termine(){
+  return `
+  <div class="page-h fade">
+    <h1>Termine & Anmeldung</h1>
+    <p>Wir raiden ${esc(G.raidDays)} von ${esc(G.raidTime)}. Angemeldet wird weiterhin über Raid-Helper im Discord — hier steht nur derselbe Stand, nur lesbar.</p>
+  </div>
+  <div class="fade" style="margin-bottom:30px">${signupBlock()}</div>
+  <h2 class="sec">Kommende Termine</h2>
+  <p class="sec-sub">Käme später direkt aus der Event-Liste eures Raid-Helper-Servers.</p>
+  <div class="grid fade" style="margin-bottom:34px">
+    ${TERMINE.map(t=>`<div class="card" style="display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+      <div style="min-width:140px"><div style="font-size:16px;font-weight:650">${esc(t.d)}</div>
+        <div class="muted" style="font-size:12.5px">${esc(t.dt)}</div></div>
+      <div style="min-width:110px"><span class="pill p-blue">${esc(t.t)}</span></div>
+      <div style="flex:1;min-width:200px"><div style="font-size:14px;font-weight:600">${esc(t.z)}</div>
+        <div class="muted" style="font-size:12.5px">${esc(t.n)}</div></div>
+    </div>`).join("")}
+  </div>
+  <h2 class="sec">Vor dem Raid</h2>
+  <p class="sec-sub">Wenn das sitzt, verlieren wir keine 20 Minuten am Anfang des Abends.</p>
+  <div class="card fade">
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:11px">
+      ${CHECK.map((c,i)=>`<li style="display:flex;gap:12px;align-items:flex-start">
+        <span style="flex-shrink:0;width:22px;height:22px;border-radius:6px;background:var(--amber-bg);border:1px solid rgba(234,181,78,.3);color:var(--amber);display:grid;place-items:center;font-size:11px;font-family:var(--mono);margin-top:1px">${i+1}</span>
+        <span style="font-size:13.5px;color:var(--tx2)">${esc(c)}</span></li>`).join("")}
+    </ul>
+  </div>`;
+}
+};
+
+Object.assign(views,{
+
+tracker(){
+  const maxI=Math.max(...KADER.map(p=>p.ilvl)), maxM=Math.max(...KADER.map(p=>p.mp));
+  const topI=[...KADER].sort((a,b)=>b.ilvl-a.ilvl).slice(0,8);
+  const topM=[...KADER].sort((a,b)=>b.mp-a.mp).slice(0,8);
+  const slack=KADER.filter(p=>p.att<80||p.mr<4||!p.wl).sort((a,b)=>a.att-b.att);
+  return `
+  <div class="page-h fade">
+    <h1>Aktivitäts-Tracker</h1>
+    <p>Wer ist vorbereitet, wer schleift mit? Item Level, Mythic-Plus-Runs der Woche, Great Vault, Anwesenheit und gepflegte Wishlist — alles in einer Tabelle, sortierbar per Klick auf die Spaltenüberschrift.</p>
+  </div>
+
+  <div class="info fade">
+    <b>Namen, Klassen und Gildenränge sind echt</b> — direkt aus der Raider.IO-API eurer Gilde.
+    Die Zahlen sind Beispielwerte: Season 2 ist gerade erst gestartet, alle echten M+-Scores stehen noch auf 0.
+    Sobald WoWAudit und die Blizzard-API angebunden sind, füllt sich das hier von selbst.
+    <span class="src">ilvl + M+ → Raider.IO · Runs/Woche → Blizzard mythic-keystone-profile · Attendance + Wishlist → WoWAudit</span>
+  </div>
+
+  <div class="grid g4 fade" style="margin-bottom:22px">
+    ${[["Kader",KADER.length,"Charaktere"],
+       ["Ø Item Level",(KADER.reduce((s,p)=>s+p.ilvl,0)/KADER.length).toFixed(1),"über den Kader"],
+       ["Ø Anwesenheit",Math.round(KADER.reduce((s,p)=>s+p.att,0)/KADER.length)+" %","letzte 16 Raids"],
+       ["Auffällig",slack.length,"unter der Erwartung"]]
+      .map(([l,v,s])=>`<div class="card"><div class="eyebrow" style="margin-bottom:5px">${l}</div>
+        <div style="font-size:25px;font-weight:700;letter-spacing:-.9px">${v}</div>
+        <div class="muted" style="font-size:12px">${s}</div></div>`).join("")}
+  </div>
+
+  <div class="tw fade" style="margin-bottom:30px">
+    <table class="trk" id="trk">
+      <thead><tr>
+        <th data-k="n" data-t="s">Spieler</th>
+        <th data-k="r" data-t="s">Rolle</th>
+        <th data-k="ilvl" class="act">Item Level <span class="ar">▼</span></th>
+        <th data-k="mp">M+ Score</th>
+        <th data-k="mr">M+ Woche</th>
+        <th data-k="v">Vault</th>
+        <th data-k="att">Anwesend</th>
+        <th data-k="wl">WL</th>
+        <th data-k="att">Status</th>
+      </tr></thead>
+      <tbody id="trkb"></tbody>
+    </table>
+  </div>
+
+  <div class="grid g2 fade" style="margin-bottom:30px">
+    <div>
+      <h2 class="sec">Item-Level-Ranking</h2><p class="sec-sub">Top 8 im Kader ${DEMO()}</p>
+      ${topI.map((p,i)=>`<div class="rank${i<3?' top':''}">
+        <span class="pos">${i+1}</span>
+        <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
+        <span class="mini"><i style="width:${Math.round(p.ilvl/maxI*100)}%;background:${col(p.c)}"></i></span>
+        <span class="vl">${p.ilvl}</span></div>`).join("")}
+    </div>
+    <div>
+      <h2 class="sec">Mythic-Plus-Ranking</h2><p class="sec-sub">Top 8 im Kader ${DEMO()}</p>
+      ${topM.map((p,i)=>`<div class="rank${i<3?' top':''}">
+        <span class="pos">${i+1}</span>
+        <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
+        <span class="mini"><i style="width:${Math.round(p.mp/maxM*100)}%;background:${col(p.c)}"></i></span>
+        <span class="vl">${p.mp}</span></div>`).join("")}
+    </div>
+  </div>
+
+  <h2 class="sec">Wer braucht einen Anstoß?</h2>
+  <p class="sec-sub">Automatisch gefiltert: unter 80 % Anwesenheit, weniger als 4 M+-Runs oder keine gepflegte Wishlist. ${DEMO()}</p>
+  <div class="tw fade">
+    <table class="trk" style="min-width:600px"><thead><tr>
+      <th style="cursor:default">Spieler</th><th style="cursor:default">Anwesenheit</th>
+      <th style="cursor:default">M+ diese Woche</th><th style="cursor:default">Wishlist</th>
+      <th style="cursor:default">Worum es geht</th></tr></thead>
+      <tbody>${slack.map(p=>`<tr>
+        <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
+          <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
+        <td class="num" style="color:${p.att<80?'var(--red)':'var(--tx)'}">${p.att} %</td>
+        <td class="num" style="color:${p.mr<4?'var(--amber)':'var(--tx)'}">${p.mr} / 8</td>
+        <td>${p.wl?'<span class="amp a-ok"><span class="b"></span>gepflegt</span>':'<span class="amp a-bad"><span class="b"></span>fehlt</span>'}</td>
+        <td style="white-space:normal;font-size:12.5px">${
+          [p.att<80?"selten da":null,p.mr<4?"kaum M+":null,!p.wl?"Wishlist fehlt":null].filter(Boolean).join(" · ")}</td>
+      </tr>`).join("")}</tbody></table>
+  </div>
+
+  <h2 class="sec" style="margin-top:36px">Woher die Daten kämen</h2>
+  <p class="sec-sub">Alles unten ist recherchiert und existiert wirklich. Grün heißt: funktioniert ohne Anmeldung.</p>
+  <div class="imap fade">
+    ${INTEGR.map(x=>`<div class="ibox">
+      <div class="ih"><span style="font-size:17px">${x.i}</span><b>${esc(x.n)}</b>
+        <span class="tag-live t-${x.st}">${esc(x.stt)}</span></div>
+      <p>${esc(x.d)}</p><code>${esc(x.c)}</code></div>`).join("")}
+  </div>`;
+},
+
+logs(){
+  return `
+  <div class="page-h fade">
+    <h1>Raid-Logs</h1>
+    <p>Jeder Raidabend als Karte: Kills, Wipes, Dauer und die besten Parses. Nach dem Raid würde der neueste Report automatisch hier und auf der Startseite auftauchen — ohne dass jemand einen Link posten muss.</p>
+  </div>
+  <div class="info fade">
+    <b>So läuft die Automatik:</b> Ein nächtlicher Job holt sich per OAuth ein Token von Warcraft Logs und fragt die letzten Reports eurer Gilde ab. Das Ergebnis wird als Datei abgelegt — die Website selbst spricht nie mit der API, also gibt es auch kein Limit-Problem und kein Secret im Browser.
+    <span class="src">POST /oauth/token → POST /api/v2/client { reportData { reports(guildName:"ShadowFox", guildServerSlug:"blackmoore", guildServerRegion:"EU") } }</span>
+  </div>
+  <div class="fade" style="margin-bottom:24px">${logCard(REPORTS[0])}</div>
+  <h2 class="sec">Frühere Abende</h2><p class="sec-sub">${DEMO()}</p>
+  <div class="grid fade">
+    ${REPORTS.slice(1).map(r=>`<div class="card" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <div style="min-width:100px"><div class="num" style="font-size:13.5px">${esc(r.d)}</div>
+        <div class="muted" style="font-size:12px">${r.dur}</div></div>
+      <div style="flex:1;min-width:180px"><div style="font-size:14px;font-weight:650">${esc(r.t)}</div>
+        <div class="muted" style="font-size:12.5px">${esc(r.diff)}</div></div>
+      <div style="display:flex;gap:7px;flex-wrap:wrap">
+        <span class="chip">Kills <b>${r.kills}</b></span>
+        <span class="chip">Wipes <b>${r.wipes}</b></span>
+        <span class="chip">Ø <b>${r.avg}</b></span></div>
+      ${ext(G.links.wcl,"Report")}
+    </div>`).join("")}
+  </div>`;
+},
+
+roster(){
+  const max=CLASSES[0][1];
+  const byRole=r=>KADER.filter(p=>p.r===r);
+  return `
+  <div class="page-h fade">
+    <h1>Roster</h1>
+    <p>${G.members} Charaktere in der Gilde, davon ${KADER.length} im Raidkader. Namen, Klassen und Gildenränge kommen live aus der Raider.IO-API, Stand ${esc(G.stand)}.</p>
+  </div>
+
+  <h2 class="sec">Der Kader</h2>
+  <p class="sec-sub">Jeder mit ein bis zwei Sätzen. Die Texte schreibt ihr — ich kenne eure Leute nicht.</p>
+  ${["Tank","Heal","Melee","Ranged"].map(r=>{
+    const g=byRole(r); if(!g.length) return "";
+    return `<div style="margin-bottom:26px" class="fade">
+      <div class="rgroup-h" style="display:flex;align-items:center;gap:9px;margin-bottom:11px">
+        <span style="width:9px;height:9px;border-radius:3px;background:${ROLLEN[r]}"></span>
+        <b style="font-size:13.5px">${r}</b>
+        <em style="font-style:normal;font-size:11.5px;color:var(--tx3);font-family:var(--mono)">${g.length}</em>
+      </div>
+      <div class="rcards">
+        ${g.map(p=>`<div class="rcard">
+          <span class="rav" style="background:${col(p.c)}">${esc(p.n[0])}</span>
+          <div style="min-width:0">
+            <div class="hd"><b style="color:${col(p.c)}">${esc(p.n)}</b><em>${esc(p.c)}</em>
+              ${p.note?`<span class="pill p-gray">${esc(p.note)}</span>`:""}</div>
+            ${p.bio?`<p>${esc(p.bio)}</p>`:`<p class="ph">Hier stehen ein, zwei Sätze: seit wann dabei, welche Rolle im Raid, wofür man ihn oder sie anspricht. Im Redaktionssystem unter <b>Raid-Kader</b> eintragen.</p>`}
+            ${p.ilvl?`<div class="kbtags" style="margin-top:8px"><span class="kbtag">ilvl ${p.ilvl}</span>${p.mp?`<span class="kbtag">M+ ${p.mp}</span>`:""}${p.spec?`<span class="kbtag">${esc(p.spec)}</span>`:""}</div>`:""}
+          </div></div>`).join("")}
+      </div></div>`;}).join("")}
+
+  <h2 class="sec" style="margin-top:34px">Klassenverteilung der ganzen Gilde</h2>
+  <p class="sec-sub">Alle ${G.members} Charaktere inklusive Twinks — echte Zahlen.</p>
+  <div class="card fade" style="margin-bottom:24px">
+    ${CLASSES.map(([n,c,cl])=>`<div class="clsrow">
+      <span class="n" style="color:${cl}">${esc(n)}</span>
+      <span class="bar"><span class="bf" style="width:${Math.round(c/max*100)}%;background:${cl}"></span></span>
+      <span class="c">${c}</span></div>`).join("")}
+  </div>
+  <div class="grid g2 fade">
+    <div class="card"><div class="eyebrow">Was auffällt</div>
+      <p class="soft" style="font-size:13.5px">Dämonenjäger und Druiden stellen zusammen ein Viertel der Gilde. Rufer sind mit 4 Charakteren am dünnsten — passend dazu steht Rufer auch auf der Suchliste.</p></div>
+    <div class="card"><div class="eyebrow">Zum Kader</div>
+      <p class="soft" style="font-size:13.5px">Der Kader oben ist aus den Gildenrängen 0 bis 5 abgeleitet — Rang 2 sieht nach einer reinen Twink-Stufe aus und ist deshalb raus. Wenn das nicht stimmt, sag Bescheid, dann korrigiere ich die Zuordnung.</p></div>
+  </div>`;
+},
+
+wissen(){
+  return `
+  <div class="page-h fade">
+    <h1>Wissen</h1>
+    <p>Alles, was sonst im Discord nach drei Tagen nicht mehr auffindbar ist. Einmal geschrieben, dauerhaft da — und über <kbd class="kk">${KEY}</kbd> in zwei Sekunden gefunden.</p>
+  </div>
+  <div class="grid g2 fade">
+    ${KB.map(k=>`<div class="kbcard">
+      <h3><span>${k.i}</span>${esc(k.t)} ${k.todo?`<span class="pill p-gray" style="margin-left:auto">Vorlage</span>`:""}</h3>
+      <p>${esc(k.d)}</p>
+      <div class="kbtags">${k.tags.map(t=>`<span class="kbtag">${esc(t)}</span>`).join("")}</div>
+    </div>`).join("")}
+  </div>
+  <div class="warn fade" style="margin-top:20px">Diese acht Artikel sind Gerüste. Inhalte kenne ich nicht — die kommen von euch, und dann steht das Wissen der Gilde an einem Ort statt in dreißig Channels.</div>`;
+},
+
+bewerben(){
+  return `
+  <div class="page-h fade">
+    <h1>Bewerben</h1>
+    <p>${esc(G.recruit.motto)} Wir raiden ${esc(G.raidDays)} von ${esc(G.raidTime)} und suchen Leute, die zuverlässig da sind und dazulernen wollen — nicht Leute, die perfekt sind.</p>
+  </div>
+  <div class="grid g2 fade">
+    <div>
+      <div class="eyebrow">Aktuell gesucht</div>
+      <div class="grid" style="margin-bottom:22px">
+        ${G.recruit.open.map(c=>{const cl=CLASSES.find(x=>x[0]===c);
+          return `<div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 18px">
+            <div style="display:flex;align-items:center;gap:11px">
+              <span style="width:10px;height:10px;border-radius:3px;background:${cl?cl[2]:'#888'}"></span>
+              <div><b style="font-size:14.5px">${esc(c)}</b>
+                <div class="muted" style="font-size:12.5px">Schadensausteiler${cl?` · aktuell ${cl[1]} in der Gilde`:""}</div></div></div>
+            <span class="pill p-amber">Offen</span></div>`;}).join("")}
+      </div>
+      <div class="card"><div class="eyebrow">Direkter Draht</div>
+        <p class="soft" style="font-size:13.5px;margin-bottom:12px">Schreib einen von beiden auf Discord an — oder nutz das Formular.</p>
+        <div class="links">${G.recruit.contacts.map(c=>`<span class="lchip">💬 ${esc(c)}</span>`).join("")}</div></div>
+    </div>
+    <div class="card">
+      <div class="eyebrow">Bewerbungsformular</div>
+      <div class="grid g2" style="gap:0 12px">
+        <div class="field"><label>Charaktername</label><input placeholder="z. B. Nachtklinge"></div>
+        <div class="field"><label>Realm</label><input placeholder="Blackmoore"></div></div>
+      <div class="grid g2" style="gap:0 12px">
+        <div class="field"><label>Klasse & Spec</label><input placeholder="Rufer, Verheerung"></div>
+        <div class="field"><label>Discord</label><input placeholder="dein.name"></div></div>
+      <div class="field"><label>Warcraft-Logs- oder Raider.IO-Link</label><input placeholder="https://…"></div>
+      <div class="field"><label>Kurz zu dir</label><textarea placeholder="Raiderfahrung, was du suchst, warum ShadowFox …"></textarea></div>
+      <button class="btn btn-p" style="width:100%;justify-content:center" onclick="alert('Vorab-Ansicht — später landet die Bewerbung automatisch als Post im Officer-Channel eures Discords.')">Bewerbung absenden</button>
+      <p class="muted" style="font-size:12px;margin-top:11px;text-align:center">Später: landet automatisch im Officer-Channel.</p>
+    </div>
+  </div>`;
+}
+});
+
+/* =====================================================================
+   TRACKER-TABELLE (sortierbar)
+   ===================================================================== */
+let sortKey="ilvl", sortDir=-1;
+function ampel(p){
+  const bad = p.att<70 || (!p.wl && p.mr<3);
+  const warn = p.att<85 || p.mr<4 || !p.wl;
+  return bad ? `<span class="amp a-bad"><span class="b"></span>Nachhaken</span>`
+     : warn ? `<span class="amp a-warn"><span class="b"></span>Grenzfall</span>`
+            : `<span class="amp a-ok"><span class="b"></span>Passt</span>`;
+}
+function renderTrk(){
+  const tb=document.getElementById("trkb"); if(!tb) return;
+  const maxI=Math.max(...KADER.map(p=>p.ilvl)), maxM=Math.max(...KADER.map(p=>p.mp));
+  const rows=[...KADER].sort((a,b)=>{
+    const x=a[sortKey], y=b[sortKey];
+    if(typeof x==="string") return x.localeCompare(y)*sortDir*-1;
+    return (x-y)*sortDir;
+  });
+  tb.innerHTML=rows.map(p=>`<tr>
+    <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
+      <span><b>${esc(p.n)}</b><i>${esc(p.c)}${p.note?" · "+esc(p.note):""}</i></span></span></td>
+    <td><span style="color:${ROLLEN[p.r]};font-weight:600;font-size:12px">${p.r}</span></td>
+    <td><span class="mini"><i style="width:${Math.round(p.ilvl/maxI*100)}%;background:${col(p.c)}"></i></span><span class="num">${p.ilvl}</span></td>
+    <td><span class="mini"><i style="width:${Math.round(p.mp/maxM*100)}%;background:var(--violet)"></i></span><span class="num">${p.mp}</span></td>
+    <td><span class="num" style="color:${p.mr<4?'var(--amber)':'var(--tx)'}">${p.mr} / 8</span></td>
+    <td><span class="vault">${[0,1,2].map(i=>`<span class="vslot${i<p.v?' on':''}"></span>`).join("")}</span></td>
+    <td><span class="num" style="color:${p.att<80?'var(--red)':p.att<90?'var(--amber)':'var(--green)'}">${p.att} %</span></td>
+    <td>${p.wl?'<span style="color:var(--green)">✓</span>':'<span style="color:var(--red)">✕</span>'}</td>
+    <td>${ampel(p)}</td></tr>`).join("");
+  document.querySelectorAll("#trk th[data-k]").forEach(th=>{
+    const on=th.dataset.k===sortKey;
+    th.classList.toggle("act",on);
+    const ar=th.querySelector(".ar");
+    if(on&&!ar) th.insertAdjacentHTML("beforeend",` <span class="ar">${sortDir<0?"▼":"▲"}</span>`);
+    else if(on&&ar) ar.textContent=sortDir<0?"▼":"▲";
+    else if(ar) ar.remove();
+  });
+}
+function bindTrk(){
+  document.querySelectorAll("#trk th[data-k]").forEach(th=>{
+    th.onclick=()=>{
+      const k=th.dataset.k;
+      if(k===sortKey) sortDir*=-1; else {sortKey=k; sortDir=-1;}
+      renderTrk();
+    };
+  });
+  renderTrk();
+}
+
+/* =====================================================================
+   DATEN LADEN
+   Alle Inhalte kommen aus content/ (von euch gepflegt)
+   und data/ (von der GitHub Action geholt).
+   Fehlt eine Datei, greifen die oben eingebauten Werte — die Seite
+   funktioniert also immer, auch beim allerersten Aufruf.
+   ===================================================================== */
+const CLS_DE={Warrior:"Krieger",Paladin:"Paladin",Hunter:"Jäger",Rogue:"Schurke",
+  Priest:"Priester","Death Knight":"Todesritter",Shaman:"Schamane",Mage:"Magier",
+  Warlock:"Hexenmeister",Monk:"Mönch",Druid:"Druide","Demon Hunter":"Dämonenjäger",Evoker:"Rufer"};
+const ROLE_DE={TANK:"Tank",HEALING:"Heal",MELEE:"Melee",RANGED:"Ranged"};
+
+let LIVE={content:0,data:0,stand:null,quellen:{}};
+
+async function load(path){
+  try{
+    const r=await fetch(path,{cache:"no-cache"});
+    if(!r.ok) return null;
+    return await r.json();
+  }catch{ return null; }
+}
+
+function applyContent(c){
+  if(c.site){
+    const s=c.site;
+    Object.assign(G,{name:s.name??G.name,realm:s.realm??G.realm,region:s.region??G.region,
+      faction:s.faction??G.faction,raidDays:s.raidDays??G.raidDays,raidTime:s.raidTime??G.raidTime});
+    if(s.raid) Object.assign(G.raid,s.raid);
+    if(s.links) Object.assign(G.links,s.links);
+    if(s.recruit) Object.assign(G.recruit,s.recruit);
+    if(s.motto) G.recruit.motto=s.motto;
+    if(Array.isArray(s.checkliste)&&s.checkliste.length) CHECK.splice(0,CHECK.length,...s.checkliste);
+    LIVE.content++;
+  }
+  if(c.bosses?.bosses?.length){
+    BOSSES.splice(0,BOSSES.length,...c.bosses.bosses.map(b=>({
+      n:b.name,en:b.nameEn||"",st:b.status||"open",role:b.rolle||"",slug:b.slug||"",
+      intro:b.intro||"",pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
+      abil:b.faehigkeiten||[],warn:b.hinweis||undefined})));
+    LIVE.content++;
+  }
+  if(c.wissen?.artikel?.length){
+    KB.splice(0,KB.length,...c.wissen.artikel.map(a=>({
+      i:a.icon||"📄",t:a.titel,d:a.text,tags:a.tags||[],todo:!!a.vorlage})));
+    LIVE.content++;
+  }
+  if(c.termine?.termine?.length){
+    TERMINE.splice(0,TERMINE.length,...c.termine.termine.map(t=>({
+      d:t.tag,dt:t.datum,t:t.zeit,z:t.instanz,n:t.fokus})));
+    LIVE.content++;
+  }
+  if(c.integrationen?.quellen?.length){
+    INTEGR.splice(0,INTEGR.length,...c.integrationen.quellen.map(q=>({
+      i:q.icon,n:q.name,st:q.status,stt:q.statusText,d:q.beschreibung,c:q.endpunkt})));
+    LIVE.content++;
+  }
+  if(c.raider?.raider?.length){
+    KADER.splice(0,KADER.length,...c.raider.raider.filter(r=>r.aktiv!==false).map(r=>({
+      n:r.name,c:r.klasse,rk:r.gildenrang??9,r:r.rolle||"Ranged",note:r.notiz||"",
+      bio:r.vorstellung||"",ilvl:0,mp:0,mr:0,v:0,att:0,wl:0,demo:true})));
+    LIVE.content++;
+  }
+}
+
+function applyData(d){
+  /* --- Raider.IO: Gildenprofil --- */
+  if(d.guild){
+    const g=d.guild, key=G.raid.rioKey||"the-venomous-abyss", prev=G.raid.rioKeyPrev||"tier-mn-1";
+    const p=g.raidProgression?.[key];
+    if(p){ G.raid.nhc=p.normal_bosses_killed; G.raid.hc=p.heroic_bosses_killed;
+           G.raid.myth=p.mythic_bosses_killed; G.raid.bosses=p.total_bosses||G.raid.bosses; }
+    const rr=g.raidRankings?.[key];
+    const best=rr?.mythic?.realm?rr.mythic:rr?.heroic?.realm?rr.heroic:rr?.normal;
+    if(best) G.raid.rank={welt:fmt(best.world),eu:fmt(best.region),realm:String(best.realm)};
+    const pv=g.raidProgression?.[prev];
+    if(pv){ G.season1.myth=pv.mythic_bosses_killed; G.season1.total=pv.total_bosses; }
+    if(g.memberCount) G.members=g.memberCount;
+    if(g.classCount&&Object.keys(g.classCount).length){
+      const rows=Object.entries(g.classCount)
+        .map(([en,n])=>[CLS_DE[en]||en,n,(CLASSES.find(c=>c[0]===(CLS_DE[en]||en))||[])[2]||"#888"])
+        .sort((a,b)=>b[1]-a[1]);
+      CLASSES.splice(0,CLASSES.length,...rows);
+    }
+    LIVE.data++;
+  }
+
+  /* --- Raider.IO: Charaktere --- */
+  if(d.roster?.characters?.length){
+    for(const c of d.roster.characters){
+      const p=KADER.find(x=>x.n===c.name);
+      if(!p) continue;
+      if(c.ilvl) p.ilvl=c.ilvl;
+      if(typeof c.mplus==="number") p.mp=c.mplus;
+      if(c.class) p.c=CLS_DE[c.class]||c.class;
+      if(c.role&&ROLE_DE[c.role]&&!p.rolleFest) p.rioRole=ROLE_DE[c.role];
+      p.spec=c.spec||"";
+      p.demo=false;
+    }
+    LIVE.data++;
+  }
+
+  /* --- Blizzard: M+-Runs der Woche --- */
+  if(d.blizzard?.weeklyKeys?.length){
+    for(const k of d.blizzard.weeklyKeys){
+      const p=KADER.find(x=>x.n===k.name);
+      if(!p) continue;
+      p.mr=k.runsThisWeek; p.v=Math.min(3,Math.floor(k.runsThisWeek/2)); p.demo=false;
+    }
+    LIVE.data++;
+  }
+
+  /* --- WoWAudit: Anwesenheit und Wishlist --- */
+  if(d.wowaudit?.characters?.length){
+    for(const c of d.wowaudit.characters){
+      const p=KADER.find(x=>x.n===c.name);
+      if(!p) continue;
+      if(c.ilvl) p.ilvl=c.ilvl;
+      if(c.wishlist!=null) p.wl=c.wishlist?1:0;
+      if(c.vault!=null&&typeof c.vault==="number") p.v=c.vault;
+      p.demo=false;
+    }
+    const att=d.wowaudit.attendance;
+    const list=Array.isArray(att)?att:(att?.characters||att?.attendance||[]);
+    for(const a of (list||[])){
+      const p=KADER.find(x=>x.n===(a.name||a.character_name));
+      if(!p) continue;
+      const v=a.attendance??a.percentage??a.value;
+      if(typeof v==="number") p.att=v<=1?Math.round(v*100):Math.round(v);
+      p.demo=false;
+    }
+    LIVE.data++;
+  }
+
+  /* --- Warcraft Logs --- */
+  if(d.logs?.reports?.length){
+    REPORTS.splice(0,REPORTS.length,...d.logs.reports.map((r,i)=>({
+      code:r.code,url:r.url,d:deDate(r.date),t:r.zone||r.title,diff:r.difficulty,
+      kills:r.kills,wipes:r.wipes,dur:r.duration,
+      avg:r.bestTryPct!=null?r.bestTryPct:"—",
+      best:r.bestTryPct,killed:r.killedBosses||[],live:i===0,top:null})));
+    LIVE.data++;
+  }
+
+  /* --- Raid-Helper --- */
+  if(d.events?.events?.length){
+    const e=d.events.events.find(x=>x.unixtime*1000>Date.now()-6*3600e3)||d.events.events[0];
+    EVENT.title=e.title||EVENT.title;
+    EVENT.time=e.time||EVENT.time;
+    EVENT.leader=e.leader||EVENT.leader;
+    EVENT.dateLabel=deDateShort(e.date);
+    EVENT.url=e.url||null;
+    EVENT.signups=(e.signups||[]).map(s=>({
+      name:s.name,cls:CLS_DE[s.cls]||s.cls||"",role:mapRole(s.role),status:s.status}));
+    EVENT.live=true;
+    if(d.events.events.length){
+      TERMINE.splice(0,TERMINE.length,...d.events.events.slice(0,4).map(x=>({
+        d:weekday(x.unixtime),dt:deDateShort(x.date),t:x.time+" Uhr",
+        z:x.title||"Raid",n:`${x.counts?.primary??0} zugesagt`})));
+    }
+    LIVE.data++;
+  }
+}
+
+const fmt=n=>Number(n).toLocaleString("de-DE");
+const deDate=s=>{const[a,b,c]=String(s).split("-");return c?`${c}.${b}.${a}`:s;};
+const deDateShort=s=>{const p=String(s).split("-");
+  return p.length===3?`${String(p[0]).padStart(2,"0")}.${String(p[1]).padStart(2,"0")}.`:s;};
+const weekday=u=>["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag"][new Date(u*1000).getDay()];
+function mapRole(r){
+  const s=String(r||"").toLowerCase();
+  if(s.includes("tank"))return "Tank";
+  if(s.includes("heal"))return "Heal";
+  if(s.includes("melee"))return "Melee";
+  if(s.includes("range")||s.includes("ranged"))return "Ranged";
+  return "Ranged";
+}
+
+function notice(){
+  const el=document.getElementById("notice");
+  if(!LIVE.data&&!LIVE.content){
+    el.innerHTML=`Vorschau mit eingebauten Startwerten — sobald die Seite auf Cloudflare läuft, kommen die Daten aus den APIs`;
+    return;
+  }
+  const q=Object.entries(LIVE.quellen||{}).filter(([,v])=>v).map(([k])=>({
+    raiderio:"Raider.IO",raidhelper:"Raid-Helper",warcraftlogs:"Warcraft Logs",
+    wowaudit:"WoWAudit",blizzard:"Blizzard"}[k])).filter(Boolean);
+  const stand=LIVE.stand?new Date(LIVE.stand).toLocaleString("de-DE",
+    {day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"—";
+  el.innerHTML=`Daten vom ${stand} Uhr${q.length?` · ${q.join(" · ")}`:""}`;
+  el.style.background="rgba(94,196,143,.09)";
+  el.style.borderBottomColor="rgba(94,196,143,.2)";
+  el.style.color="#5ec48f";
+}
+
+/* =====================================================================
+   ROUTER
+   ===================================================================== */
+document.getElementById("nav").innerHTML=NAV.map(([k,l])=>`<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
+function route(){
+  const k=location.hash.replace("#/","")||"start";
+  document.getElementById("view").innerHTML=(views[k]||views.start)();
+  document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("on",a.dataset.k===k));
+  document.querySelectorAll(".kk").forEach(e=>e.textContent=KEY);
+  if(k==="tracker") bindTrk();
+  window.scrollTo({top:0,behavior:"instant"});
+}
+addEventListener("hashchange",route);
+
+/* =====================================================================
+   SUCHE
+   ===================================================================== */
+let INDEX=[];
+function buildIndex(){
+  INDEX=[
+    ...BOSSES.flatMap((b,i)=>[
+      {i:"🐍",t:b.n,s:`Boss ${i+1} · ${b.role} · ${(ST[b.st]||ST.open).tx}`,c:"Boss",h:"#/raid",k:`${b.n} ${b.en} ${b.role} boss taktik`},
+      ...b.pts.map(([r,tx])=>({i:"📝",t:strip(tx),s:`${r} — ${b.n}`,c:"Taktik",h:"#/raid",k:`${strip(tx)} ${b.n} ${r}`})),
+      ...b.abil.map(a=>({i:"✨",t:a,s:`Fähigkeit — ${b.n}`,c:"Ability",h:"#/raid",k:`${a} ${b.n}`}))
+    ]),
+    ...KADER.map(p=>({i:"👤",t:p.n,s:`${p.c} · ${p.r}${p.note?" · "+p.note:""}`,c:"Kader",h:"#/roster",k:`${p.n} ${p.c} ${p.r} ${p.note||""} ${p.bio||""} spieler raider kader`})),
+    ...KB.map(k=>({i:k.i,t:k.t,s:k.d,c:"Wissen",h:"#/wissen",k:`${k.t} ${k.d} ${(k.tags||[]).join(" ")}`})),
+    ...TERMINE.map(t=>({i:"📅",t:`${t.d}, ${t.dt}`,s:`${t.t} · ${t.n}`,c:"Termin",h:"#/termine",k:`${t.d} ${t.dt} ${t.z} ${t.n} raid termin`})),
+    ...REPORTS.map(r=>({i:"📊",t:`${r.t} — ${r.d}`,s:`${r.kills} Kills · ${r.wipes} Wipes`,c:"Log",h:"#/logs",k:`${r.t} ${r.d} ${r.diff} log report warcraftlogs`})),
+    ...INTEGR.map(x=>({i:x.i,t:x.n,s:x.stt+" — "+x.d.slice(0,70)+"…",c:"Technik",h:"#/tracker",k:`${x.n} ${x.d} ${x.c} api integration hook`})),
+    ...CLASSES.map(([n,c])=>({i:"👥",t:n,s:`${c} Charaktere in der Gilde`,c:"Roster",h:"#/roster",k:`${n} klasse roster`})),
+    ...G.recruit.open.map(c=>({i:"🤝",t:`${c} gesucht`,s:"Offene Position im Raidkader",c:"Recruiting",h:"#/bewerben",k:`${c} bewerbung recruiting gesucht`})),
+    {i:"⏰",t:"Raidzeiten",s:`${G.raidDays}, ${G.raidTime}`,c:"Info",h:"#/termine",k:"raidzeiten wann raid uhrzeit "+G.raidDays+" "+G.raidTime},
+    {i:"📈",t:"Aktivitäts-Tracker",s:"Item Level, M+, Vault, Anwesenheit, Wishlist",c:"Seite",h:"#/tracker",k:"tracker aktivitaet aktivität ilvl item level mplus vault anwesenheit attendance wishlist slack slacker ranking"}
+  ];
+}
+
+const ovl=document.getElementById("ovl"),q=document.getElementById("q"),rb=document.getElementById("results");
+let sel=0,hits=[];
+function openS(){ovl.classList.add("on");q.value="";q.focus();draw("");}
+function closeS(){ovl.classList.remove("on");}
+document.getElementById("openS").onclick=openS;
+ovl.onclick=e=>{if(e.target===ovl)closeS();};
+function draw(term){
+  const t=term.trim().toLowerCase();
+  hits=!t?INDEX.slice(0,6):INDEX.filter(x=>x.k.toLowerCase().includes(t)).slice(0,16);
+  sel=0;
+  if(!hits.length){rb.innerHTML=`<div class="empty">Nichts gefunden für „${esc(term)}“.</div>`;return;}
+  rb.innerHTML=(!t?`<div class="eyebrow" style="padding:9px 12px 4px;margin:0">Beliebt</div>`:"")+
+    hits.map((h,i)=>`<div class="res${i===0?' sel':''}" data-i="${i}">
+      <span class="ic">${h.i}</span>
+      <span class="tx"><b>${esc(h.t)}</b><span>${esc(h.s)}</span></span>
+      <span class="cat">${h.c}</span></div>`).join("");
+  rb.querySelectorAll(".res").forEach(el=>el.onclick=()=>go(+el.dataset.i));
+}
+function go(i){if(!hits[i])return;location.hash=hits[i].h;closeS();}
+function move(d){if(!hits.length)return;sel=(sel+d+hits.length)%hits.length;
+  rb.querySelectorAll(".res").forEach((el,i)=>el.classList.toggle("sel",i===sel));
+  const c=rb.querySelector(".res.sel");if(c)c.scrollIntoView({block:"nearest"});}
+q.addEventListener("input",e=>draw(e.target.value));
+addEventListener("keydown",e=>{
+  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();ovl.classList.contains("on")?closeS():openS();return;}
+  if(!ovl.classList.contains("on"))return;
+  if(e.key==="Escape")closeS();
+  else if(e.key==="ArrowDown"){e.preventDefault();move(1);}
+  else if(e.key==="ArrowUp"){e.preventDefault();move(-1);}
+  else if(e.key==="Enter"){e.preventDefault();go(sel);}
+});
+
+/* =====================================================================
+   START
+   ===================================================================== */
+(async function boot(){
+  const names=["site","bosses","wissen","raider","termine","integrationen"];
+  const dnames=["guild","roster","events","logs","wowaudit","blizzard","status"];
+  const [c,d]=await Promise.all([
+    Promise.all(names.map(n=>load(`content/${n}.json`))).then(a=>Object.fromEntries(names.map((n,i)=>[n,a[i]]))),
+    Promise.all(dnames.map(n=>load(`data/${n}.json`))).then(a=>Object.fromEntries(dnames.map((n,i)=>[n,a[i]])))
+  ]);
+  try{ applyContent(c); }catch(e){ console.warn("content:",e); }
+  try{ applyData(d);    }catch(e){ console.warn("data:",e); }
+  if(d.status){ LIVE.stand=d.status.updatedAt; LIVE.quellen=d.status.sources||{}; }
+  buildIndex();
+  notice();
+  route();
+})();
+</script>
+</body>
+</html>

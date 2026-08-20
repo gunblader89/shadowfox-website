@@ -1,0 +1,68 @@
+{
+  "quellen": [
+    {
+      "icon": "📅",
+      "name": "Raid-Helper",
+      "status": "key",
+      "statusText": "API-Key nötig",
+      "beschreibung": "Eure bestehenden Signups aus dem Discord landen 1:1 auf der Website — Name, Klasse, Spec, Rolle, Status. Ihr ändert nichts an eurem Workflow, der Bot bleibt wie er ist.",
+      "endpunkt": "GET raid-helper.dev/api/v3/servers/{serverId}/events → dann je Event: GET raid-helper.dev/api/event/{eventId}"
+    },
+    {
+      "icon": "📊",
+      "name": "Warcraft Logs",
+      "status": "key",
+      "statusText": "OAuth Client",
+      "beschreibung": "Nach jedem Raidabend werden die neuen Reports automatisch gezogen und als Karte auf der Startseite angezeigt — inklusive Parses pro Spieler.",
+      "endpunkt": "POST warcraftlogs.com/oauth/token (client_credentials) → POST /api/v2/client mit reportData.reports(guildName:\"ShadowFox\", …)"
+    },
+    {
+      "icon": "📋",
+      "name": "WoWAudit",
+      "status": "key",
+      "statusText": "Team-Key",
+      "beschreibung": "Roster-Status, Attendance und Wishlists. Der Key ist pro Team und liegt in den Team-Einstellungen unter „API“. Achtung: erlaubt auch Schreibzugriffe — gehört niemals ins Frontend.",
+      "endpunkt": "GET wowaudit.com/v1/characters · /v1/attendance · /v1/historical_data (Header: Authorization: Bearer <Team-Key>)"
+    },
+    {
+      "icon": "🟢",
+      "name": "Raider.IO",
+      "status": "ok",
+      "statusText": "Ohne Key",
+      "beschreibung": "Item Level, M+ Score und Raid-Progress pro Charakter — ganz ohne Registrierung. Genau diese Quelle liefert schon jetzt euren echten Progress oben auf der Startseite.",
+      "endpunkt": "GET raider.io/api/v1/characters/profile?region=eu&realm=blackmoore&name=…&fields=gear,mythic_plus_scores_by_season:current"
+    },
+    {
+      "icon": "🛡️",
+      "name": "Blizzard-API",
+      "status": "key",
+      "statusText": "OAuth Client",
+      "beschreibung": "Die einzige Quelle für echte In-Game-Gildenränge und die abgeschlossenen M+-Runs der laufenden Woche. Damit wird aus „gefühlt aktiv“ eine Zahl.",
+      "endpunkt": "GET /data/wow/guild/blackmoore/shadowfox/roster · /profile/wow/character/{realm}/{name}/mythic-keystone-profile"
+    },
+    {
+      "icon": "📄",
+      "name": "Google Sheet",
+      "status": "ok",
+      "statusText": "Ohne Key",
+      "beschreibung": "Falls ihr lieber bei einem Sheet bleibt: jedes veröffentlichte Google Sheet lässt sich direkt als Datenquelle anzapfen. Ihr pflegt im Sheet, die Website liest mit.",
+      "endpunkt": "GET docs.google.com/spreadsheets/d/{ID}/gviz/tq?tqx=out:csv&sheet={Tabellenname}"
+    },
+    {
+      "icon": "🎬",
+      "name": "YouTube",
+      "status": "ok",
+      "statusText": "Ohne Key",
+      "beschreibung": "Neue Kill-Videos erscheinen automatisch, sobald sie hochgeladen sind. Kein API-Key, nur der Kanal-Feed.",
+      "endpunkt": "GET youtube.com/feeds/videos.xml?channel_id={KANAL_ID}"
+    },
+    {
+      "icon": "🏆",
+      "name": "Great Vault",
+      "status": "no",
+      "statusText": "Keine API",
+      "beschreibung": "Blizzard bietet dafür keine Schnittstelle an — die Anfrage liegt seit 2021 unbeantwortet im Forum. Der M+-Teil lässt sich aus den Wochenruns ableiten, Raid und PvP nicht. Vollständig geht es nur über WoWAudit mit dessen Addon.",
+      "endpunkt": "Ableitbar: /mythic-keystone-profile (nur M+-Anteil) · vollständig nur via WoWAudit"
+    }
+  ]
+}
