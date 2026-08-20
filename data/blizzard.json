@@ -1,0 +1,1211 @@
+{
+  "members": [
+    {
+      "name": "Chelin",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 371044
+    },
+    {
+      "name": "Grabower",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 58311683
+    },
+    {
+      "name": "Seitenleiste",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 97461373
+    },
+    {
+      "name": "Putzeimer",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 108319240
+    },
+    {
+      "name": "Thessaly",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 109002685
+    },
+    {
+      "name": "Yanalai",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 118657090
+    },
+    {
+      "name": "Gevattertod",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 120317919
+    },
+    {
+      "name": "Hatto",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 121415745
+    },
+    {
+      "name": "Shylmagognar",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 122135415
+    },
+    {
+      "name": "Xsythia",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 122775042
+    },
+    {
+      "name": "Iojaru",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 123578353
+    },
+    {
+      "name": "Tânkoderdd",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 124551596
+    },
+    {
+      "name": "Moonlord",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 127583705
+    },
+    {
+      "name": "Amhairghin",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 135539617
+    },
+    {
+      "name": "Malagigi",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 140920903
+    },
+    {
+      "name": "Tiskarian",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 150686960
+    },
+    {
+      "name": "Nimes",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 153246028
+    },
+    {
+      "name": "Jirakila",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 153844326
+    },
+    {
+      "name": "Blackbeardt",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 156078657
+    },
+    {
+      "name": "Anzu",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 156215176
+    },
+    {
+      "name": "Mooni",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 156429038
+    },
+    {
+      "name": "Biillbo",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 158328464
+    },
+    {
+      "name": "Extrawald",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 160264360
+    },
+    {
+      "name": "Charistea",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 162873225
+    },
+    {
+      "name": "Kloppa",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 163351288
+    },
+    {
+      "name": "Chantallè",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 163643876
+    },
+    {
+      "name": "Maruff",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 164026563
+    },
+    {
+      "name": "Askái",
+      "rank": 5,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 167888285
+    },
+    {
+      "name": "Kitebone",
+      "rank": 7,
+      "level": 87,
+      "class": null,
+      "race": null,
+      "id": 167988465
+    },
+    {
+      "name": "Lesscy",
+      "rank": 4,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 168184107
+    },
+    {
+      "name": "Scârlêtt",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 168226990
+    },
+    {
+      "name": "Druith",
+      "rank": 5,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 169569214
+    },
+    {
+      "name": "Oionil",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 169868528
+    },
+    {
+      "name": "Thorelion",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 170781572
+    },
+    {
+      "name": "Jirawl",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 170906434
+    },
+    {
+      "name": "Jisgarin",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 170969231
+    },
+    {
+      "name": "Nêzúko",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 171932598
+    },
+    {
+      "name": "Shalakittena",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 171988479
+    },
+    {
+      "name": "Mondbrunnen",
+      "rank": 7,
+      "level": 85,
+      "class": null,
+      "race": null,
+      "id": 172026760
+    },
+    {
+      "name": "Aszunâ",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172055837
+    },
+    {
+      "name": "Tanjírô",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172130947
+    },
+    {
+      "name": "Pepelim",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172497353
+    },
+    {
+      "name": "Yoruíchí",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172579325
+    },
+    {
+      "name": "Luzaría",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172616171
+    },
+    {
+      "name": "Yachíru",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172617035
+    },
+    {
+      "name": "Kischali",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 172762880
+    },
+    {
+      "name": "Xelpheni",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 173076013
+    },
+    {
+      "name": "Sweetschi",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 173636596
+    },
+    {
+      "name": "Mufflón",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 173826580
+    },
+    {
+      "name": "Dengamo",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 173920002
+    },
+    {
+      "name": "Günterle",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 173993613
+    },
+    {
+      "name": "Geraltvriva",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174130483
+    },
+    {
+      "name": "Ayvee",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174291019
+    },
+    {
+      "name": "Brokkolii",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174338110
+    },
+    {
+      "name": "Corvispala",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174639872
+    },
+    {
+      "name": "Fruchtzwerg",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174712460
+    },
+    {
+      "name": "Nez",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 174857600
+    },
+    {
+      "name": "Althara",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174860688
+    },
+    {
+      "name": "Mercrixxus",
+      "rank": 1,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 174956982
+    },
+    {
+      "name": "Charmzzdh",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 175368164
+    },
+    {
+      "name": "Celes",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 175521141
+    },
+    {
+      "name": "Gizzlewiz",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 175807184
+    },
+    {
+      "name": "Yanalaira",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 175940247
+    },
+    {
+      "name": "Vay",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176024687
+    },
+    {
+      "name": "Kâtharinâ",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176036898
+    },
+    {
+      "name": "Tylanas",
+      "rank": 7,
+      "level": 81,
+      "class": null,
+      "race": null,
+      "id": 176036966
+    },
+    {
+      "name": "Gùldash",
+      "rank": 2,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 176149706
+    },
+    {
+      "name": "Hòbs",
+      "rank": 0,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176149888
+    },
+    {
+      "name": "Narez",
+      "rank": 3,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 176334749
+    },
+    {
+      "name": "Garódash",
+      "rank": 1,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176407487
+    },
+    {
+      "name": "Duurza",
+      "rank": 7,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 176561430
+    },
+    {
+      "name": "Gal",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176576637
+    },
+    {
+      "name": "Schlitzfritz",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176625938
+    },
+    {
+      "name": "Kitebrew",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176657367
+    },
+    {
+      "name": "Mikalina",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176818179
+    },
+    {
+      "name": "Hextrawald",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176827304
+    },
+    {
+      "name": "Jiramonk",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 176873288
+    },
+    {
+      "name": "Gandogor",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177001460
+    },
+    {
+      "name": "Hunterchaos",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177199615
+    },
+    {
+      "name": "Latawica",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177214440
+    },
+    {
+      "name": "Spintowinlol",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177321515
+    },
+    {
+      "name": "Toshichaos",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177437996
+    },
+    {
+      "name": "Merccrixey",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177477540
+    },
+    {
+      "name": "Lureth",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 177657688
+    },
+    {
+      "name": "Bennimaru",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 178590096
+    },
+    {
+      "name": "Günnsham",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 179300134
+    },
+    {
+      "name": "Feiree",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 179768046
+    },
+    {
+      "name": "Feire",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 179823169
+    },
+    {
+      "name": "Márídá",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 179991177
+    },
+    {
+      "name": "Sshuna",
+      "rank": 7,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 180234420
+    },
+    {
+      "name": "Narrwên",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 180406904
+    },
+    {
+      "name": "Illaoi",
+      "rank": 8,
+      "level": 81,
+      "class": null,
+      "race": null,
+      "id": 180624372
+    },
+    {
+      "name": "Raiox",
+      "rank": 5,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 180744297
+    },
+    {
+      "name": "Quon",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 181138428
+    },
+    {
+      "name": "Miliim",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 181166784
+    },
+    {
+      "name": "Corvisstab",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 182661978
+    },
+    {
+      "name": "Doktorpöbel",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 182719072
+    },
+    {
+      "name": "Sheepitreal",
+      "rank": 6,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 182780325
+    },
+    {
+      "name": "Nâarwi",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 182829741
+    },
+    {
+      "name": "Sandino",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 182835556
+    },
+    {
+      "name": "Tiskarian",
+      "rank": 7,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 182960921
+    },
+    {
+      "name": "Antikrizt",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183016788
+    },
+    {
+      "name": "Chaosofchaos",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183077154
+    },
+    {
+      "name": "Nezukos",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183105656
+    },
+    {
+      "name": "Holydivér",
+      "rank": 8,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183185273
+    },
+    {
+      "name": "Jó",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183204116
+    },
+    {
+      "name": "Ryruki",
+      "rank": 7,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183236731
+    },
+    {
+      "name": "Tiskary",
+      "rank": 7,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183419041
+    },
+    {
+      "name": "Rukiar",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183419111
+    },
+    {
+      "name": "Mönkitönk",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183442503
+    },
+    {
+      "name": "Zeitvertreîp",
+      "rank": 7,
+      "level": 82,
+      "class": null,
+      "race": null,
+      "id": 183447774
+    },
+    {
+      "name": "Mardyn",
+      "rank": 5,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183530301
+    },
+    {
+      "name": "Mercganicus",
+      "rank": 2,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183588324
+    },
+    {
+      "name": "Hippipippi",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183594257
+    },
+    {
+      "name": "Merctanker",
+      "rank": 2,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183598595
+    },
+    {
+      "name": "Lókqur",
+      "rank": 8,
+      "level": 88,
+      "class": null,
+      "race": null,
+      "id": 183688818
+    },
+    {
+      "name": "Embreshment",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183688831
+    },
+    {
+      "name": "Fruchtbar",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183696815
+    },
+    {
+      "name": "Mercmilla",
+      "rank": 2,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183698712
+    },
+    {
+      "name": "Drdurstig",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 183713057
+    },
+    {
+      "name": "Becareful",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183721140
+    },
+    {
+      "name": "Deáthcow",
+      "rank": 2,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 183978819
+    },
+    {
+      "name": "Miliimdemon",
+      "rank": 7,
+      "level": 84,
+      "class": null,
+      "race": null,
+      "id": 184020653
+    },
+    {
+      "name": "Sondroa",
+      "rank": 8,
+      "level": 11,
+      "class": null,
+      "race": null,
+      "id": 184041625
+    },
+    {
+      "name": "Narvu",
+      "rank": 7,
+      "level": 83,
+      "class": null,
+      "race": null,
+      "id": 184089830
+    },
+    {
+      "name": "Améthyst",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 184270428
+    },
+    {
+      "name": "Makudar",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 184321282
+    },
+    {
+      "name": "Rowinâ",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 184421042
+    },
+    {
+      "name": "Baldrüan",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 184439784
+    },
+    {
+      "name": "Ryrukar",
+      "rank": 3,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 184497818
+    },
+    {
+      "name": "Cáss",
+      "rank": 7,
+      "level": 84,
+      "class": null,
+      "race": null,
+      "id": 184598485
+    },
+    {
+      "name": "Thessani",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 184672880
+    },
+    {
+      "name": "Yuzu",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 185026640
+    },
+    {
+      "name": "Mercsmoothie",
+      "rank": 2,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 185067258
+    },
+    {
+      "name": "Tsuyuko",
+      "rank": 8,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 185430950
+    },
+    {
+      "name": "Kiraja",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 185748346
+    },
+    {
+      "name": "Eyr",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 185756299
+    },
+    {
+      "name": "Ryas",
+      "rank": 7,
+      "level": 80,
+      "class": null,
+      "race": null,
+      "id": 186538827
+    },
+    {
+      "name": "Eanya",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 188095899
+    },
+    {
+      "name": "Critneyféars",
+      "rank": 7,
+      "level": 90,
+      "class": null,
+      "race": null,
+      "id": 199186198
+    }
+  ],
+  "updatedAt": "2026-08-20T17:29:55.876Z",
+  "weeklyKeys": [
+    {
+      "name": "Hòbs",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Garódash",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Jisgarin",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Kischali",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Feire",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Miliim",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Fruchtzwerg",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Narrwên",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Quon",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Corvisstab",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 3242
+    },
+    {
+      "name": "Rukiar",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 860
+    },
+    {
+      "name": "Vay",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Raiox",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    },
+    {
+      "name": "Mardyn",
+      "runsThisWeek": 0,
+      "bestLevel": 0,
+      "rating": 0
+    }
+  ]
+}

@@ -5,26 +5,527 @@
   "region": "eu",
   "profileUrl": "https://raider.io/guilds/eu/blackmoore/ShadowFox",
   "raidProgression": {
-    "the-venomous-abyss": {
-      "summary": "5/8 N", "total_bosses": 8,
-      "normal_bosses_killed": 5, "heroic_bosses_killed": 0, "mythic_bosses_killed": 0
-    },
     "tier-mn-1": {
-      "summary": "5/9 M", "total_bosses": 9,
-      "normal_bosses_killed": 9, "heroic_bosses_killed": 9, "mythic_bosses_killed": 5
+      "summary": "5/9 M",
+      "total_bosses": 9,
+      "normal_bosses_killed": 9,
+      "heroic_bosses_killed": 9,
+      "mythic_bosses_killed": 5
+    },
+    "sporefall": {
+      "summary": "0/1 N",
+      "total_bosses": 1,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 0,
+      "mythic_bosses_killed": 0
+    },
+    "the-tidebound-grotto": {
+      "summary": "0/1 N",
+      "total_bosses": 1,
+      "normal_bosses_killed": 0,
+      "heroic_bosses_killed": 0,
+      "mythic_bosses_killed": 0
+    },
+    "the-venomous-abyss": {
+      "summary": "5/8 N",
+      "total_bosses": 8,
+      "normal_bosses_killed": 5,
+      "heroic_bosses_killed": 0,
+      "mythic_bosses_killed": 0
     }
   },
   "raidRankings": {
-    "the-venomous-abyss": { "normal": { "world": 4262, "region": 1927, "realm": 81 } },
-    "tier-mn-1": { "mythic": { "world": 4953, "region": 2219, "realm": 84 } }
+    "tier-mn-1": {
+      "normal": {
+        "world": 12434,
+        "region": 5499,
+        "realm": 185
+      },
+      "heroic": {
+        "world": 6160,
+        "region": 2909,
+        "realm": 100
+      },
+      "mythic": {
+        "world": 4953,
+        "region": 2219,
+        "realm": 84
+      }
+    },
+    "sporefall": {
+      "normal": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      },
+      "heroic": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      },
+      "mythic": {
+        "world": 6905,
+        "region": 2797,
+        "realm": 105
+      }
+    },
+    "the-tidebound-grotto": {
+      "normal": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      },
+      "heroic": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      },
+      "mythic": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      }
+    },
+    "the-venomous-abyss": {
+      "normal": {
+        "world": 4615,
+        "region": 2014,
+        "realm": 82
+      },
+      "heroic": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      },
+      "mythic": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      }
+    }
   },
   "memberCount": 139,
   "classCount": {
-    "Demon Hunter": 19, "Druid": 16, "Paladin": 13, "Warrior": 12, "Priest": 12,
-    "Monk": 11, "Mage": 11, "Warlock": 9, "Death Knight": 9, "Rogue": 8,
-    "Hunter": 8, "Shaman": 7, "Evoker": 4
+    "undefined": 139
   },
-  "members": [],
-  "updatedAt": "2026-08-20T06:31:40.000Z",
-  "_hinweis": "Startwerte vom 20.08.2026. Werden beim ersten Lauf der GitHub Action ueberschrieben."
+  "members": [
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 5
+    },
+    {
+      "rank": 4
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 0
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 1
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 5
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 1
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 6
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 5
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 5
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 8
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 7
+    },
+    {
+      "rank": 3
+    },
+    {
+      "rank": 8
+    }
+  ],
+  "updatedAt": "2026-08-20T17:29:34.200Z"
 }

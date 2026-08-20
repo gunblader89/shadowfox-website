@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-20T06:31:40.000Z",
-  "guild": { "region": "eu", "realm": "blackmoore", "name": "ShadowFox" },
-  "sources": { "raiderio": true, "raidhelper": false, "warcraftlogs": false, "wowaudit": false, "blizzard": false },
-  "errors": 0,
-  "_hinweis": "Startwerte. Sobald die Action laeuft, steht hier der echte Stand."
+  "updatedAt": "2026-08-20T17:30:02.337Z",
+  "guild": {
+    "region": "eu",
+    "realm": "blackmoore",
+    "name": "ShadowFox"
+  },
+  "sources": {
+    "raiderio": true,
+    "raidhelper": true,
+    "warcraftlogs": true,
+    "wowaudit": true,
+    "blizzard": true
+  },
+  "errors": 1
 }
