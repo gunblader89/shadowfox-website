@@ -8,44 +8,14 @@
       "slug": "nekzali-the-soulcoiler",
       "intro": "Eine Schattenjägerin, die für ihre Beschwörung von Ula'tek lebendig begraben wurde. Der Kampf steht und fällt damit, dass keine Adds den Seelenwinderbrunnen erreichen.",
       "ansagen": [
-        {
-          "rolle": "DPS",
-          "text": "Ruhelose Amani haben immer oberste Priorität. Kein Add darf den Seelenwinderbrunnen erreichen — jedes Add dort gibt dem Boss Energie."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Der Schild <em>Grabesvorstoß</em> absorbiert Magieschaden (25 % Max-HP). Mit physischem Burst und Cleave aufbrechen, nicht mit Zaubern."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Essenzzerreißen</em>-Träger laufen sofort nach außen an den Rand. Der Knockback lässt Giftflächen zurück — die Mitte bleibt sauber."
-        },
-        {
-          "rolle": "Tanks",
-          "text": "Swap bei 5–6 Stacks <em>Aushöhlende Stöße</em> (−5 % Heilung pro Stack). Bei <em>Sperrfeuer der Besessenheit</em> zieht der Tank vom Raid weg."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Niemand stirbt im Brunnen. Ein Tod dort startet sofort das <em>Seelenwinderritual</em>."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Intermission bei 50 %: Echo von Jawae fokussieren. <em>Hungernder Scheiterhaufen</em> mit mindestens 8 Leuten im 10-Meter-Radius soaken."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Phase 2 ist ein reiner Damage-Check. Alle CDs raus, sonst kommt <em>Entfesselte Wut</em> (+500 % Schaden, taunt-immun)."
-        }
+        { "rolle": "DPS", "text": "Ruhelose Amani haben immer oberste Priorität. Kein Add darf den Seelenwinderbrunnen erreichen." },
+        { "rolle": "DPS", "text": "Der Schild Grabesvorstoß absorbiert Magieschaden (25 % Max-HP). Mit physischem Burst aufbrechen." },
+        { "rolle": "Alle", "text": "Essenzzerreißen-Träger laufen sofort nach außen an den Rand." },
+        { "rolle": "Tanks", "text": "Swap bei 5–6 Stacks Aushöhlende Stöße (−5 % Heilung pro Stack)." },
+        { "rolle": "Alle", "text": "Intermission bei 50 %: Echo von Jawae fokussieren. Hungernder Scheiterhaufen soaken." },
+        { "rolle": "DPS", "text": "Phase 2 ist ein reiner Damage-Check. Alle CDs raus." }
       ],
-      "faehigkeiten": [
-        "Seelenwinderbrunnen",
-        "Essenzzerreißen",
-        "Aushöhlende Stöße",
-        "Grabesvorstoß",
-        "Hungernder Scheiterhaufen",
-        "Entschlingen"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Seelenwinderbrunnen", "Essenzzerreißen", "Aushöhlende Stöße", "Grabesvorstoß", "Hungernder Scheiterhaufen", "Entschlingen"]
     },
     {
       "name": "Eingeschlossene Wächter",
@@ -55,45 +25,12 @@
       "slug": "entombed-sentinels",
       "intro": "Zwei Schlangengolems, die getrennt gehalten werden müssen. Die Zwischenphase ist ein Zahlenpuzzle — wer das nicht kapiert, stirbt.",
       "ansagen": [
-        {
-          "rolle": "Alle",
-          "text": "Zwei gleich starke Gruppen: <em>Atem von Ula'tek</em> links, <em>Blut von Ula'tek</em> rechts. Mindestens 40 Meter Abstand, sonst greift <em>Ula'teks Dominanz</em> mit 99 % Schadensreduktion."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Beide Bosse auf gleichem HP-Stand halten. Sonst heilt in der Stasis-Phase der stärkere den schwächeren hoch."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Bleib in deiner Gruppe. <em>Mal der Säure</em> und <em>Mal des Blutes</em> gemischt zu stapeln ist tödlich."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Ätzende Stasis</em>: Zahl über deinem Kopf ablesen, Partner suchen, sodass die Summe genau 4 ergibt. 1 sucht 3, 2 sucht 2. Nicht drüber."
-        },
-        {
-          "rolle": "Tanks",
-          "text": "Nach jeder Zwischenphase die Wächter tauschen — das resettet die Mark-Stacks beider Gruppen."
-        },
-        {
-          "rolle": "Heiler",
-          "text": "Atem-Seite: <em>Toxintropfen</em> sofort austreten. Blut-Seite: <em>Verseuchtes Blut</em> sofort dispellen."
-        },
-        {
-          "rolle": "DPS",
-          "text": "<em>Giftgerinnung</em>-Schleim instant fokussieren, der tickt über <em>Kontaminieren</em> Raidschaden."
-        }
+        { "rolle": "Alle", "text": "Zwei gleich starke Gruppen: Atem links, Blut rechts. Mindestens 40 Meter Abstand halten." },
+        { "rolle": "DPS", "text": "Beide Bosse auf gleichem HP-Stand halten, sonst heilt der stärkere den schwächeren hoch." },
+        { "rolle": "Alle", "text": "Ätzende Stasis: Summe genau 4 bilden (1 sucht 3, 2 sucht 2)." },
+        { "rolle": "Tanks", "text": "Nach jeder Zwischenphase die Wächter tauschen." }
       ],
-      "faehigkeiten": [
-        "Ula'teks Dominanz",
-        "Mal der Säure",
-        "Mal des Blutes",
-        "Ätzende Stasis",
-        "Spiraltoxine",
-        "Giftgerinnung",
-        "Verseuchtes Blut"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Ula'teks Dominanz", "Mal der Säure", "Mal des Blutes", "Ätzende Stasis", "Spiraltoxine"]
     },
     {
       "name": "Vashnik der Bösartige",
@@ -101,47 +38,14 @@
       "status": "down",
       "rolle": "Positionierung & Add-Stopp",
       "slug": "vashnik-the-malignant",
-      "intro": "In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte. Wo der Boss steht, entscheidet, welche Infusionen er bekommt.",
+      "intro": "In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte. Wo der Boss steht, entscheidet über seine Infusionen.",
       "ansagen": [
-        {
-          "rolle": "Tanks",
-          "text": "Vashnik vor jedem <em>Trinken</em> neu positionieren — er zieht immer aus den zwei nächsten Quellen. Rotation: Schatten + Flamme → Flamme + Blut → Blut + Schatten."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Kein lebendes Gift erreicht die Mitte. Erreicht ein Add den <em>Bösartigen Hohlraum</em>, folgt <em>Heimtückische Explosion</em> mit massivem Raidschaden."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Add-Prio: Brennende Gifte zuerst, dann Gerinnende, Verhüllte kann man CCen. Brennende zeitversetzt töten, nie gleichzeitig — sie explodieren beim Tod."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Entziehende Infektion</em>: mehrere laufen in den Kreis des Betroffenen, um den Heilungsabsorb wegzuknacken. Allein ist er nicht heilbar."
-        },
-        {
-          "rolle": "Heiler",
-          "text": "<em>Explodierende Infektion</em> erst dispellen, wenn der Träger frei steht — beim Entfernen kommt eine ätzende Explosion."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Stygische Infektion</em>: raus aus dem Raid, der Träger pulst Schaden im 6-Meter-Umkreis. <em>Pestschaum</em> immer an den Rand ablegen."
-        },
-        {
-          "rolle": "Tanks",
-          "text": "Swap bei <em>Triefende Fangzähne</em> (+200 % physischer Schaden). <em>Toxischer Dampf</em> stapelt permanent — Bloodlust am Pull, Heiler-CDs nach hinten planen."
-        }
+        { "rolle": "Tanks", "text": "Vashnik vor jedem Trinken umpositionieren. Er zieht immer aus den zwei nächsten Quellen." },
+        { "rolle": "DPS", "text": "Kein lebendes Gift erreicht die Mitte. Brennende Gifte zuerst fokussieren." },
+        { "rolle": "Alle", "text": "Entziehende Infektion: Kreis stacken, um den Heilungsabsorb wegzuknacken." },
+        { "rolle": "Tanks", "text": "Swap bei Triefende Fangzähne (+200 % physischer Schaden)." }
       ],
-      "faehigkeiten": [
-        "Trinken",
-        "Toxischer Dampf",
-        "Triefende Fangzähne",
-        "Entziehende Infektion",
-        "Explodierende Infektion",
-        "Stygische Infektion",
-        "Pestschaum"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Trinken", "Toxischer Dampf", "Triefende Fangzähne", "Entziehende Infektion", "Explodierende Infektion"]
     },
     {
       "name": "Die verirrten Entdecker",
@@ -149,47 +53,14 @@
       "status": "down",
       "rolle": "Ratskampf & Fisch-Rotation",
       "slug": "lost-explorers",
-      "intro": "Drei besessene Tortollaner — Erster Maat Nama, Schriftrollengelehrte Iku und Händler Gebbo — kontrolliert vom unangreifbaren Mor'zahi.",
+      "intro": "Drei besessene Tortollaner kontrolliert vom unangreifbaren Mor'zahi.",
       "ansagen": [
-        {
-          "rolle": "Alle",
-          "text": "Immer nur zwei Bosse zusammen für Cleave, den dritten mindestens 30 Meter weg. Sonst greift <em>Vereinte Verteidigung</em> mit 99 % Schadensreduktion."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Kisten aufbrechen und <em>Widerliche Fische</em> sammeln. Gefüttert wird bei ca. 90 % Energie von Mor'zahi — sonst <em>Letzter Aufstieg</em> = Wipe. Reihenfolge: Gebbo, Nama, Iku. Jeder Boss nur einmal."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Kistenaufbrechen rotieren, <em>Splitter</em> stapelt als Blutung. Und keine Kiste liegen lassen: nach 25 Sekunden kommt <em>Reliktriss</em> mit 2,5 Mio. Raidschaden."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Gewaltiger Bums</em>: drei Markierungen, Soaks dürfen sich nicht überlappen — eine Melee-Position und zwei getrennte Ranged-Spots. Danach raus aus dem <em>Nachbeben</em>."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Frostfeuersalve</em>: Feuer-Debuff in der Frostfläche löschen, Frost-Debuff in der Feuerfläche. Die Flächen dürfen sich niemals überlappen."
-        },
-        {
-          "rolle": "DPS",
-          "text": "<em>Eisgebundene Flammen</em> unterbrechen — feste Kick-Rotation. Melees baiten <em>Panzerwirbel</em> zur Plattformkante."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Alle drei möglichst gleichzeitig legen. Stirbt einer zu früh, enragen die anderen."
-        }
+        { "rolle": "Alle", "text": "Immer nur zwei Bosse zusammen für Cleave, den dritten mindestens 30 Meter weg." },
+        { "rolle": "Alle", "text": "Kisten aufbrechen und Fische bei ca. 90 % Energie füttern." },
+        { "rolle": "Alle", "text": "Frostfeuersalve: Feuer-Debuff in Frostfläche löschen, Frost-Debuff in Feuerfläche." },
+        { "rolle": "DPS", "text": "Alle drei möglichst gleichzeitig legen. Stirbt einer zu früh, enragen die anderen." }
       ],
-      "faehigkeiten": [
-        "Vereinte Verteidigung",
-        "Widerliche Fische",
-        "Letzter Aufstieg",
-        "Reliktriss",
-        "Gewaltiger Bums",
-        "Frostfeuersalve",
-        "Zerfetzende Splitter"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Vereinte Verteidigung", "Widerliche Fische", "Letzter Aufstieg", "Reliktriss", "Gewaltiger Bums"]
     },
     {
       "name": "Sszorak",
@@ -197,187 +68,59 @@
       "status": "down",
       "rolle": "Wind, Knockbacks & Tank-Kombo",
       "slug": "sszorak",
-      "intro": "Eine in Ula'teks Gift gehüllte Bestie auf einer offenen Plattform. Wind und Positionierung bestimmen alles.",
+      "intro": "Eine in Ula'teks Gift gehüllte Bestie auf einer offenen Plattform.",
       "ansagen": [
-        {
-          "rolle": "Tanks",
-          "text": "<em>Raubzug des Apex-Raubtiers</em>: fünf Attacken in zufälliger Reihenfolge (2× Verwüstung, 2× Verstümmeln, 1× Sturm). Jeder Tank nimmt je eine Verwüstung und eine Verstümmelung."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Verwüstung</em> ist ein Frontalkegel — Boss wegdrehen, Tank-CD an. <em>Verstümmeln</em>: Raid stackt sofort, mindestens 5 Spieler."
-        },
-        {
-          "rolle": "Tanks",
-          "text": "<em>Zerfressenes Gift</em> bei etwa 6 Stacks abgeben. Den Swap so timen, dass er mit dem Apex-Wechsel zusammenfällt."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Giftige Flutwelle</em>: Debuff-Träger laufen auf die Marker, maximal einer pro Marker. Die Zysten immer gegenüber dem aktiven Windtunnel ablegen."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Zornige Winde</em>: Partner mit Gegenrichtung suchen und ineinander fliegen. Ihr prallt ab und landet wieder auf Position."
-        },
-        {
-          "rolle": "DPS",
-          "text": "<em>Heulender Maelstrom</em> ist die Burnphase — der Boss nimmt deutlich mehr Schaden. Alle Damage-CDs auf den 2-Minuten-Zyklus planen."
-        }
+        { "rolle": "Tanks", "text": "Apex-Raubtier: Angriffe aufteilen (je eine Verwüstung und eine Verstümmelung)." },
+        { "rolle": "Alle", "text": "Verstümmeln: Raid stackt sofort beim getroffenen Tank." },
+        { "rolle": "Alle", "text": "Zornige Winde: Partner mit Gegenrichtung suchen und ineinander fliegen." },
+        { "rolle": "DPS", "text": "Heulender Maelstrom ist die Burnphase — alle Damage-CDs zünden." }
       ],
-      "faehigkeiten": [
-        "Raubzug des Apex-Raubtiers",
-        "Verwüstung",
-        "Verstümmeln",
-        "Zerfressenes Gift",
-        "Giftige Flutwelle",
-        "Zornige Winde",
-        "Heulender Maelstrom"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Raubzug des Apex-Raubtiers", "Verwüstung", "Verstümmeln", "Zerfressenes Gift", "Zornige Winde"]
     },
     {
       "name": "Die Zwillingsfänge",
       "nameEn": "The Twin Fangs",
-      "status": "prog",
+      "status": "down",
       "rolle": "Stack-Management & Soak-Rotation",
       "slug": "twin-fangs",
-      "intro": "Vexhul und Ithraz — die ersten von Ula'teks Blut. Zwei getrennte Lebensbalken, aber ein gemeinsamer Timer: dein Giftstack.",
+      "intro": "Vexhul und Ithraz — zwei Lebensbalken, ein Giftstack-Timer.",
       "ansagen": [
-        {
-          "rolle": "Alle",
-          "text": "<em>Ewiges Gift</em> ist die Uhr des Kampfes. Bei 10 Stacks bist du tot. Runter kommen die Stacks ausschließlich über <em>Gefräßiges Schmausen</em>."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Gefräßiges Schmausen</em>: drei Soak-Gruppen A, B, C nacheinander, je rund 7 Spieler. Niemand soakt doppelt — der Debuff <em>Gefüttert</em> verhindert das ohnehin."
-        },
-        {
-          "rolle": "Tanks",
-          "text": "<em>Ätzende Flut</em>: Vexhul kanalisiert 5 Sekunden auf den Tank und schiebt ihn weg — in Reichweite bleiben. Globulen einzeln soaken, nur Leute mit niedrigen Stacks."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Steinbrecher</em>: der Tank wird geknockt, drei Kreise erscheinen. Alle drei nacheinander soaken, danach Boss-Swap. Trifft keiner, frisst es der ganze Raid."
-        },
-        {
-          "rolle": "DPS",
-          "text": "<em>Giftiges Erwachen</em>: drei Schlangen in der Mitte, sofort umschwenken. <em>Ätzenden Speichel</em> wegdrehen und dann stehen bleiben."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Untertauchen</em>: gegen die Drehrichtung der <em>Verderblichen Flut</em> laufen und den Blutsturm-Kreisen ausweichen. Der Kampf muss vor dem dritten Untertauchen stehen."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Gerinnendes Ichor</em>-Träger raus an den Rand. Die zurückbleibenden Pfützen sind permanent — konsequent an die Außenkante."
-        }
+        { "rolle": "Alle", "text": "Ewiges Gift bei 10 Stacks tödlich. Gefräßiges Schmausen in 3 Gruppen nacheinander soaken." },
+        { "rolle": "Tanks", "text": "Ätzende Flut: Vexhul kanalisiert 5 Sekunden — in Reichweite bleiben." },
+        { "rolle": "DPS", "text": "Giftiges Erwachen: Drei Schlangen in der Mitte sofort fokussieren." },
+        { "rolle": "Alle", "text": "Untertauchen: Gegen die Drehrichtung der Verderblichen Flut laufen." }
       ],
-      "faehigkeiten": [
-        "Ewiges Gift",
-        "Gefräßiges Schmausen",
-        "Ätzende Flut",
-        "Steinbrecher",
-        "Giftiges Erwachen",
-        "Verderbliche Flut",
-        "Gerinnendes Ichor"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Ewiges Gift", "Gefräßiges Schmausen", "Ätzende Flut", "Steinbrecher", "Giftiges Erwachen"]
     },
     {
       "name": "Der Gewundene Altar",
       "nameEn": "The Coiled Altar",
-      "status": "open",
+      "status": "prog",
       "rolle": "Phasenwechsel & Fixate",
       "slug": "coiled-altar",
-      "intro": "Der Geist von Malacrass befiehlt Zul'jan. Drei Phasen, jede mit eigener Kernmechanik — Phase 2 ist ein Blickkontakt-Rätsel.",
+      "intro": "Der Geist von Malacrass befiehlt Zul'jan. Drei Phasen mit Blickkontakt-Mechanik.",
       "ansagen": [
-        {
-          "rolle": "Alle",
-          "text": "Phase 1 — <em>Guillotine</em>: Gruppe A rein, mindestens 5 Mann. Der Axtwurf splittet den Schaden auf alle im 9-Meter-Radius. Auf Heroisch zwei Gruppen im Wechsel."
-        },
-        {
-          "rolle": "Tanks",
-          "text": "<em>Sever</em>: Taunt nach jedem Cast. Der Frontal zerstört eingesammelte Giftkugeln — also gezielt einsetzen."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Giftige Sturzflut</em>: Kugeln einsammeln und auf den Markern ablegen. Nie mehrere gleichzeitig zünden lassen."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Phase 2 — <em>Zermürbende Fixierung</em>: nicht wegdrehen. Die <em>Manifestationen des Grauens</em> bewegen sich nur, wenn du sie nicht ansiehst. Fixierte schauen ihren Geist an."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Ewige Dämmerung</em>: Schleier zerschlagen und unterbrechen. <em>Gloombomb</em>-Träger spreaden nach außen, 5 Sekunden Timer."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Zwischenphase <em>Das beanspruchte Gefäß</em>: Bloodlust rein, Zul'jan nimmt 100 % mehr Schaden. Fragmente gestaffelt abfangen, nie mehrere gleichzeitig."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Phase 3 — <em>Vereinte Windung</em>: HP angleichen, beide müssen zusammen fallen, sonst Berserk."
-        }
+        { "rolle": "Alle", "text": "Phase 1: Guillotine in Gruppe soaken (mindestens 5 Spieler)." },
+        { "rolle": "Tanks", "text": "Sever: Taunt nach jedem Cast. Frontal zerstört Giftkugeln." },
+        { "rolle": "Alle", "text": "Phase 2: Zermürbende Fixierung — die Geister direkt ansehen, sie bewegen sich nur im Rücken." },
+        { "rolle": "DPS", "text": "Phase 3: HP beider Bosse angleichen, müssen zusammen fallen." }
       ],
-      "faehigkeiten": [
-        "Guillotine",
-        "Sever",
-        "Giftige Sturzflut",
-        "Zermürbende Fixierung",
-        "Manifestation des Grauens",
-        "Ewige Dämmerung",
-        "Vereinte Windung"
-      ],
-      "hinweis": ""
+      "faehigkeiten": ["Guillotine", "Sever", "Giftige Sturzflut", "Zermürbende Fixierung", "Vereinte Windung"]
     },
     {
       "name": "Ula'tek",
       "nameEn": "Ula'tek",
       "status": "open",
-      "rolle": "Eier-Kontrolle & Platzmanagement",
+      "rolle": "Eier-Kontrolle & Endboss",
       "slug": "ulatek",
-      "intro": "Die große Schande des Amanireiches und Endboss des Tiers. Drei Phasen, in denen die nutzbare Fläche immer kleiner wird.",
+      "intro": "Endboss des Tiers. Drei Phasen auf schrumpfender Plattform.",
       "ansagen": [
-        {
-          "rolle": "Tanks",
-          "text": "Der Tank bleibt immer im Nahkampf. Verlässt er die Melee-Range, feuert <em>Unchecked Rage</em> Raidschaden. <em>Mutters Zorn</em> knockt weg — sofort zurücklaufen."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Ätzende Wellen</em> ausweichen und dabei von den Eiern fernhalten. Berührt eine Welle ein Ei, schlüpft es sofort."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Spektrale Windungen</em>: Raid stackt im Einschlag, der Schaden wird geteilt. Auf Heroisch Soak-Gruppen rotieren."
-        },
-        {
-          "rolle": "DPS",
-          "text": "<em>Zorn der Gefesselten</em> ist die Burnphase: das <em>Giftige Herz</em> liegt offen und nimmt 200 % mehr Schaden. Alles rein, dabei den Trümmern ausweichen."
-        },
-        {
-          "rolle": "DPS",
-          "text": "Phase 2: Eier vor dem Schlüpfen unterbrechen. Eine voll ausgereifte <em>Gefräßige Doomscale</em> stunnt den ganzen Raid 20 Sekunden — das ist der Wipe."
-        },
-        {
-          "rolle": "Alle",
-          "text": "<em>Schlangenbiss</em>: feste Partner-Paare. Wer hilft, bekommt <em>Volatile Purge</em> und explodiert nach 5 Sekunden — sofort spreaden."
-        },
-        {
-          "rolle": "Alle",
-          "text": "Phase 3 <em>Ula'teks Aufstieg</em>: die Plattform wird gefressen. Positionierung vorher absprechen, nicht improvisieren."
-        }
+        { "rolle": "Tanks", "text": "Immer in Nahkampfreichweite bleiben, sonst feuert Unchecked Rage Raidschaden." },
+        { "rolle": "Alle", "text": "Ätzende Wellen ausweichen und von den Eiern fernhalten." },
+        { "rolle": "DPS", "text": "Phase 2: Eier vor dem Schlüpfen unterbrechen." },
+        { "rolle": "Alle", "text": "Phase 3: Plattform wird kontinuierlich gefressen — Stellungsspiel absprechen." }
       ],
-      "faehigkeiten": [
-        "Ätzende Wellen",
-        "Mutters Zorn",
-        "Spektrale Windungen",
-        "Zorn der Gefesselten",
-        "Giftiges Herz",
-        "Schlangenbiss",
-        "Gefräßige Doomscale"
-      ],
-      "hinweis": "Quellenlage zu Ula'tek ist noch dünn — Icy Veins hat den Boss-Guide zum Stand 20.08. noch nicht fertig. Diese Punkte stammen aus Wowhead und sind teils vorläufig. Nach den ersten eigenen Pulls überschreiben."
+      "faehigkeiten": ["Ätzende Wellen", "Mutters Zorn", "Spektrale Windungen", "Zorn der Gefesselten"]
     }
   ]
 }
