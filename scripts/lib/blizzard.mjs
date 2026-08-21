@@ -1,76 +1,70 @@
-/* Blizzard Battle.net API — echte In-Game-Gildenränge und
-   die abgeschlossenen Mythic-Plus-Runs der laufenden Woche.
-   Great Vault gibt es hier NICHT — Blizzard bietet dafür keine Schnittstelle. */
-import { req, pool, ok, log, slug } from "./util.mjs";
+/* Blizzard API — Roster & Weekly Keystone Profile */
+import { req, pool, ok } from "./util.mjs";
 
-const TOKEN_URL = "https://oauth.battle.net/token";
-const host = region => `https://${region}.api.blizzard.com`;
+const BASE_OAUTH = "https://oauth.battle.net/token";
+const BASE_API = "https://eu.api.blizzard.com";
 
-async function token(id, secret) {
-  const res = await fetch(TOKEN_URL, {
+async function token(clientId, clientSecret) {
+  const auth = Buffer.from(`${clientId}:${clientSecret}`).toString("base64");
+  const res = await req(BASE_OAUTH, {
     method: "POST",
     headers: {
-      Authorization: "Basic " + Buffer.from(`${id}:${secret}`).toString("base64"),
+      Authorization: `Basic ${auth}`,
       "Content-Type": "application/x-www-form-urlencoded"
     },
-    body: new URLSearchParams({ grant_type: "client_credentials" })
+    body: "grant_type=client_credentials"
   });
-  if (!res.ok) throw new Error(`Blizzard Token: HTTP ${res.status}`);
-  return (await res.json()).access_token;
+  return res.access_token;
 }
 
-export async function guildRoster({ clientId, clientSecret, region, realm, name, locale = "de_DE" }) {
+export async function guildRoster({ clientId, clientSecret, realm, name }) {
   const tok = await token(clientId, clientSecret);
-  const auth = { headers: { Authorization: `Bearer ${tok}` } };
+  const cleanRealm = encodeURIComponent(realm.toLowerCase().replace(/\s+/g, "-"));
+  const cleanName = encodeURIComponent(name.toLowerCase().replace(/\s+/g, "-"));
 
-  const url = `${host(region)}/data/wow/guild/${slug(realm)}/${slug(name)}/roster`
-            + `?namespace=profile-${region}&locale=${locale}`;
-  const r = await req(url, auth);
+  const url = `${BASE_API}/data/wow/guild/${cleanRealm}/${cleanName}/roster?namespace=profile-eu&locale=de_DE`;
+  const data = await req(url, { headers: { Authorization: `Bearer ${tok}` } });
 
-  const members = (r.members ?? []).map(m => ({
+  const members = (data.members ?? []).map(m => ({
     name: m.character?.name,
+    realm: m.character?.realm?.slug || realm,
     rank: m.rank,
     level: m.character?.level,
-    class: m.character?.playable_class?.name ?? null,
-    race: m.character?.playable_race?.name ?? null,
-    id: m.character?.id
+    classId: m.character?.playable_class?.id
   }));
+
   ok(`Blizzard: Gildenroster mit ${members.length} Charakteren geladen`);
-  return { members, token: tok, updatedAt: new Date().toISOString() };
+  return { token: tok, members, updatedAt: new Date().toISOString() };
 }
 
-/** Abgeschlossene M+-Runs der laufenden Woche — die Basis für "wer ist aktiv". */
-export async function weeklyKeys({ token: tok, region, realm, names, locale = "de_DE" }) {
-  const auth = { headers: { Authorization: `Bearer ${tok}` } };
+export async function weeklyKeys({ token, region = "eu", realm = "blackmoore", names = [] }) {
+  const res = await pool(names, 4, async (item) => {
+    const charName = typeof item === "string" ? item.trim() : item.name.trim();
+    const charRealm = typeof item === "object" && item.realm ? item.realm : realm;
+    const cleanRealm = encodeURIComponent(charRealm.toLowerCase().replace(/\s+/g, "-"));
+    const cleanName = encodeURIComponent(charName.toLowerCase());
 
-  // Aktuellen Zeitraum (Blizzard-Woche) ermitteln
-  let periodStart = 0;
-  try {
-    const idx = await req(`${host(region)}/data/wow/mythic-keystone/period/index?namespace=dynamic-${region}&locale=${locale}`, auth);
-    const cur = idx.current_period?.id;
-    const p = await req(`${host(region)}/data/wow/mythic-keystone/period/${cur}?namespace=dynamic-${region}&locale=${locale}`, auth);
-    periodStart = p.start_timestamp ?? 0;
-    log(`Blizzard: laufende M+-Woche beginnt ${new Date(periodStart).toLocaleString("de-DE")}`);
-  } catch {
-    periodStart = Date.now() - 7 * 864e5;   // Notfall: letzte 7 Tage
-  }
-
-  const res = await pool(names, 4, async (n) => {
-    const url = `${host(region)}/profile/wow/character/${slug(realm)}/${encodeURIComponent(n.toLowerCase())}`
-              + `/mythic-keystone-profile?namespace=profile-${region}&locale=${locale}`;
-    const p = await req(url, auth, 2);
-    const seasonUrl = p.current_period?.best_runs ? null : null;
-    const runs = (p.current_period?.best_runs ?? [])
-      .filter(r => (r.completed_timestamp ?? 0) >= periodStart);
-    return {
-      name: n,
-      runsThisWeek: runs.length,
-      bestLevel: runs.length ? Math.max(...runs.map(r => r.keystone_level)) : 0,
-      rating: Math.round(p.current_mythic_rating?.rating ?? 0)
-    };
+    const url = `https://${region}.api.blizzard.com/profile/wow/character/${cleanRealm}/${cleanName}/mythic-keystone-profile?namespace=profile-${region}&locale=de_DE`;
+    try {
+      const data = await req(url, { headers: { Authorization: `Bearer ${token}` } }, 2);
+      const runs = data.current_period?.runs ?? [];
+      return {
+        name: charName,
+        realm: charRealm,
+        runsThisWeek: runs.length,
+        runs: runs.map(r => ({
+          dungeon: r.dungeon?.name,
+          level: r.keystone_level,
+          timed: r.is_completed_within_time
+        }))
+      };
+    } catch {
+      return { name: charName, realm: charRealm, runsThisWeek: 0, runs: [] };
+    }
   });
 
   const found = res.filter(Boolean);
-  ok(`Blizzard: M+-Wochenruns für ${found.length}/${names.length} Charaktere`);
+  const active = found.filter(k => k.runsThisWeek > 0);
+  ok(`Blizzard: M+-Wochenruns für ${active.length}/${names.length} Charaktere erfasst`);
   return found;
 }
