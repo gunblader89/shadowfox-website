@@ -41,16 +41,6 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Thessaly"
     },
     {
-      "name": "Quon",
-      "class": "Monk",
-      "spec": "Mistweaver",
-      "role": "HEALING",
-      "ilvl": 590,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/155/111645595-avatar.jpg?alt=/wow/static/images/2d/avatar/25-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Quon"
-    },
-    {
       "name": "Narrwên",
       "class": "Warlock",
       "spec": "Demonology",
@@ -101,5 +91,5 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Tiskarian"
     }
   ],
-  "updatedAt": "2026-08-21T07:34:20.755Z"
+  "updatedAt": "2026-08-21T07:41:17.310Z"
 }
