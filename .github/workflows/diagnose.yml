@@ -1,0 +1,49 @@
+name: Raid-Helper pruefen
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Endpunkte durchprobieren
+        env:
+          KEY: ${{ secrets.RAIDHELPER_API_KEY }}
+          SID: ${{ secrets.RAIDHELPER_SERVER_ID }}
+        run: |
+          cat > check.mjs <<'SCRIPT'
+          const key = (process.env.KEY || "").trim();
+          const sid = (process.env.SID || "").trim();
+
+          console.log("=== Vorpruefung der Werte (ohne sie anzuzeigen) ===");
+          console.log(`Schluessel: ${key ? key.length + " Zeichen" : "LEER - Secret fehlt!"}`);
+          console.log(`Server-ID : ${sid ? sid.length + " Zeichen" : "LEER - Secret fehlt!"}`);
+          console.log(`Server-ID nur Ziffern: ${/^\d+$/.test(sid) ? "ja" : "NEIN - verdaechtig"}`);
+          console.log(`Server-ID Laenge 17-20: ${sid.length >= 17 && sid.length <= 20 ? "ja" : "NEIN"}`);
+          if (key !== (process.env.KEY || "")) console.log("ACHTUNG: Leerzeichen/Zeilenumbruch im Schluessel-Secret!");
+          if (sid !== (process.env.SID || "")) console.log("ACHTUNG: Leerzeichen/Zeilenumbruch im Server-ID-Secret!");
+
+          const varianten = [
+            ["v3 plain",        `https://raid-helper.dev/api/v3/servers/${sid}/events`, { Authorization: key }],
+            ["v3 Bearer",       `https://raid-helper.dev/api/v3/servers/${sid}/events`, { Authorization: `Bearer ${key}` }],
+            ["v2 plain",        `https://raid-helper.dev/api/v2/servers/${sid}/events`, { Authorization: key }],
+            ["ohne Version",    `https://raid-helper.dev/api/servers/${sid}/events`,    { Authorization: key }],
+            ["v3 Server-Info",  `https://raid-helper.dev/api/v3/servers/${sid}`,        { Authorization: key }],
+            ["v2 Server-Info",  `https://raid-helper.dev/api/v2/servers/${sid}`,        { Authorization: key }],
+            ["apikey-Header",   `https://raid-helper.dev/api/v3/servers/${sid}/events`, { apikey: key }],
+          ];
+
+          console.log("\n=== Endpunkte durchprobieren ===");
+          for (const [name, url, headers] of varianten) {
+            try {
+              const res = await fetch(url, { headers });
+              const txt = (await res.text()).slice(0, 220).replace(/\s+/g, " ");
+              console.log(`${res.ok ? "TREFFER" : "  -    "} ${String(res.status).padEnd(4)} ${name.padEnd(18)} ${txt}`);
+            } catch (e) {
+              console.log(`  -     ---  ${name.padEnd(18)} Netzwerkfehler: ${e.message}`);
+            }
+          }
+          console.log("\nFertig. Die Zeile mit TREFFER zeigt den richtigen Weg.");
+          SCRIPT
+          node check.mjs
