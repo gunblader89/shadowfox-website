@@ -1,9 +1,27 @@
 {
   "reports": [
     {
+      "code": "gDHaGdxhM7Yvjq4Z",
+      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "difficulty": "Normal",
+      "date": "2026-08-20",
+      "durationMin": 664,
+      "duration": "11h 04m",
+      "kills": 3,
+      "wipes": 19,
+      "bestTryPct": 5.2,
+      "killedBosses": [
+        "The Twin Fangs",
+        "Altar of Fangs",
+        "The Blinding Vale"
+      ]
+    },
+    {
       "code": "dM6PGWzZnJQxbhHp",
       "url": "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
-      "title": "",
+      "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "difficulty": "Normal",
       "date": "2026-08-20",
@@ -17,25 +35,9 @@
       ]
     },
     {
-      "code": "gDHaGdxhM7Yvjq4Z",
-      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "difficulty": "Normal",
-      "date": "2026-08-20",
-      "durationMin": 544,
-      "duration": "9h 04m",
-      "kills": 1,
-      "wipes": 19,
-      "bestTryPct": 5.2,
-      "killedBosses": [
-        "The Twin Fangs"
-      ]
-    },
-    {
       "code": "KbyxpZWhNFnr2wAM",
       "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
-      "title": "",
+      "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "difficulty": "Normal",
       "date": "2026-08-20",
@@ -189,5 +191,5 @@
       "killedBosses": []
     }
   ],
-  "updatedAt": "2026-08-20T20:39:03.917Z"
+  "updatedAt": "2026-08-21T03:21:02.939Z"
 }
