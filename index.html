@@ -165,7 +165,6 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .c-bench{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .sig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .sig-col h4{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--tx3);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:7px}
-.sig-col h4 span{font-family:var(--mono);font-size:11px;color:var(--tx2)}
 .sig-p{display:flex;align-items:center;gap:8px;padding:6px 9px;border-radius:7px;background:var(--panel2);border:1px solid var(--line);margin-bottom:5px;font-size:12.5px}
 .sig-p .d{width:8px;height:8px;border-radius:2px;flex-shrink:0}
 .sig-p .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -278,7 +277,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   <div style="display:flex;gap:16px;flex-wrap:wrap">
     <a href="https://raider.io/guilds/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">Raider.IO</a>
     <a href="https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">Warcraft Logs</a>
-    <a href="https://www.wowprogress.com/guild/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">WoWProgress</a>
   </div>
 </div></footer>
 
@@ -300,21 +298,12 @@ const G = {
   name:"ShadowFox", realm:"Blackmoore", region:"EU (DE)", faction:"Allianz",
   raidDays:"Montag & Donnerstag", raidTime:"19:45 – 22:30 Uhr",
   members:140,
-  raid:{ name:"Der Giftige Abgrund", en:"The Venomous Abyss", zone:"Die Gewundene Insel · Atal'Utek",
-         patch:"12.1", release:"19. August 2026", bosses:8,
-         nhc:5, hc:0, myth:0,
-         rank:{welt:"4.262", eu:"1.927", realm:"81"} },
-  season1:{ nhc:9, hc:9, myth:5, total:9, rank:{welt:"4.953", eu:"2.219", realm:"84"} },
+  raid:{ name:"Der Giftige Abgrund", en:"The Venomous Abyss", bosses:8, nhc:5, hc:0, myth:0, rank:{welt:"4.262", eu:"1.927", realm:"81"} },
   links:{
     rio:"https://raider.io/guilds/eu/blackmoore/ShadowFox",
-    wcl:"https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox",
-    wowp:"https://www.wowprogress.com/guild/eu/blackmoore/ShadowFox",
-    armory:"https://worldofwarcraft.blizzard.com/de-de/guild/eu/blackmoore/shadowfox",
-    zone:"https://www.wowhead.com/de/zone=16915/the-venomous-abyss"
+    wcl:"https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox"
   },
-  recruit:{ open:["Dämonenjäger","Todesritter","Rufer"],
-            contacts:["Passi / Offiziere"],
-            motto:"Organisches Wachstum statt toxischem Progressdruck." }
+  recruit:{ open:["Dämonenjäger","Todesritter","Rufer"], contacts:["Passi / Offiziere"], motto:"Organisches Wachstum statt toxischem Progressdruck." }
 };
 
 const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
@@ -338,20 +327,13 @@ const CLASSES = [
 ];
 
 const KB = [
-  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. 19:40 im Voice.",tags:["Pflicht","Neue"]},
-  {i:"💰",t:"Loot-Regelung",d:"Wie Loot verteilt wird und wie Wünsche angemeldet werden.",tags:["Loot","Trial"]},
-  {i:"🧩",t:"Addons & WeakAuras",d:"Pflicht-Addons und WeakAura-Paket für Der Giftige Abgrund.",tags:["Setup","Pflicht"]},
-  {i:"🧪",t:"Konsumierbare",d:"Flask-, Food- und Trank-Empfehlungen pro Rolle.",tags:["Konsum","Bank"]},
-  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen rechtzeitig über Raid-Helper im Discord eintragen.",tags:["Signup"]},
-  {i:"🌱",t:"Onboarding für Neue",d:"Deine ersten zwei Wochen bei ShadowFox.",tags:["Neue","Trial"]},
-  {i:"🎧",t:"Voice-Etikette",d:"Callouts im Kampf, Push-to-Talk.",tags:["Discord"]},
-  {i:"🔧",t:"Char-Vorbereitung",d:"Wöchentliche Checkliste vor dem Reset.",tags:["Gear","Wöchentlich"]}
+  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. 19:40 im Voice.",tags:["Pflicht"]},
+  {i:"💰",t:"Loot-Regelung",d:"Wie Loot verteilt wird und wie Wünsche angemeldet werden.",tags:["Loot"]},
+  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen rechtzeitig über Raid-Helper im Discord eintragen.",tags:["Signup"]}
 ];
 
 const TERMINE = [
-  {d:"Montag",dt:"24.08.2026",t:"19:45 – 22:30",z:"Der Giftige Abgrund",n:"Normal weiter · Zwillingsfänge"},
-  {d:"Donnerstag",dt:"27.08.2026",t:"19:45 – 22:30",z:"Der Giftige Abgrund",n:"Normal abschließen, Heroisch antesten"},
-  {d:"Montag",dt:"31.08.2026",t:"19:45 – 22:30",z:"Der Giftige Abgrund",n:"Heroisch Progress"}
+  {d:"Montag",dt:"24.08.2026",t:"19:45 – 22:30",z:"The Venomous Abyss",n:"Normal & Heroisch"}
 ];
 
 const CHECK = [
@@ -388,7 +370,7 @@ const ROLLEN={Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT={
   title:"The Venomous Abyss",
   date:"24-08-2026", time:"19:45", closing:"24.08. 19:45",
-  leader:"Merccrixxus/Passi", channel:"💥〢raidtag-montag",
+  leader:"Merccrixxus/Passi",
   live:false,
   counts:{primary:0,tentative:0,bench:0,absence:0,late:0},
   signups:[]
@@ -396,30 +378,26 @@ const EVENT={
 
 let REPORTS=[];
 
-const NAV=[["start","Start"],["raid","Taktiken"],["termine","Termine"],
-           ["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
-
+const NAV=[["start","Start"],["raid","Taktiken"],["termine","Termine"],["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
 const IS_MAC=/Mac|iPhone|iPad/.test(navigator.userAgent);
 const KEY=IS_MAC?"⌘ K":"Strg K";
 const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const strip=s=>String(s||"").replace(/<[^>]+>/g,"");
 const ext=(u,t)=>`<a class="lchip" href="${u}" target="_blank" rel="noopener">${t} <span style="opacity:.5">↗</span></a>`;
 const col=c=>CMAP[c]||"#888";
-const pk=p=>p>=99?"pk-leg":p>=95?"pk-orange":p>=75?"pk-purple":p>=50?"pk-blue":p>=25?"pk-green":"pk-grey";
 const ST={down:{cls:"p-green",tx:"Gelegt"},prog:{cls:"p-amber",tx:"Aktueller Boss"},open:{cls:"p-gray",tx:"Noch offen"}};
 
 function normName(s){
   return String(s||"").split("/")[0].split("|")[0].trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 }
 
-function logCard(r, compact){
+function logCard(r){
   if(!r) return `<div class="card"><div class="eyebrow">Logs</div><div>Keine aktuellen Logs hinterlegt.</div></div>`;
   return `<div class="logcard">
     <div class="logcard-t">
       <div>
         <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
           <span class="eyebrow" style="margin:0">${r.live?"Letzter Raidabend":"Raidabend"}</span>
-          ${r.live?`<span class="pill p-green"><span class="dot"></span>Warcraft Logs</span>`:""}
+          <span class="pill p-green"><span class="dot"></span>Warcraft Logs Live</span>
         </div>
         <div style="font-size:19px;font-weight:700;letter-spacing:-.4px;margin-top:6px">${esc(r.t)}</div>
         <div class="soft" style="font-size:13px">${esc(r.d)} · ${esc(r.diff)} · ${r.dur}</div>
@@ -427,31 +405,24 @@ function logCard(r, compact){
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         <span class="chip">Kills <b>${r.kills}</b></span>
         <span class="chip">Wipes <b>${r.wipes}</b></span>
-        ${r.avg?`<span class="chip">Ø Parse <b>${r.avg}</b></span>`:""}
       </div>
     </div>
-    ${r.top&&!compact?`<div class="logcard-b">
-      <div class="eyebrow" style="display:flex;align-items:center;gap:8px">⭐ VIP / Beste Parses des Abends</div>
-      ${r.top.map(([n,c,p])=>`<div class="parse">
-        <span class="p ${pk(p)}">${p}</span>
-        <span class="nm" style="color:${col(c)}">${esc(n)}</span>
-        <span class="mt">${esc(c)}</span></div>`).join("")}
-      <div class="links" style="margin-top:14px">
+    <div class="logcard-b">
+      ${r.killedBosses&&r.killedBosses.length ? `
+        <div class="eyebrow" style="margin-bottom:8px">Gelegte Bosse</div>
+        <div class="abils" style="margin-bottom:14px">${r.killedBosses.map(b=>`<span class="abil">${esc(b)}</span>`).join("")}</div>
+      ` : ''}
+      <div class="links">
         ${ext(r.url||G.links.wcl,"Vollen Report auf Warcraft Logs öffnen")}
         <a class="lchip" href="#/logs">Alle Raidabende</a>
       </div>
-    </div>`:""}
+    </div>
   </div>`;
 }
 
 function signupBlock(){
   if(!EVENT.live){
-    return `<div class="card">
-      <div class="eyebrow">Anmeldung</div>
-      <div style="font-size:17px;font-weight:650;margin:6px 0 8px">Kein aktiver Termin</div>
-      <p class="soft" style="font-size:13.5px;max-width:52ch">Die Anmeldungen laufen über Raid-Helper im Discord.</p>
-      <div class="links" style="margin-top:14px"><a class="lchip" href="#/termine">Alle Termine</a></div>
-    </div>`;
+    return `<div class="card"><div class="eyebrow">Anmeldung</div><div style="font-size:16px;font-weight:600">Keine aktiven Termine</div></div>`;
   }
   const prim=EVENT.signups.filter(x=>x.status==="primary");
   const grp=r=>prim.filter(p=>p.role===r);
@@ -459,17 +430,13 @@ function signupBlock(){
   return `<div class="card">
     <div class="sig-head">
       <div>
-        <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
-          <span class="eyebrow" style="margin:0">Anmeldung</span>
-          <span class="pill p-green"><span class="dot"></span>Discord Live</span>
-        </div>
+        <div class="eyebrow">Anmeldung <span class="pill p-green"><span class="dot"></span>Discord Live</span></div>
         <div style="font-size:17px;font-weight:650;margin-top:5px">${esc(EVENT.title)}</div>
-        <div class="soft" style="font-size:13px">${esc(EVENT.dateLabel||"Montag 24.08.")} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
+        <div class="soft" style="font-size:13px">${esc(EVENT.dateLabel)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
       </div>
       <div class="sig-counts">
         ${cnt("c-yes","✓ Zugesagt",prim.length)}
         ${cnt("c-tent","? Unsicher",EVENT.counts.tentative)}
-        ${cnt("c-bench","≡ Bank",EVENT.counts.bench)}
         ${cnt("c-no","✕ Abgemeldet",EVENT.counts.absence)}
       </div>
     </div>
@@ -481,10 +448,6 @@ function signupBlock(){
           ${g.map(p=>`<div class="sig-p"><span class="d" style="background:${col(p.cls)}"></span>
             <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:12px">—</div>`}
         </div>`;}).join("")}
-    </div>
-    <div class="links" style="margin-top:16px">
-      <a class="lchip" href="#/termine">Alle Termine</a>
-      <span class="lchip" style="cursor:default">💬 Synchronisiert via Discord Raid-Helper</span>
     </div>
   </div>`;
 }
@@ -499,9 +462,9 @@ start(){
   <section class="hero fade"><div class="hero-in">
     <svg class="hero-mark"><use href="#foxmark"/></svg>
     <div style="flex:1;min-width:260px">
-      <div class="eyebrow" style="margin-bottom:7px">${G.realm} · ${G.region} · ${G.faction}</div>
+      <div class="eyebrow">${G.realm} · ${G.region} · ${G.faction}</div>
       <h1>ShadowFox</h1>
-      <p class="sub">${esc(G.recruit.motto)} Zwei Raidabende die Woche, ${G.members} Mitglieder — Taktiken, Vorbereitung und Kader im Überblick.</p>
+      <p class="sub">${esc(G.recruit.motto)} Zwei Raidabende die Woche, ${G.members} Mitglieder.</p>
       <div class="hero-chips">
         <span class="chip">Raid <b>${esc(G.raidDays)}</b></span>
         <span class="chip">Zeit <b>${esc(G.raidTime)}</b></span>
@@ -515,83 +478,28 @@ start(){
       ${bar("Mythisch",r.myth,r.bosses,"linear-gradient(90deg,#8f7ce8,#c0b2f5)")}
     </div>
   </div></section>
-
   <div class="grid g2 fade" style="margin-bottom:34px;align-items:start">
     ${logCard(REPORTS[0])}
     ${signupBlock()}
   </div>
-
-  <h2 class="sec">Wo finde ich was?</h2>
-  <p class="sec-sub">Alles auf einen Klick. Für Schnellzugriff: <kbd class="kk">${KEY}</kbd> drücken.</p>
   <div class="tiles fade" style="margin-bottom:34px">
-    <a class="tile" href="#/raid"><span class="ic">🎯</span><b>Taktik zum aktuellen Boss</b><span>${esc(prog.n)}</span></a>
-    <a class="tile" href="#/termine"><span class="ic">📅</span><b>Wann raiden wir?</b><span>${esc(G.raidDays)}, ${esc(G.raidTime)}</span></a>
-    <a class="tile" href="#/tracker"><span class="ic">📈</span><b>Aktivitäts-Tracker</b><span>Item Level, M+, Vault & Anwesenheit</span></a>
-    <a class="tile" href="#/wissen"><span class="ic">📖</span><b>Regeln & Setup</b><span>Addons, Loot, Konsum & Onboarding</span></a>
-  </div>
-
-  <h2 class="sec">Gilden-Profile</h2>
-  <p class="sec-sub">Direktlinks zu unseren externen Profilen.</p>
-  <div class="links fade">
-    ${ext(G.links.rio,"📊 Raider.IO")}${ext(G.links.wcl,"📈 Warcraft Logs")}
-    ${ext(G.links.wowp,"📋 WoWProgress")}${ext(G.links.armory,"🛡️ Arsenal")}
-    ${ext(G.links.zone,"🗺️ Raid auf Wowhead")}
+    <a class="tile" href="#/raid"><span class="ic">🎯</span><b>Taktik zum Boss</b><span>${esc(prog.n)}</span></a>
+    <a class="tile" href="#/termine"><span class="ic">📅</span><b>Raidzeiten</b><span>${esc(G.raidDays)}</span></a>
+    <a class="tile" href="#/tracker"><span class="ic">📈</span><b>Aktivitäts-Tracker</b><span>Item Level, M+, Vault</span></a>
+    <a class="tile" href="#/roster"><span class="ic">👥</span><b>Kader-Übersicht</b><span>${KADER.length} Raider</span></a>
   </div>`;
 },
-
 raid(){
-  const r=G.raid;
-  return `
-  <div class="page-h fade">
-    <h1>${esc(r.name)}</h1>
-    <p>${esc(r.en)} · ${r.bosses} Bosse · ${esc(r.zone)} · seit ${esc(r.release)}.</p>
-  </div>
-  <div class="fade">
-  ${BOSSES.map((b,i)=>{const s=ST[b.st]||ST.open;return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
-    <button class="bhead" onclick="document.getElementById('b${i}').classList.toggle('open')">
-      <span class="bnum">${i+1}</span>
-      <span class="bname"><b>${esc(b.n)}</b><span>${esc(b.role)} · ${esc(b.en)}</span></span>
-      <span class="pill ${s.cls}"><span class="dot"></span>${s.tx}</span>
-      <svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg>
-    </button>
-    <div class="bbody">
-      <div class="bintro">${esc(b.intro)}</div>
-      <div class="blabel">Ansagen im Raid</div>
-      <ul class="steps">${(b.pts||[]).map(([ro,tx])=>`<li class="step"><span class="rtag r-${ro.toLowerCase()}">${ro}</span><p>${tx}</p></li>`).join("")}</ul>
-      <div class="blabel">Fähigkeiten</div>
-      <div class="abils">${(b.abil||[]).map(a=>`<span class="abil">${esc(a)}</span>`).join("")}</div>
-      <div class="links">${ext(WH(b.slug),"Wowhead-Guide (DE)")}${ext(G.links.wcl,"Logs")}</div>
-    </div></div>`;}).join("")}
-  </div>`;
+  return `<div class="page-h fade"><h1>${esc(G.raid.name)}</h1></div>
+  ${BOSSES.map((b,i)=>`<div class="card fade" style="margin-bottom:12px">
+    <b>${i+1}. ${esc(b.n)}</b> <span class="soft">(${esc(b.role)})</span>
+    <ul style="margin-top:8px;padding-left:18px">${b.pts.map(([r,t])=>`<li><b>${r}:</b> ${esc(t)}</li>`).join("")}</ul>
+  </div>`).join("")}`;
 },
-
 termine(){
-  return `
-  <div class="page-h fade">
-    <h1>Termine & Anmeldung</h1>
-    <p>Wir raiden ${esc(G.raidDays)} von ${esc(G.raidTime)}. Anmeldungen synchronisieren live aus Discord.</p>
-  </div>
-  <div class="fade" style="margin-bottom:30px">${signupBlock()}</div>
-  <h2 class="sec">Kommende Termine</h2>
-  <div class="grid fade" style="margin-bottom:34px">
-    ${TERMINE.map(t=>`<div class="card" style="display:flex;align-items:center;gap:22px;flex-wrap:wrap">
-      <div style="min-width:140px"><div style="font-size:16px;font-weight:650">${esc(t.d)}</div>
-        <div class="muted" style="font-size:12.5px">${esc(t.dt)}</div></div>
-      <div style="min-width:110px"><span class="pill p-blue">${esc(t.t)}</span></div>
-      <div style="flex:1;min-width:200px"><div style="font-size:14px;font-weight:600">${esc(t.z)}</div>
-        <div class="muted" style="font-size:12.5px">${esc(t.n)}</div></div>
-    </div>`).join("")}
-  </div>
-  <h2 class="sec">Vor dem Raid</h2>
-  <div class="card fade">
-    <ul style="list-style:none;display:flex;flex-direction:column;gap:11px">
-      ${CHECK.map((c,i)=>`<li style="display:flex;gap:12px;align-items:flex-start">
-        <span style="flex-shrink:0;width:22px;height:22px;border-radius:6px;background:var(--amber-bg);border:1px solid rgba(234,181,78,.3);color:var(--amber);display:grid;place-items:center;font-size:11px;font-family:var(--mono);margin-top:1px">${i+1}</span>
-        <span style="font-size:13.5px;color:var(--tx2)">${esc(c)}</span></li>`).join("")}
-    </ul>
-  </div>`;
+  return `<div class="page-h fade"><h1>Termine & Anmeldung</h1></div>
+  <div class="fade" style="margin-bottom:24px">${signupBlock()}</div>`;
 },
-
 tracker(){
   const validChars = KADER.filter(p => p.ilvl != null && p.ilvl > 0);
   const maxI = validChars.length ? Math.max(...validChars.map(p => p.ilvl)) : 300;
@@ -607,19 +515,17 @@ tracker(){
   return `
   <div class="page-h fade">
     <h1>Aktivitäts-Tracker</h1>
-    <p>Wer ist vorbereitet, wer hängt hinterher? Item Level, M+-Runs, Great Vault (3 Slots) und Anwesenheit sortierbar per Klick auf die Spaltenüberschrift.</p>
+    <p>Live-Daten aus WoWAudit, Raider.IO und Blizzard.</p>
   </div>
-
   <div class="grid g4 fade" style="margin-bottom:22px">
     ${[["Kader",KADER.length,"Charaktere"],
-       ["Ø Item Level",avgIlvl,"über den Kader"],
+       ["Ø Item Level",avgIlvl,"aus WoWAudit/Raider.IO"],
        ["Ø Anwesenheit",avgAtt,"letzte Raids"],
-       ["Auffällig",slack.length,"unter der Erwartung"]]
+       ["Auffällig",slack.length,"unter Erwartung"]]
       .map(([l,v,s])=>`<div class="card"><div class="eyebrow" style="margin-bottom:5px">${l}</div>
         <div style="font-size:25px;font-weight:700;letter-spacing:-.9px">${v}</div>
         <div class="muted" style="font-size:12px">${s}</div></div>`).join("")}
   </div>
-
   <div class="tw fade" style="margin-bottom:30px">
     <table class="trk" id="trk">
       <thead><tr>
@@ -636,76 +542,32 @@ tracker(){
       <tbody id="trkb"></tbody>
     </table>
   </div>
-
   <div class="grid g2 fade" style="margin-bottom:30px">
     <div>
-      <h2 class="sec">Item-Level-Ranking</h2><p class="sec-sub">Top 8 im Kader</p>
+      <h2 class="sec">Item-Level-Ranking</h2>
       ${topI.map((p,i)=>`<div class="rank${i<3?' top':''}">
         <span class="pos">${i+1}</span>
         <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
-        <span class="mini"><i style="width:${Math.round((p.ilvl/maxI)*100)}%;background:${col(p.c)}"></i></span>
+        <span class="mini"><i style="width:${Math.round(((p.ilvl||0)/maxI)*100)}%;background:${col(p.c)}"></i></span>
         <span class="vl">${p.ilvl}</span></div>`).join("")||'<div class="muted">Keine Daten</div>'}
     </div>
     <div>
-      <h2 class="sec">Mythic-Plus-Ranking</h2><p class="sec-sub">Top 8 im Kader</p>
+      <h2 class="sec">Mythic-Plus-Ranking</h2>
       ${topM.map((p,i)=>`<div class="rank${i<3?' top':''}">
         <span class="pos">${i+1}</span>
         <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
         <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:var(--violet)"></i></span>
         <span class="vl">${p.mp||0}</span></div>`).join("")||'<div class="muted">Keine Scores</div>'}
     </div>
-  </div>
-
-  <h2 class="sec">Wer braucht einen Anstoß?</h2>
-  <p class="sec-sub">Automatisch gefiltert: unter 80 % Anwesenheit, weniger als 4 M+-Runs oder fehlende Wishlist.</p>
-  <div class="tw fade">
-    <table class="trk" style="min-width:600px"><thead><tr>
-      <th style="cursor:default">Spieler</th><th style="cursor:default">Anwesenheit</th>
-      <th style="cursor:default">M+ diese Woche</th><th style="cursor:default">Wishlist</th>
-      <th style="cursor:default">Worum es geht</th></tr></thead>
-      <tbody>${slack.map(p=>`<tr>
-        <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
-          <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
-        <td class="num" style="color:${(p.att||0)<80?'var(--red)':'var(--tx)'}">${p.att!=null?p.att+'%':'—'}</td>
-        <td class="num" style="color:${(p.mr||0)<4?'var(--amber)':'var(--tx)'}">${p.mr||0} / 8</td>
-        <td>${p.wl?'<span class="amp a-ok"><span class="b"></span>gepflegt</span>':'<span class="amp a-bad"><span class="b"></span>fehlt</span>'}</td>
-        <td style="white-space:normal;font-size:12.5px">${
-          [(p.att||0)<80?"selten da":null,(p.mr||0)<4?"kaum M+":null,!p.wl?"Wishlist fehlt":null].filter(Boolean).join(" · ")}</td>
-      </tr>`).join("")||'<tr><td colspan="5" style="text-align:center;padding:16px" class="muted">Alle im Soll!</td></tr>'}</tbody></table>
   </div>`;
 },
-
 logs(){
-  return `
-  <div class="page-h fade">
-    <h1>Raid-Logs</h1>
-    <p>Reports und Auswertungen aus Warcraft Logs — inklusive VIP-Parseausschüttung.</p>
-  </div>
-  <div class="fade" style="margin-bottom:24px">${logCard(REPORTS[0])}</div>
-  <h2 class="sec">Frühere Abende</h2>
-  <div class="grid fade">
-    ${REPORTS.slice(1).map(r=>`<div class="card" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
-      <div style="min-width:100px"><div class="num" style="font-size:13.5px">${esc(r.d)}</div>
-        <div class="muted" style="font-size:12px">${r.dur}</div></div>
-      <div style="flex:1;min-width:180px"><div style="font-size:14px;font-weight:650">${esc(r.t)}</div>
-        <div class="muted" style="font-size:12.5px">${esc(r.diff)}</div></div>
-      <div style="display:flex;gap:7px;flex-wrap:wrap">
-        <span class="chip">Kills <b>${r.kills}</b></span>
-        <span class="chip">Wipes <b>${r.wipes}</b></span>
-      </div>
-      ${ext(r.url||G.links.wcl,"Report")}
-    </div>`).join("")||'<div class="muted">Keine älteren Reports gefunden.</div>'}
-  </div>`;
+  return `<div class="page-h fade"><h1>Raid-Logs</h1></div>
+  <div class="grid fade">${REPORTS.map(r=>logCard(r)).join("")}</div>`;
 },
-
 roster(){
-  const max=CLASSES[0][1];
   const byRole=r=>KADER.filter(p=>p.r===r);
-  return `
-  <div class="page-h fade">
-    <h1>Roster</h1>
-    <p>${G.members} Charaktere in der Gilde, davon ${KADER.length} im Raidkader.</p>
-  </div>
+  return `<div class="page-h fade"><h1>Roster (${KADER.length} Raider)</h1></div>
   ${["Tank","Heal","Melee","Ranged"].map(r=>{
     const g=byRole(r); if(!g.length) return "";
     return `<div style="margin-bottom:26px" class="fade">
@@ -716,44 +578,18 @@ roster(){
       <div class="rcards">${g.map(p=>`<div class="rcard">
         <span class="rav" style="background:${col(p.c)}">${esc(p.n[0])}</span>
         <div>
-          <div class="hd"><b style="color:${col(p.c)}">${esc(p.n)}</b><em>${esc(p.spec||p.c)}</em>${p.note?`<span class="pill p-gray">${esc(p.note)}</span>`:""}</div>
-          <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap">
-            <span class="kbtag">ilvl ${p.ilvl||'—'}</span>
-            <span class="kbtag">M+ ${p.mp||0}</span>
-            ${p.mr!=null?`<span class="kbtag">${p.mr} Runs</span>`:""}
-          </div>
+          <div class="hd"><b style="color:${col(p.c)}">${esc(p.n)}</b><em>${esc(p.spec||p.c)}</em></div>
+          <div class="soft" style="font-size:12px;margin-top:4px">ilvl ${p.ilvl||'—'} · M+ Score ${p.mp||0} · ${p.mr||0} Runs diese Woche</div>
         </div>
       </div>`).join("")}</div>
-    </div>`;}).join("")}
-
-  <h2 class="sec" style="margin-top:34px">Klassenverteilung der ganzen Gilde</h2>
-  <div class="card fade" style="margin-bottom:24px">
-    ${CLASSES.map(([n,c,cl])=>`<div class="clsrow">
-      <span class="n" style="color:${cl}">${esc(n)}</span>
-      <span class="bar"><span class="bf" style="width:${Math.round(c/max*100)}%;background:${cl}"></span></span>
-      <span class="c">${c}</span></div>`).join("")}
-  </div>`;
+    </div>`;}).join("")}`;
 },
-
 wissen(){
-  return `
-  <div class="page-h fade"><h1>Wissen & Guides</h1><p>Alle Regeln und Vorbereitungen auf einen Blick.</p></div>
-  <div class="grid g2 fade">
-    ${KB.map(k=>`<div class="kbcard"><h3><span>${k.i}</span>${esc(k.t)}</h3><p>${esc(k.d)}</p>
-      <div style="display:flex;gap:5px;margin-top:10px">${(k.tags||[]).map(t=>`<span class="kbtag">${esc(t)}</span>`).join("")}</div>
-    </div>`).join("")}
-  </div>`;
+  return `<div class="page-h fade"><h1>Wissen & Guides</h1></div>
+  <div class="grid g2 fade">${KB.map(k=>`<div class="kbcard"><h3>${k.i} ${esc(k.t)}</h3><p>${esc(k.d)}</p></div>`).join("")}</div>`;
 },
-
 bewerben(){
-  return `
-  <div class="page-h fade"><h1>Bewerben</h1><p>${esc(G.recruit.motto)}</p></div>
-  <div class="grid g2 fade">
-    <div class="card"><div class="eyebrow">Gesuchte Klassen</div>
-      <p class="soft" style="margin-bottom:14px">${G.recruit.open.join(", ")}</p>
-      <div class="links">${G.recruit.contacts.map(c=>`<span class="lchip">💬 ${esc(c)}</span>`).join("")}</div>
-    </div>
-  </div>`;
+  return `<div class="page-h fade"><h1>Bewerben</h1><p>${esc(G.recruit.motto)}</p></div>`;
 }
 };
 
@@ -778,7 +614,7 @@ function renderTrk(){
   });
   tb.innerHTML=rows.map(p=>`<tr>
     <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
-      <span><b>${esc(p.n)}</b><i>${esc(p.c)}${p.note?" · "+esc(p.note):""}</i></span></span></td>
+      <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
     <td><span style="color:${ROLLEN[p.r]||'#888'};font-weight:600;font-size:12px">${p.r}</span></td>
     <td><span class="mini"><i style="width:${Math.round(((p.ilvl||0)/maxI)*100)}%;background:${col(p.c)}"></i></span><span class="num">${p.ilvl||'—'}</span></td>
     <td><span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:var(--violet)"></i></span><span class="num">${p.mp||0}</span></td>
@@ -834,45 +670,29 @@ function resolveClass(spec, cls, name){
   return CLS_DE[cls] || cls || "Krieger";
 }
 
-function applyData(d, c){
-  // 1. Kader initial aus content/raider.json aufbauen
+function applyData(d){
   const charMap = new Map();
-  const baseRaiders = c.raider?.raider || [];
-  for(const r of baseRaiders){
-    if(r.aktiv === false) continue;
-    const key = normName(r.name);
-    charMap.set(key, {
-      n: r.name,
-      c: r.klasse,
-      r: r.rolle || "Ranged",
-      ilvl: null,
-      mp: 0,
-      mr: 0,
-      v: 0,
-      att: null,
-      wl: 1,
-      note: r.notiz || "",
-      spec: ""
-    });
-  }
 
-  // 2. WoWAudit einmischen (höchste Genauigkeit für Kader-Werte)
+  // 1. WoWAudit Charaktere als Kernkader
   if(d.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
       const key = normName(wc.name);
-      let p = charMap.get(key);
-      if(!p){
-        p = { n: wc.name, c: CLS_DE[wc.class]||wc.class, r: mapRole(wc.role, wc.class, wc.spec), ilvl: null, mp: 0, mr: 0, v: 0, att: null, wl: 1, spec: wc.spec||"" };
-        charMap.set(key, p);
-      }
-      if(wc.ilvl || wc.equipped_ilvl) p.ilvl = wc.ilvl || wc.equipped_ilvl;
-      if(wc.class) p.c = CLS_DE[wc.class] || wc.class;
-      if(wc.spec) p.spec = wc.spec;
-      if(wc.wishlist != null) p.wl = wc.wishlist ? 1 : 0;
-      if(wc.role) p.r = mapRole(wc.role, p.c, p.spec);
+      charMap.set(key, {
+        n: wc.name,
+        c: CLS_DE[wc.class] || wc.class,
+        r: mapRole(wc.role, wc.class, wc.spec),
+        ilvl: wc.ilvl || wc.equipped_ilvl || null,
+        mp: 0,
+        mr: 0,
+        v: 0,
+        att: null,
+        wl: wc.wishlist != null ? (wc.wishlist ? 1 : 0) : 1,
+        spec: wc.spec || ""
+      });
     }
   }
 
+  // 2. WoWAudit Anwesenheit
   if(d.wowaudit?.attendance){
     const attList = Array.isArray(d.wowaudit.attendance) ? d.wowaudit.attendance : (d.wowaudit.attendance.characters || []);
     for(const a of attList){
@@ -884,12 +704,15 @@ function applyData(d, c){
     }
   }
 
-  // 3. Raider.IO einmischen (Gear & M+-Score)
+  // 3. Raider.IO Scores einmischen
   if(d.roster?.characters?.length){
     for(const rc of d.roster.characters){
       const key = normName(rc.name);
-      const p = charMap.get(key);
-      if(p){
+      let p = charMap.get(key);
+      if(!p){
+        p = { n: rc.name, c: CLS_DE[rc.class]||rc.class, r: mapRole(rc.role, rc.class, rc.spec), ilvl: rc.ilvl, mp: rc.mplus||0, mr: 0, v: 0, att: null, wl: 1, spec: rc.spec||"" };
+        charMap.set(key, p);
+      } else {
         if(rc.ilvl && !p.ilvl) p.ilvl = rc.ilvl;
         if(rc.mplus != null) p.mp = rc.mplus;
         if(rc.spec && !p.spec) p.spec = rc.spec;
@@ -897,7 +720,7 @@ function applyData(d, c){
     }
   }
 
-  // 4. Blizzard Keys (Weekly M+ Runs & Vault)
+  // 4. Blizzard Keys einmischen
   if(d.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
       const key = normName(bk.name);
@@ -911,7 +734,7 @@ function applyData(d, c){
 
   KADER = Array.from(charMap.values());
 
-  // 5. Raid-Helper Events
+  // 5. Raid-Helper Signups
   if(d.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
@@ -933,23 +756,19 @@ function applyData(d, c){
     EVENT.live = true;
   }
 
-  // 6. Warcraft Logs Reports & VIP Parses
+  // 6. Warcraft Logs Reports (100% echte Daten)
   if(d.logs?.reports?.length){
     REPORTS = d.logs.reports.map((r, i)=>({
       code: r.code,
       t: r.zone || r.title || "Der Giftige Abgrund",
-      d: r.date || "19.08.2026",
+      d: r.date || "Letzter Raidabend",
       diff: r.difficulty || "Normal",
-      dur: r.duration || "2h 41m",
-      kills: r.kills || 5,
-      wipes: r.wipes || 7,
-      avg: r.bestTryPct || 88.4,
+      dur: r.duration || "—",
+      kills: r.kills || 0,
+      wipes: r.wipes || 0,
+      killedBosses: r.killedBosses || [],
       live: i === 0,
-      url: r.url || G.links.wcl,
-      top: r.top || [
-        ["Jisgarin","Magier",94],["Feire","Rufer",91],
-        ["Miliim","Dämonenjäger",86],["Corvisstab","Schurke",78],["Quon","Druide",64]
-      ]
+      url: r.url || G.links.wcl
     }));
   }
 }
@@ -970,7 +789,7 @@ function buildIndex(){
   INDEX=[
     ...BOSSES.flatMap((b,i)=>[
       {i:"🎯",t:b.n,s:`Boss ${i+1} · ${b.role}`,c:"Boss",h:"#/raid",k:`${b.n} ${b.en} boss`},
-      ...(b.pts||[]).map(([r,tx])=>({i:"📝",t:strip(tx),s:`${r} — ${b.n}`,c:"Taktik",h:"#/raid",k:`${strip(tx)} ${b.n}`}))
+      ...(b.pts||[]).map(([r,tx])=>({i:"📝",t:tx,s:`${r} — ${b.n}`,c:"Taktik",h:"#/raid",k:`${tx} ${b.n}`}))
     ]),
     ...KADER.map(p=>({i:"👤",t:p.n,s:`${p.c} · ${p.r}`,c:"Kader",h:"#/roster",k:`${p.n} ${p.c} ${p.r} raider`})),
     ...KB.map(k=>({i:k.i,t:k.t,s:k.d,c:"Wissen",h:"#/wissen",k:`${k.t} ${k.d}`})),
@@ -1011,13 +830,10 @@ addEventListener("keydown",e=>{
 });
 
 (async function boot(){
-  const [d, c] = await Promise.all([
-    Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status"].map(n=>load(`data/${n}.json`)))
-      .then(a=>Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status"].map((n,i)=>[n,a[i]]))),
-    Promise.all(["raider","termine"].map(n=>load(`content/${n}.json`)))
-      .then(a=>Object.fromEntries(["raider","termine"].map((n,i)=>[n,a[i]])))
-  ]);
-  applyData(d, c);
+  const dnames=["guild","roster","events","logs","wowaudit","blizzard","status"];
+  const d=await Promise.all(dnames.map(n=>load(`data/${n}.json`)))
+    .then(a=>Object.fromEntries(dnames.map((n,i)=>[n,a[i]])));
+  applyData(d);
   buildIndex();
   route();
 })();
