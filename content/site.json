@@ -13,33 +13,8 @@
     "patch": "12.1",
     "release": "19. August 2026",
     "bosses": 8,
-    "rioKey": "the-venomous-abyss",
-    "rioKeyPrev": "tier-mn-1"
-  },
-  "links": {
-    "rio": "https://raider.io/guilds/eu/blackmoore/ShadowFox",
-    "wcl": "https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox",
-    "wowp": "https://www.wowprogress.com/guild/eu/blackmoore/ShadowFox",
-    "armory": "https://worldofwarcraft.blizzard.com/de-de/guild/eu/blackmoore/shadowfox",
-    "zone": "https://www.wowhead.com/de/zone=16915/the-venomous-abyss",
-    "raidguide": "https://www.icy-veins.com/wow/venomous-abyss-raid-guide"
-  },
-  "recruit": {
-    "open": [
-      "Dämonenjäger",
-      "Todesritter",
-      "Rufer"
-    ],
-    "contacts": [
-      "KARTOFFELSAL#21265",
-      "Langhaloth#2412"
-    ]
-  },
-  "checkliste": [
-    "Flasks, Food und Runen für den ganzen Abend dabei",
-    "Aktuelles WeakAura-Paket importiert",
-    "Boss-Taktik auf dieser Seite gelesen — vor dem Raid, nicht währenddessen",
-    "Ausrüstung repariert, Sockel und Verzauberungen aktuell",
-    "19:40 im Voice, damit 19:45 gepullt werden kann"
-  ]
+    "nhc": 6,
+    "hc": 0,
+    "myth": 0
+  }
 }
