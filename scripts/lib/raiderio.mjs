@@ -1,7 +1,5 @@
-/* Raider.IO — braucht keinen API-Key.
-   Achtung: der fields-Parameter darf NICHT url-kodiert werden,
-   sonst liefert Raider.IO stillschweigend nur das Basisprofil. */
-import { req, pool, ok, log, fail, sleep } from "./util.mjs";
+/* Raider.IO — Gildenprofil & Charakterabgleich */
+import { req, pool, ok, log, sleep } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
@@ -35,20 +33,16 @@ export async function guildProfile({ region, realm, name }) {
 export async function characters(names, { region, realm }) {
   const reg = encodeURIComponent(String(region || "eu").toLowerCase());
   const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
-  const errs = [];
 
   const res = await pool(names, 2, async (n, i) => {
-    await sleep(i * 200);
+    await sleep(i * 150);
     const cleanName = String(n || "").trim();
     if (!cleanName) return null;
 
-    const url = `${BASE}/characters/profile?region=${reg}&realm=${rlm}`
-              + `&name=${encodeURIComponent(cleanName)}`
-              + `&fields=gear,mythic_plus_scores_by_season:current`;
+    const url = `${BASE}/characters/profile?region=${reg}&realm=${rlm}&name=${encodeURIComponent(cleanName)}&fields=gear,mythic_plus_scores_by_season:current`;
     try {
       const c = await req(url, {}, 3);
       if (!c || c.statusCode === 400 || c.error) {
-        errs.push(`${cleanName}: Nicht gefunden`);
         return { name: cleanName, ilvl: null, mplus: 0 };
       }
       return {
@@ -61,9 +55,7 @@ export async function characters(names, { region, realm }) {
         thumb: c.thumbnail_url ?? null,
         profileUrl: c.profile_url
       };
-    } catch (e) {
-      errs.push(`${cleanName}: ${e.message.split("—")[0].trim()}`);
-      // Rückfallobjekt statt Absturz, damit der Charakter im Roster bleibt
+    } catch {
       return { name: cleanName, ilvl: null, mplus: 0 };
     }
   });
@@ -71,9 +63,5 @@ export async function characters(names, { region, realm }) {
   const found = res.filter(Boolean);
   const withIlvl = found.filter(c => c.ilvl != null);
   ok(`Raider.IO: ${withIlvl.length}/${names.length} Charaktere mit Details geladen`);
-  
-  if (errs.length > 0) {
-    for (const e of errs.slice(0, 4)) log(`   Hinweis — ${e}`);
-  }
   return found;
 }
