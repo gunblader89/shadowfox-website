@@ -60,7 +60,7 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
 .grid{display:grid;gap:14px}
 .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
-.start-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:16px;align-items:stretch;margin-bottom:34px}
+.start-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:16px;align-items:stretch;margin-bottom:34px}
 .muted{color:var(--tx3)}.soft{color:var(--tx2)}
 .mono{font-family:var(--mono);font-size:12.5px}
 
@@ -126,7 +126,7 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
 
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
-table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:680px}
 table.trk th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700;padding:12px 11px;border-bottom:1px solid var(--line2);white-space:nowrap;cursor:pointer;user-select:none}
 table.trk th:hover{color:var(--tx2)}
 table.trk th.act{color:var(--amber)}
@@ -139,16 +139,11 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .pname b{color:var(--tx);font-weight:650;font-size:13px}
 .pname i{font-style:normal;font-size:11px;color:var(--tx3);display:block}
 .num{font-family:var(--mono);font-size:12.5px;color:var(--tx)}
-.mini{height:6px;border-radius:100px;background:#1a1e28;overflow:hidden;width:56px;display:inline-block;vertical-align:middle;margin-right:8px}
+.mini{height:6px;border-radius:100px;background:#1a1e28;overflow:hidden;width:60px;display:inline-block;vertical-align:middle;margin-right:8px}
 .mini i{display:block;height:100%;border-radius:100px}
-.vault{display:inline-flex;gap:3px}
-.vslot{width:15px;height:15px;border-radius:4px;border:1px solid var(--line2);background:#171b24}
+.vault{display:inline-flex;gap:4px}
+.vslot{width:16px;height:16px;border-radius:4px;border:1px solid var(--line2);background:#171b24}
 .vslot.on{background:var(--amber);border-color:var(--amber);box-shadow:0 0 8px rgba(234,181,78,.3)}
-.amp{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:650}
-.amp .b{width:8px;height:8px;border-radius:50%}
-.a-ok .b{background:var(--green)}.a-ok{color:var(--green)}
-.a-warn .b{background:var(--amber)}.a-warn{color:var(--amber)}
-.a-bad .b{background:var(--red)}.a-bad{color:var(--red)}
 
 .rank{display:flex;align-items:center;gap:11px;padding:9px 12px;border-radius:9px;background:var(--panel);border:1px solid var(--line);margin-bottom:6px;transition:.14s}
 .rank:hover{border-color:var(--line2)}
@@ -177,14 +172,14 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .logcard-b{padding:16px 20px;background:rgba(0,0,0,.15);flex:1}
 .parse{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.03)}
 .parse:last-child{border-bottom:none}
-.parse .p{width:46px;text-align:center;font-family:var(--mono);font-size:11px;font-weight:700;padding:3px 0;border-radius:5px;flex-shrink:0}
+.parse .p{width:36px;text-align:center;font-family:var(--mono);font-size:11px;font-weight:700;padding:2px 0;border-radius:5px;flex-shrink:0}
 .pk-leg{color:#e5cc80;background:rgba(229,204,128,.14);border:1px solid rgba(229,204,128,.3)}
 .pk-orange{color:#ff8000;background:rgba(255,128,0,.13);border:1px solid rgba(255,128,0,.3)}
 .pk-purple{color:#a335ee;background:rgba(163,53,238,.14);border:1px solid rgba(163,53,238,.32)}
 .pk-blue{color:#0070dd;background:rgba(0,112,221,.15);border:1px solid rgba(0,112,221,.35)}
 .pk-green{color:#1eff00;background:rgba(30,255,0,.1);border:1px solid rgba(30,255,0,.26)}
 .parse .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
-.parse .mt{font-size:11.5px;color:var(--tx);font-family:var(--mono);font-weight:600;flex-shrink:0}
+.parse .mt{font-size:11.5px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
 
 .rcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .rcard{display:flex;gap:14px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s;align-items:center}
@@ -340,7 +335,7 @@ const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 
 const EVENT = {
   title:"The Venomous Abyss",
-  date:"24-08-2026", time:"19:45", closing:"24.08. 19:45",
+  date:"24.08.26", time:"19:45",
   leader:"Merccrixxus/Passi",
   live:false,
   counts:{primary:0,tentative:0,bench:0,absence:0,late:0},
@@ -381,6 +376,21 @@ function normName(s){
   return String(s||"").split("/")[0].split("|")[0].trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 }
 
+function fmtDateShort(d) {
+  if (!d) return "—";
+  if (typeof d === "number") {
+    const dt = new Date(d);
+    return `${String(dt.getDate()).padStart(2,"0")}.${String(dt.getMonth()+1).padStart(2,"0")}.${String(dt.getFullYear()).slice(-2)}`;
+  }
+  const str = String(d).trim();
+  const p = str.split(/[-.]/);
+  if (p.length === 3) {
+    if (p[0].length === 4) return `${p[2].padStart(2,"0")}.${p[1].padStart(2,"0")}.${p[0].slice(-2)}`;
+    return `${p[0].padStart(2,"0")}.${p[1].padStart(2,"0")}.${p[2].slice(-2)}`;
+  }
+  return str;
+}
+
 function calcVault(runs) {
   if (runs >= 8) return 3;
   if (runs >= 4) return 2;
@@ -388,8 +398,31 @@ function calcVault(runs) {
   return 0;
 }
 
+function scoreColor(score) {
+  const s = Number(score || 0);
+  if (s >= 2900) return "#e5cc80"; // Gold / Legendär
+  if (s >= 2600) return "#ff8000"; // Orange
+  if (s >= 2200) return "#a335ee"; // Lila
+  if (s >= 1600) return "#6b9ce8"; // Blau
+  return "#5ec48f";               // Grün
+}
+
+function pkClass(parse) {
+  const p = Number(parse || 0);
+  if (p >= 99) return "pk-leg";
+  if (p >= 95) return "pk-orange";
+  if (p >= 75) return "pk-purple";
+  if (p >= 50) return "pk-blue";
+  if (p >= 25) return "pk-green";
+  return "pk-grey";
+}
+
 function logCard(r){
   if(!r) return `<div class="card"><div class="eyebrow">Logs</div><div>Keine aktuellen Logs hinterlegt.</div></div>`;
+  const dpsVips = r.vips?.dps ?? [];
+  const hpsVips = r.vips?.hps ?? [];
+  const hasVips = dpsVips.length > 0 || hpsVips.length > 0;
+
   return `<div class="logcard">
     <div class="logcard-t">
       <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:6px">
@@ -397,24 +430,29 @@ function logCard(r){
         <span class="pill p-green"><span class="dot"></span>Warcraft Logs</span>
       </div>
       <div style="font-size:18px;font-weight:700;letter-spacing:-.4px">${esc(r.t)}</div>
-      <div class="soft" style="font-size:12.5px;margin-top:2px">${esc(r.d)} · ${esc(r.diff)} · ${r.dur}</div>
+      <div class="soft" style="font-size:12.5px;margin-top:2px">${fmtDateShort(r.startTime || r.d)} · ${esc(r.diff)} · ${r.dur}</div>
       <div style="display:flex;gap:7px;margin-top:10px;flex-wrap:wrap">
         <span class="chip">Kills <b>${r.kills}</b></span>
         <span class="chip">Wipes <b>${r.wipes}</b></span>
       </div>
     </div>
     <div class="logcard-b">
-      ${r.top && r.top.length ? `
-        <div class="eyebrow" style="margin-bottom:8px;display:flex;align-items:center;gap:6px">⭐ VIP / Beste Performer</div>
-        ${r.top.map(p=>`<div class="parse">
-          <span class="p ${p.role==='DPS'?'pk-orange':'pk-purple'}">${esc(p.role)}</span>
+      ${hasVips ? `
+        <div class="eyebrow" style="margin-bottom:6px">⭐ Top DPS des Abends</div>
+        ${dpsVips.map(p=>`<div class="parse">
+          <span class="p ${pkClass(p.parse)}">${p.parse}</span>
           <span class="nm" style="color:${col(p.class)}">${esc(p.name)}</span>
-          <span class="mt">${esc(p.amount)}</span></div>`).join("")}
+          <span class="mt">${esc(p.boss)}</span></div>`).join("")}
+        <div class="eyebrow" style="margin:10px 0 6px">💚 Top Heilung des Abends</div>
+        ${hpsVips.map(p=>`<div class="parse">
+          <span class="p ${pkClass(p.parse)}">${p.parse}</span>
+          <span class="nm" style="color:${col(p.class)}">${esc(p.name)}</span>
+          <span class="mt">${esc(p.boss)}</span></div>`).join("")}
       ` : (r.killedBosses && r.killedBosses.length ? `
         <div class="eyebrow" style="margin-bottom:6px">Gelegte Bosse</div>
         <div class="abils" style="margin-bottom:10px">${r.killedBosses.map(b=>`<span class="abil">${esc(b)}</span>`).join("")}</div>
       ` : '')}
-      <div class="links" style="margin-top:12px">
+      <div class="links" style="margin-top:14px">
         ${ext(r.url||G.links.wcl,"Vollen Report auf WCL öffnen")}
       </div>
     </div>
@@ -433,7 +471,7 @@ function signupBlock(){
       <div>
         <div class="eyebrow">Anmeldung <span class="pill p-green"><span class="dot"></span>Discord Live</span></div>
         <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(EVENT.title)}</div>
-        <div class="soft" style="font-size:12.5px">${esc(EVENT.dateLabel)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
+        <div class="soft" style="font-size:12.5px">${fmtDateShort(EVENT.date)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
       </div>
       <div class="sig-counts">
         ${cnt("c-yes","✓ Zugesagt",prim.length)}
@@ -525,26 +563,23 @@ termine(){
 
 tracker(){
   const validChars = KADER.filter(p => p.ilvl != null && p.ilvl > 0);
-  const maxI = validChars.length ? Math.max(...validChars.map(p => p.ilvl)) : 300;
   const maxM = KADER.length ? Math.max(...KADER.map(p => p.mp || 0)) : 3000;
   
   const topI = [...KADER].filter(p => p.ilvl).sort((a,b) => b.ilvl - a.ilvl).slice(0,8);
   const topM = [...KADER].filter(p => p.mp).sort((a,b) => b.mp - a.mp).slice(0,8);
-  const slack = KADER.filter(p => (p.att != null && p.att < 80) || (p.mr != null && p.mr < 4) || p.wl === 0);
+  const slack = KADER.filter(p => (p.mr != null && p.mr < 4) || (p.mp || 0) < 1000);
   const avgIlvl = validChars.length ? (validChars.reduce((s,p) => s + p.ilvl, 0) / validChars.length).toFixed(1) : "—";
-  const withAtt = KADER.filter(p => p.att != null);
-  const avgAtt = withAtt.length ? Math.round(withAtt.reduce((s,p) => s + p.att, 0) / withAtt.length) + " %" : "—";
+  const avgRuns = KADER.length ? (KADER.reduce((s,p) => s + (p.mr || 0), 0) / KADER.length).toFixed(1) : "0";
 
   return `
   <div class="page-h fade">
     <h1>Aktivitäts-Tracker</h1>
-    <p>Live-Daten aus WoWAudit, Raider.IO und Blizzard.</p>
+    <p>Live-Übersicht über Ausrüstung, M+-Scores, Wochenaktivität und Great Vault.</p>
   </div>
-  <div class="grid g4 fade" style="margin-bottom:22px">
+  <div class="grid g3 fade" style="margin-bottom:22px">
     ${[["Kader",KADER.length,"Charaktere"],
-       ["Ø Item Level",avgIlvl,"aus WoWAudit/Raider.IO"],
-       ["Ø Anwesenheit",avgAtt,"letzte Raids"],
-       ["Auffällig",slack.length,"unter Erwartung"]]
+       ["Ø Item Level",avgIlvl,"aus WoWAudit / Raider.IO"],
+       ["Ø M+ Runs",avgRuns,"diese ID gelaufen"]]
       .map(([l,v,s])=>`<div class="card"><div class="eyebrow" style="margin-bottom:5px">${l}</div>
         <div style="font-size:25px;font-weight:700;letter-spacing:-.9px">${v}</div>
         <div class="muted" style="font-size:12px">${s}</div></div>`).join("")}
@@ -557,10 +592,7 @@ tracker(){
         <th data-k="ilvl" class="act">Item Level <span class="ar">▼</span></th>
         <th data-k="mp">M+ Score</th>
         <th data-k="mr">M+ Woche</th>
-        <th data-k="v">Vault</th>
-        <th data-k="att">Anwesend</th>
-        <th data-k="wl">WL</th>
-        <th data-k="att">Status</th>
+        <th data-k="v">Vault (1 / 4 / 8)</th>
       </tr></thead>
       <tbody id="trkb"></tbody>
     </table>
@@ -571,16 +603,15 @@ tracker(){
       ${topI.map((p,i)=>`<div class="rank${i<3?' top':''}">
         <span class="pos">${i+1}</span>
         <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
-        <span class="mini"><i style="width:${Math.round(((p.ilvl||0)/maxI)*100)}%;background:${col(p.c)}"></i></span>
-        <span class="vl">${p.ilvl}</span></div>`).join("")||'<div class="muted">Keine Daten</div>'}
+        <span class="vl" style="font-weight:700">${p.ilvl}</span></div>`).join("")||'<div class="muted">Keine Daten</div>'}
     </div>
     <div>
       <h2 class="sec">Mythic-Plus-Ranking</h2>
       ${topM.map((p,i)=>`<div class="rank${i<3?' top':''}">
         <span class="pos">${i+1}</span>
         <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
-        <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:var(--violet)"></i></span>
-        <span class="vl">${p.mp||0}</span></div>`).join("")||'<div class="muted">Keine Scores</div>'}
+        <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:${scoreColor(p.mp)}"></i></span>
+        <span class="vl" style="color:${scoreColor(p.mp)};font-weight:700">${p.mp||0}</span></div>`).join("")||'<div class="muted">Keine Scores</div>'}
     </div>
   </div>`;
 },
@@ -609,8 +640,8 @@ roster(){
             <div class="hd"><b style="color:${col(p.c)}">${esc(p.n)}</b><em>${esc(p.spec||p.c)}</em>${p.note?`<span class="pill p-gray">${esc(p.note)}</span>`:""}</div>
             <div style="display:flex;gap:5px;margin-top:6px;flex-wrap:wrap">
               <span class="kbtag">ilvl ${p.ilvl||'—'}</span>
-              <span class="kbtag">M+ ${p.mp||0}</span>
-              <span class="kbtag">${p.mr||0} Runs/Woche</span>
+              <span class="kbtag" style="color:${scoreColor(p.mp)}">M+ ${p.mp||0}</span>
+              <span class="kbtag" style="${(p.mr||0)>=8?'color:var(--green);font-weight:700':''}">${p.mr||0} Runs/Woche</span>
             </div>
           </div>
         </div>`;}).join("")}</div>
@@ -643,68 +674,66 @@ bewerben(){
 }
 };
 
-let sortKey="ilvl", sortDir=-1;
-function ampel(p){
-  const bad=(p.att!=null&&p.att<70)||(!p.wl&&(p.mr||0)<3);
-  const warn=(p.att!=null&&p.att<85)||(p.mr||0)<4||!p.wl;
-  return bad ? `<span class="amp a-bad"><span class="b"></span>Nachhaken</span>`
-       : warn ? `<span class="amp a-warn"><span class="b"></span>Grenzfall</span>`
-              : `<span class="amp a-ok"><span class="b"></span>Passt</span>`;
-}
+let sortKey = "ilvl", sortDir = -1;
 function renderTrk(){
-  const tb=document.getElementById("trkb"); if(!tb) return;
-  const validChars = KADER.filter(p => p.ilvl != null && p.ilvl > 0);
-  const maxI = validChars.length ? Math.max(...validChars.map(p => p.ilvl)) : 300;
+  const tb = document.getElementById("trkb"); if(!tb) return;
   const maxM = KADER.length ? Math.max(...KADER.map(p => p.mp || 0)) : 3000;
 
-  const rows=[...KADER].sort((a,b)=>{
-    const x=a[sortKey]??0, y=b[sortKey]??0;
-    if(typeof x==="string") return x.localeCompare(y)*sortDir*-1;
-    return (x-y)*sortDir;
+  const rows = [...KADER].sort((a,b)=>{
+    const x = a[sortKey] ?? 0, y = b[sortKey] ?? 0;
+    if(typeof x === "string") return x.localeCompare(y) * sortDir * -1;
+    return (x - y) * sortDir;
   });
-  tb.innerHTML=rows.map(p=>`<tr>
-    <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
-      <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
-    <td><span style="color:${ROLLEN[p.r]||'#888'};font-weight:600;font-size:12px">${p.r}</span></td>
-    <td><span class="mini"><i style="width:${Math.round(((p.ilvl||0)/maxI)*100)}%;background:${col(p.c)}"></i></span><span class="num">${p.ilvl||'—'}</span></td>
-    <td><span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:var(--violet)"></i></span><span class="num">${p.mp||0}</span></td>
-    <td><span class="num" style="color:${(p.mr||0)<4?'var(--amber)':'var(--tx)'}">${p.mr||0} / 8</span></td>
-    <td><span class="vault">${[0,1,2].map(i=>`<span class="vslot${i<(p.v||0)?' on':''}"></span>`).join("")}</span></td>
-    <td><span class="num" style="color:${(p.att||0)<80?'var(--red)':(p.att||0)<90?'var(--amber)':'var(--green)'}">${p.att!=null?p.att+'%':'—'}</span></td>
-    <td>${p.wl?'<span style="color:var(--green)">✓</span>':'<span style="color:var(--red)">✕</span>'}</td>
-    <td>${ampel(p)}</td></tr>`).join("");
-  document.querySelectorAll("#trk th[data-k]").forEach(th=>{
-    const on=th.dataset.k===sortKey;
-    th.classList.toggle("act",on);
-    const ar=th.querySelector(".ar");
-    if(on&&!ar) th.insertAdjacentHTML("beforeend",` <span class="ar">${sortDir<0?"▼":"▲"}</span>`);
-    else if(on&&ar) ar.textContent=sortDir<0?"▼":"▲";
+
+  tb.innerHTML = rows.map(p => {
+    const isGreenRuns = (p.mr || 0) >= 8;
+    return `<tr>
+      <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
+        <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
+      <td><span style="color:${ROLLEN[p.r]||'#888'};font-weight:600;font-size:12px">${p.r}</span></td>
+      <td class="num" style="font-weight:600">${p.ilvl || '—'}</td>
+      <td>
+        <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:${scoreColor(p.mp)}"></i></span>
+        <span class="num" style="color:${scoreColor(p.mp)};font-weight:600">${p.mp || 0}</span>
+      </td>
+      <td class="num" style="${isGreenRuns ? 'color:var(--green);font-weight:700;' : ''}">${p.mr || 0} / 8</td>
+      <td><span class="vault">${[0,1,2].map(i => `<span class="vslot${i<(p.v||0)?' on':''}"></span>`).join("")}</span></td>
+    </tr>`;
+  }).join("");
+
+  document.querySelectorAll("#trk th[data-k]").forEach(th => {
+    const on = th.dataset.k === sortKey;
+    th.classList.toggle("act", on);
+    const ar = th.querySelector(".ar");
+    if(on && !ar) th.insertAdjacentHTML("beforeend", ` <span class="ar">${sortDir<0?"▼":"▲"}</span>`);
+    else if(on && ar) ar.textContent = sortDir<0 ? "▼" : "▲";
     else if(ar) ar.remove();
   });
 }
+
 function bindTrk(){
-  document.querySelectorAll("#trk th[data-k]").forEach(th=>{
-    th.onclick=()=>{
-      const k=th.dataset.k;
-      if(k===sortKey) sortDir*=-1; else {sortKey=k; sortDir=-1;}
+  document.querySelectorAll("#trk th[data-k]").forEach(th => {
+    th.onclick = () => {
+      const k = th.dataset.k;
+      if(k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = -1; }
       renderTrk();
     };
   });
   renderTrk();
 }
 
-const CLS_DE={Warrior:"Krieger",Paladin:"Paladin",Hunter:"Jäger",Rogue:"Schurke",Priest:"Priester","Death Knight":"Todesritter",Shaman:"Schamane",Mage:"Magier",Warlock:"Hexenmeister",Monk:"Mönch",Druid:"Druide","Demon Hunter":"Dämonenjäger",Evoker:"Rufer"};
+const CLS_DE = {Warrior:"Krieger",Paladin:"Paladin",Hunter:"Jäger",Rogue:"Schurke",Priest:"Priester","Death Knight":"Todesritter",Shaman:"Schamane",Mage:"Magier",Warlock:"Hexenmeister",Monk:"Mönch",Druid:"Druide","Demon Hunter":"Dämonenjäger",Evoker:"Rufer"};
 
 async function load(path){
   try{
-    const r=await fetch(`${path}?t=${Date.now()}`,{cache:"no-cache"});
+    const r = await fetch(`${path}?t=${Date.now()}`, {cache:"no-cache"});
     if(!r.ok) return null;
     return await r.json();
   }catch{ return null; }
 }
 
 function mapRole(roleStr, clsStr, specStr){
-  const s=(String(clsStr||"")+" "+String(roleStr||"")+" "+String(specStr||"")).toLowerCase();
+  const s = (String(clsStr||"")+" "+String(roleStr||"")+" "+String(specStr||"")).toLowerCase();
   if(s.includes("tank")||s.includes("guardian")||s.includes("brewmaster")||s.includes("blood")||s.includes("protection")) return "Tank";
   if(s.includes("heal")||s.includes("restoration")||s.includes("holy")||s.includes("mistweaver")||s.includes("discipline")||s.includes("preservation")) return "Heal";
   if(s.includes("melee")||s.includes("fury")||s.includes("arms")||s.includes("retribution")||s.includes("unholy")||s.includes("frost1")||s.includes("havoc")||s.includes("windwalker")||s.includes("assassination")||s.includes("outlaw")||s.includes("subtlety")||s.includes("feral")||s.includes("survival")||s.includes("enhancement")) return "Melee";
@@ -721,25 +750,22 @@ function resolveClass(spec, cls, name){
 }
 
 function applyData(d, c){
-  // 1. Wissen und Boss-Taktiken aus Content einmischen
   if(c?.wissen?.artikel?.length){
-    KB = c.wissen.artikel.map(a=>({i:a.icon||"📄",t:a.titel,d:a.text,tags:a.tags||[]}));
+    KB = c.wissen.artikel.map(a => ({i:a.icon||"📄", t:a.titel, d:a.text, tags:a.tags||[]}));
   }
   if(c?.bosses?.bosses?.length){
-    BOSSES = c.bosses.bosses.map(b=>({
-      n:b.name,en:b.nameEn||"",st:b.status||"open",role:b.rolle||"",slug:b.slug||"",
-      intro:b.intro||"",pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
+    BOSSES = c.bosses.bosses.map(b => ({
+      n:b.name, en:b.nameEn||"", st:b.status||"open", role:b.rolle||"", slug:b.slug||"",
+      intro:b.intro||"", pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
       abil:b.faehigkeiten||[]
     }));
   }
 
-  // Progress dynamisch aktualisieren
   const downBossCount = BOSSES.filter(b => b.st === "down").length;
   if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
 
   const charMap = new Map();
 
-  // 2. WoWAudit als primäre Quelle (Echtes Itemlevel & Wunschlisten)
   if(d.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
       const key = normName(wc.name);
@@ -751,34 +777,19 @@ function applyData(d, c){
         mp: 0,
         mr: 0,
         v: 0,
-        att: null,
-        wl: wc.wishes_count != null ? (wc.wishes_count > 0 ? 1 : 0) : (wc.wishlist != null ? (wc.wishlist ? 1 : 0) : 1),
         spec: wc.spec || "",
         thumb: null
       });
     }
   }
 
-  // 3. WoWAudit Anwesenheit
-  if(d.wowaudit?.attendance){
-    const attList = Array.isArray(d.wowaudit.attendance) ? d.wowaudit.attendance : (d.wowaudit.attendance.characters || []);
-    for(const a of attList){
-      const key = normName(a.name || a.character_name);
-      const p = charMap.get(key);
-      if(p && a.attendance != null){
-        p.att = typeof a.attendance === "number" && a.attendance <= 1 ? Math.round(a.attendance * 100) : Math.round(a.attendance);
-      }
-    }
-  }
-
-  // 4. Raider.IO Scores, Wochenruns & Thumbnails
   if(d.roster?.characters?.length){
     for(const rc of d.roster.characters){
       const key = normName(rc.name);
       let p = charMap.get(key);
       if(!p){
         const runs = rc.weeklyRuns || 0;
-        p = { n: rc.name, c: CLS_DE[rc.class]||rc.class, r: mapRole(rc.role, rc.class, rc.spec), ilvl: rc.ilvl, mp: rc.mplus||0, mr: runs, v: calcVault(runs), att: null, wl: 1, spec: rc.spec||"", thumb: rc.thumb||null };
+        p = { n: rc.name, c: CLS_DE[rc.class]||rc.class, r: mapRole(rc.role, rc.class, rc.spec), ilvl: rc.ilvl, mp: rc.mplus||0, mr: runs, v: calcVault(runs), spec: rc.spec||"", thumb: rc.thumb||null };
         charMap.set(key, p);
       } else {
         if(rc.ilvl && !p.ilvl) p.ilvl = rc.ilvl;
@@ -793,7 +804,6 @@ function applyData(d, c){
     }
   }
 
-  // 5. Blizzard Keys (Zusätzlicher Sync)
   if(d.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
       const key = normName(bk.name);
@@ -807,15 +817,14 @@ function applyData(d, c){
 
   KADER = Array.from(charMap.values());
 
-  // 6. Raid-Helper Signups
   if(d.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
     EVENT.time = e.time || EVENT.time;
     EVENT.leader = e.leader || EVENT.leader;
-    EVENT.dateLabel = e.date ? `${e.date.split("-")[0]}.${e.date.split("-")[1]}.` : "Montag 24.08.";
+    EVENT.date = e.date || "24.08.26";
     EVENT.counts = e.counts || {primary:0,tentative:0,bench:0,absence:0,late:0};
-    EVENT.signups = (e.signups||[]).map(s=>{
+    EVENT.signups = (e.signups||[]).map(s => {
       const isAbs = String(s.role||s.cls).toLowerCase().includes("abs");
       const pClass = resolveClass(s.spec, s.cls, s.name);
       return {
@@ -829,25 +838,25 @@ function applyData(d, c){
     EVENT.live = true;
   }
 
-  // 7. Warcraft Logs (Dedupliziert mit echten VIPs)
   if(d.logs?.reports?.length){
-    REPORTS = d.logs.reports.map((r, i)=>({
+    REPORTS = d.logs.reports.map((r, i) => ({
       code: r.code,
       t: r.zone || r.title || "Der Giftige Abgrund",
-      d: r.date || "Letzter Raidabend",
+      d: fmtDateShort(r.startTime || r.date),
+      startTime: r.startTime,
       diff: r.difficulty || "Normal",
       dur: r.duration || "—",
       kills: r.kills || 0,
       wipes: r.wipes || 0,
       killedBosses: r.killedBosses || [],
-      top: r.top || [],
+      vips: r.vips || { dps: [], hps: [] },
       live: i === 0,
       url: r.url || G.links.wcl
     }));
   }
 }
 
-document.getElementById("nav").innerHTML = NAV.map(([k,l])=>`<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
+document.getElementById("nav").innerHTML = NAV.map(([k,l]) => `<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
 function route(){
   const k = location.hash.replace("#/","") || "start";
   document.getElementById("view").innerHTML = (views[k] || views.start)();
@@ -861,13 +870,12 @@ addEventListener("hashchange", route);
 let INDEX = [];
 function buildIndex(){
   INDEX = [
-    ...BOSSES.flatMap((b,i)=>[
-      {i:"🎯",t:b.n,s:`Boss ${i+1} · ${b.role}`,c:"Boss",h:"#/raid",k:`${b.n} ${b.en} boss`},
-      ...(b.pts||[]).map(([r,tx])=>({i:"📝",t:tx,s:`${r} — ${b.n}`,c:"Taktik",h:"#/raid",k:`${tx} ${b.n}`}))
+    ...BOSSES.flatMap((b,i) => [
+      {i:"🎯", t:b.n, s:`Boss ${i+1} · ${b.role}`, c:"Boss", h:"#/raid", k:`${b.n} ${b.en} boss`},
+      ...(b.pts||[]).map(([r,tx]) => ({i:"📝", t:tx, s:`${r} — ${b.n}`, c:"Taktik", h:"#/raid", k:`${tx} ${b.n}`}))
     ]),
-    ...KADER.map(p=>({i:"👤",t:p.n,s:`${p.c} · ${p.r}`,c:"Kader",h:"#/roster",k:`${p.n} ${p.c} ${p.r} raider`})),
-    ...KB.map(k=>({i:k.i,t:k.t,s:k.d,c:"Wissen",h:"#/wissen",k:`${k.t} ${k.d}`})),
-    ...TERMINE.map(t=>({i:"📅",t:`${t.d}, ${t.dt}`,s:`${t.t} · ${t.n}`,c:"Termin",h:"#/termine",k:`${t.d} ${t.dt} raid termin`}))
+    ...KADER.map(p => ({i:"👤", t:p.n, s:`${p.c} · ${p.r}`, c:"Kader", h:"#/roster", k:`${p.n} ${p.c} ${p.r} raider`})),
+    ...KB.map(k => ({i:k.i, t:k.t, s:k.d, c:"Wissen", h:"#/wissen", k:`${k.t} ${k.d}`}))
   ];
 }
 
@@ -883,7 +891,7 @@ function draw(term){
   sel = 0;
   if(!hits.length){ rb.innerHTML = `<div class="empty">Nichts gefunden für „${esc(term)}“.</div>`; return; }
   rb.innerHTML = (!t ? `<div class="eyebrow" style="padding:9px 12px 4px;margin:0">Schnellsuche</div>` : "") +
-    hits.map((h,i)=>`<div class="res${i===0?' sel':''}" data-i="${i}">
+    hits.map((h,i) => `<div class="res${i===0?' sel':''}" data-i="${i}">
       <span class="ic">${h.i}</span>
       <span class="tx"><b>${esc(h.t)}</b><span>${esc(h.s)}</span></span>
       <span class="cat">${h.c}</span></div>`).join("");
