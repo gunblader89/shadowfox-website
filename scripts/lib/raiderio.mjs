@@ -1,14 +1,35 @@
-/* Raider.IO — Holt Gear, M+ Score und Wochenruns */
+/* Raider.IO — Gear, Score & Wochenruns (seit Mittwoch-Reset) */
 import { req, pool, ok, sleep } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
-export async function guildProfile({ region, realm, name }) {
-  const reg = encodeURIComponent(String(region || "eu").toLowerCase());
-  const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
-  const gName = encodeURIComponent(String(name || "ShadowFox").trim());
+function countRunsSinceReset(c) {
+  const weekly = Array.isArray(c.mythic_plus_weekly_runs) ? c.mythic_plus_weekly_runs : [];
+  
+  // EU-Reset: Jeder Mittwoch 05:00 UTC (07:00 CEST)
+  const now = new Date();
+  const currentDay = now.getUTCDay();
+  const currentHour = now.getUTCHours();
+  let daysSinceWednesday = (currentDay - 3 + 7) % 7;
+  if (daysSinceWednesday === 0 && currentHour < 5) daysSinceWednesday = 7;
+  
+  const lastReset = new Date(now);
+  lastReset.setUTCDate(now.getUTCDate() - daysSinceWednesday);
+  lastReset.setUTCHours(5, 0, 0, 0);
 
-  const url = `${BASE}/guilds/profile?region=${reg}&realm=${rlm}&name=${gName}&fields=raid_progression,raid_rankings,members`;
+  const recent = (Array.isArray(c.mythic_plus_recent_runs) ? c.mythic_plus_recent_runs : [])
+    .filter(r => new Date(r.completed_at) >= lastReset);
+
+  const runSet = new Set([
+    ...weekly.map(r => r.url || `${r.dungeon}-${r.mythic_level}-${r.completed_at}`),
+    ...recent.map(r => r.url || `${r.dungeon}-${r.mythic_level}-${r.completed_at}`)
+  ]);
+
+  return Math.max(weekly.length, recent.length, runSet.size);
+}
+
+export async function guildProfile({ region, realm, name }) {
+  const url = `${BASE}/guilds/profile?region=${region}&realm=${realm}&name=${encodeURIComponent(name)}&fields=raid_progression,raid_rankings,members`;
   const g = await req(url);
 
   const classCount = {};
@@ -33,10 +54,12 @@ export async function characters(items, { region, realm }) {
     const charName = typeof item === "string" ? item.trim() : item.name.trim();
     const charRealm = typeof item === "object" && item.realm ? item.realm : realm;
 
-    const url = `${BASE}/characters/profile?region=${region}&realm=${encodeURIComponent(charRealm)}&name=${encodeURIComponent(charName)}&fields=gear,mythic_plus_scores_by_season:current,mythic_plus_weekly_runs`;
+    const url = `${BASE}/characters/profile?region=${region}&realm=${encodeURIComponent(charRealm)}&name=${encodeURIComponent(charName)}&fields=gear,mythic_plus_scores_by_season:current,mythic_plus_weekly_runs,mythic_plus_recent_runs`;
     try {
       const c = await req(url, {}, 3);
       if (!c || c.error) return { name: charName, realm: charRealm, ilvl: null, mplus: 0, weeklyRuns: 0 };
+      
+      const runs = countRunsSinceReset(c);
       return {
         name: c.name,
         realm: charRealm,
@@ -45,7 +68,7 @@ export async function characters(items, { region, realm }) {
         role: c.active_spec_role,
         ilvl: c.gear?.item_level_equipped ?? null,
         mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
-        weeklyRuns: Array.isArray(c.mythic_plus_weekly_runs) ? c.mythic_plus_weekly_runs.length : 0,
+        weeklyRuns: runs,
         thumb: c.thumbnail_url ?? null,
         profileUrl: c.profile_url
       };
@@ -55,7 +78,7 @@ export async function characters(items, { region, realm }) {
   });
 
   const found = res.filter(Boolean);
-  const withIlvl = found.filter(c => c.ilvl != null);
-  ok(`Raider.IO: ${withIlvl.length}/${items.length} Charaktere mit Details geladen`);
+  const withRuns = found.filter(c => (c.weeklyRuns || 0) > 0);
+  ok(`Raider.IO: ${found.length}/${items.length} Charaktere geladen (${withRuns.length} mit M+-Runs diese Woche)`);
   return found;
 }
