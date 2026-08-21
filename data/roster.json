@@ -16,11 +16,11 @@
       "name": "Mercrixxus",
       "realm": "blackhand",
       "class": "Warrior",
-      "spec": "Fury",
+      "spec": "Arms",
       "role": "DPS",
       "ilvl": 291,
-      "mplus": 326,
-      "weeklyRuns": 0,
+      "mplus": 526,
+      "weeklyRuns": 2,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
@@ -44,7 +44,7 @@
       "role": "DPS",
       "ilvl": 295,
       "mplus": 942,
-      "weeklyRuns": 0,
+      "weeklyRuns": 4,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
@@ -114,7 +114,7 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 289,
+      "ilvl": 289.688,
       "mplus": 0,
       "weeklyRuns": 0,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
@@ -140,7 +140,7 @@
       "role": "TANK",
       "ilvl": 292,
       "mplus": 981,
-      "weeklyRuns": 0,
+      "weeklyRuns": 4,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
     },
@@ -152,7 +152,7 @@
       "role": "HEALING",
       "ilvl": 290,
       "mplus": 322,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/100/182835556-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Sandino"
     },
@@ -224,7 +224,7 @@
       "role": "DPS",
       "ilvl": 306,
       "mplus": 2635,
-      "weeklyRuns": 0,
+      "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
     },
@@ -236,7 +236,7 @@
       "role": "DPS",
       "ilvl": 296,
       "mplus": 2526,
-      "weeklyRuns": 0,
+      "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
     },
@@ -267,10 +267,10 @@
       "role": "DPS",
       "ilvl": 292.312,
       "mplus": 1696,
-      "weeklyRuns": 0,
+      "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-21T10:56:47.539Z"
+  "updatedAt": "2026-08-21T11:07:31.568Z"
 }
