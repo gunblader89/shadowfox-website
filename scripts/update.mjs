@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-/* =====================================================================
-   ShadowFox Data Sync — WoWAudit + Raider.IO + Blizzard + WCL + Discord
-   ===================================================================== */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -46,7 +43,7 @@ try {
   await write("guild.json", await rio.guildProfile(GUILD));
 } catch (e) { errors++; fail(`Raider.IO Gildenprofil: ${e.message}`); }
 
-/* 2) WoWAudit (Basis für den Kader) */
+/* 2) WoWAudit */
 let auditData = null;
 if (env("WOWAUDIT_API_KEY")) {
   try {
@@ -55,7 +52,7 @@ if (env("WOWAUDIT_API_KEY")) {
   } catch (e) { errors++; fail(`WoWAudit: ${e.message}`); }
 } else skip("WoWAudit: kein Key gesetzt");
 
-/* Charaktere bestimmen: Bevorzugt aus WoWAudit, Fallback auf content/raider.json */
+/* Charaktere aus WoWAudit oder content/raider.json */
 let charList = [];
 if (auditData?.characters?.length) {
   charList = auditData.characters.map(c => ({
@@ -87,7 +84,7 @@ if (charList.length) {
   } catch (e) { errors++; fail(`Raider.IO Charaktere: ${e.message}`); }
 }
 
-/* 4) Blizzard M+-Wochenruns */
+/* 4) Blizzard */
 if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
   try {
     const roster = await bnet.guildRoster({
@@ -97,8 +94,9 @@ if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
     });
     let keys = [];
     if (charList.length) {
+      const namesOnly = charList.map(c => c.name);
       keys = await bnet.weeklyKeys({
-        token: roster.token, region: GUILD.region, realm: GUILD.realm, names: charList
+        token: roster.token, region: GUILD.region, realm: GUILD.realm, names: namesOnly
       });
     }
     delete roster.token;
@@ -127,7 +125,6 @@ if (env("WCL_CLIENT_ID") && env("WCL_CLIENT_SECRET")) {
   } catch (e) { errors++; fail(`Warcraft Logs: ${e.message}`); }
 }
 
-/* Status */
 await write("status.json", {
   updatedAt: new Date().toISOString(),
   guild: GUILD,
