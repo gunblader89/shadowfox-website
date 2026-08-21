@@ -383,11 +383,10 @@ function fmtDateShort(d) {
     return `${String(dt.getDate()).padStart(2,"0")}.${String(dt.getMonth()+1).padStart(2,"0")}.${String(dt.getFullYear()).slice(-2)}`;
   }
   const str = String(d).trim();
-  const p = str.split(/[-.]/);
-  if (p.length === 3) {
-    if (p[0].length === 4) return `${p[2].padStart(2,"0")}.${p[1].padStart(2,"0")}.${p[0].slice(-2)}`;
-    return `${p[0].padStart(2,"0")}.${p[1].padStart(2,"0")}.${p[2].slice(-2)}`;
-  }
+  const m = str.match(/(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})/);
+  if (m) return `${m[3].padStart(2,"0")}.${m[2].padStart(2,"0")}.${m[1].slice(-2)}`;
+  const m2 = str.match(/(\d{1,2})[-/.](\d{1,2})[-/.](\d{2,4})/);
+  if (m2) return `${m2[1].padStart(2,"0")}.${m2[2].padStart(2,"0")}.${m2[3].slice(-2)}`;
   return str;
 }
 
@@ -400,11 +399,12 @@ function calcVault(runs) {
 
 function scoreColor(score) {
   const s = Number(score || 0);
-  if (s >= 2900) return "#e5cc80"; // Gold / Legendär
-  if (s >= 2600) return "#ff8000"; // Orange
-  if (s >= 2200) return "#a335ee"; // Lila
-  if (s >= 1600) return "#6b9ce8"; // Blau
-  return "#5ec48f";               // Grün
+  if (s >= 2800) return "#e5cc80"; // Gold
+  if (s >= 2500) return "#ff8000"; // Orange
+  if (s >= 2000) return "#a335ee"; // Lila
+  if (s >= 1500) return "#0070dd"; // Blau
+  if (s >= 800)  return "#1eff00"; // Grün
+  return "#8a8f99";               // Grau
 }
 
 function pkClass(parse) {
@@ -443,7 +443,7 @@ function logCard(r){
           <span class="p ${pkClass(p.parse)}">${p.parse}</span>
           <span class="nm" style="color:${col(p.class)}">${esc(p.name)}</span>
           <span class="mt">${esc(p.boss)}</span></div>`).join("")}
-        <div class="eyebrow" style="margin:10px 0 6px">💚 Top Heilung des Abends</div>
+        <div class="eyebrow" style="margin:12px 0 6px">💚 Top Heilung des Abends</div>
         ${hpsVips.map(p=>`<div class="parse">
           <span class="p ${pkClass(p.parse)}">${p.parse}</span>
           <span class="nm" style="color:${col(p.class)}">${esc(p.name)}</span>
@@ -567,7 +567,6 @@ tracker(){
   
   const topI = [...KADER].filter(p => p.ilvl).sort((a,b) => b.ilvl - a.ilvl).slice(0,8);
   const topM = [...KADER].filter(p => p.mp).sort((a,b) => b.mp - a.mp).slice(0,8);
-  const slack = KADER.filter(p => (p.mr != null && p.mr < 4) || (p.mp || 0) < 1000);
   const avgIlvl = validChars.length ? (validChars.reduce((s,p) => s + p.ilvl, 0) / validChars.length).toFixed(1) : "—";
   const avgRuns = KADER.length ? (KADER.reduce((s,p) => s + (p.mr || 0), 0) / KADER.length).toFixed(1) : "0";
 
@@ -856,7 +855,7 @@ function applyData(d, c){
   }
 }
 
-document.getElementById("nav").innerHTML = NAV.map(([k,l]) => `<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
+document.getElementById("nav").innerHTML = NAV.map(([k,l])=>`<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
 function route(){
   const k = location.hash.replace("#/","") || "start";
   document.getElementById("view").innerHTML = (views[k] || views.start)();
