@@ -3,15 +3,17 @@
 # Redaktionssystem fuer die ShadowFox-Website.
 # ------------------------------------------------------------------
 # ANPASSEN vor dem ersten Start:
-#   repo:      auf euren GitHub-Benutzernamen und Repo-Namen aendern
-#   base_url:  die URL eures Login-Workers (siehe SETUP.md, Schritt 7)
+#   Nichts. Repo und Anmeldeverfahren sind bereits eingetragen.
+#   Anmeldung: persoenliches GitHub-Token (siehe unten).
 # ------------------------------------------------------------------
 
 backend:
   name: github
   repo: gunblader89/shadowfox-website
   branch: main
-  base_url: https://sveltia-cms-auth.DEIN-SUBDOMAIN.workers.dev
+  # Anmeldung ueber ein persoenliches GitHub-Token.
+  # Damit ist kein eigener Login-Dienst (Cloudflare Worker) noetig.
+  auth_methods: [token]
 
 # Wo hochgeladene Bilder landen
 media_folder: media
