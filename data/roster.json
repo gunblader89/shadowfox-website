@@ -11,6 +11,11 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hòbs"
     },
     {
+      "name": "Mercrixxus",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
       "name": "Garódash",
       "class": "Shaman",
       "spec": "Restoration",
@@ -19,6 +24,11 @@
       "mplus": 0,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
+    },
+    {
+      "name": "Chantallè",
+      "ilvl": null,
+      "mplus": 0
     },
     {
       "name": "Jisgarin",
@@ -41,6 +51,11 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Thessaly"
     },
     {
+      "name": "Sweetschi",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
       "name": "Narrwên",
       "class": "Warlock",
       "spec": "Demonology",
@@ -49,6 +64,36 @@
       "mplus": 0,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
+    },
+    {
+      "name": "Pepelim",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Holydivér",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Kitebrew",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Sandino",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Thorelion",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Xsythia",
+      "ilvl": null,
+      "mplus": 0
     },
     {
       "name": "Améthyst",
@@ -71,6 +116,21 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
     },
     {
+      "name": "Druith",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Toshichaos",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Seitenleiste",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
       "name": "Mardyn",
       "class": "Mage",
       "spec": "Arcane",
@@ -89,7 +149,17 @@
       "mplus": 0,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/25/182960921-avatar.jpg?alt=/wow/static/images/2d/avatar/1-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Tiskarian"
+    },
+    {
+      "name": "Moonlord",
+      "ilvl": null,
+      "mplus": 0
+    },
+    {
+      "name": "Kiraja",
+      "ilvl": null,
+      "mplus": 0
     }
   ],
-  "updatedAt": "2026-08-21T09:49:17.701Z"
+  "updatedAt": "2026-08-21T10:02:02.160Z"
 }
