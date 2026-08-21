@@ -1,0 +1,214 @@
+{
+  "events": [
+    {
+      "id": "1535519529323470990",
+      "title": "The Venomous Abyss",
+      "description": "NHC - HC",
+      "date": "24-08-2026",
+      "time": "19:45",
+      "unixtime": 1787593500,
+      "closingTime": 1787593500,
+      "leader": "Merccrixxus/Passi",
+      "channel": "💥〢raidtag-montag",
+      "counts": {
+        "primary": 20,
+        "tentative": 0,
+        "bench": 0,
+        "absence": 1,
+        "late": 0
+      },
+      "signups": [
+        {
+          "name": "Garodash/Giotto",
+          "userId": "191599662283620352",
+          "cls": "Healer",
+          "spec": "Restoration1",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786200401
+        },
+        {
+          "name": "Jisgarin/Andi",
+          "userId": "347413147054899200",
+          "cls": "Healer",
+          "spec": "Holy",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786873414
+        },
+        {
+          "name": "Feiree/Karin",
+          "userId": "245932556371886091",
+          "cls": "Ranged",
+          "spec": "Devastation",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786707700
+        },
+        {
+          "name": "Tankoderdd",
+          "userId": "474617817216450562",
+          "cls": "Melee",
+          "spec": "Retribution",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786218356
+        },
+        {
+          "name": "Sweetschi/Danielo",
+          "userId": "185355889019060224",
+          "cls": "Healer",
+          "spec": "Mistweaver",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786181178
+        },
+        {
+          "name": "Quon/Lew",
+          "userId": "188662166830841856",
+          "cls": "Tank",
+          "spec": "Guardian",
+          "role": "Tanks",
+          "status": "primary",
+          "signedUpAt": 1786449120
+        },
+        {
+          "name": "Merccrixxus/Passi",
+          "userId": "474212871996178432",
+          "cls": "Melee",
+          "spec": "Fury",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786176267
+        },
+        {
+          "name": "Askái/Phil",
+          "userId": "935281742963675156",
+          "cls": "Ranged",
+          "spec": "Devourer",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786271059
+        },
+        {
+          "name": "Toshi",
+          "userId": "619624087026925578",
+          "cls": "Absence",
+          "spec": "Absence",
+          "role": "Absence",
+          "status": "primary",
+          "signedUpAt": 1786197050
+        },
+        {
+          "name": "Chantallè|Philipp",
+          "userId": "482986152912224274",
+          "cls": "Ranged",
+          "spec": "Beastmastery",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786173996
+        },
+        {
+          "name": "Kite",
+          "userId": "218391269917982720",
+          "cls": "Tank",
+          "spec": "Brewmaster",
+          "role": "Tanks",
+          "status": "primary",
+          "signedUpAt": 1787303040
+        },
+        {
+          "name": "Thessaly/Basti",
+          "userId": "238675341747421185",
+          "cls": "Melee",
+          "spec": "Havoc",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786642469
+        },
+        {
+          "name": "Tiskarian|Heiner",
+          "userId": "202508730107953152",
+          "cls": "Ranged",
+          "spec": "Balance",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786268077
+        },
+        {
+          "name": "Amethyst|Micha",
+          "userId": "273164523513446400",
+          "cls": "Melee",
+          "spec": "Retribution",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786710390
+        },
+        {
+          "name": "Hobs/Bibi",
+          "userId": "823196825921650718",
+          "cls": "Ranged",
+          "spec": "Beastmastery",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786262551
+        },
+        {
+          "name": "Corvisstab/Morten",
+          "userId": "295208122493042690",
+          "cls": "Healer",
+          "spec": "Holy1",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786213267
+        },
+        {
+          "name": "𝕱𝖗𝖚𝖈𝖍𝖙𝖟𝖜𝖊𝖗𝖌│ᴬˡᵉˣᵃⁿᵈʳᵃ",
+          "userId": "332970747821555712",
+          "cls": "Ranged",
+          "spec": "Elemental",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786172881
+        },
+        {
+          "name": "Sarah",
+          "userId": "1021490102536511598",
+          "cls": "Healer",
+          "spec": "Holy",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786728670
+        },
+        {
+          "name": "Günni",
+          "userId": "446024705569325057",
+          "cls": "Melee",
+          "spec": "Unholy",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786216244
+        },
+        {
+          "name": "Sandino",
+          "userId": "818515659335270400",
+          "cls": "Ranged",
+          "spec": "Shadow",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786788755
+        },
+        {
+          "name": "Narrwen/Alex",
+          "userId": "518857676331941890",
+          "cls": "Ranged",
+          "spec": "Demonology",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786168770
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-08-21T09:43:06.122Z"
+}
