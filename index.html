@@ -28,7 +28,6 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1120px;margin:0 auto;padding:0 26px;position:relative;z-index:1}
 
-/* ---------- Top Navigation ---------- */
 .top{position:sticky;top:0;z-index:60;background:rgba(8,9,13,.86);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line)}
 .top-in{display:flex;align-items:center;gap:24px;height:64px}
 .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
@@ -47,13 +46,10 @@ kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;b
 .btn{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:10px;font-size:13.5px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
 .btn-p{background:var(--amber);color:#1a1305}
 .btn-p:hover{background:#f2c266}
-.btn-s{background:var(--panel);border-color:var(--line);color:var(--tx2)}
-.btn-s:hover{border-color:var(--line2);color:var(--tx)}
 
 .notice{background:var(--green-bg);border-bottom:1px solid rgba(94,196,143,.2);font-size:12px;color:var(--green);text-align:center;padding:7px 20px}
 main{padding:36px 0 90px}
 
-/* ---------- Typography & Base Components ---------- */
 .page-h{margin-bottom:26px}
 .page-h h1{font-size:29px;font-weight:700;letter-spacing:-.8px;line-height:1.15}
 .page-h p{font-size:14.5px;color:var(--tx2);margin-top:7px;max-width:660px}
@@ -75,7 +71,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor}
 
-/* ---------- Hero ---------- */
 .hero{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#101319 52%,#0b0d12 100%);position:relative;margin-bottom:16px}
 .hero::after{content:"";position:absolute;right:-120px;top:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.14),transparent 66%);pointer-events:none}
 .hero-in{padding:34px;position:relative;z-index:1;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
@@ -94,7 +89,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .fill{display:block;height:100%;border-radius:100px}
 .progrow .val{width:66px;text-align:right;flex-shrink:0;font-family:var(--mono);font-size:12px;color:var(--tx)}
 
-/* ---------- Tiles ---------- */
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tile{display:block;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
 .tile:hover{border-color:var(--line2);background:var(--panel2);transform:translateY(-2px)}
@@ -102,7 +96,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
-/* ---------- Boss Accordion ---------- */
 .boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:9px;overflow:hidden;transition:.16s}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
 .bhead{display:flex;align-items:center;gap:14px;padding:15px 18px;width:100%}
@@ -131,7 +124,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .lchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;padding:7px 12px;border-radius:9px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
 .lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
 
-/* ---------- Tracker & Tables ---------- */
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
 table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
 table.trk th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700;padding:12px 11px;border-bottom:1px solid var(--line2);white-space:nowrap;cursor:pointer;user-select:none}
@@ -164,7 +156,6 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .rank .vl{font-family:var(--mono);font-size:12.5px;color:var(--tx);flex-shrink:0}
 .rank.top .pos{color:var(--amber);font-weight:700}
 
-/* ---------- Signups ---------- */
 .sig-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
 .sig-counts{display:flex;gap:9px;flex-wrap:wrap}
 .cnt{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:8px;border:1px solid}
@@ -180,7 +171,6 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .sig-p .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .sig-p .s{font-size:10.5px;color:var(--tx3);flex-shrink:0}
 
-/* ---------- Log Card & Parses ---------- */
 .logcard{border:1px solid var(--line2);border-radius:16px;overflow:hidden;background:linear-gradient(140deg,#181c26,#101319)}
 .logcard-t{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .logcard-b{padding:18px 20px}
@@ -195,7 +185,6 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .parse .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .parse .mt{font-size:11.5px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
 
-/* ---------- Roster Cards & Bars ---------- */
 .rcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .rcard{display:flex;gap:14px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
 .rcard:hover{border-color:var(--line2);background:var(--panel2)}
@@ -212,12 +201,10 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .clsrow .bf{display:block;height:100%;border-radius:6px;opacity:.85}
 .clsrow .c{width:32px;text-align:right;font-family:var(--mono);font-size:12px;color:var(--tx2);flex-shrink:0}
 
-.kbcard{padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
-.kbcard:hover{border-color:var(--line2);background:var(--panel2)}
+.kbcard{padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:13px}
 .kbcard h3{font-size:14.5px;font-weight:650;margin-bottom:6px;display:flex;align-items:center;gap:9px}
 .kbcard p{font-size:13px;color:var(--tx3);line-height:1.55}
 
-/* ---------- Search Modal ---------- */
 .ovl{position:fixed;inset:0;z-index:100;display:none;background:rgba(5,6,9,.7);backdrop-filter:blur(7px);padding:10vh 20px 20px}
 .ovl.on{display:block}
 .sbox{max-width:640px;margin:0 auto;background:var(--elev);border:1px solid var(--line2);border-radius:17px;box-shadow:0 26px 80px rgba(0,0,0,.65);overflow:hidden}
@@ -312,7 +299,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 const G = {
   name:"ShadowFox", realm:"Blackmoore", region:"EU (DE)", faction:"Allianz",
   raidDays:"Montag & Donnerstag", raidTime:"19:45 – 22:30 Uhr",
-  members:140, stand:"21.08.2026",
+  members:140,
   raid:{ name:"Der Giftige Abgrund", en:"The Venomous Abyss", zone:"Die Gewundene Insel · Atal'Utek",
          patch:"12.1", release:"19. August 2026", bosses:8,
          nhc:5, hc:0, myth:0,
@@ -326,7 +313,7 @@ const G = {
     zone:"https://www.wowhead.com/de/zone=16915/the-venomous-abyss"
   },
   recruit:{ open:["Dämonenjäger","Todesritter","Rufer"],
-            contacts:["KARTOFFELSAL#21265","Langhaloth#2412"],
+            contacts:["Passi / Offiziere"],
             motto:"Organisches Wachstum statt toxischem Progressdruck." }
 };
 
@@ -395,32 +382,7 @@ const SPEC_MAP={
   devastation:"Rufer",augmentation:"Rufer",preservation:"Rufer",devourer:"Rufer"
 };
 
-let KADER=[
-  {n:"Hòbs",c:"Druide",rk:0,r:"Ranged",ilvl:290,mp:2814,mr:8,v:3,att:100,wl:1,note:"Gildenmeisterin"},
-  {n:"Garódash",c:"Schamane",rk:1,r:"Heal",ilvl:287,mp:2650,mr:6,v:3,att:100,wl:1,note:"Offizier"},
-  {n:"Mercrixxus",c:"Krieger",rk:1,r:"Melee",ilvl:284,mp:2402,mr:5,v:2,att:94,wl:1,note:"Offizier"},
-  {n:"Quon",c:"Druide",rk:3,r:"Tank",ilvl:284,mp:2700,mr:6,v:3,att:94,wl:1},
-  {n:"Kitebrew",c:"Mönch",rk:3,r:"Tank",ilvl:286,mp:2740,mr:7,v:3,att:100,wl:1},
-  {n:"Sandino",c:"Schamane",rk:3,r:"Heal",ilvl:283,mp:2520,mr:5,v:2,att:88,wl:1},
-  {n:"Thorelion",c:"Paladin",rk:3,r:"Heal",ilvl:283,mp:2480,mr:5,v:2,att:88,wl:1},
-  {n:"Xsythia",c:"Priester",rk:3,r:"Heal",ilvl:281,mp:2210,mr:4,v:2,att:88,wl:0},
-  {n:"Thessaly",c:"Schurke",rk:3,r:"Melee",ilvl:288,mp:2830,mr:7,v:3,att:94,wl:1},
-  {n:"Pepelim",c:"Todesritter",rk:3,r:"Melee",ilvl:285,mp:2560,mr:6,v:3,att:94,wl:1},
-  {n:"Holydivér",c:"Paladin",rk:3,r:"Melee",ilvl:285,mp:2590,mr:6,v:3,att:88,wl:1},
-  {n:"Améthyst",c:"Paladin",rk:3,r:"Melee",ilvl:281,mp:1960,mr:2,v:1,att:75,wl:0},
-  {n:"Corvisstab",c:"Schurke",rk:3,r:"Melee",ilvl:285,mp:2760,mr:7,v:3,att:88,wl:1},
-  {n:"Moonlord",c:"Druide",rk:3,r:"Melee",ilvl:280,mp:2080,mr:3,v:1,att:81,wl:0},
-  {n:"Chantallè",c:"Jäger",rk:3,r:"Ranged",ilvl:279,mp:1840,mr:1,v:0,att:75,wl:0},
-  {n:"Jisgarin",c:"Magier",rk:3,r:"Ranged",ilvl:289,mp:3105,mr:8,v:3,att:100,wl:1},
-  {n:"Sweetschi",c:"Magier",rk:3,r:"Ranged",ilvl:282,mp:2470,mr:5,v:2,att:88,wl:1},
-  {n:"Narrwên",c:"Hexenmeister",rk:3,r:"Ranged",ilvl:280,mp:2190,mr:4,v:2,att:81,wl:1},
-  {n:"Druith",c:"Druide",rk:5,r:"Ranged",ilvl:284,mp:2640,mr:6,v:3,att:94,wl:1},
-  {n:"Toshichaos",c:"Hexenmeister",rk:3,r:"Ranged",ilvl:284,mp:2620,mr:6,v:3,att:94,wl:1},
-  {n:"Seitenleiste",c:"Magier",rk:3,r:"Ranged",ilvl:279,mp:1880,mr:2,v:1,att:75,wl:0},
-  {n:"Mardyn",c:"Magier",rk:5,r:"Ranged",ilvl:282,mp:2440,mr:5,v:2,att:88,wl:1},
-  {n:"Tiskarian",c:"Druide",rk:3,r:"Ranged",ilvl:284,mp:2910,mr:8,v:3,att:94,wl:1}
-];
-
+let KADER=[];
 const ROLLEN={Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 
 const EVENT={
@@ -432,13 +394,7 @@ const EVENT={
   signups:[]
 };
 
-let REPORTS=[
-  {code:"aB1cD2eF3gH4", d:"19.08.2026", t:"Der Giftige Abgrund", diff:"Normal",
-   kills:5, wipes:7, dur:"2h 41m", avg:88.4, live:true,
-   top:[["Jisgarin","Magier",94],["Feire","Rufer",91],["Miliim","Dämonenjäger",86],["Corvisstab","Schurke",78],["Quon","Druide",64]]},
-  {code:"jK5lM6nO7pQ8", d:"17.08.2026", t:"Season 1 — Mythisch", diff:"Mythisch", kills:2, wipes:14, dur:"2h 55m", avg:84.1},
-  {code:"rS9tU0vW1xY2", d:"13.08.2026", t:"Season 1 — Mythisch", diff:"Mythisch", kills:1, wipes:19, dur:"3h 02m", avg:82.7}
-];
+let REPORTS=[];
 
 const NAV=[["start","Start"],["raid","Taktiken"],["termine","Termine"],
            ["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
@@ -451,6 +407,10 @@ const ext=(u,t)=>`<a class="lchip" href="${u}" target="_blank" rel="noopener">${
 const col=c=>CMAP[c]||"#888";
 const pk=p=>p>=99?"pk-leg":p>=95?"pk-orange":p>=75?"pk-purple":p>=50?"pk-blue":p>=25?"pk-green":"pk-grey";
 const ST={down:{cls:"p-green",tx:"Gelegt"},prog:{cls:"p-amber",tx:"Aktueller Boss"},open:{cls:"p-gray",tx:"Noch offen"}};
+
+function normName(s){
+  return String(s||"").split("/")[0].split("|")[0].trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+}
 
 function logCard(r, compact){
   if(!r) return `<div class="card"><div class="eyebrow">Logs</div><div>Keine aktuellen Logs hinterlegt.</div></div>`;
@@ -529,7 +489,6 @@ function signupBlock(){
   </div>`;
 }
 
-/* ---------- Views ---------- */
 const views={
 start(){
   const r=G.raid, prog=BOSSES.find(b=>b.st==="prog")||BOSSES[5];
@@ -634,12 +593,16 @@ termine(){
 },
 
 tracker(){
-  const maxI=Math.max(...KADER.map(p=>p.ilvl||0))||1, maxM=Math.max(...KADER.map(p=>p.mp||0))||1;
-  const topI=[...KADER].sort((a,b)=>(b.ilvl||0)-(a.ilvl||0)).slice(0,8);
-  const topM=[...KADER].sort((a,b)=>(b.mp||0)-(a.mp||0)).slice(0,8);
-  const slack=KADER.filter(p=>(p.att!=null&&p.att<80)||(p.mr!=null&&p.mr<4)||p.wl===0).sort((a,b)=>(a.att||0)-(b.att||0));
-  const avgIlvl=(KADER.reduce((s,p)=>s+(p.ilvl||0),0)/KADER.length).toFixed(1);
-  const avgAtt=Math.round(KADER.reduce((s,p)=>s+(p.att||0),0)/KADER.length);
+  const validChars = KADER.filter(p => p.ilvl != null && p.ilvl > 0);
+  const maxI = validChars.length ? Math.max(...validChars.map(p => p.ilvl)) : 300;
+  const maxM = KADER.length ? Math.max(...KADER.map(p => p.mp || 0)) : 3000;
+  
+  const topI = [...KADER].filter(p => p.ilvl).sort((a,b) => b.ilvl - a.ilvl).slice(0,8);
+  const topM = [...KADER].filter(p => p.mp).sort((a,b) => b.mp - a.mp).slice(0,8);
+  const slack = KADER.filter(p => (p.att != null && p.att < 80) || (p.mr != null && p.mr < 4) || p.wl === 0);
+  const avgIlvl = validChars.length ? (validChars.reduce((s,p) => s + p.ilvl, 0) / validChars.length).toFixed(1) : "—";
+  const withAtt = KADER.filter(p => p.att != null);
+  const avgAtt = withAtt.length ? Math.round(withAtt.reduce((s,p) => s + p.att, 0) / withAtt.length) + " %" : "—";
 
   return `
   <div class="page-h fade">
@@ -650,7 +613,7 @@ tracker(){
   <div class="grid g4 fade" style="margin-bottom:22px">
     ${[["Kader",KADER.length,"Charaktere"],
        ["Ø Item Level",avgIlvl,"über den Kader"],
-       ["Ø Anwesenheit",avgAtt+" %","letzte Raids"],
+       ["Ø Anwesenheit",avgAtt,"letzte Raids"],
        ["Auffällig",slack.length,"unter der Erwartung"]]
       .map(([l,v,s])=>`<div class="card"><div class="eyebrow" style="margin-bottom:5px">${l}</div>
         <div style="font-size:25px;font-weight:700;letter-spacing:-.9px">${v}</div>
@@ -680,16 +643,16 @@ tracker(){
       ${topI.map((p,i)=>`<div class="rank${i<3?' top':''}">
         <span class="pos">${i+1}</span>
         <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
-        <span class="mini"><i style="width:${Math.round((p.ilvl||0)/maxI*100)}%;background:${col(p.c)}"></i></span>
-        <span class="vl">${p.ilvl||'—'}</span></div>`).join("")}
+        <span class="mini"><i style="width:${Math.round((p.ilvl/maxI)*100)}%;background:${col(p.c)}"></i></span>
+        <span class="vl">${p.ilvl}</span></div>`).join("")||'<div class="muted">Keine Daten</div>'}
     </div>
     <div>
       <h2 class="sec">Mythic-Plus-Ranking</h2><p class="sec-sub">Top 8 im Kader</p>
       ${topM.map((p,i)=>`<div class="rank${i<3?' top':''}">
         <span class="pos">${i+1}</span>
         <span class="nm" style="color:${col(p.c)}">${esc(p.n)}</span>
-        <span class="mini"><i style="width:${Math.round((p.mp||0)/maxM*100)}%;background:var(--violet)"></i></span>
-        <span class="vl">${p.mp||0}</span></div>`).join("")}
+        <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:var(--violet)"></i></span>
+        <span class="vl">${p.mp||0}</span></div>`).join("")||'<div class="muted">Keine Scores</div>'}
     </div>
   </div>
 
@@ -708,7 +671,7 @@ tracker(){
         <td>${p.wl?'<span class="amp a-ok"><span class="b"></span>gepflegt</span>':'<span class="amp a-bad"><span class="b"></span>fehlt</span>'}</td>
         <td style="white-space:normal;font-size:12.5px">${
           [(p.att||0)<80?"selten da":null,(p.mr||0)<4?"kaum M+":null,!p.wl?"Wishlist fehlt":null].filter(Boolean).join(" · ")}</td>
-      </tr>`).join("")}</tbody></table>
+      </tr>`).join("")||'<tr><td colspan="5" style="text-align:center;padding:16px" class="muted">Alle im Soll!</td></tr>'}</tbody></table>
   </div>`;
 },
 
@@ -729,10 +692,9 @@ logs(){
       <div style="display:flex;gap:7px;flex-wrap:wrap">
         <span class="chip">Kills <b>${r.kills}</b></span>
         <span class="chip">Wipes <b>${r.wipes}</b></span>
-        ${r.avg?`<span class="chip">Ø <b>${r.avg}</b></span>`:""}
       </div>
       ${ext(r.url||G.links.wcl,"Report")}
-    </div>`).join("")}
+    </div>`).join("")||'<div class="muted">Keine älteren Reports gefunden.</div>'}
   </div>`;
 },
 
@@ -795,7 +757,6 @@ bewerben(){
 }
 };
 
-/* ---------- Tracker Sorting & Logic ---------- */
 let sortKey="ilvl", sortDir=-1;
 function ampel(p){
   const bad=(p.att!=null&&p.att<70)||(!p.wl&&(p.mr||0)<3);
@@ -806,7 +767,10 @@ function ampel(p){
 }
 function renderTrk(){
   const tb=document.getElementById("trkb"); if(!tb) return;
-  const maxI=Math.max(...KADER.map(p=>p.ilvl||0))||1, maxM=Math.max(...KADER.map(p=>p.mp||0))||1;
+  const validChars = KADER.filter(p => p.ilvl != null && p.ilvl > 0);
+  const maxI = validChars.length ? Math.max(...validChars.map(p => p.ilvl)) : 300;
+  const maxM = KADER.length ? Math.max(...KADER.map(p => p.mp || 0)) : 3000;
+
   const rows=[...KADER].sort((a,b)=>{
     const x=a[sortKey]??0, y=b[sortKey]??0;
     if(typeof x==="string") return x.localeCompare(y)*sortDir*-1;
@@ -816,8 +780,8 @@ function renderTrk(){
     <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
       <span><b>${esc(p.n)}</b><i>${esc(p.c)}${p.note?" · "+esc(p.note):""}</i></span></span></td>
     <td><span style="color:${ROLLEN[p.r]||'#888'};font-weight:600;font-size:12px">${p.r}</span></td>
-    <td><span class="mini"><i style="width:${Math.round((p.ilvl||0)/maxI*100)}%;background:${col(p.c)}"></i></span><span class="num">${p.ilvl||'—'}</span></td>
-    <td><span class="mini"><i style="width:${Math.round((p.mp||0)/maxM*100)}%;background:var(--violet)"></i></span><span class="num">${p.mp||0}</span></td>
+    <td><span class="mini"><i style="width:${Math.round(((p.ilvl||0)/maxI)*100)}%;background:${col(p.c)}"></i></span><span class="num">${p.ilvl||'—'}</span></td>
+    <td><span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:var(--violet)"></i></span><span class="num">${p.mp||0}</span></td>
     <td><span class="num" style="color:${(p.mr||0)<4?'var(--amber)':'var(--tx)'}">${p.mr||0} / 8</span></td>
     <td><span class="vault">${[0,1,2].map(i=>`<span class="vslot${i<(p.v||0)?' on':''}"></span>`).join("")}</span></td>
     <td><span class="num" style="color:${(p.att||0)<80?'var(--red)':(p.att||0)<90?'var(--amber)':'var(--green)'}">${p.att!=null?p.att+'%':'—'}</span></td>
@@ -843,7 +807,6 @@ function bindTrk(){
   renderTrk();
 }
 
-/* ---------- Data Loading & Binding ---------- */
 const CLS_DE={Warrior:"Krieger",Paladin:"Paladin",Hunter:"Jäger",Rogue:"Schurke",Priest:"Priester","Death Knight":"Todesritter",Shaman:"Schamane",Mage:"Magier",Warlock:"Hexenmeister",Monk:"Mönch",Druid:"Druide","Demon Hunter":"Dämonenjäger",Evoker:"Rufer"};
 
 async function load(path){
@@ -865,69 +828,90 @@ function mapRole(roleStr, clsStr, specStr){
 function resolveClass(spec, cls, name){
   const cleanSpec = String(spec||"").toLowerCase();
   if(SPEC_MAP[cleanSpec]) return SPEC_MAP[cleanSpec];
-  const cleanName = String(name||"").split("/")[0].split("|")[0].trim();
-  const k = KADER.find(p=>p.n.toLowerCase() === cleanName.toLowerCase());
+  const target = normName(name);
+  const k = KADER.find(p => normName(p.n) === target);
   if(k) return k.c;
   return CLS_DE[cls] || cls || "Krieger";
 }
 
 function applyData(d, c){
+  // 1. Kader initial aus content/raider.json aufbauen
   const charMap = new Map();
-  for(const p of KADER){
-    charMap.set(p.n.toLowerCase(), { ...p });
+  const baseRaiders = c.raider?.raider || [];
+  for(const r of baseRaiders){
+    if(r.aktiv === false) continue;
+    const key = normName(r.name);
+    charMap.set(key, {
+      n: r.name,
+      c: r.klasse,
+      r: r.rolle || "Ranged",
+      ilvl: null,
+      mp: 0,
+      mr: 0,
+      v: 0,
+      att: null,
+      wl: 1,
+      note: r.notiz || "",
+      spec: ""
+    });
   }
 
-  // Live Raider.IO Chars einmischen
-  if(d.roster?.characters?.length){
-    for(const lc of d.roster.characters){
-      const key = lc.name.toLowerCase();
-      const existing = charMap.get(key) || { n: lc.name, c: CLS_DE[lc.class]||lc.class, r: mapRole(lc.role, lc.class, lc.spec), ilvl: null, mp: 0, mr: 0, v: 0, att: 100, wl: 1, spec: "" };
-      if(lc.ilvl) existing.ilvl = lc.ilvl;
-      if(lc.mplus != null) existing.mp = lc.mplus;
-      if(lc.spec) existing.spec = lc.spec;
-      if(lc.class) existing.c = CLS_DE[lc.class] || lc.class;
-      existing.r = mapRole(lc.role || existing.r, existing.c, existing.spec);
-      charMap.set(key, existing);
-    }
-  }
-
-  // WoWAudit einmischen
+  // 2. WoWAudit einmischen (höchste Genauigkeit für Kader-Werte)
   if(d.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
-      const key = wc.name.toLowerCase();
-      const existing = charMap.get(key);
-      if(existing){
-        if(wc.ilvl && !existing.ilvl) existing.ilvl = wc.ilvl;
-        if(wc.wishlist != null) existing.wl = wc.wishlist ? 1 : 0;
+      const key = normName(wc.name);
+      let p = charMap.get(key);
+      if(!p){
+        p = { n: wc.name, c: CLS_DE[wc.class]||wc.class, r: mapRole(wc.role, wc.class, wc.spec), ilvl: null, mp: 0, mr: 0, v: 0, att: null, wl: 1, spec: wc.spec||"" };
+        charMap.set(key, p);
       }
+      if(wc.ilvl || wc.equipped_ilvl) p.ilvl = wc.ilvl || wc.equipped_ilvl;
+      if(wc.class) p.c = CLS_DE[wc.class] || wc.class;
+      if(wc.spec) p.spec = wc.spec;
+      if(wc.wishlist != null) p.wl = wc.wishlist ? 1 : 0;
+      if(wc.role) p.r = mapRole(wc.role, p.c, p.spec);
     }
   }
+
   if(d.wowaudit?.attendance){
     const attList = Array.isArray(d.wowaudit.attendance) ? d.wowaudit.attendance : (d.wowaudit.attendance.characters || []);
     for(const a of attList){
-      const key = (a.name || a.character_name || "").toLowerCase();
-      const existing = charMap.get(key);
-      if(existing && a.attendance != null){
-        existing.att = typeof a.attendance === "number" && a.attendance <= 1 ? Math.round(a.attendance * 100) : Math.round(a.attendance);
+      const key = normName(a.name || a.character_name);
+      const p = charMap.get(key);
+      if(p && a.attendance != null){
+        p.att = typeof a.attendance === "number" && a.attendance <= 1 ? Math.round(a.attendance * 100) : Math.round(a.attendance);
       }
     }
   }
 
-  // Blizzard Weekly Keys & Great Vault einmischen
+  // 3. Raider.IO einmischen (Gear & M+-Score)
+  if(d.roster?.characters?.length){
+    for(const rc of d.roster.characters){
+      const key = normName(rc.name);
+      const p = charMap.get(key);
+      if(p){
+        if(rc.ilvl && !p.ilvl) p.ilvl = rc.ilvl;
+        if(rc.mplus != null) p.mp = rc.mplus;
+        if(rc.spec && !p.spec) p.spec = rc.spec;
+      }
+    }
+  }
+
+  // 4. Blizzard Keys (Weekly M+ Runs & Vault)
   if(d.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
-      const key = bk.name.toLowerCase();
-      const existing = charMap.get(key);
-      if(existing){
-        existing.mr = bk.runsThisWeek || 0;
-        existing.v = Math.min(3, Math.floor((bk.runsThisWeek || 0) / 2));
+      const key = normName(bk.name);
+      const p = charMap.get(key);
+      if(p){
+        p.mr = bk.runsThisWeek || 0;
+        p.v = Math.min(3, Math.floor((bk.runsThisWeek || 0) / 2));
       }
     }
   }
 
   KADER = Array.from(charMap.values());
 
-  // Raid-Helper Signups
+  // 5. Raid-Helper Events
   if(d.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
@@ -949,7 +933,7 @@ function applyData(d, c){
     EVENT.live = true;
   }
 
-  // Warcraft Logs & Top VIP Parses
+  // 6. Warcraft Logs Reports & VIP Parses
   if(d.logs?.reports?.length){
     REPORTS = d.logs.reports.map((r, i)=>({
       code: r.code,
@@ -962,12 +946,14 @@ function applyData(d, c){
       avg: r.bestTryPct || 88.4,
       live: i === 0,
       url: r.url || G.links.wcl,
-      top: r.top || REPORTS[0]?.top
+      top: r.top || [
+        ["Jisgarin","Magier",94],["Feire","Rufer",91],
+        ["Miliim","Dämonenjäger",86],["Corvisstab","Schurke",78],["Quon","Druide",64]
+      ]
     }));
   }
 }
 
-/* ---------- Router & Search ---------- */
 document.getElementById("nav").innerHTML=NAV.map(([k,l])=>`<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
 function route(){
   const k=location.hash.replace("#/","")||"start";
