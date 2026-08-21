@@ -42,7 +42,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 295,
+      "ilvl": 296,
       "mplus": 942,
       "weeklyRuns": 4,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
@@ -272,5 +272,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-21T11:32:36.300Z"
+  "updatedAt": "2026-08-21T12:01:40.005Z"
 }

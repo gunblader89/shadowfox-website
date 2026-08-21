@@ -5,49 +5,41 @@
       "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
       "title": "Raid",
       "zone": "The Venomous Abyss",
-      "difficulty": "Normal",
       "date": "2026-08-20",
-      "durationMin": 664,
-      "duration": "11h 04m",
+      "startTime": 1787225301136,
+      "endTime": 1787265145622,
+      "duration": "11h 4m",
+      "difficulty": "Normal",
       "kills": 3,
       "wipes": 19,
-      "bestTryPct": 5.2,
+      "totalFights": 22,
       "killedBosses": [
         "The Twin Fangs",
         "Altar of Fangs",
         "The Blinding Vale"
-      ]
-    },
-    {
-      "code": "dM6PGWzZnJQxbhHp",
-      "url": "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "difficulty": "Normal",
-      "date": "2026-08-20",
-      "durationMin": 169,
-      "duration": "2h 49m",
-      "kills": 1,
-      "wipes": 19,
-      "bestTryPct": 5.2,
-      "killedBosses": [
-        "The Twin Fangs"
-      ]
-    },
-    {
-      "code": "KbyxpZWhNFnr2wAM",
-      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "difficulty": "Normal",
-      "date": "2026-08-20",
-      "durationMin": 130,
-      "duration": "2h 10m",
-      "kills": 1,
-      "wipes": 15,
-      "bestTryPct": 5.2,
-      "killedBosses": [
-        "The Twin Fangs"
+      ],
+      "top": [
+        {
+          "name": "Hatto",
+          "class": "Hunter",
+          "role": "DPS",
+          "amount": 378240847,
+          "parse": 90
+        },
+        {
+          "name": "Warsía",
+          "class": "Warlock",
+          "role": "DPS",
+          "amount": 294002018,
+          "parse": 90
+        },
+        {
+          "name": "Doktorpöbel",
+          "class": "Priest",
+          "role": "DPS",
+          "amount": 153229402,
+          "parse": 90
+        }
       ]
     },
     {
@@ -55,141 +47,125 @@
       "url": "https://www.warcraftlogs.com/reports/vZwFxpX6K1Qh4VAb",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "difficulty": "Normal",
       "date": "2026-08-19",
-      "durationMin": 139,
-      "duration": "2h 19m",
+      "startTime": 1787162809570,
+      "endTime": 1787171146232,
+      "duration": "2h 18m",
+      "difficulty": "Normal",
       "kills": 4,
       "wipes": 6,
-      "bestTryPct": 24.1,
+      "totalFights": 10,
       "killedBosses": [
         "Entombed Sentinels",
         "Vashnik the Malignant",
         "The Lost Explorers",
         "Sszorak"
-      ]
+      ],
+      "top": []
     },
     {
       "code": "3y94KN1YVk2mzH8c",
       "url": "https://www.warcraftlogs.com/reports/3y94KN1YVk2mzH8c",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "difficulty": "Heroisch",
       "date": "2026-07-30",
-      "durationMin": 92,
-      "duration": "1h 32m",
+      "startTime": 1785432962701,
+      "endTime": 1785438462627,
+      "duration": "1h 31m",
+      "difficulty": "Heroisch",
       "kills": 2,
       "wipes": 6,
-      "bestTryPct": 1.6,
+      "totalFights": 8,
       "killedBosses": [
         "Belo'ren, Child of Al'ar",
         "Midnight Falls"
-      ]
+      ],
+      "top": []
     },
     {
       "code": "LpBcXFHdRaMNZC9n",
       "url": "https://www.warcraftlogs.com/reports/LpBcXFHdRaMNZC9n",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
       "date": "2026-07-27",
-      "durationMin": 163,
-      "duration": "2h 43m",
+      "startTime": 1785173764762,
+      "endTime": 1785183515454,
+      "duration": "2h 42m",
+      "difficulty": "Mythisch",
       "kills": 1,
       "wipes": 17,
-      "bestTryPct": 22.8,
+      "totalFights": 18,
       "killedBosses": [
         "Chimaerus, the Undreamt God"
-      ]
-    },
-    {
-      "code": "fxqGrcj4QwPY1zBp",
-      "url": "https://www.warcraftlogs.com/reports/fxqGrcj4QwPY1zBp",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
-      "date": "2026-07-27",
-      "durationMin": 164,
-      "duration": "2h 44m",
-      "kills": 1,
-      "wipes": 17,
-      "bestTryPct": 22.8,
-      "killedBosses": [
-        "Chimaerus, the Undreamt God"
-      ]
+      ],
+      "top": []
     },
     {
       "code": "dRPfvh3Kp7gLGnDk",
       "url": "https://www.warcraftlogs.com/reports/dRPfvh3Kp7gLGnDk",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
       "date": "2026-07-23",
-      "durationMin": 159,
+      "startTime": 1784828112682,
+      "endTime": 1784837666608,
       "duration": "2h 39m",
+      "difficulty": "Mythisch",
       "kills": 1,
       "wipes": 14,
-      "bestTryPct": 22.3,
+      "totalFights": 15,
       "killedBosses": [
         "Vaelgor & Ezzorak"
-      ]
+      ],
+      "top": []
     },
     {
       "code": "F9A34pyKjLtbWaC6",
       "url": "https://www.warcraftlogs.com/reports/F9A34pyKjLtbWaC6",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
       "date": "2026-07-20",
-      "durationMin": 176,
+      "startTime": 1784568657591,
+      "endTime": 1784579234942,
       "duration": "2h 56m",
-      "kills": 0,
-      "wipes": 23,
-      "bestTryPct": 29.9,
-      "killedBosses": []
-    },
-    {
-      "code": "C3cbXydANzZv796L",
-      "url": "https://www.warcraftlogs.com/reports/C3cbXydANzZv796L",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
       "difficulty": "Mythisch",
-      "date": "2026-07-20",
-      "durationMin": 172,
-      "duration": "2h 52m",
       "kills": 0,
       "wipes": 23,
-      "bestTryPct": 29.9,
-      "killedBosses": []
+      "totalFights": 23,
+      "killedBosses": [],
+      "top": []
     },
     {
       "code": "9PjLFtyHQz8r3n6R",
       "url": "https://www.warcraftlogs.com/reports/9PjLFtyHQz8r3n6R",
       "title": "Sporefall",
       "zone": "Sporefall",
-      "difficulty": "Heroisch",
       "date": "2026-07-14",
-      "durationMin": 10,
+      "startTime": 1784021236549,
+      "endTime": 1784021855039,
       "duration": "0h 10m",
+      "difficulty": "Heroisch",
       "kills": 0,
       "wipes": 1,
-      "bestTryPct": 34.9,
-      "killedBosses": []
+      "totalFights": 1,
+      "killedBosses": [],
+      "top": []
     },
     {
       "code": "KRx9WJ2wVdcCQDPh",
       "url": "https://www.warcraftlogs.com/reports/KRx9WJ2wVdcCQDPh",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "difficulty": "Mythisch",
       "date": "2026-07-13",
-      "durationMin": 183,
-      "duration": "3h 03m",
+      "startTime": 1783964066674,
+      "endTime": 1783975026146,
+      "duration": "3h 2m",
+      "difficulty": "Mythisch",
       "kills": 0,
       "wipes": 22,
-      "bestTryPct": 2.1,
-      "killedBosses": []
+      "totalFights": 22,
+      "killedBosses": [],
+      "top": []
     }
   ],
-  "updatedAt": "2026-08-21T11:32:52.449Z"
+  "updatedAt": "2026-08-21T12:01:57.073Z"
 }
