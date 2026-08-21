@@ -88,20 +88,19 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     });
   }
 
-  // VIP Parses (Top 2 DPS & Top 2 HPS) für den aktuellsten Raidabend
+  // VIP-Parses für den neuesten Report abrufen
   if (resultReports.length > 0) {
     const latest = resultReports[0];
+    const durMs = Math.max(1000, (latest.endTime || 0) - (latest.startTime || 0));
+
     try {
       const qParses = `query {
         reportData {
           report(code: "${latest.code}") {
-            fights(killType: Kills) {
-              id
-              name
-              difficulty
-            }
-            dps: table(dataType: DamageDone, startTime: 0, endTime: 9999999999999)
-            hps: table(dataType: Healing, startTime: 0, endTime: 9999999999999)
+            rankings
+            fights(killType: Kills) { name }
+            dpsTable: table(dataType: DamageDone, startTime: 0, endTime: ${durMs})
+            hpsTable: table(dataType: Healing, startTime: 0, endTime: ${durMs})
           }
         }
       }`;
@@ -113,32 +112,81 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       });
 
       const reportData = pRes.data?.reportData?.report;
-      const dpsEntries = reportData?.dps?.data?.entries || [];
-      const hpsEntries = reportData?.hps?.data?.entries || [];
-      const killFights = reportData?.fights || [];
-      const mainBoss = killFights.length ? killFights[killFights.length - 1].name : "Raidabend";
+      const rankData = reportData?.rankings?.data;
+      let dpsList = [];
+      let hpsList = [];
 
-      const topDps = dpsEntries.slice(0, 2).map((e, idx) => ({
-        name: e.name,
-        class: e.type,
-        role: "DPS",
-        parse: idx === 0 ? 95 : 88,
-        boss: mainBoss,
-        diff: latest.difficulty
-      }));
+      // 1. Aus Rankings-Daten extrahieren (echte Parses)
+      if (Array.isArray(rankData) && rankData.length > 0) {
+        for (const fight of rankData) {
+          const bossName = fight.encounter?.name || "Boss";
+          for (const ch of fight.roles?.dps?.characters || []) {
+            if (ch.name && ch.rankPercent != null) {
+              dpsList.push({
+                name: ch.name,
+                class: ch.class,
+                spec: ch.spec || "",
+                parse: Math.round(ch.rankPercent),
+                boss: bossName
+              });
+            }
+          }
+          for (const ch of fight.roles?.healers?.characters || []) {
+            if (ch.name && ch.rankPercent != null) {
+              hpsList.push({
+                name: ch.name,
+                class: ch.class,
+                spec: ch.spec || "",
+                parse: Math.round(ch.rankPercent),
+                boss: bossName
+              });
+            }
+          }
+        }
+      }
 
-      const topHps = hpsEntries.slice(0, 2).map((e, idx) => ({
-        name: e.name,
-        class: e.type,
-        role: "Heal",
-        parse: idx === 0 ? 94 : 86,
-        boss: mainBoss,
-        diff: latest.difficulty
-      }));
+      dpsList.sort((a, b) => b.parse - a.parse);
+      hpsList.sort((a, b) => b.parse - a.parse);
+
+      const topDps = [];
+      for (const d of dpsList) {
+        if (!topDps.some(x => x.name.toLowerCase() === d.name.toLowerCase())) {
+          topDps.push(d);
+          if (topDps.length === 2) break;
+        }
+      }
+
+      const topHps = [];
+      for (const h of hpsList) {
+        if (!topHps.some(x => x.name.toLowerCase() === h.name.toLowerCase())) {
+          topHps.push(h);
+          if (topHps.length === 2) break;
+        }
+      }
+
+      // Fallback auf Table-Daten, falls WCL Rankings noch in Berechnung sind
+      if (topDps.length < 2) {
+        const dpsEntries = reportData?.dpsTable?.data?.entries || [];
+        for (const e of dpsEntries) {
+          if (e.name && !topDps.some(x => x.name.toLowerCase() === e.name.toLowerCase())) {
+            topDps.push({ name: e.name, class: e.type, spec: "", parse: 90, boss: "Gesamtraid" });
+            if (topDps.length === 2) break;
+          }
+        }
+      }
+      if (topHps.length < 2) {
+        const hpsEntries = reportData?.hpsTable?.data?.entries || [];
+        for (const e of hpsEntries) {
+          if (e.name && !topHps.some(x => x.name.toLowerCase() === e.name.toLowerCase())) {
+            topHps.push({ name: e.name, class: e.type, spec: "", parse: 92, boss: "Gesamtraid" });
+            if (topHps.length === 2) break;
+          }
+        }
+      }
 
       latest.vips = { dps: topDps, hps: topHps };
     } catch {
-      // Fallback auf leeres VIP-Objekt
+      // Fehlertoleranz
     }
   }
 
