@@ -1,9 +1,6 @@
 #!/usr/bin/env node
 /* =====================================================================
-   Holt alle Daten und schreibt sie nach ./data/*.json
-   Jede Quelle ist einzeln abgesichert: fehlt ein Key oder ist eine API
-   gerade nicht erreichbar, wird nur diese eine Quelle übersprungen —
-   die Website läuft mit den zuletzt geholten Daten weiter.
+   ShadowFox Data Sync — WoWAudit + Raider.IO + Blizzard + WCL + Discord
    ===================================================================== */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -20,14 +17,12 @@ import { ok, skip, fail, log } from "./lib/util.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
 
-/* --- .env lesen, falls vorhanden (nur fürs lokale Testen) --- */
 if (existsSync(join(ROOT, ".env"))) {
   const txt = await readFile(join(ROOT, ".env"), "utf8");
   for (const line of txt.split("\n")) {
     const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/);
     if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
   }
-  log(".env geladen");
 }
 
 const env = k => (process.env[k] ?? "").trim();
@@ -43,71 +38,56 @@ const write = async (file, obj) => {
   log(`geschrieben: data/${file}`);
 };
 
-/* Kaderliste kommt aus content/raider.json — das pflegt ihr im CMS. */
-async function kaderNames() {
-  try {
-    const raw = await readFile(join(ROOT, "content", "raider.json"), "utf8");
-    const j = JSON.parse(raw);
-    return (j.raider ?? []).filter(r => r.aktiv !== false).map(r => r.name);
-  } catch {
-    return [];
-  }
-}
-
-/* --------------------------------------------------------------- */
 console.log(`\n  ShadowFox — Datenabgleich  (${new Date().toLocaleString("de-DE")})\n`);
 let errors = 0;
 
-/* 1) Raider.IO — Gildenprofil. Braucht keinen Key, läuft immer. */
+/* 1) Raider.IO Gildenprofil */
 try {
   await write("guild.json", await rio.guildProfile(GUILD));
 } catch (e) { errors++; fail(`Raider.IO Gildenprofil: ${e.message}`); }
 
-/* 2) Raider.IO — Charaktere des Kaders */
-const namen = await kaderNames();
-if (namen.length) {
-  try {
-    const chars = await rio.characters(namen, GUILD);
-    // Schutz: eine leere Antwort darf gute Daten nicht ueberschreiben.
-    if (chars.length) {
-      await write("roster.json", { characters: chars, updatedAt: new Date().toISOString() });
-    } else {
-      errors++; fail("Raider.IO lieferte 0 Charaktere — data/roster.json bleibt unveraendert");
-    }
-  } catch (e) { errors++; fail(`Raider.IO Charaktere: ${e.message}`); }
-} else {
-  skip("Kader: content/raider.json ist leer — keine Charakterdaten geholt");
-}
-
-/* 3) Raid-Helper */
-if (env("RAIDHELPER_API_KEY") && env("RAIDHELPER_SERVER_ID")) {
-  try {
-    await write("events.json", await raidhelp.events({
-      apiKey: env("RAIDHELPER_API_KEY"),
-      serverId: env("RAIDHELPER_SERVER_ID")
-    }));
-  } catch (e) { errors++; fail(`Raid-Helper: ${e.message}`); }
-} else skip("Raid-Helper: kein Key gesetzt — übersprungen");
-
-/* 4) Warcraft Logs */
-if (env("WCL_CLIENT_ID") && env("WCL_CLIENT_SECRET")) {
-  try {
-    await write("logs.json", await wcl.reports({
-      clientId: env("WCL_CLIENT_ID"),
-      clientSecret: env("WCL_CLIENT_SECRET"),
-      ...GUILD
-    }));
-  } catch (e) { errors++; fail(`Warcraft Logs: ${e.message}`); }
-} else skip("Warcraft Logs: kein Client gesetzt — übersprungen");
-
-/* 5) WoWAudit */
+/* 2) WoWAudit (Basis für den Kader) */
+let auditData = null;
 if (env("WOWAUDIT_API_KEY")) {
   try {
-    await write("wowaudit.json", await audit.team({ apiKey: env("WOWAUDIT_API_KEY") }));
+    auditData = await audit.team({ apiKey: env("WOWAUDIT_API_KEY") });
+    await write("wowaudit.json", auditData);
   } catch (e) { errors++; fail(`WoWAudit: ${e.message}`); }
-} else skip("WoWAudit: kein Key gesetzt — übersprungen");
+} else skip("WoWAudit: kein Key gesetzt");
 
-/* 6) Blizzard — Ränge und M+-Wochenruns */
+/* Charaktere bestimmen: Bevorzugt aus WoWAudit, Fallback auf content/raider.json */
+let charList = [];
+if (auditData?.characters?.length) {
+  charList = auditData.characters.map(c => ({
+    name: c.name,
+    realm: c.realm ? c.realm.toLowerCase().replace(/\s+/g, "-") : GUILD.realm,
+    class: c.class,
+    role: c.role
+  }));
+} else {
+  try {
+    const raw = await readFile(join(ROOT, "content", "raider.json"), "utf8");
+    const j = JSON.parse(raw);
+    charList = (j.raider ?? []).filter(r => r.aktiv !== false).map(r => ({
+      name: r.name,
+      realm: GUILD.realm,
+      class: r.klasse,
+      role: r.rolle
+    }));
+  } catch { charList = []; }
+}
+
+/* 3) Raider.IO Charaktere */
+if (charList.length) {
+  try {
+    const chars = await rio.characters(charList, GUILD);
+    if (chars.length) {
+      await write("roster.json", { characters: chars, updatedAt: new Date().toISOString() });
+    }
+  } catch (e) { errors++; fail(`Raider.IO Charaktere: ${e.message}`); }
+}
+
+/* 4) Blizzard M+-Wochenruns */
 if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
   try {
     const roster = await bnet.guildRoster({
@@ -116,31 +96,49 @@ if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
       ...GUILD
     });
     let keys = [];
-    if (namen.length) {
+    if (charList.length) {
       keys = await bnet.weeklyKeys({
-        token: roster.token, region: GUILD.region, realm: GUILD.realm, names: namen
+        token: roster.token, region: GUILD.region, realm: GUILD.realm, names: charList
       });
     }
-    delete roster.token;                     // Token gehört nicht in eine Datei
+    delete roster.token;
     await write("blizzard.json", { ...roster, weeklyKeys: keys });
   } catch (e) { errors++; fail(`Blizzard: ${e.message}`); }
-} else skip("Blizzard: kein Client gesetzt — übersprungen");
+} else skip("Blizzard: kein Client gesetzt");
 
-/* Statusdatei — die Website zeigt daraus an, wie frisch die Daten sind */
+/* 5) Raid-Helper */
+if (env("RAIDHELPER_API_KEY") && env("RAIDHELPER_SERVER_ID")) {
+  try {
+    await write("events.json", await raidhelp.events({
+      apiKey: env("RAIDHELPER_API_KEY"),
+      serverId: env("RAIDHELPER_SERVER_ID")
+    }));
+  } catch (e) { errors++; fail(`Raid-Helper: ${e.message}`); }
+}
+
+/* 6) Warcraft Logs */
+if (env("WCL_CLIENT_ID") && env("WCL_CLIENT_SECRET")) {
+  try {
+    await write("logs.json", await wcl.reports({
+      clientId: env("WCL_CLIENT_ID"),
+      clientSecret: env("WCL_CLIENT_SECRET"),
+      ...GUILD
+    }));
+  } catch (e) { errors++; fail(`Warcraft Logs: ${e.message}`); }
+}
+
+/* Status */
 await write("status.json", {
   updatedAt: new Date().toISOString(),
   guild: GUILD,
   sources: {
-    raiderio:     true,
-    raidhelper:   Boolean(env("RAIDHELPER_API_KEY")),
+    raiderio: true,
+    raidhelper: Boolean(env("RAIDHELPER_API_KEY")),
     warcraftlogs: Boolean(env("WCL_CLIENT_ID")),
-    wowaudit:     Boolean(env("WOWAUDIT_API_KEY")),
-    blizzard:     Boolean(env("BLIZZARD_CLIENT_ID"))
+    wowaudit: Boolean(env("WOWAUDIT_API_KEY")),
+    blizzard: Boolean(env("BLIZZARD_CLIENT_ID"))
   },
   errors
 });
 
-console.log(errors ? `\n  Fertig mit ${errors} Fehler(n) — die übrigen Daten sind aktuell.\n`
-                   : `\n  Fertig. Alles aktuell.\n`);
-/* Bewusst kein exit(1): ein Ausfall einer fremden API soll den Workflow
-   nicht rot färben, solange die anderen Quellen geliefert haben. */
+console.log(`\n  Fertig mit ${errors} Fehler(n).\n`);
