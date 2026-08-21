@@ -3,6 +3,8 @@ name: Daten aktualisieren
 on:
   schedule:
     - cron: '20 5 * * *'
+    - cron: '20 11 * * *'
+    - cron: '20 17 * * *'
     - cron: '40 23 * * *'
   workflow_dispatch:
   push:
