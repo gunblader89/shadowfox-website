@@ -5,7 +5,6 @@
       "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
       "title": "Raid",
       "zone": "The Venomous Abyss",
-      "date": "20.08.2026",
       "startTime": 1787225301136,
       "endTime": 1787265145622,
       "duration": "11h 4m",
@@ -17,36 +16,50 @@
         "Altar of Fangs",
         "The Blinding Vale"
       ],
-      "top": [
-        {
-          "name": "Seitenleiste",
-          "class": "Mage",
-          "role": "DPS",
-          "amount": "33.4k DPS",
-          "parse": 94
-        },
-        {
-          "name": "Mercrixxus",
-          "class": "Warrior",
-          "role": "DPS",
-          "amount": "13.2k DPS",
-          "parse": 94
-        },
-        {
-          "name": "Scârlêtt",
-          "class": "DeathKnight",
-          "role": "DPS",
-          "amount": "30.0k DPS",
-          "parse": 94
-        }
-      ]
+      "vips": {
+        "dps": [
+          {
+            "name": "Hatto",
+            "class": "Hunter",
+            "role": "DPS",
+            "parse": 95,
+            "boss": "The Blinding Vale",
+            "diff": "Normal"
+          },
+          {
+            "name": "Moonlord",
+            "class": "Druid",
+            "role": "DPS",
+            "parse": 88,
+            "boss": "The Blinding Vale",
+            "diff": "Normal"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Hatto",
+            "class": "Hunter",
+            "role": "Heal",
+            "parse": 94,
+            "boss": "The Blinding Vale",
+            "diff": "Normal"
+          },
+          {
+            "name": "Zul'jan",
+            "class": "Boss",
+            "role": "Heal",
+            "parse": 86,
+            "boss": "The Blinding Vale",
+            "diff": "Normal"
+          }
+        ]
+      }
     },
     {
       "code": "vZwFxpX6K1Qh4VAb",
       "url": "https://www.warcraftlogs.com/reports/vZwFxpX6K1Qh4VAb",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "date": "19.08.2026",
       "startTime": 1787162809570,
       "endTime": 1787171146232,
       "duration": "2h 18m",
@@ -59,14 +72,16 @@
         "The Lost Explorers",
         "Sszorak"
       ],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
       "code": "3y94KN1YVk2mzH8c",
       "url": "https://www.warcraftlogs.com/reports/3y94KN1YVk2mzH8c",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "30.07.2026",
       "startTime": 1785432962701,
       "endTime": 1785438462627,
       "duration": "1h 31m",
@@ -77,31 +92,35 @@
         "Belo'ren, Child of Al'ar",
         "Midnight Falls"
       ],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
-      "code": "LpBcXFHdRaMNZC9n",
-      "url": "https://www.warcraftlogs.com/reports/LpBcXFHdRaMNZC9n",
+      "code": "fxqGrcj4QwPY1zBp",
+      "url": "https://www.warcraftlogs.com/reports/fxqGrcj4QwPY1zBp",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "27.07.2026",
-      "startTime": 1785173764762,
-      "endTime": 1785183515454,
-      "duration": "2h 42m",
+      "startTime": 1785173627963,
+      "endTime": 1785183460791,
+      "duration": "2h 43m",
       "difficulty": "Mythisch",
       "kills": 1,
       "wipes": 34,
       "killedBosses": [
         "Chimaerus, the Undreamt God"
       ],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
       "code": "dRPfvh3Kp7gLGnDk",
       "url": "https://www.warcraftlogs.com/reports/dRPfvh3Kp7gLGnDk",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "23.07.2026",
       "startTime": 1784828112682,
       "endTime": 1784837666608,
       "duration": "2h 39m",
@@ -111,29 +130,33 @@
       "killedBosses": [
         "Vaelgor & Ezzorak"
       ],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
-      "code": "F9A34pyKjLtbWaC6",
-      "url": "https://www.warcraftlogs.com/reports/F9A34pyKjLtbWaC6",
+      "code": "C3cbXydANzZv796L",
+      "url": "https://www.warcraftlogs.com/reports/C3cbXydANzZv796L",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "20.07.2026",
-      "startTime": 1784568657591,
-      "endTime": 1784579234942,
-      "duration": "2h 56m",
+      "startTime": 1784568607076,
+      "endTime": 1784578944547,
+      "duration": "2h 52m",
       "difficulty": "Mythisch",
       "kills": 0,
       "wipes": 46,
       "killedBosses": [],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
       "code": "9PjLFtyHQz8r3n6R",
       "url": "https://www.warcraftlogs.com/reports/9PjLFtyHQz8r3n6R",
       "title": "Sporefall",
       "zone": "Sporefall",
-      "date": "14.07.2026",
       "startTime": 1784021236549,
       "endTime": 1784021855039,
       "duration": "0h 10m",
@@ -141,44 +164,50 @@
       "kills": 0,
       "wipes": 1,
       "killedBosses": [],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
-      "code": "KRx9WJ2wVdcCQDPh",
-      "url": "https://www.warcraftlogs.com/reports/KRx9WJ2wVdcCQDPh",
+      "code": "RYB3PbdgpJHwa7ZD",
+      "url": "https://www.warcraftlogs.com/reports/RYB3PbdgpJHwa7ZD",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "13.07.2026",
-      "startTime": 1783964066674,
-      "endTime": 1783975026146,
-      "duration": "3h 2m",
+      "startTime": 1783963876682,
+      "endTime": 1783974677980,
+      "duration": "3h 0m",
       "difficulty": "Mythisch",
       "kills": 0,
       "wipes": 44,
       "killedBosses": [],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
-      "code": "PJCKtb4LyDNAm8Qc",
-      "url": "https://www.warcraftlogs.com/reports/PJCKtb4LyDNAm8Qc",
+      "code": "ZmrjznAh6gy8RQLC",
+      "url": "https://www.warcraftlogs.com/reports/ZmrjznAh6gy8RQLC",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "09.07.2026",
-      "startTime": 1783618761712,
-      "endTime": 1783628946274,
-      "duration": "2h 49m",
+      "startTime": 1783618286951,
+      "endTime": 1783630006256,
+      "duration": "3h 15m",
       "difficulty": "Mythisch",
       "kills": 0,
       "wipes": 44,
       "killedBosses": [],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     },
     {
       "code": "hPqCcQAvkNnrTjm3",
       "url": "https://www.warcraftlogs.com/reports/hPqCcQAvkNnrTjm3",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "date": "06.07.2026",
       "startTime": 1783359710084,
       "endTime": 1783370298266,
       "duration": "2h 56m",
@@ -189,8 +218,11 @@
         "Vorasius",
         "Fallen-King Salhadaar"
       ],
-      "top": []
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     }
   ],
-  "updatedAt": "2026-08-21T15:35:45.196Z"
+  "updatedAt": "2026-08-21T16:04:19.979Z"
 }
