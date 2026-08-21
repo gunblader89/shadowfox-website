@@ -1,0 +1,78 @@
+name: Raid-Helper Endpunkt finden
+
+on:
+  workflow_dispatch:
+
+jobs:
+  suchen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kandidaten abklopfen
+        env:
+          KEY: ${{ secrets.RAIDHELPER_API_KEY }}
+          SID: ${{ secrets.RAIDHELPER_SERVER_ID }}
+        run: |
+          cat > probe.mjs <<'SCRIPT'
+          const key = (process.env.KEY || "").trim();
+          const sid = (process.env.SID || "").trim();
+          const H = { Authorization: key };
+
+          async function probe(label, url, opts = {}) {
+            try {
+              const res = await fetch(url, opts);
+              const txt = (await res.text()).slice(0, 160).replace(/\s+/g, " ");
+              const mark = res.ok ? ">>> TREFFER" : "    -      ";
+              console.log(`${mark} ${String(res.status).padEnd(4)} ${label.padEnd(30)} ${txt}`);
+              return res.ok;
+            } catch (e) {
+              console.log(`    -      ---  ${label.padEnd(30)} ${e.message}`);
+              return false;
+            }
+          }
+
+          console.log("=== A) Kontrolltest: bekannter oeffentlicher Endpunkt ===");
+          await probe("event (bekannt gut, ohne Key)",
+            "https://raid-helper.dev/api/event/1276862823091277844");
+
+          console.log("\n=== B) Wurzelpfade — listen sie Routen auf? ===");
+          for (const p of ["/api", "/api/v2", "/api/v3", "/api/docs", "/api/openapi.json", "/api/swagger.json"]) {
+            await probe(p, "https://raid-helper.dev" + p, { headers: H });
+          }
+
+          console.log("\n=== C) Server-Endpunkt, Schreibweisen durchprobieren ===");
+          const kandidaten = [
+            `/api/v3/server/${sid}/events`,
+            `/api/v2/server/${sid}/events`,
+            `/api/server/${sid}/events`,
+            `/api/v3/servers/${sid}/event`,
+            `/api/v3/events/${sid}`,
+            `/api/v2/events/${sid}`,
+            `/api/events/${sid}`,
+            `/api/v3/${sid}/events`,
+            `/api/${sid}/events`,
+            `/api/v3/guild/${sid}/events`,
+            `/api/v3/discord/${sid}/events`,
+            `/api/v3/servers/${sid}/eventlist`,
+            `/api/v3/servers/${sid}/postedevents`,
+          ];
+          for (const p of kandidaten) {
+            await probe(p.replace(sid, "{id}"), "https://raid-helper.dev" + p, { headers: H });
+          }
+
+          console.log("\n=== D) Dieselben Pfade als POST (manche APIs listen per POST) ===");
+          const postOpts = {
+            method: "POST",
+            headers: { ...H, "Content-Type": "application/json" },
+            body: "{}"
+          };
+          for (const p of [
+            `/api/v3/servers/${sid}/events`,
+            `/api/v2/servers/${sid}/events`,
+            `/api/v3/server/${sid}/events`,
+          ]) {
+            await probe("POST " + p.replace(sid, "{id}"), "https://raid-helper.dev" + p, postOpts);
+          }
+
+          console.log("\nFertig. Jede Zeile mit TREFFER ist ein gangbarer Weg.");
+          SCRIPT
+          node probe.mjs
