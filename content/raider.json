@@ -1,220 +1,27 @@
 {
   "raider": [
-    {
-      "name": "Hòbs",
-      "klasse": "Druide",
-      "rolle": "Ranged",
-      "gildenrang": 0,
-      "notiz": "Gildenmeisterin",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Mercrixxus",
-      "klasse": "Krieger",
-      "rolle": "Melee",
-      "gildenrang": 1,
-      "notiz": "Offizier",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Garódash",
-      "klasse": "Schamane",
-      "rolle": "Heal",
-      "gildenrang": 1,
-      "notiz": "Offizier",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Chantallè",
-      "klasse": "Jäger",
-      "rolle": "Ranged",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Jisgarin",
-      "klasse": "Magier",
-      "rolle": "Ranged",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Thessaly",
-      "klasse": "Schurke",
-      "rolle": "Melee",
-      "gildenrang": 7,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Sweetschi",
-      "klasse": "Magier",
-      "rolle": "Ranged",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Quon",
-      "klasse": "Druide",
-      "rolle": "Tank",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": false
-    },
-    {
-      "name": "Narrwên",
-      "klasse": "Hexenmeister",
-      "rolle": "Ranged",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Pepelim",
-      "klasse": "Todesritter",
-      "rolle": "Melee",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Holydivér",
-      "klasse": "Paladin",
-      "rolle": "Melee",
-      "gildenrang": 8,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Kitebrew",
-      "klasse": "Mönch",
-      "rolle": "Tank",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Sandino",
-      "klasse": "Schamane",
-      "rolle": "Heal",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Thorelion",
-      "klasse": "Paladin",
-      "rolle": "Heal",
-      "gildenrang": 7,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Xsythia",
-      "klasse": "Priester",
-      "rolle": "Heal",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Améthyst",
-      "klasse": "Paladin",
-      "rolle": "Melee",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Corvisstab",
-      "klasse": "Schurke",
-      "rolle": "Melee",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Druith",
-      "klasse": "Druide",
-      "rolle": "Ranged",
-      "gildenrang": 5,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Toshichaos",
-      "klasse": "Hexenmeister",
-      "rolle": "Ranged",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Seitenleiste",
-      "klasse": "Magier",
-      "rolle": "Ranged",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Mardyn",
-      "klasse": "Magier",
-      "rolle": "Ranged",
-      "gildenrang": 5,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Tiskarian",
-      "klasse": "Druide",
-      "rolle": "Ranged",
-      "gildenrang": 7,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Moonlord",
-      "klasse": "Druide",
-      "rolle": "Melee",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    },
-    {
-      "name": "Kiraja",
-      "klasse": "Dämonenjäger",
-      "rolle": "Tank",
-      "gildenrang": 3,
-      "notiz": "",
-      "vorstellung": "",
-      "aktiv": true
-    }
+    { "name": "Hòbs", "klasse": "Druide", "rolle": "Ranged", "gildenrang": 0, "notiz": "Gildenmeisterin" },
+    { "name": "Garódash", "klasse": "Schamane", "rolle": "Heal", "gildenrang": 1, "notiz": "Offizier" },
+    { "name": "Merccrixxus", "klasse": "Krieger", "rolle": "Melee", "gildenrang": 1, "notiz": "Offizier" },
+    { "name": "Quon", "klasse": "Druide", "rolle": "Tank", "gildenrang": 3 },
+    { "name": "Kitebrew", "klasse": "Mönch", "rolle": "Tank", "gildenrang": 3 },
+    { "name": "Sandino", "klasse": "Schamane", "rolle": "Heal", "gildenrang": 3 },
+    { "name": "Thorelion", "klasse": "Paladin", "rolle": "Heal", "gildenrang": 3 },
+    { "name": "Xsythia", "klasse": "Priester", "rolle": "Heal", "gildenrang": 3 },
+    { "name": "Thessaly", "klasse": "Schurke", "rolle": "Melee", "gildenrang": 3 },
+    { "name": "Pepelim", "klasse": "Todesritter", "rolle": "Melee", "gildenrang": 3 },
+    { "name": "Holydivér", "klasse": "Paladin", "rolle": "Melee", "gildenrang": 3 },
+    { "name": "Améthyst", "klasse": "Paladin", "rolle": "Melee", "gildenrang": 3 },
+    { "name": "Corvisstab", "klasse": "Schurke", "rolle": "Melee", "gildenrang": 3 },
+    { "name": "Moonlord", "klasse": "Druide", "rolle": "Melee", "gildenrang": 3 },
+    { "name": "Chantallé", "klasse": "Jäger", "rolle": "Ranged", "gildenrang": 3 },
+    { "name": "Jisgarin", "klasse": "Magier", "rolle": "Ranged", "gildenrang": 3 },
+    { "name": "Sweetschi", "klasse": "Magier", "rolle": "Ranged", "gildenrang": 3 },
+    { "name": "Narrwên", "klasse": "Hexenmeister", "rolle": "Ranged", "gildenrang": 3 },
+    { "name": "Druith", "klasse": "Druide", "rolle": "Ranged", "gildenrang": 5 },
+    { "name": "Toshichaos", "klasse": "Hexenmeister", "rolle": "Ranged", "gildenrang": 3 },
+    { "name": "Seitenleiste", "klasse": "Magier", "rolle": "Ranged", "gildenrang": 3 },
+    { "name": "Mardyn", "klasse": "Magier", "rolle": "Ranged", "gildenrang": 5 },
+    { "name": "Tiskarian", "klasse": "Druide", "rolle": "Ranged", "gildenrang": 3 }
   ]
 }
