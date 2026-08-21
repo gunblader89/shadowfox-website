@@ -1,0 +1,60 @@
+name: Raid-Helper Zugang klaeren
+
+on:
+  workflow_dispatch:
+
+jobs:
+  klaeren:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Unterscheidungstest
+        env:
+          KEY: ${{ secrets.RAIDHELPER_API_KEY }}
+          SID: ${{ secrets.RAIDHELPER_SERVER_ID }}
+        run: |
+          cat > probe.mjs <<'SCRIPT'
+          const key = (process.env.KEY || "").trim();
+          const sid = (process.env.SID || "").trim();
+
+          async function probe(label, url, opts = {}) {
+            try {
+              const res = await fetch(url, opts);
+              const txt = (await res.text()).slice(0, 170).replace(/\s+/g, " ");
+              console.log(`${res.ok ? ">>> TREFFER" : "    -      "} ${String(res.status).padEnd(4)} ${label.padEnd(34)} ${txt}`);
+            } catch (e) {
+              console.log(`    -      ---  ${label.padEnd(34)} ${e.message}`);
+            }
+          }
+
+          console.log("=== 1) Ist '404 Endpoint not found' eine Routing- oder eine Rechte-Meldung? ===");
+          console.log("Wenn ein GUELTIGER Pfad mit unbekannter ID dieselbe Meldung bringt,");
+          console.log("ist die Meldung generisch — dann kann unser Server-Pfad doch stimmen.");
+          await probe("event/{gueltig}  (Kontrolle)", "https://raid-helper.dev/api/event/1276862823091277844");
+          await probe("event/000000000000000000",     "https://raid-helper.dev/api/event/000000000000000000");
+          await probe("event/quatsch",                "https://raid-helper.dev/api/event/quatsch");
+
+          console.log("\n=== 2) Server-Pfad mit anderen Anmeldeverfahren ===");
+          const base = `https://raid-helper.dev/api/v3/servers/${sid}/events`;
+          await probe("Header Authorization",  base, { headers: { Authorization: key } });
+          await probe("Header X-Api-Key",      base, { headers: { "X-Api-Key": key } });
+          await probe("Header api-key",        base, { headers: { "api-key": key } });
+          await probe("Query ?apikey=",        `${base}?apikey=${encodeURIComponent(key)}`);
+          await probe("Query ?api_key=",       `${base}?api_key=${encodeURIComponent(key)}`);
+          await probe("Query ?key=",           `${base}?key=${encodeURIComponent(key)}`);
+
+          console.log("\n=== 3) Server-Pfade ohne Versionsnummer (Stil von /api/event/) ===");
+          for (const p of [`/api/server/${sid}`, `/api/servers/${sid}`, `/api/serverevents/${sid}`, `/api/eventlist/${sid}`]) {
+            await probe(p.replace(sid, "{id}"), "https://raid-helper.dev" + p, { headers: { Authorization: key } });
+          }
+
+          console.log("\n=== 4) Antwort-Kopfzeilen des Kontroll-Endpunkts (Hinweise auf die API) ===");
+          try {
+            const r = await fetch("https://raid-helper.dev/api/event/1276862823091277844");
+            for (const [k, v] of r.headers) {
+              if (/server|powered|version|api|allow/i.test(k)) console.log(`   ${k}: ${v}`);
+            }
+          } catch (e) { console.log("   nicht abrufbar:", e.message); }
+
+          console.log("\nFertig.");
+          SCRIPT
+          node probe.mjs
