@@ -26,21 +26,22 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
              radial-gradient(720px 440px at 6% 2%,rgba(143,124,232,.07),transparent 64%)}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px;position:relative;z-index:1}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
 
+/* ---------- Top Navigation ---------- */
 .top{position:sticky;top:0;z-index:60;background:rgba(8,9,13,.86);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line)}
 .top-in{display:flex;align-items:center;gap:24px;height:64px}
 .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
 .brand .mark{width:36px;height:36px;flex-shrink:0}
 .brand b{display:block;font-size:15px;font-weight:700;letter-spacing:-.3px;line-height:1.2}
 .brand span{display:block;font-size:11px;color:var(--tx3);letter-spacing:.4px;font-weight:500}
-nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
-nav a{padding:8px 11px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
+nav a{padding:8px 12px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
 nav a:hover{color:var(--tx);background:var(--panel)}
 nav a.on{color:var(--tx);background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2)}
 .top-r{margin-left:auto;display:flex;align-items:center;gap:9px;flex-shrink:0}
-.sbtn{display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
+.sbtn{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
 .sbtn:hover{border-color:var(--line2);color:var(--tx2)}
 kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;background:#1b202a;border:1px solid #2b3242;color:var(--tx3)}
 .btn{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:10px;font-size:13.5px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
@@ -48,18 +49,20 @@ kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;b
 .btn-p:hover{background:#f2c266}
 
 .notice{background:var(--green-bg);border-bottom:1px solid rgba(94,196,143,.2);font-size:12px;color:var(--green);text-align:center;padding:7px 20px}
-main{padding:36px 0 90px}
+main{padding:32px 0 90px}
 
-.page-h{margin-bottom:26px}
+/* ---------- Typography & Layout ---------- */
+.page-h{margin-bottom:24px}
 .page-h h1{font-size:29px;font-weight:700;letter-spacing:-.8px;line-height:1.15}
-.page-h p{font-size:14.5px;color:var(--tx2);margin-top:7px;max-width:660px}
-.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--tx3);margin-bottom:11px}
+.page-h p{font-size:14.5px;color:var(--tx2);margin-top:6px;max-width:680px}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--tx3);margin-bottom:10px}
 h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .sec-sub{font-size:13.5px;color:var(--tx3);margin-bottom:16px}
 
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
-.grid{display:grid;gap:13px}
+.grid{display:grid;gap:14px}
 .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.start-grid{display:grid;grid-template-columns:360px 1fr;gap:16px;align-items:stretch;margin-bottom:34px}
 .muted{color:var(--tx3)}.soft{color:var(--tx2)}
 .mono{font-family:var(--mono);font-size:12.5px}
 
@@ -71,32 +74,35 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor}
 
+/* ---------- Hero ---------- */
 .hero{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#101319 52%,#0b0d12 100%);position:relative;margin-bottom:16px}
 .hero::after{content:"";position:absolute;right:-120px;top:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.14),transparent 66%);pointer-events:none}
-.hero-in{padding:34px;position:relative;z-index:1;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
-.hero-mark{width:96px;height:96px;flex-shrink:0}
-.hero h1{font-size:42px;font-weight:800;letter-spacing:-1.4px;line-height:1;margin-bottom:9px}
-.hero .sub{font-size:14.5px;color:var(--tx2);max-width:520px}
-.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
-.chip{font-size:12.5px;padding:5px 11px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
+.hero-in{padding:32px;position:relative;z-index:1;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.hero-mark{width:88px;height:88px;flex-shrink:0}
+.hero h1{font-size:40px;font-weight:800;letter-spacing:-1.4px;line-height:1;margin-bottom:8px}
+.hero .sub{font-size:14.5px;color:var(--tx2);max-width:540px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.chip{font-size:12px;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
 .chip b{color:var(--tx);font-weight:650}
 
-.progblock{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);width:100%}
-.progrow{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.progblock{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);width:100%}
+.progrow{display:flex;align-items:center;gap:14px;margin-bottom:9px}
 .progrow:last-child{margin-bottom:0}
 .progrow .lbl{width:78px;flex-shrink:0;font-size:12px;font-weight:650;color:var(--tx2)}
 .track{flex:1;height:8px;border-radius:100px;background:#1a1e28;overflow:hidden;min-width:80px}
 .fill{display:block;height:100%;border-radius:100px}
 .progrow .val{width:66px;text-align:right;flex-shrink:0;font-family:var(--mono);font-size:12px;color:var(--tx)}
 
+/* ---------- Tiles ---------- */
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tile{display:block;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
-.tile:hover{border-color:var(--line2);background:var(--panel2)}
+.tile:hover{border-color:var(--line2);background:var(--panel2);transform:translateY(-2px)}
 .tile .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--panel3);border:1px solid var(--line2);font-size:16px;margin-bottom:12px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
-.boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:9px;overflow:hidden;transition:.16s}
+/* ---------- Boss Accordion ---------- */
+.boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:10px;overflow:hidden;transition:.16s}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
 .bhead{display:flex;align-items:center;gap:14px;padding:15px 18px;width:100%}
 .bnum{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;font-family:var(--mono);font-size:12px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx3)}
@@ -106,10 +112,10 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .bname span{display:block;font-size:12.5px;color:var(--tx3)}
 .chev{color:var(--tx3);transition:.2s;flex-shrink:0}
 .boss.open .chev{transform:rotate(180deg)}
-.bbody{display:none;padding:4px 18px 20px 62px}
+.bbody{display:none;padding:6px 20px 20px 62px}
 .boss.open .bbody{display:block}
-.bintro{font-size:13.5px;color:var(--tx2);padding:14px 16px;background:rgba(255,255,255,.022);border-left:2px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:18px}
-.blabel{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--tx3);font-weight:700;margin:18px 0 10px}
+.bintro{font-size:13.5px;color:var(--tx2);padding:12px 15px;background:rgba(255,255,255,.022);border-left:2px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:16px}
+.blabel{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--tx3);font-weight:700;margin:16px 0 10px}
 .steps{list-style:none;display:flex;flex-direction:column;gap:9px}
 .step{display:flex;gap:11px;align-items:flex-start}
 .rtag{flex-shrink:0;width:60px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.5px;padding:3px 0;border-radius:6px;margin-top:2px;text-transform:uppercase}
@@ -118,12 +124,13 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .r-heiler{background:var(--green-bg);color:var(--green);border:1px solid rgba(94,196,143,.28)}
 .r-dps{background:var(--amber-bg);color:var(--amber);border:1px solid rgba(234,181,78,.28)}
 .step p{font-size:13.5px;color:var(--tx2);line-height:1.55}
-.abils{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.abils{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .abil{font-size:11.5px;padding:3px 9px;border-radius:7px;background:#1a1f29;border:1px solid var(--line);color:var(--tx3);font-family:var(--mono)}
 .links{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .lchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;padding:7px 12px;border-radius:9px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
 .lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
 
+/* ---------- Tracker & Tables ---------- */
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
 table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
 table.trk th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700;padding:12px 11px;border-bottom:1px solid var(--line2);white-space:nowrap;cursor:pointer;user-select:none}
@@ -156,33 +163,46 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .rank .vl{font-family:var(--mono);font-size:12.5px;color:var(--tx);flex-shrink:0}
 .rank.top .pos{color:var(--amber);font-weight:700}
 
-.sig-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--line)}
-.sig-counts{display:flex;gap:9px;flex-wrap:wrap}
-.cnt{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:8px;border:1px solid}
+/* ---------- Signups ---------- */
+.sig-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.sig-counts{display:flex;gap:8px;flex-wrap:wrap}
+.cnt{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 9px;border-radius:8px;border:1px solid}
 .c-yes{color:var(--green);border-color:rgba(94,196,143,.3);background:var(--green-bg)}
 .c-tent{color:var(--amber);border-color:rgba(234,181,78,.3);background:var(--amber-bg)}
 .c-no{color:var(--red);border-color:rgba(226,107,107,.3);background:rgba(226,107,107,.1)}
 .c-bench{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
-.sig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.sig-col h4{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--tx3);font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.sig-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.sig-col h4{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--tx3);font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
 .sig-col h4 span{font-family:var(--mono);font-size:11px;color:var(--tx2)}
-.sig-p{display:flex;align-items:center;gap:8px;padding:6px 9px;border-radius:7px;background:var(--panel2);border:1px solid var(--line);margin-bottom:5px;font-size:12.5px}
-.sig-p .d{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+.sig-p{display:flex;align-items:center;gap:7px;padding:5px 8px;border-radius:7px;background:var(--panel2);border:1px solid var(--line);margin-bottom:4px;font-size:12px}
+.sig-p .d{width:7px;height:7px;border-radius:2px;flex-shrink:0}
 .sig-p .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.sig-p .s{font-size:10.5px;color:var(--tx3);flex-shrink:0}
+.sig-p .s{font-size:10px;color:var(--tx3);flex-shrink:0}
 
-.logcard{border:1px solid var(--line2);border-radius:16px;overflow:hidden;background:linear-gradient(140deg,#181c26,#101319)}
-.logcard-t{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-.logcard-b{padding:18px 20px}
+/* ---------- Log Card & VIP Parses ---------- */
+.logcard{border:1px solid var(--line2);border-radius:14px;overflow:hidden;background:linear-gradient(140deg,#181c26,#101319);display:flex;flex-direction:column;justify-content:space-between;height:100%}
+.logcard-t{padding:18px 20px;border-bottom:1px solid var(--line)}
+.logcard-b{padding:16px 20px;background:rgba(0,0,0,.15);flex:1}
+.parse{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.03)}
+.parse:last-child{border-bottom:none}
+.parse .p{width:38px;text-align:center;font-family:var(--mono);font-size:11.5px;font-weight:700;padding:2px 0;border-radius:5px;flex-shrink:0}
+.pk-leg{color:#e5cc80;background:rgba(229,204,128,.14);border:1px solid rgba(229,204,128,.3)}
+.pk-orange{color:#ff8000;background:rgba(255,128,0,.13);border:1px solid rgba(255,128,0,.3)}
+.pk-purple{color:#a335ee;background:rgba(163,53,238,.14);border:1px solid rgba(163,53,238,.32)}
+.pk-blue{color:#0070dd;background:rgba(0,112,221,.15);border:1px solid rgba(0,112,221,.35)}
+.pk-green{color:#1eff00;background:rgba(30,255,0,.1);border:1px solid rgba(30,255,0,.26)}
+.parse .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.parse .mt{font-size:11px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
 
+/* ---------- Roster Avatars & Cards ---------- */
 .rcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.rcard{display:flex;gap:14px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
+.rcard{display:flex;gap:14px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s;align-items:center}
 .rcard:hover{border-color:var(--line2);background:var(--panel2)}
-.rav{width:42px;height:42px;border-radius:11px;flex-shrink:0;display:grid;place-items:center;font-size:16px;font-weight:800;color:#0a0b0f}
+.rav-img{width:46px;height:46px;border-radius:11px;object-fit:cover;border:1px solid var(--line2);flex-shrink:0;background:#171b24}
+.rav-fallback{width:46px;height:46px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:17px;color:#0a0b0f;flex-shrink:0}
 .rcard .hd{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:3px}
 .rcard .hd b{font-size:14.5px;font-weight:650}
 .rcard .hd em{font-style:normal;font-size:11.5px;color:var(--tx3)}
-.rcard p{font-size:12.5px;color:var(--tx3);line-height:1.5;margin-top:4px}
 .kbtag{font-size:10.5px;padding:2px 8px;border-radius:6px;background:#1a1f29;color:var(--tx3);border:1px solid var(--line)}
 
 .clsrow{display:flex;align-items:center;gap:12px;margin-bottom:7px}
@@ -191,10 +211,12 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .clsrow .bf{display:block;height:100%;border-radius:6px;opacity:.85}
 .clsrow .c{width:32px;text-align:right;font-family:var(--mono);font-size:12px;color:var(--tx2);flex-shrink:0}
 
-.kbcard{padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:13px}
+.kbcard{padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
+.kbcard:hover{border-color:var(--line2);background:var(--panel2)}
 .kbcard h3{font-size:14.5px;font-weight:650;margin-bottom:6px;display:flex;align-items:center;gap:9px}
 .kbcard p{font-size:13px;color:var(--tx3);line-height:1.55}
 
+/* ---------- Search Modal ---------- */
 .ovl{position:fixed;inset:0;z-index:100;display:none;background:rgba(5,6,9,.7);backdrop-filter:blur(7px);padding:10vh 20px 20px}
 .ovl.on{display:block}
 .sbox{max-width:640px;margin:0 auto;background:var(--elev);border:1px solid var(--line2);border-radius:17px;box-shadow:0 26px 80px rgba(0,0,0,.65);overflow:hidden}
@@ -217,8 +239,23 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 .fade{animation:f .34s ease}
 @keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-@media(max-width:940px){ .g4,.g3,.tiles{grid-template-columns:repeat(2,1fr)} .top-in{height:auto;flex-wrap:wrap;padding:12px 0;gap:12px} nav{order:3;width:100%} .hero h1{font-size:32px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px} .wrap{padding:0 16px} .bbody{padding-left:18px} .sig-grid{grid-template-columns:repeat(2,1fr)} .rcards{grid-template-columns:1fr} }
-@media(max-width:580px){ .g4,.g3,.g2,.tiles{grid-template-columns:1fr} .sbtn span{display:none} .rtag{width:52px} .clsrow .n{width:92px;font-size:12px} .sig-grid{grid-template-columns:1fr} }
+@media(max-width:960px){
+  .start-grid,.g4,.g3,.tiles{grid-template-columns:repeat(2,1fr)}
+  .top-in{height:auto;flex-wrap:wrap;padding:12px 0;gap:12px}
+  nav{order:3;width:100%}
+  .hero h1{font-size:32px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px}
+  .wrap{padding:0 16px}
+  .bbody{padding-left:18px}
+  .sig-grid{grid-template-columns:repeat(2,1fr)}
+  .rcards{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .start-grid,.g4,.g3,.g2,.tiles{grid-template-columns:1fr}
+  .sbtn span{display:none}
+  .rtag{width:52px}
+  .clsrow .n{width:92px;font-size:12px}
+  .sig-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -292,14 +329,17 @@ const G = {
   raid:{ name:"Der Giftige Abgrund", en:"The Venomous Abyss", bosses:8, nhc:5, hc:0, myth:0, rank:{welt:"4.262", eu:"1.927", realm:"81"} },
   links:{
     rio:"https://raider.io/guilds/eu/blackmoore/ShadowFox",
-    wcl:"https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox"
+    wcl:"https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox",
+    wowp:"https://www.wowprogress.com/guild/eu/blackmoore/ShadowFox",
+    armory:"https://worldofwarcraft.blizzard.com/de-de/guild/eu/blackmoore/shadowfox",
+    zone:"https://www.wowhead.com/de/zone=16915/the-venomous-abyss"
   },
   recruit:{ open:["Dämonenjäger","Todesritter","Rufer"], contacts:["Passi / Offiziere"], motto:"Organisches Wachstum statt toxischem Progressdruck." }
 };
 
 const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
 
-const BOSSES = [
+let BOSSES = [
   { n:"Nek'zali die Seelenwinderin", en:"Nek'zali the Soulcoiler", st:"down", role:"Add-Kontrolle & Brunnen", slug:"nekzali-the-soulcoiler", intro:"Eine Schattenjägerin, die für ihre Beschwörung von Ula'tek lebendig begraben wurde.", pts:[["DPS","Ruhelose Amani haben oberste Priorität."],["DPS","Grabesvorstoß-Schild mit physischem Burst aufbrechen."],["Alle","Essenzzerreißen nach außen ablegen."],["Tanks","Swap bei 5–6 Stacks Aushöhlende Stöße."]], abil:["Seelenwinderbrunnen","Essenzzerreißen","Grabesvorstoß"] },
   { n:"Eingeschlossene Wächter", en:"Entombed Sentinels", st:"down", role:"Zwei Gruppen & Zahlenrätsel", slug:"entombed-sentinels", intro:"Zwei Schlangengolems, die getrennt gehalten werden müssen.", pts:[["Alle","Zwei gleich starke Gruppen, mindestens 40m Abstand."],["DPS","Beide Bosse gleichmäßig runterspielen."],["Alle","Ätzende Stasis: Summe genau 4 bilden (1+3, 2+2)."]], abil:["Ula'teks Dominanz","Mal der Säure","Ätzende Stasis"] },
   { n:"Vashnik der Bösartige", en:"Vashnik the Malignant", st:"down", role:"Positionierung & Add-Stopp", slug:"vashnik-the-malignant", intro:"In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte.", pts:[["Tanks","Vashnik vor jedem Trinken umpositionieren."],["DPS","Adds vor der Mitte töten."],["Alle","Entziehende Infektion gemeinsam soaken."]], abil:["Trinken","Toxischer Dampf","Triefende Fangzähne"] },
@@ -317,10 +357,15 @@ const CLASSES = [
   ["Schurke",8,"#FFF468"],["Jäger",8,"#AAD372"],["Schamane",7,"#0070DD"],["Rufer",4,"#33937F"]
 ];
 
-const KB = [
-  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. 19:40 im Voice.",tags:["Pflicht"]},
-  {i:"💰",t:"Loot-Regelung",d:"Wie Loot verteilt wird und wie Wünsche angemeldet werden.",tags:["Loot"]},
-  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen rechtzeitig über Raid-Helper im Discord eintragen.",tags:["Signup"]}
+let KB = [
+  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. 19:40 im Voice, repariert und voll verzaubert.",tags:["Pflicht","Raid"]},
+  {i:"💰",t:"Loot-Regelung",d:"Wie Beute verteilt wird, wie Trials behandelt werden und wie Wünsche für den Progress angemeldet werden.",tags:["Loot","Trial"]},
+  {i:"🧩",t:"Addons & WeakAuras",d:"Pflicht-Addons und das aktuelle WeakAura-Paket für Der Giftige Abgrund inklusive Import-Strings.",tags:["Setup","Pflicht"]},
+  {i:"🧪",t:"Konsumierbare",d:"Was jeder selbst mitbringt, was die Gildenbank stellt, Flask- und Food-Empfehlungen pro Rolle.",tags:["Konsum","Bank"]},
+  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen rechtzeitig über Raid-Helper im Discord eintragen. Mo & Do sind die festen Raidtage.",tags:["Signup"]},
+  {i:"🌱",t:"Onboarding für Neue",d:"Deine ersten zwei Wochen bei ShadowFox: was du liest, wen du ansprichst, wie der Trial läuft.",tags:["Neue","Trial"]},
+  {i:"🎧",t:"Voice-Etikette",d:"Während Pulls sprechen nur Raidlead und Callouts. Diskussion in den Pausen. Push-to-Talk Pflicht.",tags:["Discord"]},
+  {i:"🔧",t:"Char-Vorbereitung",d:"Wöchentliche Checkliste vor dem Reset: M+-Runs, Great Vault, Sockel, Verzauberungen und Vantus-Runen.",tags:["Gear","Wöchentlich"]}
 ];
 
 const TERMINE = [
@@ -392,27 +437,30 @@ function logCard(r){
   if(!r) return `<div class="card"><div class="eyebrow">Logs</div><div>Keine aktuellen Logs hinterlegt.</div></div>`;
   return `<div class="logcard">
     <div class="logcard-t">
-      <div>
-        <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
-          <span class="eyebrow" style="margin:0">${r.live?"Letzter Raidabend":"Raidabend"}</span>
-          <span class="pill p-green"><span class="dot"></span>Warcraft Logs Live</span>
-        </div>
-        <div style="font-size:19px;font-weight:700;letter-spacing:-.4px;margin-top:6px">${esc(r.t)}</div>
-        <div class="soft" style="font-size:13px">${esc(r.d)} · ${esc(r.diff)} · ${r.dur}</div>
+      <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:6px">
+        <span class="eyebrow" style="margin:0">${r.live?"Letzter Raidabend":"Raidabend"}</span>
+        <span class="pill p-green"><span class="dot"></span>Warcraft Logs</span>
       </div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="font-size:18px;font-weight:700;letter-spacing:-.4px">${esc(r.t)}</div>
+      <div class="soft" style="font-size:12.5px;margin-top:2px">${esc(r.d)} · ${esc(r.diff)} · ${r.dur}</div>
+      <div style="display:flex;gap:7px;margin-top:10px;flex-wrap:wrap">
         <span class="chip">Kills <b>${r.kills}</b></span>
         <span class="chip">Wipes <b>${r.wipes}</b></span>
       </div>
     </div>
     <div class="logcard-b">
-      ${r.killedBosses&&r.killedBosses.length ? `
-        <div class="eyebrow" style="margin-bottom:8px">Gelegte Bosse</div>
-        <div class="abils" style="margin-bottom:14px">${r.killedBosses.map(b=>`<span class="abil">${esc(b)}</span>`).join("")}</div>
-      ` : ''}
-      <div class="links">
-        ${ext(r.url||G.links.wcl,"Vollen Report auf Warcraft Logs öffnen")}
-        <a class="lchip" href="#/logs">Alle Raidabende</a>
+      ${r.top && r.top.length ? `
+        <div class="eyebrow" style="margin-bottom:6px;display:flex;align-items:center;gap:6px">⭐ VIP / Beste Performer</div>
+        ${r.top.map(p=>`<div class="parse">
+          <span class="p pk-orange">${esc(p.role)}</span>
+          <span class="nm" style="color:${col(p.class)}">${esc(p.name)}</span>
+          <span class="mt">${esc(p.class)}</span></div>`).join("")}
+      ` : (r.killedBosses && r.killedBosses.length ? `
+        <div class="eyebrow" style="margin-bottom:6px">Gelegte Bosse</div>
+        <div class="abils" style="margin-bottom:10px">${r.killedBosses.map(b=>`<span class="abil">${esc(b)}</span>`).join("")}</div>
+      ` : '')}
+      <div class="links" style="margin-top:12px">
+        ${ext(r.url||G.links.wcl,"Vollen Report auf WCL öffnen")}
       </div>
     </div>
   </div>`;
@@ -429,8 +477,8 @@ function signupBlock(){
     <div class="sig-head">
       <div>
         <div class="eyebrow">Anmeldung <span class="pill p-green"><span class="dot"></span>Discord Live</span></div>
-        <div style="font-size:17px;font-weight:650;margin-top:5px">${esc(EVENT.title)}</div>
-        <div class="soft" style="font-size:13px">${esc(EVENT.dateLabel)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
+        <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(EVENT.title)}</div>
+        <div class="soft" style="font-size:12.5px">${esc(EVENT.dateLabel)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
       </div>
       <div class="sig-counts">
         ${cnt("c-yes","✓ Zugesagt",prim.length)}
@@ -444,7 +492,7 @@ function signupBlock(){
         return `<div class="sig-col">
           <h4><span style="width:8px;height:8px;border-radius:2px;background:${ROLLEN[r]};display:inline-block"></span>${r} <span>${g.length}</span></h4>
           ${g.map(p=>`<div class="sig-p"><span class="d" style="background:${col(p.cls)}"></span>
-            <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:12px">—</div>`}
+            <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
         </div>`;}).join("")}
     </div>
   </div>`;
@@ -476,7 +524,7 @@ start(){
       ${bar("Mythisch",r.myth,r.bosses,"linear-gradient(90deg,#8f7ce8,#c0b2f5)")}
     </div>
   </div></section>
-  <div class="grid g2 fade" style="margin-bottom:34px;align-items:start">
+  <div class="start-grid fade">
     ${logCard(REPORTS[0])}
     ${signupBlock()}
   </div>
@@ -487,17 +535,39 @@ start(){
     <a class="tile" href="#/roster"><span class="ic">👥</span><b>Kader-Übersicht</b><span>${KADER.length} Raider</span></a>
   </div>`;
 },
+
 raid(){
-  return `<div class="page-h fade"><h1>${esc(G.raid.name)}</h1></div>
-  ${BOSSES.map((b,i)=>`<div class="card fade" style="margin-bottom:12px">
-    <b>${i+1}. ${esc(b.n)}</b> <span class="soft">(${esc(b.role)})</span>
-    <ul style="margin-top:8px;padding-left:18px">${b.pts.map(([r,t])=>`<li><b>${r}:</b> ${esc(t)}</li>`).join("")}</ul>
-  </div>`).join("")}`;
+  const r=G.raid;
+  return `
+  <div class="page-h fade">
+    <h1>${esc(r.name)}</h1>
+    <p>${esc(r.en)} · ${r.bosses} Bosse · ${esc(r.zone)} · Alle Ansagen nach Rollen unterteilt.</p>
+  </div>
+  <div class="fade">
+  ${BOSSES.map((b,i)=>{const s=ST[b.st]||ST.open;return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
+    <button class="bhead" onclick="this.parentElement.classList.toggle('open')">
+      <span class="bnum">${i+1}</span>
+      <span class="bname"><b>${esc(b.n)}</b><span>${esc(b.role)} · ${esc(b.en)}</span></span>
+      <span class="pill ${s.cls}"><span class="dot"></span>${s.tx}</span>
+      <svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="bbody">
+      <div class="bintro">${esc(b.intro)}</div>
+      <div class="blabel">Ansagen im Raid</div>
+      <ul class="steps">${(b.pts||[]).map(([ro,tx])=>`<li class="step"><span class="rtag r-${ro.toLowerCase()}">${ro}</span><p>${tx}</p></li>`).join("")}</ul>
+      <div class="blabel">Fähigkeiten</div>
+      <div class="abils">${(b.abil||[]).map(a=>`<span class="abil">${esc(a)}</span>`).join("")}</div>
+      <div class="links">${ext(WH(b.slug),"Wowhead-Guide (DE)")}${ext(G.links.wcl,"Logs")}</div>
+    </div></div>`;}).join("")}
+  </div>`;
 },
+
 termine(){
-  return `<div class="page-h fade"><h1>Termine & Anmeldung</h1></div>
+  return `
+  <div class="page-h fade"><h1>Termine & Anmeldung</h1><p>Wir raiden ${esc(G.raidDays)} von ${esc(G.raidTime)}.</p></div>
   <div class="fade" style="margin-bottom:24px">${signupBlock()}</div>`;
 },
+
 tracker(){
   const validChars = KADER.filter(p => p.ilvl != null && p.ilvl > 0);
   const maxI = validChars.length ? Math.max(...validChars.map(p => p.ilvl)) : 300;
@@ -559,13 +629,16 @@ tracker(){
     </div>
   </div>`;
 },
+
 logs(){
-  return `<div class="page-h fade"><h1>Raid-Logs</h1></div>
+  return `
+  <div class="page-h fade"><h1>Raid-Logs</h1><p>Alle konsolidierten Raidabende von Warcraft Logs.</p></div>
   <div class="grid fade">${REPORTS.map(r=>logCard(r)).join("")}</div>`;
 },
+
 roster(){
   const byRole=r=>KADER.filter(p=>p.r===r);
-  return `<div class="page-h fade"><h1>Roster (${KADER.length} Raider)</h1></div>
+  return `<div class="page-h fade"><h1>Roster (${KADER.length} Raider)</h1><p>Kaderübersicht mit Armory-Avataren, Itemlevel und M+-Aktivität.</p></div>
   ${["Tank","Heal","Melee","Ranged"].map(r=>{
     const g=byRole(r); if(!g.length) return "";
     return `<div style="margin-bottom:26px" class="fade">
@@ -573,21 +646,46 @@ roster(){
         <span style="width:9px;height:9px;border-radius:3px;background:${ROLLEN[r]}"></span>
         <b style="font-size:14px">${r} (${g.length})</b>
       </div>
-      <div class="rcards">${g.map(p=>`<div class="rcard">
-        <span class="rav" style="background:${col(p.c)}">${esc(p.n[0])}</span>
-        <div>
-          <div class="hd"><b style="color:${col(p.c)}">${esc(p.n)}</b><em>${esc(p.spec||p.c)}</em></div>
-          <div class="soft" style="font-size:12px;margin-top:4px">ilvl ${p.ilvl||'—'} · M+ Score ${p.mp||0} · ${p.mr||0} Runs diese Woche</div>
-        </div>
-      </div>`).join("")}</div>
+      <div class="rcards">${g.map(p=>{
+        const thumbUrl = p.thumb || `https://images.raider.io/images/characters/avatar/${encodeURIComponent(p.n)}.jpg`;
+        return `<div class="rcard">
+          ${p.thumb ? `<img src="${p.thumb}" class="rav-img" alt="${esc(p.n)}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">` : ''}
+          <div class="rav-fallback" style="background:${col(p.c)};${p.thumb?'display:none':''}">${esc(p.n[0])}</div>
+          <div style="min-width:0">
+            <div class="hd"><b style="color:${col(p.c)}">${esc(p.n)}</b><em>${esc(p.spec||p.c)}</em>${p.note?`<span class="pill p-gray">${esc(p.note)}</span>`:""}</div>
+            <div style="display:flex;gap:5px;margin-top:6px;flex-wrap:wrap">
+              <span class="kbtag">ilvl ${p.ilvl||'—'}</span>
+              <span class="kbtag">M+ ${p.mp||0}</span>
+              <span class="kbtag">${p.mr||0} Runs/Woche</span>
+            </div>
+          </div>
+        </div>`;}).join("")}</div>
     </div>`;}).join("")}`;
 },
+
 wissen(){
-  return `<div class="page-h fade"><h1>Wissen & Guides</h1></div>
-  <div class="grid g2 fade">${KB.map(k=>`<div class="kbcard"><h3>${k.i} ${esc(k.t)}</h3><p>${esc(k.d)}</p></div>`).join("")}</div>`;
+  return `
+  <div class="page-h fade"><h1>Wissen & Guides</h1><p>Regeln, Addons und Vorbereitungen für den Raidbetrieb.</p></div>
+  <div class="grid g2 fade">
+    ${KB.map(k=>`<div class="kbcard">
+      <h3><span>${k.i}</span>${esc(k.t)}</h3>
+      <p>${esc(k.d)}</p>
+      <div style="display:flex;gap:5px;margin-top:10px;flex-wrap:wrap">
+        ${(k.tags||[]).map(t=>`<span class="kbtag">${esc(t)}</span>`).join("")}
+      </div>
+    </div>`).join("")}
+  </div>`;
 },
+
 bewerben(){
-  return `<div class="page-h fade"><h1>Bewerben</h1><p>${esc(G.recruit.motto)}</p></div>`;
+  return `
+  <div class="page-h fade"><h1>Bewerben</h1><p>${esc(G.recruit.motto)}</p></div>
+  <div class="grid g2 fade">
+    <div class="card"><div class="eyebrow">Gesuchte Klassen</div>
+      <p class="soft" style="margin-bottom:14px">${G.recruit.open.join(", ")}</p>
+      <div class="links">${G.recruit.contacts.map(c=>`<span class="lchip">💬 ${esc(c)}</span>`).join("")}</div>
+    </div>
+  </div>`;
 }
 };
 
@@ -668,10 +766,22 @@ function resolveClass(spec, cls, name){
   return CLS_DE[cls] || cls || "Krieger";
 }
 
-function applyData(d){
+function applyData(d, c){
+  // 1. Wissen und Boss-Taktiken aus Content einmischen
+  if(c?.wissen?.artikel?.length){
+    KB = c.wissen.artikel.map(a=>({i:a.icon||"📄",t:a.titel,d:a.text,tags:a.tags||[]}));
+  }
+  if(c?.bosses?.bosses?.length){
+    BOSSES = c.bosses.bosses.map(b=>({
+      n:b.name,en:b.nameEn||"",st:b.status||"open",role:b.rolle||"",slug:b.slug||"",
+      intro:b.intro||"",pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
+      abil:b.faehigkeiten||[]
+    }));
+  }
+
   const charMap = new Map();
 
-  // 1. WoWAudit als primäre Quelle (Echtes Itemlevel & Wunschlisten)
+  // 2. WoWAudit als primäre Quelle (Echtes Itemlevel & Wunschlisten)
   if(d.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
       const key = normName(wc.name);
@@ -685,12 +795,13 @@ function applyData(d){
         v: 0,
         att: null,
         wl: wc.wishes_count != null ? (wc.wishes_count > 0 ? 1 : 0) : (wc.wishlist != null ? (wc.wishlist ? 1 : 0) : 1),
-        spec: wc.spec || ""
+        spec: wc.spec || "",
+        thumb: null
       });
     }
   }
 
-  // 2. WoWAudit Anwesenheit
+  // 3. WoWAudit Anwesenheit
   if(d.wowaudit?.attendance){
     const attList = Array.isArray(d.wowaudit.attendance) ? d.wowaudit.attendance : (d.wowaudit.attendance.characters || []);
     for(const a of attList){
@@ -702,14 +813,14 @@ function applyData(d){
     }
   }
 
-  // 3. Raider.IO Scores & Wochenruns
+  // 4. Raider.IO Scores, Wochenruns & Thumbnails
   if(d.roster?.characters?.length){
     for(const rc of d.roster.characters){
       const key = normName(rc.name);
       let p = charMap.get(key);
       if(!p){
         const runs = rc.weeklyRuns || 0;
-        p = { n: rc.name, c: CLS_DE[rc.class]||rc.class, r: mapRole(rc.role, rc.class, rc.spec), ilvl: rc.ilvl, mp: rc.mplus||0, mr: runs, v: calcVault(runs), att: null, wl: 1, spec: rc.spec||"" };
+        p = { n: rc.name, c: CLS_DE[rc.class]||rc.class, r: mapRole(rc.role, rc.class, rc.spec), ilvl: rc.ilvl, mp: rc.mplus||0, mr: runs, v: calcVault(runs), att: null, wl: 1, spec: rc.spec||"", thumb: rc.thumb||null };
         charMap.set(key, p);
       } else {
         if(rc.ilvl && !p.ilvl) p.ilvl = rc.ilvl;
@@ -719,11 +830,12 @@ function applyData(d){
           p.v = calcVault(p.mr);
         }
         if(rc.spec && !p.spec) p.spec = rc.spec;
+        if(rc.thumb) p.thumb = rc.thumb;
       }
     }
   }
 
-  // 4. Blizzard Keys (Zusätzlicher Sync)
+  // 5. Blizzard Keys (Zusätzlicher Sync)
   if(d.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
       const key = normName(bk.name);
@@ -737,7 +849,7 @@ function applyData(d){
 
   KADER = Array.from(charMap.values());
 
-  // 5. Raid-Helper Signups
+  // 6. Raid-Helper Signups
   if(d.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
@@ -759,7 +871,7 @@ function applyData(d){
     EVENT.live = true;
   }
 
-  // 6. Warcraft Logs
+  // 7. Warcraft Logs (Dedupliziert mit VIPs)
   if(d.logs?.reports?.length){
     REPORTS = d.logs.reports.map((r, i)=>({
       code: r.code,
@@ -770,6 +882,7 @@ function applyData(d){
       kills: r.kills || 0,
       wipes: r.wipes || 0,
       killedBosses: r.killedBosses || [],
+      top: r.top || [],
       live: i === 0,
       url: r.url || G.links.wcl
     }));
@@ -833,10 +946,13 @@ addEventListener("keydown",e=>{
 });
 
 (async function boot(){
-  const dnames=["guild","roster","events","logs","wowaudit","blizzard","status"];
-  const d=await Promise.all(dnames.map(n=>load(`data/${n}.json`)))
-    .then(a=>Object.fromEntries(dnames.map((n,i)=>[n,a[i]])));
-  applyData(d);
+  const [d, c] = await Promise.all([
+    Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status"].map(n=>load(`data/${n}.json`)))
+      .then(a=>Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status"].map((n,i)=>[n,a[i]]))),
+    Promise.all(["bosses","wissen","raider","termine"].map(n=>load(`content/${n}.json`)))
+      .then(a=>Object.fromEntries(["bosses","wissen","raider","termine"].map((n,i)=>[n,a[i]])))
+  ]);
+  applyData(d, c);
   buildIndex();
   route();
 })();
