@@ -1,10 +1,14 @@
-/* Raider.IO — Unterstützt Server pro Charakter */
+/* Raider.IO — Holt Gear, M+ Score und Wochenruns */
 import { req, pool, ok, sleep } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
 export async function guildProfile({ region, realm, name }) {
-  const url = `${BASE}/guilds/profile?region=${region}&realm=${realm}&name=${encodeURIComponent(name)}&fields=raid_progression,raid_rankings,members`;
+  const reg = encodeURIComponent(String(region || "eu").toLowerCase());
+  const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
+  const gName = encodeURIComponent(String(name || "ShadowFox").trim());
+
+  const url = `${BASE}/guilds/profile?region=${reg}&realm=${rlm}&name=${gName}&fields=raid_progression,raid_rankings,members`;
   const g = await req(url);
 
   const classCount = {};
@@ -29,10 +33,10 @@ export async function characters(items, { region, realm }) {
     const charName = typeof item === "string" ? item.trim() : item.name.trim();
     const charRealm = typeof item === "object" && item.realm ? item.realm : realm;
 
-    const url = `${BASE}/characters/profile?region=${region}&realm=${encodeURIComponent(charRealm)}&name=${encodeURIComponent(charName)}&fields=gear,mythic_plus_scores_by_season:current`;
+    const url = `${BASE}/characters/profile?region=${region}&realm=${encodeURIComponent(charRealm)}&name=${encodeURIComponent(charName)}&fields=gear,mythic_plus_scores_by_season:current,mythic_plus_weekly_runs`;
     try {
-      const c = await req(url, {}, 2);
-      if (!c || c.error) return { name: charName, realm: charRealm, ilvl: null, mplus: 0 };
+      const c = await req(url, {}, 3);
+      if (!c || c.error) return { name: charName, realm: charRealm, ilvl: null, mplus: 0, weeklyRuns: 0 };
       return {
         name: c.name,
         realm: charRealm,
@@ -41,11 +45,12 @@ export async function characters(items, { region, realm }) {
         role: c.active_spec_role,
         ilvl: c.gear?.item_level_equipped ?? null,
         mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
+        weeklyRuns: Array.isArray(c.mythic_plus_weekly_runs) ? c.mythic_plus_weekly_runs.length : 0,
         thumb: c.thumbnail_url ?? null,
         profileUrl: c.profile_url
       };
     } catch {
-      return { name: charName, realm: charRealm, ilvl: null, mplus: 0 };
+      return { name: charName, realm: charRealm, ilvl: null, mplus: 0, weeklyRuns: 0 };
     }
   });
 
