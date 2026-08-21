@@ -6,9 +6,11 @@ import { req, pool, ok, log, fail, sleep } from "./util.mjs";
 const BASE = "https://raider.io/api/v1";
 
 export async function guildProfile({ region, realm, name }) {
-  const url = `${BASE}/guilds/profile?region=${region}&realm=${realm}`
-            + `&name=${encodeURIComponent(name)}`
-            + `&fields=raid_progression,raid_rankings,members`;
+  const reg = encodeURIComponent(String(region || "eu").toLowerCase());
+  const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
+  const gName = encodeURIComponent(String(name || "ShadowFox").trim());
+
+  const url = `${BASE}/guilds/profile?region=${reg}&realm=${rlm}&name=${gName}&fields=raid_progression,raid_rankings,members`;
   const g = await req(url);
 
   const classCount = {};
@@ -16,7 +18,10 @@ export async function guildProfile({ region, realm, name }) {
 
   ok(`Raider.IO: Gildenprofil geladen (${g.members?.length ?? 0} Mitglieder)`);
   return {
-    name: g.name, faction: g.faction, realm: g.realm, region: g.region,
+    name: g.name,
+    faction: g.faction,
+    realm: g.realm,
+    region: g.region,
     profileUrl: g.profile_url,
     raidProgression: g.raid_progression ?? {},
     raidRankings: g.raid_rankings ?? {},
@@ -28,40 +33,47 @@ export async function guildProfile({ region, realm, name }) {
 }
 
 export async function characters(names, { region, realm }) {
-  // Raider.IO drosselt schnelle Anfrageserien. Deshalb bewusst langsam:
-  // hoechstens zwei gleichzeitig, kurze Pause dazwischen, mehr Wiederholungen.
+  const reg = encodeURIComponent(String(region || "eu").toLowerCase());
+  const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
   const errs = [];
+
   const res = await pool(names, 2, async (n, i) => {
-    await sleep(i * 250);
-    const url = `${BASE}/characters/profile?region=${region}&realm=${realm}`
-              + `&name=${encodeURIComponent(n)}`
+    await sleep(i * 200);
+    const cleanName = String(n || "").trim();
+    if (!cleanName) return null;
+
+    const url = `${BASE}/characters/profile?region=${reg}&realm=${rlm}`
+              + `&name=${encodeURIComponent(cleanName)}`
               + `&fields=gear,mythic_plus_scores_by_season:current`;
-    let c;
     try {
-      c = await req(url, {}, 4);
+      const c = await req(url, {}, 3);
+      if (!c || c.statusCode === 400 || c.error) {
+        errs.push(`${cleanName}: Nicht gefunden`);
+        return { name: cleanName, ilvl: null, mplus: 0 };
+      }
+      return {
+        name: c.name,
+        class: c.class,
+        spec: c.active_spec_name,
+        role: c.active_spec_role,
+        ilvl: c.gear?.item_level_equipped ?? null,
+        mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
+        thumb: c.thumbnail_url ?? null,
+        profileUrl: c.profile_url
+      };
     } catch (e) {
-      errs.push(`${n}: ${e.message.split("—")[0].trim()}`);
-      throw e;
+      errs.push(`${cleanName}: ${e.message.split("—")[0].trim()}`);
+      // Rückfallobjekt statt Absturz, damit der Charakter im Roster bleibt
+      return { name: cleanName, ilvl: null, mplus: 0 };
     }
-    return {
-      name: c.name,
-      class: c.class,
-      spec: c.active_spec_name,
-      role: c.active_spec_role,
-      ilvl: c.gear?.item_level_equipped ?? null,
-      mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
-      thumb: c.thumbnail_url ?? null,
-      profileUrl: c.profile_url
-    };
   });
+
   const found = res.filter(Boolean);
-  ok(`Raider.IO: ${found.length}/${names.length} Charaktere geladen`);
-  if (found.length < names.length) {
-    const missing = names.filter((n, i) => !res[i]);
-    log(`nicht geladen: ${missing.join(", ")}`);
-    // Echte Fehlerursache ins Protokoll, damit man nicht raten muss.
-    for (const e of errs.slice(0, 5)) fail(`   Grund — ${e}`);
-    if (errs.length > 5) log(`   … und ${errs.length - 5} weitere mit gleichem Muster`);
+  const withIlvl = found.filter(c => c.ilvl != null);
+  ok(`Raider.IO: ${withIlvl.length}/${names.length} Charaktere mit Details geladen`);
+  
+  if (errs.length > 0) {
+    for (const e of errs.slice(0, 4)) log(`   Hinweis — ${e}`);
   }
   return found;
 }
