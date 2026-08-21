@@ -156,11 +156,11 @@
         {
           "name": "Corvisstab/Morten",
           "userId": "295208122493042690",
-          "cls": "Healer",
-          "spec": "Holy1",
-          "role": "Healers",
+          "cls": "Ranged",
+          "spec": "Shadow",
+          "role": "Dps",
           "status": "primary",
-          "signedUpAt": 1786213267
+          "signedUpAt": 1787320874
         },
         {
           "name": "𝕱𝖗𝖚𝖈𝖍𝖙𝖟𝖜𝖊𝖗𝖌│ᴬˡᵉˣᵃⁿᵈʳᵃ",
@@ -210,5 +210,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-21T12:03:46.871Z"
+  "updatedAt": "2026-08-21T15:35:44.470Z"
 }

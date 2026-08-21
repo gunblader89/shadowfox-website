@@ -114,9 +114,9 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 290,
-      "mplus": 170,
-      "weeklyRuns": 1,
+      "ilvl": 289,
+      "mplus": 1323,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Pepelim"
     },
@@ -223,7 +223,7 @@
       "spec": "Affliction",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2635,
+      "mplus": 2642,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
@@ -272,5 +272,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-21T12:03:31.014Z"
+  "updatedAt": "2026-08-21T15:35:28.387Z"
 }
