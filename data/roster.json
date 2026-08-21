@@ -114,9 +114,9 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 289.688,
-      "mplus": 0,
-      "weeklyRuns": 0,
+      "ilvl": 290,
+      "mplus": 170,
+      "weeklyRuns": 1,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Pepelim"
     },
@@ -265,12 +265,12 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 292.312,
+      "ilvl": 292,
       "mplus": 1696,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-21T11:07:31.568Z"
+  "updatedAt": "2026-08-21T11:29:23.719Z"
 }
