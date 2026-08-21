@@ -11,13 +11,22 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 20,
+        "primary": 21,
         "tentative": 0,
         "bench": 0,
         "absence": 1,
         "late": 0
       },
       "signups": [
+        {
+          "name": "Hatto/Micha",
+          "userId": "535152701529522186",
+          "cls": "Ranged",
+          "spec": "Beastmastery",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787328515
+        },
         {
           "name": "Garodash/Giotto",
           "userId": "191599662283620352",
@@ -210,5 +219,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-21T16:06:39.933Z"
+  "updatedAt": "2026-08-21T16:24:37.321Z"
 }

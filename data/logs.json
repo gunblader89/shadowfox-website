@@ -19,38 +19,34 @@
       "vips": {
         "dps": [
           {
-            "name": "Hatto",
-            "class": "Hunter",
-            "role": "DPS",
-            "parse": 95,
-            "boss": "The Blinding Vale",
-            "diff": "Normal"
+            "name": "Warsía",
+            "class": "Warlock",
+            "spec": "Affliction",
+            "parse": 80,
+            "boss": "The Blinding Vale"
           },
           {
-            "name": "Moonlord",
-            "class": "Druid",
-            "role": "DPS",
-            "parse": 88,
-            "boss": "The Blinding Vale",
-            "diff": "Normal"
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 76,
+            "boss": "The Twin Fangs"
           }
         ],
         "hps": [
           {
-            "name": "Hatto",
-            "class": "Hunter",
-            "role": "Heal",
-            "parse": 94,
-            "boss": "The Blinding Vale",
-            "diff": "Normal"
+            "name": "Mönkitönk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 83,
+            "boss": "The Twin Fangs"
           },
           {
-            "name": "Zul'jan",
-            "class": "Boss",
-            "role": "Heal",
-            "parse": 86,
-            "boss": "The Blinding Vale",
-            "diff": "Normal"
+            "name": "Doktorpöbel",
+            "class": "Priest",
+            "spec": "Discipline",
+            "parse": 74,
+            "boss": "The Blinding Vale"
           }
         ]
       }
@@ -224,5 +220,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-21T16:06:41.007Z"
+  "updatedAt": "2026-08-21T16:24:38.208Z"
 }
