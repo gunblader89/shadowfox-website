@@ -2,6 +2,7 @@
   "characters": [
     {
       "name": "Hòbs",
+      "realm": "blackmoore",
       "class": "Druid",
       "spec": "Balance",
       "role": "DPS",
@@ -12,11 +13,18 @@
     },
     {
       "name": "Mercrixxus",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "blackhand",
+      "class": "Warrior",
+      "spec": "Fury",
+      "role": "DPS",
+      "ilvl": 291,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
     {
       "name": "Garódash",
+      "realm": "blackmoore",
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
@@ -27,11 +35,18 @@
     },
     {
       "name": "Chantallè",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "blackhand",
+      "class": "Hunter",
+      "spec": "Beast Mastery",
+      "role": "DPS",
+      "ilvl": 295,
+      "mplus": 942,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
     {
       "name": "Jisgarin",
+      "realm": "blackmoore",
       "class": "Mage",
       "spec": "Frost",
       "role": "DPS",
@@ -42,6 +57,7 @@
     },
     {
       "name": "Thessaly",
+      "realm": "blackmoore",
       "class": "Rogue",
       "spec": "Subtlety",
       "role": "DPS",
@@ -52,11 +68,29 @@
     },
     {
       "name": "Sweetschi",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "thrall",
+      "class": "Mage",
+      "spec": "Frost",
+      "role": "DPS",
+      "ilvl": 286,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/244/173636596-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Sweetschi"
+    },
+    {
+      "name": "Quon",
+      "realm": "garrosh",
+      "class": "Druid",
+      "spec": "Guardian",
+      "role": "TANK",
+      "ilvl": 293,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/252/181138428-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/garrosh/Quon"
     },
     {
       "name": "Narrwên",
+      "realm": "blackmoore",
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
@@ -67,36 +101,73 @@
     },
     {
       "name": "Pepelim",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "thrall",
+      "class": "Death Knight",
+      "spec": "Unholy",
+      "role": "DPS",
+      "ilvl": 289,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Pepelim"
     },
     {
       "name": "Holydivér",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "aegwynn",
+      "class": "Paladin",
+      "spec": "Retribution",
+      "role": "DPS",
+      "ilvl": 285,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/121/183185273-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/aegwynn/Holydivér"
     },
     {
       "name": "Kitebrew",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "blackrock",
+      "class": "Monk",
+      "spec": "Brewmaster",
+      "role": "TANK",
+      "ilvl": 292,
+      "mplus": 981,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
     },
     {
       "name": "Sandino",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "dalvengyr",
+      "class": "Shaman",
+      "spec": "Restoration",
+      "role": "HEALING",
+      "ilvl": 290,
+      "mplus": 322,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/100/182835556-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/dalvengyr/Sandino"
     },
     {
       "name": "Thorelion",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "antonidas",
+      "class": "Paladin",
+      "spec": "Holy",
+      "role": "HEALING",
+      "ilvl": 292,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/antonidas/132/170781572-avatar.jpg?alt=/wow/static/images/2d/avatar/30-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/antonidas/Thorelion"
     },
     {
       "name": "Xsythia",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "alexstrasza",
+      "class": "Priest",
+      "spec": "Discipline",
+      "role": "HEALING",
+      "ilvl": 294,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/alexstrasza/Xsythia"
     },
     {
       "name": "Améthyst",
+      "realm": "blackmoore",
       "class": "Paladin",
       "spec": "Retribution",
       "role": "DPS",
@@ -107,6 +178,7 @@
     },
     {
       "name": "Corvisstab",
+      "realm": "blackmoore",
       "class": "Rogue",
       "spec": "Subtlety",
       "role": "DPS",
@@ -117,21 +189,40 @@
     },
     {
       "name": "Druith",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "taerar",
+      "class": "Druid",
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 291,
+      "mplus": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/190/169569214-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/taerar/Druith"
     },
     {
       "name": "Toshichaos",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "taerar",
+      "class": "Warlock",
+      "spec": "Affliction",
+      "role": "DPS",
+      "ilvl": 306,
+      "mplus": 2635,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
     },
     {
       "name": "Seitenleiste",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "blackhand",
+      "class": "Mage",
+      "spec": "Fire",
+      "role": "DPS",
+      "ilvl": 296,
+      "mplus": 2526,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
     },
     {
       "name": "Mardyn",
+      "realm": "blackmoore",
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
@@ -142,24 +233,21 @@
     },
     {
       "name": "Tiskarian",
-      "class": "Warrior",
-      "spec": null,
-      "role": null,
-      "ilvl": 107,
-      "mplus": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/25/182960921-avatar.jpg?alt=/wow/static/images/2d/avatar/1-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Tiskarian"
+      "realm": "aman'thul",
+      "ilvl": null,
+      "mplus": 0
     },
     {
       "name": "Moonlord",
-      "ilvl": null,
-      "mplus": 0
-    },
-    {
-      "name": "Kiraja",
-      "ilvl": null,
-      "mplus": 0
+      "realm": "thrall",
+      "class": "Druid",
+      "spec": "Feral",
+      "role": "DPS",
+      "ilvl": 292.312,
+      "mplus": 1696,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-21T10:31:34.239Z"
+  "updatedAt": "2026-08-21T10:45:19.904Z"
 }
