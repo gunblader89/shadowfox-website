@@ -1,0 +1,51 @@
+name: Raid-Helper serverid-Header
+
+on:
+  workflow_dispatch:
+
+jobs:
+  testen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: serverid als Kopfzeile testen
+        env:
+          KEY: ${{ secrets.RAIDHELPER_API_KEY }}
+          SID: ${{ secrets.RAIDHELPER_SERVER_ID }}
+        run: |
+          cat > probe.mjs <<'SCRIPT'
+          const key = (process.env.KEY || "").trim();
+          const sid = (process.env.SID || "").trim();
+          const H = { Authorization: key, serverid: sid };
+
+          async function probe(label, url, opts = {}) {
+            try {
+              const res = await fetch(url, opts);
+              const txt = (await res.text()).slice(0, 300).replace(/\s+/g, " ");
+              const treffer = res.ok && !/not found/i.test(txt);
+              console.log(`${treffer ? ">>> TREFFER" : "    -      "} ${String(res.status).padEnd(4)} ${label.padEnd(26)} ${txt}`);
+            } catch (e) {
+              console.log(`    -      ---  ${label.padEnd(26)} ${e.message}`);
+            }
+          }
+
+          console.log("=== Server-ID als Kopfzeile 'serverid' ===");
+          for (const p of [
+            "/api/v3/events", "/api/v2/events", "/api/events",
+            "/api/v3/eventlist", "/api/v3/postedevents", "/api/v3/server",
+            "/api/server", "/api/v3/servers", "/api/servers"
+          ]) {
+            await probe("GET " + p, "https://raid-helper.dev" + p, { headers: H });
+          }
+
+          console.log("\n=== Dieselben Pfade als POST ===");
+          const postOpts = { method: "POST", headers: { ...H, "Content-Type": "application/json" }, body: "{}" };
+          for (const p of ["/api/v3/events", "/api/v2/events", "/api/events"]) {
+            await probe("POST " + p, "https://raid-helper.dev" + p, postOpts);
+          }
+
+          console.log("\n=== Kombination: serverid-Header UND im Pfad ===");
+          await probe(`GET /api/v3/servers/{id}/events`, `https://raid-helper.dev/api/v3/servers/${sid}/events`, { headers: H });
+
+          console.log("\nFertig.");
+          SCRIPT
+          node probe.mjs
