@@ -601,8 +601,8 @@ const EVENT={
   title:"Der Giftige Abgrund — Normal/HC",
   date:"24-8-2026", time:"19:45", closing:"24.08. 19:30",
   leader:"Hòbs", channel:"#raid-anmeldung",
-  signups:KADER.map((p,i)=>({name:p.n,cls:p.c,role:p.r,
-    status: i<22?"primary": i<25?"tentative": i<28?"bench":"absence"}))
+  live:false,           // wird true, sobald data/events.json geladen wurde
+  signups:[]            // bewusst leer — echte Anmeldungen kommen nur von Raid-Helper
 };
 
 /* Warcraft Logs — Struktur wie reportData.reports sie liefert */
@@ -704,6 +704,21 @@ function logCard(r,compact){
 }
 
 function signupBlock(){
+  // Ohne echte Raid-Helper-Daten wird KEINE Anmeldeliste erfunden.
+  if(!EVENT.live){
+    return `<div class="card">
+      <div class="eyebrow">Anmeldung</div>
+      <div style="font-size:17px;font-weight:650;margin:6px 0 8px">Noch nicht verbunden</div>
+      <p class="soft" style="font-size:13.5px;max-width:52ch">
+        Die Anmeldungen laufen weiterhin über Raid-Helper im Discord. Sobald die Verbindung
+        steht, erscheint hier derselbe Stand — mit Rollen und Chars so, wie sich jeder
+        tatsächlich angemeldet hat.</p>
+      <div class="links" style="margin-top:14px">
+        <span class="lchip" style="cursor:default">💬 Anmeldung im Discord</span>
+        <a class="lchip" href="#/termine">Alle Termine</a>
+      </div>
+    </div>`;
+  }
   const by=s=>EVENT.signups.filter(x=>x.status===s);
   const prim=by("primary");
   const grp=r=>prim.filter(p=>p.role===r);
