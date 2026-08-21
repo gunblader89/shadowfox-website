@@ -1,14 +1,10 @@
-/* Raider.IO — Gildenprofil & Charakterabgleich */
-import { req, pool, ok, log, sleep } from "./util.mjs";
+/* Raider.IO — Unterstützt Server pro Charakter */
+import { req, pool, ok, sleep } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
 export async function guildProfile({ region, realm, name }) {
-  const reg = encodeURIComponent(String(region || "eu").toLowerCase());
-  const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
-  const gName = encodeURIComponent(String(name || "ShadowFox").trim());
-
-  const url = `${BASE}/guilds/profile?region=${reg}&realm=${rlm}&name=${gName}&fields=raid_progression,raid_rankings,members`;
+  const url = `${BASE}/guilds/profile?region=${region}&realm=${realm}&name=${encodeURIComponent(name)}&fields=raid_progression,raid_rankings,members`;
   const g = await req(url);
 
   const classCount = {};
@@ -16,10 +12,7 @@ export async function guildProfile({ region, realm, name }) {
 
   ok(`Raider.IO: Gildenprofil geladen (${g.members?.length ?? 0} Mitglieder)`);
   return {
-    name: g.name,
-    faction: g.faction,
-    realm: g.realm,
-    region: g.region,
+    name: g.name, faction: g.faction, realm: g.realm, region: g.region,
     profileUrl: g.profile_url,
     raidProgression: g.raid_progression ?? {},
     raidRankings: g.raid_rankings ?? {},
@@ -30,23 +23,19 @@ export async function guildProfile({ region, realm, name }) {
   };
 }
 
-export async function characters(names, { region, realm }) {
-  const reg = encodeURIComponent(String(region || "eu").toLowerCase());
-  const rlm = encodeURIComponent(String(realm || "blackmoore").toLowerCase());
+export async function characters(items, { region, realm }) {
+  const res = await pool(items, 2, async (item, i) => {
+    await sleep(i * 120);
+    const charName = typeof item === "string" ? item.trim() : item.name.trim();
+    const charRealm = typeof item === "object" && item.realm ? item.realm : realm;
 
-  const res = await pool(names, 2, async (n, i) => {
-    await sleep(i * 150);
-    const cleanName = String(n || "").trim();
-    if (!cleanName) return null;
-
-    const url = `${BASE}/characters/profile?region=${reg}&realm=${rlm}&name=${encodeURIComponent(cleanName)}&fields=gear,mythic_plus_scores_by_season:current`;
+    const url = `${BASE}/characters/profile?region=${region}&realm=${encodeURIComponent(charRealm)}&name=${encodeURIComponent(charName)}&fields=gear,mythic_plus_scores_by_season:current`;
     try {
-      const c = await req(url, {}, 3);
-      if (!c || c.statusCode === 400 || c.error) {
-        return { name: cleanName, ilvl: null, mplus: 0 };
-      }
+      const c = await req(url, {}, 2);
+      if (!c || c.error) return { name: charName, realm: charRealm, ilvl: null, mplus: 0 };
       return {
         name: c.name,
+        realm: charRealm,
         class: c.class,
         spec: c.active_spec_name,
         role: c.active_spec_role,
@@ -56,12 +45,12 @@ export async function characters(names, { region, realm }) {
         profileUrl: c.profile_url
       };
     } catch {
-      return { name: cleanName, ilvl: null, mplus: 0 };
+      return { name: charName, realm: charRealm, ilvl: null, mplus: 0 };
     }
   });
 
   const found = res.filter(Boolean);
   const withIlvl = found.filter(c => c.ilvl != null);
-  ok(`Raider.IO: ${withIlvl.length}/${names.length} Charaktere mit Details geladen`);
+  ok(`Raider.IO: ${withIlvl.length}/${items.length} Charaktere mit Details geladen`);
   return found;
 }
