@@ -1,4 +1,4 @@
-/* Warcraft Logs — Saubere Raid-Abfrage ohne M+-Vermischung */
+/* Warcraft Logs — Alle echten Raidabende & exakte Kills/Wipes */
 import { req, ok } from "./util.mjs";
 
 const BASE_OAUTH = "https://www.warcraftlogs.com/oauth/token";
@@ -17,10 +17,10 @@ async function token(clientId, clientSecret) {
   return res.access_token;
 }
 
-export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 10 }) {
+export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25 }) {
   const tok = await token(clientId, clientSecret);
   
-  // Nur Berichte mit echten Raid-Encountern abfragen
+  // Alle Berichte der Gilde abfragen
   const q = `query {
     reportData {
       reports(guildName: "${name}", guildServerSlug: "${realm}", guildServerRegion: "${region}", limit: ${limit}) {
@@ -54,20 +54,22 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
 
   for (const r of rawReports) {
     const fights = r.fights ?? [];
-    // Nur Reports werten, die tatsächliche Raid-Bosskämpfe beinhalten (mindestens 1 Boss-Pull)
-    if (!fights.length) continue;
+    
+    // Nur echte Raid-Pulls werten (Normal, Heroisch, Mythisch) — schließt M+ Dungeons aus
+    const raidFights = fights.filter(f => [3, 4, 5].includes(f.difficulty));
+    if (!raidFights.length) continue;
 
-    const kills = fights.filter(f => f.kill);
-    const wipes = fights.filter(f => !f.kill);
+    const kills = raidFights.filter(f => f.kill);
+    const wipes = raidFights.filter(f => !f.kill);
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
 
-    // Exakte Raiddauer von erstem bis letztem Kampf berechnen
+    // Exakte Dauer von erstem bis letztem Pull berechnen
     let durMs = (r.endTime || 0) - (r.startTime || 0);
-    if (fights.length > 1) {
-      const startFight = Math.min(...fights.map(f => f.startTime));
-      const endFight = Math.max(...fights.map(f => f.endTime));
-      if (endFight > startFight) {
-        durMs = endFight - startFight;
+    if (raidFights.length > 1) {
+      const firstPull = Math.min(...raidFights.map(f => f.startTime));
+      const lastPull = Math.max(...raidFights.map(f => f.endTime));
+      if (lastPull > firstPull) {
+        durMs = lastPull - firstPull;
       }
     }
 
@@ -76,8 +78,8 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     const durStr = `${hours > 0 ? hours + 'h ' : ''}${mins}m`;
 
     const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
-    const highestDiff = Math.max(...fights.map(f => f.difficulty || 3));
-    const diff = diffMap[highestDiff] || "Normal";
+    const maxDiff = Math.max(...raidFights.map(f => f.difficulty || 3));
+    const diff = diffMap[maxDiff] || "Normal";
 
     resultReports.push({
       code: r.code,
@@ -95,10 +97,10 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     });
   }
 
-  // Sortieren nach Datum (neuester Raid zuerst)
+  // Neueste Raids zuerst sortieren
   resultReports.sort((a, b) => b.startTime - a.startTime);
 
-  // VIP-Parses für den aktuellsten Raidabend abrufen
+  // VIP-Parses für den aktuellsten Raidabend direkt aus den Kills holen
   if (resultReports.length > 0) {
     const latest = resultReports[0];
 
@@ -125,7 +127,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       let dpsList = [];
       let hpsList = [];
 
-      // Echte DPS-Parses aus den Kills ziehen
+      // Echte DPS-Parses aus den Kills
       for (const fight of dpsRankData) {
         const bossName = fight.encounter?.name || "Boss";
         for (const ch of fight.roles?.dps?.characters || []) {
@@ -141,7 +143,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
         }
       }
 
-      // Echte HPS-Parses aus den Kills ziehen (nur Heiler)
+      // Echte HPS-Parses aus den Kills (Heiler)
       for (const fight of hpsRankData) {
         const bossName = fight.encounter?.name || "Boss";
         for (const ch of fight.roles?.healers?.characters || []) {
@@ -160,7 +162,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       dpsList.sort((a, b) => b.parse - a.parse);
       hpsList.sort((a, b) => b.parse - a.parse);
 
-      // Deduplizieren (jeder Spieler max. 1x bei den Top 2)
+      // Top 2 DPS (dedupliziert)
       const topDps = [];
       for (const d of dpsList) {
         if (!topDps.some(x => x.name.toLowerCase() === d.name.toLowerCase())) {
@@ -169,6 +171,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
         }
       }
 
+      // Top 2 Heiler (dedupliziert)
       const topHps = [];
       for (const h of hpsList) {
         if (!topHps.some(x => x.name.toLowerCase() === h.name.toLowerCase())) {
@@ -179,10 +182,10 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
 
       latest.vips = { dps: topDps, hps: topHps };
     } catch {
-      // Fehlertoleranz
+      // Fehlertoleranz bei reinen Wipe-Abenden ohne Kills
     }
   }
 
-  ok(`Warcraft Logs: ${resultReports.length} Raidabende geladen`);
+  ok(`Warcraft Logs: ${resultReports.length} echte Raidabende geladen`);
   return { reports: resultReports, updatedAt: new Date().toISOString() };
 }
