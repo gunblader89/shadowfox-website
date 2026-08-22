@@ -45,14 +45,12 @@
       "zone": "The Venomous Abyss",
       "startTime": 1787225301136,
       "endTime": 1787265145622,
-      "duration": "4h 31m",
+      "duration": "2h 31m",
       "difficulty": "Normal",
-      "kills": 3,
+      "kills": 1,
       "wipes": 19,
       "killedBosses": [
-        "The Twin Fangs",
-        "Altar of Fangs",
-        "The Blinding Vale"
+        "The Twin Fangs"
       ],
       "vips": {
         "dps": [],
@@ -191,7 +189,241 @@
         "dps": [],
         "hps": []
       }
+    },
+    {
+      "code": "9PjLFtyHQz8r3n6R",
+      "url": "https://www.warcraftlogs.com/reports/9PjLFtyHQz8r3n6R",
+      "title": "Sporefall",
+      "zone": "Sporefall",
+      "startTime": 1784021236549,
+      "endTime": 1784021855039,
+      "duration": "10m",
+      "difficulty": "Heroisch",
+      "kills": 0,
+      "wipes": 1,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "KRx9WJ2wVdcCQDPh",
+      "url": "https://www.warcraftlogs.com/reports/KRx9WJ2wVdcCQDPh",
+      "title": "VS / DR / MQD",
+      "zone": "VS / DR / MQD",
+      "startTime": 1783964066674,
+      "endTime": 1783975026146,
+      "duration": "2h 27m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 22,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "RYB3PbdgpJHwa7ZD",
+      "url": "https://www.warcraftlogs.com/reports/RYB3PbdgpJHwa7ZD",
+      "title": "VS / DR / MQD",
+      "zone": "VS / DR / MQD",
+      "startTime": 1783963876682,
+      "endTime": 1783974677980,
+      "duration": "2h 27m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 22,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "PJCKtb4LyDNAm8Qc",
+      "url": "https://www.warcraftlogs.com/reports/PJCKtb4LyDNAm8Qc",
+      "title": "VS / DR / MQD",
+      "zone": "VS / DR / MQD",
+      "startTime": 1783618761712,
+      "endTime": 1783628946274,
+      "duration": "2h 47m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 22,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "ZmrjznAh6gy8RQLC",
+      "url": "https://www.warcraftlogs.com/reports/ZmrjznAh6gy8RQLC",
+      "title": "VS / DR / MQD",
+      "zone": "VS / DR / MQD",
+      "startTime": 1783618286951,
+      "endTime": 1783630006256,
+      "duration": "2h 47m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 22,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "hPqCcQAvkNnrTjm3",
+      "url": "https://www.warcraftlogs.com/reports/hPqCcQAvkNnrTjm3",
+      "title": "VS / DR / MQD",
+      "zone": "VS / DR / MQD",
+      "startTime": 1783359710084,
+      "endTime": 1783370298266,
+      "duration": "2h 25m",
+      "difficulty": "Mythisch",
+      "kills": 2,
+      "wipes": 24,
+      "killedBosses": [
+        "Vorasius",
+        "Fallen-King Salhadaar"
+      ],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "mpALxydNRMW31tJ4",
+      "url": "https://www.warcraftlogs.com/reports/mpALxydNRMW31tJ4",
+      "title": "Sporefall",
+      "zone": "Sporefall",
+      "startTime": 1783014423871,
+      "endTime": 1783023806425,
+      "duration": "2h 18m",
+      "difficulty": "Mythisch",
+      "kills": 2,
+      "wipes": 19,
+      "killedBosses": [
+        "Chimaerus, the Undreamt God",
+        "Imperator Averzian"
+      ],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "6bpHV3kMjdT4NGar",
+      "url": "https://www.warcraftlogs.com/reports/6bpHV3kMjdT4NGar",
+      "title": "Sporefall",
+      "zone": "Sporefall",
+      "startTime": 1783013682492,
+      "endTime": 1783023801398,
+      "duration": "2h 18m",
+      "difficulty": "Mythisch",
+      "kills": 2,
+      "wipes": 19,
+      "killedBosses": [
+        "Chimaerus, the Undreamt God",
+        "Imperator Averzian"
+      ],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "6tqC2vTYcwVnRXkg",
+      "url": "https://www.warcraftlogs.com/reports/6tqC2vTYcwVnRXkg",
+      "title": "Gildenraid",
+      "zone": "Sporefall",
+      "startTime": 1782754629259,
+      "endTime": 1782763708681,
+      "duration": "2h 5m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 21,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "BLNzJYw6Q9PpCDgM",
+      "url": "https://www.warcraftlogs.com/reports/BLNzJYw6Q9PpCDgM",
+      "title": "Sporefall",
+      "zone": "Sporefall",
+      "startTime": 1782754267362,
+      "endTime": 1782763692561,
+      "duration": "2h 5m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 21,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "dzZkcNwrVYgHG3mA",
+      "url": "https://www.warcraftlogs.com/reports/dzZkcNwrVYgHG3mA",
+      "title": "Sporefall",
+      "zone": "Sporefall",
+      "startTime": 1782668334548,
+      "endTime": 1782675728674,
+      "duration": "1h 37m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 11,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "vL62VRb8xDzaXgw9",
+      "url": "https://www.warcraftlogs.com/reports/vL62VRb8xDzaXgw9",
+      "title": "Mythic+ Season 1",
+      "zone": "Mythic+ Season 1",
+      "startTime": 1782120694859,
+      "endTime": 1782154911472,
+      "duration": "7h 21m",
+      "difficulty": "Mythisch",
+      "kills": 1,
+      "wipes": 13,
+      "killedBosses": [
+        "Chimaerus, the Undreamt God"
+      ],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
+      "code": "maJWKPrDn2TARdcv",
+      "url": "https://www.warcraftlogs.com/reports/maJWKPrDn2TARdcv",
+      "title": "Mythic+ Season 1",
+      "zone": "Mythic+ Season 1",
+      "startTime": 1782120694859,
+      "endTime": 1782154911472,
+      "duration": "7h 21m",
+      "difficulty": "Mythisch",
+      "kills": 1,
+      "wipes": 13,
+      "killedBosses": [
+        "Chimaerus, the Undreamt God"
+      ],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
     }
   ],
-  "updatedAt": "2026-08-22T23:18:25.376Z"
+  "updatedAt": "2026-08-22T23:25:27.496Z"
 }
