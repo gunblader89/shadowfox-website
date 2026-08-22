@@ -103,8 +103,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 293,
-      "mplus": 0,
-      "weeklyRuns": 0,
+      "mplus": 562,
+      "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
     },
@@ -112,11 +112,11 @@
       "name": "Pepelim",
       "realm": "thrall",
       "class": "Death Knight",
-      "spec": "Unholy",
-      "role": "DPS",
+      "spec": "Blood",
+      "role": "TANK",
       "ilvl": 293,
       "mplus": 1323,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Pepelim"
     },
@@ -175,8 +175,8 @@
       "spec": "Discipline",
       "role": "HEALING",
       "ilvl": 295,
-      "mplus": 693,
-      "weeklyRuns": 5,
+      "mplus": 975,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/alexstrasza/Xsythia"
     },
@@ -272,5 +272,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T02:42:56.265Z"
+  "updatedAt": "2026-08-22T06:01:41.888Z"
 }
