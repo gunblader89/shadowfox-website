@@ -19,8 +19,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 287,
-      "mplus": 259,
-      "weeklyRuns": 1,
+      "mplus": 724,
+      "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -31,8 +31,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 297,
-      "mplus": 1201,
-      "weeklyRuns": 5,
+      "mplus": 1441,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
@@ -54,9 +54,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 293,
-      "mplus": 562,
-      "weeklyRuns": 3,
+      "ilvl": 294,
+      "mplus": 762,
+      "weeklyRuns": 4,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
     },
@@ -67,8 +67,8 @@
       "spec": "Shadow",
       "role": "DPS",
       "ilvl": 292,
-      "mplus": 836,
-      "weeklyRuns": 3,
+      "mplus": 1426,
+      "weeklyRuns": 5,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
     },
@@ -91,7 +91,7 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 298,
-      "mplus": 2203,
+      "mplus": 2306,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -151,7 +151,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 296,
-      "mplus": 1848,
+      "mplus": 1945,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -162,8 +162,8 @@
       "class": "Shaman",
       "spec": "Elemental",
       "role": "DPS",
-      "ilvl": 298,
-      "mplus": 1882,
+      "ilvl": 300,
+      "mplus": 2001,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
@@ -235,8 +235,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 295,
-      "mplus": 1566,
-      "weeklyRuns": 7,
+      "mplus": 1669,
+      "weeklyRuns": 9,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
     },
@@ -246,7 +246,7 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 295,
+      "ilvl": 296,
       "mplus": 1570,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -270,7 +270,7 @@
       "class": "Warlock",
       "spec": "Affliction",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 307,
       "mplus": 2839,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T14:45:17.186Z"
+  "updatedAt": "2026-08-22T15:33:24.194Z"
 }
