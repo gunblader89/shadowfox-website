@@ -7,6 +7,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Wowhead Tooltips Script -->
+<script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: false};</script>
+<script src="https://wow.zamimg.com/js/power.js"></script>
 <style>
 :root{
   --bg:#08090d; --elev:#0f1116; --panel:#12151c; --panel2:#171b24; --panel3:#1c212c;
@@ -16,7 +19,7 @@
   --violet:#8f7ce8; --violet-bg:rgba(143,124,232,.12);
   --green:#5ec48f; --green-bg:rgba(94,196,143,.1);
   --blue:#6b9ce8; --blue-bg:rgba(107,156,232,.11);
-  --red:#e26b6b;
+  --red:#e26b6b; --red-bg:rgba(226,107,107,.1);
   --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -101,65 +104,78 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tile{display:block;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
-.tile:hover{border-color:var(--line2);background:var(--panel2)}
+.tile:hover{border-color:var(--line2);background:var(--panel2);transform:translateY(-2px)}
 .tile .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--panel3);border:1px solid var(--line2);font-size:16px;margin-bottom:12px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
-/* ---------- RaidStrats Style Boss Cards ---------- */
-.boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:12px;overflow:hidden;transition:.16s}
+/* ---------- RaidStrats Boss Details ---------- */
+.boss{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.16s}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
 .bhead{display:flex;align-items:center;gap:14px;padding:16px 20px;width:100%}
 .bnum{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;font-family:var(--mono);font-size:12.5px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx3)}
 .boss.open .bnum{background:var(--amber-bg);border-color:rgba(234,181,78,.3);color:var(--amber)}
 .bname{flex:1;min-width:0}
-.bname b{display:block;font-size:15.5px;font-weight:650;letter-spacing:-.2px}
+.bname b{display:block;font-size:16px;font-weight:700;letter-spacing:-.2px}
 .bname span{display:block;font-size:12.5px;color:var(--tx3)}
 .chev{color:var(--tx3);transition:.2s;flex-shrink:0}
 .boss.open .chev{transform:rotate(180deg)}
-.bbody{display:none;padding:6px 22px 24px 66px}
+.bbody{display:none;padding:8px 24px 26px}
 .boss.open .bbody{display:block}
-.bintro{font-size:13.5px;color:var(--tx2);padding:12px 16px;background:rgba(255,255,255,.022);border-left:3px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:18px}
 
-.boss-layout { display: flex; gap: 20px; align-items: flex-start; }
-.boss-sidebar { width: 220px; flex-shrink: 0; display: flex; flex-direction: column; gap: 4px; border-right: 1px solid var(--line); padding-right: 16px; }
-.ptab { padding: 8px 12px; font-size: 13.5px; color: var(--tx2); border-radius: 6px; text-align: left; transition: .14s; font-weight: 500; }
-.ptab:hover { background: var(--panel2); color: var(--tx); }
-.ptab.active { background: var(--amber-bg); color: var(--amber); box-shadow: inset 2px 0 0 var(--amber); border-radius: 0 6px 6px 0; }
-.boss-content { flex: 1; min-width: 0; }
-.ptab-content { display: none; }
-.ptab-content.active { display: block; animation: f .2s ease; }
-.diff-tabs { display: flex; gap: 8px; margin-bottom: 16px; }
-.diff-tab { padding: 6px 12px; font-size: 12.5px; font-weight: 600; border-radius: 20px; background: #1a1f29; border: 1px solid var(--line); color: var(--tx3); cursor: pointer; transition: .15s; }
-.diff-tab:hover { border-color: var(--line2); color: var(--tx2); }
-.diff-tab.active { background: var(--amber-bg); color: var(--amber); border-color: rgba(234,181,78,.3); }
+.quick-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:18px}
+.meta-box{background:var(--panel3);border:1px solid var(--line);border-radius:9px;padding:10px 14px}
+.meta-box span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700}
+.meta-box b{display:block;font-size:13.5px;color:var(--tx);margin-top:2px}
 
-@media(max-width:768px){
-  .boss-layout { flex-direction: column; }
-  .boss-sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--line); padding-right: 0; padding-bottom: 12px; margin-bottom: 12px; }
-  .ptab.active { box-shadow: inset 0 2px 0 var(--amber); border-radius: 0 0 6px 6px; }
-}
+.bintro{font-size:14px;color:var(--tx2);padding:14px 18px;background:rgba(255,255,255,.02);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;margin-bottom:20px;line-height:1.6}
 
-.phase-block{margin-bottom:18px;background:var(--panel3);border:1px solid var(--line);border-radius:11px;overflow:hidden}
-.phase-h{padding:10px 14px;background:#161a24;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
-.phase-h b{font-size:13px;letter-spacing:.3px}
-.phase-h span{font-size:12px;color:var(--tx3)}
-.phase-body{padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+/* Difficulty Tabs */
+.diff-bar{display:flex;gap:6px;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.diff-tab{padding:6px 14px;border-radius:8px;font-size:12.5px;font-weight:700;color:var(--tx3);background:var(--panel3);border:1px solid var(--line);cursor:pointer;transition:.14s}
+.diff-tab:hover{color:var(--tx);border-color:var(--line2)}
+.diff-tab.active{color:#1a1305;background:var(--amber);border-color:var(--amber)}
 
-.strat-card{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:8px;background:#13161f;border:1px solid var(--line)}
-.strat-card.warn{border-color:rgba(226,107,107,.25);background:rgba(226,107,107,.05)}
-.strat-card.prio{border-color:rgba(234,181,78,.25);background:rgba(234,181,78,.05)}
-.rtag{flex-shrink:0;width:58px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.4px;padding:3px 0;border-radius:6px;margin-top:2px;text-transform:uppercase}
+.roles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px}
+.role-box{background:var(--panel3);border:1px solid var(--line2);border-radius:11px;padding:14px 16px}
+.role-box-h{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.role-box ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.role-box li{font-size:13px;color:var(--tx2);line-height:1.5;position:relative;padding-left:14px}
+.role-box li::before{content:"•";position:absolute;left:0;color:var(--tx3)}
+
+.phase-card{background:#11141b;border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden}
+.phase-card-h{padding:12px 16px;background:#161922;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.phase-card-h b{font-size:14px;font-weight:700}
+.phase-card-h span{font-size:12.5px;color:var(--tx3)}
+.phase-card-b{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+
+.mech-card{background:var(--panel2);border:1px solid var(--line2);border-radius:9px;padding:12px 14px}
+.mech-card-t{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.mech-card-t b{font-size:13.5px;color:var(--tx)}
+.mech-card-desc{font-size:13px;color:var(--tx2);margin-bottom:6px;line-height:1.5}
+.mech-card-sol{font-size:12.5px;color:#9cdba8;background:rgba(94,196,143,.08);padding:6px 10px;border-radius:6px;border-left:2px solid var(--green)}
+
+.hazard-box{background:rgba(226,107,107,.06);border:1px solid rgba(226,107,107,.25);border-radius:11px;padding:14px 16px;margin:20px 0}
+.hazard-box h4{font-size:12.5px;text-transform:uppercase;letter-spacing:1px;color:var(--red);font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.hazard-box ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.hazard-box li{font-size:13px;color:var(--tx2);line-height:1.5;padding-left:14px;position:relative}
+.hazard-box li::before{content:"✕";position:absolute;left:0;color:var(--red);font-size:11px}
+
+.rtag{flex-shrink:0;width:58px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.4px;padding:3px 0;border-radius:6px;text-transform:uppercase}
 .r-alle{background:var(--panel2);color:var(--tx3);border:1px solid var(--line2)}
 .r-tanks{background:var(--blue-bg);color:var(--blue);border:1px solid rgba(107,156,232,.28)}
 .r-heiler{background:var(--green-bg);color:var(--green);border:1px solid rgba(94,196,143,.28)}
-.r-dps{background:var(--amber-bg);color:var(--amber);border:1px solid rgba(234,181,78,.28)}
-.strat-card p{font-size:13px;color:var(--tx2);line-height:1.5}
+.r-dps,.r-melee{background:var(--amber-bg);color:var(--amber);border:1px solid rgba(234,181,78,.28)}
+.r-ranged{background:var(--violet-bg);color:var(--violet);border:1px solid rgba(143,124,232,.28)}
+
+.tag-toedlich{color:#ff6b6b;background:rgba(226,107,107,.15);border:1px solid rgba(226,107,107,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+.tag-prio{color:#f5cd72;background:rgba(234,181,78,.15);border:1px solid rgba(234,181,78,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+.tag-heilung{color:#5ec48f;background:rgba(94,196,143,.15);border:1px solid rgba(94,196,143,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+.tag-mechanik{color:#6b9ce8;background:rgba(107,156,232,.15);border:1px solid rgba(107,156,232,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
 
 .abils{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.abil-link{text-decoration:none !important}
-.abil{display:inline-block;font-size:11.5px;padding:3px 9px;border-radius:7px;background:#1a1f29;border:1px solid var(--line);color:var(--tx3);font-family:var(--mono)}
-.abil-link:hover .abil, .abil:hover{border-color:#3d4658;color:var(--tx)}
+.abil{font-size:12px;padding:4px 10px;border-radius:7px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
+.abil:hover{border-color:var(--amber);color:var(--tx)}
 .links{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .lchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;padding:7px 12px;border-radius:9px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
 .lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
@@ -269,19 +285,18 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 @keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
 @media(max-width:960px){
-  .start-grid,.g4,.g3,.tiles{grid-template-columns:repeat(2,1fr)}
+  .start-grid,.g4,.g3,.tiles,.roles-grid{grid-template-columns:repeat(2,1fr)}
   .top-in{height:auto;flex-wrap:wrap;padding:12px 0;gap:12px}
   nav{order:3;width:100%}
   .hero h1{font-size:32px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px}
   .wrap{padding:0 16px}
-  .bbody{padding-left:18px}
+  .bbody{padding:8px 14px 20px}
   .sig-grid{grid-template-columns:repeat(2,1fr)}
   .rcards{grid-template-columns:1fr}
 }
 @media(max-width:640px){
-  .start-grid,.g4,.g3,.g2,.tiles{grid-template-columns:1fr}
+  .start-grid,.g4,.g3,.g2,.tiles,.roles-grid{grid-template-columns:1fr}
   .sbtn span{display:none}
-  .rtag{width:52px}
   .clsrow .n{width:92px;font-size:12px}
   .sig-grid{grid-template-columns:1fr}
 }
@@ -350,9 +365,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   </div>
 </div></div>
 
-<script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script>
-<script src="https://wow.zamimg.com/widgets/power.js"></script>
-
 <script>
 const G = {
   name:"ShadowFox", realm:"Blackmoore", region:"EU (DE)", faction:"Allianz",
@@ -369,6 +381,8 @@ const G = {
 const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
 
 let BOSSES = [];
+let ACTIVE_DIFF = {}; // Speichert die gewählte Difficulty pro Boss
+
 const CLASSES = [
   ["Dämonenjäger",19,"#A330C9"],["Druide",16,"#FF7C0A"],["Paladin",13,"#F48CBA"],
   ["Krieger",12,"#C69B6D"],["Priester",12,"#FFFFFF"],["Mönch",11,"#00FF98"],
@@ -435,13 +449,6 @@ function fmtDateShort(d) {
   const m2 = str.match(/(\d{1,2})[-/.](\d{1,2})[-/.](\d{2,4})/);
   if (m2) return `${m2[1].padStart(2,"0")}.${m2[2].padStart(2,"0")}.${m2[3].slice(-2)}`;
   return str;
-}
-
-function calcVault(runs) {
-  if (runs >= 8) return 3;
-  if (runs >= 4) return 2;
-  if (runs >= 1) return 1;
-  return 0;
 }
 
 function scoreColor(score) {
@@ -538,6 +545,77 @@ function signupBlock(){
   </div>`;
 }
 
+function renderBossDiff(bIndex, diffKey) {
+  const b = BOSSES[bIndex];
+  if (!b) return "";
+  const d = (b.difficulties && b.difficulties[diffKey]) ? b.difficulties[diffKey] : (b.difficulties?.normal || b);
+  
+  const rollen = d.rollen || b.rollen;
+  const phasen = d.phasen || b.phasen || [];
+
+  return `
+    ${rollen ? `
+      <div class="eyebrow" style="margin-bottom:12px">Rollen-Zuweisung & Aufgaben (${diffKey.toUpperCase()})</div>
+      <div class="roles-grid">
+        <div class="role-box" style="border-top:3px solid var(--blue)">
+          <div class="role-box-h" style="color:var(--blue)">🛡️ Tanks</div>
+          <ul>${(rollen.tanks||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+        <div class="role-box" style="border-top:3px solid var(--green)">
+          <div class="role-box-h" style="color:var(--green)">💚 Heiler</div>
+          <ul>${(rollen.heiler||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+        <div class="role-box" style="border-top:3px solid var(--amber)">
+          <div class="role-box-h" style="color:var(--amber)">⚔️ Nahkämpfer (Melee)</div>
+          <ul>${(rollen.melee||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+        <div class="role-box" style="border-top:3px solid var(--violet)">
+          <div class="role-box-h" style="color:var(--violet)">🏹 Fernkämpfer (Ranged)</div>
+          <ul>${(rollen.ranged||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+      </div>
+    ` : ''}
+
+    <div class="eyebrow" style="margin:20px 0 12px">Phasen-Ablauf & Mechaniken (${diffKey.toUpperCase()})</div>
+    ${phasen.map(ph=>`
+      <div class="phase-card">
+        <div class="phase-card-h">
+          <b>${esc(ph.titel)}</b>
+          <span>${esc(ph.uebersicht||'')}</span>
+        </div>
+        <div class="phase-card-b">
+          ${(ph.mechaniken||[]).map(m=>`
+            <div class="mech-card">
+              <div class="mech-card-t">
+                <b>${esc(m.name)}</b>
+                <div style="display:flex;gap:6px;align-items:center">
+                  <span class="rtag r-${(m.ziel||'alle').toLowerCase()}">${esc(m.ziel||'Alle')}</span>
+                  <span class="tag-${m.stufe||'mechanik'}">${esc(m.stufe==='toedlich'?'TÖDLICH':m.stufe==='prio'?'PRIORITÄT':m.stufe==='heilung'?'HEILUNG':'MECHANIK')}</span>
+                </div>
+              </div>
+              <div class="mech-card-desc">${esc(m.erklaerung)}</div>
+              <div class="mech-card-sol"><b>Lösung:</b> ${esc(m.loesung)}</div>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `).join("")}
+  `;
+}
+
+function setDiff(bIndex, diffKey, ev) {
+  if (ev) ev.stopPropagation();
+  ACTIVE_DIFF[bIndex] = diffKey;
+  const container = document.getElementById(`boss-diff-content-${bIndex}`);
+  if (container) {
+    container.innerHTML = renderBossDiff(bIndex, diffKey);
+  }
+  const bar = document.getElementById(`boss-diff-bar-${bIndex}`);
+  if (bar) {
+    bar.querySelectorAll(".diff-tab").forEach(t => t.classList.toggle("active", t.dataset.diff === diffKey));
+  }
+}
+
 const views = {
 start(){
   const r = G.raid, prog = BOSSES.find(b=>b.st==="prog") || BOSSES[6] || { n: "Der Gewundene Altar" };
@@ -581,100 +659,64 @@ raid(){
   return `
   <div class="page-h fade">
     <h1>${esc(r.name)}</h1>
-    <p>${esc(r.en)} · ${r.bosses} Bosse · Phasen, Rollen-Aufteilung & Taktik-Prioritäten.</p>
+    <p>${esc(r.en)} · ${r.bosses} Bosse · Detaillierte RaidStrats-Guides nach Rollen, Phasen & Schwierigkeitsgraden.</p>
   </div>
   <div class="fade">
-  ${BOSSES.map((b,i)=>{const s=ST[b.st]||ST.open;return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
+  ${BOSSES.map((b,i)=>{
+    const s = ST[b.st] || ST.open;
+    const curDiff = ACTIVE_DIFF[i] || "normal";
+    return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
     <button class="bhead" onclick="this.parentElement.classList.toggle('open')">
       <span class="bnum">${i+1}</span>
-      <span class="bname"><b>${esc(b.n)}</b><span>${esc(b.role)} · ${esc(b.en)}</span></span>
+      <span class="bname"><b>${esc(b.n)}</b><span>${esc(b.role||'')} · ${esc(b.en)}</span></span>
       <span class="pill ${s.cls}"><span class="dot"></span>${s.tx}</span>
       <svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg>
     </button>
     <div class="bbody">
-      <div class="bintro">${esc(b.intro)}</div>
       
-      ${b.difficulties ? `
-        <div class="diff-tabs">
-          <button class="diff-tab active" data-diff="normal" onclick="window.switchDiff(event, 'b${i}', 'normal')">Normal</button>
-          <button class="diff-tab" data-diff="heroic" onclick="window.switchDiff(event, 'b${i}', 'heroic')">Heroisch</button>
-          <button class="diff-tab" data-diff="mythic" onclick="window.switchDiff(event, 'b${i}', 'mythic')">Mythisch</button>
+      ${(b.check || b.lust) ? `
+        <div class="quick-meta">
+          ${b.check ? `<div class="meta-box"><span>Anforderung</span><b>${esc(b.check)}</b></div>` : ''}
+          ${b.lust ? `<div class="meta-box"><span>Kampfrausch / Lust</span><b>${esc(b.lust)}</b></div>` : ''}
         </div>
-        ${['normal', 'heroic', 'mythic'].map((diff, di) => {
-          const diffData = b.difficulties[diff];
-          const hasData = diffData && ((diffData.phasen && diffData.phasen.length > 0) || (diffData.faehigkeiten && diffData.faehigkeiten.length > 0));
-          const phasen = hasData && diffData.phasen && diffData.phasen.length ? diffData.phasen : [{titel:"Raid-Ansagen", uebersicht:"Wichtigste Aufgaben", regeln:(b.pts||[]).map(([ro,tx])=>({rolle:ro,typ:"info",text:tx}))}];
-          const abilities = hasData && diffData.faehigkeiten ? diffData.faehigkeiten : (b.faehigkeiten||b.abil||[]);
-          return `
-          <div class="diff-section" data-diff="${diff}" style="display: ${di===0 ? 'block' : 'none'}">
-            <div class="boss-layout">
-              <div class="boss-sidebar">
-                ${phasen.map((ph, pi)=>`
-                  <button class="ptab ${pi===0?'active':''}" data-diff="${diff}" onclick="window.switchTab(event, 'b${i}', ${pi}, '${diff}')">${esc(ph.titel)}</button>
-                `).join("")}
-              </div>
-              <div class="boss-content">
-                ${phasen.map((ph, pi)=>`
-                  <div class="ptab-content ${pi===0?'active':''}" data-diff="${diff}" id="b${i}-${diff}-tab-${pi}">
-                    <div class="phase-block">
-                      <div class="phase-h">
-                        <b>${esc(ph.titel)}</b>
-                        <span>${esc(ph.uebersicht||'')}</span>
-                      </div>
-                      <div class="phase-body">
-                        ${(ph.regeln||[]).map(rg=>`
-                          <div class="strat-card ${rg.typ||'info'}">
-                            <span class="rtag r-${(rg.rolle||'alle').toLowerCase()}">${esc(rg.rolle||'Alle')}</span>
-                            <p>${esc(rg.text)}</p>
-                          </div>
-                        `).join("")}
-                      </div>
-                    </div>
-                  </div>
-                `).join("")}
-              </div>
-            </div>
-            
-            <div class="blabel" style="margin-top:20px;">Fähigkeiten (${diff})</div>
-            <div class="abils">${abilities.map(a=>`<a href="https://www.wowhead.com/de/search?q=${encodeURIComponent(a)}" data-wowhead="domain=de" class="abil-link" target="_blank" rel="noopener noreferrer"><span class="abil">${esc(a)}</span></a>`).join("")}</div>
-          </div>
-        `}).join("")}
-      ` : `
-        <div class="boss-layout">
-          <div class="boss-sidebar">
-            ${(b.phasen && b.phasen.length ? b.phasen : [{titel:"Raid-Ansagen", uebersicht:"Wichtigste Aufgaben", regeln:(b.pts||[]).map(([ro,tx])=>({rolle:ro,typ:"info",text:tx}))}]).map((ph, pi)=>`
-              <button class="ptab ${pi===0?'active':''}" data-diff="none" onclick="window.switchTab(event, 'b${i}', ${pi}, 'none')">${esc(ph.titel)}</button>
-            `).join("")}
-          </div>
-          <div class="boss-content">
-            ${(b.phasen && b.phasen.length ? b.phasen : [{titel:"Raid-Ansagen", uebersicht:"Wichtigste Aufgaben", regeln:(b.pts||[]).map(([ro,tx])=>({rolle:ro,typ:"info",text:tx}))}]).map((ph, pi)=>`
-              <div class="ptab-content ${pi===0?'active':''}" data-diff="none" id="b${i}-none-tab-${pi}">
-                <div class="phase-block">
-                  <div class="phase-h">
-                    <b>${esc(ph.titel)}</b>
-                    <span>${esc(ph.uebersicht||'')}</span>
-                  </div>
-                  <div class="phase-body">
-                    ${(ph.regeln||[]).map(rg=>`
-                      <div class="strat-card ${rg.typ||'info'}">
-                        <span class="rtag r-${(rg.rolle||'alle').toLowerCase()}">${esc(rg.rolle||'Alle')}</span>
-                        <p>${esc(rg.text)}</p>
-                      </div>
-                    `).join("")}
-                  </div>
-                </div>
-              </div>
-            `).join("")}
-          </div>
-        </div>
+      ` : ''}
 
-        <div class="blabel" style="margin-top:20px;">Fähigkeiten</div>
-        <div class="abils">${(b.faehigkeiten||b.abil||[]).map(a=>`<a href="https://www.wowhead.com/de/search?q=${encodeURIComponent(a)}" data-wowhead="domain=de" class="abil-link" target="_blank" rel="noopener noreferrer"><span class="abil">${esc(a)}</span></a>`).join("")}</div>
-      `}
+      <div class="bintro">${esc(b.intro)}</div>
+
+      <!-- Difficulty Selector -->
+      <div class="diff-bar" id="boss-diff-bar-${i}">
+        <button class="diff-tab ${curDiff==='normal'?'active':''}" data-diff="normal" onclick="setDiff(${i},'normal',event)">Normal</button>
+        <button class="diff-tab ${curDiff==='heroic'?'active':''}" data-diff="heroic" onclick="setDiff(${i},'heroic',event)">Heroisch</button>
+        <button class="diff-tab ${curDiff==='mythic'?'active':''}" data-diff="mythic" onclick="setDiff(${i},'mythic',event)">Mythisch</button>
+      </div>
+
+      <!-- Dynamic Difficulty Content -->
+      <div id="boss-diff-content-${i}">
+        ${renderBossDiff(i, curDiff)}
+      </div>
+
+      ${b.wipeGefahren && b.wipeGefahren.length ? `
+        <div class="hazard-box">
+          <h4>⚠️ Typische Wipe-Ursachen & Fehler</h4>
+          <ul>${b.wipeGefahren.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
+        </div>
+      ` : ''}
+
+      <div class="eyebrow" style="margin-top:20px">Fähigkeiten & Wowhead-Tooltips</div>
+      <div class="abils">
+        ${(b.faehigkeiten||[]).map(a => {
+          const name = typeof a === "object" ? a.name : a;
+          const spellId = typeof a === "object" && a.id ? a.id : null;
+          if (spellId) {
+            return `<a href="https://www.wowhead.com/de/spell=${spellId}" data-wowhead="spell=${spellId}&domain=de" class="abil" target="_blank" rel="noopener">${esc(name)}</a>`;
+          }
+          return `<span class="abil">${esc(name)}</span>`;
+        }).join("")}
+      </div>
       
-      <div class="links">
+      <div class="links" style="margin-top:18px">
         ${ext(WH(b.slug),"Wowhead-Guide (DE)")}
-        ${ext(`https://raidstrats.gg/guides/${b.slug}/heroic/phase/quick-overview`,"RaidStrats ↗")}
+        ${ext(`https://raidstrats.gg/guides/${b.slug}/heroic/phase/quick-overview`,"RaidStrats.gg ↗")}
         ${ext(G.links.wcl,"Warcraft Logs")}
       </div>
     </div></div>`;}).join("")}
@@ -880,12 +922,20 @@ function applyData(d, c){
   }
   if(c?.bosses?.bosses?.length){
     BOSSES = c.bosses.bosses.map(b => ({
-      n:b.name, en:b.nameEn||"", st:b.status||"open", role:b.rolle||"", slug:b.slug||"",
-      intro:b.intro||"",
-      phasen:b.phasen || [],
-      pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
-      faehigkeiten:b.faehigkeiten || b.faehigkeiten || [],
-      difficulties:b.difficulties || null
+      name: b.name,
+      n: b.name,
+      en: b.nameEn || "",
+      st: b.status || "open",
+      role: b.rolle || "",
+      slug: b.slug || "",
+      check: b.check || "",
+      lust: b.lust || "",
+      intro: b.intro || "",
+      difficulties: b.difficulties || null,
+      rollen: b.rollen || null,
+      phasen: b.phasen || [],
+      wipeGefahren: b.wipeGefahren || [],
+      faehigkeiten: b.faehigkeiten || []
     }));
   }
 
@@ -991,30 +1041,10 @@ function route(){
   document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
   document.querySelectorAll(".kk").forEach(e => e.textContent = KEY);
   if(k === "tracker") bindTrk();
+  if(window.$WowheadPower) window.$WowheadPower.refreshLinks();
   window.scrollTo({top:0,behavior:"instant"});
 }
 addEventListener("hashchange", route);
-
-window.switchTab = function(event, bossId, tabIndex, diff) {
-  if(event) event.stopPropagation();
-  const bossEl = document.getElementById(bossId);
-  if(!bossEl) return;
-  const tabs = bossEl.querySelectorAll(`.ptab[data-diff="${diff}"]`);
-  const panels = bossEl.querySelectorAll(`.ptab-content[data-diff="${diff}"]`);
-  tabs.forEach((t, i) => t.classList.toggle('active', i === tabIndex));
-  panels.forEach((p, i) => p.classList.toggle('active', i === tabIndex));
-};
-
-window.switchDiff = function(event, bossId, diff) {
-  if(event) event.stopPropagation();
-  const bossEl = document.getElementById(bossId);
-  if(!bossEl) return;
-  const diffTabs = bossEl.querySelectorAll('.diff-tab');
-  diffTabs.forEach(t => t.classList.toggle('active', t.dataset.diff === diff));
-  
-  const diffSections = bossEl.querySelectorAll('.diff-section');
-  diffSections.forEach(s => s.style.display = (s.dataset.diff === diff ? 'block' : 'none'));
-};
 
 let INDEX = [];
 function buildIndex(){
