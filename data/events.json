@@ -11,31 +11,13 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 22,
+        "primary": 24,
         "tentative": 0,
         "bench": 0,
         "absence": 1,
         "late": 0
       },
       "signups": [
-        {
-          "name": "Hatto/Micha",
-          "userId": "535152701529522186",
-          "cls": "Ranged",
-          "spec": "Beastmastery",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1787328515
-        },
-        {
-          "name": "Garodash/Giotto",
-          "userId": "191599662283620352",
-          "cls": "Healer",
-          "spec": "Restoration1",
-          "role": "Healers",
-          "status": "primary",
-          "signedUpAt": 1786200401
-        },
         {
           "name": "Jisgarin/Andi",
           "userId": "347413147054899200",
@@ -44,33 +26,6 @@
           "role": "Healers",
           "status": "primary",
           "signedUpAt": 1786873414
-        },
-        {
-          "name": "Feiree/Karin",
-          "userId": "245932556371886091",
-          "cls": "Ranged",
-          "spec": "Devastation",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786707700
-        },
-        {
-          "name": "Tankoderdd",
-          "userId": "474617817216450562",
-          "cls": "Melee",
-          "spec": "Retribution",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786218356
-        },
-        {
-          "name": "Sweetschi/Danielo",
-          "userId": "185355889019060224",
-          "cls": "Healer",
-          "spec": "Mistweaver",
-          "role": "Healers",
-          "status": "primary",
-          "signedUpAt": 1786181178
         },
         {
           "name": "Quon/Lew",
@@ -100,15 +55,6 @@
           "signedUpAt": 1786271059
         },
         {
-          "name": "Toshi",
-          "userId": "619624087026925578",
-          "cls": "Absence",
-          "spec": "Absence",
-          "role": "Absence",
-          "status": "primary",
-          "signedUpAt": 1786197050
-        },
-        {
           "name": "Chantallè|Philipp",
           "userId": "482986152912224274",
           "cls": "Ranged",
@@ -116,24 +62,6 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1786173996
-        },
-        {
-          "name": "Kite",
-          "userId": "218391269917982720",
-          "cls": "Tank",
-          "spec": "Brewmaster",
-          "role": "Tanks",
-          "status": "primary",
-          "signedUpAt": 1787303040
-        },
-        {
-          "name": "Thessaly/Basti",
-          "userId": "238675341747421185",
-          "cls": "Melee",
-          "spec": "Havoc",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786642469
         },
         {
           "name": "Tiskarian|Heiner",
@@ -163,15 +91,6 @@
           "signedUpAt": 1786262551
         },
         {
-          "name": "Corvisstab/Morten",
-          "userId": "295208122493042690",
-          "cls": "Ranged",
-          "spec": "Shadow",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1787320874
-        },
-        {
           "name": "𝕱𝖗𝖚𝖈𝖍𝖙𝖟𝖜𝖊𝖗𝖌│ᴬˡᵉˣᵃⁿᵈʳᵃ",
           "userId": "332970747821555712",
           "cls": "Ranged",
@@ -179,6 +98,105 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1786172881
+        },
+        {
+          "name": "Cirivren|Killian",
+          "userId": "1022398919319228496",
+          "cls": "Healer",
+          "spec": "Holy",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1787419676
+        },
+        {
+          "name": "Hatto/Micha",
+          "userId": "535152701529522186",
+          "cls": "Ranged",
+          "spec": "Beastmastery",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787328515
+        },
+        {
+          "name": "Garodash/Giotto",
+          "userId": "191599662283620352",
+          "cls": "Healer",
+          "spec": "Restoration1",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786200401
+        },
+        {
+          "name": "Feiree/Karin",
+          "userId": "245932556371886091",
+          "cls": "Ranged",
+          "spec": "Devastation",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786707700
+        },
+        {
+          "name": "Tankoderdd",
+          "userId": "474617817216450562",
+          "cls": "Melee",
+          "spec": "Retribution",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786218356
+        },
+        {
+          "name": "Sweetschi/Danielo",
+          "userId": "185355889019060224",
+          "cls": "Healer",
+          "spec": "Mistweaver",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1786181178
+        },
+        {
+          "name": "Amhairghin|Tobi",
+          "userId": "221333590200418307",
+          "cls": "Ranged",
+          "spec": "Balance",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787419651
+        },
+        {
+          "name": "Toshi",
+          "userId": "619624087026925578",
+          "cls": "Absence",
+          "spec": "Absence",
+          "role": "Absence",
+          "status": "primary",
+          "signedUpAt": 1786197050
+        },
+        {
+          "name": "Thessaly/Basti",
+          "userId": "238675341747421185",
+          "cls": "Melee",
+          "spec": "Havoc",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1786642469
+        },
+        {
+          "name": "Kite",
+          "userId": "218391269917982720",
+          "cls": "Tank",
+          "spec": "Brewmaster",
+          "role": "Tanks",
+          "status": "primary",
+          "signedUpAt": 1787303040
+        },
+        {
+          "name": "Corvisstab/Morten",
+          "userId": "295208122493042690",
+          "cls": "Ranged",
+          "spec": "Shadow",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787320874
         },
         {
           "name": "Sarah",
@@ -228,5 +246,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-22T16:43:01.482Z"
+  "updatedAt": "2026-08-22T17:58:46.292Z"
 }

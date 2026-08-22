@@ -162,7 +162,7 @@
       "class": "Shaman",
       "spec": "Elemental",
       "role": "DPS",
-      "ilvl": 300,
+      "ilvl": 302,
       "mplus": 2001,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
@@ -246,7 +246,7 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 296,
+      "ilvl": 294,
       "mplus": 1690,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -270,8 +270,8 @@
       "class": "Warlock",
       "spec": "Affliction",
       "role": "DPS",
-      "ilvl": 307,
-      "mplus": 2853,
+      "ilvl": 308,
+      "mplus": 2854,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T16:42:45.381Z"
+  "updatedAt": "2026-08-22T17:58:29.791Z"
 }
