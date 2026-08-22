@@ -11,7 +11,7 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 21,
+        "primary": 22,
         "tentative": 0,
         "bench": 0,
         "absence": 1,
@@ -199,6 +199,15 @@
           "signedUpAt": 1786216244
         },
         {
+          "name": "Raiox",
+          "userId": "317048921249677323",
+          "cls": "Healer",
+          "spec": "Restoration1",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1787392503
+        },
+        {
           "name": "Sandino",
           "userId": "818515659335270400",
           "cls": "Ranged",
@@ -219,5 +228,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-22T09:52:17.787Z"
+  "updatedAt": "2026-08-22T11:56:27.147Z"
 }
