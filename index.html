@@ -109,12 +109,14 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
-/* ---------- RaidStrats Boss Details ---------- */
+/* ---------- Wowhead Style Boss Cards & Banners ---------- */
 .boss{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.16s}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
-.bhead{display:flex;align-items:center;gap:14px;padding:16px 20px;width:100%}
-.bnum{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;font-family:var(--mono);font-size:12.5px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx3)}
-.boss.open .bnum{background:var(--amber-bg);border-color:rgba(234,181,78,.3);color:var(--amber)}
+.bhead{display:flex;align-items:center;gap:14px;padding:14px 18px;width:100%}
+.bavatar-wrap{position:relative;width:44px;height:44px;flex-shrink:0}
+.bavatar{width:44px;height:44px;border-radius:10px;object-fit:cover;border:1px solid var(--line2);background:#171b24;display:block}
+.bnum-badge{position:absolute;bottom:-4px;right:-4px;width:18px;height:18px;border-radius:5px;background:#1a1f29;border:1px solid var(--line2);font-family:var(--mono);font-size:10.5px;font-weight:700;display:grid;place-items:center;color:var(--tx2)}
+.boss.open .bnum-badge{background:var(--amber);color:#1a1305;border-color:var(--amber)}
 .bname{flex:1;min-width:0}
 .bname b{display:block;font-size:16px;font-weight:700;letter-spacing:-.2px}
 .bname span{display:block;font-size:12.5px;color:var(--tx3)}
@@ -123,10 +125,51 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .bbody{display:none;padding:8px 24px 26px}
 .boss.open .bbody{display:block}
 
-.quick-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-bottom:18px}
-.meta-box{background:var(--panel3);border:1px solid var(--line);border-radius:9px;padding:10px 14px}
-.meta-box span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700}
-.meta-box b{display:block;font-size:13.5px;color:var(--tx);margin-top:2px}
+/* Wowhead-Style Cinematic Hero Banner */
+.boss-hero-banner{
+  position:relative;
+  border-radius:12px;
+  height:140px;
+  overflow:hidden;
+  margin-bottom:18px;
+  border:1px solid var(--line2);
+  display:flex;
+  align-items:center;
+  background:linear-gradient(90deg, #11141b 0%, #171b24 50%, #0d0f14 100%);
+}
+.boss-hero-img{
+  position:absolute;
+  right:0;
+  top:0;
+  height:100%;
+  width:62%;
+  object-fit:cover;
+  object-position:right center;
+  mask-image:linear-gradient(to right, transparent 0%, black 50%);
+  -webkit-mask-image:linear-gradient(to right, transparent 0%, black 50%);
+}
+.boss-hero-meta{
+  position:relative;
+  z-index:2;
+  padding:18px 22px;
+  max-width:60%;
+}
+.boss-hero-meta .quick-tags{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.boss-hero-meta .qchip{
+  font-size:11.5px;
+  padding:3px 9px;
+  border-radius:6px;
+  background:rgba(8,9,13,.75);
+  backdrop-filter:blur(8px);
+  border:1px solid var(--line2);
+  color:var(--tx2);
+}
+.boss-hero-meta .qchip b{color:var(--tx);font-weight:700}
 
 .bintro{font-size:14px;color:var(--tx2);padding:14px 18px;background:rgba(255,255,255,.02);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;margin-bottom:20px;line-height:1.6}
 
@@ -299,6 +342,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   .sbtn span{display:none}
   .clsrow .n{width:92px;font-size:12px}
   .sig-grid{grid-template-columns:1fr}
+  .boss-hero-banner{height:auto;min-height:120px}
+  .boss-hero-meta{max-width:100%}
 }
 </style>
 </head>
@@ -381,7 +426,7 @@ const G = {
 const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
 
 let BOSSES = [];
-let ACTIVE_DIFF = {}; // Speichert die gewählte Difficulty pro Boss
+let ACTIVE_DIFF = {};
 
 const CLASSES = [
   ["Dämonenjäger",19,"#A330C9"],["Druide",16,"#FF7C0A"],["Paladin",13,"#F48CBA"],
@@ -614,6 +659,7 @@ function setDiff(bIndex, diffKey, ev) {
   if (bar) {
     bar.querySelectorAll(".diff-tab").forEach(t => t.classList.toggle("active", t.dataset.diff === diffKey));
   }
+  if (window.$WowheadPower) window.$WowheadPower.refreshLinks();
 }
 
 const views = {
@@ -665,21 +711,35 @@ raid(){
   ${BOSSES.map((b,i)=>{
     const s = ST[b.st] || ST.open;
     const curDiff = ACTIVE_DIFF[i] || "normal";
+    const imgUrl = b.image || `https://wow.zamimg.com/uploads/guide/header/${25291 + i}.jpg`;
+
     return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
     <button class="bhead" onclick="this.parentElement.classList.toggle('open')">
-      <span class="bnum">${i+1}</span>
-      <span class="bname"><b>${esc(b.n)}</b><span>${esc(b.role||'')} · ${esc(b.en)}</span></span>
+      <div class="bavatar-wrap">
+        <img src="${imgUrl}" class="bavatar" alt="${esc(b.n)}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'44\\' height=\\'44\\' fill=\\'%231a1f29\\'><rect width=\\'44\\' height=\\'44\\'/></svg>'">
+        <span class="bnum-badge">${i+1}</span>
+      </div>
+      <div class="bname">
+        <b>${esc(b.n)}</b>
+        <span>${esc(b.role||'')} · ${esc(b.en)}</span>
+      </div>
       <span class="pill ${s.cls}"><span class="dot"></span>${s.tx}</span>
       <svg class="chev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg>
     </button>
     <div class="bbody">
       
-      ${(b.check || b.lust) ? `
-        <div class="quick-meta">
-          ${b.check ? `<div class="meta-box"><span>Anforderung</span><b>${esc(b.check)}</b></div>` : ''}
-          ${b.lust ? `<div class="meta-box"><span>Kampfrausch / Lust</span><b>${esc(b.lust)}</b></div>` : ''}
+      <!-- Wowhead-Style Cinematic Banner -->
+      <div class="boss-hero-banner">
+        <img src="${imgUrl}" class="boss-hero-img" alt="${esc(b.n)}" onerror="this.style.display='none'">
+        <div class="boss-hero-meta">
+          <div class="eyebrow" style="margin-bottom:4px">Boss-Übersicht</div>
+          <div style="font-size:20px;font-weight:800;letter-spacing:-.4px">${esc(b.n)}</div>
+          <div class="quick-tags">
+            ${b.check ? `<span class="qchip">Prio: <b>${esc(b.check)}</b></span>` : ''}
+            ${b.lust ? `<span class="qchip">Lust: <b>${esc(b.lust)}</b></span>` : ''}
+          </div>
         </div>
-      ` : ''}
+      </div>
 
       <div class="bintro">${esc(b.intro)}</div>
 
@@ -928,6 +988,7 @@ function applyData(d, c){
       st: b.status || "open",
       role: b.rolle || "",
       slug: b.slug || "",
+      image: b.image || "",
       check: b.check || "",
       lust: b.lust || "",
       intro: b.intro || "",
