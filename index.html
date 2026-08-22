@@ -101,50 +101,49 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 
 .tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .tile{display:block;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
-.tile:hover{border-color:var(--line2);background:var(--panel2);transform:translateY(-2px)}
+.tile:hover{border-color:var(--line2);background:var(--panel2)}
 .tile .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--panel3);border:1px solid var(--line2);font-size:16px;margin-bottom:12px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
-/* ---------- Boss Accordion & MythicTrap Videos ---------- */
-.boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:10px;overflow:hidden;transition:.16s}
+/* ---------- RaidStrats Style Boss Cards ---------- */
+.boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:12px;overflow:hidden;transition:.16s}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
-.bhead{display:flex;align-items:center;gap:14px;padding:15px 18px;width:100%}
-.bnum{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;font-family:var(--mono);font-size:12px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx3)}
+.bhead{display:flex;align-items:center;gap:14px;padding:16px 20px;width:100%}
+.bnum{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;font-family:var(--mono);font-size:12.5px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx3)}
 .boss.open .bnum{background:var(--amber-bg);border-color:rgba(234,181,78,.3);color:var(--amber)}
 .bname{flex:1;min-width:0}
-.bname b{display:block;font-size:15px;font-weight:650;letter-spacing:-.2px}
+.bname b{display:block;font-size:15.5px;font-weight:650;letter-spacing:-.2px}
 .bname span{display:block;font-size:12.5px;color:var(--tx3)}
 .chev{color:var(--tx3);transition:.2s;flex-shrink:0}
 .boss.open .chev{transform:rotate(180deg)}
-.bbody{display:none;padding:6px 20px 20px 62px}
+.bbody{display:none;padding:6px 22px 24px 66px}
 .boss.open .bbody{display:block}
-.bintro{font-size:13.5px;color:var(--tx2);padding:12px 15px;background:rgba(255,255,255,.022);border-left:2px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:16px}
-.blabel{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--tx3);font-weight:700;margin:16px 0 10px}
+.bintro{font-size:13.5px;color:var(--tx2);padding:12px 16px;background:rgba(255,255,255,.022);border-left:3px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:18px}
 
-/* Mechaniken Video Cards */
-.mech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:12px 0 18px}
-.mech-card{background:var(--panel3);border:1px solid var(--line2);border-radius:11px;overflow:hidden;display:flex;flex-direction:column}
-.mech-vid-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#0a0c10;overflow:hidden}
-.mech-vid{width:100%;height:100%;object-fit:cover;display:block}
-.mech-body{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
-.mech-title{font-size:13.5px;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:8px}
-.mech-desc{font-size:12.5px;color:var(--tx2);line-height:1.5}
+.phase-block{margin-bottom:18px;background:var(--panel3);border:1px solid var(--line);border-radius:11px;overflow:hidden}
+.phase-h{padding:10px 14px;background:#161a24;border-bottom:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.phase-h b{font-size:13px;letter-spacing:.3px}
+.phase-h span{font-size:12px;color:var(--tx3)}
+.phase-body{padding:12px 14px;display:flex;flex-direction:column;gap:8px}
 
-.steps{list-style:none;display:flex;flex-direction:column;gap:9px}
-.step{display:flex;gap:11px;align-items:flex-start}
-.rtag{flex-shrink:0;width:60px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.5px;padding:3px 0;border-radius:6px;margin-top:2px;text-transform:uppercase}
-.r-alle{background:var(--panel3);color:var(--tx3);border:1px solid var(--line2)}
+.strat-card{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border-radius:8px;background:#13161f;border:1px solid var(--line)}
+.strat-card.warn{border-color:rgba(226,107,107,.25);background:rgba(226,107,107,.05)}
+.strat-card.prio{border-color:rgba(234,181,78,.25);background:rgba(234,181,78,.05)}
+.rtag{flex-shrink:0;width:58px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.4px;padding:3px 0;border-radius:6px;margin-top:2px;text-transform:uppercase}
+.r-alle{background:var(--panel2);color:var(--tx3);border:1px solid var(--line2)}
 .r-tanks{background:var(--blue-bg);color:var(--blue);border:1px solid rgba(107,156,232,.28)}
 .r-heiler{background:var(--green-bg);color:var(--green);border:1px solid rgba(94,196,143,.28)}
 .r-dps{background:var(--amber-bg);color:var(--amber);border:1px solid rgba(234,181,78,.28)}
-.step p{font-size:13.5px;color:var(--tx2);line-height:1.55}
+.strat-card p{font-size:13px;color:var(--tx2);line-height:1.5}
+
 .abils{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .abil{font-size:11.5px;padding:3px 9px;border-radius:7px;background:#1a1f29;border:1px solid var(--line);color:var(--tx3);font-family:var(--mono)}
 .links{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
 .lchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;padding:7px 12px;border-radius:9px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
 .lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
 
+/* ---------- Tracker & Tables ---------- */
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
 table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:680px}
 table.trk th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700;padding:12px 11px;border-bottom:1px solid var(--line2);white-space:nowrap;cursor:pointer;user-select:none}
@@ -172,6 +171,7 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .rank .vl{font-family:var(--mono);font-size:12.5px;color:var(--tx);flex-shrink:0}
 .rank.top .pos{color:var(--amber);font-weight:700}
 
+/* ---------- Signups ---------- */
 .sig-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--line)}
 .sig-counts{display:flex;gap:8px;flex-wrap:wrap}
 .cnt{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 9px;border-radius:8px;border:1px solid}
@@ -187,6 +187,7 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .sig-p .n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .sig-p .s{font-size:10px;color:var(--tx3);flex-shrink:0}
 
+/* ---------- Log Card & VIP Parses ---------- */
 .logcard{border:1px solid var(--line2);border-radius:14px;overflow:hidden;background:linear-gradient(140deg,#181c26,#101319);display:flex;flex-direction:column;justify-content:space-between;height:100%}
 .logcard-t{padding:18px 20px;border-bottom:1px solid var(--line)}
 .logcard-b{padding:16px 20px;background:rgba(0,0,0,.15);flex:1}
@@ -202,6 +203,7 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .parse .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .parse .mt{font-size:11.5px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
 
+/* ---------- Roster ---------- */
 .rcards{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .rcard{display:flex;gap:14px;padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s;align-items:center}
 .rcard:hover{border-color:var(--line2);background:var(--panel2)}
@@ -555,7 +557,7 @@ raid(){
   return `
   <div class="page-h fade">
     <h1>${esc(r.name)}</h1>
-    <p>${esc(r.en)} · ${r.bosses} Bosse · ${esc(r.zone)} · Alle Ansagen & animierte Kurzclips nach Mechanik.</p>
+    <p>${esc(r.en)} · ${r.bosses} Bosse · Phasen, Rollen-Aufteilung & Taktik-Prioritäten.</p>
   </div>
   <div class="fade">
   ${BOSSES.map((b,i)=>{const s=ST[b.st]||ST.open;return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
@@ -568,33 +570,29 @@ raid(){
     <div class="bbody">
       <div class="bintro">${esc(b.intro)}</div>
       
-      ${b.mechaniken && b.mechaniken.length ? `
-        <div class="blabel">Mechaniken im Detail (Video-Guides)</div>
-        <div class="mech-grid">
-          ${b.mechaniken.map(m=>`<div class="mech-card">
-            <div class="mech-vid-wrap">
-              <video src="${m.videoUrl}" autoplay loop muted playsinline referrerpolicy="no-referrer" class="mech-vid"></video>
-            </div>
-            <div class="mech-body">
-              <div class="mech-title">
-                <b>${esc(m.titel)}</b>
-                <span class="rtag r-${(m.rolle||'alle').toLowerCase()}">${esc(m.rolle||'Alle')}</span>
+      ${(b.phasen && b.phasen.length ? b.phasen : [{titel:"Raid-Ansagen", uebersicht:"Wichtigste Aufgaben", regeln:(b.pts||[]).map(([ro,tx])=>({rolle:ro,typ:"info",text:tx}))}]).map(ph=>`
+        <div class="phase-block">
+          <div class="phase-h">
+            <b>${esc(ph.titel)}</b>
+            <span>${esc(ph.uebersicht||'')}</span>
+          </div>
+          <div class="phase-body">
+            ${(ph.regeln||[]).map(rg=>`
+              <div class="strat-card ${rg.typ||'info'}">
+                <span class="rtag r-${(rg.rolle||'alle').toLowerCase()}">${esc(rg.rolle||'Alle')}</span>
+                <p>${esc(rg.text)}</p>
               </div>
-              <p class="mech-desc">${esc(m.text)}</p>
-            </div>
-          </div>`).join("")}
+            `).join("")}
+          </div>
         </div>
-      ` : ''}
+      `).join("")}
 
-      <div class="blabel">Ansagen im Raid</div>
-      <ul class="steps">${(b.pts||[]).map(([ro,tx])=>`<li class="step"><span class="rtag r-${ro.toLowerCase()}">${ro}</span><p>${tx}</p></li>`).join("")}</ul>
-      
       <div class="blabel">Fähigkeiten</div>
-      <div class="abils">${(b.abil||[]).map(a=>`<span class="abil">${esc(a)}</span>`).join("")}</div>
+      <div class="abils">${(b.faehigkeiten||b.abil||[]).map(a=>`<span class="abil">${esc(a)}</span>`).join("")}</div>
       
       <div class="links">
         ${ext(WH(b.slug),"Wowhead-Guide (DE)")}
-        ${ext(`https://www.mythictrap.com/de/venomous-abyss/${b.slug}`,"MythicTrap Guide ↗")}
+        ${ext(`https://raidstrats.gg/guides/${b.slug}/heroic/phase/quick-overview`,"RaidStrats ↗")}
         ${ext(G.links.wcl,"Warcraft Logs")}
       </div>
     </div></div>`;}).join("")}
@@ -801,9 +799,10 @@ function applyData(d, c){
   if(c?.bosses?.bosses?.length){
     BOSSES = c.bosses.bosses.map(b => ({
       n:b.name, en:b.nameEn||"", st:b.status||"open", role:b.rolle||"", slug:b.slug||"",
-      intro:b.intro||"", pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
-      mechaniken:b.mechaniken || [],
-      abil:b.faehigkeiten||[]
+      intro:b.intro||"",
+      phasen:b.phasen || [],
+      pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
+      faehigkeiten:b.faehigkeiten || b.faehigkeiten || []
     }));
   }
 
@@ -917,8 +916,7 @@ let INDEX = [];
 function buildIndex(){
   INDEX = [
     ...BOSSES.flatMap((b,i) => [
-      {i:"🎯", t:b.n, s:`Boss ${i+1} · ${b.role}`, c:"Boss", h:"#/raid", k:`${b.n} ${b.en} boss`},
-      ...(b.pts||[]).map(([r,tx]) => ({i:"📝", t:tx, s:`${r} — ${b.n}`, c:"Taktik", h:"#/raid", k:`${tx} ${b.n}`}))
+      {i:"🎯", t:b.n, s:`Boss ${i+1} · ${b.role}`, c:"Boss", h:"#/raid", k:`${b.n} ${b.en} boss`}
     ]),
     ...KADER.map(p => ({i:"👤", t:p.n, s:`${p.c} · ${p.r}`, c:"Kader", h:"#/roster", k:`${p.n} ${p.c} ${p.r} raider`})),
     ...KB.map(k => ({i:k.i, t:k.t, s:k.d, c:"Wissen", h:"#/wissen", k:`${k.t} ${k.d}`}))
