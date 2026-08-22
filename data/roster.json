@@ -7,8 +7,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 294,
-      "mplus": 1569,
-      "weeklyRuns": 7,
+      "mplus": 1655,
+      "weeklyRuns": 8,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
@@ -19,8 +19,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 287,
-      "mplus": 0,
-      "weeklyRuns": 0,
+      "mplus": 259,
+      "weeklyRuns": 1,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -30,9 +30,9 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 296,
-      "mplus": 942,
-      "weeklyRuns": 4,
+      "ilvl": 297,
+      "mplus": 1201,
+      "weeklyRuns": 5,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
@@ -66,9 +66,9 @@
       "class": "Priest",
       "spec": "Shadow",
       "role": "DPS",
-      "ilvl": 291,
-      "mplus": 566,
-      "weeklyRuns": 2,
+      "ilvl": 292,
+      "mplus": 836,
+      "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
     },
@@ -90,8 +90,8 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 297,
-      "mplus": 2113,
+      "ilvl": 298,
+      "mplus": 2203,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -139,7 +139,7 @@
       "spec": "Discipline",
       "role": "HEALING",
       "ilvl": 298,
-      "mplus": 2435,
+      "mplus": 2439,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -151,8 +151,8 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 296,
-      "mplus": 1762,
-      "weeklyRuns": 9,
+      "mplus": 1848,
+      "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
     },
@@ -174,8 +174,8 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 297,
-      "mplus": 2197,
+      "ilvl": 298,
+      "mplus": 2202,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -198,8 +198,8 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 304,
-      "mplus": 2552,
+      "ilvl": 303,
+      "mplus": 2557,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -234,9 +234,9 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 294,
-      "mplus": 1542,
-      "weeklyRuns": 6,
+      "ilvl": 295,
+      "mplus": 1566,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
     },
@@ -271,7 +271,7 @@
       "spec": "Affliction",
       "role": "DPS",
       "ilvl": 308,
-      "mplus": 2816,
+      "mplus": 2839,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
@@ -313,12 +313,12 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 295,
+      "ilvl": 296,
       "mplus": 2257,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T13:35:04.014Z"
+  "updatedAt": "2026-08-22T14:45:17.186Z"
 }
