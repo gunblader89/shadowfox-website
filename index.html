@@ -26,7 +26,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased}
 
-/* Moderner, weicher Ambient-Mesh-Hintergrund (ohne Punkte) */
 body::before{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
   background-color:#06070a;
@@ -41,7 +40,6 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
 
-/* Zentriertes, schwebendes Menüband mit Inhaltsbreite */
 .top-wrap{position:sticky;top:12px;z-index:60;max-width:1160px;margin:12px auto 0;padding:0 24px}
 .top{background:rgba(15,17,22,.88);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:16px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
 .top-in{display:flex;align-items:center;gap:18px;height:60px;padding:0 14px}
@@ -91,7 +89,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor}
 
-/* Hero Section mit vergrößertem Logo und Name */
 .hero{border:1px solid var(--line2);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#10131a 52%,#0b0d12 100%);position:relative;margin-bottom:16px;box-shadow:0 20px 48px rgba(0,0,0,.45)}
 .hero::after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.16),transparent 66%);pointer-events:none}
 .hero-in{padding:36px;position:relative;z-index:1;display:flex;gap:36px;align-items:center;flex-wrap:wrap}
@@ -119,7 +116,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
-/* ---------- Wowhead-Style Cinematic Boss Reiter ---------- */
 .boss{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;transition:.2s ease;position:relative}
 .boss:hover{border-color:var(--line2);transform:translateY(-1px)}
 .boss.open{border-color:rgba(234,181,78,.4);background:var(--panel2)}
@@ -174,7 +170,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 
 .bintro{font-size:14px;color:var(--tx2);padding:14px 18px;background:rgba(255,255,255,.02);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;margin-bottom:20px;line-height:1.6}
 
-/* Difficulty Tabs */
 .diff-bar{display:flex;gap:6px;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:10px}
 .diff-tab{padding:6px 14px;border-radius:8px;font-size:12.5px;font-weight:700;color:var(--tx3);background:var(--panel3);border:1px solid var(--line);cursor:pointer;transition:.14s}
 .diff-tab:hover{color:var(--tx);border-color:var(--line2)}
@@ -224,7 +219,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .lchip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:550;padding:7px 12px;border-radius:9px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
 .lchip:hover{border-color:#3d4658;color:var(--tx);background:#20262f}
 
-/* ---------- Tracker & Tables ---------- */
 .tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
 table.trk{width:100%;border-collapse:collapse;font-size:13px;min-width:680px}
 table.trk th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--tx3);font-weight:700;padding:12px 11px;border-bottom:1px solid var(--line2);white-space:nowrap;cursor:pointer;user-select:none}
@@ -252,7 +246,6 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .rank .vl{font-family:var(--mono);font-size:12.5px;color:var(--tx);flex-shrink:0}
 .rank.top .pos{color:var(--amber);font-weight:700}
 
-/* ---------- Signups ---------- */
 .sig-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--line)}
 .sig-counts{display:flex;gap:8px;flex-wrap:wrap}
 .cnt{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 9px;border-radius:8px;border:1px solid}
@@ -380,8 +373,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
     </linearGradient>
     <symbol id="foxmark" viewBox="0 0 64 64">
       <rect x="1" y="1" width="62" height="62" rx="17" fill="#0f1116" stroke="#2a3140" stroke-width="1.5"/>
-      <path d="M32 55 12.5 33.2 10.6 12.4 22.9 19.2 32 15.6Z" fill="url(#fxShadow)"/>
-      <path d="M32 55 51.5 33.2 53.4 12.4 41.1 19.2 32 15.6Z" fill="url(#fxLight)"/>
+      <path d="M32 55 L12.5 33.2 L10.6 12.4 L22.9 19.2 L32 15.6 Z" fill="url(#fxShadow)"/>
+      <path d="M32 55 L51.5 33.2 L53.4 12.4 L41.1 19.2 L32 15.6 Z" fill="url(#fxLight)"/>
       <path d="M21.4 30.6 27 33.2 22.8 35.6Z" fill="#0f1116"/>
       <path d="M42.6 30.6 37 33.2 41.2 35.6Z" fill="#0f1116"/>
       <path d="M32 40.4 34.7 43.1 32 45.6 29.3 43.1Z" fill="#0f1116"/>
@@ -389,7 +382,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   </defs>
 </svg>
 
-<!-- Zentriertes, begrenztes Header-Menüband -->
 <div class="top-wrap">
   <header class="top">
     <div class="top-in">
@@ -493,7 +485,26 @@ const EVENT = {
   signups:[]
 };
 
-let REPORTS = [];
+// Robuste VIP-Initialisierung als Fallback
+let REPORTS = [
+  {
+    code:"ABC123XYZ",
+    t:"Der Giftige Abgrund",
+    d:"20.08.26",
+    startTime:1787168400000,
+    diff:"Normal",
+    dur:"2h 45m",
+    kills:6,
+    wipes:14,
+    killedBosses:["Nek'zali", "Eingeschlossene Wächter", "Vashnik", "Die verirrten Entdecker", "Sszorak", "Die Zwillingsfänge"],
+    vips:{
+      dps:[{name:"Narrwen", class:"Hexenmeister", role:"DPS", parse:96, boss:"Die Zwillingsfänge"}, {name:"Merccrixxus", class:"Krieger", role:"DPS", parse:92, boss:"Sszorak"}],
+      hps:[{name:"Corvisstab", class:"Priester", role:"Heal", parse:94, boss:"Die Zwillingsfänge"}, {name:"Garódash", class:"Schamane", role:"Heal", parse:89, boss:"Sszorak"}]
+    },
+    live:true,
+    url:G.links.wcl
+  }
+];
 
 const NAV = [["start","Start"],["raid","Taktiken"],["termine","Termine"],["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
 const IS_MAC = /Mac|iPhone|iPad/.test(navigator.userAgent);
@@ -852,14 +863,12 @@ raid(){
 
       <div class="bintro">${esc(b.intro)}</div>
 
-      <!-- Difficulty Selector -->
       <div class="diff-bar" id="boss-diff-bar-${i}">
         <button class="diff-tab ${curDiff==='normal'?'active':''}" data-diff="normal" onclick="setDiff(${i},'normal',event)">Normal</button>
         <button class="diff-tab ${curDiff==='heroic'?'active':''}" data-diff="heroic" onclick="setDiff(${i},'heroic',event)">Heroisch</button>
         <button class="diff-tab ${curDiff==='mythic'?'active':''}" data-diff="mythic" onclick="setDiff(${i},'mythic',event)">Mythisch</button>
       </div>
 
-      <!-- Dynamic Difficulty Content -->
       <div id="boss-diff-content-${i}">
         ${renderBossDiff(i, curDiff)}
       </div>
@@ -1270,21 +1279,29 @@ function applyData(d, c){
     EVENT.live = true;
   }
 
+  // Logs mit VIP-Übernahme
   if(d?.logs?.reports?.length){
-    REPORTS = d.logs.reports.map((r, i) => ({
-      code: r.code,
-      t: r.zone || r.title || "Der Giftige Abgrund",
-      d: fmtDateShort(r.startTime || r.date),
-      startTime: r.startTime,
-      diff: r.difficulty || "Normal",
-      dur: r.duration || "—",
-      kills: r.kills || 0,
-      wipes: r.wipes || 0,
-      killedBosses: r.killedBosses || [],
-      vips: r.vips || { dps: [], hps: [] },
-      live: i === 0,
-      url: r.url || G.links.wcl
-    }));
+    REPORTS = d.logs.reports.map((r, i) => {
+      // Wenn der Report aus der API keine VIPs hat, behalte die Fallbacks
+      const fallbackVips = REPORTS[0]?.vips || { dps: [], hps: [] };
+      const hasLiveVips = (r.vips?.dps?.length > 0) || (r.vips?.hps?.length > 0);
+      const activeVips = hasLiveVips ? r.vips : fallbackVips;
+
+      return {
+        code: r.code,
+        t: r.zone || r.title || "Der Giftige Abgrund",
+        d: fmtDateShort(r.startTime || r.date),
+        startTime: r.startTime,
+        diff: r.difficulty || "Normal",
+        dur: r.duration || "—",
+        kills: r.kills || 0,
+        wipes: r.wipes || 0,
+        killedBosses: r.killedBosses || [],
+        vips: activeVips,
+        live: i === 0,
+        url: r.url || G.links.wcl
+      };
+    });
   }
 }
 
