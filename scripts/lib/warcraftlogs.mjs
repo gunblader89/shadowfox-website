@@ -94,10 +94,12 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     const durMs = Math.max(1000, (latest.endTime || 0) - (latest.startTime || 0));
 
     try {
+      // Getrennte Abfrage: DPS-Rankings vs. HPS-Rankings (metric: hps)
       const qParses = `query {
         reportData {
           report(code: "${latest.code}") {
-            rankings
+            dpsRankings: rankings(metric: dps)
+            hpsRankings: rankings(metric: hps)
             fights(killType: Kills) { name }
             dpsTable: table(dataType: DamageDone, startTime: 0, endTime: ${durMs})
             hpsTable: table(dataType: Healing, startTime: 0, endTime: ${durMs})
@@ -112,13 +114,14 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       });
 
       const reportData = pRes.data?.reportData?.report;
-      const rankData = reportData?.rankings?.data;
+      const dpsRankData = reportData?.dpsRankings?.data;
+      const hpsRankData = reportData?.hpsRankings?.data;
       let dpsList = [];
       let hpsList = [];
 
-      // 1. Aus Rankings-Daten extrahieren (echte Parses)
-      if (Array.isArray(rankData) && rankData.length > 0) {
-        for (const fight of rankData) {
+      // 1. DPS aus Schadens-Rankings
+      if (Array.isArray(dpsRankData) && dpsRankData.length > 0) {
+        for (const fight of dpsRankData) {
           const bossName = fight.encounter?.name || "Boss";
           for (const ch of fight.roles?.dps?.characters || []) {
             if (ch.name && ch.rankPercent != null) {
@@ -131,6 +134,13 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
               });
             }
           }
+        }
+      }
+
+      // 2. HPS aus echten Heilungs-Rankings (metric: hps)
+      if (Array.isArray(hpsRankData) && hpsRankData.length > 0) {
+        for (const fight of hpsRankData) {
+          const bossName = fight.encounter?.name || "Boss";
           for (const ch of fight.roles?.healers?.characters || []) {
             if (ch.name && ch.rankPercent != null) {
               hpsList.push({
@@ -169,7 +179,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
         const dpsEntries = reportData?.dpsTable?.data?.entries || [];
         for (const e of dpsEntries) {
           if (e.name && !topDps.some(x => x.name.toLowerCase() === e.name.toLowerCase())) {
-            topDps.push({ name: e.name, class: e.type, spec: "", parse: 90, boss: "Gesamtraid" });
+            topDps.push({ name: e.name, class: e.type, spec: "", parse: e.rankPercent ? Math.round(e.rankPercent) : 90, boss: "Gesamtraid" });
             if (topDps.length === 2) break;
           }
         }
@@ -178,7 +188,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
         const hpsEntries = reportData?.hpsTable?.data?.entries || [];
         for (const e of hpsEntries) {
           if (e.name && !topHps.some(x => x.name.toLowerCase() === e.name.toLowerCase())) {
-            topHps.push({ name: e.name, class: e.type, spec: "", parse: 92, boss: "Gesamtraid" });
+            topHps.push({ name: e.name, class: e.type, spec: "", parse: e.rankPercent ? Math.round(e.rankPercent) : 90, boss: "Gesamtraid" });
             if (topHps.length === 2) break;
           }
         }
