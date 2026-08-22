@@ -37,7 +37,7 @@
   "raidRankings": {
     "tier-mn-1": {
       "normal": {
-        "world": 12434,
+        "world": 12435,
         "region": 5499,
         "realm": 185
       },
@@ -88,9 +88,9 @@
     },
     "the-venomous-abyss": {
       "normal": {
-        "world": 6158,
-        "region": 2593,
-        "realm": 91
+        "world": 6813,
+        "region": 2729,
+        "realm": 100
       },
       "heroic": {
         "world": 0,
@@ -530,5 +530,5 @@
       "rank": 8
     }
   ],
-  "updatedAt": "2026-08-21T19:08:26.508Z"
+  "updatedAt": "2026-08-22T02:42:34.249Z"
 }

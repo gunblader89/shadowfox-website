@@ -139,8 +139,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 292,
-      "mplus": 981,
-      "weeklyRuns": 4,
+      "mplus": 1238,
+      "weeklyRuns": 5,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
     },
@@ -174,9 +174,9 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 294,
-      "mplus": 0,
-      "weeklyRuns": 0,
+      "ilvl": 295,
+      "mplus": 693,
+      "weeklyRuns": 5,
       "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/alexstrasza/Xsythia"
     },
@@ -223,7 +223,7 @@
       "spec": "Affliction",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2683,
+      "mplus": 2816,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
@@ -265,12 +265,12 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 292,
-      "mplus": 1696,
+      "ilvl": 296,
+      "mplus": 1699,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-21T19:08:48.159Z"
+  "updatedAt": "2026-08-22T02:42:56.265Z"
 }
