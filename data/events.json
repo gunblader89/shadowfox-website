@@ -11,7 +11,7 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 24,
+        "primary": 25,
         "tentative": 0,
         "bench": 0,
         "absence": 1,
@@ -199,6 +199,15 @@
           "signedUpAt": 1787320874
         },
         {
+          "name": "Davor/Marv",
+          "userId": "311485565214261253",
+          "cls": "Melee",
+          "spec": "Survival",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787430677
+        },
+        {
           "name": "Sarah",
           "userId": "1021490102536511598",
           "cls": "Healer",
@@ -246,5 +255,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-22T18:55:25.065Z"
+  "updatedAt": "2026-08-22T22:20:55.560Z"
 }
