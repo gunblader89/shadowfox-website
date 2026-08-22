@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1160px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 
-/* Perfekt ausgerichtetes & überlappungsfreies Menüband */
+/* Kompaktes, überlappungsfreies Menüband */
 .top-wrap{position:sticky;top:10px;z-index:60;max-width:1160px;margin:10px auto 0;padding:0 20px}
 .top{background:rgba(15,17,22,.92);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
 .top-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 12px}
@@ -153,6 +153,49 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 
 .bintro{font-size:14px;color:var(--tx2);padding:14px 18px;background:rgba(255,255,255,.02);border-left:3px solid var(--amber);border-radius:0 10px 10px 0;margin-bottom:20px;line-height:1.6}
 
+/* Difficulty Tabs */
+.diff-bar{display:flex;gap:6px;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.diff-tab{padding:6px 14px;border-radius:8px;font-size:12.5px;font-weight:700;color:var(--tx3);background:var(--panel3);border:1px solid var(--line);cursor:pointer;transition:.14s}
+.diff-tab:hover{color:var(--tx);border-color:var(--line2)}
+.diff-tab.active{color:#1a1305;background:var(--amber);border-color:var(--amber)}
+
+.roles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px}
+.role-box{background:var(--panel3);border:1px solid var(--line2);border-radius:11px;padding:14px 16px}
+.role-box-h{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.role-box ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.role-box li{font-size:13px;color:var(--tx2);line-height:1.5;position:relative;padding-left:14px}
+.role-box li::before{content:"•";position:absolute;left:0;color:var(--tx3)}
+
+.phase-card{background:#0e1118;border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden}
+.phase-card-h{padding:12px 16px;background:#141720;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.phase-card-h b{font-size:14px;font-weight:700}
+.phase-card-h span{font-size:12.5px;color:var(--tx3)}
+.phase-card-b{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+
+.mech-card{background:var(--panel2);border:1px solid var(--line2);border-radius:9px;padding:12px 14px}
+.mech-card-t{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.mech-card-t b{font-size:13.5px;color:var(--tx)}
+.mech-card-desc{font-size:13px;color:var(--tx2);margin-bottom:6px;line-height:1.5}
+.mech-card-sol{font-size:12.5px;color:#9cdba8;background:rgba(94,196,143,.08);padding:6px 10px;border-radius:6px;border-left:2px solid var(--green)}
+
+.hazard-box{background:rgba(226,107,107,.06);border:1px solid rgba(226,107,107,.25);border-radius:11px;padding:14px 16px;margin:20px 0}
+.hazard-box h4{font-size:12.5px;text-transform:uppercase;letter-spacing:1px;color:var(--red);font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.hazard-box ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.hazard-box li{font-size:13px;color:var(--tx2);line-height:1.5;padding-left:14px;position:relative}
+.hazard-box li::before{content:"✕";position:absolute;left:0;color:var(--red);font-size:11px}
+
+.rtag{flex-shrink:0;width:58px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.4px;padding:3px 0;border-radius:6px;text-transform:uppercase}
+.r-alle{background:var(--panel2);color:var(--tx3);border:1px solid var(--line2)}
+.r-tanks{background:var(--blue-bg);color:var(--blue);border:1px solid rgba(107,156,232,.28)}
+.r-heiler{background:var(--green-bg);color:var(--green);border:1px solid rgba(94,196,143,.28)}
+.r-dps,.r-melee{background:var(--amber-bg);color:var(--amber);border:1px solid rgba(234,181,78,.28)}
+.r-ranged{background:var(--violet-bg);color:var(--violet);border:1px solid rgba(143,124,232,.28)}
+
+.tag-toedlich{color:#ff6b6b;background:rgba(226,107,107,.15);border:1px solid rgba(226,107,107,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+.tag-prio{color:#f5cd72;background:rgba(234,181,78,.15);border:1px solid rgba(234,181,78,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+.tag-heilung{color:#5ec48f;background:rgba(94,196,143,.15);border:1px solid rgba(94,196,143,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+.tag-mechanik{color:#6b9ce8;background:rgba(107,156,232,.15);border:1px solid rgba(107,156,232,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
+
 /* M+ Specific Dungeon Grid & Tabs */
 .d-selector{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-bottom:24px}
 .d-btn{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;background:var(--panel);border:1px solid var(--line);transition:.16s;cursor:pointer}
@@ -171,13 +214,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .badge-stop{color:#f5cd72;background:rgba(234,181,78,.15);border:1px solid rgba(234,181,78,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
 .badge-dispel{color:#5ec48f;background:rgba(94,196,143,.15);border:1px solid rgba(94,196,143,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
 .badge-frontal{color:#6b9ce8;background:rgba(107,156,232,.15);border:1px solid rgba(107,156,232,.35);padding:2px 7px;border-radius:5px;font-size:10px;font-weight:700;text-transform:uppercase}
-
-.roles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px}
-.role-box{background:var(--panel3);border:1px solid var(--line2);border-radius:11px;padding:14px 16px}
-.role-box-h{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--line)}
-.role-box ul{list-style:none;display:flex;flex-direction:column;gap:7px}
-.role-box li{font-size:13px;color:var(--tx2);line-height:1.5;position:relative;padding-left:14px}
-.role-box li::before{content:"•";position:absolute;left:0;color:var(--tx3)}
 
 .abils{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .abil{font-size:12px;padding:4px 10px;border-radius:7px;background:#1a1f29;border:1px solid var(--line2);color:var(--tx2);transition:.14s}
@@ -455,7 +491,6 @@ const EVENT = {
 
 let REPORTS = [];
 
-// Schlanke & übersichtliche Menü-Labels
 const NAV = [
   ["start","Start"],
   ["raid","Raid"],
@@ -673,6 +708,80 @@ function signupBlock(){
   </div>`;
 }
 
+function renderBossDiff(bIndex, diffKey) {
+  const b = BOSSES[bIndex];
+  if (!b) return "";
+  const d = (b.difficulties && b.difficulties[diffKey]) ? b.difficulties[diffKey] : (b.difficulties?.normal || b);
+  
+  const rollen = d.rollen || b.rollen || d.roles || b.roles;
+  const phasen = d.phasen || b.phasen || [];
+
+  return `
+    ${rollen ? `
+      <div class="eyebrow" style="margin-bottom:12px">Rollen-Zuweisung & Aufgaben (${diffKey.toUpperCase()})</div>
+      <div class="roles-grid">
+        <div class="role-box" style="border-top:3px solid var(--blue)">
+          <div class="role-box-h" style="color:var(--blue)">🛡️ Tanks</div>
+          <ul>${(rollen.tanks||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+        <div class="role-box" style="border-top:3px solid var(--green)">
+          <div class="role-box-h" style="color:var(--green)">💚 Heiler</div>
+          <ul>${(rollen.heiler||rollen.healers||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+        <div class="role-box" style="border-top:3px solid var(--amber)">
+          <div class="role-box-h" style="color:var(--amber)">⚔️ Nahkämpfer (Melee)</div>
+          <ul>${(rollen.melee||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+        <div class="role-box" style="border-top:3px solid var(--violet)">
+          <div class="role-box-h" style="color:var(--violet)">🏹 Fernkämpfer (Ranged)</div>
+          <ul>${(rollen.ranged||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
+        </div>
+      </div>
+    ` : ''}
+
+    ${phasen.length ? `
+      <div class="eyebrow" style="margin:20px 0 12px">Phasen-Ablauf & Mechaniken (${diffKey.toUpperCase()})</div>
+      ${phasen.map(ph=>`
+        <div class="phase-card">
+          <div class="phase-card-h">
+            <b>${esc(ph.titel || ph.name || '')}</b>
+            <span>${esc(ph.uebersicht || ph.overview || '')}</span>
+          </div>
+          <div class="phase-card-b">
+            ${(ph.mechaniken || ph.mechanics || []).map(m=>`
+              <div class="mech-card">
+                <div class="mech-card-t">
+                  <b>${esc(m.name)}</b>
+                  <div style="display:flex;gap:6px;align-items:center">
+                    <span class="rtag r-${(m.ziel||'alle').toLowerCase()}">${esc(m.ziel||'Alle')}</span>
+                    <span class="tag-${m.stufe||'mechanik'}">${esc(m.stufe==='toedlich'?'TÖDLICH':m.stufe==='prio'?'PRIORITÄT':m.stufe==='heilung'?'HEILUNG':'MECHANIK')}</span>
+                  </div>
+                </div>
+                <div class="mech-card-desc">${esc(m.erklaerung || m.desc || '')}</div>
+                ${m.loesung || m.solution ? `<div class="mech-card-sol"><b>Lösung:</b> ${esc(m.loesung || m.solution)}</div>` : ''}
+              </div>
+            `).join("")}
+          </div>
+        </div>
+      `).join("")}
+    ` : ''}
+  `;
+}
+
+function setDiff(bIndex, diffKey, ev) {
+  if (ev) ev.stopPropagation();
+  ACTIVE_DIFF[bIndex] = diffKey;
+  const container = document.getElementById(`boss-diff-content-${bIndex}`);
+  if (container) {
+    container.innerHTML = renderBossDiff(bIndex, diffKey);
+  }
+  const bar = document.getElementById(`boss-diff-bar-${bIndex}`);
+  if (bar) {
+    bar.querySelectorAll(".diff-tab").forEach(t => t.classList.toggle("active", t.dataset.diff === diffKey));
+  }
+  if (window.$WowheadPower) window.$WowheadPower.refreshLinks();
+}
+
 function selectDungeon(idx) {
   SELECTED_DUNGEON_IDX = idx;
   route();
@@ -726,6 +835,7 @@ raid(){
   <div class="fade">
   ${BOSSES.map((b,i)=>{
     const s = ST[b.st] || ST.open;
+    const curDiff = ACTIVE_DIFF[i] || "normal";
     const bgImage = b.image || DEFAULT_ARTWORK;
 
     return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
@@ -749,25 +859,22 @@ raid(){
 
       <div class="bintro">${esc(b.intro)}</div>
 
-      ${b.roles ? `
-        <div class="eyebrow" style="margin-bottom:12px">Rollen-Zuweisung & Aufgaben</div>
-        <div class="roles-grid">
-          <div class="role-box" style="border-top:3px solid var(--blue)">
-            <div class="role-box-h" style="color:var(--blue)">🛡️ Tanks</div>
-            <ul>${(b.roles.tanks||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
-          </div>
-          <div class="role-box" style="border-top:3px solid var(--green)">
-            <div class="role-box-h" style="color:var(--green)">💚 Heiler</div>
-            <ul>${(b.roles.heiler||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
-          </div>
-          <div class="role-box" style="border-top:3px solid var(--amber)">
-            <div class="role-box-h" style="color:var(--amber)">⚔️ Nahkämpfer (Melee)</div>
-            <ul>${(b.roles.melee||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
-          </div>
-          <div class="role-box" style="border-top:3px solid var(--violet)">
-            <div class="role-box-h" style="color:var(--violet)">🏹 Fernkämpfer (Ranged)</div>
-            <ul>${(b.roles.ranged||[]).map(t=>`<li>${esc(t)}</li>`).join("")}</ul>
-          </div>
+      <!-- Difficulty Selector -->
+      <div class="diff-bar" id="boss-diff-bar-${i}">
+        <button class="diff-tab ${curDiff==='normal'?'active':''}" data-diff="normal" onclick="setDiff(${i},'normal',event)">Normal</button>
+        <button class="diff-tab ${curDiff==='heroic'?'active':''}" data-diff="heroic" onclick="setDiff(${i},'heroic',event)">Heroisch</button>
+        <button class="diff-tab ${curDiff==='mythic'?'active':''}" data-diff="mythic" onclick="setDiff(${i},'mythic',event)">Mythisch</button>
+      </div>
+
+      <!-- Dynamic Difficulty Content -->
+      <div id="boss-diff-content-${i}">
+        ${renderBossDiff(i, curDiff)}
+      </div>
+
+      ${b.wipeGefahren && b.wipeGefahren.length ? `
+        <div class="hazard-box">
+          <h4>⚠️ Typische Wipe-Ursachen & Fehler</h4>
+          <ul>${b.wipeGefahren.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
         </div>
       ` : ''}
 
@@ -785,6 +892,7 @@ raid(){
       
       <div class="links" style="margin-top:18px">
         ${ext(WH(b.slug),"Wowhead-Guide (DE)")}
+        ${ext(`https://raidstrats.gg/guides/${b.slug}/heroic/phase/quick-overview`,"RaidStrats.gg ↗")}
         ${ext(G.links.wcl,"Warcraft Logs")}
       </div>
     </div></div>`;}).join("")}
@@ -1087,9 +1195,8 @@ bewerben(){
       <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
         <a class="btn btn-disc" style="padding:10px 18px;font-size:14px" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-          <span>Discord</span>
+          <span>Discord Server beitreten</span>
         </a>
-        <a class="btn btn-p" href="#/bewerben">Bewerben</a>
       </div>
     </div>
   </div>`;
@@ -1177,7 +1284,10 @@ function applyData(d, c){
       lust: b.lust || "",
       intro: b.intro || "",
       difficulties: b.difficulties || null,
+      rollen: b.rollen || null,
       roles: b.roles || b.rollen || null,
+      phasen: b.phasen || [],
+      wipeGefahren: b.wipeGefahren || [],
       faehigkeiten: b.faehigkeiten || b.abilities || []
     }));
   }
