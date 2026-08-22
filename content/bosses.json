@@ -388,7 +388,7 @@
       "status": "prog",
       "rolle": "Phasenwechsel & Fixate",
       "slug": "coiled-altar",
-      "intro": "TL;DR: Raidstrats Guide für den normalen Schwierigkeitsgrad von 'Der Gewundene Altar' in Zusammenarbeit mit Consequence (US).",
+      "intro": "TL;DR: Raidstrats Guide für alle Schwierigkeitsgrade von 'Der Gewundene Altar' in Zusammenarbeit mit Consequence (US).",
       "difficulties": {
         "normal": {
           "phasen": [
@@ -487,12 +487,72 @@
           ]
         },
         "heroic": {
-          "phasen": [],
-          "faehigkeiten": []
+          "phasen": [
+            {
+              "titel": "Schnellübersicht (Heroisch)",
+              "uebersicht": "Zusätzliche Mechaniken im heroischen Modus",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "warn",
+                  "text": "Neue Mechanik: Die Kugeln in Phase 1 hinterlassen nun eine Giftpfütze, wenn sie zerstört werden. Viel mehr Flächenschaden."
+                },
+                {
+                  "rolle": "Heiler",
+                  "typ": "info",
+                  "text": "Starker Raidschaden beim Phasenübergang. Cooldowns einteilen!"
+                }
+              ]
+            },
+            {
+              "titel": "Phase 1: Das Ritual",
+              "uebersicht": "Positionierung ist extrem wichtig",
+              "regeln": [
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Boss am Rand tanken und nach jedem Cleave weiterziehen, um Platz für die Giftpfützen zu machen."
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Fokus auf die Kugeln, aber achtet darauf, nicht im Gift zu stehen."
+                }
+              ]
+            }
+          ],
+          "faehigkeiten": [
+            "Guillotine",
+            "Sever",
+            "Giftige Sturzflut",
+            "Zermürbende Fixierung",
+            "Vereinte Windung",
+            "Toxische Eruption"
+          ]
         },
         "mythic": {
-          "phasen": [],
-          "faehigkeiten": []
+          "phasen": [
+            {
+              "titel": "Schnellübersicht (Mythisch)",
+              "uebersicht": "Mythische Exklusiv-Mechaniken",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "warn",
+                  "text": "Zusätzlich zu den Giftpfützen spawnen nun Adds aus zerstörten Kugeln, die sofort unterbrochen und getötet werden müssen."
+                }
+              ]
+            }
+          ],
+          "faehigkeiten": [
+            "Guillotine",
+            "Sever",
+            "Giftige Sturzflut",
+            "Zermürbende Fixierung",
+            "Vereinte Windung",
+            "Toxische Eruption",
+            "Erwachen der Brut"
+          ]
         }
       }
     },
