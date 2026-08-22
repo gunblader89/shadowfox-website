@@ -1,19 +1,6 @@
 {
   "characters": [
     {
-      "id": 4808362,
-      "name": "Hòbs",
-      "realm": "Blackmoore",
-      "cls": "Druid",
-      "role": "Ranged",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "580-176149888",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 4808364,
       "name": "Mercrixxus",
       "realm": "Blackhand",
@@ -53,19 +40,6 @@
       "wishlist": null
     },
     {
-      "id": 4828679,
-      "name": "Jisgarin",
-      "realm": "Blackmoore",
-      "cls": "Mage",
-      "role": "Ranged",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "580-170969231",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 4853408,
       "name": "Thessaly",
       "realm": "Blackmoore",
@@ -79,32 +53,6 @@
       "wishlist": null
     },
     {
-      "id": 4991307,
-      "name": "Sweetschi",
-      "realm": "Thrall",
-      "cls": "Mage",
-      "role": "Ranged",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "604-173636596",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 4829226,
-      "name": "Quon",
-      "realm": "Garrosh",
-      "cls": "Druid",
-      "role": "Tank",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "1401-181138428",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 4808370,
       "name": "Narrwên",
       "realm": "Blackmoore",
@@ -113,6 +61,162 @@
       "rank": "Main",
       "status": "tracking",
       "blizzardId": "580-180406904",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 18191086,
+      "name": "Yanalai",
+      "realm": "Blackhand",
+      "cls": "Priest",
+      "role": "Heal",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "566-118657090",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 3873028,
+      "name": "Hunterchaos",
+      "realm": "Blackmoore",
+      "cls": "Hunter",
+      "role": "Ranged",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "580-177199615",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 19997643,
+      "name": "Iojaru",
+      "realm": "Blackmoore",
+      "cls": "Demon Hunter",
+      "role": "Melee",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "580-123578353",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 5108291,
+      "name": "Scârlêtt",
+      "realm": "Blackmoore",
+      "cls": "Death Knight",
+      "role": "Melee",
+      "rank": "Main",
+      "status": "tracking",
+      "blizzardId": "580-168226990",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 18191088,
+      "name": "Hatto",
+      "realm": "Aegwynn",
+      "cls": "Hunter",
+      "role": "Ranged",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "577-121415745",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 4808363,
+      "name": "Miliim",
+      "realm": "Blackmoore",
+      "cls": "Demon Hunter",
+      "role": "Melee",
+      "rank": "Main",
+      "status": "tracking",
+      "blizzardId": "580-181166784",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 20032616,
+      "name": "Doktorpöbel",
+      "realm": "Dalvengyr",
+      "cls": "Priest",
+      "role": "Heal",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "1321-182719072",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 4150393,
+      "name": "Askái",
+      "realm": "Blackhand",
+      "cls": "Demon Hunter",
+      "role": "Melee",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "566-167888285",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 6832470,
+      "name": "Fruchtzwerg",
+      "realm": "Echsenkessel",
+      "cls": "Shaman",
+      "role": "Ranged",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "1612-174712460",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 18191153,
+      "name": "Kiraja",
+      "realm": "Garrosh",
+      "cls": "Demon Hunter",
+      "role": "Tank",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "1401-185748346",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 20363839,
+      "name": "Günndk",
+      "realm": "Thrall",
+      "cls": "Death Knight",
+      "role": "Melee",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "604-178962886",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 20021060,
+      "name": "Shylmagognar",
+      "realm": "Thrall",
+      "cls": "Paladin",
+      "role": "Melee",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "604-122135415",
       "ilvl": null,
       "vault": null,
       "wishlist": null
@@ -157,32 +261,6 @@
       "wishlist": null
     },
     {
-      "id": 5110234,
-      "name": "Sandino",
-      "realm": "Dalvengyr",
-      "cls": "Shaman",
-      "role": "Heal",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "1321-182835556",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 5121821,
-      "name": "Thorelion",
-      "realm": "Antonidas",
-      "cls": "Paladin",
-      "role": "Heal",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "564-170781572",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 5087860,
       "name": "Xsythia",
       "realm": "Alexstrasza",
@@ -196,19 +274,6 @@
       "wishlist": null
     },
     {
-      "id": 5030878,
-      "name": "Améthyst",
-      "realm": "Blackmoore",
-      "cls": "Paladin",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "580-184270428",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 4926517,
       "name": "Corvisstab",
       "realm": "Blackmoore",
@@ -217,19 +282,6 @@
       "rank": "Main",
       "status": "tracking",
       "blizzardId": "580-182661978",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 5015313,
-      "name": "Druith",
-      "realm": "Taerar",
-      "cls": "Druid",
-      "role": "Ranged",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "1320-169569214",
       "ilvl": null,
       "vault": null,
       "wishlist": null
@@ -365,18 +417,6 @@
         "selected_percentage": 0
       },
       {
-        "id": 5015313,
-        "name": "Druith",
-        "class": "Druid",
-        "role": "Ranged",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
         "id": 4926517,
         "name": "Corvisstab",
         "class": "Rogue",
@@ -389,45 +429,9 @@
         "selected_percentage": 0
       },
       {
-        "id": 5030878,
-        "name": "Améthyst",
-        "class": "Paladin",
-        "role": "Melee",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
         "id": 5087860,
         "name": "Xsythia",
         "class": "Priest",
-        "role": "Heal",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 5121821,
-        "name": "Thorelion",
-        "class": "Paladin",
-        "role": "Heal",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 5110234,
-        "name": "Sandino",
-        "class": "Shaman",
         "role": "Heal",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
@@ -473,10 +477,10 @@
         "selected_percentage": 0
       },
       {
-        "id": 4808370,
-        "name": "Narrwên",
-        "class": "Warlock",
-        "role": "Ranged",
+        "id": 20021060,
+        "name": "Shylmagognar",
+        "class": "Paladin",
+        "role": "Melee",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
         "attended_percentage": 0,
@@ -485,9 +489,21 @@
         "selected_percentage": 0
       },
       {
-        "id": 4829226,
-        "name": "Quon",
-        "class": "Druid",
+        "id": 20363839,
+        "name": "Günndk",
+        "class": "Death Knight",
+        "role": "Melee",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 18191153,
+        "name": "Kiraja",
+        "class": "Demon Hunter",
         "role": "Tank",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
@@ -497,9 +513,117 @@
         "selected_percentage": 0
       },
       {
-        "id": 4991307,
-        "name": "Sweetschi",
-        "class": "Mage",
+        "id": 6832470,
+        "name": "Fruchtzwerg",
+        "class": "Shaman",
+        "role": "Ranged",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 4150393,
+        "name": "Askái",
+        "class": "Demon Hunter",
+        "role": "Melee",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 20032616,
+        "name": "Doktorpöbel",
+        "class": "Priest",
+        "role": "Heal",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 4808363,
+        "name": "Miliim",
+        "class": "Demon Hunter",
+        "role": "Melee",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 18191088,
+        "name": "Hatto",
+        "class": "Hunter",
+        "role": "Ranged",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 5108291,
+        "name": "Scârlêtt",
+        "class": "Death Knight",
+        "role": "Melee",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 19997643,
+        "name": "Iojaru",
+        "class": "Demon Hunter",
+        "role": "Melee",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 3873028,
+        "name": "Hunterchaos",
+        "class": "Hunter",
+        "role": "Ranged",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 18191086,
+        "name": "Yanalai",
+        "class": "Priest",
+        "role": "Heal",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 4808370,
+        "name": "Narrwên",
+        "class": "Warlock",
         "role": "Ranged",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
@@ -513,18 +637,6 @@
         "name": "Thessaly",
         "class": "Rogue",
         "role": "Melee",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 4828679,
-        "name": "Jisgarin",
-        "class": "Mage",
-        "role": "Ranged",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
         "attended_percentage": 0,
@@ -567,20 +679,8 @@
         "selected_amount_of_encounters": null,
         "total_amount_of_encounters": null,
         "selected_percentage": 0
-      },
-      {
-        "id": 4808362,
-        "name": "Hòbs",
-        "class": "Druid",
-        "role": "Ranged",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
       }
     ]
   },
-  "updatedAt": "2026-08-22T12:50:21.177Z"
+  "updatedAt": "2026-08-22T13:34:31.582Z"
 }

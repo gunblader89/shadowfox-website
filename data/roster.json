@@ -1,26 +1,14 @@
 {
   "characters": [
     {
-      "name": "Hòbs",
-      "realm": "blackmoore",
-      "class": "Druid",
-      "spec": "Balance",
-      "role": "DPS",
-      "ilvl": 290,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/128/176149888-avatar.jpg?alt=/wow/static/images/2d/avatar/22-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Hòbs"
-    },
-    {
       "name": "Mercrixxus",
       "realm": "blackhand",
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 289,
-      "mplus": 1265,
-      "weeklyRuns": 6,
+      "ilvl": 294,
+      "mplus": 1569,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
@@ -49,18 +37,6 @@
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
     {
-      "name": "Jisgarin",
-      "realm": "blackmoore",
-      "class": "Mage",
-      "spec": "Frost",
-      "role": "DPS",
-      "ilvl": 289,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/143/170969231-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Jisgarin"
-    },
-    {
       "name": "Thessaly",
       "realm": "blackmoore",
       "class": "Rogue",
@@ -73,30 +49,6 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Thessaly"
     },
     {
-      "name": "Sweetschi",
-      "realm": "thrall",
-      "class": "Mage",
-      "spec": "Frost",
-      "role": "DPS",
-      "ilvl": 286,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/244/173636596-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/thrall/Sweetschi"
-    },
-    {
-      "name": "Quon",
-      "realm": "garrosh",
-      "class": "Druid",
-      "spec": "Guardian",
-      "role": "TANK",
-      "ilvl": 293,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/252/181138428-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/garrosh/Quon"
-    },
-    {
       "name": "Narrwên",
       "realm": "blackmoore",
       "class": "Warlock",
@@ -107,6 +59,150 @@
       "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
+    },
+    {
+      "name": "Yanalai",
+      "realm": "blackhand",
+      "class": "Priest",
+      "spec": "Shadow",
+      "role": "DPS",
+      "ilvl": 291,
+      "mplus": 566,
+      "weeklyRuns": 2,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
+    },
+    {
+      "name": "Hunterchaos",
+      "realm": "blackmoore",
+      "class": "Hunter",
+      "spec": "Beast Mastery",
+      "role": "DPS",
+      "ilvl": 268,
+      "mplus": 0,
+      "weeklyRuns": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
+    },
+    {
+      "name": "Iojaru",
+      "realm": "blackmoore",
+      "class": "Demon Hunter",
+      "spec": "Havoc",
+      "role": "DPS",
+      "ilvl": 297,
+      "mplus": 2113,
+      "weeklyRuns": 10,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
+    },
+    {
+      "name": "Scârlêtt",
+      "realm": "blackmoore",
+      "class": "Death Knight",
+      "spec": "Unholy",
+      "role": "DPS",
+      "ilvl": 303,
+      "mplus": 2552,
+      "weeklyRuns": 10,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
+    },
+    {
+      "name": "Hatto",
+      "realm": "aegwynn",
+      "class": "Hunter",
+      "spec": "Beast Mastery",
+      "role": "DPS",
+      "ilvl": 277,
+      "mplus": 508,
+      "weeklyRuns": 4,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
+    },
+    {
+      "name": "Miliim",
+      "realm": "blackmoore",
+      "class": "Demon Hunter",
+      "spec": "Havoc",
+      "role": "DPS",
+      "ilvl": 276,
+      "mplus": 0,
+      "weeklyRuns": 0,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
+    },
+    {
+      "name": "Doktorpöbel",
+      "realm": "dalvengyr",
+      "class": "Priest",
+      "spec": "Discipline",
+      "role": "HEALING",
+      "ilvl": 298,
+      "mplus": 2435,
+      "weeklyRuns": 10,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
+    },
+    {
+      "name": "Askái",
+      "realm": "blackhand",
+      "class": "Demon Hunter",
+      "spec": "Devourer",
+      "role": "DPS",
+      "ilvl": 296,
+      "mplus": 1762,
+      "weeklyRuns": 9,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
+    },
+    {
+      "name": "Fruchtzwerg",
+      "realm": "echsenkessel",
+      "class": "Shaman",
+      "spec": "Elemental",
+      "role": "DPS",
+      "ilvl": 298,
+      "mplus": 1882,
+      "weeklyRuns": 10,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
+    },
+    {
+      "name": "Kiraja",
+      "realm": "garrosh",
+      "class": "Demon Hunter",
+      "spec": "Vengeance",
+      "role": "TANK",
+      "ilvl": 297,
+      "mplus": 2197,
+      "weeklyRuns": 10,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
+    },
+    {
+      "name": "Günndk",
+      "realm": "thrall",
+      "class": "Death Knight",
+      "spec": "Unholy",
+      "role": "DPS",
+      "ilvl": 291,
+      "mplus": 791,
+      "weeklyRuns": 3,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/198/178962886-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Günndk"
+    },
+    {
+      "name": "Shylmagognar",
+      "realm": "thrall",
+      "class": "Paladin",
+      "spec": "Protection",
+      "role": "TANK",
+      "ilvl": 304,
+      "mplus": 2552,
+      "weeklyRuns": 10,
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
     {
       "name": "Pepelim",
@@ -138,35 +234,11 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 292,
-      "mplus": 1238,
-      "weeklyRuns": 5,
+      "ilvl": 294,
+      "mplus": 1542,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
-    },
-    {
-      "name": "Sandino",
-      "realm": "dalvengyr",
-      "class": "Shaman",
-      "spec": "Restoration",
-      "role": "HEALING",
-      "ilvl": 290,
-      "mplus": 322,
-      "weeklyRuns": 1,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/100/182835556-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/dalvengyr/Sandino"
-    },
-    {
-      "name": "Thorelion",
-      "realm": "antonidas",
-      "class": "Paladin",
-      "spec": "Holy",
-      "role": "HEALING",
-      "ilvl": 292,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/antonidas/132/170781572-avatar.jpg?alt=/wow/static/images/2d/avatar/30-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/antonidas/Thorelion"
     },
     {
       "name": "Xsythia",
@@ -181,18 +253,6 @@
       "profileUrl": "https://raider.io/characters/eu/alexstrasza/Xsythia"
     },
     {
-      "name": "Améthyst",
-      "realm": "blackmoore",
-      "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
-      "ilvl": 292,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/92/184270428-avatar.jpg?alt=/wow/static/images/2d/avatar/11-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Améthyst"
-    },
-    {
       "name": "Corvisstab",
       "realm": "blackmoore",
       "class": "Rogue",
@@ -203,18 +263,6 @@
       "weeklyRuns": 0,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/90/182661978-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
-    },
-    {
-      "name": "Druith",
-      "realm": "taerar",
-      "class": "Druid",
-      "spec": "Balance",
-      "role": "DPS",
-      "ilvl": 291,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/190/169569214-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/taerar/Druith"
     },
     {
       "name": "Toshichaos",
@@ -265,12 +313,12 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 296,
-      "mplus": 1960,
+      "ilvl": 295,
+      "mplus": 2257,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T12:50:42.529Z"
+  "updatedAt": "2026-08-22T13:35:04.014Z"
 }
