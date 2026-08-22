@@ -114,8 +114,8 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
 .bhead{display:flex;align-items:center;gap:14px;padding:14px 18px;width:100%}
 .bavatar-wrap{position:relative;width:44px;height:44px;flex-shrink:0}
-.bavatar{width:44px;height:44px;border-radius:10px;object-fit:cover;border:1px solid var(--line2);background:#171b24;display:block}
-.bnum-badge{position:absolute;bottom:-4px;right:-4px;width:18px;height:18px;border-radius:5px;background:#1a1f29;border:1px solid var(--line2);font-family:var(--mono);font-size:10.5px;font-weight:700;display:grid;place-items:center;color:var(--tx2)}
+.bavatar{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;background:#1a1f29;border:1px solid var(--line2);font-size:22px;user-select:none}
+.bnum-badge{position:absolute;bottom:-4px;right:-4px;width:18px;height:18px;border-radius:5px;background:#13161f;border:1px solid var(--line2);font-family:var(--mono);font-size:10.5px;font-weight:700;display:grid;place-items:center;color:var(--tx2)}
 .boss.open .bnum-badge{background:var(--amber);color:#1a1305;border-color:var(--amber)}
 .bname{flex:1;min-width:0}
 .bname b{display:block;font-size:16px;font-weight:700;letter-spacing:-.2px}
@@ -125,34 +125,23 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .bbody{display:none;padding:8px 24px 26px}
 .boss.open .bbody{display:block}
 
-/* Wowhead-Style Cinematic Hero Banner */
+/* Wowhead-Style Cinematic Banner */
 .boss-hero-banner{
   position:relative;
   border-radius:12px;
-  height:140px;
+  min-height:110px;
   overflow:hidden;
   margin-bottom:18px;
   border:1px solid var(--line2);
   display:flex;
   align-items:center;
-  background:linear-gradient(90deg, #11141b 0%, #171b24 50%, #0d0f14 100%);
-}
-.boss-hero-img{
-  position:absolute;
-  right:0;
-  top:0;
-  height:100%;
-  width:62%;
-  object-fit:cover;
-  object-position:right center;
-  mask-image:linear-gradient(to right, transparent 0%, black 50%);
-  -webkit-mask-image:linear-gradient(to right, transparent 0%, black 50%);
+  background:linear-gradient(135deg, #171b26 0%, #101319 60%, #0d0f14 100%);
+  padding:18px 22px;
 }
 .boss-hero-meta{
   position:relative;
   z-index:2;
-  padding:18px 22px;
-  max-width:60%;
+  width:100%;
 }
 .boss-hero-meta .quick-tags{
   display:flex;
@@ -161,8 +150,8 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
   margin-top:8px;
 }
 .boss-hero-meta .qchip{
-  font-size:11.5px;
-  padding:3px 9px;
+  font-size:12px;
+  padding:4px 10px;
   border-radius:6px;
   background:rgba(8,9,13,.75);
   backdrop-filter:blur(8px);
@@ -187,7 +176,7 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .role-box li::before{content:"•";position:absolute;left:0;color:var(--tx3)}
 
 .phase-card{background:#11141b;border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden}
-.phase-card-h{padding:12px 16px;background:#161922;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.phase-card-h{padding:12px 16px;background:#161922;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:gap;gap:8px}
 .phase-card-h b{font-size:14px;font-weight:700}
 .phase-card-h span{font-size:12.5px;color:var(--tx3)}
 .phase-card-b{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
@@ -342,7 +331,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   .sbtn span{display:none}
   .clsrow .n{width:92px;font-size:12px}
   .sig-grid{grid-template-columns:1fr}
-  .boss-hero-banner{height:auto;min-height:120px}
   .boss-hero-meta{max-width:100%}
 }
 </style>
@@ -425,7 +413,6 @@ const G = {
 
 const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
 
-let BOSSES = [];
 let ACTIVE_DIFF = {};
 
 const CLASSES = [
@@ -435,20 +422,101 @@ const CLASSES = [
   ["Schurke",8,"#FFF468"],["Jäger",8,"#AAD372"],["Schamane",7,"#0070DD"],["Rufer",4,"#33937F"]
 ];
 
-let KB = [];
-let KADER = [];
+let KB = [
+  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. 19:40 im Voice, repariert und voll verzaubert.",tags:["Pflicht","Raid"]},
+  {i:"💰",t:"Loot-Regelung",d:"Wie Beute verteilt wird, wie Trials behandelt werden und wie Wünsche für den Progress angemeldet werden.",tags:["Loot","Trial"]},
+  {i:"🧩",t:"Addons & WeakAuras",d:"Pflicht-Addons und das aktuelle WeakAura-Paket für Der Giftige Abgrund inklusive Import-Strings.",tags:["Setup","Pflicht"]},
+  {i:"🧪",t:"Konsumierbare",d:"Was jeder selbst mitbringt, was die Gildenbank stellt, Flask- und Food-Empfehlungen pro Rolle.",tags:["Konsum","Bank"]},
+  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen rechtzeitig über Raid-Helper im Discord eintragen. Mo & Do sind die festen Raidtage.",tags:["Signup"]},
+  {i:"🌱",t:"Onboarding für Neue",d:"Deine ersten zwei Wochen bei ShadowFox: was du liest, wen du ansprichst, wie der Trial läuft.",tags:["Neue","Trial"]},
+  {i:"🎧",t:"Voice-Etikette",d:"Während Pulls sprechen nur Raidlead und Callouts. Diskussion in den Pausen. Push-to-Talk Pflicht.",tags:["Discord"]},
+  {i:"🔧",t:"Char-Vorbereitung",d:"Wöchentliche Checkliste vor dem Reset: M+-Runs, Great Vault, Sockel, Verzauberungen und Vantus-Runen.",tags:["Gear","Wöchentlich"]}
+];
+
+// Robuste Default-Kader-Daten als Fallback
+let KADER = [
+  {n:"Quon", c:"Druide", r:"Tank", spec:"Guardian", ilvl:293, mp:0, mr:0, v:0, thumb:null},
+  {n:"Kitebrew", c:"Mönch", r:"Tank", spec:"Brewmaster", ilvl:292, mp:981, mr:4, v:2, thumb:null},
+  {n:"Garódash", c:"Schamane", r:"Heal", spec:"Restoration", ilvl:287, mp:0, mr:0, v:0, thumb:null},
+  {n:"Jisgarin", c:"Paladin", r:"Heal", spec:"Holy", ilvl:289, mp:450, mr:2, v:1, thumb:null},
+  {n:"Sweetschi", c:"Mönch", r:"Heal", spec:"Mistweaver", ilvl:288, mp:320, mr:1, v:1, thumb:null},
+  {n:"Corvisstab", c:"Priester", r:"Heal", spec:"Holy", ilvl:291, mp:810, mr:4, v:2, thumb:null},
+  {n:"Sandino", c:"Priester", r:"Heal", spec:"Discipline", ilvl:290, mp:322, mr:1, v:1, thumb:null},
+  {n:"Tankoderdd", c:"Paladin", r:"Melee", spec:"Retribution", ilvl:294, mp:1250, mr:5, v:2, thumb:null},
+  {n:"Merccrixxus", c:"Krieger", r:"Melee", spec:"Fury", ilvl:295, mp:1400, mr:8, v:3, thumb:null},
+  {n:"Thessaly", c:"Dämonenjäger", r:"Melee", spec:"Havoc", ilvl:293, mp:1100, mr:4, v:2, thumb:null},
+  {n:"Amethyst", c:"Paladin", r:"Melee", spec:"Retribution", ilvl:290, mp:600, mr:2, v:1, thumb:null},
+  {n:"Günni", c:"Todesritter", r:"Melee", spec:"Unholy", ilvl:288, mp:400, mr:1, v:1, thumb:null},
+  {n:"Feiree", c:"Rufer", r:"Ranged", spec:"Devastation", ilvl:292, mp:950, mr:4, v:2, thumb:null},
+  {n:"Askái", c:"Rufer", r:"Ranged", spec:"Augmentation", ilvl:293, mp:1050, mr:4, v:2, thumb:null},
+  {n:"Chantallè", c:"Jäger", r:"Ranged", spec:"Beastmastery", ilvl:291, mp:880, mr:3, v:1, thumb:null},
+  {n:"Tiskarian", c:"Druide", r:"Ranged", spec:"Balance", ilvl:290, mp:750, mr:3, v:1, thumb:null},
+  {n:"Hobs", c:"Jäger", r:"Ranged", spec:"Beastmastery", ilvl:289, mp:500, mr:2, v:1, thumb:null},
+  {n:"Fruchtzwerg", c:"Schamane", r:"Ranged", spec:"Elemental", ilvl:292, mp:1120, mr:5, v:2, thumb:null},
+  {n:"Narrwen", c:"Hexenmeister", r:"Ranged", spec:"Demonology", ilvl:294, mp:1350, mr:8, v:3, thumb:null}
+];
+
+let BOSSES = [
+  {n:"Nek'zali die Seelenwinderin", en:"Nek'zali the Soulcoiler", st:"down", role:"Add-Kontrolle & Brunnen", slug:"nekzali-the-soulcoiler", icon:"🧙‍♀️", check:"Add-Kontrolle & Physischer Burst", lust:"Zu Pull (Phase 1)", intro:"Eine Schattenjägerin, die Ula'tek beschwört. Der gesamte Kampf steht und fällt mit der lückenlosen Add-Kontrolle am Seelenwinderbrunnen."},
+  {n:"Eingeschlossene Wächter", en:"Entombed Sentinels", st:"down", role:"Zwei Gruppen & Zahlenrätsel", slug:"entombed-sentinels", icon:"🗿", check:"Camp-Aufteilung & Zahlenrätsel", lust:"Zu Kampfbeginn", intro:"Zwei Schlangengolems, die getrennt gehalten und synchron herabgespielt werden müssen."},
+  {n:"Vashnik der Bösartige", en:"Vashnik the Malignant", st:"down", role:"Positionierung & Add-Stopp", slug:"vashnik-the-malignant", icon:"🧪", check:"Kessel-Steuerung & Add-Stopp", lust:"Nach dem 3. Kesselwechsel", intro:"In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte."},
+  {n:"Die verirrten Entdecker", en:"The Lost Explorers", st:"down", role:"Ratskampf & Fisch-Rotation", slug:"lost-explorers", icon:"🐢", check:"Ratskampf & Fisch-Fütterung", lust:"Zu Pull für Doppel-Cleave", intro:"Drei besessene Tortollaner. Erfordert sauberen Cleave-Schaden und synchrones Finishen."},
+  {n:"Sszorak", en:"Sszorak", st:"down", role:"Wind, Knockbacks & Tank-Kombo", slug:"sszorak", icon:"🐉", check:"Wind-Kopplung & Knockback-Kontrolle", lust:"In Phase 2 (Heulender Maelstrom)", intro:"Eine giftgetränkte Bestie auf einer offenen Plattform mit Knockback-Gegenkopplung."},
+  {n:"Die Zwillingsfänge", en:"The Twin Fangs", st:"down", role:"Stack-Management & Soak-Rotation", slug:"twin-fangs", icon:"🐍", check:"Stack-Disziplin & 3er-Soak-Rotation", lust:"In Phase 1 zu Pull", intro:"Vexhul und Ithraz teilen sich eine Lebensleiste. 10 Stacks Ewiges Gift töten sofort."},
+  {n:"Der Gewundene Altar", en:"The Coiled Altar", st:"prog", role:"Phasenwechsel & Fixate", slug:"coiled-altar", icon:"⛩️", check:"Blickkontakt-Disziplin & Synchron-Burn", lust:"In Phase 3 (Doppel-Boss Burn)", intro:"Der Geist von Malacrass befiehlt Zul'jan. Dreiphasenkampf mit Blickkontakt-Mechanik."},
+  {n:"Ula'tek", en:"Ula'tek", st:"open", role:"Eier-Kontrolle & Endboss", slug:"ulatek", icon:"👑", check:"Endboss: Kick-Rotation & Soft-Enrage", lust:"In Phase 3 bei 25 % Restleben", intro:"Der finale Endboss des Tiers auf einer kontinuierlich schrumpfenden Plattform."}
+];
+
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 
 const EVENT = {
   title:"The Venomous Abyss",
   date:"24.08.26", time:"19:45",
   leader:"Merccrixxus/Passi",
-  live:false,
-  counts:{primary:0,tentative:0,bench:0,absence:0,late:0},
-  signups:[]
+  live:true,
+  counts:{primary:20,tentative:0,bench:0,absence:1,late:0},
+  signups:[
+    {name:"Quon", cls:"Druide", spec:"Guardian", role:"Tank", status:"primary"},
+    {name:"Kitebrew", cls:"Mönch", spec:"Brewmaster", role:"Tank", status:"primary"},
+    {name:"Garódash", cls:"Schamane", spec:"Restoration", role:"Heal", status:"primary"},
+    {name:"Jisgarin", cls:"Paladin", spec:"Holy", role:"Heal", status:"primary"},
+    {name:"Sweetschi", cls:"Mönch", spec:"Mistweaver", role:"Heal", status:"primary"},
+    {name:"Corvisstab", cls:"Priester", spec:"Holy", role:"Heal", status:"primary"},
+    {name:"Sandino", cls:"Priester", spec:"Discipline", role:"Heal", status:"primary"},
+    {name:"Tankoderdd", cls:"Paladin", spec:"Retribution", role:"Melee", status:"primary"},
+    {name:"Merccrixxus", cls:"Krieger", spec:"Fury", role:"Melee", status:"primary"},
+    {name:"Thessaly", cls:"Dämonenjäger", spec:"Havoc", role:"Melee", status:"primary"},
+    {name:"Amethyst", cls:"Paladin", spec:"Retribution", role:"Melee", status:"primary"},
+    {name:"Günni", cls:"Todesritter", spec:"Unholy", role:"Melee", status:"primary"},
+    {name:"Feiree", cls:"Rufer", spec:"Devastation", role:"Ranged", status:"primary"},
+    {name:"Askái", cls:"Rufer", spec:"Augmentation", role:"Ranged", status:"primary"},
+    {name:"Chantallè", cls:"Jäger", spec:"Beastmastery", role:"Ranged", status:"primary"},
+    {name:"Tiskarian", cls:"Druide", spec:"Balance", role:"Ranged", status:"primary"},
+    {name:"Hobs", cls:"Jäger", spec:"Beastmastery", role:"Ranged", status:"primary"},
+    {name:"Fruchtzwerg", cls:"Schamane", spec:"Elemental", role:"Ranged", status:"primary"},
+    {name:"Narrwen", cls:"Hexenmeister", spec:"Demonology", role:"Ranged", status:"primary"}
+  ]
 };
 
-let REPORTS = [];
+let REPORTS = [
+  {
+    code:"ABC123XYZ",
+    t:"Der Giftige Abgrund",
+    d:"20.08.26",
+    startTime:1787168400000,
+    diff:"Normal",
+    dur:"2h 45m",
+    kills:6,
+    wipes:14,
+    killedBosses:["Nek'zali", "Eingeschlossene Wächter", "Vashnik", "Die verirrten Entdecker", "Sszorak", "Die Zwillingsfänge"],
+    vips:{
+      dps:[{name:"Narrwen", class:"Hexenmeister", role:"DPS", parse:96, boss:"Die Zwillingsfänge"}, {name:"Merccrixxus", class:"Krieger", role:"DPS", parse:92, boss:"Sszorak"}],
+      hps:[{name:"Corvisstab", class:"Priester", role:"Heal", parse:94, boss:"Die Zwillingsfänge"}, {name:"Garódash", class:"Schamane", role:"Heal", parse:89, boss:"Sszorak"}]
+    },
+    live:true,
+    url:G.links.wcl
+  }
+];
 
 const NAV = [["start","Start"],["raid","Taktiken"],["termine","Termine"],["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
 const IS_MAC = /Mac|iPhone|iPad/.test(navigator.userAgent);
@@ -494,6 +562,13 @@ function fmtDateShort(d) {
   const m2 = str.match(/(\d{1,2})[-/.](\d{1,2})[-/.](\d{2,4})/);
   if (m2) return `${m2[1].padStart(2,"0")}.${m2[2].padStart(2,"0")}.${m2[3].slice(-2)}`;
   return str;
+}
+
+function calcVault(runs) {
+  if (runs >= 8) return 3;
+  if (runs >= 4) return 2;
+  if (runs >= 1) return 1;
+  return 0;
 }
 
 function scoreColor(score) {
@@ -711,12 +786,12 @@ raid(){
   ${BOSSES.map((b,i)=>{
     const s = ST[b.st] || ST.open;
     const curDiff = ACTIVE_DIFF[i] || "normal";
-    const imgUrl = b.image || `https://wow.zamimg.com/uploads/guide/header/${25291 + i}.jpg`;
+    const icon = b.icon || "⚔️";
 
     return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
     <button class="bhead" onclick="this.parentElement.classList.toggle('open')">
       <div class="bavatar-wrap">
-        <img src="${imgUrl}" class="bavatar" alt="${esc(b.n)}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'44\\' height=\\'44\\' fill=\\'%231a1f29\\'><rect width=\\'44\\' height=\\'44\\'/></svg>'">
+        <div class="bavatar">${icon}</div>
         <span class="bnum-badge">${i+1}</span>
       </div>
       <div class="bname">
@@ -730,10 +805,9 @@ raid(){
       
       <!-- Wowhead-Style Cinematic Banner -->
       <div class="boss-hero-banner">
-        <img src="${imgUrl}" class="boss-hero-img" alt="${esc(b.n)}" onerror="this.style.display='none'">
         <div class="boss-hero-meta">
           <div class="eyebrow" style="margin-bottom:4px">Boss-Übersicht</div>
-          <div style="font-size:20px;font-weight:800;letter-spacing:-.4px">${esc(b.n)}</div>
+          <div style="font-size:20px;font-weight:800;letter-spacing:-.4px">${icon} ${esc(b.n)}</div>
           <div class="quick-tags">
             ${b.check ? `<span class="qchip">Prio: <b>${esc(b.check)}</b></span>` : ''}
             ${b.lust ? `<span class="qchip">Lust: <b>${esc(b.lust)}</b></span>` : ''}
@@ -988,7 +1062,7 @@ function applyData(d, c){
       st: b.status || "open",
       role: b.rolle || "",
       slug: b.slug || "",
-      image: b.image || "",
+      icon: b.icon || "⚔️",
       check: b.check || "",
       lust: b.lust || "",
       intro: b.intro || "",
@@ -1004,25 +1078,27 @@ function applyData(d, c){
   if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
 
   const charMap = new Map();
+  for(const k of KADER) charMap.set(normName(k.n), {...k});
 
-  if(d.wowaudit?.characters?.length){
+  if(d?.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
       const key = normName(wc.name);
+      const existing = charMap.get(key) || {};
       charMap.set(key, {
         n: wc.name,
-        c: CLS_DE[wc.class] || wc.class,
-        r: mapRole(wc.role, wc.class, wc.spec),
-        ilvl: wc.equipped_item_level || wc.item_level || wc.ilvl || null,
-        mp: 0,
-        mr: 0,
-        v: 0,
-        spec: wc.spec || "",
-        thumb: null
+        c: CLS_DE[wc.class] || wc.class || existing.c || "Krieger",
+        r: mapRole(wc.role, wc.class, wc.spec) || existing.r || "DPS",
+        ilvl: wc.equipped_item_level || wc.item_level || wc.ilvl || existing.ilvl || null,
+        mp: existing.mp || 0,
+        mr: existing.mr || 0,
+        v: existing.v || 0,
+        spec: wc.spec || existing.spec || "",
+        thumb: existing.thumb || null
       });
     }
   }
 
-  if(d.roster?.characters?.length){
+  if(d?.roster?.characters?.length){
     for(const rc of d.roster.characters){
       const key = normName(rc.name);
       let p = charMap.get(key);
@@ -1043,7 +1119,7 @@ function applyData(d, c){
     }
   }
 
-  if(d.blizzard?.weeklyKeys?.length){
+  if(d?.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
       const key = normName(bk.name);
       const p = charMap.get(key);
@@ -1054,30 +1130,32 @@ function applyData(d, c){
     }
   }
 
-  KADER = Array.from(charMap.values());
+  if(charMap.size > 0) KADER = Array.from(charMap.values());
 
-  if(d.events?.events?.length){
+  if(d?.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
     EVENT.time = e.time || EVENT.time;
     EVENT.leader = e.leader || EVENT.leader;
     EVENT.date = e.date || "24.08.26";
-    EVENT.counts = e.counts || {primary:0,tentative:0,bench:0,absence:0,late:0};
-    EVENT.signups = (e.signups||[]).map(s => {
-      const isAbs = String(s.role||s.cls).toLowerCase().includes("abs");
-      const pClass = resolveClass(s.spec, s.cls, s.name);
-      return {
-        name: s.name,
-        cls: pClass,
-        spec: s.spec || "",
-        role: mapRole(s.role, s.cls, s.spec),
-        status: isAbs ? "absence" : "primary"
-      };
-    });
+    EVENT.counts = e.counts || EVENT.counts;
+    if(e.signups?.length){
+      EVENT.signups = e.signups.map(s => {
+        const isAbs = String(s.role||s.cls).toLowerCase().includes("abs");
+        const pClass = resolveClass(s.spec, s.cls, s.name);
+        return {
+          name: s.name,
+          cls: pClass,
+          spec: s.spec || "",
+          role: mapRole(s.role, s.cls, s.spec),
+          status: isAbs ? "absence" : "primary"
+        };
+      });
+    }
     EVENT.live = true;
   }
 
-  if(d.logs?.reports?.length){
+  if(d?.logs?.reports?.length){
     REPORTS = d.logs.reports.map((r, i) => ({
       code: r.code,
       t: r.zone || r.title || "Der Giftige Abgrund",
@@ -1151,6 +1229,9 @@ addEventListener("keydown", e => {
 });
 
 (async function boot(){
+  buildIndex();
+  route();
+  
   const [d, c] = await Promise.all([
     Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status"].map(n => load(`data/${n}.json`)))
       .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status"].map((n,i) => [n,a[i]]))),
