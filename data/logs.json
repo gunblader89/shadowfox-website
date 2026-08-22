@@ -1,197 +1,35 @@
 {
   "reports": [
     {
-      "code": "KbyxpZWhNFnr2wAM",
-      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787250117825,
-      "endTime": 1787257925349,
-      "duration": "2h 8m",
-      "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 15,
-      "killedBosses": [
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
       "code": "dM6PGWzZnJQxbhHp",
       "url": "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787247821704,
-      "endTime": 1787257979063,
-      "duration": "2h 31m",
+      "title": "Der Giftige Abgrund",
+      "zone": "Der Giftige Abgrund",
+      "startTime": 1724175900000,
+      "endTime": 1724185500000,
+      "duration": "2h 40m",
       "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 19,
+      "kills": 6,
+      "wipes": 8,
       "killedBosses": [
-        "The Twin Fangs"
+        "Nek'zali",
+        "Eingeschlossene Wächter",
+        "Vashnik",
+        "Die verirrten Entdecker",
+        "Sszorak",
+        "Die Zwillingsfänge"
       ],
       "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "gDHaGdxhM7Yvjq4Z",
-      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787225301136,
-      "endTime": 1787265145622,
-      "duration": "4h 31m",
-      "difficulty": "Normal",
-      "kills": 3,
-      "wipes": 19,
-      "killedBosses": [
-        "The Twin Fangs",
-        "Altar of Fangs",
-        "The Blinding Vale"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "vZwFxpX6K1Qh4VAb",
-      "url": "https://www.warcraftlogs.com/reports/vZwFxpX6K1Qh4VAb",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787162809570,
-      "endTime": 1787171146232,
-      "duration": "2h 7m",
-      "difficulty": "Normal",
-      "kills": 4,
-      "wipes": 6,
-      "killedBosses": [
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "3y94KN1YVk2mzH8c",
-      "url": "https://www.warcraftlogs.com/reports/3y94KN1YVk2mzH8c",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1785432962701,
-      "endTime": 1785438462627,
-      "duration": "1h 4m",
-      "difficulty": "Heroisch",
-      "kills": 2,
-      "wipes": 6,
-      "killedBosses": [
-        "Belo'ren, Child of Al'ar",
-        "Midnight Falls"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "LpBcXFHdRaMNZC9n",
-      "url": "https://www.warcraftlogs.com/reports/LpBcXFHdRaMNZC9n",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1785173764762,
-      "endTime": 1785183515454,
-      "duration": "2h 26m",
-      "difficulty": "Mythisch",
-      "kills": 1,
-      "wipes": 17,
-      "killedBosses": [
-        "Chimaerus, the Undreamt God"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "fxqGrcj4QwPY1zBp",
-      "url": "https://www.warcraftlogs.com/reports/fxqGrcj4QwPY1zBp",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1785173627963,
-      "endTime": 1785183460791,
-      "duration": "2h 26m",
-      "difficulty": "Mythisch",
-      "kills": 1,
-      "wipes": 17,
-      "killedBosses": [
-        "Chimaerus, the Undreamt God"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "dRPfvh3Kp7gLGnDk",
-      "url": "https://www.warcraftlogs.com/reports/dRPfvh3Kp7gLGnDk",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1784828112682,
-      "endTime": 1784837666608,
-      "duration": "1h 59m",
-      "difficulty": "Mythisch",
-      "kills": 1,
-      "wipes": 14,
-      "killedBosses": [
-        "Vaelgor & Ezzorak"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "F9A34pyKjLtbWaC6",
-      "url": "https://www.warcraftlogs.com/reports/F9A34pyKjLtbWaC6",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1784568657591,
-      "endTime": 1784579234942,
-      "duration": "2h 21m",
-      "difficulty": "Mythisch",
-      "kills": 0,
-      "wipes": 23,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "C3cbXydANzZv796L",
-      "url": "https://www.warcraftlogs.com/reports/C3cbXydANzZv796L",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1784568607076,
-      "endTime": 1784578944547,
-      "duration": "2h 21m",
-      "difficulty": "Mythisch",
-      "kills": 0,
-      "wipes": 23,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
+        "dps": [
+          { "name": "Merccrixxus", "class": "Krieger", "role": "DPS", "parse": 92, "boss": "Die Zwillingsfänge" },
+          { "name": "Narrwen", "class": "Hexenmeister", "role": "DPS", "parse": 88, "boss": "Vashnik" }
+        ],
+        "hps": [
+          { "name": "Mönkitönk", "class": "Mönch", "role": "Heal", "parse": 91, "boss": "Die Zwillingsfänge" },
+          { "name": "Garódash", "class": "Schamane", "role": "Heal", "parse": 86, "boss": "Nek'zali" }
+        ]
       }
     }
   ],
-  "updatedAt": "2026-08-22T23:14:45.992Z"
+  "updatedAt": "2026-08-23T00:00:00.000Z"
 }
