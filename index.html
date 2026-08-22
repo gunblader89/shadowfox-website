@@ -297,7 +297,7 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .kb-title{flex:1;min-width:0}
 .kb-title b{display:block;font-size:15px;font-weight:700}
 .kb-title span{display:block;font-size:12.5px;color:var(--tx3);margin-top:2px}
-.kb-body{display:none;padding:6px 20px 22px 72px;border-top:1px solid rgba(255,255,255,.03)}
+.kb-body{display:none;padding:8px 22px 22px 72px;border-top:1px solid rgba(255,255,255,.03)}
 .kb-item.open .kb-body{display:block}
 .kb-content{font-size:13.5px;color:var(--tx2);line-height:1.65}
 .kb-content p{margin-bottom:10px}
@@ -446,7 +446,8 @@ const G = {
     ],
     contacts:[
       { name:"Passi / Merccrixxus", role:"Gildenleitung & Raidlead", btag:"Passi#21855" },
-      { name:"Offiziers-Team", role:"Recruitment & Organisation", btag:"Discord Direct" }
+      { name:"Kite / Alex", role:"Offizier & Organisation", btag:"Balmung#21661" },
+      { name:"Kartoffelsalat / Hobs", role:"Offizier & Raidplanung", btag:"Hobs#21976" }
     ],
     motto:"Organisches Wachstum statt toxischem Progressdruck."
   }
@@ -464,112 +465,7 @@ const CLASSES = [
   ["Schurke",8,"#FFF468"],["Jäger",8,"#AAD372"],["Schamane",7,"#0070DD"],["Rufer",4,"#33937F"]
 ];
 
-let KB = [
-  {
-    i:"⚔️", t:"Raidregeln & Ablauf",
-    d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. Invite um 19:40 Uhr, erster Pull 19:45 Uhr.",
-    tags:["Pflicht","Raid","Zeiten"],
-    body:`
-      <p><b>Raidtage:</b> Montag & Donnerstag, jeweils 19:45 – 22:30 Uhr (Pause ca. 21:00 Uhr).</p>
-      <ul>
-        <li><b>19:40 Uhr im Voice:</b> Invites starten pünktlich, damit um 19:45 der erste Pull erfolgen kann.</li>
-        <li><b>Fokus während Bosskämpfen:</b> Bei Pull gilt 'Clear Comm'. Ansagen gehören dem Raidlead und eingeteilten Callouts.</li>
-        <li><b>Konstruktive Kritik:</b> Fehleranalyse findet in den Pausen oder sachlich nach dem Wipe statt. Toxisches Verhalten wird nicht toleriert.</li>
-      </ul>
-    `
-  },
-  {
-    i:"💰", t:"Loot-Regelung",
-    d:"Faire Beuteverteilung via RC LootCouncil & WoWAudit für maximalen Gildenprogress.",
-    tags:["Loot","Trial","Upgrade"],
-    body:`
-      <p>Beute wird über <b>RC LootCouncil</b> unter Berücksichtigung von BiS-Listen (WoWAudit), Set-Boni und Zuverlässigkeit vergeben.</p>
-      <ul>
-        <li><b>Priorität:</b> Set-Vervollständigung (2er/4er Boni) und Waffen/Trinkets mit höchstem Raid-Gesamtnutzen.</li>
-        <li><b>Trial-Phase:</b> Trials erhalten Loot nach vollwertigen Mitgliedern, es sei denn, ein Item wird sonst entzaubert.</li>
-        <li><b>Wunschliste pflegen:</b> Jeder Raider hält seine BiS-Wunschliste in WoWAudit aktuell.</li>
-      </ul>
-    `
-  },
-  {
-    i:"🧩", t:"Addons & WeakAuras",
-    d:"Pflicht-Tools für reibungslose Boss-Mechaniken und Raid-Organisation.",
-    tags:["Setup","Pflicht","WA"],
-    body:`
-      <p>Folgende Addons sind für alle festen Raider verpflichtend:</p>
-      <ul>
-        <li><b>Method Raid Tools (MRT):</b> Für Notizen, Cooldown-Tracking und Zuweisungen.</li>
-        <li><b>Deadly Boss Mods (DBM) oder BigWigs:</b> Mit aktuellen Zeit- und Warn-Modulen.</li>
-        <li><b>WeakAuras:</b> Das jeweils aktuelle ShadowFox Raid-Paket für <i>Der Giftige Abgrund</i>.</li>
-        <li><b>RC LootCouncil:</b> Für die Beuteabfrage im Raid.</li>
-      </ul>
-    `
-  },
-  {
-    i:"🧪", t:"Konsumierbare & Bank",
-    d:"Was jeder selbst mitbringt und was durch die Gildenbank bereitgestellt wird.",
-    tags:["Konsum","Flasks","Pots"],
-    body:`
-      <p>Eigenverantwortliche Raid-Vorbereitung für maximale Performance:</p>
-      <ul>
-        <li><b>Von der Gilde:</b> Kessel (Flasks) und Festmähler (Food) werden an Progress-Abenden von der Gildenbank gestellt.</li>
-        <li><b>Selbst mitzubringen:</b> Kampf-Tränke (Combat Pots), Heiltränke, Waffen-Verzauberungen/Öle und passende Sockel.</li>
-        <li><b>Vantus-Runen:</b> Werden bei Bedarf zentral von der Gildenleitung verteilt.</li>
-      </ul>
-    `
-  },
-  {
-    i:"📅", t:"An- & Abmeldungen",
-    d:"Verbindliche Termine über Raid-Helper im Discord für verlässliche Kaderplanung.",
-    tags:["Signup","Discord","Kader"],
-    body:`
-      <p>Zuverlässigkeit ist das Fundament unseres 2-Tage-Raids:</p>
-      <ul>
-        <li><b>Frist:</b> Zu- oder Absagen müssen bis spätestens 24 Stunden vor Raidbeginn im Discord (Kanal <i>#raid-anmeldung</i>) eingetragen sein.</li>
-        <li><b>Spontane Ausfälle:</b> Bei Notfällen oder Verspätungen bitte eine kurze Nachricht an Passi oder einen Offizier senden.</li>
-        <li><b>Ersatzbank:</b> Spieler auf der Bank halten sich zu Raidbeginn bereit.</li>
-      </ul>
-    `
-  },
-  {
-    i:"🌱", t:"Onboarding für Neue (Trial)",
-    d:"Deine ersten Wochen bei ShadowFox: Ablauf, Begleitung und Feedback-Gespräche.",
-    tags:["Trial","Neue","Gilde"],
-    body:`
-      <p>Willkommen bei ShadowFox! So läuft deine 2- bis 4-wöchige Testphase ab:</p>
-      <ul>
-        <li><b>Begleitung:</b> Ein Offizier steht dir als Ansprechpartner für Fragen und UI-Setups zur Seite.</li>
-        <li><b>Bewertungskriterien:</b> Mechanik-Verständnis, Zuverlässigkeit, soziale Integration und Bereitschaft zur Vorbereitung.</li>
-        <li><b>Feedback:</b> Nach 2–3 Wochen führen wir ein kurzes Gespräch zur gegenseitigen Übernahme in den Stammkader.</li>
-      </ul>
-    `
-  },
-  {
-    i:"🎧", t:"Voice-Etikette",
-    d:"Klare Kommunikation im Discord-Voice für stressfreien Progress.",
-    tags:["Discord","Voice","Fokus"],
-    body:`
-      <ul>
-        <li><b>Push-to-Talk Pflicht:</b> Um Hintergrundgeräusche und Rückkopplungen bei 20+ Spielern zu vermeiden.</li>
-        <li><b>Kommunikations-Disziplin:</b> Während des Pulls sprechen nur Ansager. Smalltalk und Diskussionen finden in den Pausen statt.</li>
-        <li><b>Angenehme Lautstärke:</b> Gute Mikrofonqualität und funktionierendes Headset sind Voraussetzung.</li>
-      </ul>
-    `
-  },
-  {
-    i:"🔧", t:"Wöchentliche Char-Vorbereitung",
-    d:"Checkliste für den wöchentlichen Reset vor dem nächsten Raidabend.",
-    tags:["Gear","Vault","M+"],
-    body:`
-      <ul>
-        <li><b>Great Vault:</b> Mindestens 4 bis 8 Mythisch+-Runs pro ID für maximale Auswahl am Mittwoch.</li>
-        <li><b>Ausrüstungs-Check:</b> Alle neuen Items voll verzaubert und gesockelt vor Raidantritt.</li>
-        <li><b>Taktiken auffrischen:</b> Unbekannte oder neue Boss-Guides vorab auf der Website studieren.</li>
-      </ul>
-    `
-  }
-];
-
+let KB = [];
 let KADER = [
   {n:"Quon", c:"Druide", r:"Tank", spec:"Guardian", ilvl:293, mp:0, mr:0, v:0, thumb:null},
   {n:"Kitebrew", c:"Mönch", r:"Tank", spec:"Brewmaster", ilvl:292, mp:981, mr:4, v:2, thumb:null},
@@ -592,17 +488,7 @@ let KADER = [
   {n:"Narrwen", c:"Hexenmeister", r:"Ranged", spec:"Demonology", ilvl:294, mp:1350, mr:8, v:3, thumb:null}
 ];
 
-let BOSSES = [
-  {n:"Nek'zali die Seelenwinderin", en:"Nek'zali the Soulcoiler", st:"down", role:"Add-Kontrolle & Brunnen", slug:"nekzali-the-soulcoiler", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg", check:"Add-Kontrolle & Physischer Burst", lust:"Zu Pull (Phase 1)", intro:"Eine Schattenjägerin, die Ula'tek beschwört. Der gesamte Kampf steht und fällt mit der lückenlosen Add-Kontrolle am Seelenwinderbrunnen."},
-  {n:"Eingeschlossene Wächter", en:"Entombed Sentinels", st:"down", role:"Zwei Gruppen & Zahlenrätsel", slug:"entombed-sentinels", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg", check:"Camp-Aufteilung & Zahlenrätsel", lust:"Zu Kampfbeginn", intro:"Zwei Schlangengolems, die getrennt gehalten und synchron herabgespielt werden müssen."},
-  {n:"Vashnik der Bösartige", en:"Vashnik the Malignant", st:"down", role:"Positionierung & Add-Stopp", slug:"vashnik-the-malignant", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f9f43b4f5abb79d2c6cf8e0d885b95ac59fbd3b0.jpg", check:"Kessel-Steuerung & Add-Stopp", lust:"Nach dem 3. Kesselwechsel", intro:"In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte."},
-  {n:"Die verirrten Entdecker", en:"The Lost Explorers", st:"down", role:"Ratskampf & Fisch-Rotation", slug:"lost-explorers", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/19bd46c0a77441577821e056dbd5cc5c09ae87b5.jpg", check:"Ratskampf & Fisch-Fütterung", lust:"Zu Pull für Doppel-Cleave", intro:"Drei besessene Tortollaner. Erfordert sauberen Cleave-Schaden und synchrones Finishen."},
-  {n:"Sszorak", en:"Sszorak", st:"down", role:"Wind, Knockbacks & Tank-Kombo", slug:"sszorak", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/127fb15e24c99767521d3697f97ef6e98181357e.jpg", check:"Wind-Kopplung & Knockback-Kontrolle", lust:"In Phase 2 (Heulender Maelstrom)", intro:"Eine giftgetränkte Bestie auf einer offenen Plattform mit Knockback-Gegenkopplung."},
-  {n:"Die Zwillingsfänge", en:"The Twin Fangs", st:"down", role:"Stack-Management & Soak-Rotation", slug:"twin-fangs", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/52e498e3108b56f88a49f5fe5afa33eb6578a713.jpg", check:"Stack-Disziplin & 3er-Soak-Rotation", lust:"In Phase 1 zu Pull", intro:"Vexhul und Ithraz teilen sich eine Lebensleiste. 10 Stacks Ewiges Gift töten sofort."},
-  {n:"Der Gewundene Altar", en:"The Coiled Altar", st:"prog", role:"Phasenwechsel & Fixate", slug:"coiled-altar", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/0b550745443dcd767f6cb4e4f8e23e14089dcd88.jpg", check:"Blickkontakt-Disziplin & Synchron-Burn", lust:"In Phase 3 (Doppel-Boss Burn)", intro:"Der Geist von Malacrass befiehlt Zul'jan. Dreiphasenkampf mit Blickkontakt-Mechanik."},
-  {n:"Ula'tek", en:"Ula'tek", st:"open", role:"Eier-Kontrolle & Endboss", slug:"ulatek", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/20ff0eaaeb6117c9a8fcbb76792789b3e01341ce.jpg", check:"Endboss: Kick-Rotation & Soft-Enrage", lust:"In Phase 3 bei 25 % Restleben", intro:"Der finale Endboss des Tiers auf einer kontinuierlich schrumpfenden Plattform."}
-];
-
+let BOSSES = [];
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 
 const EVENT = {
@@ -611,48 +497,10 @@ const EVENT = {
   leader:"Merccrixxus/Passi",
   live:true,
   counts:{primary:20,tentative:0,bench:0,absence:1,late:0},
-  signups:[
-    {name:"Quon", cls:"Druide", spec:"Guardian", role:"Tank", status:"primary"},
-    {name:"Kitebrew", cls:"Mönch", spec:"Brewmaster", role:"Tank", status:"primary"},
-    {name:"Garódash", cls:"Schamane", spec:"Restoration", role:"Heal", status:"primary"},
-    {name:"Jisgarin", cls:"Paladin", spec:"Holy", role:"Heal", status:"primary"},
-    {name:"Sweetschi", cls:"Mönch", spec:"Mistweaver", role:"Heal", status:"primary"},
-    {name:"Corvisstab", cls:"Priester", spec:"Holy", role:"Heal", status:"primary"},
-    {name:"Sandino", cls:"Priester", spec:"Discipline", role:"Heal", status:"primary"},
-    {name:"Tankoderdd", cls:"Paladin", spec:"Retribution", role:"Melee", status:"primary"},
-    {name:"Merccrixxus", cls:"Krieger", spec:"Fury", role:"Melee", status:"primary"},
-    {name:"Thessaly", cls:"Dämonenjäger", spec:"Havoc", role:"Melee", status:"primary"},
-    {name:"Amethyst", cls:"Paladin", spec:"Retribution", role:"Melee", status:"primary"},
-    {name:"Günni", cls:"Todesritter", spec:"Unholy", role:"Melee", status:"primary"},
-    {name:"Feiree", cls:"Rufer", spec:"Devastation", role:"Ranged", status:"primary"},
-    {name:"Askái", cls:"Rufer", spec:"Augmentation", role:"Ranged", status:"primary"},
-    {name:"Chantallè", cls:"Jäger", spec:"Beastmastery", role:"Ranged", status:"primary"},
-    {name:"Tiskarian", cls:"Druide", spec:"Balance", role:"Ranged", status:"primary"},
-    {name:"Hobs", cls:"Jäger", spec:"Beastmastery", role:"Ranged", status:"primary"},
-    {name:"Fruchtzwerg", cls:"Schamane", spec:"Elemental", role:"Ranged", status:"primary"},
-    {name:"Narrwen", cls:"Hexenmeister", spec:"Demonology", role:"Ranged", status:"primary"}
-  ]
+  signups:[]
 };
 
-let REPORTS = [
-  {
-    code:"ABC123XYZ",
-    t:"Der Giftige Abgrund",
-    d:"20.08.26",
-    startTime:1787168400000,
-    diff:"Normal",
-    dur:"2h 45m",
-    kills:6,
-    wipes:14,
-    killedBosses:["Nek'zali", "Eingeschlossene Wächter", "Vashnik", "Die verirrten Entdecker", "Sszorak", "Die Zwillingsfänge"],
-    vips:{
-      dps:[{name:"Narrwen", class:"Hexenmeister", role:"DPS", parse:96, boss:"Die Zwillingsfänge"}, {name:"Merccrixxus", class:"Krieger", role:"DPS", parse:92, boss:"Sszorak"}],
-      hps:[{name:"Corvisstab", class:"Priester", role:"Heal", parse:94, boss:"Die Zwillingsfänge"}, {name:"Garódash", class:"Schamane", role:"Heal", parse:89, boss:"Sszorak"}]
-    },
-    live:true,
-    url:G.links.wcl
-  }
-];
+let REPORTS = [];
 
 const NAV = [["start","Start"],["raid","Taktiken"],["termine","Termine"],["tracker","Tracker"],["logs","Logs"],["roster","Roster"],["wissen","Wissen"]];
 const IS_MAC = /Mac|iPhone|iPad/.test(navigator.userAgent);
@@ -798,7 +646,7 @@ function signupBlock(){
         <div class="soft" style="font-size:12.5px">${fmtDateShort(EVENT.date)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
       </div>
       <div class="sig-counts">
-        ${cnt("c-yes","✓ Zugesagt",prim.length)}
+        ${cnt("c-yes","✓ Zugesagt",prim.length || EVENT.counts.primary)}
         ${cnt("c-tent","? Unsicher",EVENT.counts.tentative)}
         ${cnt("c-no","✕ Abgemeldet",EVENT.counts.absence)}
       </div>
@@ -1095,7 +943,7 @@ wissen(){
   return `
   <div class="page-h fade">
     <h1>Wissen & Guides</h1>
-    <p>Hier findest du alle verbindlichen Regeln, Addon-Empfehlungen und Vorbereitungs-Leitfäden für den Raidbetrieb. Klicke auf ein Thema für alle Details.</p>
+    <p>Das offizielle Regelwerk, Verhaltensrichtlinien und Vorbereitungs-Leitfäden für Gilde und Raidbetrieb. Klicke auf ein Thema für alle Details.</p>
   </div>
   <div class="fade">
     ${KB.map((k, idx)=>`
@@ -1162,7 +1010,7 @@ bewerben(){
     </div>
 
     <div class="card">
-      <div class="eyebrow">Direkter Kontakt & Bewerbung</div>
+      <div class="eyebrow">Direkter Kontakt & Ansprechpartner</div>
       <p style="font-size:13.5px;color:var(--tx2);margin-bottom:14px">Melde dich einfach direkt über Discord oder adde unsere Offiziere im Battle.net:</p>
       
       ${rec.contacts.map(c=>`
