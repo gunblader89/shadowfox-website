@@ -19,8 +19,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 289,
-      "mplus": 1204,
-      "weeklyRuns": 5,
+      "mplus": 1265,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
@@ -266,11 +266,11 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 296,
-      "mplus": 1699,
+      "mplus": 1960,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T12:22:31.008Z"
+  "updatedAt": "2026-08-22T12:46:53.310Z"
 }
