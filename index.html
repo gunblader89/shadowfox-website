@@ -6,7 +6,7 @@
 <title>ShadowFox — Blackmoore EU</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <!-- Wowhead Tooltips Script -->
 <script>const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: false};</script>
 <script src="https://wow.zamimg.com/js/power.js"></script>
@@ -45,8 +45,9 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 .top-in{display:flex;align-items:center;gap:20px;height:64px}
 .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
 .brand .mark{width:36px;height:36px;flex-shrink:0}
-.brand b{display:block;font-size:15px;font-weight:700;letter-spacing:-.3px;line-height:1.2}
-.brand span{display:block;font-size:11px;color:var(--tx3);letter-spacing:.4px;font-weight:500}
+.brand b{display:block;font-size:16px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
+.brand b span.brand-gold{color:var(--amber)}
+.brand span.brand-sub{display:block;font-size:10.5px;color:var(--tx3);letter-spacing:.6px;font-weight:600;margin-top:2px}
 nav{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
 nav a{padding:8px 12px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
@@ -87,14 +88,16 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor}
 
+/* Hero Section mit neuem Branding */
 .hero{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#101319 52%,#0b0d12 100%);position:relative;margin-bottom:16px}
 .hero::after{content:"";position:absolute;right:-120px;top:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.14),transparent 66%);pointer-events:none}
 .hero-in{padding:32px;position:relative;z-index:1;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
 .hero-mark{width:88px;height:88px;flex-shrink:0}
-.hero h1{font-size:40px;font-weight:800;letter-spacing:-1.4px;line-height:1;margin-bottom:8px}
-.hero .sub{font-size:14.5px;color:var(--tx2);max-width:540px}
-.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.chip{font-size:12px;padding:4px 10px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
+.hero h1{font-size:46px;font-weight:900;letter-spacing:-1.8px;line-height:1;margin-bottom:8px;color:#eaedf3}
+.hero h1 span.hero-gold{color:var(--amber);text-shadow:0 0 24px rgba(234,181,78,.35)}
+.hero .sub{font-size:14.5px;color:var(--tx2);max-width:560px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+.chip{font-size:12px;padding:5px 11px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
 .chip b{color:var(--tx);font-weight:650}
 
 .progblock{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);width:100%}
@@ -345,7 +348,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   .start-grid,.g4,.g3,.tiles,.roles-grid{grid-template-columns:repeat(2,1fr)}
   .top-in{height:auto;flex-wrap:wrap;padding:12px 0;gap:12px}
   nav{order:3;width:100%}
-  .hero h1{font-size:32px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px}
+  .hero h1{font-size:36px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px}
   .wrap{padding:0 16px}
   .bbody{padding:14px 16px 20px}
   .sig-grid{grid-template-columns:repeat(2,1fr)}
@@ -386,7 +389,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   <div class="wrap top-in">
     <a class="brand" href="#/start">
       <svg class="mark"><use href="#foxmark"/></svg>
-      <span><b>ShadowFox</b><span>BLACKMOORE · EU</span></span>
+      <span><b>Shadow<span class="brand-gold">Fox</span></b><span class="brand-sub">BLACKMOORE · EU</span></span>
     </a>
     <nav id="nav"></nav>
     <div class="top-r">
@@ -777,7 +780,7 @@ start(){
     <svg class="hero-mark"><use href="#foxmark"/></svg>
     <div style="flex:1;min-width:260px">
       <div class="eyebrow">${G.realm} · ${G.region} · ${G.faction}</div>
-      <h1>ShadowFox</h1>
+      <h1>Shadow<span class="hero-gold">Fox</span></h1>
       <p class="sub">${esc(G.recruit.motto)} Zwei Raidabende die Woche, ${G.members} Mitglieder.</p>
       <div class="hero-chips">
         <span class="chip">Raid <b>${esc(G.raidDays)}</b></span>
@@ -1005,7 +1008,7 @@ bewerben(){
   const rec = G.recruit;
   return `
   <div class="page-h fade">
-    <h1>Werde Teil von ShadowFox</h1>
+    <h1>Werde Teil von Shadow<span style="color:var(--amber)">Fox</span></h1>
     <p>${esc(rec.motto)} Wir suchen motivierte Verstärkung für unseren Raid-Kader und aktive Mythic+-Gruppen auf Blackmoore (EU).</p>
   </div>
 
