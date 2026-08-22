@@ -3,14 +3,14 @@
     {
       "name": "Chelin",
       "realm": "malygos",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 2
     },
     {
       "name": "Grabower",
       "realm": "ungoro",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 10
     },
@@ -24,14 +24,14 @@
     {
       "name": "Putzeimer",
       "realm": "blackhand",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 12
     },
     {
       "name": "Thessaly",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 4
     },
@@ -45,7 +45,7 @@
     {
       "name": "Gevattertod",
       "realm": "thrall",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 9
     },
@@ -80,7 +80,7 @@
     {
       "name": "Tânkoderdd",
       "realm": "thrall",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 1
     },
@@ -101,28 +101,28 @@
     {
       "name": "Malagigi",
       "realm": "thrall",
-      "rank": 8,
+      "rank": 5,
       "level": 90,
       "classId": 2
     },
     {
       "name": "Tiskarian",
       "realm": "amanthul",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 11
     },
     {
       "name": "Nimes",
       "realm": "malganis",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 9
     },
     {
       "name": "Jirakila",
       "realm": "blackhand",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 12
     },
@@ -136,42 +136,42 @@
     {
       "name": "Anzu",
       "realm": "aegwynn",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 10
     },
     {
       "name": "Mooni",
       "realm": "taerar",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 1
     },
     {
       "name": "Biillbo",
       "realm": "nethersturm",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 6
     },
     {
       "name": "Extrawald",
       "realm": "blackhand",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 8
     },
     {
       "name": "Charistea",
       "realm": "shattrath",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 5
     },
     {
       "name": "Kloppa",
       "realm": "nethersturm",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 1
     },
@@ -185,21 +185,21 @@
     {
       "name": "Maruff",
       "realm": "blackhand",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 2
     },
     {
       "name": "Askái",
       "realm": "blackhand",
-      "rank": 5,
+      "rank": 3,
       "level": 90,
       "classId": 12
     },
     {
       "name": "Kitebone",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 87,
       "classId": 6
     },
@@ -213,28 +213,28 @@
     {
       "name": "Scârlêtt",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 6
     },
     {
       "name": "Druith",
       "realm": "taerar",
-      "rank": 5,
+      "rank": 4,
       "level": 90,
       "classId": 11
     },
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 1
     },
     {
       "name": "Thorelion",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 2
     },
@@ -262,14 +262,14 @@
     {
       "name": "Shalakittena",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 12
     },
     {
       "name": "Mondbrunnen",
       "realm": "blackhand",
-      "rank": 7,
+      "rank": 5,
       "level": 85,
       "classId": 4
     },
@@ -297,21 +297,21 @@
     {
       "name": "Yoruíchí",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 11
     },
     {
       "name": "Luzaría",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 2
     },
     {
       "name": "Yachíru",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 8
     },
@@ -325,7 +325,7 @@
     {
       "name": "Xelpheni",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 7
     },
@@ -346,42 +346,42 @@
     {
       "name": "Dengamo",
       "realm": "thrall",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 13
     },
     {
       "name": "Günterle",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 10
     },
     {
       "name": "Geraltvriva",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 6
     },
     {
       "name": "Ayvee",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 12
     },
     {
       "name": "Brokkolii",
       "realm": "blackhand",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 11
     },
     {
       "name": "Corvispala",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 2
     },
@@ -395,14 +395,14 @@
     {
       "name": "Nez",
       "realm": "kelthuzad",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 5
     },
     {
       "name": "Althara",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 4
     },
@@ -416,28 +416,28 @@
     {
       "name": "Charmzzdh",
       "realm": "blackhand",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 12
     },
     {
       "name": "Celes",
       "realm": "garrosh",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 8
     },
     {
       "name": "Gizzlewiz",
       "realm": "antonidas",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 5
     },
     {
       "name": "Yanalaira",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 10
     },
@@ -451,14 +451,14 @@
     {
       "name": "Kâtharinâ",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 3
     },
     {
       "name": "Tylanas",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 81,
       "classId": 5
     },
@@ -493,21 +493,21 @@
     {
       "name": "Duurza",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 80,
       "classId": 12
     },
     {
       "name": "Gal",
       "realm": "malfurion",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 11
     },
     {
       "name": "Schlitzfritz",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 4
     },
@@ -521,14 +521,14 @@
     {
       "name": "Mikalina",
       "realm": "thrall",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 8
     },
     {
       "name": "Hextrawald",
       "realm": "antonidas",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 9
     },
@@ -542,7 +542,7 @@
     {
       "name": "Gandogor",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 3
     },
@@ -556,14 +556,14 @@
     {
       "name": "Latawica",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 9
     },
     {
       "name": "Spintowinlol",
       "realm": "eredar",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 10
     },
@@ -584,21 +584,21 @@
     {
       "name": "Lureth",
       "realm": "antonidas",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 8
     },
     {
       "name": "Bennimaru",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 12
     },
     {
       "name": "Günndk",
       "realm": "thrall",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 6
     },
@@ -612,7 +612,7 @@
     {
       "name": "Feiree",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 3
     },
@@ -633,7 +633,7 @@
     {
       "name": "Sshuna",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 80,
       "classId": 12
     },
@@ -647,14 +647,14 @@
     {
       "name": "Illaoi",
       "realm": "blackrock",
-      "rank": 8,
+      "rank": 6,
       "level": 81,
       "classId": 12
     },
     {
       "name": "Raiox",
       "realm": "blackrock",
-      "rank": 5,
+      "rank": 4,
       "level": 90,
       "classId": 7
     },
@@ -682,21 +682,21 @@
     {
       "name": "Doktorpöbel",
       "realm": "dalvengyr",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 5
     },
     {
       "name": "Sheepitreal",
       "realm": "blackrock",
-      "rank": 6,
+      "rank": 4,
       "level": 90,
       "classId": 8
     },
     {
       "name": "Nâarwi",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 1
     },
@@ -710,14 +710,14 @@
     {
       "name": "Tiskarian",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 80,
       "classId": 1
     },
     {
       "name": "Antikrizt",
       "realm": "blackrock",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 11
     },
@@ -738,28 +738,28 @@
     {
       "name": "Holydivér",
       "realm": "aegwynn",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 2
     },
     {
       "name": "Jó",
       "realm": "blackrock",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 12
     },
     {
       "name": "Ryruki",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 80,
       "classId": 12
     },
     {
       "name": "Tiskary",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 80,
       "classId": 2
     },
@@ -773,21 +773,21 @@
     {
       "name": "Mönkitönk",
       "realm": "thrall",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 10
     },
     {
       "name": "Zeitvertreîp",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 82,
       "classId": 5
     },
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "rank": 5,
+      "rank": 3,
       "level": 90,
       "classId": 8
     },
@@ -801,7 +801,7 @@
     {
       "name": "Hippipippi",
       "realm": "blackrock",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 4
     },
@@ -815,21 +815,21 @@
     {
       "name": "Lókqur",
       "realm": "blackrock",
-      "rank": 8,
+      "rank": 6,
       "level": 88,
       "classId": 1
     },
     {
       "name": "Embreshment",
       "realm": "blackrock",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 6
     },
     {
       "name": "Fruchtbar",
       "realm": "kelthuzad",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 10
     },
@@ -843,14 +843,14 @@
     {
       "name": "Drdurstig",
       "realm": "dalvengyr",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 4
     },
     {
       "name": "Becareful",
       "realm": "kelthuzad",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 8
     },
@@ -864,21 +864,21 @@
     {
       "name": "Miliimdemon",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 84,
       "classId": 12
     },
     {
       "name": "Sondroa",
       "realm": "blackrock",
-      "rank": 8,
+      "rank": 6,
       "level": 11,
       "classId": 12
     },
     {
       "name": "Narvu",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 83,
       "classId": 12
     },
@@ -892,14 +892,14 @@
     {
       "name": "Makudar",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 11
     },
     {
       "name": "Rowinâ",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 5
     },
@@ -920,21 +920,21 @@
     {
       "name": "Cáss",
       "realm": "thrall",
-      "rank": 7,
+      "rank": 5,
       "level": 84,
       "classId": 3
     },
     {
       "name": "Thessani",
       "realm": "blackmoore",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 3
     },
     {
       "name": "Yuzu",
       "realm": "garrosh",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 12
     },
@@ -948,7 +948,7 @@
     {
       "name": "Tsuyuko",
       "realm": "garrosh",
-      "rank": 8,
+      "rank": 6,
       "level": 80,
       "classId": 4
     },
@@ -962,28 +962,28 @@
     {
       "name": "Eyr",
       "realm": "garrosh",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 5
     },
     {
       "name": "Ryas",
       "realm": "garrosh",
-      "rank": 7,
+      "rank": 5,
       "level": 80,
       "classId": 11
     },
     {
       "name": "Eanya",
       "realm": "garrosh",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 13
     },
     {
       "name": "Critneyféars",
       "realm": "aegwynn",
-      "rank": 7,
+      "rank": 5,
       "level": 90,
       "classId": 9
     },
@@ -997,7 +997,7 @@
     {
       "name": "Corvispriest",
       "realm": "blackmoore",
-      "rank": 8,
+      "rank": 6,
       "level": 90,
       "classId": 5
     },
@@ -1009,7 +1009,7 @@
       "classId": 3
     }
   ],
-  "updatedAt": "2026-08-22T23:25:10.621Z",
+  "updatedAt": "2026-08-22T23:49:55.963Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",
