@@ -493,7 +493,22 @@ const CMAP = {Druide:"#FF7C0A",Schamane:"#0070DD",Krieger:"#C69B6D",Jäger:"#AAD
   Priester:"#FFFFFF",Magier:"#3FC7EB",Todesritter:"#C41E3A",Mönch:"#00FF98",
   Hexenmeister:"#8788EE",Paladin:"#F48CBA",Rufer:"#33937F",Dämonenjäger:"#A330C9",Schurke:"#FFF468"};
 
-/* Exakte Namens-Bereinigung: Filtert Realm-Zusätze, Discord-Slashes, Klammern und Akzente heraus */
+const SPEC_MAP = {
+  guardian:"Druide",feral:"Druide",balance:"Druide",restoration:"Druide",
+  protection:"Paladin",protection1:"Krieger",retribution:"Paladin",holy:"Paladin",holy1:"Priester",
+  blood:"Todesritter",frost1:"Todesritter",unholy:"Todesritter",
+  brewmaster:"Mönch",windwalker:"Mönch",mistweaver:"Mönch",
+  vengeance:"Dämonenjäger",havoc:"Dämonenjäger",
+  arms:"Krieger",fury:"Krieger",
+  assassination:"Schurke",outlaw:"Schurke",subtlety:"Schurke",
+  discipline:"Priester",shadow:"Priester",
+  elemental:"Schamane",enhancement:"Schamane",restoration1:"Schamane",
+  arcane:"Magier",fire:"Magier",frost:"Magier",
+  destruction:"Hexenmeister",demonology:"Hexenmeister",affliction:"Hexenmeister",
+  beastmastery:"Jäger",marksmanship:"Jäger",survival:"Jäger",
+  devastation:"Rufer",augmentation:"Rufer",preservation:"Rufer",devourer:"Rufer"
+};
+
 function normName(s){
   if(!s) return "";
   return String(s)
@@ -507,7 +522,6 @@ function normName(s){
     .replace(/[\u0300-\u036f]/g,"");
 }
 
-/* Umfassende Klassen-Erkennung nach String, Spec oder Kurzform */
 function cleanClass(clsStr, specStr) {
   const s = String(clsStr || "").toLowerCase().trim();
   const spec = String(specStr || "").toLowerCase().trim();
@@ -941,6 +955,7 @@ roster(){
         <b style="font-size:14px">${r} (${g.length})</b>
       </div>
       <div class="rcards">${g.map(p=>{
+        const runsDisplay = (p.mr || 0) >= 10 ? "10+" : (p.mr || 0);
         return `<div class="rcard">
           ${p.thumb ? `<img src="${p.thumb}" class="rav-img" alt="${esc(p.n)}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">` : ''}
           <div class="rav-fallback" style="background:${col(p.c)};${p.thumb?'display:none':''}">${esc(p.n[0])}</div>
@@ -949,7 +964,7 @@ roster(){
             <div style="display:flex;gap:5px;margin-top:6px;flex-wrap:wrap">
               <span class="kbtag">ilvl ${p.ilvl||'—'}</span>
               <span class="kbtag" style="color:${scoreColor(p.mp)}">M+ ${p.mp||0}</span>
-              <span class="kbtag" style="${(p.mr||0)>=8?'color:var(--green);font-weight:700':''}">${p.mr||0} Runs/Woche</span>
+              <span class="kbtag" style="${(p.mr||0)>=8?'color:var(--green);font-weight:700':''}">${runsDisplay} Runs/Woche</span>
             </div>
           </div>
         </div>`;}).join("")}</div>
@@ -1064,6 +1079,7 @@ function renderTrk(){
 
   tb.innerHTML = rows.map(p => {
     const isGreenRuns = (p.mr || 0) >= 8;
+    const runsDisplay = (p.mr || 0) >= 10 ? "10+" : (p.mr || 0);
     return `<tr>
       <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
         <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
@@ -1073,7 +1089,7 @@ function renderTrk(){
         <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:${scoreColor(p.mp)}"></i></span>
         <span class="num" style="color:${scoreColor(p.mp)};font-weight:600">${p.mp || 0}</span>
       </td>
-      <td class="num" style="${isGreenRuns ? 'color:var(--green);font-weight:700;' : ''}">${p.mr || 0} / 8</td>
+      <td class="num" style="${isGreenRuns ? 'color:var(--green);font-weight:700;' : ''}">${runsDisplay} / 8</td>
       <td><span class="vault">${[0,1,2].map(i => `<span class="vslot${i<(p.v||0)?' on':''}"></span>`).join("")}</span></td>
     </tr>`;
   }).join("");
@@ -1138,10 +1154,9 @@ function applyData(d, c){
   const downBossCount = BOSSES.filter(b => b.st === "down").length;
   if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
 
-  // Exakte deduplizierte Kader-Zusammenführung
   const charMap = new Map();
+  for(const k of KADER) charMap.set(normName(k.n), {...k});
 
-  // Primärquelle: WoWAudit
   if(d?.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
       const rawName = wc.name ? wc.name.split("-")[0].trim() : "";
@@ -1165,7 +1180,6 @@ function applyData(d, c){
     }
   }
 
-  // Sekundärquelle: Raider.IO (Score, Wochenruns, Thumbnails)
   if(d?.roster?.characters?.length){
     for(const rc of d.roster.characters){
       const rawName = rc.name ? rc.name.split("-")[0].trim() : "";
@@ -1203,7 +1217,6 @@ function applyData(d, c){
     }
   }
 
-  // Blizzard Keystone Sync
   if(d?.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
       const key = normName(bk.name);
@@ -1219,7 +1232,6 @@ function applyData(d, c){
     KADER = Array.from(charMap.values());
   }
 
-  // Discord Signups
   if(d?.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
@@ -1244,7 +1256,6 @@ function applyData(d, c){
     EVENT.live = true;
   }
 
-  // Logs
   if(d?.logs?.reports?.length){
     REPORTS = d.logs.reports.map((r, i) => ({
       code: r.code,
