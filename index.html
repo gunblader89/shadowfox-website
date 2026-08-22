@@ -596,9 +596,9 @@ raid(){
       
       ${b.difficulties ? `
         <div class="diff-tabs">
-          <button class="diff-tab active" data-diff="normal" onclick="window.switchDiff('b${i}', 'normal')">Normal</button>
-          <button class="diff-tab" data-diff="heroic" onclick="window.switchDiff('b${i}', 'heroic')">Heroisch</button>
-          <button class="diff-tab" data-diff="mythic" onclick="window.switchDiff('b${i}', 'mythic')">Mythisch</button>
+          <button class="diff-tab active" data-diff="normal" onclick="window.switchDiff(event, 'b${i}', 'normal')">Normal</button>
+          <button class="diff-tab" data-diff="heroic" onclick="window.switchDiff(event, 'b${i}', 'heroic')">Heroisch</button>
+          <button class="diff-tab" data-diff="mythic" onclick="window.switchDiff(event, 'b${i}', 'mythic')">Mythisch</button>
         </div>
         ${['normal', 'heroic', 'mythic'].map((diff, di) => {
           const diffData = b.difficulties[diff];
@@ -610,7 +610,7 @@ raid(){
             <div class="boss-layout">
               <div class="boss-sidebar">
                 ${phasen.map((ph, pi)=>`
-                  <button class="ptab ${pi===0?'active':''}" data-diff="${diff}" onclick="window.switchTab('b${i}', ${pi}, '${diff}')">${esc(ph.titel)}</button>
+                  <button class="ptab ${pi===0?'active':''}" data-diff="${diff}" onclick="window.switchTab(event, 'b${i}', ${pi}, '${diff}')">${esc(ph.titel)}</button>
                 `).join("")}
               </div>
               <div class="boss-content">
@@ -643,7 +643,7 @@ raid(){
         <div class="boss-layout">
           <div class="boss-sidebar">
             ${(b.phasen && b.phasen.length ? b.phasen : [{titel:"Raid-Ansagen", uebersicht:"Wichtigste Aufgaben", regeln:(b.pts||[]).map(([ro,tx])=>({rolle:ro,typ:"info",text:tx}))}]).map((ph, pi)=>`
-              <button class="ptab ${pi===0?'active':''}" data-diff="none" onclick="window.switchTab('b${i}', ${pi}, 'none')">${esc(ph.titel)}</button>
+              <button class="ptab ${pi===0?'active':''}" data-diff="none" onclick="window.switchTab(event, 'b${i}', ${pi}, 'none')">${esc(ph.titel)}</button>
             `).join("")}
           </div>
           <div class="boss-content">
@@ -884,7 +884,8 @@ function applyData(d, c){
       intro:b.intro||"",
       phasen:b.phasen || [],
       pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
-      faehigkeiten:b.faehigkeiten || b.faehigkeiten || []
+      faehigkeiten:b.faehigkeiten || b.faehigkeiten || [],
+      difficulties:b.difficulties || null
     }));
   }
 
@@ -994,7 +995,8 @@ function route(){
 }
 addEventListener("hashchange", route);
 
-window.switchTab = function(bossId, tabIndex, diff) {
+window.switchTab = function(event, bossId, tabIndex, diff) {
+  if(event) event.stopPropagation();
   const bossEl = document.getElementById(bossId);
   if(!bossEl) return;
   const tabs = bossEl.querySelectorAll(`.ptab[data-diff="${diff}"]`);
@@ -1003,7 +1005,8 @@ window.switchTab = function(bossId, tabIndex, diff) {
   panels.forEach((p, i) => p.classList.toggle('active', i === tabIndex));
 };
 
-window.switchDiff = function(bossId, diff) {
+window.switchDiff = function(event, bossId, diff) {
+  if(event) event.stopPropagation();
   const bossEl = document.getElementById(bossId);
   if(!bossEl) return;
   const diffTabs = bossEl.querySelectorAll('.diff-tab');
