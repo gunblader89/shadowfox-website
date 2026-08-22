@@ -12,8 +12,8 @@
 <script src="https://wow.zamimg.com/js/power.js"></script>
 <style>
 :root{
-  --bg:#08090d; --elev:#0f1116; --panel:#12151c; --panel2:#171b24; --panel3:#1c212c;
-  --line:#222836; --line2:#2c3444;
+  --bg:#06070a; --elev:#0f1116; --panel:#11141b; --panel2:#161a23; --panel3:#1b202c;
+  --line:#1f2533; --line2:#2a3245;
   --tx:#eaedf3; --tx2:#a2abbc; --tx3:#69738a;
   --amber:#eab54e; --amber-d:#c98f2e; --amber-bg:rgba(234,181,78,.11);
   --violet:#8f7ce8; --violet-bg:rgba(143,124,232,.12);
@@ -26,23 +26,25 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased}
 
+/* Moderner, weicher Ambient-Mesh-Hintergrund (ohne Punkte) */
 body::before{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background-color:#08090d;
+  background-color:#06070a;
   background-image:
-    radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px),
-    radial-gradient(850px 500px at 85% 0%, rgba(234, 181, 78, 0.10), transparent 70%),
-    radial-gradient(750px 550px at 10% 40%, rgba(143, 124, 232, 0.09), transparent 70%),
-    radial-gradient(circle at 50% 50%, transparent 45%, rgba(5, 6, 9, 0.75) 100%);
-  background-size: 24px 24px, 100% 100%, 100% 100%, 100% 100%;
+    radial-gradient(1100px 650px at 85% -5%, rgba(234, 181, 78, 0.08), transparent 70%),
+    radial-gradient(950px 750px at 10% 25%, rgba(143, 124, 232, 0.09), transparent 70%),
+    radial-gradient(900px 600px at 50% 85%, rgba(23, 28, 42, 0.5), transparent 80%),
+    linear-gradient(180deg, rgba(6, 7, 10, 0.3) 0%, rgba(6, 7, 10, 0.95) 100%);
 }
 
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
 
-.top{position:sticky;top:0;z-index:60;background:rgba(8,9,13,.86);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line)}
-.top-in{display:flex;align-items:center;gap:20px;height:64px}
+/* Zentriertes, schwebendes Menüband mit Inhaltsbreite */
+.top-wrap{position:sticky;top:12px;z-index:60;max-width:1160px;margin:12px auto 0;padding:0 24px}
+.top{background:rgba(15,17,22,.88);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:16px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
+.top-in{display:flex;align-items:center;gap:18px;height:60px;padding:0 14px}
 .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
 .brand .mark{width:36px;height:36px;flex-shrink:0}
 .brand b{display:block;font-size:16px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
@@ -51,20 +53,21 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 nav{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
 nav::-webkit-scrollbar{display:none}
 nav a{padding:8px 12px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
-nav a:hover{color:var(--tx);background:var(--panel)}
-nav a.on{color:var(--tx);background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2)}
+nav a:hover{color:var(--tx);background:var(--panel2)}
+nav a.on{color:var(--tx);background:var(--panel3);box-shadow:inset 0 0 0 1px var(--line2)}
 .top-r{margin-left:auto;display:flex;align-items:center;gap:8px;flex-shrink:0}
-.sbtn{display:flex;align-items:center;gap:8px;padding:8px 11px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
+.sbtn{display:flex;align-items:center;gap:8px;padding:7px 11px;border-radius:9px;background:var(--panel2);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
 .sbtn:hover{border-color:var(--line2);color:var(--tx2)}
 kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;background:#1b202a;border:1px solid #2b3242;color:var(--tx3)}
-.btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:9px;font-size:13px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
 .btn-p{background:var(--amber);color:#1a1305}
 .btn-p:hover{background:#f2c266}
 .btn-disc{background:var(--disc-bg);color:#7289da;border-color:rgba(88,101,242,.35)}
 .btn-disc:hover{background:#5865f2;color:#fff;border-color:#5865f2}
 
-.notice{background:var(--green-bg);border-bottom:1px solid rgba(94,196,143,.2);font-size:12px;color:var(--green);text-align:center;padding:7px 20px}
-main{padding:32px 0 90px}
+.notice-bar{max-width:1160px;margin:8px auto 0;padding:0 24px}
+.notice{background:var(--green-bg);border:1px solid rgba(94,196,143,.25);font-size:12px;color:var(--green);text-align:center;padding:6px 20px;border-radius:10px}
+main{padding:20px 0 90px}
 
 .page-h{margin-bottom:24px}
 .page-h h1{font-size:29px;font-weight:700;letter-spacing:-.8px;line-height:1.15}
@@ -88,19 +91,20 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor}
 
-/* Hero Section mit neuem Branding */
-.hero{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#101319 52%,#0b0d12 100%);position:relative;margin-bottom:16px}
-.hero::after{content:"";position:absolute;right:-120px;top:-160px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.14),transparent 66%);pointer-events:none}
-.hero-in{padding:32px;position:relative;z-index:1;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
-.hero-mark{width:88px;height:88px;flex-shrink:0}
-.hero h1{font-size:46px;font-weight:900;letter-spacing:-1.8px;line-height:1;margin-bottom:8px;color:#eaedf3}
-.hero h1 span.hero-gold{color:var(--amber);text-shadow:0 0 24px rgba(234,181,78,.35)}
-.hero .sub{font-size:14.5px;color:var(--tx2);max-width:560px}
-.hero-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
-.chip{font-size:12px;padding:5px 11px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
+/* Hero Section mit vergrößertem Logo und Name */
+.hero{border:1px solid var(--line2);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#10131a 52%,#0b0d12 100%);position:relative;margin-bottom:16px;box-shadow:0 20px 48px rgba(0,0,0,.45)}
+.hero::after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.16),transparent 66%);pointer-events:none}
+.hero-in{padding:36px;position:relative;z-index:1;display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+.hero-mark{width:124px;height:124px;flex-shrink:0;filter:drop-shadow(0 12px 28px rgba(0,0,0,.75))}
+.hero-text{flex:1;min-width:280px}
+.hero h1{font-size:56px;font-weight:900;letter-spacing:-2px;line-height:1.02;margin-bottom:10px;color:#eaedf3}
+.hero h1 span.hero-gold{color:var(--amber);text-shadow:0 0 28px rgba(234,181,78,.45)}
+.hero .sub{font-size:15px;color:var(--tx2);max-width:580px;line-height:1.55}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{font-size:12px;padding:5px 12px;border-radius:8px;background:rgba(255,255,255,.04);border:1px solid var(--line2);color:var(--tx2)}
 .chip b{color:var(--tx);font-weight:650}
 
-.progblock{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);width:100%}
+.progblock{margin-top:20px;padding-top:20px;border-top:1px solid var(--line);width:100%}
 .progrow{display:flex;align-items:center;gap:14px;margin-bottom:9px}
 .progrow:last-child{margin-bottom:0}
 .progrow .lbl{width:78px;flex-shrink:0;font-size:12px;font-weight:650;color:var(--tx2)}
@@ -138,14 +142,14 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(90deg, #12151c 0%, rgba(18,21,28,0.94) 35%, rgba(18,21,28,0.55) 65%, rgba(18,21,28,0.85) 100%),
-              linear-gradient(180deg, rgba(18,21,28,0.1) 0%, rgba(18,21,28,0.7) 100%);
+  background:linear-gradient(90deg, #11141b 0%, rgba(17,20,27,0.94) 35%, rgba(17,20,27,0.55) 65%, rgba(17,20,27,0.85) 100%),
+              linear-gradient(180deg, rgba(17,20,27,0.1) 0%, rgba(17,20,27,0.7) 100%);
   z-index:1;
   pointer-events:none;
 }
 .boss.open .bhead::before{
-  background:linear-gradient(90deg, #171b24 0%, rgba(23,27,36,0.94) 35%, rgba(23,27,36,0.45) 65%, rgba(23,27,36,0.85) 100%),
-              linear-gradient(180deg, rgba(23,27,36,0.1) 0%, rgba(23,27,36,0.8) 100%);
+  background:linear-gradient(90deg, #161a23 0%, rgba(22,26,35,0.94) 35%, rgba(22,26,35,0.45) 65%, rgba(22,26,35,0.85) 100%),
+              linear-gradient(180deg, rgba(22,26,35,0.1) 0%, rgba(22,26,35,0.8) 100%);
 }
 .bhead > *{ position:relative; z-index:2; }
 
@@ -183,8 +187,8 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .role-box li{font-size:13px;color:var(--tx2);line-height:1.5;position:relative;padding-left:14px}
 .role-box li::before{content:"•";position:absolute;left:0;color:var(--tx3)}
 
-.phase-card{background:#11141b;border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden}
-.phase-card-h{padding:12px 16px;background:#161922;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.phase-card{background:#0e1118;border:1px solid var(--line);border-radius:12px;margin-bottom:14px;overflow:hidden}
+.phase-card-h{padding:12px 16px;background:#141720;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .phase-card-h b{font-size:14px;font-weight:700}
 .phase-card-h span{font-size:12.5px;color:var(--tx3)}
 .phase-card-b{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
@@ -339,17 +343,18 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .sbox-f{display:flex;gap:16px;padding:11px 19px;border-top:1px solid var(--line);font-size:11.5px;color:var(--tx3)}
 .empty{padding:36px 20px;text-align:center;color:var(--tx3);font-size:13.5px}
 
-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-size:12.5px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-size:12.5px;margin-top:40px}
 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
 .fade{animation:f .34s ease}
 @keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
 @media(max-width:960px){
   .start-grid,.g4,.g3,.tiles,.roles-grid{grid-template-columns:repeat(2,1fr)}
-  .top-in{height:auto;flex-wrap:wrap;padding:12px 0;gap:12px}
+  .top-in{height:auto;flex-wrap:wrap;padding:12px 14px;gap:12px}
   nav{order:3;width:100%}
-  .hero h1{font-size:36px}.hero-in{padding:24px;gap:20px}.hero-mark{width:68px;height:68px}
+  .hero h1{font-size:42px}.hero-in{padding:28px;gap:24px}.hero-mark{width:96px;height:96px}
   .wrap{padding:0 16px}
+  .top-wrap,.notice-bar{padding:0 16px}
   .bbody{padding:14px 16px 20px}
   .sig-grid{grid-template-columns:repeat(2,1fr)}
   .rcards{grid-template-columns:1fr}
@@ -357,6 +362,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 }
 @media(max-width:640px){
   .start-grid,.g4,.g3,.g2,.tiles,.roles-grid{grid-template-columns:1fr}
+  .hero h1{font-size:36px}.hero-mark{width:80px;height:80px}
   .sbtn span{display:none}
   .sig-grid{grid-template-columns:1fr}
 }
@@ -383,28 +389,33 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   </defs>
 </svg>
 
-<div class="notice" id="notice">ShadowFox Live-Portal · Synchronisiert</div>
-
-<header class="top">
-  <div class="wrap top-in">
-    <a class="brand" href="#/start">
-      <svg class="mark"><use href="#foxmark"/></svg>
-      <span><b>Shadow<span class="brand-gold">Fox</span></b><span class="brand-sub">BLACKMOORE · EU</span></span>
-    </a>
-    <nav id="nav"></nav>
-    <div class="top-r">
-      <button class="sbtn" id="openS">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <span>Suchen</span><kbd class="kk">⌘K</kbd>
-      </button>
-      <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-        <span>Discord</span>
+<!-- Zentriertes, begrenztes Header-Menüband -->
+<div class="top-wrap">
+  <header class="top">
+    <div class="top-in">
+      <a class="brand" href="#/start">
+        <svg class="mark"><use href="#foxmark"/></svg>
+        <span><b>Shadow<span class="brand-gold">Fox</span></b><span class="brand-sub">BLACKMOORE · EU</span></span>
       </a>
-      <a class="btn btn-p" href="#/bewerben">Bewerben</a>
+      <nav id="nav"></nav>
+      <div class="top-r">
+        <button class="sbtn" id="openS">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span>Suchen</span><kbd class="kk">⌘K</kbd>
+        </button>
+        <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span>Discord</span>
+        </a>
+        <a class="btn btn-p" href="#/bewerben">Bewerben</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
+</div>
+
+<div class="notice-bar">
+  <div class="notice" id="notice">ShadowFox Live-Portal · Synchronisiert</div>
+</div>
 
 <main><div class="wrap" id="view"></div></main>
 
@@ -778,7 +789,7 @@ start(){
   return `
   <section class="hero fade"><div class="hero-in">
     <svg class="hero-mark"><use href="#foxmark"/></svg>
-    <div style="flex:1;min-width:260px">
+    <div class="hero-text">
       <div class="eyebrow">${G.realm} · ${G.region} · ${G.faction}</div>
       <h1>Shadow<span class="hero-gold">Fox</span></h1>
       <p class="sub">${esc(G.recruit.motto)} Zwei Raidabende die Woche, ${G.members} Mitglieder.</p>
