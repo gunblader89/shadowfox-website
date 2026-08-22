@@ -7,62 +7,74 @@
       "rolle": "Add-Kontrolle & Brunnen",
       "slug": "nekzali-the-soulcoiler",
       "intro": "Eine Schattenjägerin, die Ula'tek beschwört. Der gesamte Kampf steht und fällt mit der lückenlosen Add-Kontrolle am Seelenwinderbrunnen.",
-      "phasen": [
-        {
-          "titel": "Phase 1: Brunnen & Essenzzerreißen",
-          "uebersicht": "Adds verlangsamen und töten, bevor sie den Brunnen füttern. Void-Flächen sauber am Rand ablegen.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Ruhelose Amani haben oberste Priorität. Stuns, Slows und Knockbacks nutzen – kein Add darf den Brunnen erreichen!"
+              "titel": "Phase 1: Brunnen & Essenzzerreißen",
+              "uebersicht": "Adds verlangsamen und töten, bevor sie den Brunnen füttern. Void-Flächen sauber am Rand ablegen.",
+              "regeln": [
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Ruhelose Amani haben oberste Priorität. Stuns, Slows und Knockbacks nutzen – kein Add darf den Brunnen erreichen!"
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "warnung",
+                  "text": "Grabesvorstoß-Schild absorbiert nur Magieschaden. Physische DPS müssen den Schild aufbrechen."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Essenzzerreißen: Betroffene Spieler laufen sofort an die Außenwand und legen die Voidzone dort ab."
+                },
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Aushöhlende Stöße: Tank-Swap bei 5–6 Stacks (−5 % Heilung pro Stack)."
+                }
+              ]
             },
             {
-              "rolle": "DPS",
-              "typ": "warnung",
-              "text": "Grabesvorstoß-Schild absorbiert nur Magieschaden. Physische DPS müssen den Schild aufbrechen."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Essenzzerreißen: Betroffene Spieler laufen sofort an die Außenwand und legen die Voidzone dort ab."
-            },
-            {
-              "rolle": "Tanks",
-              "typ": "info",
-              "text": "Aushöhlende Stöße: Tank-Swap bei 5–6 Stacks (−5 % Heilung pro Stack)."
+              "titel": "Intermission (50 % HP): Echo von Jawae",
+              "uebersicht": "Reiner DPS-Check vor dem Soft-Enrage.",
+              "regeln": [
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Echo von Jawae fokussieren und schnellstmöglich vernichten."
+                },
+                {
+                  "rolle": "Heiler",
+                  "typ": "warnung",
+                  "text": "Hungernder Scheiterhaufen erzeugt massiven Raidschaden – defensive Cooldowns rotieren."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Kreise gemeinsam abfangen, um den Flächenschaden aufzuteilen."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Seelenwinderbrunnen",
+            "Essenzzerreißen",
+            "Aushöhlende Stöße",
+            "Grabesvorstoß",
+            "Hungernder Scheiterhaufen"
           ]
         },
-        {
-          "titel": "Intermission (50 % HP): Echo von Jawae",
-          "uebersicht": "Reiner DPS-Check vor dem Soft-Enrage.",
-          "regeln": [
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Echo von Jawae fokussieren und schnellstmöglich vernichten."
-            },
-            {
-              "rolle": "Heiler",
-              "typ": "warnung",
-              "text": "Hungernder Scheiterhaufen erzeugt massiven Raidschaden – defensive Cooldowns rotieren."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Kreise gemeinsam abfangen, um den Flächenschaden aufzuteilen."
-            }
-          ]
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Seelenwinderbrunnen",
-        "Essenzzerreißen",
-        "Aushöhlende Stöße",
-        "Grabesvorstoß",
-        "Hungernder Scheiterhaufen"
-      ]
+      }
     },
     {
       "name": "Eingeschlossene Wächter",
@@ -71,52 +83,64 @@
       "rolle": "Zwei Gruppen & Zahlenrätsel",
       "slug": "entombed-sentinels",
       "intro": "Zwei Schlangengolems, die getrennt gehalten und gleichmäßig auf HP gebracht werden müssen. Die Zwischenphase erfordert exakte Partnerfindung.",
-      "phasen": [
-        {
-          "titel": "Hauptphase: Doppelter Schlangenkampf",
-          "uebersicht": "Raid in zwei gleich starke Camps aufteilen (mind. 40m Abstand).",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Alle",
-              "typ": "warnung",
-              "text": "Ula'teks Dominanz: Niemals die beiden Wächter zusammenziehen (40m Abstand Pflicht)."
+              "titel": "Hauptphase: Doppelter Schlangenkampf",
+              "uebersicht": "Raid in zwei gleich starke Camps aufteilen (mind. 40m Abstand).",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "warnung",
+                  "text": "Ula'teks Dominanz: Niemals die beiden Wächter zusammenziehen (40m Abstand Pflicht)."
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Beide Wächter synchron herunterschlagen. Bei mehr als 10 % HP-Differenz heilt der stärkere den schwächeren hoch."
+                },
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Nach jeder Zwischenphase wechseln die Tanks ihre Wächter, um Debuff-Resets zu ermöglichen."
+                }
+              ]
             },
             {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Beide Wächter synchron herunterschlagen. Bei mehr als 10 % HP-Differenz heilt der stärkere den schwächeren hoch."
-            },
-            {
-              "rolle": "Tanks",
-              "typ": "info",
-              "text": "Nach jeder Zwischenphase wechseln die Tanks ihre Wächter, um Debuff-Resets zu ermöglichen."
+              "titel": "Zwischenphase: Ätzende Stasis (Summe = 4)",
+              "uebersicht": "Zahlen-Debuffs abgleichen und blitzschnell Paare bilden.",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "prio",
+                  "text": "Mathematik-Mechanik: Spieler mit '1' suchen '3', Spieler mit '2' suchen '2'. Die Summe muss exakt 4 ergeben!"
+                },
+                {
+                  "rolle": "Heiler",
+                  "typ": "warnung",
+                  "text": "Fehlerhafte Paare explodieren mit tödlichem Raidschaden (Wipe-Gefahr)."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Ula'teks Dominanz",
+            "Mal der Säure",
+            "Mal des Blutes",
+            "Ätzende Stasis",
+            "Spiraltoxine"
           ]
         },
-        {
-          "titel": "Zwischenphase: Ätzende Stasis (Summe = 4)",
-          "uebersicht": "Zahlen-Debuffs abgleichen und blitzschnell Paare bilden.",
-          "regeln": [
-            {
-              "rolle": "Alle",
-              "typ": "prio",
-              "text": "Mathematik-Mechanik: Spieler mit '1' suchen '3', Spieler mit '2' suchen '2'. Die Summe muss exakt 4 ergeben!"
-            },
-            {
-              "rolle": "Heiler",
-              "typ": "warnung",
-              "text": "Fehlerhafte Paare explodieren mit tödlichem Raidschaden (Wipe-Gefahr)."
-            }
-          ]
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Ula'teks Dominanz",
-        "Mal der Säure",
-        "Mal des Blutes",
-        "Ätzende Stasis",
-        "Spiraltoxine"
-      ]
+      }
     },
     {
       "name": "Vashnik der Bösartige",
@@ -125,40 +149,52 @@
       "rolle": "Positionierung & Add-Stopp",
       "slug": "vashnik-the-malignant",
       "intro": "Vashnik destilliert Gifte aus Kesseln. Seine Fähigkeiten hängen davon ab, an welchem Kessel die Tanks ihn platzieren.",
-      "phasen": [
-        {
-          "titel": "Kessel-Rotation & Infektions-Management",
-          "uebersicht": "Boss vor jedem Trinken an den vorgegebenen Kessel ziehen.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Tanks",
-              "typ": "prio",
-              "text": "Boss vor dem 'Trinken'-Cast zur nächsten markierten Kesselposition ziehen."
-            },
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Lebendes Gift sofort verlangsamen und vernichten, bevor es die Raummitte erreicht."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Entziehende Infektion: Der gesamte Raid stackt sofort im Kreis des Betroffenen, um den Heilungsabsorb wegzudrücken."
-            },
-            {
-              "rolle": "Tanks",
-              "typ": "warnung",
-              "text": "Triefende Fangzähne: Taunt-Swap bei 2 Stacks (+200 % physischer Schaden)."
+              "titel": "Kessel-Rotation & Infektions-Management",
+              "uebersicht": "Boss vor jedem Trinken an den vorgegebenen Kessel ziehen.",
+              "regeln": [
+                {
+                  "rolle": "Tanks",
+                  "typ": "prio",
+                  "text": "Boss vor dem 'Trinken'-Cast zur nächsten markierten Kesselposition ziehen."
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Lebendes Gift sofort verlangsamen und vernichten, bevor es die Raummitte erreicht."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Entziehende Infektion: Der gesamte Raid stackt sofort im Kreis des Betroffenen, um den Heilungsabsorb wegzudrücken."
+                },
+                {
+                  "rolle": "Tanks",
+                  "typ": "warnung",
+                  "text": "Triefende Fangzähne: Taunt-Swap bei 2 Stacks (+200 % physischer Schaden)."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Trinken",
+            "Toxischer Dampf",
+            "Triefende Fangzähne",
+            "Entziehende Infektion"
           ]
+        },
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Trinken",
-        "Toxischer Dampf",
-        "Triefende Fangzähne",
-        "Entziehende Infektion"
-      ]
+      }
     },
     {
       "name": "Die verirrten Entdecker",
@@ -167,40 +203,52 @@
       "rolle": "Ratskampf & Fisch-Rotation",
       "slug": "lost-explorers",
       "intro": "Drei besessene Tortollaner-Bosse. Erfordert kontrollierten Cleave-Schaden und rechtzeitige Fütterung bei 90 % Energie.",
-      "phasen": [
-        {
-          "titel": "Ratskampf: Cleave & Kisten",
-          "uebersicht": "Immer nur 2 Bosse zusammenziehen, den 3. isolieren.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Tanks",
-              "typ": "info",
-              "text": "Immer zwei Bosse für Cleave-DPS zusammenhalten, den dritten mind. 30 Meter entfernt tanken."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "prio",
-              "text": "Widerliche Fische: Kisten zerschlagen, Fische aufsammeln und bei ca. 90 % Energie in die hungrigen Mäuler werfen."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "warnung",
-              "text": "Frostfeuersalve: Feuer-Debuff in Frostfläche löschen, Frost-Debuff in Feuerfläche löschen."
-            },
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Alle drei Bosse gleichzeitig töten. Stirbt einer zu früh, enragen die anderen beiden!"
+              "titel": "Ratskampf: Cleave & Kisten",
+              "uebersicht": "Immer nur 2 Bosse zusammenziehen, den 3. isolieren.",
+              "regeln": [
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Immer zwei Bosse für Cleave-DPS zusammenhalten, den dritten mind. 30 Meter entfernt tanken."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "prio",
+                  "text": "Widerliche Fische: Kisten zerschlagen, Fische aufsammeln und bei ca. 90 % Energie in die hungrigen Mäuler werfen."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "warnung",
+                  "text": "Frostfeuersalve: Feuer-Debuff in Frostfläche löschen, Frost-Debuff in Feuerfläche löschen."
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Alle drei Bosse gleichzeitig töten. Stirbt einer zu früh, enragen die anderen beiden!"
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Vereinte Verteidigung",
+            "Widerliche Fische",
+            "Letzter Aufstieg",
+            "Reliktriss"
           ]
+        },
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Vereinte Verteidigung",
-        "Widerliche Fische",
-        "Letzter Aufstieg",
-        "Reliktriss"
-      ]
+      }
     },
     {
       "name": "Sszorak",
@@ -209,52 +257,64 @@
       "rolle": "Wind, Knockbacks & Tank-Kombo",
       "slug": "sszorak",
       "intro": "Eine giftige Bestie auf einer schmalen Plattform. Die Mechanik steht und fällt mit der Wind-Gegenkopplung.",
-      "phasen": [
-        {
-          "titel": "Phase 1: Wind-Paare & Tank-Split",
-          "uebersicht": "Wind-Pfeile gegeneinander ausgleichen und den Tank-Schlag soaken.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Alle",
-              "typ": "prio",
-              "text": "Zornige Winde: Spieler mit Pfeil nach links suchen Partner mit Pfeil nach rechts. Lauf direkt ineinander, um den Knockback aufzuheben!"
+              "titel": "Phase 1: Wind-Paare & Tank-Split",
+              "uebersicht": "Wind-Pfeile gegeneinander ausgleichen und den Tank-Schlag soaken.",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "prio",
+                  "text": "Zornige Winde: Spieler mit Pfeil nach links suchen Partner mit Pfeil nach rechts. Lauf direkt ineinander, um den Knockback aufzuheben!"
+                },
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Apex-Raubtier: Tank 1 nimmt Verwüstung, Tank 2 spottet für den nächsten Treffer."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "warnung",
+                  "text": "Verstümmeln: Direkt nach dem Tank-Treffer stackt der gesamte Raid beim Tank im Kreis."
+                }
+              ]
             },
             {
-              "rolle": "Tanks",
-              "typ": "info",
-              "text": "Apex-Raubtier: Tank 1 nimmt Verwüstung, Tank 2 spottet für den nächsten Treffer."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "warnung",
-              "text": "Verstümmeln: Direkt nach dem Tank-Treffer stackt der gesamte Raid beim Tank im Kreis."
+              "titel": "Phase 2: Heulender Maelstrom (Burnphase)",
+              "uebersicht": "Plattformmitte meiden, Kampfrausch zünden und Boss finishen.",
+              "regeln": [
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Alle Offensiv-Cooldowns und Pots zünden – Boss vor dem Plattform-Kollaps töten."
+                },
+                {
+                  "rolle": "Heiler",
+                  "typ": "warnung",
+                  "text": "Dauerschaden auf den gesamten Raid – Healing-CDs nacheinander ziehen."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Raubzug des Apex-Raubtiers",
+            "Verwüstung",
+            "Verstümmeln",
+            "Zerfressenes Gift",
+            "Zornige Winde"
           ]
         },
-        {
-          "titel": "Phase 2: Heulender Maelstrom (Burnphase)",
-          "uebersicht": "Plattformmitte meiden, Kampfrausch zünden und Boss finishen.",
-          "regeln": [
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Alle Offensiv-Cooldowns und Pots zünden – Boss vor dem Plattform-Kollaps töten."
-            },
-            {
-              "rolle": "Heiler",
-              "typ": "warnung",
-              "text": "Dauerschaden auf den gesamten Raid – Healing-CDs nacheinander ziehen."
-            }
-          ]
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Raubzug des Apex-Raubtiers",
-        "Verwüstung",
-        "Verstümmeln",
-        "Zerfressenes Gift",
-        "Zornige Winde"
-      ]
+      }
     },
     {
       "name": "Die Zwillingsfänge",
@@ -263,52 +323,64 @@
       "rolle": "Stack-Management & Soak-Rotation",
       "slug": "twin-fangs",
       "intro": "Vexhul und Ithraz teilen sich eine gemeinsame Lebensleiste. Bei 10 Stacks Ewiges Gift stirbt der Spieler sofort.",
-      "phasen": [
-        {
-          "titel": "Phase 1: Soak-Rotation (3 Gruppen)",
-          "uebersicht": "Gefräßiges Schmausen in 3 festgelegten Gruppen nacheinander abfangen.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Alle",
-              "typ": "warnung",
-              "text": "Ewiges Gift: Bei 10 Stacks stirbt man sofort. Niemals mehr als 6–7 Stacks aufbauen!"
+              "titel": "Phase 1: Soak-Rotation (3 Gruppen)",
+              "uebersicht": "Gefräßiges Schmausen in 3 festgelegten Gruppen nacheinander abfangen.",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "warnung",
+                  "text": "Ewiges Gift: Bei 10 Stacks stirbt man sofort. Niemals mehr als 6–7 Stacks aufbauen!"
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "prio",
+                  "text": "Gefräßiges Schmausen: Gruppe 1 soaket Cast 1, Gruppe 2 Cast 2, Gruppe 3 Cast 3 zum Stack-Reset."
+                },
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Ätzende Flut: 5-Sekunden-Kanalisierung auf den Tank. Unbedingt in Nahkampfreichweite bleiben."
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Giftiges Erwachen: Drei Schlangen in der Raummitte sofort stunnen, bündeln und wegbomben."
+                }
+              ]
             },
             {
-              "rolle": "Alle",
-              "typ": "prio",
-              "text": "Gefräßiges Schmausen: Gruppe 1 soaket Cast 1, Gruppe 2 Cast 2, Gruppe 3 Cast 3 zum Stack-Reset."
-            },
-            {
-              "rolle": "Tanks",
-              "typ": "info",
-              "text": "Ätzende Flut: 5-Sekunden-Kanalisierung auf den Tank. Unbedingt in Nahkampfreichweite bleiben."
-            },
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Giftiges Erwachen: Drei Schlangen in der Raummitte sofort stunnen, bündeln und wegbomben."
+              "titel": "Zwischenphase: Verderbliche Flut",
+              "uebersicht": "Bosse tauchen unter – rotierenden Giftwellen ausweichen.",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Immer gegen die Drehrichtung der Giftwellen mitlaufen und herabfallenden Steinen ausweichen."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Ewiges Gift",
+            "Gefräßiges Schmausen",
+            "Ätzende Flut",
+            "Steinbrecher",
+            "Giftiges Erwachen"
           ]
         },
-        {
-          "titel": "Zwischenphase: Verderbliche Flut",
-          "uebersicht": "Bosse tauchen unter – rotierenden Giftwellen ausweichen.",
-          "regeln": [
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Immer gegen die Drehrichtung der Giftwellen mitlaufen und herabfallenden Steinen ausweichen."
-            }
-          ]
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Ewiges Gift",
-        "Gefräßiges Schmausen",
-        "Ätzende Flut",
-        "Steinbrecher",
-        "Giftiges Erwachen"
-      ]
+      }
     },
     {
       "name": "Der Gewundene Altar",
@@ -317,100 +389,112 @@
       "rolle": "Phasenwechsel & Fixate",
       "slug": "coiled-altar",
       "intro": "TL;DR: Raidstrats Guide für den normalen Schwierigkeitsgrad von 'Der Gewundene Altar' in Zusammenarbeit mit Consequence (US).",
-      "phasen": [
-        {
-          "titel": "Schnellübersicht",
-          "uebersicht": "Kampf-Übersicht: Der Gewundene Altar ist ein 3-Phasen-Kampf. Phase 1 ist Single-Target-Patchwerk, Phase 2 ist Single-Target mit verteilten Add-Spawns und Phase 3 ist ein gestackter Cleave auf 2 Ziele.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Phase 1: Sammle und stacke die Kugeln im Raum und zerstöre sie mit dem Cleave des Bosses. Gruppen-Soaken von Flächen. Ausweichen und Dispellen."
+              "titel": "Schnellübersicht",
+              "uebersicht": "Kampf-Übersicht: Der Gewundene Altar ist ein 3-Phasen-Kampf. Phase 1 ist Single-Target-Patchwerk, Phase 2 ist Single-Target mit verteilten Add-Spawns und Phase 3 ist ein gestackter Cleave auf 2 Ziele.",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Phase 1: Sammle und stacke die Kugeln im Raum und zerstöre sie mit dem Cleave des Bosses. Gruppen-Soaken von Flächen. Ausweichen und Dispellen."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Phase 2: Zerstöre die Geister, indem du sie zu einem Sammelpunkt ziehst und durch direkten Blickkontakt einfrierst."
+                }
+              ]
             },
             {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Phase 2: Zerstöre die Geister, indem du sie zu einem Sammelpunkt ziehst und durch direkten Blickkontakt einfrierst."
+              "titel": "Phase 1: Handel der Schlange",
+              "uebersicht": "Positionierung",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Während Phase 1 sollte der Raid ziemlich gestackt spielen, es sei denn, man ist dafür eingeteilt, Kugeln aufzusammeln und sie am vorgesehenen Sammelpunkt abzulegen."
+                },
+                {
+                  "rolle": "Heiler",
+                  "typ": "info",
+                  "text": "Es gibt im gesamten Kampf viel raumweiten Schaden, daher ist gestacktes Spielen für die Heilung von großem Vorteil."
+                },
+                {
+                  "rolle": "Tanks",
+                  "typ": "info",
+                  "text": "Positioniert den Boss in Richtung eines Randes des Raumes, um den Platz in der Mitte für die ankommenden Mechaniken optimal freizuhalten."
+                }
+              ]
+            },
+            {
+              "titel": "Phase 2: Vergeltung des Usurpators",
+              "uebersicht": "Positionierung",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "In Phase 2 sollte der Raid gestackt hinter dem Boss spielen und leicht dezentral zu einer der Seiten positioniert sein. Dies dient dazu, zu kontrollieren, in welche Richtung die fixierten Spieler laufen müssen."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "prio",
+                  "text": "Wenn man von einem der Geister fixiert wird, zieht sie zu einem vorgesehenen Sammelpunkt und schaut dann euren Geist an, um ihn rechtzeitig einzufrieren."
+                }
+              ]
+            },
+            {
+              "titel": "Zwischenphase: Das beanspruchte Gefäß",
+              "uebersicht": "Die Zwischenphase",
+              "regeln": [
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "In der Zwischenphase geht es darum, dem Boss so viel Schaden wie möglich zuzufügen, während versucht wird, ihn vollzuheilen. Er erleidet währenddessen doppelten Schaden."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "warnung",
+                  "text": "Blockiert unbedingt alle Geister-Adds, die auf den Boss zulaufen, da diese ihn ansonsten direkt wieder heilen würden."
+                }
+              ]
+            },
+            {
+              "titel": "Phase 3: Die gewundene Einheit",
+              "uebersicht": "Zusammenführung der Phasen",
+              "regeln": [
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Phase 3 ist im Grunde genommen das gleichzeitige Spielen von Phase 1 und Phase 2, während man beide Bosse gleichzeitig besiegt, da sie sich keine Gesundheit teilen."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Die Mechaniken sind zum Teil durch Schatten-Versionen ersetzt, die verbleibende Kugeln auflösen. Tötet beide Ziele synchron."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Guillotine",
+            "Sever",
+            "Giftige Sturzflut",
+            "Zermürbende Fixierung",
+            "Vereinte Windung"
           ]
         },
-        {
-          "titel": "Phase 1: Handel der Schlange",
-          "uebersicht": "Positionierung",
-          "regeln": [
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Während Phase 1 sollte der Raid ziemlich gestackt spielen, es sei denn, man ist dafür eingeteilt, Kugeln aufzusammeln und sie am vorgesehenen Sammelpunkt abzulegen."
-            },
-            {
-              "rolle": "Heiler",
-              "typ": "info",
-              "text": "Es gibt im gesamten Kampf viel raumweiten Schaden, daher ist gestacktes Spielen für die Heilung von großem Vorteil."
-            },
-            {
-              "rolle": "Tanks",
-              "typ": "info",
-              "text": "Positioniert den Boss in Richtung eines Randes des Raumes, um den Platz in der Mitte für die ankommenden Mechaniken optimal freizuhalten."
-            }
-          ]
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
         },
-        {
-          "titel": "Phase 2: Vergeltung des Usurpators",
-          "uebersicht": "Positionierung",
-          "regeln": [
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "In Phase 2 sollte der Raid gestackt hinter dem Boss spielen und leicht dezentral zu einer der Seiten positioniert sein. Dies dient dazu, zu kontrollieren, in welche Richtung die fixierten Spieler laufen müssen."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "prio",
-              "text": "Wenn man von einem der Geister fixiert wird, zieht sie zu einem vorgesehenen Sammelpunkt und schaut dann euren Geist an, um ihn rechtzeitig einzufrieren."
-            }
-          ]
-        },
-        {
-          "titel": "Zwischenphase: Das beanspruchte Gefäß",
-          "uebersicht": "Die Zwischenphase",
-          "regeln": [
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "In der Zwischenphase geht es darum, dem Boss so viel Schaden wie möglich zuzufügen, während versucht wird, ihn vollzuheilen. Er erleidet währenddessen doppelten Schaden."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "warnung",
-              "text": "Blockiert unbedingt alle Geister-Adds, die auf den Boss zulaufen, da diese ihn ansonsten direkt wieder heilen würden."
-            }
-          ]
-        },
-        {
-          "titel": "Phase 3: Die gewundene Einheit",
-          "uebersicht": "Zusammenführung der Phasen",
-          "regeln": [
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Phase 3 ist im Grunde genommen das gleichzeitige Spielen von Phase 1 und Phase 2, während man beide Bosse gleichzeitig besiegt, da sie sich keine Gesundheit teilen."
-            },
-            {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Die Mechaniken sind zum Teil durch Schatten-Versionen ersetzt, die verbleibende Kugeln auflösen. Tötet beide Ziele synchron."
-            }
-          ]
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Guillotine",
-        "Sever",
-        "Giftige Sturzflut",
-        "Zermürbende Fixierung",
-        "Vereinte Windung"
-      ]
+      }
     },
     {
       "name": "Ula'tek",
@@ -419,46 +503,58 @@
       "rolle": "Eier-Kontrolle & Endboss",
       "slug": "ulatek",
       "intro": "Endboss des Tiers. Drei Phasen auf einer schrumpfenden Plattform mit tödlichen Giftwellen.",
-      "phasen": [
-        {
-          "titel": "Phase 1 & 2: Wellen & Eier-Kicks",
-          "uebersicht": "Wellen ausweichen, Eier vor dem Schlüpfen unterbrechen.",
-          "regeln": [
+      "difficulties": {
+        "normal": {
+          "phasen": [
             {
-              "rolle": "Tanks",
-              "typ": "warnung",
-              "text": "Immer mindestens ein Tank in Nahkampfreichweite. Fehlt der Tank, wirkt Ula'tek 'Unchecked Rage' (Raidwipe)."
+              "titel": "Phase 1 & 2: Wellen & Eier-Kicks",
+              "uebersicht": "Wellen ausweichen, Eier vor dem Schlüpfen unterbrechen.",
+              "regeln": [
+                {
+                  "rolle": "Tanks",
+                  "typ": "warnung",
+                  "text": "Immer mindestens ein Tank in Nahkampfreichweite. Fehlt der Tank, wirkt Ula'tek 'Unchecked Rage' (Raidwipe)."
+                },
+                {
+                  "rolle": "Alle",
+                  "typ": "info",
+                  "text": "Ätzende Wellen: Seitlich durch die Lücken der Wellen laufen – niemals in die Eiernester am Rand stoßen lassen."
+                },
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Kick-Rotation auf die Eier einteilen. Kein Add darf schlüpfen!"
+                }
+              ]
             },
             {
-              "rolle": "Alle",
-              "typ": "info",
-              "text": "Ätzende Wellen: Seitlich durch die Lücken der Wellen laufen – niemals in die Eiernester am Rand stoßen lassen."
-            },
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Kick-Rotation auf die Eier einteilen. Kein Add darf schlüpfen!"
+              "titel": "Phase 3: Schrumpfende Plattform (Soft Enrage)",
+              "uebersicht": "Gift frisst den Raum auf – maximaler Burst.",
+              "regeln": [
+                {
+                  "rolle": "DPS",
+                  "typ": "prio",
+                  "text": "Heroism / Kampfrausch zünden. Boss vor dem vollständigen Plattformverlust legen."
+                }
+              ]
             }
+          ],
+          "faehigkeiten": [
+            "Ätzende Wellen",
+            "Mutters Zorn",
+            "Spektrale Windungen",
+            "Zorn der Gefesselten"
           ]
         },
-        {
-          "titel": "Phase 3: Schrumpfende Plattform (Soft Enrage)",
-          "uebersicht": "Gift frisst den Raum auf – maximaler Burst.",
-          "regeln": [
-            {
-              "rolle": "DPS",
-              "typ": "prio",
-              "text": "Heroism / Kampfrausch zünden. Boss vor dem vollständigen Plattformverlust legen."
-            }
-          ]
+        "heroic": {
+          "phasen": [],
+          "faehigkeiten": []
+        },
+        "mythic": {
+          "phasen": [],
+          "faehigkeiten": []
         }
-      ],
-      "faehigkeiten": [
-        "Ätzende Wellen",
-        "Mutters Zorn",
-        "Spektrale Windungen",
-        "Zorn der Gefesselten"
-      ]
+      }
     }
   ]
 }
