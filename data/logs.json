@@ -26,9 +26,9 @@
             "boss": "The Blinding Vale"
           },
           {
-            "name": "Tiskarian",
-            "class": "Druid",
-            "spec": "Balance",
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
             "parse": 76,
             "boss": "The Twin Fangs"
           }
@@ -220,5 +220,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-22T09:15:43.833Z"
+  "updatedAt": "2026-08-22T09:52:26.226Z"
 }
