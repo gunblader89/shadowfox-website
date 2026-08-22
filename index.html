@@ -22,13 +22,8 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased}
 
-/* Statischer Dot-Matrix Hintergrund (Responsive & 4K-scharf) */
 body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:0;
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
   background-color:#08090d;
   background-image:
     radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px),
@@ -111,6 +106,7 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .tile b{display:block;font-size:14px;font-weight:650;margin-bottom:3px}
 .tile span{display:block;font-size:12.5px;color:var(--tx3);line-height:1.45}
 
+/* ---------- Boss Accordion & MythicTrap Videos ---------- */
 .boss{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:10px;overflow:hidden;transition:.16s}
 .boss.open{border-color:var(--line2);background:var(--panel2)}
 .bhead{display:flex;align-items:center;gap:14px;padding:15px 18px;width:100%}
@@ -125,6 +121,16 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .boss.open .bbody{display:block}
 .bintro{font-size:13.5px;color:var(--tx2);padding:12px 15px;background:rgba(255,255,255,.022);border-left:2px solid var(--amber);border-radius:0 8px 8px 0;margin-bottom:16px}
 .blabel{font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--tx3);font-weight:700;margin:16px 0 10px}
+
+/* Mechaniken Video Cards */
+.mech-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:12px 0 18px}
+.mech-card{background:var(--panel3);border:1px solid var(--line2);border-radius:11px;overflow:hidden;display:flex;flex-direction:column}
+.mech-vid-wrap{position:relative;width:100%;aspect-ratio:16/9;background:#0a0c10;overflow:hidden}
+.mech-vid{width:100%;height:100%;object-fit:cover;display:block}
+.mech-body{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.mech-title{font-size:13.5px;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.mech-desc{font-size:12.5px;color:var(--tx2);line-height:1.5}
+
 .steps{list-style:none;display:flex;flex-direction:column;gap:9px}
 .step{display:flex;gap:11px;align-items:flex-start}
 .rtag{flex-shrink:0;width:60px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.5px;padding:3px 0;border-radius:6px;margin-top:2px;text-transform:uppercase}
@@ -549,7 +555,7 @@ raid(){
   return `
   <div class="page-h fade">
     <h1>${esc(r.name)}</h1>
-    <p>${esc(r.en)} · ${r.bosses} Bosse · ${esc(r.zone)} · Alle Ansagen nach Rollen unterteilt.</p>
+    <p>${esc(r.en)} · ${r.bosses} Bosse · ${esc(r.zone)} · Alle Ansagen & animierte Kurzclips nach Mechanik.</p>
   </div>
   <div class="fade">
   ${BOSSES.map((b,i)=>{const s=ST[b.st]||ST.open;return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
@@ -561,11 +567,36 @@ raid(){
     </button>
     <div class="bbody">
       <div class="bintro">${esc(b.intro)}</div>
+      
+      ${b.mechaniken && b.mechaniken.length ? `
+        <div class="blabel">Mechaniken im Detail (Video-Guides)</div>
+        <div class="mech-grid">
+          ${b.mechaniken.map(m=>`<div class="mech-card">
+            <div class="mech-vid-wrap">
+              <video src="${m.videoUrl}" autoplay loop muted playsinline referrerpolicy="no-referrer" class="mech-vid"></video>
+            </div>
+            <div class="mech-body">
+              <div class="mech-title">
+                <b>${esc(m.titel)}</b>
+                <span class="rtag r-${(m.rolle||'alle').toLowerCase()}">${esc(m.rolle||'Alle')}</span>
+              </div>
+              <p class="mech-desc">${esc(m.text)}</p>
+            </div>
+          </div>`).join("")}
+        </div>
+      ` : ''}
+
       <div class="blabel">Ansagen im Raid</div>
       <ul class="steps">${(b.pts||[]).map(([ro,tx])=>`<li class="step"><span class="rtag r-${ro.toLowerCase()}">${ro}</span><p>${tx}</p></li>`).join("")}</ul>
+      
       <div class="blabel">Fähigkeiten</div>
       <div class="abils">${(b.abil||[]).map(a=>`<span class="abil">${esc(a)}</span>`).join("")}</div>
-      <div class="links">${ext(WH(b.slug),"Wowhead-Guide (DE)")}${ext(G.links.wcl,"Logs")}</div>
+      
+      <div class="links">
+        ${ext(WH(b.slug),"Wowhead-Guide (DE)")}
+        ${ext(`https://www.mythictrap.com/de/venomous-abyss/${b.slug}`,"MythicTrap Guide ↗")}
+        ${ext(G.links.wcl,"Warcraft Logs")}
+      </div>
     </div></div>`;}).join("")}
   </div>`;
 },
@@ -771,6 +802,7 @@ function applyData(d, c){
     BOSSES = c.bosses.bosses.map(b => ({
       n:b.name, en:b.nameEn||"", st:b.status||"open", role:b.rolle||"", slug:b.slug||"",
       intro:b.intro||"", pts:(b.ansagen||[]).map(a=>[a.rolle||"Alle",a.text||""]),
+      mechaniken:b.mechaniken || [],
       abil:b.faehigkeiten||[]
     }));
   }
