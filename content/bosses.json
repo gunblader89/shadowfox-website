@@ -1,22 +1,202 @@
 {
-  "name": "Sszorak",
-  "nameEn": "Sszorak",
-  "status": "down",
-  "slug": "sszorak",
-  "mythictrapUrl": "https://www.mythictrap.com/de/venomous-abyss/sszorak",
-  "intro": "Eine giftige Bestie auf einer offenen Plattform. Positionierung bei Wind und Knockbacks ist entscheidend.",
-  "mechaniken": [
+  "bosses": [
     {
-      "titel": "Zornige Winde",
-      "rolle": "Alle",
-      "text": "Spieler erhalten Pfeile über dem Kopf. Findet euren Partner mit der entgegengesetzten Richtung und lauft ineinander, um den Knockback zu neutralisieren.",
-      "videoUrl": "https://assets.mythictrap.com/venomous-abyss/sszorak/wrathful_winds.mp4"
+      "name": "Nek'zali die Seelenwinderin",
+      "nameEn": "Nek'zali the Soulcoiler",
+      "status": "down",
+      "rolle": "Add-Kontrolle & Brunnen",
+      "slug": "nekzali-the-soulcoiler",
+      "intro": "Eine Schattenjägerin, die für ihre Beschwörung von Ula'tek lebendig begraben wurde. Der Kampf steht und fällt damit, dass keine Adds den Seelenwinderbrunnen erreichen.",
+      "ansagen": [
+        { "rolle": "DPS", "text": "Ruhelose Amani haben immer oberste Priorität. Kein Add darf den Seelenwinderbrunnen erreichen." },
+        { "rolle": "DPS", "text": "Der Schild Grabesvorstoß absorbiert Magieschaden. Mit physischem Burst aufbrechen." },
+        { "rolle": "Alle", "text": "Essenzzerreißen-Träger laufen sofort nach außen an den Rand." },
+        { "rolle": "Tanks", "text": "Swap bei 5–6 Stacks Aushöhlende Stöße." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Seelenwinderbrunnen",
+          "rolle": "DPS",
+          "text": "Adds marschieren auf den Brunnen zu. Verlangsamen, stunnen und sofort eliminieren vor dem Erreichen.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/nekzali/soulcoiler_well.mp4"
+        },
+        {
+          "titel": "Essenzzerreißen",
+          "rolle": "Alle",
+          "text": "Betroffene Spieler legen die Void-Zonen am äußersten Plattformrand ab.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/nekzali/essence_sever.mp4"
+        }
+      ],
+      "faehigkeiten": ["Seelenwinderbrunnen", "Essenzzerreißen", "Aushöhlende Stöße", "Grabesvorstoß", "Hungernder Scheiterhaufen"]
     },
     {
-      "titel": "Apex-Raubtier",
-      "rolle": "Tanks",
-      "text": "Kombination aus Verwüstung und Verstümmelung. Beide Tanks teilen sich die Treffer sauber auf.",
-      "videoUrl": "https://assets.mythictrap.com/venomous-abyss/sszorak/apex_predator.mp4"
+      "name": "Eingeschlossene Wächter",
+      "nameEn": "Entombed Sentinels",
+      "status": "down",
+      "rolle": "Zwei Gruppen & Zahlenrätsel",
+      "slug": "entombed-sentinels",
+      "intro": "Zwei Schlangengolems, die getrennt gehalten werden müssen. Die Zwischenphase ist ein Zahlenpuzzle — wer das nicht kapiert, stirbt.",
+      "ansagen": [
+        { "rolle": "Alle", "text": "Zwei gleich starke Gruppen: Atem links, Blut rechts. Mindestens 40 Meter Abstand halten." },
+        { "rolle": "DPS", "text": "Beide Bosse auf gleichem HP-Stand halten, sonst heilt der stärkere den schwächeren hoch." },
+        { "rolle": "Alle", "text": "Ätzende Stasis: Summe genau 4 bilden (1 sucht 3, 2 sucht 2)." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Ätzende Stasis (Zahlenrätsel)",
+          "rolle": "Alle",
+          "text": "Debuffs mit Zahlenwert vergleichen und zügig Paare bilden, deren Gesamtsumme exakt 4 ergibt.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/sentinels/corrosive_stasis.mp4"
+        }
+      ],
+      "faehigkeiten": ["Ula'teks Dominanz", "Mal der Säure", "Mal des Blutes", "Ätzende Stasis", "Spiraltoxine"]
+    },
+    {
+      "name": "Vashnik der Bösartige",
+      "nameEn": "Vashnik the Malignant",
+      "status": "down",
+      "rolle": "Positionierung & Add-Stopp",
+      "slug": "vashnik-the-malignant",
+      "intro": "In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte. Wo der Boss steht, entscheidet über seine Infusionen.",
+      "ansagen": [
+        { "rolle": "Tanks", "text": "Vashnik vor jedem Trinken umpositionieren. Er zieht immer aus den zwei nächsten Quellen." },
+        { "rolle": "DPS", "text": "Kein lebendes Gift erreicht die Mitte. Brennende Gifte zuerst fokussieren." },
+        { "rolle": "Alle", "text": "Entziehende Infektion: Kreis stacken, um den Heilungsabsorb wegzuknacken." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Entziehende Infektion",
+          "rolle": "Alle",
+          "text": "Der gesamte Raid läuft in den Kreis des markierten Spielers, um den Absorb gemeinsam wegzudrücken.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/vashnik/draining_infection.mp4"
+        }
+      ],
+      "faehigkeiten": ["Trinken", "Toxischer Dampf", "Triefende Fangzähne", "Entziehende Infektion"]
+    },
+    {
+      "name": "Die verirrten Entdecker",
+      "nameEn": "The Lost Explorers",
+      "status": "down",
+      "rolle": "Ratskampf & Fisch-Rotation",
+      "slug": "lost-explorers",
+      "intro": "Drei besessene Tortollaner kontrolliert vom unangreifbaren Mor'zahi.",
+      "ansagen": [
+        { "rolle": "Alle", "text": "Immer nur zwei Bosse zusammen für Cleave, den dritten mindestens 30 Meter weg." },
+        { "rolle": "Alle", "text": "Kisten aufbrechen und Fische bei ca. 90 % Energie füttern." },
+        { "rolle": "DPS", "text": "Alle drei gleichzeitig finishen." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Fisch-Fütterung",
+          "rolle": "Alle",
+          "text": "Fische einsammeln und rechtzeitig vor 100% Boss-Energie in die hungrigen Mäuler werfen.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/explorers/foul_fish.mp4"
+        }
+      ],
+      "faehigkeiten": ["Vereinte Verteidigung", "Widerliche Fische", "Letzter Aufstieg", "Reliktriss"]
+    },
+    {
+      "name": "Sszorak",
+      "nameEn": "Sszorak",
+      "status": "down",
+      "rolle": "Wind, Knockbacks & Tank-Kombo",
+      "slug": "sszorak",
+      "intro": "Eine in Ula'teks Gift gehüllte Bestie auf einer offenen Plattform. Wind-Positionierung und Knockbacks sind hier der Schlüssel.",
+      "ansagen": [
+        { "rolle": "Tanks", "text": "Apex-Raubtier: Angriffe aufteilen (je eine Verwüstung und eine Verstümmelung)." },
+        { "rolle": "Alle", "text": "Verstümmeln: Raid stackt sofort beim getroffenen Tank." },
+        { "rolle": "Alle", "text": "Zornige Winde: Partner mit Gegenrichtung suchen und ineinander fliegen." },
+        { "rolle": "DPS", "text": "Heulender Maelstrom ist die Burnphase — alle Damage-CDs zünden." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Zornige Winde (Wind-Kopplung)",
+          "rolle": "Alle",
+          "text": "Zwei Spieler erhalten entgegengesetzte Windpfeile. Stellt euch direkt aufeinander zu, sodass sich die Rückstöße gegenseitig aufheben.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/sszorak/wrathful_winds.mp4"
+        },
+        {
+          "titel": "Apex-Raubtier & Verstümmeln",
+          "rolle": "Tanks",
+          "text": "Verwüstung trifft nur den aktiven Tank. Direkt danach beim Verstümmeln-Cast muss der gesamte Raid im Stack-Kreis helfen.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/sszorak/apex_predator.mp4"
+        }
+      ],
+      "faehigkeiten": ["Raubzug des Apex-Raubtiers", "Verwüstung", "Verstümmeln", "Zerfressenes Gift", "Zornige Winde"]
+    },
+    {
+      "name": "Die Zwillingsfänge",
+      "nameEn": "The Twin Fangs",
+      "status": "down",
+      "rolle": "Stack-Management & Soak-Rotation",
+      "slug": "twin-fangs",
+      "intro": "Vexhul und Ithraz — zwei Lebensbalken, ein Giftstack-Timer. Bei 10 Stacks Ewiges Gift stirbt der Spieler.",
+      "ansagen": [
+        { "rolle": "Alle", "text": "Ewiges Gift bei 10 Stacks tödlich. Gefräßiges Schmausen in 3 Gruppen nacheinander soaken." },
+        { "rolle": "Tanks", "text": "Ätzende Flut: Vexhul kanalisiert 5 Sekunden — in Reichweite bleiben." },
+        { "rolle": "DPS", "text": "Giftiges Erwachen: Drei Schlangen in der Mitte sofort fokussieren." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Gefräßiges Schmausen (Soak-Rotation)",
+          "rolle": "Alle",
+          "text": "In 3 Gruppen aufgeteilt nacheinander in den Frontalbereich laufen, um Stacks abzutragen, ohne 10 Stacks zu erreichen.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/twin-fangs/voracious_feast.mp4"
+        },
+        {
+          "titel": "Giftiges Erwachen (Schlangen)",
+          "rolle": "DPS",
+          "text": "Adds in der Raummitte sofort bündeln, stunnen und per Burst wegbomben.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/twin-fangs/venomous_awakening.mp4"
+        }
+      ],
+      "faehigkeiten": ["Ewiges Gift", "Gefräßiges Schmausen", "Ätzende Flut", "Steinbrecher", "Giftiges Erwachen"]
+    },
+    {
+      "name": "Der Gewundene Altar",
+      "nameEn": "The Coiled Altar",
+      "status": "prog",
+      "rolle": "Phasenwechsel & Fixate",
+      "slug": "coiled-altar",
+      "intro": "Der Geist von Malacrass befiehlt Zul'jan. Drei Phasen mit Blickkontakt-Mechanik.",
+      "ansagen": [
+        { "rolle": "Alle", "text": "Phase 1: Guillotine in Gruppe soaken (mindestens 5 Spieler)." },
+        { "rolle": "Tanks", "text": "Sever: Taunt nach jedem Cast. Frontal zerstört Giftkugeln." },
+        { "rolle": "Alle", "text": "Phase 2: Zermürbende Fixierung — die Geister direkt ansehen, sie bewegen sich nur im Rücken." },
+        { "rolle": "DPS", "text": "Phase 3: HP beider Bosse angleichen, müssen zusammen fallen." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Zermürbende Fixierung (Blickkontakt)",
+          "rolle": "Alle",
+          "text": "Fixierte Geister bewegen sich nur, wenn man ihnen den Rücken zudreht. Immer im Sichtfeld halten!",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/coiled-altar/harrowing_fixation.mp4"
+        }
+      ],
+      "faehigkeiten": ["Guillotine", "Sever", "Giftige Sturzflut", "Zermürbende Fixierung", "Vereinte Windung"]
+    },
+    {
+      "name": "Ula'tek",
+      "nameEn": "Ula'tek",
+      "status": "open",
+      "rolle": "Eier-Kontrolle & Endboss",
+      "slug": "ulatek",
+      "intro": "Endboss des Tiers. Drei Phasen auf schrumpfender Plattform.",
+      "ansagen": [
+        { "rolle": "Tanks", "text": "Immer in Nahkampfreichweite bleiben." },
+        { "rolle": "Alle", "text": "Ätzende Wellen ausweichen und von den Eiern fernhalten." },
+        { "rolle": "DPS", "text": "Phase 2: Eier vor dem Schlüpfen unterbrechen." },
+        { "rolle": "Alle", "text": "Phase 3: Plattform wird kontinuierlich gefressen." }
+      ],
+      "mechaniken": [
+        {
+          "titel": "Ätzende Wellen & Eier",
+          "rolle": "Alle",
+          "text": "Den herannahenden Giftwellen seitlich ausweichen, ohne in die Eiernester am Rand gestoßen zu werden.",
+          "videoUrl": "https://assets.mythictrap.com/venomous-abyss/ulatek/caustic_waves.mp4"
+        }
+      ],
+      "faehigkeiten": ["Ätzende Wellen", "Mutters Zorn", "Spektrale Windungen", "Zorn der Gefesselten"]
     }
   ]
 }
