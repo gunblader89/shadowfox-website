@@ -38,34 +38,36 @@ body::before{
 
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 
-.top-wrap{position:sticky;top:12px;z-index:60;max-width:1160px;margin:12px auto 0;padding:0 24px}
-.top{background:rgba(15,17,22,.88);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:16px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
-.top-in{display:flex;align-items:center;gap:18px;height:60px;padding:0 14px}
-.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
-.brand .mark{width:36px;height:36px;flex-shrink:0}
-.brand b{display:block;font-size:16px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
+/* Perfekt ausgerichtetes & überlappungsfreies Menüband */
+.top-wrap{position:sticky;top:10px;z-index:60;max-width:1160px;margin:10px auto 0;padding:0 20px}
+.top{background:rgba(15,17,22,.92);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 12px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand .mark{width:32px;height:32px;flex-shrink:0}
+.brand b{display:block;font-size:15.5px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
 .brand b span.brand-gold{color:var(--amber)}
-.brand span.brand-sub{display:block;font-size:10.5px;color:var(--tx3);letter-spacing:.6px;font-weight:600;margin-top:2px}
-nav{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav a{padding:8px 11px;border-radius:9px;font-size:13px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
+.brand span.brand-sub{display:block;font-size:10px;color:var(--tx3);letter-spacing:.6px;font-weight:600;margin-top:1px}
+
+nav{display:flex;gap:2px;align-items:center;flex-shrink:1;min-width:0}
+nav a{padding:6px 10px;border-radius:8px;font-size:13px;font-weight:600;color:var(--tx2);white-space:nowrap;transition:.14s}
 nav a:hover{color:var(--tx);background:var(--panel2)}
 nav a.on{color:var(--tx);background:var(--panel3);box-shadow:inset 0 0 0 1px var(--line2)}
-.top-r{margin-left:auto;display:flex;align-items:center;gap:8px;flex-shrink:0}
-.sbtn{display:flex;align-items:center;gap:8px;padding:7px 11px;border-radius:9px;background:var(--panel2);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
+
+.top-r{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.sbtn{display:flex;align-items:center;gap:6px;padding:6px 9px;border-radius:8px;background:var(--panel2);border:1px solid var(--line);color:var(--tx3);font-size:12px;transition:.14s}
 .sbtn:hover{border-color:var(--line2);color:var(--tx2)}
-kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;background:#1b202a;border:1px solid #2b3242;color:var(--tx3)}
-.btn{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:9px;font-size:13px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
+kbd{font-family:var(--mono);font-size:10px;padding:2px 4px;border-radius:4px;background:#1b202a;border:1px solid #2b3242;color:var(--tx3)}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:8px;font-size:12.5px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
 .btn-p{background:var(--amber);color:#1a1305}
 .btn-p:hover{background:#f2c266}
 .btn-disc{background:var(--disc-bg);color:#7289da;border-color:rgba(88,101,242,.35)}
 .btn-disc:hover{background:#5865f2;color:#fff;border-color:#5865f2}
 
-.notice-bar{max-width:1160px;margin:8px auto 0;padding:0 24px}
+.notice-bar{max-width:1160px;margin:8px auto 0;padding:0 20px}
 .notice{background:var(--green-bg);border:1px solid rgba(94,196,143,.25);font-size:12px;color:var(--green);text-align:center;padding:6px 20px;border-radius:10px}
-main{padding:20px 0 90px}
+main{padding:18px 0 90px}
 
 .page-h{margin-bottom:24px}
 .page-h h1{font-size:29px;font-weight:700;letter-spacing:-.8px;line-height:1.15}
@@ -303,13 +305,16 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 .fade{animation:f .34s ease}
 @keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
+@media(max-width:1120px){
+  .sbtn span, .btn-disc span{display:none}
+  nav a{padding:6px 7px;font-size:12.5px}
+}
 @media(max-width:960px){
   .start-grid,.g4,.g3,.tiles,.roles-grid{grid-template-columns:repeat(2,1fr)}
-  .top-in{height:auto;flex-wrap:wrap;padding:12px 14px;gap:12px}
-  nav{order:3;width:100%}
+  .top-in{height:auto;flex-wrap:wrap;padding:10px 12px;gap:10px}
+  nav{order:3;width:100%;justify-content:flex-start;overflow-x:auto}
   .hero h1{font-size:42px}.hero-in{padding:28px;gap:24px}.hero-mark{width:96px;height:96px}
-  .wrap{padding:0 16px}
-  .top-wrap,.notice-bar{padding:0 16px}
+  .wrap,.top-wrap,.notice-bar{padding:0 14px}
   .bbody{padding:14px 16px 20px}
   .sig-grid{grid-template-columns:repeat(2,1fr)}
   .rcards{grid-template-columns:1fr}
@@ -318,7 +323,6 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 @media(max-width:640px){
   .start-grid,.g4,.g3,.g2,.tiles,.roles-grid{grid-template-columns:1fr}
   .hero h1{font-size:36px}.hero-mark{width:80px;height:80px}
-  .sbtn span{display:none}
   .sig-grid{grid-template-columns:1fr}
 }
 </style>
@@ -451,13 +455,14 @@ const EVENT = {
 
 let REPORTS = [];
 
+// Schlanke & übersichtliche Menü-Labels
 const NAV = [
   ["start","Start"],
-  ["raid","Raid-Guides"],
-  ["dungeons","M+ Guides"],
-  ["termine","Termine"],
+  ["raid","Raid"],
+  ["dungeons","M+"],
   ["tracker","Tracker"],
   ["logs","Logs"],
+  ["termine","Termine"],
   ["roster","Roster"],
   ["wissen","Wissen"]
 ];
@@ -721,7 +726,6 @@ raid(){
   <div class="fade">
   ${BOSSES.map((b,i)=>{
     const s = ST[b.st] || ST.open;
-    const curDiff = ACTIVE_DIFF[i] || "normal";
     const bgImage = b.image || DEFAULT_ARTWORK;
 
     return `<div class="boss${b.st==='prog'?' open':''}" id="b${i}">
@@ -793,11 +797,10 @@ dungeons(){
 
   return `
   <div class="page-h fade">
-    <h1>Mythic+ Guides (Season 2)</h1>
-    <p>Umfassende Instanz-Guides im Stil von <i>Weber's WoW Guides</i> mit Kicks, Hard-CC-Stopps, Dispel-Anforderungen und Boss-Strategien.</p>
+    <h1>Mythic+ Guides (Midnight Season 2)</h1>
+    <p>Detaillierte Instanz-Guides nach <i>Weber's WoW Guides</i> mit Kicks, Hard-CC-Stopps, Dispel-Anforderungen und Boss-Strategien.</p>
   </div>
 
-  <!-- Dungeon Selector Buttons -->
   <div class="d-selector fade">
     ${DUNGEONS.map((dung, idx) => `
       <div class="d-btn ${idx === SELECTED_DUNGEON_IDX ? 'active' : ''}" onclick="selectDungeon(${idx})">
@@ -810,7 +813,6 @@ dungeons(){
     `).join("")}
   </div>
 
-  <!-- Active Dungeon Detailed View -->
   <div class="fade" style="margin-bottom:34px">
     <div class="boss open" style="margin-bottom:24px">
       <div class="bhead" style="background-image: url('${d.image || DEFAULT_ARTWORK}'); min-height:110px">
@@ -831,14 +833,13 @@ dungeons(){
           <div class="meta-box"><span>Keystone-Timer</span><b>${esc(d.timer)} (40 % / 20 %)</b></div>
         </div>
 
-        <!-- Trash Mobs & Priority Kicks -->
         <div class="eyebrow" style="margin:24px 0 8px">⚠️ Gefährlicher Trash: Kicks, Stopps &amp; Frontals</div>
         <div class="tw" style="margin-bottom:24px">
           <table class="trash-table">
             <thead>
               <tr>
-                <th style="width:20%">Trash-Mob</th>
-                <th style="width:22%">Gefährliche Fähigkeit</th>
+                <th style="width:22%">Trash-Mob</th>
+                <th style="width:24%">Gefährliche Fähigkeit</th>
                 <th style="width:14%">Typ</th>
                 <th>Taktik &amp; Lösung</th>
               </tr>
@@ -860,7 +861,6 @@ dungeons(){
           </table>
         </div>
 
-        <!-- Boss Guides -->
         <div class="eyebrow" style="margin:28px 0 12px">🎯 Boss-Strategien &amp; Rollenhinweise</div>
         ${(d.bosses||[]).map((b, bIdx) => `
           <div class="boss open" style="margin-bottom:16px;background:var(--panel2)">
@@ -1087,8 +1087,9 @@ bewerben(){
       <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
         <a class="btn btn-disc" style="padding:10px 18px;font-size:14px" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-          <span>Discord Server beitreten</span>
+          <span>Discord</span>
         </a>
+        <a class="btn btn-p" href="#/bewerben">Bewerben</a>
       </div>
     </div>
   </div>`;
