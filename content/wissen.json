@@ -2,81 +2,59 @@
   "artikel": [
     {
       "icon": "⚔️",
-      "titel": "Raidregeln",
-      "text": "Pünktlichkeit, Vorbereitung, Verhalten im Progress. Die Kurzfassung: 19:40 im Voice, repariert, mit gelesener Taktik.",
-      "tags": [
-        "Pflicht",
-        "Neue"
-      ],
-      "vorlage": true
+      "titel": "Allgemeines Verhalten & Gildenkodex",
+      "text": "Respekt, Teamgeist, Vorbildfunktion und monatliche Gildenbesprechung.",
+      "tags": ["Pflicht", "Gilde", "Community"],
+      "body": "<p>Das Miteinander bei ShadowFox basiert auf gegenseitigem Respekt und Teamgeist:</p><ul><li><b>Respekt & Höflichkeit:</b> Beleidigungen, toxisches Verhalten, Diskriminierung jeglicher Art (z. B. Herkunft, Sexualität) oder Mobbing werden ausnahmslos nicht toleriert.</li><li><b>Teamgeist:</b> Das gemeinsame Vorankommen steht im Vordergrund – egal ob im Progress-Raid, in Mythisch+ Keystones oder beim Farmen von Ressourcen.</li><li><b>Vorbildfunktion:</b> Verhalten, das dem Ruf der Gilde schadet (z. B. Ninja-Looting, Griefing oder Trolling in Random-Gruppen), ist streng verboten.</li><li><b>Monatliche Gildenbesprechung:</b> An jedem ersten Dienstag im Monat um 20:00 Uhr findet unsere offene Gildensitzung im Discord statt. Hier hat jedes Mitglied Raum für Feedback, Kritik, Vorschläge und Anregungen.</li></ul>"
     },
     {
       "icon": "💰",
-      "titel": "Loot-Regelung",
-      "text": "Wie Loot verteilt wird, wie Trials behandelt werden und wie ihr Wünsche im Voraus anmeldet.",
-      "tags": [
-        "Loot",
-        "Trial"
-      ],
-      "vorlage": true
-    },
-    {
-      "icon": "🧩",
-      "titel": "Addons & WeakAuras",
-      "text": "Pflicht-Addons und das aktuelle WeakAura-Paket für Der Giftige Abgrund inklusive Import-Strings.",
-      "tags": [
-        "Setup",
-        "Pflicht"
-      ],
-      "vorlage": true
-    },
-    {
-      "icon": "🧪",
-      "titel": "Konsumierbare",
-      "text": "Was jeder selbst mitbringt, was die Gildenbank stellt, Flask- und Food-Empfehlungen pro Rolle.",
-      "tags": [
-        "Konsum",
-        "Bank"
-      ],
-      "vorlage": true
-    },
-    {
-      "icon": "📅",
-      "titel": "Abmeldung & Anwesenheit",
-      "text": "Abmeldungen bis wann und wo. Mo & Do sind die Raidtage — Bescheid geben statt wegbleiben.",
-      "tags": [
-        "Signup"
-      ],
-      "vorlage": true
-    },
-    {
-      "icon": "🌱",
-      "titel": "Onboarding für Neue",
-      "text": "Deine ersten zwei Wochen bei ShadowFox: was du liest, wen du ansprichst, wie der Trial läuft.",
-      "tags": [
-        "Neue",
-        "Trial"
-      ],
-      "vorlage": true
+      "titel": "Loot-Regelung (RC LootCouncil & Droptimizer)",
+      "text": "Faire Beutevergabe nach Raidbots-Simulation für maximalen Raid-Gesamtnutzen.",
+      "tags": ["Loot", "Droptimizer", "Raidbots"],
+      "body": "<p>Beute wird transparent über das Addon <b>RC LootCouncil</b> verteilt. Um Entscheidungen zu beschleunigen und maximale Fairness zu gewährleisten, gilt folgende Pflicht:</p><ul><li><b>Raidbots Droptimizer:</b> Jeder Raider lässt unmittelbar vor Raidbeginn eine Droptimizer-Simulation für den aktuellen Raid auf <a href='https://www.raidbots.com/simbot/droptimizer' target='_blank' rel='noopener' style='color:var(--amber);text-decoration:underline'>Raidbots.com</a> durchlaufen.</li><li><b>Bedarf mit Zahlenwert melden:</b> Bei einem Item-Drop wählst du 'Need' und trägst im Notizfeld des RC-LootCouncil-Fensters zwingend deinen <b>konkreten DPS/HPS-Gain als Zahl</b> ein (z. B. <i>+2.450 DPS</i> oder <i>Tier-Set 4er-Bonus</i>).</li><li><b>Vergabekriterien:</b> 1. Set-Boni (2er/4er Vervollständigung) vor Einzelwerten, 2. Höchster prozentualer Gesamtnutzen für den Raidkader, 3. Zuverlässigkeit und Anwesenheit.</li><li><b>Trial-Regelung:</b> Neue Mitglieder in der Probezeit erhalten Beute nach vollwertigen Stamm-Mitgliedern, sofern das Item nicht zur Entzauberung ansteht.</li></ul>"
     },
     {
       "icon": "🎧",
-      "titel": "Voice-Etikette",
-      "text": "Während Pulls reden nur Raidlead und Callouts. Diskussion in der Pause. Push-to-Talk.",
-      "tags": [
-        "Discord"
-      ],
-      "vorlage": true
+      "titel": "Discord- & Voice-Etikette",
+      "text": "Namenskonvention, Push-to-Talk, Channel-Nutzung und Streamer-Bereiche.",
+      "tags": ["Discord", "Voice", "Kommunikation"],
+      "body": "<p>Für eine übersichtliche und störungsfreie Kommunikation auf unserem Discord-Server:</p><ul><li><b>Discord-Namenspflicht:</b> Jeder Server-Nutzer trägt seinen Ingame-Charakternamen gefolgt von seinem realen Vornamen (Format: <code>Charakter/Vorname</code>, z. B. <code>Merccrixxus/Passi</code> oder <code>Kite/Alex</code>).</li><li><b>Push-to-Talk Pflicht:</b> Im Raid-Voice gilt Push-to-Talk (oder dauerhafte Stummschaltung bei Nicht-Sprechen), um Störgeräusche für 20+ Spieler zu eliminieren.</li><li><b>Clear Comm bei Bosskämpfen:</b> Ab dem Pull-Countdown sprechen ausschließlich Raidlead und eingeteilte Mechanik-Callouts.</li><li><b>Streamer-Channels:</b> In speziell markierten Live-Channels wird gestreamt. Wer dort beitritt, ist im Stream zu hören.</li><li><b>Keine Fremdwerbung:</b> Werbung für andere Gilden oder externe Communities ist auf dem gesamten Server untersagt.</li></ul>"
     },
     {
-      "icon": "🔧",
-      "titel": "Char-Vorbereitung",
-      "text": "Wöchentliche Checkliste vor dem Reset: M+, Craft-Slots, Sockel, Verzauberungen, Vantus.",
-      "tags": [
-        "Gear",
-        "Wöchentlich"
-      ],
-      "vorlage": true
+      "icon": "📅",
+      "titel": "Raidzeiten, An- & Abmeldungen",
+      "text": "Montag & Donnerstag 19:45–22:30 Uhr. Verbindliche Zu- und Absagen via Raid-Helper.",
+      "tags": ["Raid", "Zeiten", "Signup"],
+      "body": "<p>Verlässliche Kaderplanung für zwei konzentrierte Raidabende pro Woche:</p><ul><li><b>Raidtage:</b> Montag & Donnerstag, 19:45 – 22:30 Uhr (Pause ca. 21:00 Uhr).</li><li><b>Invite um 19:40 Uhr:</b> Pünktliches Erscheinen im Voice ist Pflicht, damit um 19:45 Uhr der erste Pull erfolgen kann.</li><li><b>24h-Frist via Raid-Helper:</b> An- und Abmeldungen im Discord-Channel <code>#raid-anmeldung</code> müssen spätestens 24 Stunden vor Raidbeginn getätigt werden.</li><li><b>Längere Abwesenheiten (> 1 Woche):</b> Bitte vorab im entsprechenden Abwesenheits-Kanal melden. Unangekündigte Inaktivität über 14 Tage führt zum Gilden-Ausschluss.</li><li><b>Ersatzbank:</b> Bank-Spieler halten sich zu Raidbeginn auf Abruf bereit.</li></ul>"
+    },
+    {
+      "icon": "🧩",
+      "titel": "Pflicht-Addons & WeakAuras",
+      "text": "MRT, DBM/BigWigs, WeakAuras und RC LootCouncil auf aktuellem Stand halten.",
+      "tags": ["Addons", "WeakAuras", "Setup"],
+      "body": "<p>Jeder feste Raider muss folgende Addons vor Raidantritt installiert und aktualisiert haben:</p><ul><li><b>Method Raid Tools (MRT):</b> Für Boss-Notizen, Heil-Cooldown-Zuweisungen und Raid-Inspections.</li><li><b>RC LootCouncil:</b> Zur Anzeige und Abgabe von Beuteanfragen mit Droptimizer-Notiz.</li><li><b>Deadly Boss Mods (DBM) oder BigWigs:</b> Für Timer-Leisten und Phasenwarnungen.</li><li><b>WeakAuras:</b> Das jeweils aktuelle ShadowFox Raid-Paket für <i>Der Giftige Abgrund</i>.</li></ul>"
+    },
+    {
+      "icon": "🧪",
+      "titel": "Gildenbank & Raidversorgung",
+      "text": "Kessel und Festmähler von der Bank – Pots, Verzauberungen und Sockel selbst stellen.",
+      "tags": ["Bank", "Konsum", "Buffs"],
+      "body": "<p>Faires Ressourcen-Management für nachhaltigen Progress:</p><ul><li><b>Gildenbank-Leistungen:</b> Kessel (Flasks) und Festmähler (Food) werden an allen regulären Progress-Abenden von der Gildenbank gestellt.</li><li><b>Eigenverantwortung:</b> Kampf-Tränke (Combat Pots), Heiltränke, Waffen-Verzauberungen/Öle und Sockelsteine bringt jeder Raider selbst in ausreichender Menge mit.</li><li><b>Spenden:</b> Überschüssige Handwerksmaterialien, Fleisch und Kräuter können in das offene Gildenbankfach gespendet werden, um Kessel und Festmähler nachzuproduzieren.</li></ul>"
+    },
+    {
+      "icon": "🌱",
+      "titel": "Rekrutierung, Trial & Gildenränge",
+      "text": "Probezeit, Feedback-Gespräche und Übernahme in den Stammkader.",
+      "tags": ["Trial", "Ränge", "Onboarding"],
+      "body": "<p>Unser transparenter Integrationsprozess für neue Mitglieder:</p><ul><li><b>Probezeit (Trial):</b> Neue Raider durchlaufen eine 2- bis 4-wöchige Testphase.</li><li><b>Bewertungskriterien:</b> Zuverlässigkeit, Klassenverständnis, Mechanik-Disziplin und soziale Einbindung in die Gilde.</li><li><b>Feedback:</b> Nach 2–3 Wochen führen wir ein persönliches Gespräch zur Übernahme in den festen Stammkader.</li><li><b>Gildenränge:</b> Ränge spiegeln Verantwortung wider (Gildenleitung, Offiziere, Stamm-Raider, Raider, Member, Trial).</li></ul>"
+    },
+    {
+      "icon": "⚖️",
+      "titel": "Konfliktlösung & Sanktionen",
+      "text": "Direkte Kommunikation, Vermittlung durch Offiziere und Stufen-Verwarnungssystem.",
+      "tags": ["Regeln", "Konflikte", "Fairness"],
+      "body": "<p>Klare Schritte bei Unstimmigkeiten oder Regelverstößen:</p><ul><li><b>1. Direkte Kommunikation:</b> Konflikte zwischen Mitgliedern werden zunächst sachlich und privat unter vier Augen besprochen.</li><li><b>2. Offiziers-Vermittlung:</b> Kann keine Einigung erzielt werden, wird die Gildenleitung zur neutralen Schlichtung hinzugezogen.</li><li><b>Stufenplan bei Regelverstößen:</b><ul><li><b>1. Verwarnung:</b> Konstruktives Klärungsgespräch mit Hinweisen zur Besserung.</li><li><b>2. Verwarnung:</b> Zeitweise Sanktionen (z. B. Raid- oder Event-Pause).</li><li><b>Ausschluss:</b> Bei wiederholtem oder schwerwiegendem Fehlverhalten (Mobbing, Cheating, Sabotage).</li></ul></li></ul>"
     }
   ]
 }
