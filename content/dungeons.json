@@ -1,595 +1,553 @@
 {
   "dungeons": [
     {
-      "id": "cinderbrew",
-      "name": "Metbrauerei Zischnisch",
-      "nameEn": "Cinderbrew Meadery",
-      "timer": "32:00",
-      "bossCount": 4,
-      "icon": "🍺",
+      "id": "altar-of-fangs",
+      "name": "Altar der Fänge",
+      "nameEn": "Altar of Fangs",
+      "timer": "30:00",
+      "bossCount": 3,
+      "icon": "🐍",
       "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f9f43b4f5abb79d2c6cf8e0d885b95ac59fbd3b0.jpg",
       "dispels": ["Gift", "Fluch", "Enrage"],
-      "lust": "1. Boss (Pull), 3. Boss (Phase 2), 4. Boss",
+      "lust": "1. Boss (Pull), 2. Boss (Phase 2), 3. Boss (Zul'jan Burn)",
       "trash": [
-        { "name": "Zischnisch-Brauer", "ability": "Gärbrand", "id": 434706, "type": "kick", "desc": "Muss zwingend unterbrochen werden! Verursacht massiven Feuerschaden auf die Gruppe." },
-        { "name": "Bierbäuchiger Rabauke", "ability": "Fausschlag", "id": 434707, "type": "frontal", "desc": "Frontal-Kegel immer von der Gruppe wegdrehen." },
-        { "name": "Verärgerter Gast", "ability": "Krugwurf", "id": 434708, "type": "stop", "desc": "Fügt zufälligen Spielern Schaden zu. Durch Stuns und Disruption unterbrechen." },
-        { "name": "Bratmeister", "ability": "Heißes Fett", "id": 434709, "type": "dispel", "desc": "Hinterlässt einen stapelbaren Feuer-DoT (Magie/Gift) – schnell reinigen." }
+        { "name": "Schlangenzüngiger Hexer", "ability": "Giftiger Schauer", "id": 441200, "type": "kick", "desc": "Prio 1 Kick! Kanalisiert massiven Naturschaden auf die gesamte Gruppe." },
+        { "name": "Gewundener Wächter", "ability": "Giftbiss", "id": 441201, "type": "dispel", "desc": "Stapelt tödlichen Gift-DoT auf den Tank – bei 3+ Stacks zwingend reinigen." },
+        { "name": "Brutpfleger der Fänge", "ability": "Schlangenraserei", "id": 441202, "type": "stop", "desc": "Erhöht Schaden und Tempo der Adds um 100 %. Mit Hard-CC/Stun unterbrechen oder Enrage dispellen." },
+        { "name": "Tiefenschlange", "ability": "Schwanzfeger", "id": 441203, "type": "frontal", "desc": "Schwerer Frontal-Stoß – Tank dreht den Mob immer von der Gruppe weg." }
       ],
       "bosses": [
         {
-          "name": "Braumeister Aldryr",
-          "nameEn": "Brewmaster Aldryr",
-          "icon": "🍻",
-          "check": "Add-Burst & Fass-Positionierung",
+          "name": "Rav'i",
+          "nameEn": "Rav'i",
+          "icon": "🦎",
+          "check": "Giftpfützen-Management & Ansturm",
           "lust": "Zu Pull",
-          "intro": "Aldryr wirft Fässer in den Raum und beschwört durstige Kunden. Fässer dürfen nicht in den Raid rollen.",
+          "intro": "Rav'i speit Giftsäure in den Raum und fixiert Spieler für einen verheerenden Ansturm.",
           "roles": {
-            "tanks": ["Boss von rollenden Fässern weghalten.", "Schwere Schläge defensiv abfangen."],
-            "heiler": ["Massiven Gruppenschaden bei Fass-Explosionen gegenheilen.", "Gift-Debuffs sofort dispellen."],
-            "dps": ["Beschworene Adds mit Stuns stoppen und wegbomben.", "Aus Fass-Laufbahnen herauslaufen."]
+            "tanks": ["Boss am Rand im Kreis ziehen, um den Raum von Giftpfützen freizuhalten."],
+            "heiler": ["Massiven Gruppenschaden bei 'Säureexplosion' mit CDs abfangen."],
+            "dps": ["Fixierten Ansturm in Wände lenken und Giftflächen meiden."]
           },
-          "abilities": [{ "name": "Fasswurf", "id": 434710 }, { "name": "Feuriges Gebräu", "id": 434711 }]
+          "abilities": [{ "name": "Säureeruption", "id": 441210 }, { "name": "Toxischer Ansturm", "id": 441211 }]
         },
         {
-          "name": "I'pa",
-          "nameEn": "I'pa",
-          "icon": "💧",
-          "check": "Tropfen-Kicks & Pfützenkontrolle",
-          "lust": "Nach dem 1. Schild",
-          "intro": "Ein riesiges Bierschleim-Elementar. Teilt sich in kleinere Tropfen auf, die zwingend gekickt werden müssen.",
-          "roles": {
-            "tanks": ["Boss am Rand entlang ziehen, um Raum sauber zu halten."],
-            "heiler": ["Flächenschaden stabilisieren, wenn Tropfen durchkommen."],
-            "dps": ["Tropfen fokussieren – Kicks und Stuns rotieren, bevor sie explodieren."]
-          },
-          "abilities": [{ "name": "Sprudelnde Eruption", "id": 434720 }, { "name": "Brautropfen", "id": 434721 }]
-        },
-        {
-          "name": "Benk Schrotpresser",
-          "nameEn": "Benk Grizzlepress",
-          "icon": "⚙️",
-          "check": "Fass-Schreddern & Prio-Schaden",
+          "name": "Die Windende Spule",
+          "nameEn": "The Writhing Coil",
+          "icon": "🌀",
+          "check": "Schlingen-Befreiung & Kicks",
           "lust": "In Phase 2",
-          "intro": "Benk nutzt Schredder-Maschinen und wirft Minen. Spieler müssen Minen in Säulen lenken.",
+          "intro": "Ein uraltes Schlangen-Konstrukt, das Spieler in Würgeschlingen fängt.",
           "roles": {
-            "tanks": ["Boss mit dem Rücken zu den Schreddern positionieren."],
-            "heiler": ["Pulsierenden Brandschaden während der Schredder-Phase heilen."],
-            "dps": ["Minen kontrolliert durch Laufen in freie Flächen detonieren."]
+            "tanks": ["Auf 'Erdschlag' achten und aktive Defensives ziehen."],
+            "heiler": ["Gefangene Spieler vor Ablauf des Schlingen-Timers hochheilen."],
+            "dps": ["Schlingen auf Mitspielern sofort durch Fokus-Schaden zerstören."]
           },
-          "abilities": [{ "name": "Schredderschlag", "id": 434730 }, { "name": "Brauereimine", "id": 434731 }]
+          "abilities": [{ "name": "Würgeschlinge", "id": 441220 }, { "name": "Giftiges Zischen", "id": 441221 }]
         },
         {
-          "name": "Goldie Baronboden",
-          "nameEn": "Goldie Baronbottom",
-          "icon": "💰",
-          "check": "Goldregen & Schießpulver-Flächen",
-          "lust": "Zu Kampfbeginn",
-          "intro": "Endboss der Metbrauerei. Wirft brennende Münzen und zündet Schießpulverfässer im gesamten Raum an.",
-          "roles": {
-            "tanks": ["Boss aus brennenden Zonen herausziehen.", "Auf Frontalschläge achten."],
-            "heiler": ["Massiven Gruppenschaden bei 'Goldregen' abfangen."],
-            "dps": ["Fässer vor der Zündung mit Stopps kontrollieren und Boss finishen."]
-          },
-          "abilities": [{ "name": "Goldregen", "id": 434740 }, { "name": "Brennendes Pulver", "id": 434741 }]
-        }
-      ]
-    },
-    {
-      "id": "darkflame",
-      "name": "Dunkelflammenspalt",
-      "nameEn": "Darkflame Cleft",
-      "timer": "33:00",
-      "bossCount": 4,
-      "icon": "⛏️",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
-      "dispels": ["Magie", "Fluch"],
-      "lust": "1. Boss, Lorentour (Großes Pack), Endboss",
-      "trash": [
-        { "name": "Kobold-Pyromant", "ability": "Dunkelflamme", "id": 423500, "type": "kick", "desc": "Tödlicher Single-Target-Burst – Prio 1 Kick!" },
-        { "name": "Minenkrabbler", "ability": "Giftiger Biss", "id": 423501, "type": "dispel", "desc": "Stapelt Natur-DoT auf den Tank – Gift-Dispel bereithalten." },
-        { "name": "Aufseher der Lore", "ability": "Schlagstock", "id": 423502, "type": "frontal", "desc": "Schwerer Frontal-Stun. Niemals vor dem Mob stehen." }
-      ],
-      "bosses": [
-        {
-          "name": "Ol' Waxbeard",
-          "nameEn": "Ol' Waxbeard",
-          "icon": "🕯️",
-          "check": "Wachsexplosion & Lore-Movement",
-          "lust": "Zu Pull",
-          "intro": "Fährt auf einer Lore. Wirft brennendes Wachs und rammt Spieler, die im Fahrweg stehen.",
-          "roles": {
-            "tanks": ["Lore-Laufwege im Auge behalten und Boss zentriert führen."],
-            "heiler": ["Wachsspritzer schnell gegenheilen."],
-            "dps": ["Aus den Schienen heraustreten, wenn die Lore anfährt."]
-          },
-          "abilities": [{ "name": "Wachsladung", "id": 423510 }, { "name": "Schienensturm", "id": 423511 }]
-        },
-        {
-          "name": "Blazikon",
-          "nameEn": "Blazikon",
-          "icon": "🔥",
-          "check": "Feuerfrontals & Kerzen-Licht",
-          "lust": "Nach dem 1. DoT-Reset",
-          "intro": "Ein feuriges Monster in den Tiefen der Mine. Kerzen spenden Licht, dürfen aber nicht ausgeblasen werden.",
-          "roles": {
-            "tanks": ["Frontal von den Kerzen und der Gruppe wegdrehen."],
-            "heiler": ["Hohen Dauerschaden während der Dunkelphase stabilisieren."],
-            "dps": ["Kerzen-Licht nutzen und Brandflächen meiden."]
-          },
-          "abilities": [{ "name": "Flammenodem", "id": 423520 }, { "name": "Erlöschende Dunkelheit", "id": 423521 }]
-        },
-        {
-          "name": "Die Kerzenkönigin",
-          "nameEn": "The Candle King",
+          "name": "Zul'jan",
+          "nameEn": "Zul'jan",
           "icon": "👑",
-          "check": "Wachs-Statuen & Add-Management",
-          "lust": "Zu Kampfbeginn",
-          "intro": "Verwandelt Spieler in Wachsstatuen und beschwört Kobold-Wellen.",
+          "check": "Endboss: Schattenfluch & Gift-Schild",
+          "lust": "In Phase 2 (50 % HP)",
+          "intro": "Der Hohepriester der Fänge kanalisiert die Macht der dunklen Loa.",
           "roles": {
-            "tanks": ["Boss und Adds für optimalen Cleave zusammenziehen."],
-            "heiler": ["Versteinerte Spieler mit starken Einzelzielzaubern retten."],
-            "dps": ["Wachsstatuen fokussieren, um gefangene Mitspieler zu befreien."]
+            "tanks": ["Boss aus Leerenfeldern herausziehen."],
+            "heiler": ["Schattenfluch aktiv dispellen; Gruppen-Cooldowns für 'Loa-Zorn' bereithalten."],
+            "dps": ["Schild schnell durchbrechen, bevor die Gruppen-DoT-Stacks zu hoch werden."]
           },
-          "abilities": [{ "name": "Wachssarg", "id": 423530 }, { "name": "Königlicher Zorn", "id": 423531 }]
-        },
-        {
-          "name": "Dunkelherz",
-          "nameEn": "Darkness",
-          "icon": "🌑",
-          "check": "Endboss: Schattenkugeln & Lichtzonen",
-          "lust": "Phase 2 (Schattenburn)",
-          "intro": "Die Verkörperung der Schatten im Spalt. Der Raum wird nach und nach von Dunkelheit geflutet.",
-          "roles": {
-            "tanks": ["Boss in die aktiven Lichtkegel ziehen."],
-            "heiler": ["Schattenausbrüche mit großen Cooldowns gegenheilen."],
-            "dps": ["In den Lichtkegeln stehen, um Dunkelheits-Stacks zu vermeiden."]
-          },
-          "abilities": [{ "name": "Ewige Finsternis", "id": 423540 }, { "name": "Schattenkaskade", "id": 423541 }]
+          "abilities": [{ "name": "Zorn der Loa", "id": 441230 }, { "name": "Fluch der Verderbnis", "id": 441231 }]
         }
       ]
     },
     {
-      "id": "priory",
-      "name": "Priorat der Heiligen Flamme",
-      "nameEn": "Priory of the Sacred Flame",
+      "id": "murder-row",
+      "name": "Mördergasse",
+      "nameEn": "Murder Row",
       "timer": "34:00",
-      "bossCount": 3,
-      "icon": "⛪",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg",
-      "dispels": ["Magie", "Krankheit"],
-      "lust": "1. Boss, Mini-Bosse Hof, Endboss",
-      "trash": [
-        { "name": "Eiferer der Flamme", "ability": "Heiliges Schlagen", "id": 425200, "type": "kick", "desc": "Prio-Kick – hoher Heiligschaden auf Ziel." },
-        { "name": "Krankheitspriester", "ability": "Schwächendes Leid", "id": 425201, "type": "dispel", "desc": "Krankheits-Debuff (−30 % Tempo) – sofort reinigen." },
-        { "name": "Flammenhüter", "ability": "Weihungsschlag", "id": 425202, "type": "frontal", "desc": "Großer Bodeneinschlag mit anschließender Brandzone." }
-      ],
-      "bosses": [
-        {
-          "name": "Hauptmann Dailcry",
-          "nameEn": "Captain Dailcry",
-          "icon": "🛡️",
-          "check": "Speer-Soak & Kampfschreie",
-          "lust": "Zu Pull",
-          "intro": "Ein disziplinierter Paladin-Kommandant. Wirft zielsuchende Speere, die von Mitspielern abgefangen werden müssen.",
-          "roles": {
-            "tanks": ["Boss defensiv tanken bei 'Klingenwirbel'."],
-            "heiler": ["Speer-Ziele schnell auf 100 % Gesundheit bringen."],
-            "dps": ["Speer-Einschläge gemeinsam abfangen, um Schaden aufzuteilen."]
-          },
-          "abilities": [{ "name": "Heiliger Speer", "id": 425210 }, { "name": "Klingensturm", "id": 425211 }]
-        },
-        {
-          "name": "Baron Braunbart",
-          "nameEn": "Baron Braunpyre",
-          "icon": "🔥",
-          "check": "Lichtschilde & Flammenkugeln",
-          "lust": "Bei Schildbruch",
-          "intro": "Kanalisiert die Heilige Flamme in Form von wandernden Kugeln.",
-          "roles": {
-            "tanks": ["Boss mittig im Altarbereich halten."],
-            "heiler": ["Pulsierenden Heiligschaden während der Schildphase heilen."],
-            "dps": ["Schild durch Burst aufbrechen; Flammenkugeln ausweichen."]
-          },
-          "abilities": [{ "name": "Schild der Flamme", "id": 425220 }, { "name": "Lichtkugel", "id": 425221 }]
-        },
-        {
-          "name": "Priorin Murrpray",
-          "nameEn": "Prioress Murrpray",
-          "icon": "☀️",
-          "check": "Endboss: Blendendes Licht & Läuterung",
-          "lust": "In Phase 2 (50 % HP)",
-          "intro": "Die Anführerin des Priorats. Verwandelt sich bei 50 % in einen Avatar des Lichts.",
-          "roles": {
-            "tanks": ["Lichtavatar sofort binden und von Wänden wegdrehen."],
-            "heiler": ["Blendendes Licht mit Raid-Cooldowns kontern."],
-            "dps": ["Bei 'Läuterung' Blickkontakt sofort abbrechen (Umdrehen!)."]
-          },
-          "abilities": [{ "name": "Blendendes Licht", "id": 425230 }, { "name": "Läuternde Flamme", "id": 425231 }]
-        }
-      ]
-    },
-    {
-      "id": "rookery",
-      "name": "Die Brutstätte",
-      "nameEn": "The Rookery",
-      "timer": "30:00",
       "bossCount": 4,
-      "icon": "🦅",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/19bd46c0a77441577821e056dbd5cc5c09ae87b5.jpg",
-      "dispels": ["Fluch", "Magie"],
-      "lust": "1. Boss, 3. Boss, Endboss",
-      "trash": [
-        { "name": "Sturmschwingen-Bändiger", "ability": "Blitzschlag", "id": 427100, "type": "kick", "desc": "Kettenblitz muss zwingend gekickt werden." },
-        { "name": "Brutpfleger", "ability": "Eier-Erweckung", "id": 427101, "type": "stop", "desc": "Muss mit Stun unterbrochen werden, sonst schlüpfen Adds." },
-        { "name": "Sturmkrallenfalke", "ability": "Risswunde", "id": 427102, "type": "dispel", "desc": "Schwerer Blutungseffekt – defensiv abfedern." }
-      ],
-      "bosses": [
-        {
-          "name": "Kysek der Schockklaue",
-          "nameEn": "Kysek the Shockclaw",
-          "icon": "⚡",
-          "check": "Blitzableiter & Sturmfelder",
-          "lust": "Zu Pull",
-          "intro": "Ein blitzgeladener Roc. Erzeugt elektrische Verbindungen zwischen Spielern.",
-          "roles": {
-            "tanks": ["Boss aus den Blitzfeldern ziehen."],
-            "heiler": ["Elektrischen Gruppenschaden bei Kettenreaktionen heilen."],
-            "dps": ["Blitzlinien auseinanderziehen, um Schaden aufzulösen."]
-          },
-          "abilities": [{ "name": "Blitzableiter", "id": 427110 }, { "name": "Sturmschlag", "id": 427111 }]
-        },
-        {
-          "name": "Sturmwächter Gorren",
-          "nameEn": "Stormguard Gorren",
-          "icon": "🛡️",
-          "check": "Schildüberladung & Schockwellen",
-          "lust": "Nach dem 1. Schild",
-          "intro": "Verteidigt das Nest mit titanischen Schilden und stößt Spieler zurück.",
-          "roles": {
-            "tanks": ["Frontale Schockwelle von den Kanten wegdrehen."],
-            "heiler": ["Rückstoß-Schaden schnell hochziehen."],
-            "dps": ["Schild brechen und nicht von der Plattform stoßen lassen."]
-          },
-          "abilities": [{ "name": "Titanenschild", "id": 427120 }, { "name": "Schockwelle", "id": 427121 }]
-        },
-        {
-          "name": "Monstrosität von Voidwing",
-          "nameEn": "Voidwing Monstrosity",
-          "icon": "🌌",
-          "check": "Leerenkugeln & Verderbnis",
-          "lust": "In Phase 2",
-          "intro": "Ein von der Leere korrumpierter Falke mit wachsenden Leerenflächen.",
-          "roles": {
-            "tanks": ["Boss am Plattformrand im Kreis führen."],
-            "heiler": ["Leeren-DoTs aktiv dispellen."],
-            "dps": ["Leerenkugeln ausweichen und maximalen Cleave fahren."]
-          },
-          "abilities": [{ "name": "Leerenentladung", "id": 427130 }, { "name": "Schattenschwinge", "id": 427131 }]
-        },
-        {
-          "name": "Oberkommandant Kraw",
-          "nameEn": "Commander Kraw",
-          "icon": "⚔️",
-          "check": "Endboss: Add-Wellen & Sturmkrallen",
-          "lust": "Zu Kampfbeginn",
-          "intro": "Der finale Befehlshaber der Brutstätte. Ruft kontinuierlich Sturmvögel zur Unterstützung.",
-          "roles": {
-            "tanks": ["Alle Vögel sofort binden und in den Boss ziehen."],
-            "heiler": ["Hohen Raidschaden bei Sturmschwingen durchheilen."],
-            "dps": ["Burst-Cleave auf Vögel und Boss."]
-          },
-          "abilities": [{ "name": "Befehl zum Sturm", "id": 427140 }, { "name": "Klingenwirbel", "id": 427141 }]
-        }
-      ]
-    },
-    {
-      "id": "floodgate",
-      "name": "Operation: Schleuse",
-      "nameEn": "Operation: Floodgate",
-      "timer": "33:00",
-      "bossCount": 4,
-      "icon": "🌊",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/127fb15e24c99767521d3697f97ef6e98181357e.jpg",
-      "dispels": ["Gift", "Magie", "Enrage"],
-      "lust": "1. Boss, Schleusenüberflutung, Endboss",
-      "trash": [
-        { "name": "Schleusen-Ingenieur", "ability": "Überdruckventil", "id": 431100, "type": "kick", "desc": "Kanalisierter AoE-Schaden – Prio-Kick!" },
-        { "name": "Wassergolem", "ability": "Flutwelle", "id": 431101, "type": "frontal", "desc": "Schiebt Spieler zurück. Frontal meiden." },
-        { "name": "Turbinen-Mechaniker", "ability": "Rostiger Schraubenschlüssel", "id": 431102, "type": "dispel", "desc": "Stapelbarer Tetanus-DoT (Gift) auf dem Tank." }
-      ],
-      "bosses": [
-        {
-          "name": "Turbinenmeister Boltz",
-          "nameEn": "Turbine Master Boltz",
-          "icon": "⚡",
-          "check": "Stromschläge & Turbinen-Timer",
-          "lust": "Zu Pull",
-          "intro": "Nutzt die Wasserkraftwerke für verheerende Stromstöße.",
-          "roles": {
-            "tanks": ["Boss von elektrisierten Wasserpfützen fernhalten."],
-            "heiler": ["Kettenblitze sofort hochheilen."],
-            "dps": ["Turbinenschalter betätigen, wenn Überladung droht."]
-          },
-          "abilities": [{ "name": "Überladung", "id": 431110 }, { "name": "Blitzstrahl", "id": 431111 }]
-        },
-        {
-          "name": "Hydro-Monstrosität",
-          "nameEn": "Hydro Monstrosity",
-          "icon": "💧",
-          "check": "Wasserstrudel & Saug-Mechanik",
-          "lust": "In der Strudelphase",
-          "intro": "Zieht Spieler in den zentralen Mahlstrom.",
-          "roles": {
-            "tanks": ["Gegen den Strudel anlaufen und Position halten."],
-            "heiler": ["Starken Dauerschaden während des Mahlstroms kontern."],
-            "dps": ["Geschwindigkeits-Cooldowns nutzen, um nicht ins Zentrum zu geraten."]
-          },
-          "abilities": [{ "name": "Reißender Mahlstrom", "id": 431120 }, { "name": "Wasserstoß", "id": 431121 }]
-        },
-        {
-          "name": "Sprengmeister Boom",
-          "nameEn": "Demolitionist Boom",
-          "icon": "💣",
-          "check": "Sprengladungen & Dammbruch",
-          "lust": "Nach der 2. Bombenwelle",
-          "intro": "Platziert Dynamit an den Stützwänden der Schleuse.",
-          "roles": {
-            "tanks": ["Boss von platzierten Bomben wegbewegen."],
-            "heiler": ["Minen-Detonationen abfedern."],
-            "dps": ["Bomben durch Anklicken entschärfen vor Ablauf des Timers."]
-          },
-          "abilities": [{ "name": "Dynamitladung", "id": 431130 }, { "name": "Dammsprengung", "id": 431131 }]
-        },
-        {
-          "name": "Schleusen-Oberst Flutbringer",
-          "nameEn": "Floodgate Colonel",
-          "icon": "🌊",
-          "check": "Endboss: Flutwellen & Plattformüberflutung",
-          "lust": "Zu Kampfbeginn",
-          "intro": "Flutet die Schleuse komplett. Sichere Plattformen wechseln.",
-          "roles": {
-            "tanks": ["Boss schnell auf die jeweils trockene Plattform ziehen."],
-            "heiler": ["Massiven Kälteschaden im Wasser sofort gegenheilen."],
-            "dps": ["Rechtzeitig Plattform wechseln und Boss finishen."]
-          },
-          "abilities": [{ "name": "Toxische Flut", "id": 431140 }, { "name": "Wasserkollaps", "id": 431141 }]
-        }
-      ]
-    },
-    {
-      "id": "theater",
-      "name": "Theater der Schmerzen",
-      "nameEn": "Theater of Pain",
-      "timer": "37:00",
-      "bossCount": 5,
-      "icon": "🏟️",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/52e498e3108b56f88a49f5fe5afa33eb6578a713.jpg",
+      "icon": "🗡️",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
       "dispels": ["Magie", "Fluch", "Enrage"],
-      "lust": "1. Boss, Xav der Unbesiegte, Mueh'zala/Endboss",
+      "lust": "1. Boss, Großes Gassen-Pack, 3. Boss, Endboss",
       "trash": [
-        { "name": "Nekrotischer Priester", "ability": "Knochenkrallen", "id": 330700, "type": "kick", "desc": "Prio-Kick – kanalisiert schweren Schattenschaden." },
-        { "name": "Arena-Gladiator", "ability": "Tollkühner Ansturm", "id": 330701, "type": "stop", "desc": "Stürmt Spieler an und wirft sie um – mit Stun stoppen." },
-        { "name": "Wundheiler", "ability": "Große Heilung", "id": 330702, "type": "kick", "desc": "Muss unterbrochen werden, heilt Mobs sonst um 50 %." }
+        { "name": "Gassen-Meuchelmörder", "ability": "Schattenschritt", "id": 442100, "type": "stop", "desc": "Teleportiert sich hinter Heiler/Fernkämpfer. Mit AoE-Stun stoppen." },
+        { "name": "Schwarzmarkt-Alchemist", "ability": "Ätzende Mixtur", "id": 442101, "type": "kick", "desc": "Prio-Kick! Hinterlässt schwere Säurepfützen im gesamten Bereich." },
+        { "name": "Schläger der Unterwelt", "ability": "Wutanfall", "id": 442102, "type": "dispel", "desc": "Erhöht Nahkampfschaden um 150 % (Enrage) – einlullen/soothen." }
       ],
       "bosses": [
         {
-          "name": "Die Unbezwingbaren",
-          "nameEn": "An Affront of Challengers",
-          "icon": "⚔️",
-          "check": "Trio-Fokus & Kicks",
+          "name": "Vollstrecker Krel",
+          "nameEn": "Enforcer Krel",
+          "icon": "🪓",
+          "check": "Klingenwirbel & Fesseln",
           "lust": "Zu Pull",
-          "intro": "Drei Champions kämpfen gleichzeitig. Fokus-Reihenfolge: Schurke -> Magier -> Krieger.",
+          "intro": "Ein brutaler Ork-Schläger mit rotierenden Klingen und Ketten.",
           "roles": {
-            "tanks": ["Krieger und Schurke binden, Frontals wegdrehen."],
-            "heiler": ["Giftklingen-Debuffs schnell reinigen."],
-            "dps": ["Kicks auf den Magier absprechen, Fokus-Target einhalten."]
+            "tanks": ["Boss langsam kiten während des Klingensturms."],
+            "heiler": ["Ketten-Zugschaden auf Spielern sofort gegenheilen."],
+            "dps": ["Ketten durch Weglaufen zerreißen; aus dem Wirbel heraustreten."]
           },
-          "abilities": [{ "name": "Giftklinge", "id": 330710 }, { "name": "Nekrotischer Bolzen", "id": 330711 }]
+          "abilities": [{ "name": "Schmetterschlag", "id": 442110 }, { "name": "Klingenwirbel", "id": 442111 }]
         },
         {
-          "name": "Blutbeil",
-          "nameEn": "Gorechop",
-          "icon": "🥩",
-          "check": "Fleischhaken-Wände & Add-CC",
-          "lust": "Bei 50 % HP",
-          "intro": "Zieht Fleischhaken durch den Raum. Berührung bedeutet sofortigen Tod.",
+          "name": "Vaelin Schattenschritt",
+          "nameEn": "Vaelin Shadowstep",
+          "icon": "👥",
+          "check": "Rauchbomben & Klone",
+          "lust": "Nach dem 1. Klon-Split",
+          "intro": "Verschwindet in Rauchbomben und erzeugt tödliche Schattenspiegelbilder.",
           "roles": {
-            "tanks": ["Boss immer mittig halten, um Lücken in den Hakenwänden zu sehen."],
-            "heiler": ["Schaden beim Zusammenziehen des Raids abfangen."],
-            "dps": ["Durch Lücken der Hakenwände laufen; Adds verlangsamen."]
+            "tanks": ["Klone schnell einsammeln und auf den echten Boss cleaven."],
+            "heiler": ["Giftschaden durch Dolchfächer hochziehen."],
+            "dps": ["Den echten Boss markieren und Klone mit Stuns kontrollieren."]
           },
-          "abilities": [{ "name": "Fleischhaken", "id": 330720 }, { "name": "Schmetterschlag", "id": 330721 }]
+          "abilities": [{ "name": "Rauchbombe", "id": 442120 }, { "name": "Schattenklon", "id": 442121 }]
         },
         {
-          "name": "Xav der Unbesiegte",
-          "nameEn": "Xav the Unfallen",
-          "icon": "👑",
-          "check": "Duell-Arena & Banner-Burst",
-          "lust": "Zu Pull",
-          "intro": "Schickt je zwei Spieler in die Unterwelt zum Duell. Der Gewinner erhält einen Schadensbuff.",
+          "name": "Herrin Thalena",
+          "nameEn": "Mistress Thalena",
+          "icon": "🍷",
+          "check": "Gedankenkontrolle & Blutbälle",
+          "lust": "Zu Kampfbeginn",
+          "intro": "Verführt Spieler und wirft explodierende Blutkugeln durch den Raum.",
           "roles": {
-            "tanks": ["Boss aus den Combo-Schlägen herausdrehen."],
-            "heiler": ["Duellanten nach Rückkehr stabilisieren."],
-            "dps": ["Im Duell schnell kämpfen, um Buff mitzunehmen; Banner zerschlagen."]
+            "tanks": ["Frontalen Blutsauger von der Gruppe wegdrehen."],
+            "heiler": ["Blut-DoTs sofort dispellen."],
+            "dps": ["Gedankenkontrollierte Mitspieler mit CC stoppen und befreien."]
           },
-          "abilities": [{ "name": "Duell der Verdammten", "id": 330730 }, { "name": "Unterdrückungsbanner", "id": 330731 }]
+          "abilities": [{ "name": "Verführung", "id": 442130 }, { "name": "Blutkollaps", "id": 442131 }]
         },
         {
-          "name": "Kul'tharok",
-          "nameEn": "Kul'tharok",
-          "icon": "💀",
-          "check": "Seelen-Einsammeln & Phantome",
-          "lust": "Nach dem 1. Seelenausstoß",
-          "intro": "Stößt Seelen aus den Spielern heraus, die aktiv eingesammelt werden müssen.",
-          "roles": {
-            "tanks": ["Boss am Rand tanken, um Seelen-Laufwege zu verlängern."],
-            "heiler": ["Seelendot auf Spielern gegenheilen."],
-            "dps": ["Eigene Seele sofort anlaufen, bevor sie den Boss erreicht."]
-          },
-          "abilities": [{ "name": "Seelenausstoß", "id": 330740 }, { "name": "Phantomschlag", "id": 330741 }]
-        },
-        {
-          "name": "Mueh'zala / Mordretha",
-          "nameEn": "Mordretha, the Endless Empress",
-          "icon": "👑",
-          "check": "Endboss: Geisterheere & Grabesrisse",
-          "lust": "In Phase 2 (50 % HP)",
-          "intro": "Ruft geisterhafte Reiter und erzeugt riesige schwarze Risse im Raum.",
-          "roles": {
-            "tanks": ["Boss immer in sichere Zonen zwischen den Geistern ziehen."],
-            "heiler": ["Massiven Dauerschaden in Phase 2 mit allen CDs kontern."],
-            "dps": ["Aus den Bahnen der Geisterheere laufen; Rissen ausweichen."]
-          },
-          "abilities": [{ "name": "Geisterheer", "id": 330750 }, { "name": "Grabesriss", "id": 330751 }]
-        }
-      ]
-    },
-    {
-      "id": "motherlode",
-      "name": "Die Riesenflöz!!",
-      "nameEn": "The MOTHERLODE!!",
-      "timer": "36:00",
-      "bossCount": 4,
-      "icon": "💣",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/0b550745443dcd767f6cb4e4f8e23e14089dcd88.jpg",
-      "dispels": ["Gift", "Fluch", "Enrage"],
-      "lust": "1. Boss, Großes Mech-Pack, Endboss (Mecha-Mogul)",
-      "trash": [
-        { "name": "Mech-Pilot", "ability": "Aktivierung", "id": 268800, "type": "stop", "desc": "Muss vor Einstieg in den Mech mit Stun gestoppt werden!" },
-        { "name": "Mastermind der Venture Co.", "ability": "Verwirrungstrank", "id": 268801, "type": "dispel", "desc": "Magie/Gift-Dispel auf betroffenen Spielern." },
-        { "name": "Schrotflintenträger", "ability": "Schrotkugeln", "id": 268802, "type": "frontal", "desc": "Tödlicher Frontal-Fächer – wegdrehen." }
-      ],
-      "bosses": [
-        {
-          "name": "Münzbetriebener Meuteverprügler",
-          "nameEn": "Coin-Operated Crowd Pummeler",
-          "icon": "🤖",
-          "check": "Münzen-Kick & Schockwellen",
-          "lust": "Zu Pull",
-          "intro": "Ein goblinischer Prügel-Roboter. Tritt Münzen zurück in den Boss, um ihn zu betäuben.",
-          "roles": {
-            "tanks": ["Boss vor den Münzen positionieren."],
-            "heiler": ["Gruppenschaden beim Münzen-Kick abfedern."],
-            "dps": ["Münzen per Laufrichtung in den Boss kicken."]
-          },
-          "abilities": [{ "name": "Münzenwurf", "id": 268810 }, { "name": "Stoßwelle", "id": 268811 }]
-        },
-        {
-          "name": "Azerokk",
-          "nameEn": "Azerokk",
-          "icon": "💎",
-          "check": "Azeriterdstöße & Add-Fixate",
-          "lust": "Nach dem 1. Erdstumpf",
-          "intro": "Ein mächtiger Erd-Elementar. Seine Adds fixieren zufällige Spieler und müssen gekitet werden.",
-          "roles": {
-            "tanks": ["Boss aus Azerit-Spalten herausziehen."],
-            "heiler": ["Schaden auf fixierten Spielern gegenheilen."],
-            "dps": ["Fixate-Adds verlangsamen, kiten und wegbomben."]
-          },
-          "abilities": [{ "name": "Resonanzschlag", "id": 268820 }, { "name": "Azeritstachel", "id": 268821 }]
-        },
-        {
-          "name": "Rixxa Flachfeuer",
-          "nameEn": "Rixxa Fluxflame",
-          "icon": "🧪",
-          "check": "Katalysator-Gelbflächen & Schubs-Winde",
+          "name": "Lord Malgath",
+          "nameEn": "Lord Malgath",
+          "icon": "🌑",
+          "check": "Endboss: Schattenbarriere & Seelenernte",
           "lust": "In Phase 2",
-          "intro": "Verteilt ätzendes Gel auf dem Boden und stößt Spieler mit Düsenwänden hinein.",
+          "intro": "Der finstere Drahtzieher der Mördergasse. Ruft Schattenmanifestationen herbei.",
           "roles": {
-            "tanks": ["Boss so drehen, dass der Rückstoß in sichere Zonen geht."],
-            "heiler": ["Gel-DoTs sofort dispellen."],
-            "dps": ["Niemals mit dem Rücken in Gel-Pfützen stehen bei Düsenantrieb."]
+            "tanks": ["Boss an den Rand ziehen, um Raum für Seelenlaufbahnen zu schaffen."],
+            "heiler": ["Hohen Raidschaden bei 'Seelenernte' durchheilen."],
+            "dps": ["Schatten-Adds vor Erreichen des Bosses nuken."]
           },
-          "abilities": [{ "name": "Ätzender Katalysator", "id": 268830 }, { "name": "Treibstoffstoß", "id": 268831 }]
-        },
-        {
-          "name": "Mogul Razdunk",
-          "nameEn": "Mogul Razdunk",
-          "icon": "🚀",
-          "check": "Endboss: Bohrer-Boden & Zielsuchraketen",
-          "lust": "In Phase 2 nach der Landung",
-          "intro": "Kämpft in seinem Mecha-Mogul. In der Flugphase müssen seine Bohrer in Rohre gelenkt werden.",
-          "roles": {
-            "tanks": ["In Phase 1 Frontal-Gatling von der Gruppe weghalten."],
-            "heiler": ["Raketen-Einschläge im gesamten Raum gegenheilen."],
-            "dps": ["Bohr-Marker in Phase 2 auf Azerit-Säulen platzieren."]
-          },
-          "abilities": [{ "name": "Bohrfahrstuhl", "id": 268840 }, { "name": "Gatling-Kanone", "id": 268841 }]
+          "abilities": [{ "name": "Seelenernte", "id": 442140 }, { "name": "Schattenbarriere", "id": 442141 }]
         }
       ]
     },
     {
-      "id": "workshop",
-      "name": "Operation: Mechagon — Werkstatt",
-      "nameEn": "Mechagon: Workshop",
+      "id": "den-of-nalorakk",
+      "name": "Nalorakks Bau",
+      "nameEn": "Den of Nalorakk",
       "timer": "32:00",
       "bossCount": 4,
-      "icon": "⚙️",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/20ff0eaaeb6117c9a8fcbb76792789b3e01341ce.jpg",
-      "dispels": ["Magie", "Gift"],
-      "lust": "1. Boss, K.U.J.O., Endboss (König Mechagon)",
+      "icon": "🐻",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg",
+      "dispels": ["Blutung", "Krankheit", "Enrage"],
+      "lust": "1. Boss, Bären-Rudel, 3. Boss, Endboss (Nalorakk)",
       "trash": [
-        { "name": "Werkstatt-Techniker", "ability": "Reparaturstrahl", "id": 293100, "type": "kick", "desc": "Prio-Kick – heilt Mech-Mobs massiv hoch." },
-        { "name": "Schrottbot", "ability": "Selbstzerstörung", "id": 293101, "type": "stop", "desc": "Explodiert bei 0 HP – rechtzeitig rauslaufen!" },
-        { "name": "Dampfwalze", "ability": "Plätten", "id": 293102, "type": "frontal", "desc": "Schwerer Frontal-Crush auf den Tank." }
+        { "name": "Amani-Bärenreiter", "ability": "Zertrampeln", "id": 443100, "type": "frontal", "desc": "Schwerer Frontal-Kegel – von der Gruppe weghalten." },
+        { "name": "Stammes-Hexendoktor", "ability": "Heilendes Totem", "id": 443101, "type": "kick", "desc": "Prio-Kick / Totem sofort zerstören, sonst heilt der Trash gegen." },
+        { "name": "Kriegsbär", "ability": "Zerfetzen", "id": 443102, "type": "dispel", "desc": "Tödlicher Blutungseffekt – defensiv abfedern oder reinigen." }
       ],
       "bosses": [
         {
-          "name": "Tüftler-Garten",
-          "nameEn": "Tussie Reed & The Platinum Pummeler",
-          "icon": "🪴",
-          "check": "Gartensprenger & Flammenstrahl",
+          "name": "Kriegsfürst Dak'kahn",
+          "nameEn": "Warlord Dak'kahn",
+          "icon": "🛡️",
+          "check": "Speerwurf & Kriegsschrei",
           "lust": "Zu Pull",
-          "intro": "Zwei Gnome im automatisierten Garten. Schredder-Sägen und Gift-Sprenger weichen.",
+          "intro": "Ein erfahrener Troll-Kriegsfürst mit tödlichen Speerangriffen.",
           "roles": {
-            "tanks": ["Bosse getrennt oder für Cleave zusammenhalten je nach Buff."],
-            "heiler": ["Pflanzengift-Debuffs aktiv reinigen."],
-            "dps": ["Nicht in die rotierenden Kreissägen laufen."]
+            "tanks": ["Frontal-Spalten von den Spielern wegdrehen."],
+            "heiler": ["Speer-Treffer schnell auf 100 % Gesundheit heilen."],
+            "dps": ["Gemeinsam Speere abfangen, um Schaden aufzuteilen."]
           },
-          "abilities": [{ "name": "Kreissäge", "id": 293110 }, { "name": "Pflanzengift", "id": 293111 }]
+          "abilities": [{ "name": "Kriegsspeer", "id": 443110 }, { "name": "Schockruf", "id": 443111 }]
         },
         {
-          "name": "K.U.J.O.",
-          "nameEn": "K.U.J.O.",
-          "icon": "🐕",
-          "check": "Schrottblöcke & Sichtlinie (LoS)",
+          "name": "Schattenweberin Mar'li",
+          "nameEn": "Shadowweaver Mar'li",
+          "icon": "🕷️",
+          "check": "Spinnenweben & Giftstachel",
           "lust": "Bei 50 % HP",
-          "intro": "Ein mechanischer Wachhund. Bei 'Lüftungsbrand' hinter herabfallenden Schrottblöcken verstecken.",
+          "intro": "Ruft Spinnenschwärme herbei und hüllt Spieler in verlangsamende Netze.",
           "roles": {
-            "tanks": ["Boss in der Nähe von Schrottblöcken halten."],
-            "heiler": ["Flächenbrand sofort hochheilen."],
-            "dps": ["Bei 'Lüftungsbrand' sofort hinter Schrottblöcke stellen (LoS!)."]
+            "tanks": ["Kleine Spinnen an den Boss ziehen."],
+            "heiler": ["Giftbisse aktiv reinigen."],
+            "dps": ["Netze zerstören und Adds im Cleave wegbomben."]
           },
-          "abilities": [{ "name": "Lüftungsbrand", "id": 293120 }, { "name": "Biss des Verderbens", "id": 293121 }]
+          "abilities": [{ "name": "Giftiges Netz", "id": 443120 }, { "name": "Spinnenbrut", "id": 443121 }]
         },
         {
-          "name": "Die Maschinisten",
-          "nameEn": "Machinists' Garden",
-          "icon": "🔧",
-          "check": "Flammenwerfer & Zahnrad-Fallen",
-          "lust": "Zu Kampfbeginn",
-          "intro": "Headmachinist Sparkflux nutzt bewegliche Fallen und Flammenwerfer.",
+          "name": "Geist von Nalorakk",
+          "nameEn": "Avatar of Nalorakk",
+          "icon": "🐾",
+          "check": "Bärengestalt & Zerfleischen",
+          "lust": "In der Bärenphase",
+          "intro": "Wechselt zwischen Troll- und Bärengestalt mit massiven Blutungseffekten.",
           "roles": {
-            "tanks": ["Boss entlang der sicheren Zonen führen."],
-            "heiler": ["Verbrennungen schnell stabilisieren."],
-            "dps": ["Den rollenden Flammenkugeln und Fallenfeldern ausweichen."]
+            "tanks": ["Große Defensives für 'Zerfleischen' in Bärengestalt nutzen."],
+            "heiler": ["Blutungsschaden auf der Gruppe kontinuierlich gegenheilen."],
+            "dps": ["Burst-Schaden in Bärengestalt konzentrieren."]
           },
-          "abilities": [{ "name": "Flammenfalle", "id": 293130 }, { "name": "Zahnrad-Kollision", "id": 293131 }]
+          "abilities": [{ "name": "Zerfleischen", "id": 443130 }, { "name": "Wildes Brüllen", "id": 443131 }]
         },
         {
-          "name": "König Mechagon",
-          "nameEn": "King Mechagon",
+          "name": "Hochpriesterin Jax'ara",
+          "nameEn": "High Priestess Jax'ara",
           "icon": "👑",
-          "check": "Endboss: Magnet-Arm & Plasma-Kugeln",
-          "lust": "Phase 2 (Flugphase / R.O.B.O.T.)",
-          "intro": "Der Herrscher von Mechagon in zwei Phasen mit gigantischem Magnetarm.",
+          "check": "Endboss: Loa-Opferung & Blutwellen",
+          "lust": "Zu Kampfbeginn",
+          "intro": "Kanalisiert das Blut der gefallenen Krieger für gigantische Blutwellen.",
           "roles": {
-            "tanks": ["Boss in Phase 1 aus den Plasmakugeln ziehen."],
-            "heiler": ["Magnet-Sog-Schaden aktiv gegenheilen."],
-            "dps": ["Gegen den Magnetarm anlaufen; Plasmakugeln ausweichen."]
+            "tanks": ["Boss mittig halten und Blutflächen ausweichen."],
+            "heiler": ["Blutwellen mit großen Raid-CDs stabilisieren."],
+            "dps": ["Opferungs-Adds sofort fokussieren."]
           },
-          "abilities": [{ "name": "Magnetischer Arm", "id": 293140 }, { "name": "Plasmaentladung", "id": 293141 }]
+          "abilities": [{ "name": "Blutflut", "id": 443140 }, { "name": "Loa-Opfer", "id": 443141 }]
+        }
+      ]
+    },
+    {
+      "id": "the-blinding-vale",
+      "name": "Das blendende Tal",
+      "nameEn": "The Blinding Vale",
+      "timer": "31:00",
+      "bossCount": 3,
+      "icon": "☀️",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/19bd46c0a77441577821e056dbd5cc5c09ae87b5.jpg",
+      "dispels": ["Magie", "Blindheit"],
+      "lust": "1. Boss, Großes Tal-Pack, Endboss",
+      "trash": [
+        { "name": "Sonnenpriester", "ability": "Blendendes Leuchten", "id": 444100, "type": "kick", "desc": "Blendet alle Spieler im Umkreis für 4 Sekunden – Prio-Kick!" },
+        { "name": "Lichtgeborener Hirsch", "ability": "Sonnenhuf", "id": 444101, "type": "frontal", "desc": "Frontal-Stoß – Tank dreht den Mob weg." },
+        { "name": "Lichtfunke", "ability": "Blendgranate", "id": 444102, "type": "stop", "desc": "Explodiert nach kurzer Zeit. Mit Stun stoppen." }
+      ],
+      "bosses": [
+        {
+          "name": "Dreieinigkeit der Lichtblüte",
+          "nameEn": "Lightblossom Trinity",
+          "icon": "🌸",
+          "check": "Bodenkreise (Fruchtbarer Lehm) & Cleave",
+          "lust": "Zu Pull",
+          "intro": "Drei Wächter der Lichtblüte müssen nahe der 3 fruchtbaren Lehmkreise kontrolliert werden.",
+          "roles": {
+            "tanks": ["Bosse in die passenden Bodenkreise ziehen."],
+            "heiler": ["Pulsierenden Lichtschaden aktiv gegenheilen."],
+            "dps": ["Bosse gleichmäßig im Cleave herunterschlagen."]
+          },
+          "abilities": [{ "name": "Blütenexplosion", "id": 444110 }, { "name": "Lichtwachstum", "id": 444111 }]
+        },
+        {
+          "name": "Solarus der Strahlende",
+          "nameEn": "Solarus the Radiant",
+          "icon": "⚡",
+          "check": "Sonnenstrahl-Soak & Lichtkugeln",
+          "lust": "Bei 50 % HP",
+          "intro": "Fokussiert einen gigantischen Sonnenstrahl auf zufällige Spieler.",
+          "roles": {
+            "tanks": ["Boss aus aufgeladenen Lichtfeldern herausziehen."],
+            "heiler": ["Starken Einzelzielschaden auf dem Strahl-Ziel heilen."],
+            "dps": ["In den Strahl stellen, um den Schaden aufzuteilen."]
+          },
+          "abilities": [{ "name": "Sonnenstrahl", "id": 444120 }, { "name": "Lichtkugel", "id": 444121 }]
+        },
+        {
+          "name": "Aethelas Sonnenzorn",
+          "nameEn": "Aethelas Sunwrath",
+          "icon": "👑",
+          "check": "Endboss: Blendende Eruption & Sonnenbrand",
+          "lust": "In Phase 2",
+          "intro": "Entfesselt die volle Zerstörungskraft des Lichts. Spieler müssen bei Blendung den Blick abwenden.",
+          "roles": {
+            "tanks": ["Boss defensiv binden bei 'Sonnenklinge'."],
+            "heiler": ["Sonnenbrand-Debuffs aktiv dispellen."],
+            "dps": ["Bei 'Blendende Eruption' sofort umdrehen (Blick abwenden!)."]
+          },
+          "abilities": [{ "name": "Blendende Eruption", "id": 444130 }, { "name": "Sonnenbrand", "id": 444131 }]
+        }
+      ]
+    },
+    {
+      "id": "voidscar-arena",
+      "name": "Arena der Leerennarbe",
+      "nameEn": "Voidscar Arena",
+      "timer": "30:00",
+      "bossCount": 4,
+      "icon": "🌌",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/127fb15e24c99767521d3697f97ef6e98181357e.jpg",
+      "dispels": ["Magie", "Fluch"],
+      "lust": "1. Boss, Gladiator-Welle, 3. Boss, Endboss",
+      "trash": [
+        { "name": "Leerennarben-Gladiator", "ability": "Schattenklinge", "id": 445100, "type": "frontal", "desc": "Schwerer Schattenschaden nach vorne – abwenden." },
+        { "name": "Kultist des Nichts", "ability": "Leerenkollaps", "id": 445101, "type": "kick", "desc": "Prio-Kick! Zieht Spieler zusammen und explodiert." },
+        { "name": "Schlund-Bestie", "ability": "Wilder Biss", "id": 445102, "type": "dispel", "desc": "Magie-DoT auf dem Tank sofort entfernen." }
+      ],
+      "bosses": [
+        {
+          "name": "Klingenfürst Taldris",
+          "nameEn": "Bladelord Taldris",
+          "icon": "⚔️",
+          "check": "Schattenklingen & Wirbelsturm",
+          "lust": "Zu Pull",
+          "intro": "Ein korrumpierter Schwertmeister mit Leerenklingen.",
+          "roles": {
+            "tanks": ["Boss von rotierenden Schattenklingen wegbewegen."],
+            "heiler": ["Schaden beim Klingensprung sofort stabilisieren."],
+            "dps": ["Aus den Klingenbahnen heraustreten."]
+          },
+          "abilities": [{ "name": "Schattensturm", "id": 445110 }, { "name": "Klingensprung", "id": 445111 }]
+        },
+        {
+          "name": "Seuchenschlächter Vorak",
+          "nameEn": "Plagueslicer Vorak",
+          "icon": "🥩",
+          "check": "Giftleere & Seuchenhaken",
+          "lust": "Bei 50 % HP",
+          "intro": "Zieht Spieler mit Haken heran und hinterlässt Leerenpfützen.",
+          "roles": {
+            "tanks": ["Boss am Arenarand führen."],
+            "heiler": ["Seuchen-DoTs aktiv reinigen."],
+            "dps": ["Nicht in die Hakenbahnen geraten."]
+          },
+          "abilities": [{ "name": "Seuchenhaken", "id": 445120 }, { "name": "Leerenfäulnis", "id": 445121 }]
+        },
+        {
+          "name": "Kalthor der Seelenfresser",
+          "nameEn": "Kalthor Soulfeaster",
+          "icon": "💀",
+          "check": "Seelenfragment-Sog & Furcht",
+          "lust": "Zu Kampfbeginn",
+          "intro": "Saugt Seelenfragmente aus den Spielern und kanalisiert Gruppenfurcht.",
+          "roles": {
+            "tanks": ["Boss aus Seelenfeldern herausziehen."],
+            "heiler": ["Furcht-Effekte sofort mit Mass Dispel / Dispel bereinigen."],
+            "dps": ["Eigene Seelenfragmente vor dem Boss einsammeln."]
+          },
+          "abilities": [{ "name": "Seelenraub", "id": 445130 }, { "name": "Schreckensschrei", "id": 445131 }]
+        },
+        {
+          "name": "Champion Voidscar",
+          "nameEn": "Champion Voidscar",
+          "icon": "👑",
+          "check": "Endboss: Leerenriss & Portalwächter",
+          "lust": "In Phase 2",
+          "intro": "Der unangefochtene Meister der Arena öffnet Portale in die Leere.",
+          "roles": {
+            "tanks": ["Portal-Adds sofort an den Boss binden."],
+            "heiler": ["Massiven Raidschaden bei Leerenkollaps gegenheilen."],
+            "dps": ["Leerenrisse meiden und maximalen Cleave fahren."]
+          },
+          "abilities": [{ "name": "Leerenriss", "id": 445140 }, { "name": "Sternenbrecher", "id": 445141 }]
+        }
+      ]
+    },
+    {
+      "id": "kings-rest",
+      "name": "Die Königsruh",
+      "nameEn": "King's Rest",
+      "timer": "33:00",
+      "bossCount": 4,
+      "icon": "👑",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/52e498e3108b56f88a49f5fe5afa33eb6578a713.jpg",
+      "dispels": ["Gift", "Fluch", "Magie"],
+      "lust": "1. Boss (Goldschlange), Rat der Stämme, Dazar",
+      "trash": [
+        { "name": "Schattenhexer von Zul", "ability": "Schattenblitzsalve", "id": 270000, "type": "kick", "desc": "Prio 1 Kick! Hoher Gruppenschaden." },
+        { "name": "Wiederbelebter Berserker", "ability": "Durchtrennen", "id": 270001, "type": "dispel", "desc": "Schwerer Blutungseffekt – defensiv abfedern." },
+        { "name": "Wächterelementar", "ability": "Entkräftung", "id": 270002, "type": "dispel", "desc": "Fluch-Debuff (−50 % Schaden) – sofort reinigen." }
+      ],
+      "bosses": [
+        {
+          "name": "Die Goldschlange",
+          "nameEn": "The Golden Serpent",
+          "icon": "🐍",
+          "check": "Gold speien (Pfützen stapeln) & Schlangenböe",
+          "lust": "Zu Pull",
+          "intro": "Speit Goldpfützen unter Spieler, die bei 'Ruf des Mammons' zu Adds werden. Pfützen eng aneinander ablegen!",
+          "roles": {
+            "tanks": ["Boss von abgelegten Goldpfützen wegbewegen."],
+            "heiler": ["Gruppe auf 'Schlangenböe' mit Cooldowns vorbereiten."],
+            "dps": ["Goldpfützen nah an bestehende legen; Adds mit CC/Slows vor dem Boss töten."]
+          },
+          "abilities": [{ "name": "Gold speien", "id": 270110 }, { "name": "Schlangenböe", "id": 270111 }]
+        },
+        {
+          "name": "Mchimba der Balsamierer",
+          "nameEn": "Mchimba the Embalmer",
+          "icon": "🏺",
+          "check": "Sarkophag-Befreiung (Verbrennen)",
+          "lust": "Nach dem 1. Sarkophag",
+          "intro": "Schließt einen Spieler in einen von vier Sarkophagen ein. Die Gruppe muss den richtigen öffnen.",
+          "roles": {
+            "tanks": ["Boss mittig tanken, um alle Sarkophage im Blick zu haben."],
+            "heiler": ["Gefangenen Spieler nach Befreiung schnell stabilisieren."],
+            "dps": ["Auf den wackelnden Sarkophag achten und sofort öffnen."]
+          },
+          "abilities": [{ "name": "Einbalsamieren", "id": 270120 }, { "name": "Grabesöffnung", "id": 270121 }]
+        },
+        {
+          "name": "Rat der Stämme",
+          "nameEn": "The Council of Tribes",
+          "icon": "⚔️",
+          "check": "Aka'ali Soak (Durchsausen) & Zanazal Kicks",
+          "lust": "Bei Aka'ali oder Zanazal",
+          "intro": "Drei Könige nacheinander: Kula (Äxte weichen), Aka'ali (Durchsausen gemeinsam soaken!), Zanazal (Giftnova kicken).",
+          "roles": {
+            "tanks": ["Kula in der Mitte tanken (Äxte bleiben nach Tod aktiv!)."],
+            "heiler": ["Gruppenschaden beim Durchsausen-Soak abfangen."],
+            "dps": ["Gemeinsam in die Linie von 'Durchsausen' stellen; Zanazals Giftnova kicken."]
+          },
+          "abilities": [{ "name": "Durchsausen", "id": 270130 }, { "name": "Giftnova", "id": 270131 }]
+        },
+        {
+          "name": "Dazar der erste König",
+          "nameEn": "Dazar, The First King",
+          "icon": "👑",
+          "check": "Endboss: Raptor-Adds & Speer-Flächen",
+          "lust": "In Phase 3 (mit Raptor)",
+          "intro": "Dazar ruft nacheinander seine Jagdbestien und wirft wandernde Klingen durch den Raum.",
+          "roles": {
+            "tanks": ["Raptor binden und Boss aus Klingenfächern ziehen."],
+            "heiler": ["Furcht-Effekte schnell reinigen."],
+            "dps": ["Raptor fokussieren und Speer-Linien meiden."]
+          },
+          "abilities": [{ "name": "Klingenschlag", "id": 270140 }, { "name": "Raptor-Ansturm", "id": 270141 }]
+        }
+      ]
+    },
+    {
+      "id": "temple-of-sethraliss",
+      "name": "Der Tempel von Sethraliss",
+      "nameEn": "Temple of Sethraliss",
+      "timer": "32:00",
+      "bossCount": 4,
+      "icon": "⚡",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/0b550745443dcd767f6cb4e4f8e23e14089dcd88.jpg",
+      "dispels": ["Gift", "Fluch", "Magie"],
+      "lust": "1. Boss (Adderis), Galvazzt, Endboss (Sethraliss Heilphase)",
+      "trash": [
+        { "name": "Schlangen-Eiferer", "ability": "Blitzschlag", "id": 280000, "type": "kick", "desc": "Prio-Kick – hoher Blitzschaden auf Ziel." },
+        { "name": "Sandkriecher", "ability": "Giftstaub", "id": 280001, "type": "dispel", "desc": "Gift-Debuff auf der Gruppe – sofort reinigen." },
+        { "name": "Krolusk-Wächter", "ability": "Panzerplatten", "id": 280002, "type": "stop", "desc": "Reflektiert Schaden – Stunnen vor Cast-Ende." }
+      ],
+      "bosses": [
+        {
+          "name": "Adderis & Aspix",
+          "nameEn": "Adderis and Aspix",
+          "icon": "⚡",
+          "check": "Blitzschild-Fokuswechsel & Kicks",
+          "lust": "Zu Pull",
+          "intro": "Zwei Bosse. Der Boss mit dem Blitzschild darf NICHT angegriffen werden (Schadensreflexion!).",
+          "roles": {
+            "tanks": ["Adderis von Aspix trennen und Frontals wegdrehen."],
+            "heiler": ["Blitzeinschläge auf der Gruppe gegenheilen."],
+            "dps": ["Target sofort auf den Boss OHNE Blitzschild wechseln; Kicks auf Jolt halten."]
+          },
+          "abilities": [{ "name": "Blitzschild", "id": 280110 }, { "name": "Sturmschlag", "id": 280111 }]
+        },
+        {
+          "name": "Merektha",
+          "nameEn": "Merektha",
+          "icon": "🐍",
+          "check": "Giftspucke & Sand-Versteinerung",
+          "lust": "Nach dem 1. Vergraben",
+          "intro": "Eine riesige Kobra. Vergräbt sich im Sand und versteinert Spieler, die in ihren Blick geraten.",
+          "roles": {
+            "tanks": ["Kleine Schlangen beim Auftauchen binden."],
+            "heiler": ["Gift-DoTs sofort mit Gruppenreinigung entfernen."],
+            "dps": ["Bei 'Blick der Kobra' sofort weggucken; versteinte Spieler freihauen."]
+          },
+          "abilities": [{ "name": "Giftatem", "id": 280120 }, { "name": "Kobra-Blick", "id": 280121 }]
+        },
+        {
+          "name": "Galvazzt",
+          "nameEn": "Galvazzt",
+          "icon": "🔋",
+          "check": "Blitzstrahl-Soak (Kugeln abfangen)",
+          "lust": "Zu Pull",
+          "intro": "Lädt sich durch Blitzsäulen auf. Spieler müssen die Strahlen abwechselnd abfangen.",
+          "roles": {
+            "tanks": ["Boss zentriert halten und Strahlen mit-soaken."],
+            "heiler": ["Hohen Schaden auf Spielern mit vielen Strahl-Stacks heilen."],
+            "dps": ["Bei 3-4 Stacks den Strahl für den nächsten Mitspieler freigeben."]
+          },
+          "abilities": [{ "name": "Galvanische Entladung", "id": 280130 }, { "name": "Überladung", "id": 280131 }]
+        },
+        {
+          "name": "Avatar von Sethraliss",
+          "nameEn": "Avatar of Sethraliss",
+          "icon": "✨",
+          "check": "Endboss: Heil-Event & Frosch-Dispels",
+          "lust": "In der finalen Heilphase",
+          "intro": "Heiler-Encounter: Der Avatar muss auf 100 % Gesundheit geheilt werden, während Adds die Gruppe attackieren.",
+          "roles": {
+            "tanks": ["Seuchenfrösche und Wächter binden; Frösche von Heilern weghalten."],
+            "heiler": ["Alle Heil-Cooldowns auf den Avatar legen; Gift-Debuffs von Fröschen reinigen."],
+            "dps": ["Hexendoktoren fokussieren, um Heilungs-Orbs für den Heiler zu erzeugen."]
+          },
+          "abilities": [{ "name": "Heilender Impuls", "id": 280140 }, { "name": "Seuchenfrosch-Biss", "id": 280141 }]
+        }
+      ]
+    },
+    {
+      "id": "ruby-life-pools",
+      "name": "Rubinlebensbecken",
+      "nameEn": "Ruby Life Pools",
+      "timer": "28:00",
+      "bossCount": 3,
+      "icon": "🔴",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/20ff0eaaeb6117c9a8fcbb76792789b3e01341ce.jpg",
+      "dispels": ["Magie", "Gift"],
+      "lust": "1. Boss (Frostschild), Kokia (Phase 2), Endboss (Drachen-Phase)",
+      "trash": [
+        { "name": "Primalistischer Blitzmagier", "ability": "Primaler Blitzschlag", "id": 390000, "type": "kick", "desc": "Prio 1 Kick! Zerreißt zufällige Gruppenmitglieder." },
+        { "name": "Flammentänzerin", "ability": "Flammentanz", "id": 390001, "type": "stop", "desc": "AoE-Pulsieren – zwingend mit Stun stoppen!" },
+        { "name": "Sturmweber", "ability": "Sturmschild", "id": 390002, "type": "dispel", "desc": "Magieschild auf Mobs sofort purgen/dispellen." }
+      ],
+      "bosses": [
+        {
+          "name": "Melidrussa Grollherz",
+          "nameEn": "Melidrussa Chillworn",
+          "icon": "❄️",
+          "check": "Frostbomben-Dispel & Eier-Cleave",
+          "lust": "Beim 1. Frostschild",
+          "intro": "Wirft Frostbomben und zerbricht Dracheneier, aus denen Welpen schlüpfen.",
+          "roles": {
+            "tanks": ["Boss und Welpen für maximalen Cleave zusammenziehen."],
+            "heiler": ["Frostbombe erst dispellen, wenn der Spieler aus der Gruppe gelaufen ist."],
+            "dps": ["Frostschild durch Bursten aufbrechen; Welpen mit Stuns kontrollieren."]
+          },
+          "abilities": [{ "name": "Frostbombe", "id": 390110 }, { "name": "Eissturm", "id": 390111 }]
+        },
+        {
+          "name": "Kokia Feuerhuf",
+          "nameEn": "Kokia Blazehoof",
+          "icon": "🔥",
+          "check": "Feuerbäume & LoS-Verstecken",
+          "lust": "In Phase 2",
+          "intro": "Beschwört lodernde Urelementare aus Bäumen und wirft massive Feuerfelsen.",
+          "roles": {
+            "tanks": ["Feuer-Elementare sofort einsammeln und wegdrehen."],
+            "heiler": ["Massiven Gruppenschaden bei 'Brandstiftung' gegenheilen."],
+            "dps": ["Elementare fokussieren, bevor sie explodieren; Felsen ausweichen."]
+          },
+          "abilities": [{ "name": "Feuerorkan", "id": 390120 }, { "name": "Brandstiftung", "id": 390121 }]
+        },
+        {
+          "name": "Kyrakka & Erkhart Sturmader",
+          "nameEn": "Kyrakka and Erkhart Stormvein",
+          "icon": "🐉",
+          "check": "Endboss: Flammenpfützen & Drachen-Landung",
+          "lust": "Sobald Kyrakka landet (50 % HP)",
+          "intro": "Drachenreiter-Duo. Erzeugt brennende Windzonen und flutet den Raum mit Flammenatem.",
+          "roles": {
+            "tanks": ["Erkhart aus den Flammenwirbeln ziehen; Kyrakka nach Landung binden."],
+            "heiler": ["Flammen-Debuffs kontrolliert am Rand dispellen."],
+            "dps": ["Drachen Kyrakka fokussieren, sobald er am Boden ist."]
+          },
+          "abilities": [{ "name": "Flammensturm", "id": 390130 }, { "name": "Inferno-Atem", "id": 390131 }]
         }
       ]
     }
