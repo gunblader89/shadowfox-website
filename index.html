@@ -21,9 +21,23 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;font-size:15px;line-height:1.62;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:radial-gradient(880px 480px at 82% -10%,rgba(234,181,78,.075),transparent 62%),
-             radial-gradient(720px 440px at 6% 2%,rgba(143,124,232,.07),transparent 64%)}
+
+/* Statischer Dot-Matrix Hintergrund (Responsive & 4K-scharf) */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background-color:#08090d;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px),
+    radial-gradient(850px 500px at 85% 0%, rgba(234, 181, 78, 0.10), transparent 70%),
+    radial-gradient(750px 550px at 10% 40%, rgba(143, 124, 232, 0.09), transparent 70%),
+    radial-gradient(circle at 50% 50%, transparent 45%, rgba(5, 6, 9, 0.75) 100%);
+  background-size: 24px 24px, 100% 100%, 100% 100%, 100% 100%;
+}
+
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
@@ -178,6 +192,7 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .pk-purple{color:#a335ee;background:rgba(163,53,238,.14);border:1px solid rgba(163,53,238,.32)}
 .pk-blue{color:#0070dd;background:rgba(0,112,221,.15);border:1px solid rgba(0,112,221,.35)}
 .pk-green{color:#1eff00;background:rgba(30,255,0,.1);border:1px solid rgba(30,255,0,.26)}
+.pk-grey{color:#8a8f99;background:rgba(138,143,153,.12);border:1px solid rgba(138,143,153,.25)}
 .parse .nm{flex:1;font-size:13px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .parse .mt{font-size:11.5px;color:var(--tx3);font-family:var(--mono);flex-shrink:0}
 
@@ -399,12 +414,12 @@ function calcVault(runs) {
 
 function scoreColor(score) {
   const s = Number(score || 0);
-  if (s >= 2800) return "#e5cc80"; // Gold
-  if (s >= 2500) return "#ff8000"; // Orange
-  if (s >= 2000) return "#a335ee"; // Lila
-  if (s >= 1500) return "#0070dd"; // Blau
-  if (s >= 800)  return "#1eff00"; // Grün
-  return "#8a8f99";               // Grau
+  if (s >= 2800) return "#e5cc80";
+  if (s >= 2500) return "#ff8000";
+  if (s >= 2000) return "#a335ee";
+  if (s >= 1500) return "#0070dd";
+  if (s >= 800)  return "#1eff00";
+  return "#8a8f99";
 }
 
 function pkClass(parse) {
@@ -855,7 +870,7 @@ function applyData(d, c){
   }
 }
 
-document.getElementById("nav").innerHTML = NAV.map(([k,l])=>`<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
+document.getElementById("nav").innerHTML = NAV.map(([k,l]) => `<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
 function route(){
   const k = location.hash.replace("#/","") || "start";
   document.getElementById("view").innerHTML = (views[k] || views.start)();
