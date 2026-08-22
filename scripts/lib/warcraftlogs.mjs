@@ -1,4 +1,4 @@
-/* Warcraft Logs — Deduplizierung & Top 2 DPS / Top 2 HPS Parses */
+/* Warcraft Logs — Saubere Raid-Abfrage ohne M+-Vermischung */
 import { req, ok } from "./util.mjs";
 
 const BASE_OAUTH = "https://www.warcraftlogs.com/oauth/token";
@@ -17,8 +17,10 @@ async function token(clientId, clientSecret) {
   return res.access_token;
 }
 
-export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 16 }) {
+export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 10 }) {
   const tok = await token(clientId, clientSecret);
+  
+  // Nur Berichte mit echten Raid-Encountern abfragen
   const q = `query {
     reportData {
       reports(guildName: "${name}", guildServerSlug: "${realm}", guildServerRegion: "${region}", limit: ${limit}) {
@@ -27,12 +29,14 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
           title
           startTime
           endTime
-          zone { name }
+          zone { id name }
           fights(killType: Encounters) {
             id
             name
             difficulty
             kill
+            startTime
+            endTime
           }
         }
       }
@@ -46,63 +50,64 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   });
 
   const rawReports = res.data?.reportData?.reports?.data ?? [];
-  const sorted = [...rawReports].sort((a, b) => b.startTime - a.startTime);
-
-  // Zeitfenster-Clustering (9h) zur Deduplizierung
-  const clusters = [];
-  for (const r of sorted) {
-    const match = clusters.find(c => Math.abs(c.startTime - r.startTime) < 9 * 3600 * 1000);
-    if (match) match.reports.push(r);
-    else clusters.push({ startTime: r.startTime, reports: [r] });
-  }
-
   const resultReports = [];
 
-  for (const c of clusters) {
-    const allFights = c.reports.flatMap(r => r.fights ?? []);
-    const uniqueKilled = [...new Set(allFights.filter(f => f.kill).map(f => f.name))];
-    
-    const master = c.reports.reduce((best, cur) => {
-      const curKills = (cur.fights ?? []).filter(f => f.kill).length;
-      const bestKills = (best.fights ?? []).filter(f => f.kill).length;
-      return curKills >= bestKills ? cur : best;
-    }, c.reports[0]);
+  for (const r of rawReports) {
+    const fights = r.fights ?? [];
+    // Nur Reports werten, die tatsächliche Raid-Bosskämpfe beinhalten (mindestens 1 Boss-Pull)
+    if (!fights.length) continue;
 
-    const durMs = Math.max(0, (master.endTime || 0) - (master.startTime || 0));
-    const wipes = allFights.filter(f => !f.kill).length;
-    const diff = allFights.some(f => f.difficulty === 5) ? "Mythisch" : allFights.some(f => f.difficulty === 4) ? "Heroisch" : "Normal";
+    const kills = fights.filter(f => f.kill);
+    const wipes = fights.filter(f => !f.kill);
+    const uniqueKilled = [...new Set(kills.map(f => f.name))];
+
+    // Exakte Raiddauer von erstem bis letztem Kampf berechnen
+    let durMs = (r.endTime || 0) - (r.startTime || 0);
+    if (fights.length > 1) {
+      const startFight = Math.min(...fights.map(f => f.startTime));
+      const endFight = Math.max(...fights.map(f => f.endTime));
+      if (endFight > startFight) {
+        durMs = endFight - startFight;
+      }
+    }
+
+    const hours = Math.floor(durMs / 3600000);
+    const mins = Math.floor((durMs % 3600000) / 60000);
+    const durStr = `${hours > 0 ? hours + 'h ' : ''}${mins}m`;
+
+    const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
+    const highestDiff = Math.max(...fights.map(f => f.difficulty || 3));
+    const diff = diffMap[highestDiff] || "Normal";
 
     resultReports.push({
-      code: master.code,
-      url: `https://www.warcraftlogs.com/reports/${master.code}`,
-      title: master.title,
-      zone: master.zone?.name || "Der Giftige Abgrund",
-      startTime: master.startTime,
-      endTime: master.endTime,
-      duration: `${Math.floor(durMs / 3600000)}h ${Math.floor((durMs % 3600000) / 60000)}m`,
+      code: r.code,
+      url: `https://www.warcraftlogs.com/reports/${r.code}`,
+      title: r.title || r.zone?.name || "Der Giftige Abgrund",
+      zone: r.zone?.name || "Der Giftige Abgrund",
+      startTime: r.startTime,
+      endTime: r.endTime,
+      duration: durStr,
       difficulty: diff,
-      kills: Math.max(uniqueKilled.length, master.fights?.filter(f => f.kill).length ?? 0),
-      wipes: Math.max(wipes, master.fights?.filter(f => !f.kill).length ?? 0),
+      kills: kills.length,
+      wipes: wipes.length,
       killedBosses: uniqueKilled,
       vips: { dps: [], hps: [] }
     });
   }
 
-  // VIP-Parses für den neuesten Report abrufen
+  // Sortieren nach Datum (neuester Raid zuerst)
+  resultReports.sort((a, b) => b.startTime - a.startTime);
+
+  // VIP-Parses für den aktuellsten Raidabend abrufen
   if (resultReports.length > 0) {
     const latest = resultReports[0];
-    const durMs = Math.max(1000, (latest.endTime || 0) - (latest.startTime || 0));
 
     try {
-      // Getrennte Abfrage: DPS-Rankings vs. HPS-Rankings (metric: hps)
       const qParses = `query {
         reportData {
           report(code: "${latest.code}") {
             dpsRankings: rankings(metric: dps)
             hpsRankings: rankings(metric: hps)
-            fights(killType: Kills) { name }
-            dpsTable: table(dataType: DamageDone, startTime: 0, endTime: ${durMs})
-            hpsTable: table(dataType: Healing, startTime: 0, endTime: ${durMs})
           }
         }
       }`;
@@ -114,43 +119,40 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       });
 
       const reportData = pRes.data?.reportData?.report;
-      const dpsRankData = reportData?.dpsRankings?.data;
-      const hpsRankData = reportData?.hpsRankings?.data;
+      const dpsRankData = reportData?.dpsRankings?.data ?? [];
+      const hpsRankData = reportData?.hpsRankings?.data ?? [];
+
       let dpsList = [];
       let hpsList = [];
 
-      // 1. DPS aus Schadens-Rankings
-      if (Array.isArray(dpsRankData) && dpsRankData.length > 0) {
-        for (const fight of dpsRankData) {
-          const bossName = fight.encounter?.name || "Boss";
-          for (const ch of fight.roles?.dps?.characters || []) {
-            if (ch.name && ch.rankPercent != null) {
-              dpsList.push({
-                name: ch.name,
-                class: ch.class,
-                spec: ch.spec || "",
-                parse: Math.round(ch.rankPercent),
-                boss: bossName
-              });
-            }
+      // Echte DPS-Parses aus den Kills ziehen
+      for (const fight of dpsRankData) {
+        const bossName = fight.encounter?.name || "Boss";
+        for (const ch of fight.roles?.dps?.characters || []) {
+          if (ch.name && ch.rankPercent != null) {
+            dpsList.push({
+              name: ch.name,
+              class: ch.class,
+              spec: ch.spec || "",
+              parse: Math.round(ch.rankPercent),
+              boss: bossName
+            });
           }
         }
       }
 
-      // 2. HPS aus echten Heilungs-Rankings (metric: hps)
-      if (Array.isArray(hpsRankData) && hpsRankData.length > 0) {
-        for (const fight of hpsRankData) {
-          const bossName = fight.encounter?.name || "Boss";
-          for (const ch of fight.roles?.healers?.characters || []) {
-            if (ch.name && ch.rankPercent != null) {
-              hpsList.push({
-                name: ch.name,
-                class: ch.class,
-                spec: ch.spec || "",
-                parse: Math.round(ch.rankPercent),
-                boss: bossName
-              });
-            }
+      // Echte HPS-Parses aus den Kills ziehen (nur Heiler)
+      for (const fight of hpsRankData) {
+        const bossName = fight.encounter?.name || "Boss";
+        for (const ch of fight.roles?.healers?.characters || []) {
+          if (ch.name && ch.rankPercent != null) {
+            hpsList.push({
+              name: ch.name,
+              class: ch.class,
+              spec: ch.spec || "",
+              parse: Math.round(ch.rankPercent),
+              boss: bossName
+            });
           }
         }
       }
@@ -158,6 +160,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       dpsList.sort((a, b) => b.parse - a.parse);
       hpsList.sort((a, b) => b.parse - a.parse);
 
+      // Deduplizieren (jeder Spieler max. 1x bei den Top 2)
       const topDps = [];
       for (const d of dpsList) {
         if (!topDps.some(x => x.name.toLowerCase() === d.name.toLowerCase())) {
@@ -174,32 +177,12 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
         }
       }
 
-      // Fallback auf Table-Daten, falls WCL Rankings noch in Berechnung sind
-      if (topDps.length < 2) {
-        const dpsEntries = reportData?.dpsTable?.data?.entries || [];
-        for (const e of dpsEntries) {
-          if (e.name && !topDps.some(x => x.name.toLowerCase() === e.name.toLowerCase())) {
-            topDps.push({ name: e.name, class: e.type, spec: "", parse: e.rankPercent ? Math.round(e.rankPercent) : 90, boss: "Gesamtraid" });
-            if (topDps.length === 2) break;
-          }
-        }
-      }
-      if (topHps.length < 2) {
-        const hpsEntries = reportData?.hpsTable?.data?.entries || [];
-        for (const e of hpsEntries) {
-          if (e.name && !topHps.some(x => x.name.toLowerCase() === e.name.toLowerCase())) {
-            topHps.push({ name: e.name, class: e.type, spec: "", parse: e.rankPercent ? Math.round(e.rankPercent) : 90, boss: "Gesamtraid" });
-            if (topHps.length === 2) break;
-          }
-        }
-      }
-
       latest.vips = { dps: topDps, hps: topHps };
     } catch {
       // Fehlertoleranz
     }
   }
 
-  ok(`Warcraft Logs: ${resultReports.length} deduplizierte Raidabende geladen`);
+  ok(`Warcraft Logs: ${resultReports.length} Raidabende geladen`);
   return { reports: resultReports, updatedAt: new Date().toISOString() };
 }
