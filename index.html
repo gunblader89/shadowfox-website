@@ -466,28 +466,7 @@ const CLASSES = [
 ];
 
 let KB = [];
-let KADER = [
-  {n:"Quon", c:"Druide", r:"Tank", spec:"Guardian", ilvl:293, mp:0, mr:0, v:0, thumb:null},
-  {n:"Kitebrew", c:"Mönch", r:"Tank", spec:"Brewmaster", ilvl:292, mp:981, mr:4, v:2, thumb:null},
-  {n:"Garódash", c:"Schamane", r:"Heal", spec:"Restoration", ilvl:287, mp:0, mr:0, v:0, thumb:null},
-  {n:"Jisgarin", c:"Paladin", r:"Heal", spec:"Holy", ilvl:289, mp:450, mr:2, v:1, thumb:null},
-  {n:"Sweetschi", c:"Mönch", r:"Heal", spec:"Mistweaver", ilvl:288, mp:320, mr:1, v:1, thumb:null},
-  {n:"Corvisstab", c:"Priester", r:"Heal", spec:"Holy", ilvl:291, mp:810, mr:4, v:2, thumb:null},
-  {n:"Sandino", c:"Priester", r:"Heal", spec:"Discipline", ilvl:290, mp:322, mr:1, v:1, thumb:null},
-  {n:"Tankoderdd", c:"Paladin", r:"Melee", spec:"Retribution", ilvl:294, mp:1250, mr:5, v:2, thumb:null},
-  {n:"Merccrixxus", c:"Krieger", r:"Melee", spec:"Fury", ilvl:295, mp:1400, mr:8, v:3, thumb:null},
-  {n:"Thessaly", c:"Dämonenjäger", r:"Melee", spec:"Havoc", ilvl:293, mp:1100, mr:4, v:2, thumb:null},
-  {n:"Amethyst", c:"Paladin", r:"Melee", spec:"Retribution", ilvl:290, mp:600, mr:2, v:1, thumb:null},
-  {n:"Günni", c:"Todesritter", r:"Melee", spec:"Unholy", ilvl:288, mp:400, mr:1, v:1, thumb:null},
-  {n:"Feiree", c:"Rufer", r:"Ranged", spec:"Devastation", ilvl:292, mp:950, mr:4, v:2, thumb:null},
-  {n:"Askái", c:"Rufer", r:"Ranged", spec:"Augmentation", ilvl:293, mp:1050, mr:4, v:2, thumb:null},
-  {n:"Chantallè", c:"Jäger", r:"Ranged", spec:"Beastmastery", ilvl:291, mp:880, mr:3, v:1, thumb:null},
-  {n:"Tiskarian", c:"Druide", r:"Ranged", spec:"Balance", ilvl:290, mp:750, mr:3, v:1, thumb:null},
-  {n:"Hobs", c:"Jäger", r:"Ranged", spec:"Beastmastery", ilvl:289, mp:500, mr:2, v:1, thumb:null},
-  {n:"Fruchtzwerg", c:"Schamane", r:"Ranged", spec:"Elemental", ilvl:292, mp:1120, mr:5, v:2, thumb:null},
-  {n:"Narrwen", c:"Hexenmeister", r:"Ranged", spec:"Demonology", ilvl:294, mp:1350, mr:8, v:3, thumb:null}
-];
-
+let KADER = [];
 let BOSSES = [];
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 
@@ -514,24 +493,62 @@ const CMAP = {Druide:"#FF7C0A",Schamane:"#0070DD",Krieger:"#C69B6D",Jäger:"#AAD
   Priester:"#FFFFFF",Magier:"#3FC7EB",Todesritter:"#C41E3A",Mönch:"#00FF98",
   Hexenmeister:"#8788EE",Paladin:"#F48CBA",Rufer:"#33937F",Dämonenjäger:"#A330C9",Schurke:"#FFF468"};
 
-const SPEC_MAP = {
-  guardian:"Druide",feral:"Druide",balance:"Druide",restoration:"Druide",
-  protection:"Paladin",protection1:"Krieger",retribution:"Paladin",holy:"Paladin",holy1:"Priester",
-  blood:"Todesritter",frost1:"Todesritter",unholy:"Todesritter",
-  brewmaster:"Mönch",windwalker:"Mönch",mistweaver:"Mönch",
-  vengeance:"Dämonenjäger",havoc:"Dämonenjäger",
-  arms:"Krieger",fury:"Krieger",
-  assassination:"Schurke",outlaw:"Schurke",subtlety:"Schurke",
-  discipline:"Priester",shadow:"Priester",
-  elemental:"Schamane",enhancement:"Schamane",restoration1:"Schamane",
-  arcane:"Magier",fire:"Magier",frost:"Magier",
-  destruction:"Hexenmeister",demonology:"Hexenmeister",affliction:"Hexenmeister",
-  beastmastery:"Jäger",marksmanship:"Jäger",survival:"Jäger",
-  devastation:"Rufer",augmentation:"Rufer",preservation:"Rufer",devourer:"Rufer"
-};
-
+/* Exakte Namens-Bereinigung: Filtert Realm-Zusätze, Discord-Slashes, Klammern und Akzente heraus */
 function normName(s){
-  return String(s||"").split("/")[0].split("|")[0].trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+  if(!s) return "";
+  return String(s)
+    .split("/")[0]
+    .split("|")[0]
+    .split("-")[0]
+    .split("(")[0]
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"");
+}
+
+/* Umfassende Klassen-Erkennung nach String, Spec oder Kurzform */
+function cleanClass(clsStr, specStr) {
+  const s = String(clsStr || "").toLowerCase().trim();
+  const spec = String(specStr || "").toLowerCase().trim();
+
+  if (["guardian", "feral", "balance", "restoration_druid"].includes(spec)) return "Druide";
+  if (["blood", "unholy", "frost_dk"].includes(spec)) return "Todesritter";
+  if (["havoc", "vengeance"].includes(spec)) return "Dämonenjäger";
+  if (["brewmaster", "windwalker", "mistweaver"].includes(spec)) return "Mönch";
+  if (["devastation", "augmentation", "preservation", "devourer"].includes(spec)) return "Rufer";
+  if (["beastmastery", "marksmanship", "survival"].includes(spec)) return "Jäger";
+  if (["assassination", "outlaw", "subtlety"].includes(spec)) return "Schurke";
+  if (["affliction", "demonology", "destruction"].includes(spec)) return "Hexenmeister";
+  if (["elemental", "enhancement", "restoration_shaman"].includes(spec)) return "Schamane";
+  if (["arcane", "fire", "frost_mage"].includes(spec)) return "Magier";
+  if (["discipline", "shadow"].includes(spec)) return "Priester";
+  if (["arms", "fury", "protection_warrior"].includes(spec)) return "Krieger";
+  if (["retribution", "protection_paladin", "holy_paladin"].includes(spec)) return "Paladin";
+
+  if (s.includes("demon") || s.includes("dämon") || s.includes("daemon") || s === "dh") return "Dämonenjäger";
+  if (s.includes("death") || s.includes("todes") || s === "dk") return "Todesritter";
+  if (s.includes("druid") || s.includes("dudu")) return "Druide";
+  if (s.includes("monk") || s.includes("mönch") || s.includes("moench")) return "Mönch";
+  if (s.includes("evoker") || s.includes("rufer")) return "Rufer";
+  if (s.includes("hunter") || s.includes("jäger") || s.includes("jaeger")) return "Jäger";
+  if (s.includes("rogue") || s.includes("schurke")) return "Schurke";
+  if (s.includes("warlock") || s.includes("hexen") || s.includes("lock") || s === "wl") return "Hexenmeister";
+  if (s.includes("shaman") || s.includes("schaman") || s.includes("schami")) return "Schamane";
+  if (s.includes("mage") || s.includes("magier")) return "Magier";
+  if (s.includes("priest") || s.includes("priester")) return "Priester";
+  if (s.includes("warrior") || s.includes("krieger") || s.includes("warri")) return "Krieger";
+  if (s.includes("paladin") || s.includes("pala")) return "Paladin";
+
+  return "Krieger";
+}
+
+function mapRole(roleStr, clsStr, specStr){
+  const s = (String(clsStr||"")+" "+String(roleStr||"")+" "+String(specStr||"")).toLowerCase();
+  if(s.includes("tank")||s.includes("guardian")||s.includes("brewmaster")||s.includes("blood")||s.includes("protection")||s.includes("vengeance")) return "Tank";
+  if(s.includes("heal")||s.includes("restoration")||s.includes("holy")||s.includes("mistweaver")||s.includes("discipline")||s.includes("preservation")) return "Heal";
+  if(s.includes("melee")||s.includes("fury")||s.includes("arms")||s.includes("retribution")||s.includes("unholy")||(s.includes("frost")&&s.includes("dk"))||s.includes("havoc")||s.includes("windwalker")||s.includes("assassination")||s.includes("outlaw")||s.includes("subtlety")||s.includes("feral")||s.includes("survival")||s.includes("enhancement")) return "Melee";
+  return "Ranged";
 }
 
 function fmtDateShort(d) {
@@ -1092,23 +1109,6 @@ async function load(path){
   }catch{ return null; }
 }
 
-function mapRole(roleStr, clsStr, specStr){
-  const s = (String(clsStr||"")+" "+String(roleStr||"")+" "+String(specStr||"")).toLowerCase();
-  if(s.includes("tank")||s.includes("guardian")||s.includes("brewmaster")||s.includes("blood")||s.includes("protection")) return "Tank";
-  if(s.includes("heal")||s.includes("restoration")||s.includes("holy")||s.includes("mistweaver")||s.includes("discipline")||s.includes("preservation")) return "Heal";
-  if(s.includes("melee")||s.includes("fury")||s.includes("arms")||s.includes("retribution")||s.includes("unholy")||s.includes("frost1")||s.includes("havoc")||s.includes("windwalker")||s.includes("assassination")||s.includes("outlaw")||s.includes("subtlety")||s.includes("feral")||s.includes("survival")||s.includes("enhancement")) return "Melee";
-  return "Ranged";
-}
-
-function resolveClass(spec, cls, name){
-  const cleanSpec = String(spec||"").toLowerCase();
-  if(SPEC_MAP[cleanSpec]) return SPEC_MAP[cleanSpec];
-  const target = normName(name);
-  const k = KADER.find(p => normName(p.n) === target);
-  if(k) return k.c;
-  return CLS_DE[cls] || cls || "Krieger";
-}
-
 function applyData(d, c){
   if(c?.wissen?.artikel?.length){
     KB = c.wissen.artikel.map(a => ({
@@ -1138,48 +1138,72 @@ function applyData(d, c){
   const downBossCount = BOSSES.filter(b => b.st === "down").length;
   if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
 
+  // Exakte deduplizierte Kader-Zusammenführung
   const charMap = new Map();
-  for(const k of KADER) charMap.set(normName(k.n), {...k});
 
+  // Primärquelle: WoWAudit
   if(d?.wowaudit?.characters?.length){
     for(const wc of d.wowaudit.characters){
-      const key = normName(wc.name);
-      const existing = charMap.get(key) || {};
+      const rawName = wc.name ? wc.name.split("-")[0].trim() : "";
+      const key = normName(rawName);
+      if(!key) continue;
+      const cls = cleanClass(wc.class, wc.spec);
+      const role = mapRole(wc.role, cls, wc.spec);
+      const ilvl = wc.equipped_item_level || wc.item_level || wc.ilvl || null;
+
       charMap.set(key, {
-        n: wc.name,
-        c: CLS_DE[wc.class] || wc.class || existing.c || "Krieger",
-        r: mapRole(wc.role, wc.class, wc.spec) || existing.r || "DPS",
-        ilvl: wc.equipped_item_level || wc.item_level || wc.ilvl || existing.ilvl || null,
-        mp: existing.mp || 0,
-        mr: existing.mr || 0,
-        v: existing.v || 0,
-        spec: wc.spec || existing.spec || "",
-        thumb: existing.thumb || null
+        n: rawName,
+        c: cls,
+        r: role,
+        spec: wc.spec || "",
+        ilvl: ilvl ? Math.round(ilvl) : null,
+        mp: 0,
+        mr: 0,
+        v: 0,
+        thumb: null
       });
     }
   }
 
+  // Sekundärquelle: Raider.IO (Score, Wochenruns, Thumbnails)
   if(d?.roster?.characters?.length){
     for(const rc of d.roster.characters){
-      const key = normName(rc.name);
+      const rawName = rc.name ? rc.name.split("-")[0].trim() : "";
+      const key = normName(rawName);
+      if(!key) continue;
+      const runs = rc.weeklyRuns || 0;
+      const cls = cleanClass(rc.class, rc.spec);
+      const role = mapRole(rc.role, cls, rc.spec);
+
       let p = charMap.get(key);
       if(!p){
-        const runs = rc.weeklyRuns || 0;
-        p = { n: rc.name, c: CLS_DE[rc.class]||rc.class, r: mapRole(rc.role, rc.class, rc.spec), ilvl: rc.ilvl, mp: rc.mplus||0, mr: runs, v: calcVault(runs), spec: rc.spec||"", thumb: rc.thumb||null };
+        p = {
+          n: rawName,
+          c: cls,
+          r: role,
+          spec: rc.spec || "",
+          ilvl: rc.ilvl ? Math.round(rc.ilvl) : null,
+          mp: rc.mplus || 0,
+          mr: runs,
+          v: calcVault(runs),
+          thumb: rc.thumb || null
+        };
         charMap.set(key, p);
       } else {
-        if(rc.ilvl && !p.ilvl) p.ilvl = rc.ilvl;
-        if(rc.mplus != null) p.mp = rc.mplus;
+        if(rc.ilvl && !p.ilvl) p.ilvl = Math.round(rc.ilvl);
+        if(rc.mplus != null && rc.mplus > 0) p.mp = rc.mplus;
         if(rc.weeklyRuns != null) {
           p.mr = Math.max(p.mr || 0, rc.weeklyRuns);
           p.v = calcVault(p.mr);
         }
-        if(rc.spec && !p.spec) p.spec = rc.spec;
         if(rc.thumb) p.thumb = rc.thumb;
+        if(rc.spec && !p.spec) p.spec = rc.spec;
+        if(!p.c || p.c === "Krieger") p.c = cls;
       }
     }
   }
 
+  // Blizzard Keystone Sync
   if(d?.blizzard?.weeklyKeys?.length){
     for(const bk of d.blizzard.weeklyKeys){
       const key = normName(bk.name);
@@ -1191,8 +1215,11 @@ function applyData(d, c){
     }
   }
 
-  if(charMap.size > 0) KADER = Array.from(charMap.values());
+  if(charMap.size > 0){
+    KADER = Array.from(charMap.values());
+  }
 
+  // Discord Signups
   if(d?.events?.events?.length){
     const e = d.events.events[0];
     EVENT.title = e.title || EVENT.title;
@@ -1203,12 +1230,13 @@ function applyData(d, c){
     if(e.signups?.length){
       EVENT.signups = e.signups.map(s => {
         const isAbs = String(s.role||s.cls).toLowerCase().includes("abs");
-        const pClass = resolveClass(s.spec, s.cls, s.name);
+        const cleanN = s.name ? s.name.split("/")[0].split("|")[0].split("-")[0].trim() : "Raider";
+        const pClass = cleanClass(s.cls, s.spec);
         return {
-          name: s.name,
+          name: cleanN,
           cls: pClass,
           spec: s.spec || "",
-          role: mapRole(s.role, s.cls, s.spec),
+          role: mapRole(s.role, pClass, s.spec),
           status: isAbs ? "absence" : "primary"
         };
       });
@@ -1216,6 +1244,7 @@ function applyData(d, c){
     EVENT.live = true;
   }
 
+  // Logs
   if(d?.logs?.reports?.length){
     REPORTS = d.logs.reports.map((r, i) => ({
       code: r.code,
