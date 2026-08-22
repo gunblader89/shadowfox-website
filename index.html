@@ -20,6 +20,7 @@
   --green:#5ec48f; --green-bg:rgba(94,196,143,.1);
   --blue:#6b9ce8; --blue-bg:rgba(107,156,232,.11);
   --red:#e26b6b; --red-bg:rgba(226,107,107,.1);
+  --disc:#5865f2; --disc-bg:rgba(88,101,242,.15);
   --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -41,7 +42,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
 
 .top{position:sticky;top:0;z-index:60;background:rgba(8,9,13,.86);backdrop-filter:blur(18px) saturate(150%);border-bottom:1px solid var(--line)}
-.top-in{display:flex;align-items:center;gap:24px;height:64px}
+.top-in{display:flex;align-items:center;gap:20px;height:64px}
 .brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
 .brand .mark{width:36px;height:36px;flex-shrink:0}
 .brand b{display:block;font-size:15px;font-weight:700;letter-spacing:-.3px;line-height:1.2}
@@ -51,13 +52,15 @@ nav::-webkit-scrollbar{display:none}
 nav a{padding:8px 12px;border-radius:9px;font-size:13.5px;font-weight:500;color:var(--tx2);white-space:nowrap;transition:.14s}
 nav a:hover{color:var(--tx);background:var(--panel)}
 nav a.on{color:var(--tx);background:var(--panel2);box-shadow:inset 0 0 0 1px var(--line2)}
-.top-r{margin-left:auto;display:flex;align-items:center;gap:9px;flex-shrink:0}
-.sbtn{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
+.top-r{margin-left:auto;display:flex;align-items:center;gap:8px;flex-shrink:0}
+.sbtn{display:flex;align-items:center;gap:8px;padding:8px 11px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--tx3);font-size:13px;transition:.14s}
 .sbtn:hover{border-color:var(--line2);color:var(--tx2)}
 kbd{font-family:var(--mono);font-size:10.5px;padding:2px 5px;border-radius:5px;background:#1b202a;border:1px solid #2b3242;color:var(--tx3)}
-.btn{display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border-radius:10px;font-size:13.5px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border-radius:10px;font-size:13px;font-weight:600;transition:.14s;border:1px solid transparent;white-space:nowrap}
 .btn-p{background:var(--amber);color:#1a1305}
 .btn-p:hover{background:#f2c266}
+.btn-disc{background:var(--disc-bg);color:#7289da;border-color:rgba(88,101,242,.35)}
+.btn-disc:hover{background:#5865f2;color:#fff;border-color:#5865f2}
 
 .notice{background:var(--green-bg);border-bottom:1px solid rgba(94,196,143,.2);font-size:12px;color:var(--green);text-align:center;padding:7px 20px}
 main{padding:32px 0 90px}
@@ -128,8 +131,6 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
   background-position:right 10% center;
   background-repeat:no-repeat;
 }
-
-/* Der geschmeidige Dunkel-Verlauf (Fadeout) über dem Bild */
 .bhead::before{
   content:"";
   position:absolute;
@@ -138,57 +139,22 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
               linear-gradient(180deg, rgba(18,21,28,0.1) 0%, rgba(18,21,28,0.7) 100%);
   z-index:1;
   pointer-events:none;
-  transition:opacity .2s ease;
 }
 .boss.open .bhead::before{
   background:linear-gradient(90deg, #171b24 0%, rgba(23,27,36,0.94) 35%, rgba(23,27,36,0.45) 65%, rgba(23,27,36,0.85) 100%),
               linear-gradient(180deg, rgba(23,27,36,0.1) 0%, rgba(23,27,36,0.8) 100%);
 }
-
-.bhead > *{
-  position:relative;
-  z-index:2;
-}
+.bhead > *{ position:relative; z-index:2; }
 
 .bnum{
-  width:36px;
-  height:36px;
-  border-radius:10px;
-  display:grid;
-  place-items:center;
-  flex-shrink:0;
-  font-family:var(--mono);
-  font-size:14px;
-  font-weight:700;
-  background:rgba(15,17,22,0.85);
-  backdrop-filter:blur(8px);
-  border:1px solid var(--line2);
-  color:var(--tx2);
+  width:36px; height:36px; border-radius:10px; display:grid; place-items:center; flex-shrink:0;
+  font-family:var(--mono); font-size:14px; font-weight:700; background:rgba(15,17,22,0.85);
+  backdrop-filter:blur(8px); border:1px solid var(--line2); color:var(--tx2);
 }
-.boss.open .bnum{
-  background:var(--amber);
-  color:#1a1305;
-  border-color:var(--amber);
-  box-shadow:0 0 14px rgba(234,181,78,0.4);
-}
-
+.boss.open .bnum{ background:var(--amber); color:#1a1305; border-color:var(--amber); box-shadow:0 0 14px rgba(234,181,78,0.4); }
 .bname{flex:1;min-width:0}
-.bname b{
-  display:block;
-  font-size:18px;
-  font-weight:800;
-  letter-spacing:-.3px;
-  color:var(--tx);
-  text-shadow:0 2px 8px rgba(0,0,0,0.8);
-}
-.bname span{
-  display:block;
-  font-size:13px;
-  color:var(--tx2);
-  margin-top:2px;
-  text-shadow:0 1px 4px rgba(0,0,0,0.8);
-}
-
+.bname b{ display:block; font-size:18px; font-weight:800; letter-spacing:-.3px; color:var(--tx); text-shadow:0 2px 8px rgba(0,0,0,0.8); }
+.bname span{ display:block; font-size:13px; color:var(--tx2); margin-top:2px; text-shadow:0 1px 4px rgba(0,0,0,0.8); }
 .chev{color:var(--tx3);transition:.2s;flex-shrink:0}
 .boss.open .chev{transform:rotate(180deg)}
 .bbody{display:none;padding:16px 24px 26px}
@@ -322,16 +288,36 @@ table.trk tbody tr:hover td{background:rgba(255,255,255,.02)}
 .rcard .hd em{font-style:normal;font-size:11.5px;color:var(--tx3)}
 .kbtag{font-size:10.5px;padding:2px 8px;border-radius:6px;background:#1a1f29;color:var(--tx3);border:1px solid var(--line)}
 
-.clsrow{display:flex;align-items:center;gap:12px;margin-bottom:7px}
-.clsrow .n{width:118px;flex-shrink:0;font-size:13px;font-weight:550}
-.clsrow .bar{flex:1;height:22px;border-radius:6px;background:#161a23;overflow:hidden;position:relative}
-.clsrow .bf{display:block;height:100%;border-radius:6px;opacity:.85}
-.clsrow .c{width:32px;text-align:right;font-family:var(--mono);font-size:12px;color:var(--tx2);flex-shrink:0}
+/* ---------- Expandable Wissen Guides ---------- */
+.kb-item{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:12px;overflow:hidden;transition:.16s}
+.kb-item:hover{border-color:var(--line2)}
+.kb-item.open{border-color:rgba(234,181,78,.4);background:var(--panel2)}
+.kb-head{display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;width:100%}
+.kb-ic{width:38px;height:38px;border-radius:10px;background:var(--panel3);border:1px solid var(--line2);display:grid;place-items:center;font-size:18px;flex-shrink:0}
+.kb-title{flex:1;min-width:0}
+.kb-title b{display:block;font-size:15px;font-weight:700}
+.kb-title span{display:block;font-size:12.5px;color:var(--tx3);margin-top:2px}
+.kb-body{display:none;padding:6px 20px 22px 72px;border-top:1px solid rgba(255,255,255,.03)}
+.kb-item.open .kb-body{display:block}
+.kb-content{font-size:13.5px;color:var(--tx2);line-height:1.65}
+.kb-content p{margin-bottom:10px}
+.kb-content ul{padding-left:18px;margin-bottom:10px;display:flex;flex-direction:column;gap:5px}
 
-.kbcard{padding:19px;background:var(--panel);border:1px solid var(--line);border-radius:13px;transition:.16s}
-.kbcard:hover{border-color:var(--line2);background:var(--panel2)}
-.kbcard h3{font-size:14.5px;font-weight:650;margin-bottom:6px;display:flex;align-items:center;gap:9px}
-.kbcard p{font-size:13px;color:var(--tx3);line-height:1.55}
+/* ---------- Bewerben Styling ---------- */
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0 30px}
+.rec-card{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px;position:relative;overflow:hidden;transition:.16s}
+.rec-card:hover{border-color:var(--line2);transform:translateY(-2px)}
+.rec-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+.rec-role{font-size:11px;text-transform:uppercase;letter-spacing:.8px;font-weight:700;color:var(--tx3);margin-bottom:4px}
+.rec-name{font-size:17px;font-weight:800;letter-spacing:-.3px;margin-bottom:6px}
+.rec-specs{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.rec-spec{font-size:11.5px;padding:3px 8px;border-radius:6px;background:var(--panel2);border:1px solid var(--line2);color:var(--tx2)}
+
+.contact-box{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:var(--panel2);border:1px solid var(--line2);border-radius:10px;margin-bottom:8px}
+.contact-meta b{display:block;font-size:14px;font-weight:700}
+.contact-meta span{display:block;font-size:12px;color:var(--tx3)}
+.copy-btn{padding:6px 12px;border-radius:7px;background:var(--panel3);border:1px solid var(--line);font-size:12px;font-weight:600;color:var(--tx2);transition:.14s}
+.copy-btn:hover{background:var(--amber);color:#1a1305;border-color:var(--amber)}
 
 .ovl{position:fixed;inset:0;z-index:100;display:none;background:rgba(5,6,9,.7);backdrop-filter:blur(7px);padding:10vh 20px 20px}
 .ovl.on{display:block}
@@ -364,11 +350,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   .bbody{padding:14px 16px 20px}
   .sig-grid{grid-template-columns:repeat(2,1fr)}
   .rcards{grid-template-columns:1fr}
+  .kb-body{padding-left:20px}
 }
 @media(max-width:640px){
   .start-grid,.g4,.g3,.g2,.tiles,.roles-grid{grid-template-columns:1fr}
   .sbtn span{display:none}
-  .clsrow .n{width:92px;font-size:12px}
   .sig-grid{grid-template-columns:1fr}
 }
 </style>
@@ -408,6 +394,10 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <span>Suchen</span><kbd class="kk">⌘K</kbd>
       </button>
+      <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+        <span>Discord</span>
+      </a>
       <a class="btn btn-p" href="#/bewerben">Bewerben</a>
     </div>
   </div>
@@ -418,6 +408,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 <footer><div class="wrap foot">
   <div>ShadowFox · Blackmoore (EU) · Allianz · Raid: Mo &amp; Do, 19:45–22:30</div>
   <div style="display:flex;gap:16px;flex-wrap:wrap">
+    <a href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">Discord Server</a>
     <a href="https://raider.io/guilds/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">Raider.IO</a>
     <a href="https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox" target="_blank" rel="noopener">Warcraft Logs</a>
   </div>
@@ -443,15 +434,25 @@ const G = {
   members:140,
   raid:{ name:"Der Giftige Abgrund", en:"The Venomous Abyss", bosses:8, nhc:6, hc:0, myth:0, rank:{welt:"4.262", eu:"1.927", realm:"81"} },
   links:{
+    discord:"https://discord.gg/AjdeyNafb",
     rio:"https://raider.io/guilds/eu/blackmoore/ShadowFox",
     wcl:"https://www.warcraftlogs.com/guild/eu/blackmoore/ShadowFox"
   },
-  recruit:{ open:["Dämonenjäger","Todesritter","Rufer"], contacts:["Passi / Offiziere"], motto:"Organisches Wachstum statt toxischem Progressdruck." }
+  recruit:{
+    open:[
+      { cls:"Dämonenjäger", role:"Melee / Tank", specs:["Verwüstung (Havoc)", "Rachsucht (Vengeance)"], col:"#A330C9", prio:"High" },
+      { cls:"Todesritter", role:"Melee / Tank", specs:["Unheilig (Unholy)", "Frost", "Blut (Blood)"], col:"#C41E3A", prio:"High" },
+      { cls:"Rufer", role:"Ranged / Support", specs:["Verheerung (Devastation)", "Verstärkung (Augmentation)", "Bewahrung"], col:"#33937F", prio:"Medium" }
+    ],
+    contacts:[
+      { name:"Passi / Merccrixxus", role:"Gildenleitung & Raidlead", btag:"Passi#21855" },
+      { name:"Offiziers-Team", role:"Recruitment & Organisation", btag:"Discord Direct" }
+    ],
+    motto:"Organisches Wachstum statt toxischem Progressdruck."
+  }
 };
 
 const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-"+s+"-boss-strategy-abilities";
-
-// Das Standard-Artwork für alle Bosse im Test
 const DEFAULT_ARTWORK = "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f9f43b4f5abb79d2c6cf8e0d885b95ac59fbd3b0.jpg";
 
 let ACTIVE_DIFF = {};
@@ -464,14 +465,109 @@ const CLASSES = [
 ];
 
 let KB = [
-  {i:"⚔️",t:"Raidregeln",d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. 19:40 im Voice, repariert und voll verzaubert.",tags:["Pflicht","Raid"]},
-  {i:"💰",t:"Loot-Regelung",d:"Wie Beute verteilt wird, wie Trials behandelt werden und wie Wünsche für den Progress angemeldet werden.",tags:["Loot","Trial"]},
-  {i:"🧩",t:"Addons & WeakAuras",d:"Pflicht-Addons und das aktuelle WeakAura-Paket für Der Giftige Abgrund inklusive Import-Strings.",tags:["Setup","Pflicht"]},
-  {i:"🧪",t:"Konsumierbare",d:"Was jeder selbst mitbringt, was die Gildenbank stellt, Flask- und Food-Empfehlungen pro Rolle.",tags:["Konsum","Bank"]},
-  {i:"📅",t:"Abmeldung & Anwesenheit",d:"Abmeldungen rechtzeitig über Raid-Helper im Discord eintragen. Mo & Do sind die festen Raidtage.",tags:["Signup"]},
-  {i:"🌱",t:"Onboarding für Neue",d:"Deine ersten zwei Wochen bei ShadowFox: was du liest, wen du ansprichst, wie der Trial läuft.",tags:["Neue","Trial"]},
-  {i:"🎧",t:"Voice-Etikette",d:"Während Pulls sprechen nur Raidlead und Callouts. Diskussion in den Pausen. Push-to-Talk Pflicht.",tags:["Discord"]},
-  {i:"🔧",t:"Char-Vorbereitung",d:"Wöchentliche Checkliste vor dem Reset: M+-Runs, Great Vault, Sockel, Verzauberungen und Vantus-Runen.",tags:["Gear","Wöchentlich"]}
+  {
+    i:"⚔️", t:"Raidregeln & Ablauf",
+    d:"Pünktlichkeit, Vorbereitung, Verhalten im Progress. Invite um 19:40 Uhr, erster Pull 19:45 Uhr.",
+    tags:["Pflicht","Raid","Zeiten"],
+    body:`
+      <p><b>Raidtage:</b> Montag & Donnerstag, jeweils 19:45 – 22:30 Uhr (Pause ca. 21:00 Uhr).</p>
+      <ul>
+        <li><b>19:40 Uhr im Voice:</b> Invites starten pünktlich, damit um 19:45 der erste Pull erfolgen kann.</li>
+        <li><b>Fokus während Bosskämpfen:</b> Bei Pull gilt 'Clear Comm'. Ansagen gehören dem Raidlead und eingeteilten Callouts.</li>
+        <li><b>Konstruktive Kritik:</b> Fehleranalyse findet in den Pausen oder sachlich nach dem Wipe statt. Toxisches Verhalten wird nicht toleriert.</li>
+      </ul>
+    `
+  },
+  {
+    i:"💰", t:"Loot-Regelung",
+    d:"Faire Beuteverteilung via RC LootCouncil & WoWAudit für maximalen Gildenprogress.",
+    tags:["Loot","Trial","Upgrade"],
+    body:`
+      <p>Beute wird über <b>RC LootCouncil</b> unter Berücksichtigung von BiS-Listen (WoWAudit), Set-Boni und Zuverlässigkeit vergeben.</p>
+      <ul>
+        <li><b>Priorität:</b> Set-Vervollständigung (2er/4er Boni) und Waffen/Trinkets mit höchstem Raid-Gesamtnutzen.</li>
+        <li><b>Trial-Phase:</b> Trials erhalten Loot nach vollwertigen Mitgliedern, es sei denn, ein Item wird sonst entzaubert.</li>
+        <li><b>Wunschliste pflegen:</b> Jeder Raider hält seine BiS-Wunschliste in WoWAudit aktuell.</li>
+      </ul>
+    `
+  },
+  {
+    i:"🧩", t:"Addons & WeakAuras",
+    d:"Pflicht-Tools für reibungslose Boss-Mechaniken und Raid-Organisation.",
+    tags:["Setup","Pflicht","WA"],
+    body:`
+      <p>Folgende Addons sind für alle festen Raider verpflichtend:</p>
+      <ul>
+        <li><b>Method Raid Tools (MRT):</b> Für Notizen, Cooldown-Tracking und Zuweisungen.</li>
+        <li><b>Deadly Boss Mods (DBM) oder BigWigs:</b> Mit aktuellen Zeit- und Warn-Modulen.</li>
+        <li><b>WeakAuras:</b> Das jeweils aktuelle ShadowFox Raid-Paket für <i>Der Giftige Abgrund</i>.</li>
+        <li><b>RC LootCouncil:</b> Für die Beuteabfrage im Raid.</li>
+      </ul>
+    `
+  },
+  {
+    i:"🧪", t:"Konsumierbare & Bank",
+    d:"Was jeder selbst mitbringt und was durch die Gildenbank bereitgestellt wird.",
+    tags:["Konsum","Flasks","Pots"],
+    body:`
+      <p>Eigenverantwortliche Raid-Vorbereitung für maximale Performance:</p>
+      <ul>
+        <li><b>Von der Gilde:</b> Kessel (Flasks) und Festmähler (Food) werden an Progress-Abenden von der Gildenbank gestellt.</li>
+        <li><b>Selbst mitzubringen:</b> Kampf-Tränke (Combat Pots), Heiltränke, Waffen-Verzauberungen/Öle und passende Sockel.</li>
+        <li><b>Vantus-Runen:</b> Werden bei Bedarf zentral von der Gildenleitung verteilt.</li>
+      </ul>
+    `
+  },
+  {
+    i:"📅", t:"An- & Abmeldungen",
+    d:"Verbindliche Termine über Raid-Helper im Discord für verlässliche Kaderplanung.",
+    tags:["Signup","Discord","Kader"],
+    body:`
+      <p>Zuverlässigkeit ist das Fundament unseres 2-Tage-Raids:</p>
+      <ul>
+        <li><b>Frist:</b> Zu- oder Absagen müssen bis spätestens 24 Stunden vor Raidbeginn im Discord (Kanal <i>#raid-anmeldung</i>) eingetragen sein.</li>
+        <li><b>Spontane Ausfälle:</b> Bei Notfällen oder Verspätungen bitte eine kurze Nachricht an Passi oder einen Offizier senden.</li>
+        <li><b>Ersatzbank:</b> Spieler auf der Bank halten sich zu Raidbeginn bereit.</li>
+      </ul>
+    `
+  },
+  {
+    i:"🌱", t:"Onboarding für Neue (Trial)",
+    d:"Deine ersten Wochen bei ShadowFox: Ablauf, Begleitung und Feedback-Gespräche.",
+    tags:["Trial","Neue","Gilde"],
+    body:`
+      <p>Willkommen bei ShadowFox! So läuft deine 2- bis 4-wöchige Testphase ab:</p>
+      <ul>
+        <li><b>Begleitung:</b> Ein Offizier steht dir als Ansprechpartner für Fragen und UI-Setups zur Seite.</li>
+        <li><b>Bewertungskriterien:</b> Mechanik-Verständnis, Zuverlässigkeit, soziale Integration und Bereitschaft zur Vorbereitung.</li>
+        <li><b>Feedback:</b> Nach 2–3 Wochen führen wir ein kurzes Gespräch zur gegenseitigen Übernahme in den Stammkader.</li>
+      </ul>
+    `
+  },
+  {
+    i:"🎧", t:"Voice-Etikette",
+    d:"Klare Kommunikation im Discord-Voice für stressfreien Progress.",
+    tags:["Discord","Voice","Fokus"],
+    body:`
+      <ul>
+        <li><b>Push-to-Talk Pflicht:</b> Um Hintergrundgeräusche und Rückkopplungen bei 20+ Spielern zu vermeiden.</li>
+        <li><b>Kommunikations-Disziplin:</b> Während des Pulls sprechen nur Ansager. Smalltalk und Diskussionen finden in den Pausen statt.</li>
+        <li><b>Angenehme Lautstärke:</b> Gute Mikrofonqualität und funktionierendes Headset sind Voraussetzung.</li>
+      </ul>
+    `
+  },
+  {
+    i:"🔧", t:"Wöchentliche Char-Vorbereitung",
+    d:"Checkliste für den wöchentlichen Reset vor dem nächsten Raidabend.",
+    tags:["Gear","Vault","M+"],
+    body:`
+      <ul>
+        <li><b>Great Vault:</b> Mindestens 4 bis 8 Mythisch+-Runs pro ID für maximale Auswahl am Mittwoch.</li>
+        <li><b>Ausrüstungs-Check:</b> Alle neuen Items voll verzaubert und gesockelt vor Raidantritt.</li>
+        <li><b>Taktiken auffrischen:</b> Unbekannte oder neue Boss-Guides vorab auf der Website studieren.</li>
+      </ul>
+    `
+  }
 ];
 
 let KADER = [
@@ -497,14 +593,14 @@ let KADER = [
 ];
 
 let BOSSES = [
-  {n:"Nek'zali die Seelenwinderin", en:"Nek'zali the Soulcoiler", st:"down", role:"Add-Kontrolle & Brunnen", slug:"nekzali-the-soulcoiler", check:"Add-Kontrolle & Physischer Burst", lust:"Zu Pull (Phase 1)", intro:"Eine Schattenjägerin, die Ula'tek beschwört. Der gesamte Kampf steht und fällt mit der lückenlosen Add-Kontrolle am Seelenwinderbrunnen."},
-  {n:"Eingeschlossene Wächter", en:"Entombed Sentinels", st:"down", role:"Zwei Gruppen & Zahlenrätsel", slug:"entombed-sentinels", check:"Camp-Aufteilung & Zahlenrätsel", lust:"Zu Kampfbeginn", intro:"Zwei Schlangengolems, die getrennt gehalten und synchron herabgespielt werden müssen."},
-  {n:"Vashnik der Bösartige", en:"Vashnik the Malignant", st:"down", role:"Positionierung & Add-Stopp", slug:"vashnik-the-malignant", check:"Kessel-Steuerung & Add-Stopp", lust:"Nach dem 3. Kesselwechsel", intro:"In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte."},
-  {n:"Die verirrten Entdecker", en:"The Lost Explorers", st:"down", role:"Ratskampf & Fisch-Rotation", slug:"lost-explorers", check:"Ratskampf & Fisch-Fütterung", lust:"Zu Pull für Doppel-Cleave", intro:"Drei besessene Tortollaner. Erfordert sauberen Cleave-Schaden und synchrones Finishen."},
-  {n:"Sszorak", en:"Sszorak", st:"down", role:"Wind, Knockbacks & Tank-Kombo", slug:"sszorak", check:"Wind-Kopplung & Knockback-Kontrolle", lust:"In Phase 2 (Heulender Maelstrom)", intro:"Eine giftgetränkte Bestie auf einer offenen Plattform mit Knockback-Gegenkopplung."},
-  {n:"Die Zwillingsfänge", en:"The Twin Fangs", st:"down", role:"Stack-Management & Soak-Rotation", slug:"twin-fangs", check:"Stack-Disziplin & 3er-Soak-Rotation", lust:"In Phase 1 zu Pull", intro:"Vexhul und Ithraz teilen sich eine Lebensleiste. 10 Stacks Ewiges Gift töten sofort."},
-  {n:"Der Gewundene Altar", en:"The Coiled Altar", st:"prog", role:"Phasenwechsel & Fixate", slug:"coiled-altar", check:"Blickkontakt-Disziplin & Synchron-Burn", lust:"In Phase 3 (Doppel-Boss Burn)", intro:"Der Geist von Malacrass befiehlt Zul'jan. Dreiphasenkampf mit Blickkontakt-Mechanik."},
-  {n:"Ula'tek", en:"Ula'tek", st:"open", role:"Eier-Kontrolle & Endboss", slug:"ulatek", check:"Endboss: Kick-Rotation & Soft-Enrage", lust:"In Phase 3 bei 25 % Restleben", intro:"Der finale Endboss des Tiers auf einer kontinuierlich schrumpfenden Plattform."}
+  {n:"Nek'zali die Seelenwinderin", en:"Nek'zali the Soulcoiler", st:"down", role:"Add-Kontrolle & Brunnen", slug:"nekzali-the-soulcoiler", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg", check:"Add-Kontrolle & Physischer Burst", lust:"Zu Pull (Phase 1)", intro:"Eine Schattenjägerin, die Ula'tek beschwört. Der gesamte Kampf steht und fällt mit der lückenlosen Add-Kontrolle am Seelenwinderbrunnen."},
+  {n:"Eingeschlossene Wächter", en:"Entombed Sentinels", st:"down", role:"Zwei Gruppen & Zahlenrätsel", slug:"entombed-sentinels", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg", check:"Camp-Aufteilung & Zahlenrätsel", lust:"Zu Kampfbeginn", intro:"Zwei Schlangengolems, die getrennt gehalten und synchron herabgespielt werden müssen."},
+  {n:"Vashnik der Bösartige", en:"Vashnik the Malignant", st:"down", role:"Positionierung & Add-Stopp", slug:"vashnik-the-malignant", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f9f43b4f5abb79d2c6cf8e0d885b95ac59fbd3b0.jpg", check:"Kessel-Steuerung & Add-Stopp", lust:"Nach dem 3. Kesselwechsel", intro:"In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte."},
+  {n:"Die verirrten Entdecker", en:"The Lost Explorers", st:"down", role:"Ratskampf & Fisch-Rotation", slug:"lost-explorers", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/19bd46c0a77441577821e056dbd5cc5c09ae87b5.jpg", check:"Ratskampf & Fisch-Fütterung", lust:"Zu Pull für Doppel-Cleave", intro:"Drei besessene Tortollaner. Erfordert sauberen Cleave-Schaden und synchrones Finishen."},
+  {n:"Sszorak", en:"Sszorak", st:"down", role:"Wind, Knockbacks & Tank-Kombo", slug:"sszorak", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/127fb15e24c99767521d3697f97ef6e98181357e.jpg", check:"Wind-Kopplung & Knockback-Kontrolle", lust:"In Phase 2 (Heulender Maelstrom)", intro:"Eine giftgetränkte Bestie auf einer offenen Plattform mit Knockback-Gegenkopplung."},
+  {n:"Die Zwillingsfänge", en:"The Twin Fangs", st:"down", role:"Stack-Management & Soak-Rotation", slug:"twin-fangs", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/52e498e3108b56f88a49f5fe5afa33eb6578a713.jpg", check:"Stack-Disziplin & 3er-Soak-Rotation", lust:"In Phase 1 zu Pull", intro:"Vexhul und Ithraz teilen sich eine Lebensleiste. 10 Stacks Ewiges Gift töten sofort."},
+  {n:"Der Gewundene Altar", en:"The Coiled Altar", st:"prog", role:"Phasenwechsel & Fixate", slug:"coiled-altar", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/0b550745443dcd767f6cb4e4f8e23e14089dcd88.jpg", check:"Blickkontakt-Disziplin & Synchron-Burn", lust:"In Phase 3 (Doppel-Boss Burn)", intro:"Der Geist von Malacrass befiehlt Zul'jan. Dreiphasenkampf mit Blickkontakt-Mechanik."},
+  {n:"Ula'tek", en:"Ula'tek", st:"open", role:"Eier-Kontrolle & Endboss", slug:"ulatek", image:"https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/20ff0eaaeb6117c9a8fcbb76792789b3e01341ce.jpg", check:"Endboss: Kick-Rotation & Soft-Enrage", lust:"In Phase 3 bei 25 % Restleben", intro:"Der finale Endboss des Tiers auf einer kontinuierlich schrumpfenden Plattform."}
 ];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
@@ -629,6 +725,20 @@ function pkClass(parse) {
   if (p >= 50) return "pk-blue";
   if (p >= 25) return "pk-green";
   return "pk-grey";
+}
+
+function copyText(txt, btnEl) {
+  navigator.clipboard.writeText(txt).then(()=>{
+    const orig = btnEl.innerText;
+    btnEl.innerText = "Kopiert! ✓";
+    btnEl.style.background = "var(--green)";
+    btnEl.style.color = "#0a0b0f";
+    setTimeout(()=>{
+      btnEl.innerText = orig;
+      btnEl.style.background = "";
+      btnEl.style.color = "";
+    }, 2000);
+  });
 }
 
 function logCard(r){
@@ -983,25 +1093,94 @@ roster(){
 
 wissen(){
   return `
-  <div class="page-h fade"><h1>Wissen & Guides</h1><p>Regeln, Addons und Vorbereitungen für den Raidbetrieb.</p></div>
-  <div class="grid g2 fade">
-    ${KB.map(k=>`<div class="kbcard">
-      <h3><span>${k.i}</span>${esc(k.t)}</h3>
-      <p>${esc(k.d)}</p>
-      <div style="display:flex;gap:5px;margin-top:10px;flex-wrap:wrap">
-        ${(k.tags||[]).map(t=>`<span class="kbtag">${esc(t)}</span>`).join("")}
+  <div class="page-h fade">
+    <h1>Wissen & Guides</h1>
+    <p>Hier findest du alle verbindlichen Regeln, Addon-Empfehlungen und Vorbereitungs-Leitfäden für den Raidbetrieb. Klicke auf ein Thema für alle Details.</p>
+  </div>
+  <div class="fade">
+    ${KB.map((k, idx)=>`
+      <div class="kb-item${idx===0?' open':''}" id="kb-${idx}">
+        <div class="kb-head" onclick="this.parentElement.classList.toggle('open')">
+          <span class="kb-ic">${k.i}</span>
+          <div class="kb-title">
+            <b>${esc(k.t)}</b>
+            <span>${esc(k.d)}</span>
+          </div>
+          <div style="display:flex;gap:5px;flex-wrap:wrap;margin-right:12px">
+            ${(k.tags||[]).map(t=>`<span class="kbtag">${esc(t)}</span>`).join("")}
+          </div>
+          <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg>
+        </div>
+        <div class="kb-body">
+          <div class="kb-content">
+            ${k.body || `<p>${esc(k.d)}</p>`}
+          </div>
+        </div>
       </div>
-    </div>`).join("")}
+    `).join("")}
   </div>`;
 },
 
 bewerben(){
+  const rec = G.recruit;
   return `
-  <div class="page-h fade"><h1>Bewerben</h1><p>${esc(G.recruit.motto)}</p></div>
-  <div class="grid g2 fade">
-    <div class="card"><div class="eyebrow">Gesuchte Klassen</div>
-      <p class="soft" style="margin-bottom:14px">${G.recruit.open.join(", ")}</p>
-      <div class="links">${G.recruit.contacts.map(c=>`<span class="lchip">💬 ${esc(c)}</span>`).join("")}</div>
+  <div class="page-h fade">
+    <h1>Werde Teil von ShadowFox</h1>
+    <p>${esc(rec.motto)} Wir suchen motivierte Verstärkung für unseren Raid-Kader und aktive Mythic+-Gruppen auf Blackmoore (EU).</p>
+  </div>
+
+  <div class="fade" style="margin-bottom:28px">
+    <div class="eyebrow">Aktuell gesuchte Klassen & Spezialisierungen</div>
+    <div class="rec-grid">
+      ${rec.open.map(r=>`
+        <div class="rec-card" style="border-left:4px solid ${r.col}">
+          <div class="rec-role">${esc(r.role)}</div>
+          <div class="rec-name" style="color:${r.col}">${esc(r.cls)}</div>
+          <div class="rec-specs">
+            ${r.specs.map(s=>`<span class="rec-spec">${esc(s)}</span>`).join("")}
+          </div>
+          <div style="margin-top:12px">
+            <span class="pill ${r.prio==='High'?'p-amber':'p-blue'}"><span class="dot"></span>Bedarf: ${r.prio}</span>
+          </div>
+        </div>
+      `).join("")}
+    </div>
+    <div class="card" style="padding:14px 18px;background:rgba(255,255,255,.02);font-size:13px;color:var(--tx2)">
+      💡 <b>Initiativbewerbungen:</b> Deine Klasse ist oben nicht aufgeführt? Kein Problem! Außergewöhnlich engagierte Spieler aller Klassen sind bei uns immer willkommen.
+    </div>
+  </div>
+
+  <div class="grid g2 fade" style="align-items:start">
+    <div class="card">
+      <div class="eyebrow">Was wir dir bieten</div>
+      <ul style="padding-left:18px;margin-top:10px;display:flex;flex-direction:column;gap:8px;font-size:13.5px;color:var(--tx2)">
+        <li><b>Feste Raidzeiten:</b> Montag & Donnerstag von 19:45 bis 22:30 Uhr.</li>
+        <li><b>Erfahrene Leitung:</b> Ruhige, strukturierte Raids ohne toxisches Geflame.</li>
+        <li><b>Gildenbank-Support:</b> Kessel (Flasks) und Festmähler (Food) an Raidabenden.</li>
+        <li><b>Aktive M+-Community:</b> Tägliche Keystone-Gruppen für wöchentliche Vault-Slots.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Direkter Kontakt & Bewerbung</div>
+      <p style="font-size:13.5px;color:var(--tx2);margin-bottom:14px">Melde dich einfach direkt über Discord oder adde unsere Offiziere im Battle.net:</p>
+      
+      ${rec.contacts.map(c=>`
+        <div class="contact-box">
+          <div class="contact-meta">
+            <b>${esc(c.name)}</b>
+            <span>${esc(c.role)} · ${esc(c.btag)}</span>
+          </div>
+          ${c.btag.includes("#") ? `<button class="copy-btn" onclick="copyText('${c.btag}', this)">Kopieren</button>` : ''}
+        </div>
+      `).join("")}
+
+      <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-disc" style="padding:10px 18px;font-size:14px" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <span>Discord Server beitreten</span>
+        </a>
+      </div>
     </div>
   </div>`;
 }
@@ -1084,7 +1263,9 @@ function resolveClass(spec, cls, name){
 
 function applyData(d, c){
   if(c?.wissen?.artikel?.length){
-    KB = c.wissen.artikel.map(a => ({i:a.icon||"📄", t:a.titel, d:a.text, tags:a.tags||[]}));
+    KB = c.wissen.artikel.map(a => ({
+      i:a.icon||"📄", t:a.titel, d:a.text, tags:a.tags||[], body:a.body||null
+    }));
   }
   if(c?.bosses?.bosses?.length){
     BOSSES = c.bosses.bosses.map(b => ({
