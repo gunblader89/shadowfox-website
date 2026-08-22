@@ -17,38 +17,8 @@
         "The Blinding Vale"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Warsía",
-            "class": "Warlock",
-            "spec": "Affliction",
-            "parse": 79,
-            "boss": "The Blinding Vale"
-          },
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 76,
-            "boss": "The Twin Fangs"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Mönkitönk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 82,
-            "boss": "The Twin Fangs"
-          },
-          {
-            "name": "Doktorpöbel",
-            "class": "Priest",
-            "spec": "Discipline",
-            "parse": 70,
-            "boss": "The Blinding Vale"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -220,5 +190,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-22T22:33:46.267Z"
+  "updatedAt": "2026-08-22T22:46:59.651Z"
 }
