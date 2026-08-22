@@ -103,7 +103,7 @@
       "spec": "Unholy",
       "role": "DPS",
       "ilvl": 303,
-      "mplus": 2552,
+      "mplus": 2571,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
@@ -138,8 +138,8 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 298,
-      "mplus": 2439,
+      "ilvl": 302,
+      "mplus": 2459,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -175,7 +175,7 @@
       "spec": "Vengeance",
       "role": "TANK",
       "ilvl": 303,
-      "mplus": 2234,
+      "mplus": 2592,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -199,7 +199,7 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 304,
-      "mplus": 2563,
+      "mplus": 2600,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-22T22:20:39.583Z"
+  "updatedAt": "2026-08-22T22:33:27.839Z"
 }
