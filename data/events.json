@@ -11,10 +11,10 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 26,
+        "primary": 25,
         "tentative": 0,
         "bench": 0,
-        "absence": 2,
+        "absence": 3,
         "late": 0
       },
       "signups": [
@@ -111,11 +111,11 @@
         {
           "name": "𝕱𝖗𝖚𝖈𝖍𝖙𝖟𝖜𝖊𝖗𝖌│ᴬˡᵉˣᵃⁿᵈʳᵃ",
           "userId": "332970747821555712",
-          "cls": "Ranged",
-          "spec": "Elemental",
-          "role": "Dps",
+          "cls": "Absence",
+          "spec": "Absence",
+          "role": "Absence",
           "status": "primary",
-          "signedUpAt": 1786172881
+          "signedUpAt": 1787502672
         },
         {
           "name": "Cirivren|Killian",
@@ -273,5 +273,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-23T15:43:16.527Z"
+  "updatedAt": "2026-08-23T17:15:15.193Z"
 }
