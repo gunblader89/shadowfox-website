@@ -73,15 +73,6 @@
           "signedUpAt": 1787469114
         },
         {
-          "name": "Merccrixxus/Passi",
-          "userId": "474212871996178432",
-          "cls": "Melee",
-          "spec": "Fury",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786176267
-        },
-        {
           "name": "Askái/Phil",
           "userId": "935281742963675156",
           "cls": "Ranged",
@@ -170,6 +161,15 @@
           "role": "Healers",
           "status": "primary",
           "signedUpAt": 1786181178
+        },
+        {
+          "name": "Merccrixxus/Passi",
+          "userId": "474212871996178432",
+          "cls": "Melee",
+          "spec": "Arms",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787494131
         },
         {
           "name": "Amhairghin|Tobi",
@@ -273,5 +273,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-23T14:05:02.604Z"
+  "updatedAt": "2026-08-23T14:17:17.265Z"
 }

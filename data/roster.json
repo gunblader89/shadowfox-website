@@ -126,7 +126,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 288,
+      "ilvl": 289,
       "mplus": 780,
       "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -313,12 +313,12 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 296,
+      "ilvl": 297,
       "mplus": 2318,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-23T14:04:46.058Z"
+  "updatedAt": "2026-08-23T14:17:01.477Z"
 }
