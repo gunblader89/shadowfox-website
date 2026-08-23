@@ -54,9 +54,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 296,
-      "mplus": 1026,
-      "weeklyRuns": 5,
+      "ilvl": 299,
+      "mplus": 1065,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
     },
@@ -88,10 +88,10 @@
       "name": "Iojaru",
       "realm": "blackmoore",
       "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
+      "spec": "Vengeance",
+      "role": "TANK",
       "ilvl": 301,
-      "mplus": 2402,
+      "mplus": 2460,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -151,7 +151,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 300,
-      "mplus": 2290,
+      "mplus": 2321,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -186,7 +186,7 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 291,
+      "ilvl": 290,
       "mplus": 791,
       "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/198/178962886-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
@@ -234,8 +234,8 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 297,
-      "mplus": 1941,
+      "ilvl": 296,
+      "mplus": 1947,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-23T17:14:59.309Z"
+  "updatedAt": "2026-08-23T17:44:32.777Z"
 }
