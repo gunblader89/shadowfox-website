@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShadowFox — Blackmoore EU</title>
-<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -41,12 +40,12 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1160px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 
-/* Kompaktes Menüband */
+/* Schlankes & stabiles Menüband */
 .top-wrap{position:sticky;top:10px;z-index:60;max-width:1160px;margin:10px auto 0;padding:0 20px}
 .top{background:rgba(15,17,22,.92);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
 .top-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 12px}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.brand .mark{width:36px;height:36px;flex-shrink:0;object-fit:contain;border-radius:9px}
+.brand .mark{width:36px;height:36px;flex-shrink:0;border-radius:8px}
 .brand b{display:block;font-size:15.5px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
 .brand b span.brand-gold{color:var(--amber)}
 .brand span.brand-sub{display:block;font-size:10px;color:var(--tx3);letter-spacing:.6px;font-weight:600;margin-top:1px}
@@ -96,7 +95,7 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .hero{border:1px solid var(--line2);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#10131a 52%,#0b0d12 100%);position:relative;margin-bottom:16px;box-shadow:0 20px 48px rgba(0,0,0,.45)}
 .hero::after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.16),transparent 66%);pointer-events:none}
 .hero-in{padding:36px;position:relative;z-index:1;display:flex;gap:36px;align-items:center;flex-wrap:wrap}
-.hero-mark{width:124px;height:124px;flex-shrink:0;object-fit:contain;filter:drop-shadow(0 12px 28px rgba(0,0,0,.75))}
+.hero-mark{width:124px;height:124px;flex-shrink:0;border-radius:24px;filter:drop-shadow(0 12px 28px rgba(0,0,0,.75))}
 .hero-text{flex:1;min-width:280px}
 .hero h1{font-size:56px;font-weight:900;letter-spacing:-2px;line-height:1.02;margin-bottom:10px;color:#eaedf3}
 .hero h1 span.hero-gold{color:var(--amber);text-shadow:0 0 28px rgba(234,181,78,.45)}
@@ -371,7 +370,17 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   <header class="top">
     <div class="top-in">
       <a class="brand" href="#/start">
-        <img src="logo.png" class="mark" alt="ShadowFox" onerror="this.src='https://raw.githubusercontent.com/gunblader89/shadowfox-website/main/logo.png'">
+        <svg class="mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="26" fill="#0d0f15"/>
+          <rect x="2" y="2" width="96" height="96" rx="24" stroke="#252b38" stroke-width="2"/>
+          <path d="M50 86L19 52L16 20L35 30L50 24Z" fill="#58459c"/>
+          <path d="M50 86L35 60L19 52L50 24Z" fill="#3c2f70"/>
+          <path d="M50 86L81 52L84 20L65 30L50 24Z" fill="#e0782f"/>
+          <path d="M50 86L65 60L81 52L50 24Z" fill="#ba5818"/>
+          <polygon points="34,48 42,52 36,56" fill="#0d0f15"/>
+          <polygon points="66,48 58,52 64,56" fill="#0d0f15"/>
+          <polygon points="50,63 54,67 50,71 46,67" fill="#0d0f15"/>
+        </svg>
         <span><b>Shadow<span class="brand-gold">Fox</span></b><span class="brand-sub">BLACKMOORE · EU</span></span>
       </a>
       <nav id="nav"></nav>
@@ -382,12 +391,12 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
         </button>
         <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-        <span>Discord</span>
-      </a>
-      <a class="btn btn-p" href="#/bewerben">Bewerben</a>
+          <span>Discord</span>
+        </a>
+        <a class="btn btn-p" href="#/bewerben">Bewerben</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 </div>
 
 <div class="notice-bar">
@@ -457,13 +466,189 @@ const CLASSES = [
   ["Schurke",8,"#FFF468"],["Jäger",8,"#AAD372"],["Schamane",7,"#0070DD"],["Rufer",4,"#33937F"]
 ];
 
+let BOSSES = [
+  {
+    name:"Nek'zali", n:"Nek'zali", en:"Nek'zali", st:"down", role:"Einstiegs-Boss", slug:"nekzali",
+    check:"Add-Spawns & Giftkreise", lust:"Zu Pull",
+    intro:"Nek'zali flutet den Raum mit giftigen Spuckkugeln und ruft Schlangenbrut herbei.",
+    rollen:{ tanks:["Boss mittig tanken und Frontals wegdrehen."], heiler:["Gruppen-DoT bei Giftspucke gegenheilen."], melee:["Adds schnell im Cleave besiegen."], ranged:["Giftflächen am Rand ablegen."] },
+    faehigkeiten:[{name:"Toxischer Speichel", id:441210}, {name:"Brutruf", id:441211}]
+  },
+  {
+    name:"Eingeschlossene Wächter", n:"Eingeschlossene Wächter", en:"Trapped Wardens", st:"down", role:"Duo-Encounter", slug:"trapped-wardens",
+    check:"Unterbrechungen & Klingensturm", lust:"In Phase 2",
+    intro:"Zwei Wächter teilen sich den Lebenspool und aktivieren nacheinander elementare Schilde.",
+    rollen:{ tanks:["Wächter getrennt voneinander binden."], heiler:["Magie-DoTs sofort dispellen."], melee:["Kicks auf Zauberwirker halten."], ranged:["Aus Klingenwirbeln heraustreten."] },
+    faehigkeiten:[{name:"Elementarschild", id:441220}, {name:"Klingensturm", id:441221}]
+  },
+  {
+    name:"Vashnik", n:"Vashnik", en:"Vashnik", st:"down", role:"DPS-Check", slug:"vashnik",
+    check:"Schattenbarriere & Seelenernte", lust:"Zu Pull",
+    intro:"Ein mächtiger Leeren-Kanalisierer, der Seelenfragmente aus Spielern herauszieht.",
+    rollen:{ tanks:["Boss aus Leerenpfützen herausziehen."], heiler:["Seelenextraktion hochheilen."], melee:["Seelenfragmente vor Erreichen des Bosses zerstören."], ranged:["Leerenflächen meiden."] },
+    faehigkeiten:[{name:"Seelenernte", id:441230}, {name:"Leerenkollaps", id:441231}]
+  },
+  {
+    name:"Die verirrten Entdecker", n:"Die verirrten Entdecker", en:"Lost Explorers", st:"down", role:"Raid-Koordination", slug:"lost-explorers",
+    check:"Fallen entschärfen & Kicks", lust:"Bei 50 % HP",
+    intro:"Verwirrte Entdecker platzieren Sprengfallen und Dynamit im gesamten Raum.",
+    rollen:{ tanks:["Adds für optimalen Cleave binden."], heiler:["Explosionsschaden abfedern."], melee:["Dynamitwürfe unterbrechen."], ranged:["Fallen am Rand kontrolliert auslösen."] },
+    faehigkeiten:[{name:"Sprengladung", id:441240}, {name:"Schockwelle", id:441241}]
+  },
+  {
+    name:"Sszorak", n:"Sszorak", en:"Sszorak", st:"down", role:"Positionierung", slug:"sszorak",
+    check:"Erdschlag & Steinstacheln", lust:"In Phase 2",
+    intro:"Ein kolossaler Erdwurm, der den Boden spaltet und Steinsäulen aus dem Boden stößt.",
+    rollen:{ tanks:["Boss im Kreis am Rand führen."], heiler:["Hohen Erdbeben-Schaden kontern."], melee:["Steinstacheln meiden."], ranged:["Säulen für Schutz nutzen."] },
+    faehigkeiten:[{name:"Erdbeben", id:441250}, {name:"Steinstachel", id:441251}]
+  },
+  {
+    name:"Die Zwillingsfänge", n:"Die Zwillingsfänge", en:"The Twin Fangs", st:"down", role:"Heiler- & Fokus-Check", slug:"twin-fangs",
+    check:"Giftzähne & Wechselwirkung", lust:"Phase 2 (50 %)",
+    intro:"Zwei Schlangenmonstrositäten mit gekoppelter Gesundheit und Giftfontänen.",
+    rollen:{ tanks:["Beide Schlangen getrennt tanken."], heiler:["Gift-Debuffs sofort reinigen."], melee:["Fokus-Target diszipliniert einhalten."], ranged:["Fontänen ausweichen."] },
+    faehigkeiten:[{name:"Giftfontäne", id:441260}, {name:"Doppelbiss", id:441261}]
+  },
+  {
+    name:"Der Gewundene Altar", n:"Der Gewundene Altar", en:"The Coiling Altar", st:"prog", role:"Aktueller Progress", slug:"coiling-altar",
+    check:"Schattenschlingen & Säurebad", lust:"In Phase 2",
+    intro:"Der vorletzte Boss des Tiers. Erfordert präzise Raumaufteilung und schnelles Befreien aus Schlingen.",
+    rollen:{ tanks:["Boss immer mittig halten."], heiler:["Starke Gruppen-CDs für Säureflut bereithalten."], melee:["Gefangene Mitspieler sofort befreien."], ranged:["Schattenmarkierungen nach außen tragen."] },
+    faehigkeiten:[{name:"Schattenwürger", id:441270}, {name:"Säureflut", id:441271}]
+  },
+  {
+    name:"Avatar des Abgrunds", n:"Avatar des Abgrunds", en:"Avatar of the Abyss", st:"open", role:"Endboss", slug:"avatar-of-the-abyss",
+    check:"Endboss: 3 Phasen & Leerensturm", lust:"Phase 3 (Execute)",
+    intro:"Der finale Boss der Instanz. Testet Ausdauer, Schadensspitzen und Koordination.",
+    rollen:{ tanks:["Tank-Wechsel bei 2 Stacks Leerenbrand."], heiler:["Alle Cooldowns für Phase 3 aufsparen."], melee:["Adds sofort nuken."], ranged:["Portale im Auge behalten."] },
+    faehigkeiten:[{name:"Leerensturm", id:441280}, {name:"Abgrundfeuer", id:441281}]
+  }
+];
+
+let DUNGEONS = [
+  {
+    id: "altar-of-fangs", name: "Altar der Fänge", nameEn: "Altar of Fangs", timer: "30:00", bossCount: 3, icon: "🐍",
+    image: DEFAULT_ARTWORK, dispels: ["Gift", "Fluch", "Enrage"], lust: "1. Boss (Pull), 2. Boss (Phase 2), 3. Boss",
+    trash: [
+      { name: "Schlangenzüngiger Hexer", ability: "Giftiger Schauer", id: 441200, type: "kick", desc: "Prio 1 Kick! Massiver Gruppenschaden." },
+      { name: "Gewundener Wächter", ability: "Giftbiss", id: 441201, type: "dispel", desc: "Tödlicher Gift-DoT auf dem Tank." },
+      { name: "Brutpfleger", ability: "Schlangenraserei", id: 441202, type: "stop", desc: "Erhöht Schaden um 100 % – mit Stun stoppen." }
+    ],
+    bosses: [
+      { name: "Rav'i", nameEn: "Rav'i", icon: "🦎", intro: "Speit Giftsäure in den Raum und stürmt fixierte Spieler an.", roles: { tanks: ["Boss im Kreis ziehen."], heiler: ["Säureschaden gegenheilen."], dps: ["Ansturm in Wände lenken."] }, abilities: [{ name: "Säureeruption", id: 441210 }] },
+      { name: "Die Windende Spule", nameEn: "The Writhing Coil", icon: "🌀", intro: "Fängt Spieler in Würgeschlingen.", roles: { tanks: ["Defensives für Erdschlag nutzen."], heiler: ["Schlingen-Ziele heilen."], dps: ["Schlingen schnell zerstören."] }, abilities: [{ name: "Würgeschlinge", id: 441220 }] },
+      { name: "Zul'jan", nameEn: "Zul'jan", icon: "👑", intro: "Endboss: Kanalisiert dunkle Loa-Kräfte.", roles: { tanks: ["Aus Leerenfeldern ziehen."], heiler: ["Schattenfluch dispellen."], dps: ["Schild durchbrechen."] }, abilities: [{ name: "Zorn der Loa", id: 441230 }] }
+    ]
+  },
+  {
+    id: "murder-row", name: "Mördergasse", nameEn: "Murder Row", timer: "34:00", bossCount: 4, icon: "🗡️",
+    image: DEFAULT_ARTWORK, dispels: ["Magie", "Fluch", "Enrage"], lust: "1. Boss, Großes Gassen-Pack, Endboss",
+    trash: [
+      { name: "Meuchelmörder", ability: "Schattenschritt", id: 442100, type: "stop", desc: "Teleportiert sich hinter Heiler – mit AoE-Stun stoppen." },
+      { name: "Alchemist", ability: "Ätzende Mixtur", id: 442101, type: "kick", desc: "Prio-Kick! Hinterlässt Säurepfützen." },
+      { name: "Schläger", ability: "Wutanfall", id: 442102, type: "dispel", desc: "Enrage (+150 % Schaden) – einlullen/soothen." }
+    ],
+    bosses: [
+      { name: "Vollstrecker Krel", nameEn: "Enforcer Krel", icon: "🪓", intro: "Brutaler Schläger mit rotierenden Klingen und Ketten.", roles: { tanks: ["Boss langsam kiten."], heiler: ["Kettenschaden heilen."], dps: ["Ketten durch Weglaufen zerreißen."] }, abilities: [{ name: "Klingenwirbel", id: 442111 }] },
+      { name: "Vaelin Schattenschritt", nameEn: "Vaelin Shadowstep", icon: "👥", intro: "Verschwindet in Rauchbomben und erzeugt Klone.", roles: { tanks: ["Klone einsammeln."], heiler: ["Dolchfächer heilen."], dps: ["Echten Boss markieren."] }, abilities: [{ name: "Rauchbombe", id: 442120 }] },
+      { name: "Herrin Thalena", nameEn: "Mistress Thalena", icon: "🍷", intro: "Verführt Spieler und wirft Blutkugeln.", roles: { tanks: ["Frontal wegdrehen."], heiler: ["Blut-DoT dispellen."], dps: ["Gedankenkontrolle befreien."] }, abilities: [{ name: "Verführung", id: 442130 }] },
+      { name: "Lord Malgath", nameEn: "Lord Malgath", icon: "🌑", intro: "Endboss: Schattenbarriere & Seelenernte.", roles: { tanks: ["Am Rand ziehen."], heiler: ["Seelenernte kontern."], dps: ["Schatten-Adds nuken."] }, abilities: [{ name: "Seelenernte", id: 442140 }] }
+    ]
+  },
+  {
+    id: "den-of-nalorakk", name: "Nalorakks Bau", nameEn: "Den of Nalorakk", timer: "32:00", bossCount: 4, icon: "🐻",
+    image: DEFAULT_ARTWORK, dispels: ["Blutung", "Krankheit", "Enrage"], lust: "1. Boss, Bären-Rudel, Endboss",
+    trash: [
+      { name: "Bärenreiter", ability: "Zertrampeln", id: 443100, type: "frontal", desc: "Frontal-Kegel von der Gruppe wegdrehen." },
+      { name: "Hexendoktor", ability: "Heiltotem", id: 443101, type: "kick", desc: "Prio-Kick / Totem sofort zerstören." }
+    ],
+    bosses: [
+      { name: "Kriegsfürst Dak'kahn", nameEn: "Warlord Dak'kahn", icon: "🛡️", intro: "Speerwurf-Mechanik und Schockschreie.", roles: { tanks: ["Frontals wegdrehen."], heiler: ["Speerziele hochheilen."], dps: ["Speere gemeinsam abfangen."] }, abilities: [{ name: "Kriegsspeer", id: 443110 }] },
+      { name: "Geist von Nalorakk", nameEn: "Avatar of Nalorakk", icon: "🐾", intro: "Wechselt zwischen Troll- und Bärengestalt mit Blutungseffekten.", roles: { tanks: ["Große CDs für Zerfleischen."], heiler: ["Blutungen stabilisieren."], dps: ["Burst in Bärengestalt."] }, abilities: [{ name: "Zerfleischen", id: 443130 }] }
+    ]
+  },
+  {
+    id: "the-blinding-vale", name: "Das blendende Tal", nameEn: "The Blinding Vale", timer: "31:00", bossCount: 3, icon: "☀️",
+    image: DEFAULT_ARTWORK, dispels: ["Magie", "Blindheit"], lust: "1. Boss, Endboss",
+    trash: [
+      { name: "Sonnenpriester", ability: "Blendendes Leuchten", id: 444100, type: "kick", desc: "Prio 1 Kick! Blendet alle Spieler für 4 Sekunden." }
+    ],
+    bosses: [
+      { name: "Dreieinigkeit der Lichtblüte", nameEn: "Lightblossom Trinity", icon: "🌸", intro: "Drei Wächter nahe der fruchtbaren Lehmkreise kontrollieren.", roles: { tanks: ["In passende Kreise ziehen."], heiler: ["Lichtschaden heilen."], dps: ["Gleichmäßig im Cleave schlagen."] }, abilities: [{ name: "Blütenexplosion", id: 444110 }] },
+      { name: "Aethelas Sonnenzorn", nameEn: "Aethelas Sunwrath", icon: "👑", intro: "Endboss: Bei Blendung sofort umdrehen (Blickkontakt abbrechen!).", roles: { tanks: ["Defensives für Sonnenklinge."], heiler: ["Sonnenbrand dispellen."], dps: ["Blick abwenden bei Eruption."] }, abilities: [{ name: "Blendende Eruption", id: 444130 }] }
+    ]
+  },
+  {
+    id: "voidscar-arena", name: "Arena der Leerennarbe", nameEn: "Voidscar Arena", timer: "30:00", bossCount: 4, icon: "🌌",
+    image: DEFAULT_ARTWORK, dispels: ["Magie", "Fluch"], lust: "1. Boss, Endboss",
+    trash: [
+      { name: "Gladiator", ability: "Schattenklinge", id: 445100, type: "frontal", desc: "Schwerer Schattenschaden nach vorne." }
+    ],
+    bosses: [
+      { name: "Klingenfürst Taldris", nameEn: "Bladelord Taldris", icon: "⚔️", intro: "Schwertmeister mit rotierenden Schattenklingen.", roles: { tanks: ["Aus Klingenbahnen ziehen."], heiler: ["Klingensprung heilen."], dps: ["Klingen meiden."] }, abilities: [{ name: "Schattensturm", id: 445110 }] },
+      { name: "Champion Voidscar", nameEn: "Champion Voidscar", icon: "👑", intro: "Endboss: Öffnet Portale in die Leere.", roles: { tanks: ["Portal-Adds binden."], heiler: ["Leerenkollaps kontern."], dps: ["Maximaler Cleave."] }, abilities: [{ name: "Leerenriss", id: 445140 }] }
+    ]
+  },
+  {
+    id: "kings-rest", name: "Die Königsruh", nameEn: "King's Rest", timer: "33:00", bossCount: 4, icon: "👑",
+    image: DEFAULT_ARTWORK, dispels: ["Gift", "Fluch", "Magie"], lust: "1. Boss (Goldschlange), Rat der Stämme, Dazar",
+    trash: [
+      { name: "Schattenhexer", ability: "Schattenblitzsalve", id: 270000, type: "kick", desc: "Prio 1 Kick! Hoher Gruppenschaden." }
+    ],
+    bosses: [
+      { name: "Die Goldschlange", nameEn: "The Golden Serpent", icon: "🐍", intro: "Goldpfützen eng aneinander ablegen!", roles: { tanks: ["Von Pfützen wegziehen."], heiler: ["Schlangenböe heilen."], dps: ["Pfützen eng stapeln; Adds slowen."] }, abilities: [{ name: "Gold speien", id: 270110 }] },
+      { name: "Dazar der erste König", nameEn: "Dazar, The First King", icon: "👑", intro: "Endboss: Jagdbestien und Speer-Linien.", roles: { tanks: ["Raptor binden."], heiler: ["Furcht reinigen."], dps: ["Raptor fokussieren."] }, abilities: [{ name: "Klingenschlag", id: 270140 }] }
+    ]
+  },
+  {
+    id: "temple-of-sethraliss", name: "Der Tempel von Sethraliss", nameEn: "Temple of Sethraliss", timer: "32:00", bossCount: 4, icon: "⚡",
+    image: DEFAULT_ARTWORK, dispels: ["Gift", "Fluch", "Magie"], lust: "1. Boss (Adderis), Galvazzt, Endboss",
+    trash: [
+      { name: "Schlangen-Eiferer", ability: "Blitzschlag", id: 280000, type: "kick", desc: "Prio-Kick – hoher Blitzschaden." }
+    ],
+    bosses: [
+      { name: "Adderis & Aspix", nameEn: "Adderis and Aspix", icon: "⚡", intro: "Boss mit Blitzschild darf NICHT angegriffen werden!", roles: { tanks: ["Bosse trennen."], heiler: ["Blitze heilen."], dps: ["Target ohne Schild fokussieren."] }, abilities: [{ name: "Blitzschild", id: 280110 }] },
+      { name: "Galvazzt", nameEn: "Galvazzt", icon: "🔋", intro: "Strahlen abwechselnd abfangen (Soak).", roles: { tanks: ["Mittig halten."], heiler: ["Hohe Stacks heilen."], dps: ["Bei 3-4 Stacks wechseln."] }, abilities: [{ name: "Galvanische Entladung", id: 280130 }] }
+    ]
+  },
+  {
+    id: "ruby-life-pools", name: "Rubinlebensbecken", nameEn: "Ruby Life Pools", timer: "28:00", bossCount: 3, icon: "🔴",
+    image: DEFAULT_ARTWORK, dispels: ["Magie", "Gift"], lust: "1. Boss, Kokia (Phase 2), Endboss",
+    trash: [
+      { name: "Blitzmagier", ability: "Primaler Blitzschlag", id: 390000, type: "kick", desc: "Prio 1 Kick! Zerreißt Gruppenmitglieder." }
+    ],
+    bosses: [
+      { name: "Melidrussa Grollherz", nameEn: "Melidrussa Chillworn", icon: "❄️", intro: "Frostbombe erst nach Verlassen der Gruppe dispellen!", roles: { tanks: ["Welpen zusammenziehen."], heiler: ["Kontrolliert dispellen."], dps: ["Frostschild aufbrechen."] }, abilities: [{ name: "Frostbombe", id: 390110 }] },
+      { name: "Kyrakka & Erkhart Sturmader", nameEn: "Kyrakka and Erkhart Stormvein", icon: "🐉", intro: "Endboss: Flammenpfützen und Drachen-Landung.", roles: { tanks: ["Aus Flammen ziehen."], heiler: ["Debuffs am Rand dispellen."], dps: ["Drachen nach Landung fokussieren."] }, abilities: [{ name: "Flammensturm", id: 390130 }] }
+    ]
+  }
+];
+
 let KB = [
   { i:"📜", t:"Gildenregeln & Leitbild", d:"Fairness, Zuverlässigkeit und Gemeinschaft stehen bei uns an erster Stelle.", tags:["Allgemein","Gilde"], body:"<p>ShadowFox steht für ein respektvolles und leistungsorientiertes Miteinander ohne toxischen Druck.</p>" },
   { i:"⚔️", t:"Raid-Vorbereitung & Addons", d:"Pflicht-Addons: BigWigs/DBM, Method Raid Tools und WeakAuras.", tags:["Raid","Addons"], body:"<p>Jeder Raider erscheint verzaubert, gesockelt und mit Buff-Food zum Raidabend.</p>" }
 ];
 
 let KADER = [];
-let REPORTS = [];
+let REPORTS = [
+  {
+    code: "dM6PGWzZnJQxbhHp",
+    url: "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
+    t: "Der Giftige Abgrund",
+    d: "20.08.26",
+    startTime: 1724175900000,
+    diff: "Normal",
+    dur: "2h 40m",
+    kills: 1,
+    wipes: 19,
+    killedBosses: ["Nek'zali"],
+    vips: {
+      dps: [{ name: "Merccrixxus", class: "Krieger", role: "DPS", parse: 92, boss: "Nek'zali" }],
+      hps: [{ name: "Mönkitönk", class: "Mönch", role: "Heal", parse: 91, boss: "Nek'zali" }]
+    },
+    live: true
+  }
+];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT = {
@@ -751,7 +936,17 @@ start(){
     <span class="val">${k}/${t}</span></div>`;
   return `
   <section class="hero fade"><div class="hero-in">
-    <img src="logo.png" class="hero-mark" alt="ShadowFox" onerror="this.src='https://raw.githubusercontent.com/gunblader89/shadowfox-website/main/logo.png'">
+    <svg class="hero-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" rx="26" fill="#0d0f15"/>
+      <rect x="2" y="2" width="96" height="96" rx="24" stroke="#252b38" stroke-width="2"/>
+      <path d="M50 86L19 52L16 20L35 30L50 24Z" fill="#58459c"/>
+      <path d="M50 86L35 60L19 52L50 24Z" fill="#3c2f70"/>
+      <path d="M50 86L81 52L84 20L65 30L50 24Z" fill="#e0782f"/>
+      <path d="M50 86L65 60L81 52L50 24Z" fill="#ba5818"/>
+      <polygon points="34,48 42,52 36,56" fill="#0d0f15"/>
+      <polygon points="66,48 58,52 64,56" fill="#0d0f15"/>
+      <polygon points="50,63 54,67 50,71 46,67" fill="#0d0f15"/>
+    </svg>
     <div class="hero-text">
       <div class="eyebrow">${G.realm} · ${G.region} · ${G.faction}</div>
       <h1>Shadow<span class="hero-gold">Fox</span></h1>
