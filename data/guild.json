@@ -88,8 +88,8 @@
     },
     "the-venomous-abyss": {
       "normal": {
-        "world": 7843,
-        "region": 2897,
+        "world": 7844,
+        "region": 2898,
         "realm": 103
       },
       "heroic": {
@@ -533,5 +533,5 @@
       "rank": 8
     }
   ],
-  "updatedAt": "2026-08-23T13:27:44.561Z"
+  "updatedAt": "2026-08-23T13:33:16.543Z"
 }
