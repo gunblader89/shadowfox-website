@@ -379,6 +379,13 @@
       "classId": 11
     },
     {
+      "name": "Cirivren",
+      "realm": "eredar",
+      "rank": 3,
+      "level": 90,
+      "classId": 5
+    },
+    {
       "name": "Corvispala",
       "realm": "blackmoore",
       "rank": 5,
@@ -412,6 +419,13 @@
       "rank": 1,
       "level": 90,
       "classId": 1
+    },
+    {
+      "name": "Corvispriest",
+      "realm": "blackmoore",
+      "rank": 6,
+      "level": 90,
+      "classId": 5
     },
     {
       "name": "Charmzzdh",
@@ -517,6 +531,13 @@
       "rank": 1,
       "level": 90,
       "classId": 10
+    },
+    {
+      "name": "Dávor",
+      "realm": "blackhand",
+      "rank": 3,
+      "level": 90,
+      "classId": 3
     },
     {
       "name": "Mikalina",
@@ -988,28 +1009,14 @@
       "classId": 9
     },
     {
-      "name": "Cirivren",
-      "realm": "eredar",
+      "name": "Raiox",
+      "realm": "thrall",
       "rank": 3,
       "level": 90,
-      "classId": 5
-    },
-    {
-      "name": "Corvispriest",
-      "realm": "blackmoore",
-      "rank": 6,
-      "level": 90,
-      "classId": 5
-    },
-    {
-      "name": "Dávor",
-      "realm": "blackhand",
-      "rank": 3,
-      "level": 90,
-      "classId": 3
+      "classId": 11
     }
   ],
-  "updatedAt": "2026-08-23T06:04:59.587Z",
+  "updatedAt": "2026-08-23T11:56:37.665Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",

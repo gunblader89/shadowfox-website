@@ -11,10 +11,10 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 25,
+        "primary": 24,
         "tentative": 0,
         "bench": 0,
-        "absence": 1,
+        "absence": 2,
         "late": 0
       },
       "signups": [
@@ -35,6 +35,24 @@
           "role": "Tanks",
           "status": "primary",
           "signedUpAt": 1786449120
+        },
+        {
+          "name": "Raiox",
+          "userId": "317048921249677323",
+          "cls": "Healer",
+          "spec": "Restoration",
+          "role": "Healers",
+          "status": "primary",
+          "signedUpAt": 1787481251
+        },
+        {
+          "name": "Sandino",
+          "userId": "818515659335270400",
+          "cls": "Absence",
+          "spec": "Absence",
+          "role": "Absence",
+          "status": "primary",
+          "signedUpAt": 1787469114
         },
         {
           "name": "Merccrixxus/Passi",
@@ -71,15 +89,6 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1786268077
-        },
-        {
-          "name": "Amethyst|Micha",
-          "userId": "273164523513446400",
-          "cls": "Melee",
-          "spec": "Retribution",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786710390
         },
         {
           "name": "Hobs/Bibi",
@@ -136,15 +145,6 @@
           "signedUpAt": 1786707700
         },
         {
-          "name": "Tankoderdd",
-          "userId": "474617817216450562",
-          "cls": "Melee",
-          "spec": "Retribution",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786218356
-        },
-        {
           "name": "Sweetschi/Danielo",
           "userId": "185355889019060224",
           "cls": "Healer",
@@ -161,6 +161,15 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1787419651
+        },
+        {
+          "name": "Oionil|Micha",
+          "userId": "273164523513446400",
+          "cls": "Melee",
+          "spec": "Unholy",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787480801
         },
         {
           "name": "Toshi",
@@ -226,24 +235,6 @@
           "signedUpAt": 1786216244
         },
         {
-          "name": "Raiox",
-          "userId": "317048921249677323",
-          "cls": "Healer",
-          "spec": "Restoration1",
-          "role": "Healers",
-          "status": "primary",
-          "signedUpAt": 1787392503
-        },
-        {
-          "name": "Sandino",
-          "userId": "818515659335270400",
-          "cls": "Ranged",
-          "spec": "Shadow",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786788755
-        },
-        {
           "name": "Narrwen/Alex",
           "userId": "518857676331941890",
           "cls": "Ranged",
@@ -251,9 +242,18 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1786168770
+        },
+        {
+          "name": "Shylmagognar",
+          "userId": "474617817216450562",
+          "cls": "Melee",
+          "spec": "Retribution",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787474142
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-23T06:05:14.016Z"
+  "updatedAt": "2026-08-23T11:56:52.892Z"
 }
