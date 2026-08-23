@@ -46,7 +46,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 .top{background:rgba(15,17,22,.94);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
 .top-in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:8px 12px}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.brand .mark{width:36px;height:36px;flex-shrink:0;border-radius:8px;object-fit:cover}
+.brand .mark{width:36px;height:36px;flex-shrink:0;border-radius:8px;object-fit:contain}
 .brand b{display:block;font-size:15.5px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
 .brand b span.brand-gold{color:var(--amber)}
 .brand span.brand-sub{display:block;font-size:10px;color:var(--tx3);letter-spacing:.6px;font-weight:600;margin-top:1px}
@@ -346,7 +346,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 .fade{animation:f .34s ease}
 @keyframes f{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-/* Responsives Design für Desktop, Tablet & Handy */
+/* Responsive Anpassungen */
 @media(max-width:1120px){
   .sbtn span, .sbtn kbd, .btn-disc span{display:none}
   .sbtn{width:34px;padding:0}
@@ -378,7 +378,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
   <header class="top">
     <div class="top-in">
       <a class="brand" href="#/start">
-        <img id="header-logo" class="mark" src="logo.png" alt="ShadowFox">
+        <img class="mark" src="logo.png" alt="ShadowFox">
         <span><b>Shadow<span class="brand-gold">Fox</span></b><span class="brand-sub">BLACKMOORE · EU</span></span>
       </a>
       <nav id="nav"></nav>
@@ -388,7 +388,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
           <span>Suchen</span><kbd class="kk">⌘K</kbd>
         </button>
         <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
           <span>Discord</span>
         </a>
         <a class="btn btn-p" href="#/bewerben">Bewerben</a>
@@ -628,25 +628,7 @@ let KB = [
 ];
 
 let KADER = [];
-let REPORTS = [
-  {
-    code: "dM6PGWzZnJQxbhHp",
-    url: "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
-    t: "Der Giftige Abgrund",
-    d: "20.08.26",
-    startTime: 1724175900000,
-    diff: "Normal",
-    dur: "2h 40m",
-    kills: 1,
-    wipes: 19,
-    killedBosses: ["Nek'zali"],
-    vips: {
-      dps: [{ name: "Merccrixxus", class: "Krieger", role: "DPS", parse: 92, boss: "Nek'zali" }],
-      hps: [{ name: "Mönkitönk", class: "Mönch", role: "Heal", parse: 91, boss: "Nek'zali" }]
-    },
-    live: true
-  }
-];
+let REPORTS = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT = {
@@ -1333,7 +1315,7 @@ bewerben(){
 
       <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
         <a class="btn btn-disc" style="padding:10px 18px;font-size:14px" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
           <span>Discord Server beitreten</span>
         </a>
       </div>
@@ -1341,6 +1323,220 @@ bewerben(){
   </div>`;
 }
 };
+
+let sortKey = "ilvl", sortDir = -1;
+function renderTrk(){
+  const tb = document.getElementById("trkb"); if(!tb) return;
+  const maxM = KADER.length ? Math.max(...KADER.map(p => p.mp || 0)) : 3000;
+
+  const rows = [...KADER].sort((a,b)=>{
+    const x = a[sortKey] ?? 0, y = b[sortKey] ?? 0;
+    if(typeof x === "string") return x.localeCompare(y) * sortDir * -1;
+    return (x - y) * sortDir;
+  });
+
+  tb.innerHTML = rows.map(p => {
+    const isGreenRuns = (p.mr || 0) >= 8;
+    const runsDisplay = (p.mr || 0) >= 10 ? "10+" : (p.mr || 0);
+    return `<tr>
+      <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
+        <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
+      <td><span style="color:${ROLLEN[p.r]||'#888'};font-weight:600;font-size:12px">${p.r}</span></td>
+      <td class="num" style="font-weight:600">${p.ilvl || '—'}</td>
+      <td>
+        <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:${scoreColor(p.mp)}"></i></span>
+        <span class="num" style="color:${scoreColor(p.mp)};font-weight:600">${p.mp || 0}</span>
+      </td>
+      <td class="num" style="${isGreenRuns ? 'color:var(--green);font-weight:700;' : ''}">${runsDisplay} / 8</td>
+      <td><span class="vault">${[0,1,2].map(i => `<span class="vslot${i<(p.v||0)?' on':''}"></span>`).join("")}</span></td>
+    </tr>`;
+  }).join("");
+
+  document.querySelectorAll("#trk th[data-k]").forEach(th => {
+    const on = th.dataset.k === sortKey;
+    th.classList.toggle("act", on);
+    const ar = th.querySelector(".ar");
+    if(on && !ar) th.insertAdjacentHTML("beforeend", ` <span class="ar">${sortDir<0?"▼":"▲"}</span>`);
+    else if(on && ar) ar.textContent = sortDir<0 ? "▼" : "▲";
+    else if(ar) ar.remove();
+  });
+}
+
+function bindTrk(){
+  document.querySelectorAll("#trk th[data-k]").forEach(th => {
+    th.onclick = () => {
+      const k = th.dataset.k;
+      if(k === sortKey) sortDir *= -1; else { sortKey = k; sortDir = -1; }
+      renderTrk();
+    };
+  });
+  renderTrk();
+}
+
+async function load(path){
+  try{
+    const r = await fetch(`${path}?t=${Date.now()}`, {cache:"no-cache"});
+    if(!r.ok) return null;
+    return await r.json();
+  }catch{ return null; }
+}
+
+function applyData(d, c){
+  try {
+    if(c?.dungeons?.dungeons?.length){
+      DUNGEONS = c.dungeons.dungeons;
+    }
+    if(c?.wissen?.artikel?.length){
+      KB = c.wissen.artikel.map(a => ({
+        i:a.icon||"📄", t:a.titel, d:a.text, tags:a.tags||[], body:a.body||null
+      }));
+    }
+    if(c?.bosses?.bosses?.length){
+      BOSSES = c.bosses.bosses.map(b => ({
+        name: b.name,
+        n: b.name,
+        en: b.nameEn || "",
+        st: b.status || "open",
+        role: b.rolle || "",
+        slug: b.slug || "",
+        image: b.image || DEFAULT_ARTWORK,
+        check: b.check || "",
+        lust: b.lust || "",
+        intro: b.intro || "",
+        difficulties: b.difficulties || null,
+        rollen: b.rollen || null,
+        roles: b.roles || b.rollen || null,
+        phasen: b.phasen || [],
+        wipeGefahren: b.wipeGefahren || [],
+        faehigkeiten: b.faehigkeiten || b.abilities || []
+      }));
+    }
+
+    const downBossCount = BOSSES.filter(b => b.st === "down").length;
+    if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
+
+    const charMap = new Map();
+    for(const k of KADER) charMap.set(normName(k.n), {...k});
+
+    if(d?.wowaudit?.characters?.length){
+      for(const wc of d.wowaudit.characters){
+        const rawName = wc.name ? wc.name.split("-")[0].trim() : "";
+        const key = normName(rawName);
+        if(!key) continue;
+        const cls = cleanClass(wc.class, wc.spec);
+        const role = mapRole(wc.role, cls, wc.spec);
+        const ilvl = wc.equipped_item_level || wc.item_level || wc.ilvl || null;
+
+        charMap.set(key, {
+          n: rawName,
+          c: cls,
+          r: role,
+          spec: wc.spec || "",
+          ilvl: ilvl ? Math.round(ilvl) : null,
+          mp: 0,
+          mr: 0,
+          v: 0,
+          thumb: null
+        });
+      }
+    }
+
+    if(d?.roster?.characters?.length){
+      for(const rc of d.roster.characters){
+        const rawName = rc.name ? rc.name.split("-")[0].trim() : "";
+        const key = normName(rawName);
+        if(!key) continue;
+        const runs = rc.weeklyRuns || 0;
+        const cls = cleanClass(rc.class, rc.spec);
+        const role = mapRole(rc.role, cls, rc.spec);
+
+        let p = charMap.get(key);
+        if(!p){
+          p = {
+            n: rawName,
+            c: cls,
+            r: role,
+            spec: rc.spec || "",
+            ilvl: rc.ilvl ? Math.round(rc.ilvl) : null,
+            mp: rc.mplus || 0,
+            mr: runs,
+            v: calcVault(runs),
+            thumb: rc.thumb || null
+          };
+          charMap.set(key, p);
+        } else {
+          if(rc.ilvl && !p.ilvl) p.ilvl = Math.round(rc.ilvl);
+          if(rc.mplus != null && rc.mplus > 0) p.mp = rc.mplus;
+          if(rc.weeklyRuns != null) {
+            p.mr = Math.max(p.mr || 0, rc.weeklyRuns);
+            p.v = calcVault(p.mr);
+          }
+          if(rc.thumb) p.thumb = rc.thumb;
+          if(rc.spec && !p.spec) p.spec = rc.spec;
+          if(!p.c || p.c === "Krieger") p.c = cls;
+        }
+      }
+    }
+
+    if(d?.blizzard?.weeklyKeys?.length){
+      for(const bk of d.blizzard.weeklyKeys){
+        const key = normName(bk.name);
+        const p = charMap.get(key);
+        if(p && bk.runsThisWeek != null){
+          p.mr = Math.max(p.mr || 0, bk.runsThisWeek);
+          p.v = calcVault(p.mr);
+        }
+      }
+    }
+
+    if(charMap.size > 0){
+      KADER = Array.from(charMap.values());
+    }
+
+    if(d?.events?.events?.length){
+      const e = d.events.events[0];
+      EVENT.title = e.title || EVENT.title;
+      EVENT.time = e.time || EVENT.time;
+      EVENT.leader = e.leader || EVENT.leader;
+      EVENT.date = e.date || "24.08.26";
+      EVENT.counts = e.counts || EVENT.counts;
+      if(e.signups?.length){
+        EVENT.signups = e.signups.map(s => {
+          const isAbs = String(s.role||s.cls).toLowerCase().includes("abs");
+          const cleanN = s.name ? s.name.split("/")[0].split("|")[0].split("-")[0].trim() : "Raider";
+          const pClass = cleanClass(s.cls, s.spec);
+          return {
+            name: cleanN,
+            cls: pClass,
+            spec: s.spec || "",
+            role: mapRole(s.role, pClass, s.spec),
+            status: isAbs ? "absence" : "primary"
+          };
+        });
+      }
+      EVENT.live = true;
+    }
+
+    if(d?.logs?.reports?.length){
+      REPORTS = d.logs.reports.map((r, i) => ({
+        code: r.code,
+        t: r.zone || r.title || "Der Giftige Abgrund",
+        d: fmtDateShort(r.startTime || r.date),
+        startTime: r.startTime,
+        diff: r.difficulty || "Normal",
+        dur: r.duration || "—",
+        kills: r.kills || 0,
+        wipes: r.wipes || 0,
+        killedBosses: r.killedBosses || [],
+        vips: r.vips || { dps: [], hps: [] },
+        live: i === 0,
+        url: r.url || G.links.wcl
+      }));
+    }
+  } catch (err) {
+    console.error("Data error:", err);
+  }
+}
 
 // Navigation initialisieren
 const navEl = document.getElementById("nav");
