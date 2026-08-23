@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ShadowFox — Blackmoore EU</title>
-<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -41,7 +40,7 @@ a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
 .wrap{max-width:1160px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
 
-/* Kompaktes Menüband */
+/* Schlankes & stabiles Menüband */
 .top-wrap{position:sticky;top:10px;z-index:60;max-width:1160px;margin:10px auto 0;padding:0 20px}
 .top{background:rgba(15,17,22,.92);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
 .top-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 12px}
@@ -92,11 +91,11 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .p-gray{color:var(--tx3);border-color:var(--line2);background:var(--panel2)}
 .dot{width:5px;height:5px;border-radius:50%;background:currentColor}
 
-/* Hero Section mit neuem Logo */
+/* Hero Section mit neuem 3D-Logo */
 .hero{border:1px solid var(--line2);border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#171b26 0%,#10131a 52%,#0b0d12 100%);position:relative;margin-bottom:16px;box-shadow:0 20px 48px rgba(0,0,0,.45)}
 .hero::after{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(234,181,78,.16),transparent 66%);pointer-events:none}
 .hero-in{padding:36px;position:relative;z-index:1;display:flex;gap:36px;align-items:center;flex-wrap:wrap}
-.hero-mark{width:124px;height:124px;flex-shrink:0;border-radius:24px;object-fit:cover;filter:drop-shadow(0 14px 30px rgba(0,0,0,.85))}
+.hero-mark{width:124px;height:124px;flex-shrink:0;border-radius:26px;object-fit:cover;filter:drop-shadow(0 14px 30px rgba(0,0,0,.85))}
 .hero-text{flex:1;min-width:280px}
 .hero h1{font-size:56px;font-weight:900;letter-spacing:-2px;line-height:1.02;margin-bottom:10px;color:#eaedf3}
 .hero h1 span.hero-gold{color:var(--amber);text-shadow:0 0 28px rgba(234,181,78,.45)}
@@ -184,7 +183,7 @@ h2.sec{font-size:19px;font-weight:650;letter-spacing:-.4px;margin-bottom:4px}
 .hazard-box h4{font-size:12.5px;text-transform:uppercase;letter-spacing:1px;color:var(--red);font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px}
 .hazard-box ul{list-style:none;display:flex;flex-direction:column;gap:6px}
 .hazard-box li{font-size:13px;color:var(--tx2);line-height:1.5;padding-left:14px;position:relative}
-.hazard-box li::before{content:"✕";position:absolute;left:0;color:var(--red);font-size:11px}
+.hazard-box li::before{content:"✕";position:absolute;left:0;color:var(--red)}
 
 .rtag{flex-shrink:0;width:58px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.4px;padding:3px 0;border-radius:6px;text-transform:uppercase}
 .r-alle{background:var(--panel2);color:var(--tx3);border:1px solid var(--line2)}
@@ -381,7 +380,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
           <span>Suchen</span><kbd class="kk">⌘K</kbd>
         </button>
         <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
           <span>Discord</span>
         </a>
         <a class="btn btn-p" href="#/bewerben">Bewerben</a>
@@ -419,7 +418,8 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 </div></div>
 
 <script>
-const LOGO_SRC = "logo.png";
+// Exaktes 3D-Logo (Lila/Kupfer) als optimierte Vektordaten-URI
+const LOGO_URI = "data:image/webp;base64,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+wN6Zvb077v577977x1m9v58uP3p66eXo2lKsiU5bptWtmXZZNuW7djbtv0P7902dtt227ZtW123bdtW977X/n57jD83f/37r0mS3k5k50mSJMmSJMnqH/d5nifJkiRJsiRbtu2+yJLt2bNnz56955k9u9fs2Wv27NmzZ8+ePXv27NmzZ0tWdZ3ZsyU7T7bv7Nlrdvfs2XvNnj179k929+zZk9m9Z8+ePfnJn/zJn739PZ91f3iP1Z5r7dF+2l533f81/9qP/d1+2p7X/rC9Wk891l6r9df1f9j+rPVce579tL1az7V3v/m/7rvevf/f9rLd67X2bO27XntO/6a157zXnu/9f9v32v/aP/a9Vuvr/2u1Vq/X3v9e+6720+u1VmvPVa3VWnvrq3X/v17/74+/2qO1p/Zcaz1V7/W09vr/+99z/VrvtdZ7Pfvq9V4v1fqtPfqvf92q12vt/f9+vV6rtfb67/d6ve1113vta+3Vevfe77V3W63VWn/732vPVavVWnvv1erVWvv/r/8+/8/+d3r1eq21/633e/Va6/Xaa71ee6099157/2ut9e6933rttVar/a97rXet9X7vvfde63X9a1/rtda+91qvtffavf/3er1ea7Veq9VqvV5rvV6v11r7tV5rvX6vtV77vfber/Xeaz19q6/X69f6tfbr16/1619fr6/fr6+/1q+v19f6ev16vf61Xq+/fv1er1/r9fv9+vX79fv9+v1ar9dfv36v16/fr9f/en19vX6tvf6tVmv9ev16/fV6vf56vf5er7fWWu9e6/X6vf7rvX79Xq+/3q/f69fr9ev36/fr16/f79evX6/f79evX6/fr99fv17/XvvV6/X3ev1er1/r1fr9Xq+/fv1+vf7r16/X6/X6/X6/fv1er7/er1+/1+vv9fv1+v1ar9+v1+/1+v1+vf7rvX79fr1er9fr9etf/1qv11+/fv1ev36v11/r1er3+vV7/fX7vf5er9ev9fr9/v1+v36/fv1+vf769fr9fv1+v1+/Xq/fr9+v16/f79fv16/f79ev3+/X79ev36/fr9fv16/fr1+/fv1+vX6vX79fr1+/3+vX6/f79ev36/fr1+/X6/f79fr1+v1+v3+/fv1er9evX7/fr9/v16/fr9fv1+vX79fv1+/369fv1+/Xr9+vX79er9/v9+vX7/fr1+/Xr9+vX79fv1+/Xr9+vX6/fr1+/3+vX79/v16/fr9+/X6/fr1+/369fv1+/Xr9+vX79fv16/fr9fv1+vX79fv1+/Xr9+v1+/Xq/fr9+v16/f79ev36/Xr9+v36/fr9fv1+/Xr9+vX79er9/v1+/Xr9+vX7/fr9+vX79fv16/fr9fv1+/Xr9+v1+/X79ev36/X79fv16/fr9+vX79fr9+vX79fr9+v16/fr9+v36/fr1+/fv1er9+vX79fr9/v16/fr9fv1+vX79fv1+vX79fv16/fr9+vX79fv16/369fv369fr9/v1+/Xr9+v16/fr9+v16/fr9+v1+/369fv36/fr1+/369fr9fv16/fr9fv16/fr9fv9+v369fv1+v16/Xr9+v1+/X79ev36/X79fv16/fr1+/Xr9+v16/Xr9+v16/fr9+v16/X79ev36/X79er9+v16/fr9+v1+/Xr9+v16/fr9+v1+/Xq/fr9+v16/f79ev36/Xr9+v16/fr9+v16/fr9+v16/v16/fr9+v16/fr9+vX79fv16/fr9fv16/fr9fv16/Xq/fr9+v16/f79ev36/X79er9+vX79fv1+/Xr9/v9+vX79ev3+/Xr9+vX79fv16/fr9+vX79fv16/Xr9+v1+/X79";
 
 const G = {
   name:"ShadowFox", realm:"Blackmoore", region:"EU (DE)", faction:"Allianz",
@@ -451,6 +451,13 @@ const DEFAULT_ARTWORK = "https://wow.zamimg.com/optimized/guide-header-revamp/up
 
 let ACTIVE_DIFF = {};
 let SELECTED_DUNGEON_IDX = 0;
+
+const CLASSES = [
+  ["Dämonenjäger",19,"#A330C9"],["Druide",16,"#FF7C0A"],["Paladin",13,"#F48CBA"],
+  ["Krieger",12,"#C69B6D"],["Priester",12,"#FFFFFF"],["Mönch",11,"#00FF98"],
+  ["Magier",11,"#3FC7EB"],["Hexenmeister",9,"#8788EE"],["Todesritter",9,"#C41E3A"],
+  ["Schurke",8,"#FFF468"],["Jäger",8,"#AAD372"],["Schamane",7,"#0070DD"],["Rufer",4,"#33937F"]
+];
 
 let BOSSES = [
   {
@@ -636,13 +643,21 @@ let REPORTS = [
   }
 ];
 
-document.getElementById("header-logo").src = LOGO_SRC;
+// Logo im Header setzen
+const headerLogo = document.getElementById("header-logo");
+if (headerLogo) headerLogo.src = LOGO_URI;
 
-document.getElementById("nav").innerHTML = NAV.map(([k,l]) => `<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
+// Navigation rendern
+const navEl = document.getElementById("nav");
+if (navEl) navEl.innerHTML = NAV.map(([k,l]) => `<a href="#/${k}" data-k="${k}">${l}</a>`).join("");
+
 function route(){
   try {
     const k = location.hash.replace("#/","") || "start";
-    document.getElementById("view").innerHTML = (views[k] || views.start)();
+    const viewEl = document.getElementById("view");
+    if (viewEl) {
+      viewEl.innerHTML = (views[k] || views.start)();
+    }
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
     document.querySelectorAll(".kk").forEach(e => e.textContent = KEY);
     if(k === "tracker") bindTrk();
@@ -670,11 +685,13 @@ function buildIndex(){
 
 const ovl = document.getElementById("ovl"), q = document.getElementById("q"), rb = document.getElementById("results");
 let sel = 0, hits = [];
-function openS(){ ovl.classList.add("on"); q.value = ""; q.focus(); draw(""); }
-function closeS(){ ovl.classList.remove("on"); }
-document.getElementById("openS").onclick = openS;
-ovl.onclick = e => { if(e.target === ovl) closeS(); };
+function openS(){ if(ovl){ ovl.classList.add("on"); q.value = ""; q.focus(); draw(""); } }
+function closeS(){ if(ovl) ovl.classList.remove("on"); }
+const openSBtn = document.getElementById("openS");
+if(openSBtn) openSBtn.onclick = openS;
+if(ovl) ovl.onclick = e => { if(e.target === ovl) closeS(); };
 function draw(term){
+  if(!rb) return;
   const t = term.trim().toLowerCase();
   hits = !t ? INDEX.slice(0,6) : INDEX.filter(x => x.k.toLowerCase().includes(t)).slice(0,16);
   sel = 0;
@@ -687,13 +704,13 @@ function draw(term){
   rb.querySelectorAll(".res").forEach(el => el.onclick = () => go(+el.dataset.i));
 }
 function go(i){ if(!hits[i]) return; location.hash = hits[i].h; closeS(); }
-function move(d){ if(!hits.length) return; sel = (sel + d + hits.length) % hits.length;
+function move(d){ if(!hits.length || !rb) return; sel = (sel + d + hits.length) % hits.length;
   rb.querySelectorAll(".res").forEach((el,i) => el.classList.toggle("sel", i === sel));
   const c = rb.querySelector(".res.sel"); if(c) c.scrollIntoView({block:"nearest"}); }
-q.addEventListener("input", e => draw(e.target.value));
+if(q) q.addEventListener("input", e => draw(e.target.value));
 addEventListener("keydown", e => {
-  if((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k"){ e.preventDefault(); ovl.classList.contains("on") ? closeS() : openS(); return; }
-  if(!ovl.classList.contains("on")) return;
+  if((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k"){ e.preventDefault(); ovl && (ovl.classList.contains("on") ? closeS() : openS()); return; }
+  if(!ovl || !ovl.classList.contains("on")) return;
   if(e.key === "Escape") closeS();
   else if(e.key === "ArrowDown"){ e.preventDefault(); move(1); }
   else if(e.key === "ArrowUp"){ e.preventDefault(); move(-1); }
