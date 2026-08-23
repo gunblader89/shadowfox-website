@@ -486,7 +486,7 @@
     {
       "name": "Hòbs",
       "realm": "blackmoore",
-      "rank": 0,
+      "rank": 6,
       "level": 90,
       "classId": 11
     },
@@ -689,7 +689,7 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "rank": 3,
+      "rank": 0,
       "level": 90,
       "classId": 12
     },
@@ -1016,7 +1016,7 @@
       "classId": 11
     }
   ],
-  "updatedAt": "2026-08-23T14:25:02.455Z",
+  "updatedAt": "2026-08-23T15:43:02.355Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",

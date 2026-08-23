@@ -20,7 +20,7 @@
       "role": "HEALING",
       "ilvl": 287,
       "mplus": 1503,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -79,8 +79,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 271,
-      "mplus": 530,
-      "weeklyRuns": 3,
+      "mplus": 779,
+      "weeklyRuns": 4,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -112,11 +112,11 @@
       "name": "Hatto",
       "realm": "aegwynn",
       "class": "Hunter",
-      "spec": "Beast Mastery",
+      "spec": "Marksmanship",
       "role": "DPS",
-      "ilvl": 277,
-      "mplus": 508,
-      "weeklyRuns": 4,
+      "ilvl": 287,
+      "mplus": 733,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
     },
@@ -128,7 +128,7 @@
       "role": "DPS",
       "ilvl": 289,
       "mplus": 780,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
     },
@@ -162,8 +162,8 @@
       "class": "Shaman",
       "spec": "Elemental",
       "role": "DPS",
-      "ilvl": 302,
-      "mplus": 2339,
+      "ilvl": 303,
+      "mplus": 2365,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
@@ -172,8 +172,8 @@
       "name": "Kiraja",
       "realm": "garrosh",
       "class": "Demon Hunter",
-      "spec": "Vengeance",
-      "role": "TANK",
+      "spec": "Havoc",
+      "role": "DPS",
       "ilvl": 303,
       "mplus": 2593,
       "weeklyRuns": 10,
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-23T14:25:01.021Z"
+  "updatedAt": "2026-08-23T15:43:00.524Z"
 }
