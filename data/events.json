@@ -11,13 +11,22 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 25,
+        "primary": 26,
         "tentative": 0,
         "bench": 0,
         "absence": 2,
         "late": 0
       },
       "signups": [
+        {
+          "name": "Käfer/Moonlord",
+          "userId": "272078834063376403",
+          "cls": "Melee",
+          "spec": "Feral",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787493506
+        },
         {
           "name": "Jisgarin/Andi",
           "userId": "347413147054899200",
@@ -264,5 +273,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-23T13:33:58.515Z"
+  "updatedAt": "2026-08-23T14:01:20.510Z"
 }

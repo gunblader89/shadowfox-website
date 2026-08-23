@@ -19,8 +19,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 287,
-      "mplus": 1241,
-      "weeklyRuns": 5,
+      "mplus": 1503,
+      "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -79,8 +79,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 271,
-      "mplus": 268,
-      "weeklyRuns": 2,
+      "mplus": 530,
+      "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -127,8 +127,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 288,
-      "mplus": 518,
-      "weeklyRuns": 2,
+      "mplus": 780,
+      "weeklyRuns": 3,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
     },
@@ -235,7 +235,7 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 297,
-      "mplus": 1679,
+      "mplus": 1941,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-23T13:33:42.262Z"
+  "updatedAt": "2026-08-23T14:01:04.016Z"
 }
