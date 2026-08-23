@@ -31,7 +31,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 299,
-      "mplus": 2193,
+      "mplus": 2238,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -90,8 +90,8 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 299,
-      "mplus": 2377,
+      "ilvl": 301,
+      "mplus": 2402,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -314,11 +314,11 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 296,
-      "mplus": 2310,
+      "mplus": 2318,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-23T11:56:36.217Z"
+  "updatedAt": "2026-08-23T13:13:19.690Z"
 }

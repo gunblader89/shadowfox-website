@@ -11,7 +11,7 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 24,
+        "primary": 25,
         "tentative": 0,
         "bench": 0,
         "absence": 2,
@@ -35,6 +35,15 @@
           "role": "Tanks",
           "status": "primary",
           "signedUpAt": 1786449120
+        },
+        {
+          "name": "Miliim/Zorro",
+          "userId": "261975843574775809",
+          "cls": "Melee",
+          "spec": "Havoc",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787490770
         },
         {
           "name": "Raiox",
@@ -255,5 +264,5 @@
       ]
     }
   ],
-  "updatedAt": "2026-08-23T11:56:52.892Z"
+  "updatedAt": "2026-08-23T13:13:36.890Z"
 }
