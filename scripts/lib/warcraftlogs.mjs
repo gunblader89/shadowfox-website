@@ -73,20 +73,21 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   const raidZoneReports = rawReports.filter(r => r.zone?.name === zoneName);
   log(`WCL: ${rawReports.length} Reports insgesamt, ${raidZoneReports.length} in Zone "${zoneName}", ${rosterSet.size} bekannte Kader-Namen`);
 
-  // Besetzungs- & Uploader-Check: selbst bei passender Zone und echten
-  // Raidbossen kann ein Report ein Pug/Alt-Run sein, den jemand Fremdes
-  // (oder ein einzelnes Mitglied ausserhalb eines offiziellen Raids)
-  // hochgeladen hat. Nur werten, wenn der Uploader selbst zum Kader
-  // gehoert UND ein Grossteil der Teilnehmer bekannte Mitglieder sind.
+  // Besetzungs-Check: selbst bei passender Zone und echten Raidbossen kann
+  // ein Report ein Pug/Alt-Run sein, keine offizielle Gildenraid-Besetzung.
+  // Nur werten, wenn ein Grossteil der Teilnehmer bekannte Kader-Mitglieder
+  // sind. (Ein zusaetzlicher Uploader-Check wurde probiert, war aber zu
+  // streng: Raidleiter loggen teils auf Alts, die WoWAudit nicht kennt,
+  // waehrend ihre Raidgruppe trotzdem zu >90% aus bekannten Namen bestand —
+  // die Besetzungs-Quote allein trennt echte von fremden Reports zuverlaessig.)
   const rosterReports = rosterSet.size > 0
     ? raidZoneReports.filter(r => {
         const ownerName = r.owner?.name;
         const actors = r.masterData?.actors ?? [];
         const matches = actors.filter(a => rosterSet.has(normalizeName(a.name))).length;
         const ratio = actors.length ? (matches / actors.length) : 0;
-        const ownerOk = Boolean(ownerName) && rosterSet.has(normalizeName(ownerName));
-        const accepted = ownerOk && actors.length > 0 && ratio >= 0.4;
-        log(`  Report ${r.code}: owner="${ownerName ?? "?"}" (bekannt: ${ownerOk}), ${matches}/${actors.length} Teilnehmer bekannt (${Math.round(ratio*100)}%) -> ${accepted ? "gewertet" : "ausgeschlossen"}`);
+        const accepted = actors.length > 0 && ratio >= 0.4;
+        log(`  Report ${r.code}: owner="${ownerName ?? "?"}", ${matches}/${actors.length} Teilnehmer bekannt (${Math.round(ratio*100)}%) -> ${accepted ? "gewertet" : "ausgeschlossen"}`);
         return accepted;
       })
     : raidZoneReports;
