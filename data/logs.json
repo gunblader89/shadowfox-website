@@ -6,17 +6,49 @@
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1787592869569,
-      "endTime": 1787598549893,
-      "duration": "1h 12m",
+      "endTime": 1787601866325,
+      "duration": "2h 7m",
       "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 8,
+      "kills": 3,
+      "wipes": 10,
       "killedBosses": [
-        "The Coiled Altar"
+        "The Coiled Altar",
+        "Ula'tek",
+        "Nymrissa Wavecaller"
       ],
       "vips": {
-        "dps": [],
-        "hps": []
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 97,
+            "boss": "The Coiled Altar"
+          },
+          {
+            "name": "Askái",
+            "class": "DemonHunter",
+            "spec": "Devourer",
+            "parse": 96,
+            "boss": "The Coiled Altar"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 97,
+            "boss": "Ula'tek"
+          },
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 88,
+            "boss": "Nymrissa Wavecaller"
+          }
+        ]
       }
     },
     {
@@ -25,13 +57,15 @@
       "title": "Raid",
       "zone": "The Venomous Abyss",
       "startTime": 1787580931818,
-      "endTime": 1787598551982,
-      "duration": "1h 12m",
+      "endTime": 1787601868445,
+      "duration": "2h 7m",
       "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 8,
+      "kills": 3,
+      "wipes": 10,
       "killedBosses": [
-        "The Coiled Altar"
+        "The Coiled Altar",
+        "Ula'tek",
+        "Nymrissa Wavecaller"
       ],
       "vips": {
         "dps": [],
@@ -468,5 +502,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-24T19:18:00.952Z"
+  "updatedAt": "2026-08-24T20:27:02.967Z"
 }
