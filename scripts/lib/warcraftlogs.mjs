@@ -50,6 +50,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
           masterData {
             actors(type: "Player") { name }
           }
+          owner { name }
         }
       }
     }
@@ -71,12 +72,15 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   // Raidabend verschmolzen werden.
   const raidZoneReports = rawReports.filter(r => r.zone?.name === zoneName);
 
-  // Besetzungs-Check: selbst bei passender Zone und echten Raidbossen kann
-  // ein Report ein Pug/Alt-Run einzelner Mitglieder sein, keine offizielle
-  // Gildenraid-Besetzung. Nur werten, wenn ein Grossteil der Teilnehmer
-  // tatsaechlich zum bekannten Kader gehoert (Realm-Suffix wird ignoriert).
+  // Besetzungs- & Uploader-Check: selbst bei passender Zone und echten
+  // Raidbossen kann ein Report ein Pug/Alt-Run sein, den jemand Fremdes
+  // (oder ein einzelnes Mitglied ausserhalb eines offiziellen Raids)
+  // hochgeladen hat. Nur werten, wenn der Uploader selbst zum Kader
+  // gehoert UND ein Grossteil der Teilnehmer bekannte Mitglieder sind.
   const rosterReports = rosterSet.size > 0
     ? raidZoneReports.filter(r => {
+        const ownerName = r.owner?.name;
+        if (!ownerName || !rosterSet.has(normalizeName(ownerName))) return false;
         const actors = r.masterData?.actors ?? [];
         if (!actors.length) return false;
         const matches = actors.filter(a => rosterSet.has(normalizeName(a.name))).length;
