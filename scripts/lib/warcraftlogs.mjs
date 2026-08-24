@@ -1,5 +1,5 @@
 /* Warcraft Logs — Alle echten Raidabende & exakte Kills/Wipes */
-import { req, ok } from "./util.mjs";
+import { req, ok, log } from "./util.mjs";
 
 const BASE_OAUTH = "https://www.warcraftlogs.com/oauth/token";
 const BASE_API   = "https://www.warcraftlogs.com/api/v2/client";
@@ -108,8 +108,8 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       const qParses = `query {
         reportData {
           report(code: "${latest.code}") {
-            dpsRankings: rankings(metric: dps)
-            hpsRankings: rankings(metric: hps)
+            dpsRankings: rankings(playerMetric: dps)
+            hpsRankings: rankings(playerMetric: hps)
           }
         }
       }`;
@@ -119,6 +119,13 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
         headers: { Authorization: `Bearer ${tok}`, "Content-Type": "application/json" },
         body: JSON.stringify({ query: qParses })
       });
+
+      // GraphQL antwortet bei ungueltigen Feldern/Argumenten trotzdem mit HTTP 200 —
+      // req() prueft nur den HTTP-Status, deshalb hier zusaetzlich auf "errors" achten,
+      // sonst bleiben VIP-Parses bei einem Tippfehler wochenlang unbemerkt leer.
+      if (pRes.errors?.length) {
+        throw new Error(pRes.errors.map(e => e.message).join("; "));
+      }
 
       const reportData = pRes.data?.reportData?.report;
       const dpsRankData = reportData?.dpsRankings?.data ?? [];
@@ -181,8 +188,11 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       }
 
       latest.vips = { dps: topDps, hps: topHps };
-    } catch {
-      // Fehlertoleranz bei reinen Wipe-Abenden ohne Kills
+    } catch (e) {
+      // Fehlertoleranz bei reinen Wipe-Abenden ohne Kills — aber sichtbar bleiben,
+      // damit ein echter Fehler (Tippfehler, API-Aenderung) nicht wieder wochenlang
+      // unbemerkt bleibt.
+      log(`VIP-Parses uebersprungen: ${e.message}`);
     }
   }
 
