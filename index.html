@@ -695,7 +695,7 @@ function cleanClass(clsStr, specStr) {
 function mapRole(roleStr, clsStr, specStr){
   const s = (String(clsStr||"")+" "+String(roleStr||"")+" "+String(specStr||"")).toLowerCase();
   if(s.includes("tank")||s.includes("guardian")||s.includes("brewmaster")||s.includes("blood")||s.includes("protection")||s.includes("vengeance")) return "Tank";
-  if(s.includes("heal")||s.includes("restoration")||s.includes("holy")||s.includes("mistweaver")||s.includes("discipline")||s.includes("preservation")) return "Heal";
+  if(s.includes("heal")||s.includes("restoration")||(s.includes("holy")&&!s.includes("unholy"))||s.includes("mistweaver")||s.includes("discipline")||s.includes("preservation")) return "Heal";
   if(s.includes("melee")||s.includes("fury")||s.includes("arms")||s.includes("retribution")||s.includes("unholy")||(s.includes("frost")&&s.includes("dk"))||s.includes("havoc")||s.includes("windwalker")||s.includes("assassination")||s.includes("outlaw")||s.includes("subtlety")||s.includes("feral")||s.includes("survival")||s.includes("enhancement")) return "Melee";
   return "Ranged";
 }
