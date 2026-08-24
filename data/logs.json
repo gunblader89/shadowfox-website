@@ -1,89 +1,20 @@
 {
   "reports": [
     {
-      "code": "QJfZMDVC1kBzgxL7",
-      "url": "https://www.warcraftlogs.com/reports/QJfZMDVC1kBzgxL7",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787592869569,
-      "endTime": 1787601866325,
-      "duration": "2h 7m",
-      "difficulty": "Normal",
-      "kills": 3,
-      "wipes": 10,
-      "killedBosses": [
-        "The Coiled Altar",
-        "Ula'tek",
-        "Nymrissa Wavecaller"
-      ],
-      "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 97,
-            "boss": "The Coiled Altar"
-          },
-          {
-            "name": "Askái",
-            "class": "DemonHunter",
-            "spec": "Devourer",
-            "parse": 96,
-            "boss": "The Coiled Altar"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 97,
-            "boss": "Ula'tek"
-          },
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 88,
-            "boss": "Nymrissa Wavecaller"
-          }
-        ]
-      }
-    },
-    {
-      "code": "kgtHzV6TGX7hMbCd",
-      "url": "https://www.warcraftlogs.com/reports/kgtHzV6TGX7hMbCd",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787580931818,
-      "endTime": 1787601868445,
-      "duration": "2h 7m",
-      "difficulty": "Normal",
-      "kills": 3,
-      "wipes": 10,
-      "killedBosses": [
-        "The Coiled Altar",
-        "Ula'tek",
-        "Nymrissa Wavecaller"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
       "code": "vqZbDW2a3KAJPRX8",
       "url": "https://www.warcraftlogs.com/reports/vqZbDW2a3KAJPRX8",
       "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1787580931818,
-      "endTime": 1787587429569,
-      "duration": "1h 37m",
+      "startTime": 1787581504148,
+      "endTime": 1787601867371,
+      "duration": "5h 39m",
       "difficulty": "Normal",
-      "kills": 6,
-      "wipes": 0,
+      "kills": 9,
+      "wipes": 20,
       "killedBosses": [
+        "The Coiled Altar",
+        "Ula'tek",
+        "Nymrissa Wavecaller",
         "Nek'zali the Soulcoiler",
         "The Lost Explorers",
         "Sszorak",
@@ -92,8 +23,38 @@
         "The Twin Fangs"
       ],
       "vips": {
-        "dps": [],
-        "hps": []
+        "dps": [
+          {
+            "name": "Паларт",
+            "class": "Paladin",
+            "spec": "Retribution",
+            "parse": 99,
+            "boss": "The Lost Explorers"
+          },
+          {
+            "name": "Honeybutt",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 99,
+            "boss": "The Twin Fangs"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Lionett",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 92,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Alexmonk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 85,
+            "boss": "The Twin Fangs"
+          }
+        ]
       }
     },
     {
@@ -101,50 +62,12 @@
       "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1787250117825,
-      "endTime": 1787257925349,
-      "duration": "2h 8m",
-      "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 15,
-      "killedBosses": [
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "dM6PGWzZnJQxbhHp",
-      "url": "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787247821704,
-      "endTime": 1787257979063,
+      "startTime": 1787248823341,
+      "endTime": 1787257926826,
       "duration": "2h 31m",
       "difficulty": "Normal",
       "kills": 1,
-      "wipes": 19,
-      "killedBosses": [
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "gDHaGdxhM7Yvjq4Z",
-      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787225301136,
-      "endTime": 1787265145622,
-      "duration": "2h 31m",
-      "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 19,
+      "wipes": 53,
       "killedBosses": [
         "The Twin Fangs"
       ],
@@ -158,7 +81,7 @@
       "url": "https://www.warcraftlogs.com/reports/vZwFxpX6K1Qh4VAb",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1787162809570,
+      "startTime": 1787163511962,
       "endTime": 1787171146232,
       "duration": "2h 7m",
       "difficulty": "Normal",
@@ -180,7 +103,7 @@
       "url": "https://www.warcraftlogs.com/reports/3y94KN1YVk2mzH8c",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1785432962701,
+      "startTime": 1785434609703,
       "endTime": 1785438462627,
       "duration": "1h 4m",
       "difficulty": "Heroisch",
@@ -200,31 +123,12 @@
       "url": "https://www.warcraftlogs.com/reports/LpBcXFHdRaMNZC9n",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1785173764762,
-      "endTime": 1785183515454,
+      "startTime": 1785174683136,
+      "endTime": 1785183461067,
       "duration": "2h 26m",
       "difficulty": "Mythisch",
       "kills": 1,
-      "wipes": 17,
-      "killedBosses": [
-        "Chimaerus, the Undreamt God"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "fxqGrcj4QwPY1zBp",
-      "url": "https://www.warcraftlogs.com/reports/fxqGrcj4QwPY1zBp",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1785173627963,
-      "endTime": 1785183460791,
-      "duration": "2h 26m",
-      "difficulty": "Mythisch",
-      "kills": 1,
-      "wipes": 17,
+      "wipes": 34,
       "killedBosses": [
         "Chimaerus, the Undreamt God"
       ],
@@ -238,7 +142,7 @@
       "url": "https://www.warcraftlogs.com/reports/dRPfvh3Kp7gLGnDk",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1784828112682,
+      "startTime": 1784830468391,
       "endTime": 1784837666608,
       "duration": "1h 59m",
       "difficulty": "Mythisch",
@@ -257,29 +161,12 @@
       "url": "https://www.warcraftlogs.com/reports/F9A34pyKjLtbWaC6",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1784568657591,
-      "endTime": 1784579234942,
+      "startTime": 1784570459022,
+      "endTime": 1784578944926,
       "duration": "2h 21m",
       "difficulty": "Mythisch",
       "kills": 0,
-      "wipes": 23,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "C3cbXydANzZv796L",
-      "url": "https://www.warcraftlogs.com/reports/C3cbXydANzZv796L",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1784568607076,
-      "endTime": 1784578944547,
-      "duration": "2h 21m",
-      "difficulty": "Mythisch",
-      "kills": 0,
-      "wipes": 23,
+      "wipes": 46,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -291,9 +178,9 @@
       "url": "https://www.warcraftlogs.com/reports/9PjLFtyHQz8r3n6R",
       "title": "Sporefall",
       "zone": "Sporefall",
-      "startTime": 1784021236549,
-      "endTime": 1784021855039,
-      "duration": "10m",
+      "startTime": 1784021500939,
+      "endTime": 1784021812366,
+      "duration": "5m",
       "difficulty": "Heroisch",
       "kills": 0,
       "wipes": 1,
@@ -308,29 +195,12 @@
       "url": "https://www.warcraftlogs.com/reports/KRx9WJ2wVdcCQDPh",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1783964066674,
-      "endTime": 1783975026146,
+      "startTime": 1783965764975,
+      "endTime": 1783974603632,
       "duration": "2h 27m",
       "difficulty": "Mythisch",
       "kills": 0,
-      "wipes": 22,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "RYB3PbdgpJHwa7ZD",
-      "url": "https://www.warcraftlogs.com/reports/RYB3PbdgpJHwa7ZD",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1783963876682,
-      "endTime": 1783974677980,
-      "duration": "2h 27m",
-      "difficulty": "Mythisch",
-      "kills": 0,
-      "wipes": 22,
+      "wipes": 44,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -342,29 +212,12 @@
       "url": "https://www.warcraftlogs.com/reports/PJCKtb4LyDNAm8Qc",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1783618761712,
-      "endTime": 1783628946274,
+      "startTime": 1783618869499,
+      "endTime": 1783628946547,
       "duration": "2h 47m",
       "difficulty": "Mythisch",
       "kills": 0,
-      "wipes": 22,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "ZmrjznAh6gy8RQLC",
-      "url": "https://www.warcraftlogs.com/reports/ZmrjznAh6gy8RQLC",
-      "title": "VS / DR / MQD",
-      "zone": "VS / DR / MQD",
-      "startTime": 1783618286951,
-      "endTime": 1783630006256,
-      "duration": "2h 47m",
-      "difficulty": "Mythisch",
-      "kills": 0,
-      "wipes": 22,
+      "wipes": 44,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -376,8 +229,8 @@
       "url": "https://www.warcraftlogs.com/reports/hPqCcQAvkNnrTjm3",
       "title": "VS / DR / MQD",
       "zone": "VS / DR / MQD",
-      "startTime": 1783359710084,
-      "endTime": 1783370298266,
+      "startTime": 1783360931219,
+      "endTime": 1783369680632,
       "duration": "2h 25m",
       "difficulty": "Mythisch",
       "kills": 2,
@@ -396,32 +249,12 @@
       "url": "https://www.warcraftlogs.com/reports/mpALxydNRMW31tJ4",
       "title": "Sporefall",
       "zone": "Sporefall",
-      "startTime": 1783014423871,
-      "endTime": 1783023806425,
+      "startTime": 1783015264627,
+      "endTime": 1783023592433,
       "duration": "2h 18m",
       "difficulty": "Mythisch",
       "kills": 2,
-      "wipes": 19,
-      "killedBosses": [
-        "Chimaerus, the Undreamt God",
-        "Imperator Averzian"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "6bpHV3kMjdT4NGar",
-      "url": "https://www.warcraftlogs.com/reports/6bpHV3kMjdT4NGar",
-      "title": "Sporefall",
-      "zone": "Sporefall",
-      "startTime": 1783013682492,
-      "endTime": 1783023801398,
-      "duration": "2h 18m",
-      "difficulty": "Mythisch",
-      "kills": 2,
-      "wipes": 19,
+      "wipes": 38,
       "killedBosses": [
         "Chimaerus, the Undreamt God",
         "Imperator Averzian"
@@ -436,29 +269,12 @@
       "url": "https://www.warcraftlogs.com/reports/6tqC2vTYcwVnRXkg",
       "title": "Gildenraid",
       "zone": "Sporefall",
-      "startTime": 1782754629259,
-      "endTime": 1782763708681,
+      "startTime": 1782756110531,
+      "endTime": 1782763653258,
       "duration": "2h 5m",
       "difficulty": "Mythisch",
       "kills": 0,
-      "wipes": 21,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
-    },
-    {
-      "code": "BLNzJYw6Q9PpCDgM",
-      "url": "https://www.warcraftlogs.com/reports/BLNzJYw6Q9PpCDgM",
-      "title": "Sporefall",
-      "zone": "Sporefall",
-      "startTime": 1782754267362,
-      "endTime": 1782763692561,
-      "duration": "2h 5m",
-      "difficulty": "Mythisch",
-      "kills": 0,
-      "wipes": 21,
+      "wipes": 42,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -470,8 +286,8 @@
       "url": "https://www.warcraftlogs.com/reports/dzZkcNwrVYgHG3mA",
       "title": "Sporefall",
       "zone": "Sporefall",
-      "startTime": 1782668334548,
-      "endTime": 1782675728674,
+      "startTime": 1782669727998,
+      "endTime": 1782675587711,
       "duration": "1h 37m",
       "difficulty": "Mythisch",
       "kills": 0,
@@ -487,8 +303,8 @@
       "url": "https://www.warcraftlogs.com/reports/vL62VRb8xDzaXgw9",
       "title": "Mythic+ Season 1",
       "zone": "Mythic+ Season 1",
-      "startTime": 1782120694859,
-      "endTime": 1782154911472,
+      "startTime": 1782128213835,
+      "endTime": 1782154687032,
       "duration": "7h 21m",
       "difficulty": "Mythisch",
       "kills": 1,
@@ -502,5 +318,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-24T20:29:11.575Z"
+  "updatedAt": "2026-08-24T20:37:30.210Z"
 }
