@@ -1,4 +1,4 @@
-/* Warcraft Logs — Alle echten Raidabende & exakte Kills/Wipes */
+/* Warcraft Logs — Alle echten Raidabende, dedupliziert & Top-2-DPS/HPS-Parses */
 import { req, ok, log } from "./util.mjs";
 
 const BASE_OAUTH = "https://www.warcraftlogs.com/oauth/token";
@@ -19,7 +19,7 @@ async function token(clientId, clientSecret) {
 
 export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25 }) {
   const tok = await token(clientId, clientSecret);
-  
+
   // Alle Berichte der Gilde abfragen
   const q = `query {
     reportData {
@@ -50,57 +50,71 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   });
 
   const rawReports = res.data?.reportData?.reports?.data ?? [];
-  const resultReports = [];
 
-  for (const r of rawReports) {
-    const fights = r.fights ?? [];
-    
-    // Nur echte Raid-Pulls werten (Normal, Heroisch, Mythisch) — schließt M+ Dungeons aus
-    const raidFights = fights.filter(f => [3, 4, 5].includes(f.difficulty));
-    if (!raidFights.length) continue;
+  // Nur Reports mit echten Raid-Pulls werten (Normal/Heroisch/Mythisch) —
+  // schliesst M+ Dungeons aus. fight.startTime/endTime sind bei WCL relativ
+  // zum jeweiligen Report, deshalb hier auf absolute Zeitstempel umrechnen —
+  // sonst sind sie beim Zusammenfuehren mehrerer Reports (siehe unten) nicht
+  // miteinander vergleichbar.
+  const withRaidFights = rawReports
+    .map(r => ({
+      ...r,
+      raidFights: (r.fights ?? [])
+        .filter(f => [3, 4, 5].includes(f.difficulty))
+        .map(f => ({ ...f, absStart: r.startTime + f.startTime, absEnd: r.startTime + f.endTime }))
+    }))
+    .filter(r => r.raidFights.length > 0);
 
-    const kills = raidFights.filter(f => f.kill);
-    const wipes = raidFights.filter(f => !f.kill);
+  // Zeitfenster-Clustering (9h): mehrere WCL-Reports vom selben Raidabend
+  // (z.B. nach einem Disconnect/Neustart des Logs) zu einem Eintrag zusammenfassen,
+  // statt denselben Abend mehrfach anzuzeigen.
+  const sorted = [...withRaidFights].sort((a, b) => b.startTime - a.startTime);
+  const clusters = [];
+  for (const r of sorted) {
+    const match = clusters.find(c => Math.abs(c.startTime - r.startTime) < 9 * 3600 * 1000);
+    if (match) match.reports.push(r);
+    else clusters.push({ startTime: r.startTime, reports: [r] });
+  }
+
+  const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
+
+  const resultReports = clusters.map(c => {
+    const allFights = c.reports.flatMap(r => r.raidFights);
+    const kills = allFights.filter(f => f.kill);
+    const wipes = allFights.filter(f => !f.kill);
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
 
-    // Exakte Dauer von erstem bis letztem Pull berechnen
-    let durMs = (r.endTime || 0) - (r.startTime || 0);
-    if (raidFights.length > 1) {
-      const firstPull = Math.min(...raidFights.map(f => f.startTime));
-      const lastPull = Math.max(...raidFights.map(f => f.endTime));
-      if (lastPull > firstPull) {
-        durMs = lastPull - firstPull;
-      }
-    }
+    // Repraesentativer Report der Nacht = der mit den meisten echten Kills
+    // (i.d.R. der vollstaendige Log, nicht ein abgebrochenes Fragment).
+    const master = c.reports.reduce((best, cur) =>
+      cur.raidFights.filter(f => f.kill).length > best.raidFights.filter(f => f.kill).length ? cur : best
+    , c.reports[0]);
 
+    const firstPull = Math.min(...allFights.map(f => f.absStart));
+    const lastPull = Math.max(...allFights.map(f => f.absEnd));
+    const durMs = Math.max(0, lastPull - firstPull);
     const hours = Math.floor(durMs / 3600000);
     const mins = Math.floor((durMs % 3600000) / 60000);
-    const durStr = `${hours > 0 ? hours + 'h ' : ''}${mins}m`;
 
-    const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
-    const maxDiff = Math.max(...raidFights.map(f => f.difficulty || 3));
-    const diff = diffMap[maxDiff] || "Normal";
+    const maxDiff = Math.max(...allFights.map(f => f.difficulty || 3));
 
-    resultReports.push({
-      code: r.code,
-      url: `https://www.warcraftlogs.com/reports/${r.code}`,
-      title: r.title || r.zone?.name || "Der Giftige Abgrund",
-      zone: r.zone?.name || "Der Giftige Abgrund",
-      startTime: r.startTime,
-      endTime: r.endTime,
-      duration: durStr,
-      difficulty: diff,
-      kills: kills.length,
+    return {
+      code: master.code,
+      url: `https://www.warcraftlogs.com/reports/${master.code}`,
+      title: master.title || master.zone?.name || "Der Giftige Abgrund",
+      zone: master.zone?.name || "Der Giftige Abgrund",
+      startTime: firstPull,
+      endTime: lastPull,
+      duration: `${hours > 0 ? hours + 'h ' : ''}${mins}m`,
+      difficulty: diffMap[maxDiff] || "Normal",
+      kills: uniqueKilled.length,
       wipes: wipes.length,
       killedBosses: uniqueKilled,
       vips: { dps: [], hps: [] }
-    });
-  }
+    };
+  }).sort((a, b) => b.startTime - a.startTime);
 
-  // Neueste Raids zuerst sortieren
-  resultReports.sort((a, b) => b.startTime - a.startTime);
-
-  // VIP-Parses für den aktuellsten Raidabend direkt aus den Kills holen
+  // VIP-Parses für den aktuellsten (zusammengefuehrten) Raidabend
   if (resultReports.length > 0) {
     const latest = resultReports[0];
 
@@ -196,6 +210,6 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     }
   }
 
-  ok(`Warcraft Logs: ${resultReports.length} echte Raidabende geladen`);
+  ok(`Warcraft Logs: ${resultReports.length} Raidabende geladen (dedupliziert)`);
   return { reports: resultReports, updatedAt: new Date().toISOString() };
 }
