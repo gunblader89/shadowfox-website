@@ -659,6 +659,13 @@
       "classId": 12
     },
     {
+      "name": "Raiox",
+      "realm": "thrall",
+      "rank": 3,
+      "level": 90,
+      "classId": 11
+    },
+    {
       "name": "Corvisstab",
       "realm": "blackmoore",
       "rank": 3,
@@ -974,14 +981,14 @@
       "classId": 9
     },
     {
-      "name": "Raiox",
-      "realm": "thrall",
-      "rank": 3,
+      "name": "Rippchen",
+      "realm": "nathrezim",
+      "rank": 6,
       "level": 90,
-      "classId": 11
+      "classId": 6
     }
   ],
-  "updatedAt": "2026-08-24T12:03:45.784Z",
+  "updatedAt": "2026-08-24T19:17:37.600Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",

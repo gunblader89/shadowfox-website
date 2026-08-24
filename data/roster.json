@@ -30,8 +30,8 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 303,
-      "mplus": 2357,
+      "ilvl": 304,
+      "mplus": 2441,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -139,7 +139,7 @@
       "spec": "Discipline",
       "role": "HEALING",
       "ilvl": 303,
-      "mplus": 2492,
+      "mplus": 2579,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -162,8 +162,8 @@
       "class": "Shaman",
       "spec": "Elemental",
       "role": "DPS",
-      "ilvl": 304,
-      "mplus": 2397,
+      "ilvl": 305,
+      "mplus": 2470,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
@@ -235,7 +235,7 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 297,
-      "mplus": 2124,
+      "mplus": 2155,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -246,7 +246,7 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 297,
+      "ilvl": 298,
       "mplus": 1753,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -271,7 +271,7 @@
       "spec": "Affliction",
       "role": "DPS",
       "ilvl": 308,
-      "mplus": 2954,
+      "mplus": 2969,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-24T12:03:43.996Z"
+  "updatedAt": "2026-08-24T19:17:36.132Z"
 }

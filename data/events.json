@@ -11,13 +11,22 @@
       "leader": "Merccrixxus/Passi",
       "channel": "💥〢raidtag-montag",
       "counts": {
-        "primary": 25,
+        "primary": 26,
         "tentative": 0,
         "bench": 0,
         "absence": 3,
-        "late": 0
+        "late": 1
       },
       "signups": [
+        {
+          "name": "Sandino",
+          "userId": "818515659335270400",
+          "cls": "Ranged",
+          "spec": "Shadow",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787584360
+        },
         {
           "name": "Käfer/Moonlord",
           "userId": "272078834063376403",
@@ -64,15 +73,6 @@
           "signedUpAt": 1787481251
         },
         {
-          "name": "Sandino",
-          "userId": "818515659335270400",
-          "cls": "Absence",
-          "spec": "Absence",
-          "role": "Absence",
-          "status": "primary",
-          "signedUpAt": 1787469114
-        },
-        {
           "name": "Askái/Phil",
           "userId": "935281742963675156",
           "cls": "Ranged",
@@ -107,6 +107,15 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1786262551
+        },
+        {
+          "name": "Seitenleiste/Tom",
+          "userId": "513193794892464128",
+          "cls": "Ranged",
+          "spec": "Fire",
+          "role": "Dps",
+          "status": "primary",
+          "signedUpAt": 1787582189
         },
         {
           "name": "𝕱𝖗𝖚𝖈𝖍𝖙𝖟𝖜𝖊𝖗𝖌│ᴬˡᵉˣᵃⁿᵈʳᵃ",
@@ -199,15 +208,6 @@
           "signedUpAt": 1786197050
         },
         {
-          "name": "Thessaly/Basti",
-          "userId": "238675341747421185",
-          "cls": "Melee",
-          "spec": "Havoc",
-          "role": "Dps",
-          "status": "primary",
-          "signedUpAt": 1786642469
-        },
-        {
           "name": "Kite",
           "userId": "218391269917982720",
           "cls": "Tank",
@@ -253,6 +253,15 @@
           "signedUpAt": 1786216244
         },
         {
+          "name": "Thessaly/Basti",
+          "userId": "238675341747421185",
+          "cls": "Late",
+          "spec": "Havoc",
+          "role": "Late",
+          "status": "primary",
+          "signedUpAt": 1787588377
+        },
+        {
           "name": "Narrwen/Alex",
           "userId": "518857676331941890",
           "cls": "Ranged",
@@ -269,9 +278,18 @@
           "role": "Dps",
           "status": "primary",
           "signedUpAt": 1787474142
+        },
+        {
+          "name": "Vay|Patrick",
+          "userId": "206442453769781249",
+          "cls": "Absence",
+          "spec": "Absence",
+          "role": "Absence",
+          "status": "primary",
+          "signedUpAt": 1787589929
         }
       ]
     }
   ],
-  "updatedAt": "2026-08-24T12:04:01.605Z"
+  "updatedAt": "2026-08-24T19:17:52.993Z"
 }
