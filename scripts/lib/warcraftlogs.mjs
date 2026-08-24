@@ -71,6 +71,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   // Zeitfenster-Clustering (siehe unten) faelschlich mit einem echten
   // Raidabend verschmolzen werden.
   const raidZoneReports = rawReports.filter(r => r.zone?.name === zoneName);
+  log(`WCL: ${rawReports.length} Reports insgesamt, ${raidZoneReports.length} in Zone "${zoneName}", ${rosterSet.size} bekannte Kader-Namen`);
 
   // Besetzungs- & Uploader-Check: selbst bei passender Zone und echten
   // Raidbossen kann ein Report ein Pug/Alt-Run sein, den jemand Fremdes
@@ -80,11 +81,13 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   const rosterReports = rosterSet.size > 0
     ? raidZoneReports.filter(r => {
         const ownerName = r.owner?.name;
-        if (!ownerName || !rosterSet.has(normalizeName(ownerName))) return false;
         const actors = r.masterData?.actors ?? [];
-        if (!actors.length) return false;
         const matches = actors.filter(a => rosterSet.has(normalizeName(a.name))).length;
-        return matches / actors.length >= 0.4;
+        const ratio = actors.length ? (matches / actors.length) : 0;
+        const ownerOk = Boolean(ownerName) && rosterSet.has(normalizeName(ownerName));
+        const accepted = ownerOk && actors.length > 0 && ratio >= 0.4;
+        log(`  Report ${r.code}: owner="${ownerName ?? "?"}" (bekannt: ${ownerOk}), ${matches}/${actors.length} Teilnehmer bekannt (${Math.round(ratio*100)}%) -> ${accepted ? "gewertet" : "ausgeschlossen"}`);
+        return accepted;
       })
     : raidZoneReports;
 
