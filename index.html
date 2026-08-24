@@ -940,7 +940,7 @@ start(){
   </div></section>
   <div class="start-grid fade">
     ${logCard(REPORTS[0])}
-    ${fallbackEventBlock()}
+    <div id="rhEventHome"><div class="card"><div class="muted" style="font-size:12.5px">Lade Termine…</div></div></div>
   </div>
   <div class="tiles fade" style="margin-bottom:34px">
     <a class="tile" href="#/dungeons"><span class="ic">🗝️</span><b>M+ Guides (S2)</b><span>Alle 8 Dungeons &amp; Trash</span></a>
@@ -1449,6 +1449,31 @@ function renderTermine(events, placeholders){
   el.innerHTML = events.map(eventCardHtml).join("") + placeholders.map(placeholderCardHtml).join("");
 }
 
+/* Homepage-Teaser — zeigt nur den naechsten anstehenden Termin (live), statt
+   wie zuvor immer den zuletzt zwischengespeicherten (der nach einem Raidabend
+   dann tagelang faelschlich "aktuell" wirkte). Keine Polling-Schleife, da man
+   hier nicht laenger verweilt wie auf der Termine-Seite. */
+async function loadHomeEvent(){
+  const el = document.getElementById("rhEventHome");
+  if(!el) return;
+  try{
+    const r = await fetch("/api/events", {credentials:"same-origin"});
+    if(!r.ok) throw new Error("http " + r.status);
+    const d = await r.json();
+    const events = d.events || [], placeholders = d.placeholders || [];
+    if(events.length){
+      el.innerHTML = eventCardHtml(events[0]);
+      loadMySignup(events[0].id);
+    } else if(placeholders.length){
+      el.innerHTML = placeholderCardHtml(placeholders[0]);
+    } else {
+      el.innerHTML = `<div class="card"><div class="eyebrow">Anmeldung</div><div style="font-size:16px;font-weight:600">Keine anstehenden Termine</div></div>`;
+    }
+  }catch{
+    el.innerHTML = fallbackEventBlock();
+  }
+}
+
 function eventCardHtml(e){
   const cnt = (c,l,n) => `<span class="cnt ${c}">${l} <b>${n}</b></span>`;
   return `<div class="card">
@@ -1795,7 +1820,8 @@ function route(){
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
     document.querySelectorAll(".kk").forEach(e => e.textContent = KEY);
     if(k === "tracker") bindTrk();
-    if(k === "termine"){ loadTermine(); startTerminePolling(); } else { stopTerminePolling(); }
+    if(k === "termine"){ loadTermine(); startTerminePolling(); }
+    else { stopTerminePolling(); if(k === "start") loadHomeEvent(); }
     if(window.$WowheadPower) window.$WowheadPower.refreshLinks();
   } catch (e) {
     console.error("Route error:", e);
