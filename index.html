@@ -655,6 +655,29 @@ const CMAP = {Druide:"#FF7C0A",Schamane:"#0070DD",Krieger:"#C69B6D",Jäger:"#AAD
   Priester:"#FFFFFF",Magier:"#3FC7EB",Todesritter:"#C41E3A",Mönch:"#00FF98",
   Hexenmeister:"#8788EE",Paladin:"#F48CBA",Rufer:"#33937F",Dämonenjäger:"#A330C9",Schurke:"#FFF468"};
 
+/* Raid-Helper unterscheidet Specs mit identischem Namen aus zwei Klassen ueber
+   ein "1"-Suffix (z.B. Restoration = Druide, Restoration1 = Schamane — gegen
+   echte Charakterdaten verifiziert). cleanClass() oben passt hierfuer nicht,
+   das ist eine andere Vokabular-Konvention (wowaudit-Rollen, keine Raid-Helper-
+   Spec-Strings). Eigene, direkte Zuordnung: */
+const RH_SPEC_CLASS = {
+  Protection:"Krieger", Blood:"Todesritter", Vengeance:"Dämonenjäger",
+  Brewmaster:"Mönch", Guardian:"Druide", Protection1:"Paladin",
+  Arms:"Krieger", Fury:"Krieger", Assassination:"Schurke", Outlaw:"Schurke",
+  Subtlety:"Schurke", Frost1:"Todesritter", Unholy:"Todesritter", Havoc:"Dämonenjäger",
+  Windwalker:"Mönch", Feral:"Druide", Survival:"Jäger", Retribution:"Paladin",
+  Enhancement:"Schamane",
+  Arcane:"Magier", Fire:"Magier", Frost:"Magier", Destruction:"Hexenmeister",
+  Demonology:"Hexenmeister", Affliction:"Hexenmeister", Beastmastery:"Jäger",
+  Marksmanship:"Jäger", Balance:"Druide", Shadow:"Priester", Elemental:"Schamane",
+  Devastation:"Rufer", Augmentation:"Rufer", Devourer:"Dämonenjäger",
+  Discipline:"Priester", Holy:"Priester", Mistweaver:"Mönch", Restoration:"Druide",
+  Holy1:"Paladin", Restoration1:"Schamane", Preservation:"Rufer"
+};
+const rhSpecColor = spec => CMAP[RH_SPEC_CLASS[spec]] || "#888";
+/* Fuer die Anzeige den Disambiguierungs-Suffix wieder entfernen. */
+const rhSpecLabel = spec => String(spec||"").replace(/1$/, "");
+
 function normName(s){
   if(!s) return "";
   return String(s).split("/")[0].split("|")[0].split("-")[0].split("(")[0].trim().toLowerCase()
@@ -827,8 +850,8 @@ function fallbackEventBlock(){
         const g=grp(r);
         return `<div class="sig-col">
           <h4><span style="width:8px;height:8px;border-radius:2px;background:${ROLLEN[r]};display:inline-block"></span>${r} <span>${g.length}</span></h4>
-          ${g.map(p=>`<div class="sig-p"><span class="d" style="background:${col(p.cls)}"></span>
-            <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
+          ${g.map(p=>`<div class="sig-p"><span class="d" style="background:${rhSpecColor(p.spec)}"></span>
+            <span class="n">${esc(p.name)}</span><span class="s">${esc(rhSpecLabel(p.spec)||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
         </div>`;}).join("")}
     </div>
   </div>`;
@@ -1498,8 +1521,8 @@ function eventCardHtml(e){
         const label = RH_ROLE_LABEL[r.name] || r.name;
         return `<div class="sig-col">
           <h4><span style="width:8px;height:8px;border-radius:2px;background:${ROLLEN[label]||'#888'};display:inline-block"></span>${label} <span>${r.signups.length}</span></h4>
-          ${r.signups.map(p=>`<div class="sig-p"><span class="d" style="background:${col(cleanClass('', p.specName))}"></span>
-            <span class="n">${esc(p.name)}</span><span class="s">${esc(p.specName||'')}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
+          ${r.signups.map(p=>`<div class="sig-p"><span class="d" style="background:${rhSpecColor(p.specName)}"></span>
+            <span class="n">${esc(p.name)}</span><span class="s">${esc(rhSpecLabel(p.specName))}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
         </div>`;}).join("")}
     </div>
     <div id="myrh-${esc(e.id)}" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line)">
@@ -1545,8 +1568,8 @@ function renderRH(eventId){
     const btn = (st,label) => `<button class="btn" style="${s.status===st?'background:var(--amber);color:#1a1305':'background:var(--panel2);color:var(--tx2);border-color:var(--line2)'}" onclick="rhSetStatus('${eventId}','${st}')">${label}</button>`;
     const statusLabel = { primary:"Zugesagt", tentative:"Unsicher", absence:"Abgemeldet", bench:"Bank", late:"Spät" }[s.status] || s.status;
     const roleTxt = s.status === "primary"
-      ? `Du bist angemeldet als <b style="color:var(--tx)">${esc(s.specName)}</b> (${esc(s.className)})`
-      : `Status: <b style="color:var(--tx)">${esc(statusLabel)}</b>${s.specName ? ` · zuletzt ${esc(s.specName)}` : ''}`;
+      ? `Du bist angemeldet als <b style="color:var(--tx)">${esc(rhSpecLabel(s.specName))}</b> (${esc(s.className)})`
+      : `Status: <b style="color:var(--tx)">${esc(statusLabel)}</b>${s.specName ? ` · zuletzt ${esc(rhSpecLabel(s.specName))}` : ''}`;
     el.innerHTML = `
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
         <div style="font-size:12.5px" class="soft">${roleTxt}</div>
