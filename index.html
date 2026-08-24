@@ -798,7 +798,10 @@ function logCard(r){
   </div>`;
 }
 
-function signupBlock(){
+/* Fallback, falls /api/events (Live-Daten von Raid-Helper) mal nicht
+   erreichbar ist — zeigt den zuletzt zwischengespeicherten einzelnen
+   Termin aus data/events.json statt gar nichts. */
+function fallbackEventBlock(){
   if(!EVENT.live){
     return `<div class="card"><div class="eyebrow">Anmeldung</div><div style="font-size:16px;font-weight:600">Keine aktiven Termine</div></div>`;
   }
@@ -808,7 +811,7 @@ function signupBlock(){
   return `<div class="card">
     <div class="sig-head">
       <div>
-        <div class="eyebrow">Anmeldung <span class="pill p-green"><span class="dot"></span>Discord Live</span></div>
+        <div class="eyebrow">Anmeldung <span class="pill p-gray"><span class="dot"></span>Zwischengespeichert</span></div>
         <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(EVENT.title)}</div>
         <div class="soft" style="font-size:12.5px">${fmtDateShort(EVENT.date)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
       </div>
@@ -827,7 +830,6 @@ function signupBlock(){
             <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
         </div>`;}).join("")}
     </div>
-    ${EVENT.id ? `<div id="myrh" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line)"></div>` : ''}
   </div>`;
 }
 
@@ -1141,7 +1143,9 @@ dungeons(){
 termine(){
   return `
   <div class="page-h fade"><h1>Termine &amp; Anmeldung</h1><p>Wir raiden ${esc(G.raidDays)} von ${esc(G.raidTime)}.</p></div>
-  <div class="fade" style="margin-bottom:24px">${signupBlock()}</div>`;
+  <div class="fade" id="rhEvents" style="margin-bottom:24px;display:flex;flex-direction:column;gap:16px">
+    <div class="card"><div class="muted" style="font-size:12.5px">Lade Termine…</div></div>
+  </div>`;
 },
 
 tracker(){
@@ -1378,8 +1382,12 @@ function bindTrk(){
 /* Eigene Anmeldung über die Website — spricht mit den Cloudflare-Pages-Functions
    unter /auth und /api, die wiederum die Raid-Helper-API bedienen. Fehlt das
    Backend (noch nicht eingerichtet) oder ist man ausgeloggt, bleibt der Block
-   einfach leer statt einen Fehler zu zeigen. */
-const RH = { eventId:null, loggedIn:false, name:null, signup:null, classes:[] };
+   einfach leer statt einen Fehler zu zeigen.
+   RH ist pro Termin (eventId) gehalten, weil jetzt mehrere Termine gleichzeitig
+   angezeigt werden koennen. */
+let RH = {};
+let rhPollTimer = null;
+const RH_ROLE_LABEL = { Tank:"Tank", Melee:"Melee", Ranged:"Ranged", Healer:"Heal" };
 
 /* Sitzungsstatus fuer den Header-Button — laeuft auf jeder Seite, nicht nur
    auf der Termine-Seite, damit der Login gut auffindbar ist. */
@@ -1402,36 +1410,110 @@ async function checkGlobalLogin(){
   }
 }
 
-async function bindSignupWidget(){
-  const el = document.getElementById("myrh");
-  if(!el || !EVENT.id) return;
-  RH.eventId = EVENT.id;
-  el.innerHTML = `<div class="muted" style="font-size:12.5px">Lade Anmeldestatus…</div>`;
+/* Laedt alle anstehenden Termine live von /api/events (Cloudflare Function,
+   fragt Raid-Helper direkt ab — keine 2x-taeglich gecachten Daten mehr).
+   Wird beim Betreten der Termine-Seite aufgerufen und danach alle 45s erneut,
+   damit Statusaenderungen egal ob von der Website oder aus Discord sichtbar
+   sind, ohne dass man die Seite neu laden muss. */
+async function loadTermine(){
+  const el = document.getElementById("rhEvents");
+  if(!el) return;
   try{
-    const r = await fetch(`/api/signup?eventId=${encodeURIComponent(EVENT.id)}`, {credentials:"same-origin"});
-    if(r.status === 401){ RH.loggedIn = false; renderRH(); return; }
+    const r = await fetch("/api/events", {credentials:"same-origin"});
+    if(!r.ok) throw new Error("http " + r.status);
+    const d = await r.json();
+    renderTermine(d.events || [], d.placeholders || []);
+    for(const e of (d.events || [])) loadMySignup(e.id);
+  }catch{
+    // Live-Endpunkt nicht erreichbar (z.B. lokal ohne Cloudflare Functions) —
+    // zeig wenigstens den zuletzt zwischengespeicherten einzelnen Termin.
+    el.innerHTML = `<div class="fade">${fallbackEventBlock()}</div>`;
+  }
+}
+
+function startTerminePolling(){
+  stopTerminePolling();
+  rhPollTimer = setInterval(loadTermine, 45000);
+}
+function stopTerminePolling(){
+  if(rhPollTimer){ clearInterval(rhPollTimer); rhPollTimer = null; }
+}
+
+function renderTermine(events, placeholders){
+  const el = document.getElementById("rhEvents");
+  if(!el) return;
+  if(!events.length && !placeholders.length){
+    el.innerHTML = `<div class="card"><div class="eyebrow">Anmeldung</div><div style="font-size:16px;font-weight:600">Keine anstehenden Termine</div></div>`;
+    return;
+  }
+  el.innerHTML = events.map(eventCardHtml).join("") + placeholders.map(placeholderCardHtml).join("");
+}
+
+function eventCardHtml(e){
+  const cnt = (c,l,n) => `<span class="cnt ${c}">${l} <b>${n}</b></span>`;
+  return `<div class="card">
+    <div class="sig-head">
+      <div>
+        <div class="eyebrow">Anmeldung <span class="pill p-green"><span class="dot"></span>Discord Live</span></div>
+        <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(e.title)}</div>
+        <div class="soft" style="font-size:12.5px">${fmtDateShort(e.date)} · ${esc(e.time)} Uhr${e.leader ? ` · Lead ${esc(e.leader)}` : ''}</div>
+      </div>
+      <div class="sig-counts">
+        ${cnt("c-yes","✓ Zugesagt",e.counts.primary)}
+        ${cnt("c-tent","? Unsicher",e.counts.tentative)}
+        ${cnt("c-no","✕ Abgemeldet",e.counts.absence)}
+      </div>
+    </div>
+    <div class="sig-grid">
+      ${e.roles.map(r=>{
+        const label = RH_ROLE_LABEL[r.name] || r.name;
+        return `<div class="sig-col">
+          <h4><span style="width:8px;height:8px;border-radius:2px;background:${ROLLEN[label]||'#888'};display:inline-block"></span>${label} <span>${r.signups.length}</span></h4>
+          ${r.signups.map(p=>`<div class="sig-p"><span class="d" style="background:${col(cleanClass('', p.specName))}"></span>
+            <span class="n">${esc(p.name)}</span><span class="s">${esc(p.specName||'')}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
+        </div>`;}).join("")}
+    </div>
+    <div id="myrh-${esc(e.id)}" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line)">
+      <div class="muted" style="font-size:12.5px">Lade Anmeldestatus…</div>
+    </div>
+  </div>`;
+}
+
+function placeholderCardHtml(t){
+  return `<div class="card">
+    <div class="eyebrow">Geplant · noch nicht in Discord angelegt</div>
+    <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(t.instanz||'')}</div>
+    <div class="soft" style="font-size:12.5px">${esc(t.tag||'')} ${esc(t.datum||'')} · ${esc(t.zeit||'')} Uhr</div>
+    ${t.fokus ? `<div style="font-size:12.5px;margin-top:8px">${esc(t.fokus)}</div>` : ''}
+  </div>`;
+}
+
+async function loadMySignup(eventId){
+  const el = document.getElementById(`myrh-${eventId}`);
+  if(!el) return;
+  try{
+    const r = await fetch(`/api/signup?eventId=${encodeURIComponent(eventId)}`, {credentials:"same-origin"});
+    if(r.status === 401){ RH[eventId] = { loggedIn:false }; renderRH(eventId); return; }
     const d = await r.json();
     if(d.error){ el.innerHTML = ""; return; }
-    RH.loggedIn = true;
-    RH.name = d.name;
-    RH.signup = d.signup;
-    RH.classes = d.classes || [];
-    renderRH();
+    RH[eventId] = { loggedIn:true, name:d.name, signup:d.signup, classes:d.classes||[] };
+    renderRH(eventId);
   }catch{
     el.innerHTML = "";
   }
 }
 
-function renderRH(){
-  const el = document.getElementById("myrh");
-  if(!el) return;
-  if(!RH.loggedIn){
+function renderRH(eventId){
+  const el = document.getElementById(`myrh-${eventId}`);
+  const rh = RH[eventId];
+  if(!el || !rh) return;
+  if(!rh.loggedIn){
     el.innerHTML = `<a class="btn btn-disc" href="/auth/login">Mit Discord anmelden, um dich hier einzutragen</a>`;
     return;
   }
-  if(RH.signup){
-    const s = RH.signup;
-    const btn = (st,label) => `<button class="btn" style="${s.status===st?'background:var(--amber);color:#1a1305':'background:var(--panel2);color:var(--tx2);border-color:var(--line2)'}" onclick="rhSetStatus('${st}')">${label}</button>`;
+  if(rh.signup){
+    const s = rh.signup;
+    const btn = (st,label) => `<button class="btn" style="${s.status===st?'background:var(--amber);color:#1a1305':'background:var(--panel2);color:var(--tx2);border-color:var(--line2)'}" onclick="rhSetStatus('${eventId}','${st}')">${label}</button>`;
     const statusLabel = { primary:"Zugesagt", tentative:"Unsicher", absence:"Abgemeldet", bench:"Bank", late:"Spät" }[s.status] || s.status;
     const roleTxt = s.status === "primary"
       ? `Du bist angemeldet als <b style="color:var(--tx)">${esc(s.specName)}</b> (${esc(s.className)})`
@@ -1445,66 +1527,68 @@ function renderRH(){
           ${btn("absence","✕ Abgemeldet")}
         </div>
       </div>
-      <div style="margin-top:8px"><a href="#" onclick="rhShowPicker();return false" style="font-size:11.5px" class="soft">Klasse/Spezialisierung ändern</a></div>
-      <div id="rhErr" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
+      <div style="margin-top:8px"><a href="#" onclick="rhShowPicker('${eventId}');return false" style="font-size:11.5px" class="soft">Klasse/Spezialisierung ändern</a></div>
+      <div id="rhErr-${eventId}" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
     return;
   }
-  el.innerHTML = rhPickerHtml();
+  el.innerHTML = rhPickerHtml(eventId);
 }
 
-function rhSpecOptions(cls){
-  return (RH.classes.find(c=>c.name===cls)?.specs||[]).map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");
+function rhSpecOptions(eventId, cls){
+  return (RH[eventId].classes.find(c=>c.name===cls)?.specs||[]).map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");
 }
 
-function rhPickerHtml(){
-  if(!RH.classes.length) return `<div class="muted" style="font-size:12.5px">Momentan keine Anmeldung möglich.</div>`;
+function rhPickerHtml(eventId){
+  const rh = RH[eventId];
+  if(!rh.classes.length) return `<div class="muted" style="font-size:12.5px">Momentan keine Anmeldung möglich.</div>`;
   const selStyle = "background:var(--panel2);color:var(--tx);border:1px solid var(--line2);border-radius:8px;height:34px;padding:0 8px";
   return `
     <div style="font-size:12.5px" class="soft">Noch nicht angemeldet — Klasse wählen:</div>
     <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;align-items:center">
-      <select id="rhCls" style="${selStyle}" onchange="document.getElementById('rhSpec').innerHTML = rhSpecOptions(this.value)">
-        ${RH.classes.map(c=>`<option value="${esc(c.name)}">${esc(c.name)}</option>`).join("")}
+      <select id="rhCls-${eventId}" style="${selStyle}" onchange="document.getElementById('rhSpec-${eventId}').innerHTML = rhSpecOptions('${eventId}', this.value)">
+        ${rh.classes.map(c=>`<option value="${esc(c.name)}">${esc(c.name)}</option>`).join("")}
       </select>
-      <select id="rhSpec" style="${selStyle}">${rhSpecOptions(RH.classes[0].name)}</select>
-      <button class="btn btn-p" onclick="rhSubmitNew()">Anmelden</button>
+      <select id="rhSpec-${eventId}" style="${selStyle}">${rhSpecOptions(eventId, rh.classes[0].name)}</select>
+      <button class="btn btn-p" onclick="rhSubmitNew('${eventId}')">Anmelden</button>
     </div>
-    <div id="rhErr" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
+    <div id="rhErr-${eventId}" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
 }
 
-function rhShowPicker(){ document.getElementById("myrh").innerHTML = rhPickerHtml(); }
+function rhShowPicker(eventId){ document.getElementById(`myrh-${eventId}`).innerHTML = rhPickerHtml(eventId); }
 
 /* Raid-Helper kennt kein eigenes Status-Feld — "Zugesagt/Unsicher/Abgemeldet"
    sind schlicht die Klassen Tank/Melee/Ranged/Healer vs. Tentative/Absence.
    Beim Zurückwechseln auf "Zugesagt" bleibt die ursprüngliche Rollen-Klasse
    nicht erhalten (nur specName) — wir leiten sie über das Klassen/Spec-
    Vokabular zurück her. */
-function rhFindClassForSpec(spec){
-  return RH.classes.find(c => c.specs.includes(spec)) || null;
+function rhFindClassForSpec(eventId, spec){
+  return RH[eventId].classes.find(c => c.specs.includes(spec)) || null;
 }
 
-async function rhSetStatus(kind){
-  if(!RH.signup) return;
+async function rhSetStatus(eventId, kind){
+  const rh = RH[eventId];
+  if(!rh || !rh.signup) return;
   if(kind === "primary"){
-    let cls = RH.signup.className;
-    if(RH.signup.status !== "primary"){
-      const found = RH.signup.specName ? rhFindClassForSpec(RH.signup.specName) : null;
-      if(!found){ rhShowPicker(); return; }
+    let cls = rh.signup.className;
+    if(rh.signup.status !== "primary"){
+      const found = rh.signup.specName ? rhFindClassForSpec(eventId, rh.signup.specName) : null;
+      if(!found){ rhShowPicker(eventId); return; }
       cls = found.name;
     }
-    await rhPost({ eventId: RH.eventId, className: cls, specName: RH.signup.specName });
+    await rhPost(eventId, { eventId, className: cls, specName: rh.signup.specName });
   } else {
-    await rhPost({ eventId: RH.eventId, className: kind === "tentative" ? "Tentative" : "Absence" });
+    await rhPost(eventId, { eventId, className: kind === "tentative" ? "Tentative" : "Absence" });
   }
 }
 
-async function rhSubmitNew(){
-  const cls = document.getElementById("rhCls").value;
-  const spec = document.getElementById("rhSpec").value;
-  await rhPost({ eventId: RH.eventId, className: cls, specName: spec });
+async function rhSubmitNew(eventId){
+  const cls = document.getElementById(`rhCls-${eventId}`).value;
+  const spec = document.getElementById(`rhSpec-${eventId}`).value;
+  await rhPost(eventId, { eventId, className: cls, specName: spec });
 }
 
-async function rhPost(payload){
-  const el = document.getElementById("myrh");
+async function rhPost(eventId, payload){
+  const el = document.getElementById(`myrh-${eventId}`);
   el.style.opacity = ".6";
   try{
     const r = await fetch("/api/signup", {
@@ -1515,15 +1599,16 @@ async function rhPost(payload){
     const d = await r.json();
     el.style.opacity = "";
     if(!r.ok){
-      const err = document.getElementById("rhErr");
+      const err = document.getElementById(`rhErr-${eventId}`);
       if(err) err.textContent = d.error || "Anmeldung fehlgeschlagen.";
       return;
     }
-    RH.signup = d.signup;
-    renderRH();
+    RH[eventId].signup = d.signup;
+    renderRH(eventId);
+    loadTermine();
   }catch{
     el.style.opacity = "";
-    const err = document.getElementById("rhErr");
+    const err = document.getElementById(`rhErr-${eventId}`);
     if(err) err.textContent = "Anmeldung fehlgeschlagen — bitte später erneut versuchen.";
   }
 }
@@ -1710,7 +1795,7 @@ function route(){
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
     document.querySelectorAll(".kk").forEach(e => e.textContent = KEY);
     if(k === "tracker") bindTrk();
-    if(k === "termine") bindSignupWidget();
+    if(k === "termine"){ loadTermine(); startTerminePolling(); } else { stopTerminePolling(); }
     if(window.$WowheadPower) window.$WowheadPower.refreshLinks();
   } catch (e) {
     console.error("Route error:", e);

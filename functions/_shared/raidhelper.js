@@ -69,3 +69,12 @@ export async function updateSignup({ eventId, signupId, apiKey, className, specN
     body: JSON.stringify(body)
   });
 }
+
+/** Alle vom Server geposteten Raid-Helper-Termine — zum Auto-Erkennen neuer
+    Events, ohne dass jemand die ID manuell in content/termine.json pflegen muss. */
+export async function listServerEvents({ serverId, apiKey }) {
+  const data = await req(`${API}/servers/${serverId}/events`, {
+    headers: { Authorization: apiKey }
+  });
+  return data.postedEvents || data.events || [];
+}
