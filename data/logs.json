@@ -1,34 +1,36 @@
 {
   "reports": [
     {
-      "code": "KbyxpZWhNFnr2wAM",
-      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
+      "code": "QJfZMDVC1kBzgxL7",
+      "url": "https://www.warcraftlogs.com/reports/QJfZMDVC1kBzgxL7",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1787248823341,
-      "endTime": 1787257925349,
-      "duration": "2h 31m",
+      "startTime": 1787594211527,
+      "endTime": 1787601867371,
+      "duration": "2h 7m",
       "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 34,
+      "kills": 3,
+      "wipes": 20,
       "killedBosses": [
-        "The Twin Fangs"
+        "The Coiled Altar",
+        "Ula'tek",
+        "Nymrissa Wavecaller"
       ],
       "vips": {
         "dps": [
           {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 81,
-            "boss": "The Twin Fangs"
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 97,
+            "boss": "The Coiled Altar"
           },
           {
-            "name": "Tiskarian",
-            "class": "Druid",
-            "spec": "Balance",
-            "parse": 76,
-            "boss": "The Twin Fangs"
+            "name": "Askái",
+            "class": "DemonHunter",
+            "spec": "Devourer",
+            "parse": 96,
+            "boss": "The Coiled Altar"
           }
         ],
         "hps": [
@@ -36,17 +38,36 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 54,
-            "boss": "The Twin Fangs"
+            "parse": 97,
+            "boss": "Ula'tek"
           },
           {
-            "name": "Doktorpöbel",
-            "class": "Priest",
-            "spec": "Discipline",
-            "parse": 32,
-            "boss": "The Twin Fangs"
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 88,
+            "boss": "Nymrissa Wavecaller"
           }
         ]
+      }
+    },
+    {
+      "code": "KbyxpZWhNFnr2wAM",
+      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1787248823341,
+      "endTime": 1787257926826,
+      "duration": "2h 31m",
+      "difficulty": "Normal",
+      "kills": 1,
+      "wipes": 53,
+      "killedBosses": [
+        "The Twin Fangs"
+      ],
+      "vips": {
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -72,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-24T21:24:32.510Z"
+  "updatedAt": "2026-08-24T21:37:40.138Z"
 }
