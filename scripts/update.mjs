@@ -127,7 +127,8 @@ if (env("WCL_CLIENT_ID") && env("WCL_CLIENT_SECRET")) {
       clientId: env("WCL_CLIENT_ID"),
       clientSecret: env("WCL_CLIENT_SECRET"),
       ...GUILD,
-      ...(zoneName ? { zoneName } : {})
+      ...(zoneName ? { zoneName } : {}),
+      rosterNames: charList.map(c => c.name)
     }));
   } catch (e) { errors++; fail(`Warcraft Logs: ${e.message}`); }
 }
