@@ -1410,9 +1410,13 @@ function renderRH(){
   if(RH.signup){
     const s = RH.signup;
     const btn = (st,label) => `<button class="btn" style="${s.status===st?'background:var(--amber);color:#1a1305':'background:var(--panel2);color:var(--tx2);border-color:var(--line2)'}" onclick="rhSetStatus('${st}')">${label}</button>`;
+    const statusLabel = { primary:"Zugesagt", tentative:"Unsicher", absence:"Abgemeldet", bench:"Bank", late:"Spät" }[s.status] || s.status;
+    const roleTxt = s.status === "primary"
+      ? `Du bist angemeldet als <b style="color:var(--tx)">${esc(s.specName)}</b> (${esc(s.className)})`
+      : `Status: <b style="color:var(--tx)">${esc(statusLabel)}</b>${s.specName ? ` · zuletzt ${esc(s.specName)}` : ''}`;
     el.innerHTML = `
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
-        <div style="font-size:12.5px" class="soft">Du bist angemeldet als <b style="color:var(--tx)">${esc(s.specName)}</b> (${esc(s.className)})</div>
+        <div style="font-size:12.5px" class="soft">${roleTxt}</div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
           ${btn("primary","✓ Zugesagt")}
           ${btn("tentative","? Unsicher")}
@@ -1447,15 +1451,34 @@ function rhPickerHtml(){
 
 function rhShowPicker(){ document.getElementById("myrh").innerHTML = rhPickerHtml(); }
 
-async function rhSetStatus(status){
+/* Raid-Helper kennt kein eigenes Status-Feld — "Zugesagt/Unsicher/Abgemeldet"
+   sind schlicht die Klassen Tank/Melee/Ranged/Healer vs. Tentative/Absence.
+   Beim Zurückwechseln auf "Zugesagt" bleibt die ursprüngliche Rollen-Klasse
+   nicht erhalten (nur specName) — wir leiten sie über das Klassen/Spec-
+   Vokabular zurück her. */
+function rhFindClassForSpec(spec){
+  return RH.classes.find(c => c.specs.includes(spec)) || null;
+}
+
+async function rhSetStatus(kind){
   if(!RH.signup) return;
-  await rhPost({ eventId: RH.eventId, className: RH.signup.className, specName: RH.signup.specName, status });
+  if(kind === "primary"){
+    let cls = RH.signup.className;
+    if(RH.signup.status !== "primary"){
+      const found = RH.signup.specName ? rhFindClassForSpec(RH.signup.specName) : null;
+      if(!found){ rhShowPicker(); return; }
+      cls = found.name;
+    }
+    await rhPost({ eventId: RH.eventId, className: cls, specName: RH.signup.specName });
+  } else {
+    await rhPost({ eventId: RH.eventId, className: kind === "tentative" ? "Tentative" : "Absence" });
+  }
 }
 
 async function rhSubmitNew(){
   const cls = document.getElementById("rhCls").value;
   const spec = document.getElementById("rhSpec").value;
-  await rhPost({ eventId: RH.eventId, className: cls, specName: spec, status: "primary" });
+  await rhPost({ eventId: RH.eventId, className: cls, specName: spec });
 }
 
 async function rhPost(payload){
