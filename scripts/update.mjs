@@ -117,10 +117,17 @@ if (env("RAIDHELPER_API_KEY") && env("RAIDHELPER_SERVER_ID")) {
 /* 6) Warcraft Logs */
 if (env("WCL_CLIENT_ID") && env("WCL_CLIENT_SECRET")) {
   try {
+    let zoneName;
+    try {
+      const site = JSON.parse(await readFile(join(ROOT, "content", "site.json"), "utf8"));
+      zoneName = site.raid?.en;
+    } catch { /* Fallback auf den Standardwert in warcraftlogs.mjs */ }
+
     await write("logs.json", await wcl.reports({
       clientId: env("WCL_CLIENT_ID"),
       clientSecret: env("WCL_CLIENT_SECRET"),
-      ...GUILD
+      ...GUILD,
+      ...(zoneName ? { zoneName } : {})
     }));
   } catch (e) { errors++; fail(`Warcraft Logs: ${e.message}`); }
 }

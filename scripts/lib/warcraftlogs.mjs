@@ -17,7 +17,7 @@ async function token(clientId, clientSecret) {
   return res.access_token;
 }
 
-export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25 }) {
+export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, zoneName = "The Venomous Abyss" }) {
   const tok = await token(clientId, clientSecret);
 
   // Alle Berichte der Gilde abfragen
@@ -51,12 +51,20 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
 
   const rawReports = res.data?.reportData?.reports?.data ?? [];
 
+  // Nur Reports aus der aktuellen Raid-Zone werten. Die guildName-Abfrage
+  // liefert JEDEN Report, der irgendwie mit der Gilde verknuepft ist — auch
+  // private Mythic-Plus-/Pug-Laeufe einzelner Mitglieder, keine offiziellen
+  // Raidabende. Ohne diesen Filter koennen solche Fremd-Reports beim
+  // Zeitfenster-Clustering (siehe unten) faelschlich mit einem echten
+  // Raidabend verschmolzen werden.
+  const raidZoneReports = rawReports.filter(r => r.zone?.name === zoneName);
+
   // Nur Reports mit echten Raid-Pulls werten (Normal/Heroisch/Mythisch) —
   // schliesst M+ Dungeons aus. fight.startTime/endTime sind bei WCL relativ
   // zum jeweiligen Report, deshalb hier auf absolute Zeitstempel umrechnen —
   // sonst sind sie beim Zusammenfuehren mehrerer Reports (siehe unten) nicht
   // miteinander vergleichbar.
-  const withRaidFights = rawReports
+  const withRaidFights = raidZoneReports
     .map(r => ({
       ...r,
       raidFights: (r.fights ?? [])
