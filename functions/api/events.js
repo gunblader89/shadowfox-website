@@ -1,6 +1,6 @@
 import { getEvent, statusFor, pickableClasses, listServerEvents } from "../_shared/raidhelper.js";
 
-const ROLE_ORDER = ["Tank", "Melee", "Ranged", "Healer"];
+const ROLE_ORDER = ["Tank", "Healer", "Melee", "Ranged"];
 
 /** "27.08.2026" / "27-8-2026" -> "27-8-2026" (ungepolstert, zum Datumsvergleich). */
 function dateKey(str) {
