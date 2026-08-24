@@ -6,8 +6,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 301,
-      "mplus": 2363,
+      "ilvl": 302,
+      "mplus": 2393,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -67,8 +67,8 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 296,
-      "mplus": 2079,
-      "weeklyRuns": 8,
+      "mplus": 2374,
+      "weeklyRuns": 9,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
     },
@@ -138,8 +138,8 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 302,
-      "mplus": 2459,
+      "ilvl": 303,
+      "mplus": 2492,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -162,8 +162,8 @@
       "class": "Shaman",
       "spec": "Elemental",
       "role": "DPS",
-      "ilvl": 303,
-      "mplus": 2375,
+      "ilvl": 304,
+      "mplus": 2397,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-24T08:07:14.756Z"
+  "updatedAt": "2026-08-24T12:03:43.996Z"
 }
