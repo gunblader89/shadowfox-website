@@ -456,6 +456,7 @@ const WH = s => "https://www.wowhead.com/de/guide/midnight/raids/venomous-abyss-
 const DEFAULT_ARTWORK = "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f9f43b4f5abb79d2c6cf8e0d885b95ac59fbd3b0.jpg";
 
 let ACTIVE_DIFF = {};
+let CURRENT_TIER = "normal";
 let SELECTED_DUNGEON_IDX = 0;
 
 const CLASSES = [
@@ -952,14 +953,17 @@ start(){
 
 raid(){
   const r = G.raid;
+  const tierLabel = {normal:"Normal", heroic:"Heroisch", mythic:"Mythisch"};
   return `
   <div class="page-h fade">
     <h1>${esc(r.name)}</h1>
-    <p>${esc(r.en)} · ${r.bosses} Bosse · Detaillierte RaidStrats-Guides nach Rollen, Phasen &amp; Schwierigkeitsgraden.</p>
+    <p>${esc(r.en)} · ${r.bosses} Bosse · Detaillierte RaidStrats-Guides nach Rollen, Phasen &amp; Schwierigkeitsgraden.
+    Aktuell verfolgt: <b>${tierLabel[CURRENT_TIER]||'Normal'}</b> (Raider.IO-Fortschritt).</p>
   </div>
   <div class="fade">
   ${BOSSES.map((b,i)=>{
     const s = ST[b.st] || ST.open;
+    const sTx = b.st === "prog" ? `${s.tx} (${tierLabel[CURRENT_TIER]||'Normal'})` : s.tx;
     const curDiff = ACTIVE_DIFF[i] || "normal";
     const bgImage = b.image || DEFAULT_ARTWORK;
 
@@ -970,7 +974,7 @@ raid(){
         <b>${esc(b.n)}</b>
         <span>${esc(b.check||b.role||'')} · ${esc(b.en)}</span>
       </div>
-      <span class="pill ${s.cls}"><span class="dot"></span>${s.tx}</span>
+      <span class="pill ${s.cls}"><span class="dot"></span>${sTx}</span>
       <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="m6 9 6 6 6-6"/></svg>
     </button>
     <div class="bbody">
@@ -1677,8 +1681,36 @@ function applyData(d, c){
       }));
     }
 
-    const downBossCount = BOSSES.filter(b => b.st === "down").length;
-    if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
+    /* Boss-Status (gelegt/aktuell/offen) automatisch aus dem echten Raider.IO-
+       Fortschritt ableiten, statt ihn manuell in content/bosses.json zu pflegen.
+       rioKey wird aus dem Raid-Namen berechnet, keine separate Pflege noetig.
+       Sobald eine Stufe komplett ist, rutscht die Verfolgung automatisch zur
+       naechsthoeheren Schwierigkeit (Normal -> Heroisch -> Mythisch). */
+    const rioKey = String(G.raid.en || "").toLowerCase().replace(/['’]/g,"").trim().replace(/\s+/g,"-");
+    const rio = d?.guild?.raidProgression?.[rioKey];
+    if(rio && BOSSES.length){
+      const total = BOSSES.length;
+      G.raid.nhc = rio.normal_bosses_killed ?? G.raid.nhc;
+      G.raid.hc = rio.heroic_bosses_killed ?? G.raid.hc;
+      G.raid.myth = rio.mythic_bosses_killed ?? G.raid.myth;
+
+      const tiers = [
+        { key:"normal", killed: rio.normal_bosses_killed || 0 },
+        { key:"heroic", killed: rio.heroic_bosses_killed || 0 },
+        { key:"mythic", killed: rio.mythic_bosses_killed || 0 }
+      ];
+      const tier = tiers.find(t => t.killed < total) || tiers[tiers.length - 1];
+      CURRENT_TIER = tier.key;
+      BOSSES.forEach((b, i) => {
+        b.st = i < tier.killed ? "down" : (i === tier.killed ? "prog" : "open");
+        ACTIVE_DIFF[i] = tier.key;
+      });
+    } else {
+      // Kein Raider.IO-Fortschritt gefunden (z.B. neuer Tier, rioKey passt noch
+      // nicht) — Fallback auf die manuellen Werte aus content/bosses.json.
+      const downBossCount = BOSSES.filter(b => b.st === "down").length;
+      if(downBossCount > 0) G.raid.nhc = Math.max(G.raid.nhc, downBossCount);
+    }
 
     const charMap = new Map();
     for(const k of KADER) charMap.set(normName(k.n), {...k});
