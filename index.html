@@ -388,9 +388,10 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
           <span>Suchen</span><kbd class="kk">⌘K</kbd>
         </button>
         <a class="btn btn-disc" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
           <span>Discord</span>
         </a>
+        <a id="hdrLogin" class="btn" style="display:none;background:var(--green-bg);color:var(--green);border-color:rgba(94,196,143,.3)"></a>
         <a class="btn btn-p" href="#/bewerben">Bewerben</a>
       </div>
     </div>
@@ -632,7 +633,7 @@ let REPORTS = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT = {
-  title:"Der Giftige Abgrund", date:"24.08.26", time:"19:45", leader:"Merccrixxus/Passi", live:true,
+  id:null, title:"Der Giftige Abgrund", date:"24.08.26", time:"19:45", leader:"Merccrixxus/Passi", live:true,
   counts:{primary:20,tentative:0,bench:0,absence:1,late:0}, signups:[]
 };
 
@@ -826,6 +827,7 @@ function signupBlock(){
             <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
         </div>`;}).join("")}
     </div>
+    ${EVENT.id ? `<div id="myrh" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line)"></div>` : ''}
   </div>`;
 }
 
@@ -1315,7 +1317,7 @@ bewerben(){
 
       <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
         <a class="btn btn-disc" style="padding:10px 18px;font-size:14px" href="https://discord.gg/AjdeyNafb" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
           <span>Discord Server beitreten</span>
         </a>
       </div>
@@ -1371,6 +1373,159 @@ function bindTrk(){
     };
   });
   renderTrk();
+}
+
+/* Eigene Anmeldung über die Website — spricht mit den Cloudflare-Pages-Functions
+   unter /auth und /api, die wiederum die Raid-Helper-API bedienen. Fehlt das
+   Backend (noch nicht eingerichtet) oder ist man ausgeloggt, bleibt der Block
+   einfach leer statt einen Fehler zu zeigen. */
+const RH = { eventId:null, loggedIn:false, name:null, signup:null, classes:[] };
+
+/* Sitzungsstatus fuer den Header-Button — laeuft auf jeder Seite, nicht nur
+   auf der Termine-Seite, damit der Login gut auffindbar ist. */
+async function checkGlobalLogin(){
+  const el = document.getElementById("hdrLogin");
+  if(!el) return;
+  try{
+    const r = await fetch("/api/me", {credentials:"same-origin"});
+    const d = await r.json();
+    if(d.loggedIn){
+      el.href = "#/termine";
+      el.textContent = `✓ ${d.name}`;
+    } else {
+      el.href = "/auth/login";
+      el.textContent = "Raid-Anmeldung";
+    }
+    el.style.display = "";
+  }catch{
+    // Kein Backend erreichbar (z.B. lokal ohne Cloudflare Functions) — Button bleibt versteckt.
+  }
+}
+
+async function bindSignupWidget(){
+  const el = document.getElementById("myrh");
+  if(!el || !EVENT.id) return;
+  RH.eventId = EVENT.id;
+  el.innerHTML = `<div class="muted" style="font-size:12.5px">Lade Anmeldestatus…</div>`;
+  try{
+    const r = await fetch(`/api/signup?eventId=${encodeURIComponent(EVENT.id)}`, {credentials:"same-origin"});
+    if(r.status === 401){ RH.loggedIn = false; renderRH(); return; }
+    const d = await r.json();
+    if(d.error){ el.innerHTML = ""; return; }
+    RH.loggedIn = true;
+    RH.name = d.name;
+    RH.signup = d.signup;
+    RH.classes = d.classes || [];
+    renderRH();
+  }catch{
+    el.innerHTML = "";
+  }
+}
+
+function renderRH(){
+  const el = document.getElementById("myrh");
+  if(!el) return;
+  if(!RH.loggedIn){
+    el.innerHTML = `<a class="btn btn-disc" href="/auth/login">Mit Discord anmelden, um dich hier einzutragen</a>`;
+    return;
+  }
+  if(RH.signup){
+    const s = RH.signup;
+    const btn = (st,label) => `<button class="btn" style="${s.status===st?'background:var(--amber);color:#1a1305':'background:var(--panel2);color:var(--tx2);border-color:var(--line2)'}" onclick="rhSetStatus('${st}')">${label}</button>`;
+    const statusLabel = { primary:"Zugesagt", tentative:"Unsicher", absence:"Abgemeldet", bench:"Bank", late:"Spät" }[s.status] || s.status;
+    const roleTxt = s.status === "primary"
+      ? `Du bist angemeldet als <b style="color:var(--tx)">${esc(s.specName)}</b> (${esc(s.className)})`
+      : `Status: <b style="color:var(--tx)">${esc(statusLabel)}</b>${s.specName ? ` · zuletzt ${esc(s.specName)}` : ''}`;
+    el.innerHTML = `
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div style="font-size:12.5px" class="soft">${roleTxt}</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          ${btn("primary","✓ Zugesagt")}
+          ${btn("tentative","? Unsicher")}
+          ${btn("absence","✕ Abgemeldet")}
+        </div>
+      </div>
+      <div style="margin-top:8px"><a href="#" onclick="rhShowPicker();return false" style="font-size:11.5px" class="soft">Klasse/Spezialisierung ändern</a></div>
+      <div id="rhErr" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
+    return;
+  }
+  el.innerHTML = rhPickerHtml();
+}
+
+function rhSpecOptions(cls){
+  return (RH.classes.find(c=>c.name===cls)?.specs||[]).map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");
+}
+
+function rhPickerHtml(){
+  if(!RH.classes.length) return `<div class="muted" style="font-size:12.5px">Momentan keine Anmeldung möglich.</div>`;
+  const selStyle = "background:var(--panel2);color:var(--tx);border:1px solid var(--line2);border-radius:8px;height:34px;padding:0 8px";
+  return `
+    <div style="font-size:12.5px" class="soft">Noch nicht angemeldet — Klasse wählen:</div>
+    <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;align-items:center">
+      <select id="rhCls" style="${selStyle}" onchange="document.getElementById('rhSpec').innerHTML = rhSpecOptions(this.value)">
+        ${RH.classes.map(c=>`<option value="${esc(c.name)}">${esc(c.name)}</option>`).join("")}
+      </select>
+      <select id="rhSpec" style="${selStyle}">${rhSpecOptions(RH.classes[0].name)}</select>
+      <button class="btn btn-p" onclick="rhSubmitNew()">Anmelden</button>
+    </div>
+    <div id="rhErr" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
+}
+
+function rhShowPicker(){ document.getElementById("myrh").innerHTML = rhPickerHtml(); }
+
+/* Raid-Helper kennt kein eigenes Status-Feld — "Zugesagt/Unsicher/Abgemeldet"
+   sind schlicht die Klassen Tank/Melee/Ranged/Healer vs. Tentative/Absence.
+   Beim Zurückwechseln auf "Zugesagt" bleibt die ursprüngliche Rollen-Klasse
+   nicht erhalten (nur specName) — wir leiten sie über das Klassen/Spec-
+   Vokabular zurück her. */
+function rhFindClassForSpec(spec){
+  return RH.classes.find(c => c.specs.includes(spec)) || null;
+}
+
+async function rhSetStatus(kind){
+  if(!RH.signup) return;
+  if(kind === "primary"){
+    let cls = RH.signup.className;
+    if(RH.signup.status !== "primary"){
+      const found = RH.signup.specName ? rhFindClassForSpec(RH.signup.specName) : null;
+      if(!found){ rhShowPicker(); return; }
+      cls = found.name;
+    }
+    await rhPost({ eventId: RH.eventId, className: cls, specName: RH.signup.specName });
+  } else {
+    await rhPost({ eventId: RH.eventId, className: kind === "tentative" ? "Tentative" : "Absence" });
+  }
+}
+
+async function rhSubmitNew(){
+  const cls = document.getElementById("rhCls").value;
+  const spec = document.getElementById("rhSpec").value;
+  await rhPost({ eventId: RH.eventId, className: cls, specName: spec });
+}
+
+async function rhPost(payload){
+  const el = document.getElementById("myrh");
+  el.style.opacity = ".6";
+  try{
+    const r = await fetch("/api/signup", {
+      method:"POST", credentials:"same-origin",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(payload)
+    });
+    const d = await r.json();
+    el.style.opacity = "";
+    if(!r.ok){
+      const err = document.getElementById("rhErr");
+      if(err) err.textContent = d.error || "Anmeldung fehlgeschlagen.";
+      return;
+    }
+    RH.signup = d.signup;
+    renderRH();
+  }catch{
+    el.style.opacity = "";
+    const err = document.getElementById("rhErr");
+    if(err) err.textContent = "Anmeldung fehlgeschlagen — bitte später erneut versuchen.";
+  }
 }
 
 async function load(path){
@@ -1495,6 +1650,7 @@ function applyData(d, c){
 
     if(d?.events?.events?.length){
       const e = d.events.events[0];
+      EVENT.id = e.id || EVENT.id;
       EVENT.title = e.title || EVENT.title;
       EVENT.time = e.time || EVENT.time;
       EVENT.leader = e.leader || EVENT.leader;
@@ -1554,6 +1710,7 @@ function route(){
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
     document.querySelectorAll(".kk").forEach(e => e.textContent = KEY);
     if(k === "tracker") bindTrk();
+    if(k === "termine") bindSignupWidget();
     if(window.$WowheadPower) window.$WowheadPower.refreshLinks();
   } catch (e) {
     console.error("Route error:", e);
@@ -1613,7 +1770,8 @@ addEventListener("keydown", e => {
 (async function boot(){
   buildIndex();
   route();
-  
+  checkGlobalLogin();
+
   try {
     const [d, c] = await Promise.all([
       Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status"].map(n => load(`data/${n}.json`)))
