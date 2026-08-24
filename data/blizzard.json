@@ -351,20 +351,6 @@
       "classId": 13
     },
     {
-      "name": "Günterle",
-      "realm": "antonidas",
-      "rank": 5,
-      "level": 90,
-      "classId": 10
-    },
-    {
-      "name": "Geraltvriva",
-      "realm": "antonidas",
-      "rank": 5,
-      "level": 90,
-      "classId": 6
-    },
-    {
       "name": "Ayvee",
       "realm": "blackmoore",
       "rank": 5,
@@ -486,7 +472,7 @@
     {
       "name": "Hòbs",
       "realm": "blackmoore",
-      "rank": 6,
+      "rank": 1,
       "level": 90,
       "classId": 11
     },
@@ -517,13 +503,6 @@
       "rank": 5,
       "level": 90,
       "classId": 11
-    },
-    {
-      "name": "Schlitzfritz",
-      "realm": "antonidas",
-      "rank": 5,
-      "level": 90,
-      "classId": 4
     },
     {
       "name": "Kitebrew",
@@ -561,25 +540,11 @@
       "classId": 10
     },
     {
-      "name": "Gandogor",
-      "realm": "antonidas",
-      "rank": 5,
-      "level": 90,
-      "classId": 3
-    },
-    {
       "name": "Hunterchaos",
       "realm": "blackmoore",
       "rank": 2,
       "level": 90,
       "classId": 3
-    },
-    {
-      "name": "Latawica",
-      "realm": "antonidas",
-      "rank": 5,
-      "level": 90,
-      "classId": 9
     },
     {
       "name": "Spintowinlol",
@@ -1016,7 +981,7 @@
       "classId": 11
     }
   ],
-  "updatedAt": "2026-08-23T17:55:23.528Z",
+  "updatedAt": "2026-08-24T00:00:55.105Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",
