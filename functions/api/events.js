@@ -2,6 +2,12 @@ import { getEvent, statusFor, pickableClasses, listServerEvents } from "../_shar
 
 const ROLE_ORDER = ["Tank", "Melee", "Ranged", "Healer"];
 
+/** "27.08.2026" / "27-8-2026" -> "27-8-2026" (ungepolstert, zum Datumsvergleich). */
+function dateKey(str) {
+  const m = String(str || "").match(/(\d{1,2})[.\-](\d{1,2})[.\-](\d{4})/);
+  return m ? `${+m[1]}-${+m[2]}-${+m[3]}` : null;
+}
+
 function summarize(raw) {
   const signups = (raw.signUps || []).map(s => ({
     name: s.name, className: s.className, specName: s.specName || null,
@@ -66,5 +72,8 @@ export async function onRequestGet({ request, env }) {
     .filter(e => e && (!e.startTime || e.startTime >= now - 3600))
     .sort((a, b) => (a.startTime || 0) - (b.startTime || 0));
 
-  return Response.json({ events, placeholders }, { headers: { "Cache-Control": "no-store" } });
+  const liveDates = new Set(events.map(e => dateKey(e.date)).filter(Boolean));
+  const uniquePlaceholders = placeholders.filter(t => !liveDates.has(dateKey(t.datum)));
+
+  return Response.json({ events, placeholders: uniquePlaceholders }, { headers: { "Cache-Control": "no-store" } });
 }
