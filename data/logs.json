@@ -1,79 +1,52 @@
 {
   "reports": [
     {
-      "code": "vqZbDW2a3KAJPRX8",
-      "url": "https://www.warcraftlogs.com/reports/vqZbDW2a3KAJPRX8",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787581504148,
-      "endTime": 1787601867371,
-      "duration": "5h 39m",
-      "difficulty": "Normal",
-      "kills": 9,
-      "wipes": 20,
-      "killedBosses": [
-        "The Coiled Altar",
-        "Ula'tek",
-        "Nymrissa Wavecaller",
-        "Nek'zali the Soulcoiler",
-        "The Lost Explorers",
-        "Sszorak",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [
-          {
-            "name": "Паларт",
-            "class": "Paladin",
-            "spec": "Retribution",
-            "parse": 99,
-            "boss": "The Lost Explorers"
-          },
-          {
-            "name": "Honeybutt",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 99,
-            "boss": "The Twin Fangs"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Lionett",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 92,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Alexmonk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 85,
-            "boss": "The Twin Fangs"
-          }
-        ]
-      }
-    },
-    {
       "code": "KbyxpZWhNFnr2wAM",
       "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1787248823341,
-      "endTime": 1787257926826,
+      "endTime": 1787257925349,
       "duration": "2h 31m",
       "difficulty": "Normal",
       "kills": 1,
-      "wipes": 53,
+      "wipes": 34,
       "killedBosses": [
         "The Twin Fangs"
       ],
       "vips": {
-        "dps": [],
-        "hps": []
+        "dps": [
+          {
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 81,
+            "boss": "The Twin Fangs"
+          },
+          {
+            "name": "Tiskarian",
+            "class": "Druid",
+            "spec": "Balance",
+            "parse": 76,
+            "boss": "The Twin Fangs"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 54,
+            "boss": "The Twin Fangs"
+          },
+          {
+            "name": "Doktorpöbel",
+            "class": "Priest",
+            "spec": "Discipline",
+            "parse": 32,
+            "boss": "The Twin Fangs"
+          }
+        ]
       }
     },
     {
@@ -99,5 +72,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-24T20:58:14.670Z"
+  "updatedAt": "2026-08-24T21:03:11.074Z"
 }
