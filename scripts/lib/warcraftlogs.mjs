@@ -17,14 +17,25 @@ async function token(clientId, clientSecret) {
   return res.access_token;
 }
 
+// Beide aktuellen Raid-Fluegel dieser Saison. Ein einzelner WCL-Report kann
+// beide in einer durchgehenden Logging-Session enthalten (z.B. Abgrund clear,
+// danach Grotto) — deshalb wird nicht mehr auf report.zone gefiltert, sondern
+// direkt auf die Namen der einzelnen Bosskaempfe (siehe bossNameSet unten).
 const DEFAULT_BOSS_NAMES = [
   "Nek'zali the Soulcoiler", "Entombed Sentinels", "Vashnik the Malignant",
-  "The Lost Explorers", "Sszorak", "The Twin Fangs", "The Coiled Altar", "Ula'tek"
+  "The Lost Explorers", "Sszorak", "The Twin Fangs", "The Coiled Altar", "Ula'tek",
+  "Nymrissa Wavecaller"
 ];
 
 const normalizeName = s => String(s).split("-")[0].trim().toLowerCase();
 
-export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, zoneName = "The Venomous Abyss", bossNames = DEFAULT_BOSS_NAMES, rosterNames = [] }) {
+/** Stunde (0-23) eines Zeitstempels in der Gilden-Zeitzone — grobe, aber
+    dependency-freie Methode ohne Timezone-Bibliothek. */
+function hourInTimezone(ts, timeZone) {
+  return Number(new Intl.DateTimeFormat("en-US", { timeZone, hour: "numeric", hour12: false }).format(ts));
+}
+
+export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, bossNames = DEFAULT_BOSS_NAMES, rosterNames = [], raidHours = [18, 23], timeZone = "Europe/Berlin" }) {
   const bossNameSet = new Set(bossNames.map(n => n.toLowerCase().trim()));
   const rosterSet = new Set(rosterNames.map(normalizeName));
   const tok = await token(clientId, clientSecret);
@@ -46,11 +57,11 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
             kill
             startTime
             endTime
+            friendlyPlayers
           }
           masterData {
-            actors(type: "Player") { name }
+            actors(type: "Player") { id name }
           }
-          owner { name }
         }
       }
     }
@@ -63,56 +74,50 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   });
 
   const rawReports = res.data?.reportData?.reports?.data ?? [];
+  log(`WCL: ${rawReports.length} Reports insgesamt, ${rosterSet.size} bekannte Kader-Namen`);
 
-  // Nur Reports aus der aktuellen Raid-Zone werten. Die guildName-Abfrage
-  // liefert JEDEN Report, der irgendwie mit der Gilde verknuepft ist — auch
-  // private Mythic-Plus-/Pug-Laeufe einzelner Mitglieder, keine offiziellen
-  // Raidabende. Ohne diesen Filter koennen solche Fremd-Reports beim
-  // Zeitfenster-Clustering (siehe unten) faelschlich mit einem echten
-  // Raidabend verschmolzen werden.
-  const raidZoneReports = rawReports.filter(r => r.zone?.name === zoneName);
-  log(`WCL: ${rawReports.length} Reports insgesamt, ${raidZoneReports.length} in Zone "${zoneName}", ${rosterSet.size} bekannte Kader-Namen`);
-
-  // Besetzungs-Check: selbst bei passender Zone und echten Raidbossen kann
-  // ein Report ein Pug/Alt-Run sein, keine offizielle Gildenraid-Besetzung.
-  // Nur werten, wenn ein Grossteil der Teilnehmer bekannte Kader-Mitglieder
-  // sind. (Ein zusaetzlicher Uploader-Check wurde probiert, war aber zu
-  // streng: Raidleiter loggen teils auf Alts, die WoWAudit nicht kennt,
-  // waehrend ihre Raidgruppe trotzdem zu >90% aus bekannten Namen bestand —
-  // die Besetzungs-Quote allein trennt echte von fremden Reports zuverlaessig.)
-  const rosterReports = rosterSet.size > 0
-    ? raidZoneReports.filter(r => {
-        const ownerName = r.owner?.name;
-        const actors = r.masterData?.actors ?? [];
-        const matches = actors.filter(a => rosterSet.has(normalizeName(a.name))).length;
-        const ratio = actors.length ? (matches / actors.length) : 0;
-        const accepted = actors.length > 0 && ratio >= 0.4;
-        log(`  Report ${r.code}: owner="${ownerName ?? "?"}", ${matches}/${actors.length} Teilnehmer bekannt (${Math.round(ratio*100)}%) -> ${accepted ? "gewertet" : "ausgeschlossen"}`);
-        return accepted;
-      })
-    : raidZoneReports;
-
-  // Nur Fights werten, deren Name zu einem der echten Raidbosse passt —
-  // ein einzelner WCL-Report kann trotz passender Zone auch Fights aus
-  // anderem Content enthalten (z.B. wenn ein Mitglied das Logging beim
-  // Wechsel von Dungeon zu Raid einfach weiterlaufen laesst). Die Zone
-  // allein reicht also nicht, der Namensabgleich ist der eigentliche Filter.
-  // fight.startTime/endTime sind bei WCL relativ zum jeweiligen Report,
-  // deshalb hier auf absolute Zeitstempel umrechnen — sonst sind sie beim
-  // Zusammenfuehren mehrerer Reports (siehe unten) nicht vergleichbar.
-  const withRaidFights = rosterReports
+  // Nur Fights werten, deren Name zu einem der bekannten Raidbosse (beide
+  // Fluegel) passt UND die zeitlich in eure Raidzeiten fallen (grosszuegiges
+  // Fenster als Puffer). fight.startTime/endTime sind bei WCL relativ zum
+  // jeweiligen Report, deshalb zuerst auf absolute Zeitstempel umrechnen —
+  // sonst sind sie beim Zusammenfuehren mehrerer Reports (siehe unten) nicht
+  // vergleichbar, und der Stunden-Check braucht die absolute Zeit ohnehin.
+  const withRaidFights = rawReports
     .map(r => ({
       ...r,
       raidFights: (r.fights ?? [])
-        .filter(f => [3, 4, 5].includes(f.difficulty) && bossNameSet.has(String(f.name).toLowerCase().trim()))
         .map(f => ({ ...f, absStart: r.startTime + f.startTime, absEnd: r.startTime + f.endTime }))
+        .filter(f => {
+          if (![3, 4, 5].includes(f.difficulty)) return false;
+          if (!bossNameSet.has(String(f.name).toLowerCase().trim())) return false;
+          const hour = hourInTimezone(f.absStart, timeZone);
+          return hour >= raidHours[0] && hour <= raidHours[1];
+        })
     }))
     .filter(r => r.raidFights.length > 0);
+
+  // Besetzungs-Check: nur auf die Teilnehmer der tatsaechlichen Raidkaempfe
+  // beschraenkt (ueber friendlyPlayers pro Kampf), nicht auf den gesamten
+  // Report — der kann bei durchgehendem Logging auch voellig unabhaengige
+  // Aktivitaeten (Pugs, andere Tage) mit vielen fremden Teilnehmern enthalten,
+  // die sonst die Quote faelschlich verwaessern wuerden.
+  const rosterReports = rosterSet.size > 0
+    ? withRaidFights.filter(r => {
+        const actorMap = new Map((r.masterData?.actors ?? []).map(a => [a.id, a.name]));
+        const participantIds = new Set(r.raidFights.flatMap(f => f.friendlyPlayers || []));
+        const participantNames = [...participantIds].map(id => actorMap.get(id)).filter(Boolean);
+        const matches = participantNames.filter(n => rosterSet.has(normalizeName(n))).length;
+        const ratio = participantNames.length ? matches / participantNames.length : 0;
+        const accepted = participantNames.length > 0 && ratio >= 0.4;
+        log(`  Report ${r.code}: ${matches}/${participantNames.length} Teilnehmer der Raidkaempfe bekannt (${Math.round(ratio * 100)}%) -> ${accepted ? "gewertet" : "ausgeschlossen"}`);
+        return accepted;
+      })
+    : withRaidFights;
 
   // Zeitfenster-Clustering (9h): mehrere WCL-Reports vom selben Raidabend
   // (z.B. nach einem Disconnect/Neustart des Logs) zu einem Eintrag zusammenfassen,
   // statt denselben Abend mehrfach anzuzeigen.
-  const sorted = [...withRaidFights].sort((a, b) => b.startTime - a.startTime);
+  const sorted = [...rosterReports].sort((a, b) => b.startTime - a.startTime);
   const clusters = [];
   for (const r of sorted) {
     const match = clusters.find(c => Math.abs(c.startTime - r.startTime) < 9 * 3600 * 1000);
