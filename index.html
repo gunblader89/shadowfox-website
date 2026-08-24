@@ -632,7 +632,7 @@ let REPORTS = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT = {
-  title:"Der Giftige Abgrund", date:"24.08.26", time:"19:45", leader:"Merccrixxus/Passi", live:true,
+  id:null, title:"Der Giftige Abgrund", date:"24.08.26", time:"19:45", leader:"Merccrixxus/Passi", live:true,
   counts:{primary:20,tentative:0,bench:0,absence:1,late:0}, signups:[]
 };
 
@@ -826,6 +826,7 @@ function signupBlock(){
             <span class="n">${esc(p.name)}</span><span class="s">${esc(p.spec||p.cls)}</span></div>`).join("")||`<div class="muted" style="font-size:11.5px">—</div>`}
         </div>`;}).join("")}
     </div>
+    ${EVENT.id ? `<div id="myrh" style="margin-top:16px;padding-top:16px;border-top:1px solid var(--line)"></div>` : ''}
   </div>`;
 }
 
@@ -1373,6 +1374,115 @@ function bindTrk(){
   renderTrk();
 }
 
+/* Eigene Anmeldung über die Website — spricht mit den Cloudflare-Pages-Functions
+   unter /auth und /api, die wiederum die Raid-Helper-API bedienen. Fehlt das
+   Backend (noch nicht eingerichtet) oder ist man ausgeloggt, bleibt der Block
+   einfach leer statt einen Fehler zu zeigen. */
+const RH = { eventId:null, loggedIn:false, name:null, signup:null, classes:[] };
+
+async function bindSignupWidget(){
+  const el = document.getElementById("myrh");
+  if(!el || !EVENT.id) return;
+  RH.eventId = EVENT.id;
+  el.innerHTML = `<div class="muted" style="font-size:12.5px">Lade Anmeldestatus…</div>`;
+  try{
+    const r = await fetch(`/api/signup?eventId=${encodeURIComponent(EVENT.id)}`, {credentials:"same-origin"});
+    if(r.status === 401){ RH.loggedIn = false; renderRH(); return; }
+    const d = await r.json();
+    if(d.error){ el.innerHTML = ""; return; }
+    RH.loggedIn = true;
+    RH.name = d.name;
+    RH.signup = d.signup;
+    RH.classes = d.classes || [];
+    renderRH();
+  }catch{
+    el.innerHTML = "";
+  }
+}
+
+function renderRH(){
+  const el = document.getElementById("myrh");
+  if(!el) return;
+  if(!RH.loggedIn){
+    el.innerHTML = `<a class="btn btn-disc" href="/auth/login">Mit Discord anmelden, um dich hier einzutragen</a>`;
+    return;
+  }
+  if(RH.signup){
+    const s = RH.signup;
+    const btn = (st,label) => `<button class="btn" style="${s.status===st?'background:var(--amber);color:#1a1305':'background:var(--panel2);color:var(--tx2);border-color:var(--line2)'}" onclick="rhSetStatus('${st}')">${label}</button>`;
+    el.innerHTML = `
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+        <div style="font-size:12.5px" class="soft">Du bist angemeldet als <b style="color:var(--tx)">${esc(s.specName)}</b> (${esc(s.className)})</div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          ${btn("primary","✓ Zugesagt")}
+          ${btn("tentative","? Unsicher")}
+          ${btn("absence","✕ Abgemeldet")}
+        </div>
+      </div>
+      <div style="margin-top:8px"><a href="#" onclick="rhShowPicker();return false" style="font-size:11.5px" class="soft">Klasse/Spezialisierung ändern</a></div>
+      <div id="rhErr" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
+    return;
+  }
+  el.innerHTML = rhPickerHtml();
+}
+
+function rhSpecOptions(cls){
+  return (RH.classes.find(c=>c.name===cls)?.specs||[]).map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");
+}
+
+function rhPickerHtml(){
+  if(!RH.classes.length) return `<div class="muted" style="font-size:12.5px">Momentan keine Anmeldung möglich.</div>`;
+  const selStyle = "background:var(--panel2);color:var(--tx);border:1px solid var(--line2);border-radius:8px;height:34px;padding:0 8px";
+  return `
+    <div style="font-size:12.5px" class="soft">Noch nicht angemeldet — Klasse wählen:</div>
+    <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;align-items:center">
+      <select id="rhCls" style="${selStyle}" onchange="document.getElementById('rhSpec').innerHTML = rhSpecOptions(this.value)">
+        ${RH.classes.map(c=>`<option value="${esc(c.name)}">${esc(c.name)}</option>`).join("")}
+      </select>
+      <select id="rhSpec" style="${selStyle}">${rhSpecOptions(RH.classes[0].name)}</select>
+      <button class="btn btn-p" onclick="rhSubmitNew()">Anmelden</button>
+    </div>
+    <div id="rhErr" class="muted" style="font-size:11.5px;margin-top:6px"></div>`;
+}
+
+function rhShowPicker(){ document.getElementById("myrh").innerHTML = rhPickerHtml(); }
+
+async function rhSetStatus(status){
+  if(!RH.signup) return;
+  await rhPost({ eventId: RH.eventId, className: RH.signup.className, specName: RH.signup.specName, status });
+}
+
+async function rhSubmitNew(){
+  const cls = document.getElementById("rhCls").value;
+  const spec = document.getElementById("rhSpec").value;
+  await rhPost({ eventId: RH.eventId, className: cls, specName: spec, status: "primary" });
+}
+
+async function rhPost(payload){
+  const el = document.getElementById("myrh");
+  el.style.opacity = ".6";
+  try{
+    const r = await fetch("/api/signup", {
+      method:"POST", credentials:"same-origin",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(payload)
+    });
+    const d = await r.json();
+    el.style.opacity = "";
+    if(!r.ok){
+      const err = document.getElementById("rhErr");
+      if(err) err.textContent = d.error || "Anmeldung fehlgeschlagen.";
+      return;
+    }
+    RH.signup = d.signup;
+    renderRH();
+  }catch{
+    el.style.opacity = "";
+    const err = document.getElementById("rhErr");
+    if(err) err.textContent = "Anmeldung fehlgeschlagen — bitte später erneut versuchen.";
+  }
+}
+
 async function load(path){
   try{
     const r = await fetch(`${path}?t=${Date.now()}`, {cache:"no-cache"});
@@ -1495,6 +1605,7 @@ function applyData(d, c){
 
     if(d?.events?.events?.length){
       const e = d.events.events[0];
+      EVENT.id = e.id || EVENT.id;
       EVENT.title = e.title || EVENT.title;
       EVENT.time = e.time || EVENT.time;
       EVENT.leader = e.leader || EVENT.leader;
@@ -1554,6 +1665,7 @@ function route(){
     document.querySelectorAll("nav a").forEach(a => a.classList.toggle("on", a.dataset.k === k));
     document.querySelectorAll(".kk").forEach(e => e.textContent = KEY);
     if(k === "tracker") bindTrk();
+    if(k === "termine") bindSignupWidget();
     if(window.$WowheadPower) window.$WowheadPower.refreshLinks();
   } catch (e) {
     console.error("Route error:", e);
