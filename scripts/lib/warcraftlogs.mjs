@@ -29,6 +29,20 @@ const DEFAULT_BOSS_NAMES = [
 
 const normalizeName = s => String(s).split("-")[0].trim().toLowerCase();
 
+/** Fights von zwei parallel mitloggenden Mitgliedern als eine zusammenfassen:
+    gleicher Boss, gleiches Ergebnis (Kill/Wipe), Start innerhalb von 3 Minuten
+    gilt als derselbe reale Pull. Echte, unterschiedliche Pulls (auch wenn sie
+    kurz hintereinander liegen) bleiben erhalten, solange sie ausserhalb des
+    Toleranzfensters liegen. */
+function dedupeFights(fights, toleranceMs = 3 * 60 * 1000) {
+  const kept = [];
+  for (const f of [...fights].sort((a, b) => a.absStart - b.absStart)) {
+    const dup = kept.find(k => k.name === f.name && k.kill === f.kill && Math.abs(k.absStart - f.absStart) < toleranceMs);
+    if (!dup) kept.push(f);
+  }
+  return kept;
+}
+
 /** Stunde (0-23) eines Zeitstempels in der Gilden-Zeitzone — grobe, aber
     dependency-freie Methode ohne Timezone-Bibliothek. */
 function hourInTimezone(ts, timeZone) {
@@ -141,18 +155,13 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   const resultReports = clusters.map(c => {
     // Zwei Mitglieder koennen denselben Raidabend parallel mitloggen — das
     // ergibt zwei WCL-Reports mit praktisch identischen Kaempfen, die sonst
-    // beim Zusammenfuehren doppelt gezaehlt wuerden. Fights ueber eine grobe
-    // Signatur (Boss + Ergebnis + Startminute) deduplizieren, bevor gezaehlt
-    // wird — echte Fragmente (unterschiedliche Pulls) bleiben davon unberuehrt.
-    const seen = new Map();
-    for (const f of c.reports.flatMap(r => r.raidFights)) {
-      const sig = `${f.name}|${f.kill}|${Math.round(f.absStart / 60000)}`;
-      if (!seen.has(sig)) seen.set(sig, f);
-    }
-    const allFights = [...seen.values()];
+    // beim Zusammenfuehren doppelt gezaehlt wuerden.
+    const rawFights = c.reports.flatMap(r => r.raidFights);
+    const allFights = dedupeFights(rawFights);
     const kills = allFights.filter(f => f.kill);
     const wipes = allFights.filter(f => !f.kill);
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
+    log(`  [Diagnose] Cluster @ ${new Date(c.startTime).toISOString()}: ${rawFights.length} Fights vor Dedup -> ${allFights.length} danach (${kills.length} Kills, ${wipes.length} Wipes)`);
 
     // Repraesentativer Report der Nacht = der mit den meisten echten Kills
     // (i.d.R. der vollstaendige Log, nicht ein abgebrochenes Fragment).
