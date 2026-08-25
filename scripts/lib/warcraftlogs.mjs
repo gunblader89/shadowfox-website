@@ -139,7 +139,17 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
 
   const resultReports = clusters.map(c => {
-    const allFights = c.reports.flatMap(r => r.raidFights);
+    // Zwei Mitglieder koennen denselben Raidabend parallel mitloggen — das
+    // ergibt zwei WCL-Reports mit praktisch identischen Kaempfen, die sonst
+    // beim Zusammenfuehren doppelt gezaehlt wuerden. Fights ueber eine grobe
+    // Signatur (Boss + Ergebnis + Startminute) deduplizieren, bevor gezaehlt
+    // wird — echte Fragmente (unterschiedliche Pulls) bleiben davon unberuehrt.
+    const seen = new Map();
+    for (const f of c.reports.flatMap(r => r.raidFights)) {
+      const sig = `${f.name}|${f.kill}|${Math.round(f.absStart / 60000)}`;
+      if (!seen.has(sig)) seen.set(sig, f);
+    }
+    const allFights = [...seen.values()];
     const kills = allFights.filter(f => f.kill);
     const wipes = allFights.filter(f => !f.kill);
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
