@@ -146,7 +146,11 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     // die Kaempfe mehrerer Reports zusammenzufuehren (fehleranfaellig bei
     // Dopplungen und unterschiedlich vollstaendigen Mitschnitten), zaehlt pro
     // Abend nur der EINE Report mit den meisten Kills — bei Gleichstand der
-    // mit den meisten Kaempfen insgesamt.
+    // mit den WENIGSTEN Kaempfen insgesamt. Klingt zunaechst falsch herum,
+    // aber jeder bisher beobachtete Abweichungsfall war ein Report mit
+    // zusaetzlichen, nicht zum Abend gehoerenden Kaempfen (Kontamination
+    // durch parallel laufendes Logging) — nie ein echtes unvollstaendiges
+    // Fragment. Der schlankere Report war deshalb bislang immer der korrekte.
     const byReport = new Map();
     for (const f of c.fights) {
       if (!byReport.has(f.reportCode)) byReport.set(f.reportCode, []);
@@ -156,7 +160,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     for (const fights of byReport.values()) {
       const k = fights.filter(f => f.kill).length;
       const bestK = allFights ? allFights.filter(f => f.kill).length : -1;
-      if (!allFights || k > bestK || (k === bestK && fights.length > allFights.length)) allFights = fights;
+      if (!allFights || k > bestK || (k === bestK && fights.length < allFights.length)) allFights = fights;
     }
     const kills = allFights.filter(f => f.kill);
     const wipes = allFights.filter(f => !f.kill);
