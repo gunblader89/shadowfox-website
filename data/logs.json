@@ -45,7 +45,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 88,
+            "parse": 87,
             "boss": "Nymrissa Wavecaller"
           }
         ]
@@ -93,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-25T07:33:45.935Z"
+  "updatedAt": "2026-08-25T14:09:33.151Z"
 }

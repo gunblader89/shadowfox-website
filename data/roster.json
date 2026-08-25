@@ -6,8 +6,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 302,
-      "mplus": 2492,
+      "ilvl": 303,
+      "mplus": 2583,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 302,
+      "ilvl": 303,
       "mplus": 2579,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
@@ -282,7 +282,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 298,
+      "ilvl": 299,
       "mplus": 2528,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-25T07:33:22.370Z"
+  "updatedAt": "2026-08-25T14:09:07.495Z"
 }

@@ -925,6 +925,13 @@
       "classId": 3
     },
     {
+      "name": "Rippchen",
+      "realm": "nathrezim",
+      "rank": 6,
+      "level": 90,
+      "classId": 6
+    },
+    {
       "name": "Yuzu",
       "realm": "garrosh",
       "rank": 6,
@@ -979,16 +986,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Rippchen",
-      "realm": "nathrezim",
-      "rank": 6,
-      "level": 90,
-      "classId": 6
     }
   ],
-  "updatedAt": "2026-08-25T07:33:24.018Z",
+  "updatedAt": "2026-08-25T14:09:08.986Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",
