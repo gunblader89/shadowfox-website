@@ -96,6 +96,14 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     }))
     .filter(r => r.raidFights.length > 0);
 
+  for (const r of withRaidFights) {
+    const k = r.raidFights.filter(f => f.kill).length;
+    const w = r.raidFights.filter(f => !f.kill).length;
+    const perBoss = {};
+    for (const f of r.raidFights) perBoss[f.name] = (perBoss[f.name] || 0) + 1;
+    log(`  [Diagnose] Report ${r.code}: ${r.raidFights.length} Raidkaempfe roh (${k} Kills, ${w} Wipes) — ${JSON.stringify(perBoss)}`);
+  }
+
   // Besetzungs-Check: nur auf die Teilnehmer der tatsaechlichen Raidkaempfe
   // beschraenkt (ueber friendlyPlayers pro Kampf), nicht auf den gesamten
   // Report — der kann bei durchgehendem Logging auch voellig unabhaengige
@@ -123,6 +131,9 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     const match = clusters.find(c => Math.abs(c.startTime - r.startTime) < 9 * 3600 * 1000);
     if (match) match.reports.push(r);
     else clusters.push({ startTime: r.startTime, reports: [r] });
+  }
+  for (const c of clusters) {
+    log(`  [Diagnose] Cluster @ ${new Date(c.startTime).toISOString()}: ${c.reports.map(r => r.code).join(", ")}`);
   }
 
   const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
