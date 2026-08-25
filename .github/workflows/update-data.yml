@@ -56,6 +56,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Keine Aenderungen — nichts zu committen."
           else
-            git commit -m "Daten automatisch aktualisiert [skip ci]"
+            git commit -m "Daten automatisch aktualisiert"
             git push
           fi
