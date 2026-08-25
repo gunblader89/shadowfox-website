@@ -29,24 +29,6 @@ const DEFAULT_BOSS_NAMES = [
 
 const normalizeName = s => String(s).split("-")[0].trim().toLowerCase();
 
-/** Fights von zwei parallel mitloggenden Mitgliedern als eine zusammenfassen:
-    gleicher Boss, gleiches Ergebnis (Kill/Wipe), Start innerhalb von 3 Minuten
-    gilt als derselbe reale Pull — aber nur zwischen VERSCHIEDENEN Reports.
-    Innerhalb desselben Reports gilt jeder Fight als eigenstaendig, sonst
-    wuerden schnell aufeinanderfolgende, aber echte unterschiedliche Pulls
-    (manche Wipes dauern nur 15-30s) faelschlich zusammengelegt. */
-function dedupeFights(fights, toleranceMs = 3 * 60 * 1000) {
-  const kept = [];
-  for (const f of [...fights].sort((a, b) => a.absStart - b.absStart)) {
-    const dup = kept.find(k =>
-      k.reportCode !== f.reportCode &&
-      k.name === f.name && k.kill === f.kill && Math.abs(k.absStart - f.absStart) < toleranceMs
-    );
-    if (!dup) kept.push(f);
-  }
-  return kept;
-}
-
 /** Stunde (0-23) eines Zeitstempels in der Gilden-Zeitzone — grobe, aber
     dependency-freie Methode ohne Timezone-Bibliothek. */
 function hourInTimezone(ts, timeZone) {
@@ -160,24 +142,28 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
 
   const resultReports = fightClusters.map(c => {
-    // Zwei Mitglieder koennen denselben Raidabend parallel mitloggen — das
-    // ergibt Kaempfe aus zwei verschiedenen Reports, die praktisch identisch
-    // sind und sonst doppelt gezaehlt wuerden.
-    const allFights = dedupeFights(c.fights);
+    // Zwei Mitglieder koennen denselben Raidabend parallel mitloggen. Statt
+    // die Kaempfe mehrerer Reports zusammenzufuehren (fehleranfaellig bei
+    // Dopplungen und unterschiedlich vollstaendigen Mitschnitten), zaehlt pro
+    // Abend nur der EINE Report mit den meisten Kills — bei Gleichstand der
+    // mit den meisten Kaempfen insgesamt.
+    const byReport = new Map();
+    for (const f of c.fights) {
+      if (!byReport.has(f.reportCode)) byReport.set(f.reportCode, []);
+      byReport.get(f.reportCode).push(f);
+    }
+    let allFights = null;
+    for (const fights of byReport.values()) {
+      const k = fights.filter(f => f.kill).length;
+      const bestK = allFights ? allFights.filter(f => f.kill).length : -1;
+      if (!allFights || k > bestK || (k === bestK && fights.length > allFights.length)) allFights = fights;
+    }
     const kills = allFights.filter(f => f.kill);
     const wipes = allFights.filter(f => !f.kill);
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
-    const sourceCodes = [...new Set(c.fights.map(f => f.reportCode))];
-    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Reports ${sourceCodes.join(", ")} — ${c.fights.length} Fights vor Dedup -> ${allFights.length} danach (${kills.length} Kills, ${wipes.length} Wipes)`);
-
-    // Repraesentativer Report der Nacht = der, dessen Fights in diesem
-    // Cluster die meisten echten Kills beisteuern.
-    const killsByReport = new Map();
-    for (const f of kills) killsByReport.set(f.reportCode, (killsByReport.get(f.reportCode) || 0) + 1);
-    let masterCode = allFights[0]?.reportCode;
-    let bestKills = -1;
-    for (const [code, n] of killsByReport) if (n > bestKills) { bestKills = n; masterCode = code; }
-    const master = reportByCode.get(masterCode) || rosterReports[0];
+    const master = reportByCode.get(allFights[0].reportCode);
+    const otherCodes = [...byReport.keys()].filter(code => code !== master.code);
+    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Report ${master.code} gewaehlt (${allFights.length} Fights, ${kills.length} Kills)${otherCodes.length ? `, verworfen: ${otherCodes.join(", ")}` : ""}`);
 
     const firstPull = Math.min(...allFights.map(f => f.absStart));
     const lastPull = Math.max(...allFights.map(f => f.absEnd));
