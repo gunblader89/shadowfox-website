@@ -10,7 +10,7 @@
       "duration": "2h 7m",
       "difficulty": "Normal",
       "kills": 3,
-      "wipes": 8,
+      "wipes": 10,
       "killedBosses": [
         "The Coiled Altar",
         "Ula'tek",
@@ -61,7 +61,7 @@
       "duration": "2h 31m",
       "difficulty": "Normal",
       "kills": 1,
-      "wipes": 17,
+      "wipes": 19,
       "killedBosses": [
         "The Twin Fangs"
       ],
@@ -93,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-25T06:28:24.802Z"
+  "updatedAt": "2026-08-25T06:38:18.659Z"
 }
