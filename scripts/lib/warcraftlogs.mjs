@@ -31,13 +31,17 @@ const normalizeName = s => String(s).split("-")[0].trim().toLowerCase();
 
 /** Fights von zwei parallel mitloggenden Mitgliedern als eine zusammenfassen:
     gleicher Boss, gleiches Ergebnis (Kill/Wipe), Start innerhalb von 3 Minuten
-    gilt als derselbe reale Pull. Echte, unterschiedliche Pulls (auch wenn sie
-    kurz hintereinander liegen) bleiben erhalten, solange sie ausserhalb des
-    Toleranzfensters liegen. */
+    gilt als derselbe reale Pull — aber nur zwischen VERSCHIEDENEN Reports.
+    Innerhalb desselben Reports gilt jeder Fight als eigenstaendig, sonst
+    wuerden schnell aufeinanderfolgende, aber echte unterschiedliche Pulls
+    (manche Wipes dauern nur 15-30s) faelschlich zusammengelegt. */
 function dedupeFights(fights, toleranceMs = 3 * 60 * 1000) {
   const kept = [];
   for (const f of [...fights].sort((a, b) => a.absStart - b.absStart)) {
-    const dup = kept.find(k => k.name === f.name && k.kill === f.kill && Math.abs(k.absStart - f.absStart) < toleranceMs);
+    const dup = kept.find(k =>
+      k.reportCode !== f.reportCode &&
+      k.name === f.name && k.kill === f.kill && Math.abs(k.absStart - f.absStart) < toleranceMs
+    );
     if (!dup) kept.push(f);
   }
   return kept;
@@ -100,7 +104,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     .map(r => ({
       ...r,
       raidFights: (r.fights ?? [])
-        .map(f => ({ ...f, absStart: r.startTime + f.startTime, absEnd: r.startTime + f.endTime }))
+        .map(f => ({ ...f, absStart: r.startTime + f.startTime, absEnd: r.startTime + f.endTime, reportCode: r.code }))
         .filter(f => {
           if (![3, 4, 5].includes(f.difficulty)) return false;
           if (!bossNameSet.has(String(f.name).toLowerCase().trim())) return false;
