@@ -18,9 +18,9 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 287,
-      "mplus": 1503,
-      "weeklyRuns": 7,
+      "ilvl": 288,
+      "mplus": 1692,
+      "weeklyRuns": 8,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -30,7 +30,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 306,
+      "ilvl": 307,
       "mplus": 2441,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
@@ -78,9 +78,9 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 282,
+      "ilvl": 283,
       "mplus": 1214,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -126,9 +126,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 289,
-      "mplus": 780,
-      "weeklyRuns": 4,
+      "ilvl": 296,
+      "mplus": 968,
+      "weeklyRuns": 5,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
     },
@@ -151,7 +151,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 302,
-      "mplus": 2352,
+      "mplus": 2479,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -198,7 +198,7 @@
       "class": "Paladin",
       "spec": "Retribution",
       "role": "DPS",
-      "ilvl": 302,
+      "ilvl": 306,
       "mplus": 2601,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -282,8 +282,8 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 299,
-      "mplus": 2528,
+      "ilvl": 298,
+      "mplus": 2537,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-25T14:09:07.495Z"
+  "updatedAt": "2026-08-25T19:18:06.218Z"
 }
