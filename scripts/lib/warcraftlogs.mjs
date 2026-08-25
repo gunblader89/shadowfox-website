@@ -35,9 +35,10 @@ function hourInTimezone(ts, timeZone) {
   return Number(new Intl.DateTimeFormat("en-US", { timeZone, hour: "numeric", hour12: false }).format(ts));
 }
 
-export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, bossNames = DEFAULT_BOSS_NAMES, rosterNames = [], raidHours = [18, 23], timeZone = "Europe/Berlin" }) {
+export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, bossNames = DEFAULT_BOSS_NAMES, rosterNames = [], raidHours = [18, 23], timeZone = "Europe/Berlin", preferredLoggers = ["Jisgarin"] }) {
   const bossNameSet = new Set(bossNames.map(n => n.toLowerCase().trim()));
   const rosterSet = new Set(rosterNames.map(normalizeName));
+  const preferredLoggerSet = new Set(preferredLoggers.map(normalizeName));
   const tok = await token(clientId, clientSecret);
 
   // Alle Berichte der Gilde abfragen
@@ -50,6 +51,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
           startTime
           endTime
           zone { id name }
+          owner { name }
           fights(killType: Encounters) {
             id
             name
@@ -144,17 +146,25 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
   const resultReports = fightClusters.map(c => {
     // Zwei Mitglieder koennen denselben Raidabend parallel mitloggen. Statt
     // die Kaempfe mehrerer Reports zusammenzufuehren (fehleranfaellig bei
-    // Dopplungen und unterschiedlich vollstaendigen Mitschnitten), zaehlt pro
-    // Abend nur der EINE Report mit den meisten Kills — bei Gleichstand der
-    // mit den WENIGSTEN Kaempfen insgesamt. Klingt zunaechst falsch herum,
-    // aber jeder bisher beobachtete Abweichungsfall war ein Report mit
-    // zusaetzlichen, nicht zum Abend gehoerenden Kaempfen (Kontamination
-    // durch parallel laufendes Logging) — nie ein echtes unvollstaendiges
-    // Fragment. Der schlankere Report war deshalb bislang immer der korrekte.
-    const byReport = new Map();
+    // Dopplungen und unterschiedlich vollstaendigen Mitschnitten — sowohl
+    // "mehr Kaempfe" als auch "weniger Kaempfe" koennen je nach Ursache
+    // (Verbindungsabbruch am Anfang vs. Log-Artefakte durch Lag) das
+    // vollstaendigere Ergebnis sein, keine reine Zahl ist dafuer verlaesslich),
+    // zaehlt pro Abend nur EIN Report. Bevorzugt wird der von einem bekannt
+    // zuverlaessigen Logger (preferredLoggers, z.B. Jisgarin); ist keiner der
+    // Kandidaten von so jemandem, entscheiden die meisten Kills, dann die
+    // wenigsten Kaempfe als letzter (unsicherer) Tiebreak.
+    let byReport = new Map();
     for (const f of c.fights) {
       if (!byReport.has(f.reportCode)) byReport.set(f.reportCode, []);
       byReport.get(f.reportCode).push(f);
+    }
+    if (preferredLoggerSet.size > 0) {
+      const preferred = new Map([...byReport].filter(([code]) => {
+        const owner = reportByCode.get(code)?.owner?.name;
+        return owner && preferredLoggerSet.has(normalizeName(owner));
+      }));
+      if (preferred.size > 0) byReport = preferred;
     }
     let allFights = null;
     for (const fights of byReport.values()) {
@@ -167,7 +177,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
     const master = reportByCode.get(allFights[0].reportCode);
     const otherCodes = [...byReport.keys()].filter(code => code !== master.code);
-    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Report ${master.code} gewaehlt (${allFights.length} Fights, ${kills.length} Kills)${otherCodes.length ? `, verworfen: ${otherCodes.join(", ")}` : ""}`);
+    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Report ${master.code} gewaehlt (Owner: ${master.owner?.name ?? "?"}, ${allFights.length} Fights, ${kills.length} Kills)${otherCodes.length ? `, verworfen: ${otherCodes.join(", ")}` : ""}`);
 
     const firstPull = Math.min(...allFights.map(f => f.absStart));
     const lastPull = Math.max(...allFights.map(f => f.absEnd));
