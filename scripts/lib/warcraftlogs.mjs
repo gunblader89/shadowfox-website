@@ -140,38 +140,44 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
       })
     : withRaidFights;
 
-  // Zeitfenster-Clustering (9h): mehrere WCL-Reports vom selben Raidabend
-  // (z.B. nach einem Disconnect/Neustart des Logs) zu einem Eintrag zusammenfassen,
-  // statt denselben Abend mehrfach anzuzeigen.
-  const sorted = [...rosterReports].sort((a, b) => b.startTime - a.startTime);
-  const clusters = [];
-  for (const r of sorted) {
-    const match = clusters.find(c => Math.abs(c.startTime - r.startTime) < 9 * 3600 * 1000);
-    if (match) match.reports.push(r);
-    else clusters.push({ startTime: r.startTime, reports: [r] });
-  }
-  for (const c of clusters) {
-    log(`  [Diagnose] Cluster @ ${new Date(c.startTime).toISOString()}: ${c.reports.map(r => r.code).join(", ")}`);
+  // Zeitfenster-Clustering (9h) auf Ebene der einzelnen Kaempfe, nicht der
+  // Reports: ein Report kann durchgehend ueber Tage geloggt sein und dabei
+  // mehrere echte Raidabende enthalten (siehe Diagnose oben — Langhaloths
+  // Report enthielt Kaempfe, die zeitlich zum 20.08. gehoerten, obwohl der
+  // Report selbst an einem anderen Tag "startete"). Der Report als Ganzes
+  // ist deshalb keine verlaessliche Gruppierungseinheit; stattdessen werden
+  // die Kaempfe direkt nach ihrem eigenen Zeitstempel geclustert.
+  const reportByCode = new Map(rosterReports.map(r => [r.code, r]));
+  const allRaidFights = rosterReports.flatMap(r => r.raidFights);
+  const sortedFights = [...allRaidFights].sort((a, b) => a.absStart - b.absStart);
+  const fightClusters = [];
+  for (const f of sortedFights) {
+    const match = fightClusters.find(c => Math.abs(c.anchor - f.absStart) < 9 * 3600 * 1000);
+    if (match) match.fights.push(f);
+    else fightClusters.push({ anchor: f.absStart, fights: [f] });
   }
 
   const diffMap = { 3: "Normal", 4: "Heroisch", 5: "Mythisch" };
 
-  const resultReports = clusters.map(c => {
+  const resultReports = fightClusters.map(c => {
     // Zwei Mitglieder koennen denselben Raidabend parallel mitloggen — das
-    // ergibt zwei WCL-Reports mit praktisch identischen Kaempfen, die sonst
-    // beim Zusammenfuehren doppelt gezaehlt wuerden.
-    const rawFights = c.reports.flatMap(r => r.raidFights);
-    const allFights = dedupeFights(rawFights);
+    // ergibt Kaempfe aus zwei verschiedenen Reports, die praktisch identisch
+    // sind und sonst doppelt gezaehlt wuerden.
+    const allFights = dedupeFights(c.fights);
     const kills = allFights.filter(f => f.kill);
     const wipes = allFights.filter(f => !f.kill);
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
-    log(`  [Diagnose] Cluster @ ${new Date(c.startTime).toISOString()}: ${rawFights.length} Fights vor Dedup -> ${allFights.length} danach (${kills.length} Kills, ${wipes.length} Wipes)`);
+    const sourceCodes = [...new Set(c.fights.map(f => f.reportCode))];
+    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Reports ${sourceCodes.join(", ")} — ${c.fights.length} Fights vor Dedup -> ${allFights.length} danach (${kills.length} Kills, ${wipes.length} Wipes)`);
 
-    // Repraesentativer Report der Nacht = der mit den meisten echten Kills
-    // (i.d.R. der vollstaendige Log, nicht ein abgebrochenes Fragment).
-    const master = c.reports.reduce((best, cur) =>
-      cur.raidFights.filter(f => f.kill).length > best.raidFights.filter(f => f.kill).length ? cur : best
-    , c.reports[0]);
+    // Repraesentativer Report der Nacht = der, dessen Fights in diesem
+    // Cluster die meisten echten Kills beisteuern.
+    const killsByReport = new Map();
+    for (const f of kills) killsByReport.set(f.reportCode, (killsByReport.get(f.reportCode) || 0) + 1);
+    let masterCode = allFights[0]?.reportCode;
+    let bestKills = -1;
+    for (const [code, n] of killsByReport) if (n > bestKills) { bestKills = n; masterCode = code; }
+    const master = reportByCode.get(masterCode) || rosterReports[0];
 
     const firstPull = Math.min(...allFights.map(f => f.absStart));
     const lastPull = Math.max(...allFights.map(f => f.absEnd));
