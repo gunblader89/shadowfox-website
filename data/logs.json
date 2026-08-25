@@ -52,16 +52,16 @@
       }
     },
     {
-      "code": "dM6PGWzZnJQxbhHp",
-      "url": "https://www.warcraftlogs.com/reports/dM6PGWzZnJQxbhHp",
+      "code": "KbyxpZWhNFnr2wAM",
+      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1787248823341,
-      "endTime": 1787257924834,
-      "duration": "2h 31m",
+      "startTime": 1787250214064,
+      "endTime": 1787257925349,
+      "duration": "2h 8m",
       "difficulty": "Normal",
       "kills": 1,
-      "wipes": 19,
+      "wipes": 15,
       "killedBosses": [
         "The Twin Fangs"
       ],
@@ -93,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-25T06:52:20.551Z"
+  "updatedAt": "2026-08-25T06:55:25.346Z"
 }
