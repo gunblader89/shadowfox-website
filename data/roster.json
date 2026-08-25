@@ -7,7 +7,7 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 302,
-      "mplus": 2458,
+      "mplus": 2492,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -78,7 +78,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 281,
+      "ilvl": 282,
       "mplus": 1214,
       "weeklyRuns": 6,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-25T06:58:18.342Z"
+  "updatedAt": "2026-08-25T07:33:22.370Z"
 }
