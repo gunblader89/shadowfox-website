@@ -6,11 +6,11 @@
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1787594211527,
-      "endTime": 1787601867371,
+      "endTime": 1787601865234,
       "duration": "2h 7m",
       "difficulty": "Normal",
       "kills": 3,
-      "wipes": 20,
+      "wipes": 10,
       "killedBosses": [
         "The Coiled Altar",
         "Ula'tek",
@@ -57,11 +57,11 @@
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1787248823341,
-      "endTime": 1787257926826,
+      "endTime": 1787257925349,
       "duration": "2h 31m",
       "difficulty": "Normal",
       "kills": 1,
-      "wipes": 53,
+      "wipes": 19,
       "killedBosses": [
         "The Twin Fangs"
       ],
@@ -93,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-25T06:16:35.144Z"
+  "updatedAt": "2026-08-25T06:20:40.999Z"
 }
