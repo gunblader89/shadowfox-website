@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-26T14:08:31.407Z",
+  "updatedAt": "2026-08-26T16:29:48.728Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",
@@ -985,8 +985,44 @@
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 7,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 8,
+          "timed": false
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 8,
+          "timed": false
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 4,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 4,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Chantallè",
@@ -1003,8 +1039,49 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 8,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 9,
+          "timed": false
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": false
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 9,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": false
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 6,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 4,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Yanalai",
@@ -1015,8 +1092,49 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 8,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 8,
+          "timed": false
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 8,
+          "timed": false
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 8,
+          "timed": false
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 6,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 9,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 4,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 4,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Iojaru",
@@ -1134,6 +1252,72 @@
     },
     {
       "name": "Moonlord",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Hòbs",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Merccrixxus",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Quon",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Sandino",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Thorelion",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Améthyst",
+      "realm": "blackmoore",
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        }
+      ]
+    },
+    {
+      "name": "Chantallé",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Jisgarin",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Sweetschi",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Druith",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
