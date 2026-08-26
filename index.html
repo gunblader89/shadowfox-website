@@ -631,10 +631,11 @@ let KB = [
 
 let KADER = [];
 let REPORTS = [];
+let ATTENDANCE = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT = {
-  id:null, title:"Der Giftige Abgrund", date:"24.08.26", time:"19:45", leader:"Merccrixxus/Passi", live:true,
+  id:null, title:"Der Giftige Abgrund", date:"24.08.26", time:"19:45", unixtime:null, leader:"Merccrixxus/Passi", live:true,
   counts:{primary:20,tentative:0,bench:0,absence:1,late:0}, signups:[]
 };
 
@@ -739,6 +740,21 @@ function fmtDateShort(d) {
   return str;
 }
 
+/* Countdown-Text bis zum naechsten Raid, aus einem Unix-Sekunden-Zeitstempel
+   (startTime der Live-API bzw. unixtime aus dem gecachten events.json). */
+function fmtCountdown(unixSeconds) {
+  if (!unixSeconds) return "";
+  const diffMs = unixSeconds * 1000 - Date.now();
+  if (diffMs <= 0) return "";
+  const mins = Math.floor(diffMs / 60000);
+  const days = Math.floor(mins / 1440);
+  const hours = Math.floor((mins % 1440) / 60);
+  const rem = mins % 60;
+  if (days > 0) return `in ${days} Tag${days === 1 ? "" : "en"} ${hours} Std`;
+  if (hours > 0) return `in ${hours} Std ${rem} Min`;
+  return `in ${rem} Min`;
+}
+
 function calcVault(runs) {
   if (runs >= 8) return 3;
   if (runs >= 4) return 2;
@@ -837,7 +853,7 @@ function fallbackEventBlock(){
       <div>
         <div class="eyebrow">Anmeldung <span class="pill p-gray"><span class="dot"></span>Zwischengespeichert</span></div>
         <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(EVENT.title)}</div>
-        <div class="soft" style="font-size:12.5px">${fmtDateShort(EVENT.date)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}</div>
+        <div class="soft" style="font-size:12.5px">${fmtDateShort(EVENT.date)} · ${EVENT.time} Uhr · Lead ${esc(EVENT.leader)}${fmtCountdown(EVENT.unixtime) ? ` · ${fmtCountdown(EVENT.unixtime)}` : ''}</div>
       </div>
       <div class="sig-counts">
         ${cnt("c-yes","✓ Zugesagt",prim.length || EVENT.counts.primary)}
@@ -1226,7 +1242,28 @@ tracker(){
         <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:${scoreColor(p.mp)}"></i></span>
         <span class="vl" style="color:${scoreColor(p.mp)};font-weight:700">${p.mp||0}</span></div>`).join("")||'<div class="muted">Keine Scores</div>'}
     </div>
-  </div>`;
+  </div>
+  ${ATTENDANCE.length ? `
+  <div class="tw fade" style="margin-bottom:30px">
+    <h2 class="sec">Anwesenheit (letzte ${Math.max(...ATTENDANCE.map(a=>a.total))} erfasste Termine)</h2>
+    <table class="trk">
+      <thead><tr><th>Spieler</th><th>Dabei</th><th>Quote</th></tr></thead>
+      <tbody>
+        ${[...ATTENDANCE].sort((a,b)=>(a.present/a.total)-(b.present/b.total)).map(a=>{
+          const rate = Math.round((a.present/a.total)*100);
+          const rateColor = rate>=80?'var(--green)':(rate>=50?'var(--amber)':'var(--red)');
+          return `<tr>
+            <td><span class="pname"><span class="pdot" style="background:${col(a.c)}"></span><span><b>${esc(a.n)}</b></span></span></td>
+            <td class="num">${a.present} / ${a.total}</td>
+            <td>
+              <span class="mini"><i style="width:${rate}%;background:${rateColor}"></i></span>
+              <span class="num" style="color:${rateColor};font-weight:600">${rate}%</span>
+            </td>
+          </tr>`;
+        }).join("")}
+      </tbody>
+    </table>
+  </div>` : ''}`;
 },
 
 logs(){
@@ -1371,9 +1408,10 @@ function renderTrk(){
   tb.innerHTML = rows.map(p => {
     const isGreenRuns = (p.mr || 0) >= 8;
     const runsDisplay = (p.mr || 0) >= 10 ? "10+" : (p.mr || 0);
+    const missing = p.missingEnchants || [];
     return `<tr>
       <td><span class="pname"><span class="pdot" style="background:${col(p.c)}"></span>
-        <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span></span></td>
+        <span><b>${esc(p.n)}</b><i>${esc(p.c)}</i></span>${missing.length ? `<span title="Fehlende Verzauberung: ${esc(missing.join(", "))}" style="cursor:help;color:var(--amber,#eab54e);font-size:13px">⚠</span>` : ''}</span></td>
       <td><span style="color:${ROLLEN[p.r]||'#888'};font-weight:600;font-size:12px">${p.r}</span></td>
       <td class="num" style="font-weight:600">${p.ilvl || '—'}</td>
       <td>
@@ -1508,7 +1546,7 @@ function eventCardHtml(e){
       <div>
         <div class="eyebrow">Anmeldung <span class="pill p-green"><span class="dot"></span>Discord Live</span></div>
         <div style="font-size:17px;font-weight:650;margin-top:2px">${esc(e.title)}</div>
-        <div class="soft" style="font-size:12.5px">${fmtDateShort(e.date)} · ${esc(e.time)} Uhr${e.leader ? ` · Lead ${esc(e.leader)}` : ''}</div>
+        <div class="soft" style="font-size:12.5px">${fmtDateShort(e.date)} · ${esc(e.time)} Uhr${e.leader ? ` · Lead ${esc(e.leader)}` : ''}${fmtCountdown(e.startTime) ? ` · ${fmtCountdown(e.startTime)}` : ''}</div>
       </div>
       <div class="sig-counts">
         ${cnt("c-yes","✓ Zugesagt",e.counts.primary)}
@@ -1781,6 +1819,7 @@ function applyData(d, c){
             mp: rc.mplus || 0,
             mr: runs,
             v: calcVault(runs),
+            missingEnchants: rc.missingEnchants || [],
             thumb: rc.thumb || null
           };
           charMap.set(key, p);
@@ -1791,6 +1830,7 @@ function applyData(d, c){
             p.mr = Math.max(p.mr || 0, rc.weeklyRuns);
             p.v = calcVault(p.mr);
           }
+          if(rc.missingEnchants) p.missingEnchants = rc.missingEnchants;
           if(rc.thumb) p.thumb = rc.thumb;
           if(rc.spec && !p.spec) p.spec = rc.spec;
           if(!p.c || p.c === "Krieger") p.c = cls;
@@ -1816,6 +1856,25 @@ function applyData(d, c){
       KADER = Array.from(charMap.values());
     }
 
+    if(d?.attendance?.events){
+      // Nur die letzten 15 erfassten (bereits vergangenen) Termine werten -
+      // aktuelle Zuverlaessigkeit zaehlt mehr als ein Ausrutscher vor Monaten.
+      const evList = Object.values(d.attendance.events)
+        .filter(e => e && e.unixtime)
+        .sort((a,b) => b.unixtime - a.unixtime)
+        .slice(0, 15);
+      const PRESENT = new Set(["primary","late"]);
+      ATTENDANCE = KADER.map(p => {
+        const key = normName(p.n);
+        let present = 0;
+        for(const e of evList){
+          const st = e.statusByName?.[key];
+          if(st && PRESENT.has(st)) present++;
+        }
+        return { n: p.n, c: p.c, present, total: evList.length };
+      }).filter(a => a.total > 0);
+    }
+
     if(d?.events?.events?.length){
       const e = d.events.events[0];
       EVENT.id = e.id || EVENT.id;
@@ -1823,6 +1882,7 @@ function applyData(d, c){
       EVENT.time = e.time || EVENT.time;
       EVENT.leader = e.leader || EVENT.leader;
       EVENT.date = e.date || "24.08.26";
+      EVENT.unixtime = e.unixtime || EVENT.unixtime;
       EVENT.counts = e.counts || EVENT.counts;
       if(e.signups?.length){
         EVENT.signups = e.signups.map(s => {
@@ -1943,8 +2003,8 @@ addEventListener("keydown", e => {
 
   try {
     const [d, c] = await Promise.all([
-      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status"].map(n => load(`data/${n}.json`)))
-        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status"].map((n,i) => [n,a[i]]))),
+      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status","attendance"].map(n => load(`data/${n}.json`)))
+        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status","attendance"].map((n,i) => [n,a[i]]))),
       Promise.all(["bosses","wissen","raider","termine","dungeons"].map(n => load(`content/${n}.json`)))
         .then(a => Object.fromEntries(["bosses","wissen","raider","termine","dungeons"].map((n,i) => [n,a[i]])))
     ]);

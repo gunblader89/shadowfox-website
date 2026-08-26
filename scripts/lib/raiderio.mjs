@@ -2,6 +2,17 @@
 import { req, pool, ok, sleep, log } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
+
+/* Ausruestungsplaetze, die in aktuellem Retail-WoW regulaer verzaubert werden
+   koennen. Sockel (gems) werden bewusst NICHT geprueft - Raider.IO liefert
+   dort nur "welche Sockel sind befuellt", nicht "welche Items haben ueberhaupt
+   einen Sockel", ein leeres gems-Array ist daher nicht zuverlaessig von "Item
+   hat keinen Sockel" zu unterscheiden. */
+const ENCHANT_SLOTS = {
+  back: "Rücken", chest: "Brust", wrist: "Handgelenke", legs: "Beine",
+  feet: "Füße", finger1: "Ring 1", finger2: "Ring 2",
+  mainhand: "Waffe", offhand: "Nebenhand"
+};
 const TIMEZONE = "Europe/Berlin";
 
 /** Reset-Wochen-Key (Mittwoch 03:00 Berliner Zeit) - gleiche Logik wie in
@@ -87,6 +98,11 @@ export async function characters(items, { region, realm }) {
 
       const equippedIlvl = c.gear?.item_level_equipped ?? c.gear?.item_level_total ?? null;
 
+      const gearItems = c.gear?.items || {};
+      const missingEnchants = Object.entries(ENCHANT_SLOTS)
+        .filter(([slot]) => gearItems[slot] && gearItems[slot].item_level > 0 && !gearItems[slot].enchant)
+        .map(([, label]) => label);
+
       return {
         name: c.name,
         realm: charRealm,
@@ -96,6 +112,7 @@ export async function characters(items, { region, realm }) {
         ilvl: equippedIlvl ? Math.round(equippedIlvl) : null,
         mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
         weeklyRuns: runCount,
+        missingEnchants,
         thumb: c.thumbnail_url ?? null,
         profileUrl: c.profile_url
       };

@@ -9,6 +9,7 @@ import * as raidhelp  from "./lib/raidhelper.mjs";
 import * as wcl       from "./lib/warcraftlogs.mjs";
 import * as audit     from "./lib/wowaudit.mjs";
 import * as bnet      from "./lib/blizzard.mjs";
+import * as attendance from "./lib/attendance.mjs";
 import { skip, fail, log } from "./lib/util.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -114,10 +115,18 @@ if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
 /* 5) Raid-Helper */
 if (env("RAIDHELPER_API_KEY") && env("RAIDHELPER_SERVER_ID")) {
   try {
-    await write("events.json", await raidhelp.events({
+    const eventsResult = await raidhelp.events({
       apiKey: env("RAIDHELPER_API_KEY"),
       serverId: env("RAIDHELPER_SERVER_ID")
-    }));
+    });
+    await write("events.json", eventsResult);
+
+    try {
+      let existingAttendance = null;
+      try { existingAttendance = JSON.parse(await readFile(join(DATA, "attendance.json"), "utf8")); } catch { /* erster Lauf */ }
+      const attendanceResult = attendance.updateAttendance({ existing: existingAttendance, events: eventsResult.events });
+      await write("attendance.json", attendanceResult);
+    } catch (e) { errors++; fail(`Anwesenheits-Archiv: ${e.message}`); }
   } catch (e) { errors++; fail(`Raid-Helper: ${e.message}`); }
 }
 
