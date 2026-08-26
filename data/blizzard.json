@@ -974,49 +974,13 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-26T18:33:00.170Z",
+  "updatedAt": "2026-08-26T18:42:35.464Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 7,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 7,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 8,
-          "timed": false
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 8,
-          "timed": false
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 7,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 7,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 4,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 4,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Thessaly",
@@ -1027,49 +991,8 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 8,
-      "runs": [
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 9,
-          "timed": false
-        },
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 10,
-          "timed": false
-        },
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 7,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 9,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 10,
-          "timed": false
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 6,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
-          "timed": false
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 4,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Raiox",
@@ -1107,86 +1030,14 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 6,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 4,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 5,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 5,
-          "timed": true
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 4,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 4,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 7,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 8,
-      "runs": [
-        {
-          "dungeon": "Die Königsruh",
-          "level": 8,
-          "timed": false
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 8,
-          "timed": false
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 8,
-          "timed": false
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 7,
-          "timed": true
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 6,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 9,
-          "timed": false
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 4,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 4,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Iojaru",

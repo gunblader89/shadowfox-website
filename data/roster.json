@@ -97,9 +97,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 312,
-      "mplus": 2621,
-      "weeklyRuns": 4,
+      "ilvl": 311,
+      "mplus": 2626,
+      "weeklyRuns": 5,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -214,9 +214,9 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 309,
-      "mplus": 2634,
-      "weeklyRuns": 6,
+      "ilvl": 310,
+      "mplus": 2639,
+      "weeklyRuns": 7,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -366,8 +366,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2643,
-      "weeklyRuns": 7,
+      "mplus": 2648,
+      "weeklyRuns": 8,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -487,5 +487,5 @@
       "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-26T18:32:58.611Z"
+  "updatedAt": "2026-08-26T18:42:33.983Z"
 }
