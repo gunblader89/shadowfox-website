@@ -33,7 +33,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2456,
+      "mplus": 2464,
       "weeklyRuns": 0,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 301,
-      "mplus": 1603,
-      "weeklyRuns": 0,
+      "mplus": 1896,
+      "weeklyRuns": 1,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -97,9 +97,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 311,
+      "ilvl": 312,
       "mplus": 2626,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -121,11 +121,11 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Guardian",
-      "role": "TANK",
-      "ilvl": 299,
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 298,
       "mplus": 2468,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -138,7 +138,7 @@
       "role": "HEALING",
       "ilvl": 296,
       "mplus": 2374,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -255,7 +255,7 @@
       "role": "DPS",
       "ilvl": 306,
       "mplus": 2624,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -487,5 +487,5 @@
       "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-26T18:42:33.983Z"
+  "updatedAt": "2026-08-26T19:44:54.501Z"
 }

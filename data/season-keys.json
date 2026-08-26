@@ -279,8 +279,8 @@
       "name": "Oionil",
       "banked": 0,
       "weekKey": "2026-08-26",
-      "weekCount": 5,
-      "total": 5
+      "weekCount": 6,
+      "total": 6
     },
     "feire": {
       "name": "Feire",
@@ -293,11 +293,11 @@
       "name": "Amhairghin",
       "banked": 0,
       "weekKey": "2026-08-26",
-      "weekCount": 0,
-      "total": 0
+      "weekCount": 2,
+      "total": 2
     }
   },
   "weekKey": "2026-08-26",
-  "updatedAt": "2026-08-26T18:42:45.526Z",
-  "totalThisSeason": 221
+  "updatedAt": "2026-08-26T19:45:06.079Z",
+  "totalThisSeason": 224
 }

@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-26T18:42:35.464Z",
+  "updatedAt": "2026-08-26T19:44:56.004Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -991,8 +991,19 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 11,
+          "timed": false
+        }
+      ]
     },
     {
       "name": "Raiox",
@@ -1036,8 +1047,14 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 8,
+          "timed": false
+        }
+      ]
     },
     {
       "name": "Iojaru",
