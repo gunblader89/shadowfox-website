@@ -57,5 +57,9 @@ jobs:
             echo "Keine Aenderungen — nichts zu committen."
           else
             git commit -m "Daten automatisch aktualisiert"
-            git push
+            for i in 1 2 3; do
+              git push && break
+              echo "Push abgelehnt (main hat sich zwischenzeitlich veraendert) — hole neuesten Stand und versuche erneut..."
+              git pull --rebase origin main
+            done
           fi
