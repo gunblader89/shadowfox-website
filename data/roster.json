@@ -33,7 +33,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2441,
+      "mplus": 2456,
       "weeklyRuns": 0,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
@@ -72,7 +72,7 @@
       "spec": "Mistweaver",
       "role": "HEALING",
       "ilvl": 285,
-      "mplus": 2325,
+      "mplus": 2420,
       "weeklyRuns": 0,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
@@ -124,7 +124,7 @@
       "spec": "Guardian",
       "role": "TANK",
       "ilvl": 299,
-      "mplus": 2100,
+      "mplus": 2468,
       "weeklyRuns": 0,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
@@ -150,7 +150,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 283,
-      "mplus": 1473,
+      "mplus": 1484,
       "weeklyRuns": 0,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
@@ -189,7 +189,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 289,
-      "mplus": 892,
+      "mplus": 923,
       "weeklyRuns": 0,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
@@ -254,8 +254,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2617,
-      "weeklyRuns": 4,
+      "mplus": 2624,
+      "weeklyRuns": 6,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -366,8 +366,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2636,
-      "weeklyRuns": 5,
+      "mplus": 2643,
+      "weeklyRuns": 7,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -399,8 +399,8 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 305,
-      "mplus": 2512,
-      "weeklyRuns": 3,
+      "mplus": 2554,
+      "weeklyRuns": 4,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
@@ -487,5 +487,5 @@
       "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-26T18:02:42.384Z"
+  "updatedAt": "2026-08-26T18:32:58.611Z"
 }

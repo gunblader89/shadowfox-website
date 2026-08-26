@@ -72,7 +72,7 @@
       "cls": "Monk",
       "role": "Heal",
       "rank": "Main",
-      "status": "pending",
+      "status": "tracking",
       "blizzardId": "604-183442503",
       "ilvl": null,
       "vault": null,
@@ -98,7 +98,7 @@
       "cls": "Warrior",
       "role": "Melee",
       "rank": "Alt",
-      "status": "pending",
+      "status": "tracking",
       "blizzardId": "580-169868528",
       "ilvl": null,
       "vault": null,
@@ -124,7 +124,7 @@
       "cls": "Druid",
       "role": "Ranged",
       "rank": "Main",
-      "status": "pending",
+      "status": "tracking",
       "blizzardId": "604-135539617",
       "ilvl": null,
       "vault": null,
@@ -795,5 +795,5 @@
       }
     ]
   },
-  "updatedAt": "2026-08-26T18:01:33.236Z"
+  "updatedAt": "2026-08-26T18:31:50.579Z"
 }
