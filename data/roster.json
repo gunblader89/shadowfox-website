@@ -72,8 +72,8 @@
       "spec": "Mistweaver",
       "role": "HEALING",
       "ilvl": 285,
-      "mplus": 2216,
-      "weeklyRuns": 1,
+      "mplus": 2325,
+      "weeklyRuns": 2,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -90,6 +90,45 @@
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
+    },
+    {
+      "name": "Oionil",
+      "realm": "blackmoore",
+      "class": "Warrior",
+      "spec": "Arms",
+      "role": "DPS",
+      "ilvl": 312,
+      "mplus": 2621,
+      "weeklyRuns": 4,
+      "season": "season-mn-2",
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
+    },
+    {
+      "name": "Feire",
+      "realm": "blackmoore",
+      "class": "Evoker",
+      "spec": "Devastation",
+      "role": "DPS",
+      "ilvl": 288,
+      "mplus": 1307,
+      "weeklyRuns": 0,
+      "season": "season-mn-2",
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Feire"
+    },
+    {
+      "name": "Amhairghin",
+      "realm": "thrall",
+      "class": "Druid",
+      "spec": "Guardian",
+      "role": "TANK",
+      "ilvl": 299,
+      "mplus": 2100,
+      "weeklyRuns": 0,
+      "season": "season-mn-2",
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
     },
     {
       "name": "Yanalai",
@@ -190,7 +229,7 @@
       "role": "DPS",
       "ilvl": 305,
       "mplus": 2479,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -215,8 +254,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2612,
-      "weeklyRuns": 3,
+      "mplus": 2617,
+      "weeklyRuns": 4,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -327,8 +366,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2631,
-      "weeklyRuns": 4,
+      "mplus": 2636,
+      "weeklyRuns": 5,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -360,8 +399,8 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 305,
-      "mplus": 2508,
-      "weeklyRuns": 2,
+      "mplus": 2512,
+      "weeklyRuns": 3,
       "season": "season-mn-2",
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
@@ -448,5 +487,5 @@
       "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-26T17:07:18.122Z"
+  "updatedAt": "2026-08-26T17:48:39.998Z"
 }

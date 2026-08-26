@@ -92,6 +92,45 @@
       "wishlist": null
     },
     {
+      "id": 5559877,
+      "name": "Oionil",
+      "realm": "Blackmoore",
+      "cls": "Warrior",
+      "role": "Melee",
+      "rank": "Alt",
+      "status": "pending",
+      "blizzardId": "580-169868528",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 4975230,
+      "name": "Feire",
+      "realm": "Blackmoore",
+      "cls": "Evoker",
+      "role": "Ranged",
+      "rank": "Main",
+      "status": "tracking",
+      "blizzardId": "580-179823169",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
+      "id": 20121606,
+      "name": "Amhairghin",
+      "realm": "Thrall",
+      "cls": "Druid",
+      "role": "Ranged",
+      "rank": "Main",
+      "status": "pending",
+      "blizzardId": "604-135539617",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
       "id": 18191086,
       "name": "Yanalai",
       "realm": "Blackhand",
@@ -647,6 +686,30 @@
         "selected_percentage": 0
       },
       {
+        "id": 20121606,
+        "name": "Amhairghin",
+        "class": "Druid",
+        "role": "Ranged",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
+        "id": 4975230,
+        "name": "Feire",
+        "class": "Evoker",
+        "role": "Ranged",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
         "id": 5030491,
         "name": "Raiox",
         "class": "Druid",
@@ -732,5 +795,5 @@
       }
     ]
   },
-  "updatedAt": "2026-08-26T17:06:17.119Z"
+  "updatedAt": "2026-08-26T17:47:31.310Z"
 }

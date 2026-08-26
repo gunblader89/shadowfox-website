@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-26T17:07:19.615Z",
+  "updatedAt": "2026-08-26T17:48:41.430Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",
@@ -1091,6 +1091,76 @@
     },
     {
       "name": "Raiox",
+      "realm": "blackmoore",
+      "runsThisWeek": 0,
+      "runs": []
+    },
+    {
+      "name": "Oionil",
+      "realm": "blackmoore",
+      "runsThisWeek": 4,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        }
+      ]
+    },
+    {
+      "name": "Feire",
+      "realm": "blackmoore",
+      "runsThisWeek": 6,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 4,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 5,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 5,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 4,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 4,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 7,
+          "timed": true
+        }
+      ]
+    },
+    {
+      "name": "Amhairghin",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
