@@ -103,7 +103,7 @@
       "spec": "Unholy",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2571,
+      "mplus": 2597,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
@@ -139,7 +139,7 @@
       "spec": "Discipline",
       "role": "HEALING",
       "ilvl": 308,
-      "mplus": 2579,
+      "mplus": 2620,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -175,7 +175,7 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2593,
+      "mplus": 2603,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -196,10 +196,10 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
-      "ilvl": 306,
-      "mplus": 2601,
+      "spec": "Protection",
+      "role": "TANK",
+      "ilvl": 307,
+      "mplus": 2608,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -283,7 +283,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 298,
-      "mplus": 2537,
+      "mplus": 2589,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -314,11 +314,11 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 305,
-      "mplus": 2453,
+      "mplus": 2508,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-26T07:58:15.930Z"
+  "updatedAt": "2026-08-26T14:08:29.810Z"
 }

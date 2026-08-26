@@ -22,14 +22,14 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 97,
+            "parse": 96,
             "boss": "The Coiled Altar"
           },
           {
             "name": "Askái",
             "class": "DemonHunter",
             "spec": "Devourer",
-            "parse": 96,
+            "parse": 93,
             "boss": "The Coiled Altar"
           }
         ],
@@ -38,7 +38,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 97,
+            "parse": 96,
             "boss": "Ula'tek"
           },
           {
@@ -93,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-26T07:58:38.713Z"
+  "updatedAt": "2026-08-26T14:08:54.811Z"
 }
