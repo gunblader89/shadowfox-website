@@ -689,9 +689,9 @@ function cleanClass(clsStr, specStr) {
   const spec = String(specStr || "").toLowerCase().trim();
   if (["guardian", "feral", "balance", "restoration_druid"].includes(spec)) return "Druide";
   if (["blood", "unholy", "frost_dk"].includes(spec)) return "Todesritter";
-  if (["havoc", "vengeance"].includes(spec)) return "Dämonenjäger";
+  if (["havoc", "vengeance", "devourer"].includes(spec)) return "Dämonenjäger";
   if (["brewmaster", "windwalker", "mistweaver"].includes(spec)) return "Mönch";
-  if (["devastation", "augmentation", "preservation", "devourer"].includes(spec)) return "Rufer";
+  if (["devastation", "augmentation", "preservation"].includes(spec)) return "Rufer";
   if (["beastmastery", "marksmanship", "survival"].includes(spec)) return "Jäger";
   if (["assassination", "outlaw", "subtlety"].includes(spec)) return "Schurke";
   if (["affliction", "demonology", "destruction"].includes(spec)) return "Hexenmeister";

@@ -52,27 +52,33 @@ if (env("WOWAUDIT_API_KEY")) {
   } catch (e) { errors++; fail(`WoWAudit: ${e.message}`); }
 } else skip("WoWAudit: kein Key gesetzt");
 
-/* Charaktere aus WoWAudit oder content/raider.json */
+/* Charaktere aus WoWAudit UND content/raider.json zusammenfuehren — vorher
+   wurde raider.json komplett ignoriert, sobald WoWAudit aktiv war. Dadurch
+   fehlten im Roster alle Raider, die nur manuell in raider.json gepflegt
+   sind, aber (noch) nicht in WoWAudit registriert wurden. */
 let charList = [];
+const seenNames = new Set();
 if (auditData?.characters?.length) {
-  charList = auditData.characters.map(c => ({
-    name: c.name,
-    realm: c.realm ? c.realm.toLowerCase().replace(/\s+/g, "-") : GUILD.realm,
-    class: c.class,
-    role: c.role
-  }));
-} else {
-  try {
-    const raw = await readFile(join(ROOT, "content", "raider.json"), "utf8");
-    const j = JSON.parse(raw);
-    charList = (j.raider ?? []).filter(r => r.aktiv !== false).map(r => ({
-      name: r.name,
-      realm: GUILD.realm,
-      class: r.klasse,
-      role: r.rolle
-    }));
-  } catch { charList = []; }
+  for (const c of auditData.characters) {
+    charList.push({
+      name: c.name,
+      realm: c.realm ? c.realm.toLowerCase().replace(/\s+/g, "-") : GUILD.realm,
+      class: c.class,
+      role: c.role
+    });
+    seenNames.add(c.name.toLowerCase());
+  }
 }
+try {
+  const raw = await readFile(join(ROOT, "content", "raider.json"), "utf8");
+  const j = JSON.parse(raw);
+  for (const r of (j.raider ?? [])) {
+    if (r.aktiv === false) continue;
+    if (seenNames.has(r.name.toLowerCase())) continue;
+    charList.push({ name: r.name, realm: GUILD.realm, class: r.klasse, role: r.rolle });
+    seenNames.add(r.name.toLowerCase());
+  }
+} catch { /* content/raider.json fehlt oder ist kaputt - WoWAudit-Liste reicht dann allein */ }
 
 /* 3) Raider.IO Charaktere */
 if (charList.length) {

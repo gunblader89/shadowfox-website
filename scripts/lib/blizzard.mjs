@@ -47,7 +47,12 @@ export async function weeklyKeys({ token, region = "eu", realm = "blackmoore", n
     const url = `https://${region}.api.blizzard.com/profile/wow/character/${cleanRealm}/${cleanName}/mythic-keystone-profile?namespace=profile-${region}&locale=de_DE`;
     try {
       const data = await req(url, { headers: { Authorization: `Bearer ${token}` } }, 2);
-      const runs = data.current_period?.runs ?? [];
+      // Blizzards Mythic-Keystone-Profile-Endpunkt listet nur den besten Lauf
+      // je Dungeon dieser Periode (best_runs), nicht jeden einzelnen Versuch —
+      // ein Feld "runs" mit allen Versuchen gibt es dort nicht. Lief seit
+      // jeher als "0 Charaktere erfasst" durch, weil current_period.runs nie
+      // existierte.
+      const runs = data.current_period?.best_runs ?? [];
       return {
         name: charName,
         realm: charRealm,
