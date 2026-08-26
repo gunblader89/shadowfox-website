@@ -365,13 +365,6 @@
       "classId": 11
     },
     {
-      "name": "Cirivren",
-      "realm": "eredar",
-      "rank": 3,
-      "level": 90,
-      "classId": 5
-    },
-    {
       "name": "Corvispala",
       "realm": "blackmoore",
       "rank": 5,
@@ -510,13 +503,6 @@
       "rank": 1,
       "level": 90,
       "classId": 10
-    },
-    {
-      "name": "Dávor",
-      "realm": "blackhand",
-      "rank": 3,
-      "level": 90,
-      "classId": 3
     },
     {
       "name": "Mikalina",
@@ -988,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-25T19:18:07.801Z",
+  "updatedAt": "2026-08-26T03:33:12.243Z",
   "weeklyKeys": [
     {
       "name": "Mercrixxus",
