@@ -3,7 +3,7 @@
     { "name": "Hòbs", "klasse": "Druide", "rolle": "Ranged", "gildenrang": 0, "notiz": "Gildenmeisterin" },
     { "name": "Garódash", "klasse": "Schamane", "rolle": "Heal", "gildenrang": 1, "notiz": "Offizier" },
     { "name": "Merccrixxus", "klasse": "Krieger", "rolle": "Melee", "gildenrang": 1, "notiz": "Offizier" },
-    { "name": "Quon", "klasse": "Druide", "rolle": "Tank", "gildenrang": 3 },
+    { "name": "Quon", "klasse": "Druide", "rolle": "Tank", "gildenrang": 3, "aktiv": false },
     { "name": "Kitebrew", "klasse": "Mönch", "rolle": "Tank", "gildenrang": 3 },
     { "name": "Sandino", "klasse": "Schamane", "rolle": "Heal", "gildenrang": 3 },
     { "name": "Thorelion", "klasse": "Paladin", "rolle": "Heal", "gildenrang": 3 },

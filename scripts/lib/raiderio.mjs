@@ -1,5 +1,5 @@
 /* Raider.IO — Gear, M+ Score & wöchentliche Runs */
-import { req, pool, ok, sleep } from "./util.mjs";
+import { req, pool, ok, sleep, log } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
@@ -33,17 +33,32 @@ export async function characters(items, { region, realm }) {
     const charName = typeof item === "string" ? item.trim() : item.name.trim();
     const charRealm = typeof item === "object" && item.realm ? item.realm : realm;
 
-    // Valide Raider.IO Felder: gear, mythic_plus_scores_by_season:current, mythic_plus_weekly_highest_level_runs, mythic_plus_recent_runs
-    const fields = "gear,mythic_plus_scores_by_season:current,mythic_plus_weekly_highest_level_runs,mythic_plus_recent_runs";
+    const fields = "gear,mythic_plus_scores_by_season:current,mythic_plus_weekly_highest_level_runs";
     const url = `${BASE}/characters/profile?region=${region}&realm=${encodeURIComponent(charRealm)}&name=${encodeURIComponent(charName)}&fields=${fields}`;
 
     try {
       const c = await req(url, {}, 3);
       if (!c || c.error) return { name: charName, realm: charRealm, ilvl: null, mplus: 0, weeklyRuns: 0 };
 
+      // Raider.IO matcht per Name+Realm - bei Namensueberschneidungen mit
+      // einem inaktiven Account (oder falls die Gilde den Charakter selbst
+      // seit langem nicht mehr spielt) landet man auf einem seit Monaten
+      // nicht neu gecrawlten Profil mit voellig veralteten Werten (z.B.
+      // Itemlevel aus einem laengst vergangenen Patch). Solche Profile lieber
+      // als "keine aktuellen Daten" behandeln statt falsche Zahlen zu zeigen.
+      const crawledAt = c.last_crawled_at ? new Date(c.last_crawled_at) : null;
+      const staleDays = crawledAt ? (Date.now() - crawledAt.getTime()) / 86400000 : Infinity;
+      if (staleDays > 45) {
+        return { name: charName, realm: charRealm, ilvl: null, mplus: 0, weeklyRuns: 0, stale: true };
+      }
+
+      // mythic_plus_recent_runs sind die letzten Laeufe ueberhaupt, unabhaengig
+      // von der aktuellen ID - das Maximum mit dieser Liste zu bilden liess die
+      // Wochenzahl faelschlich "voll" erscheinen, auch direkt nach dem
+      // woechentlichen Reset. Nur weekly_highest_level_runs ist tatsaechlich
+      // auf die aktuelle ID beschraenkt.
       const weeklyList = Array.isArray(c.mythic_plus_weekly_highest_level_runs) ? c.mythic_plus_weekly_highest_level_runs : [];
-      const recentList = Array.isArray(c.mythic_plus_recent_runs) ? c.mythic_plus_recent_runs : [];
-      const runCount = Math.max(weeklyList.length, recentList.length);
+      const runCount = weeklyList.length;
 
       const equippedIlvl = c.gear?.item_level_equipped ?? c.gear?.item_level_total ?? null;
 
@@ -67,6 +82,8 @@ export async function characters(items, { region, realm }) {
 
   const found = res.filter(Boolean);
   const withIlvl = found.filter(c => c.ilvl != null);
+  const stale = found.filter(c => c.stale);
   ok(`Raider.IO: ${withIlvl.length}/${items.length} Charaktere erfolgreich geladen`);
+  if (stale.length) log(`  Uebersprungen (Profil seit >45 Tagen nicht neu gecrawlt, vermutlich falscher Namenstreffer): ${stale.map(c => c.name).join(", ")}`);
   return found;
 }
