@@ -9,6 +9,7 @@ import * as raidhelp  from "./lib/raidhelper.mjs";
 import * as wcl       from "./lib/warcraftlogs.mjs";
 import * as audit     from "./lib/wowaudit.mjs";
 import * as bnet      from "./lib/blizzard.mjs";
+import * as seasontracker from "./lib/seasontracker.mjs";
 import { ok, skip, fail, log } from "./lib/util.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -81,9 +82,10 @@ try {
 } catch { /* content/raider.json fehlt oder ist kaputt - WoWAudit-Liste reicht dann allein */ }
 
 /* 3) Raider.IO Charaktere */
+let chars = [];
 if (charList.length) {
   try {
-    const chars = await rio.characters(charList, GUILD);
+    chars = await rio.characters(charList, GUILD);
     if (chars.length) {
       await write("roster.json", { characters: chars, updatedAt: new Date().toISOString() });
     }
@@ -91,6 +93,7 @@ if (charList.length) {
 }
 
 /* 4) Blizzard */
+let blizzardKeys = [];
 if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
   try {
     const roster = await bnet.guildRoster({
@@ -98,17 +101,41 @@ if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
       clientSecret: env("BLIZZARD_CLIENT_SECRET"),
       ...GUILD
     });
-    let keys = [];
     if (charList.length) {
       const namesOnly = charList.map(c => c.name);
-      keys = await bnet.weeklyKeys({
+      blizzardKeys = await bnet.weeklyKeys({
         token: roster.token, region: GUILD.region, realm: GUILD.realm, names: namesOnly
       });
     }
     delete roster.token;
-    await write("blizzard.json", { ...roster, weeklyKeys: keys });
+    await write("blizzard.json", { ...roster, weeklyKeys: blizzardKeys });
   } catch (e) { errors++; fail(`Blizzard: ${e.message}`); }
 } else skip("Blizzard: kein Client gesetzt");
+
+/* 4b) Season-Key-Zaehler — kombiniert Raider.IO- und Blizzard-Wochenwerte
+   (das jeweils Hoehere je Charakter) und bankt sie dauerhaft, da keine der
+   beiden APIs eine echte Season-Gesamtzahl liefert. */
+if (chars.length || blizzardKeys.length) {
+  try {
+    const runsByName = new Map();
+    for (const c of chars) runsByName.set(c.name.toLowerCase(), c.weeklyRuns || 0);
+    for (const k of blizzardKeys) {
+      const key = k.name.toLowerCase();
+      runsByName.set(key, Math.max(runsByName.get(key) || 0, k.runsThisWeek || 0));
+    }
+    const seasonId = chars.find(c => c.season)?.season || null;
+    let existing = null;
+    try { existing = JSON.parse(await readFile(join(DATA, "season-keys.json"), "utf8")); } catch { /* erster Lauf */ }
+
+    const result = seasontracker.updateSeasonTotals({
+      existing,
+      seasonId,
+      characters: [...runsByName].map(([name, weeklyRuns]) => ({ name, weeklyRuns }))
+    });
+    await write("season-keys.json", result);
+    ok(`Season-Zaehler: ${result.totalThisSeason} Keys insgesamt (${seasonId || "Season unbekannt"})`);
+  } catch (e) { errors++; fail(`Season-Zaehler: ${e.message}`); }
+}
 
 /* 5) Raid-Helper */
 if (env("RAIDHELPER_API_KEY") && env("RAIDHELPER_SERVER_ID")) {

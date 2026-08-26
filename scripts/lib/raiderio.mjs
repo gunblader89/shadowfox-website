@@ -56,6 +56,7 @@ export async function characters(items, { region, realm }) {
         ilvl: equippedIlvl ? Math.round(equippedIlvl) : null,
         mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
         weeklyRuns: runCount,
+        season: c.mythic_plus_scores_by_season?.[0]?.season ?? null,
         thumb: c.thumbnail_url ?? null,
         profileUrl: c.profile_url
       };

@@ -630,6 +630,7 @@ let KB = [
 ];
 
 let KADER = [];
+let SEASON_KEYS_TOTAL = null;
 let REPORTS = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
@@ -1189,10 +1190,11 @@ tracker(){
     <h1>Aktivitäts-Tracker</h1>
     <p>Live-Übersicht über Ausrüstung, M+-Scores, Wochenaktivität und Great Vault.</p>
   </div>
-  <div class="grid g3 fade" style="margin-bottom:22px">
+  <div class="grid g4 fade" style="margin-bottom:22px">
     ${[["Kader",KADER.length,"Charaktere"],
        ["Ø Item Level",avgIlvl,"aus WoWAudit / Raider.IO"],
-       ["Ø M+ Runs",avgRuns,"diese ID gelaufen"]]
+       ["Ø M+ Runs",avgRuns,"diese ID gelaufen"],
+       ["M+ Keys Season",SEASON_KEYS_TOTAL != null ? SEASON_KEYS_TOTAL : "—","gildenweit, seit Zähl-Start"]]
       .map(([l,v,s])=>`<div class="card"><div class="eyebrow" style="margin-bottom:5px">${l}</div>
         <div style="font-size:25px;font-weight:700;letter-spacing:-.9px">${v}</div>
         <div class="muted" style="font-size:12px">${s}</div></div>`).join("")}
@@ -1675,6 +1677,9 @@ async function load(path){
 
 function applyData(d, c){
   try {
+    if(d?.["season-keys"]?.totalThisSeason != null){
+      SEASON_KEYS_TOTAL = d["season-keys"].totalThisSeason;
+    }
     if(c?.dungeons?.dungeons?.length){
       DUNGEONS = c.dungeons.dungeons;
     }
@@ -1940,8 +1945,8 @@ addEventListener("keydown", e => {
 
   try {
     const [d, c] = await Promise.all([
-      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status"].map(n => load(`data/${n}.json`)))
-        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status"].map((n,i) => [n,a[i]]))),
+      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status","season-keys"].map(n => load(`data/${n}.json`)))
+        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status","season-keys"].map((n,i) => [n,a[i]]))),
       Promise.all(["bosses","wissen","raider","termine","dungeons"].map(n => load(`content/${n}.json`)))
         .then(a => Object.fromEntries(["bosses","wissen","raider","termine","dungeons"].map((n,i) => [n,a[i]])))
     ]);
