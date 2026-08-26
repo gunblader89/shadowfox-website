@@ -260,9 +260,23 @@
       "weekKey": "2026-08-26",
       "weekCount": 0,
       "total": 0
+    },
+    "mönkitönk": {
+      "name": "mönkitönk",
+      "banked": 0,
+      "weekKey": "2026-08-26",
+      "weekCount": 1,
+      "total": 1
+    },
+    "raiox": {
+      "name": "raiox",
+      "banked": 0,
+      "weekKey": "2026-08-26",
+      "weekCount": 0,
+      "total": 0
     }
   },
   "weekKey": "2026-08-26",
-  "updatedAt": "2026-08-26T16:42:54.756Z",
-  "totalThisSeason": 208
+  "updatedAt": "2026-08-26T17:07:28.887Z",
+  "totalThisSeason": 209
 }
