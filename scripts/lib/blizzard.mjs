@@ -64,7 +64,10 @@ export async function weeklyKeys({ token, region = "eu", realm = "blackmoore", n
         }))
       };
     } catch {
-      return { name: charName, realm: charRealm, runsThisWeek: 0, runs: [] };
+      // null statt 0 - ein fehlgeschlagener Request ("unbekannt") darf beim
+      // Zusammenfuehren nicht wie ein bestaetigtes "0 Laeufe diese Woche"
+      // behandelt werden. Wird unten herausgefiltert.
+      return null;
     }
   });
 

@@ -2,6 +2,21 @@
 import { req, pool, ok, sleep, log } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
+const TIMEZONE = "Europe/Berlin";
+
+/** Reset-Wochen-Key (Mittwoch 03:00 Berliner Zeit) - gleiche Logik wie in
+    seasontracker.mjs, hier separat gehalten damit dieses Modul unabhaengig bleibt. */
+function resetWeekKey(now) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: TIMEZONE, weekday: "short", hour: "numeric", hour12: false
+  }).formatToParts(now).reduce((o, p) => (o[p.type] = p.value, o), {});
+  const weekdayIdx = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(parts.weekday);
+  const hour = Number(parts.hour) % 24;
+  let daysSinceWed = (weekdayIdx - 3 + 7) % 7;
+  if (daysSinceWed === 0 && hour < 3) daysSinceWed = 7;
+  const resetDate = new Date(now.getTime() - daysSinceWed * 86400000);
+  return new Intl.DateTimeFormat("en-CA", { timeZone: TIMEZONE, year: "numeric", month: "2-digit", day: "2-digit" }).format(resetDate);
+}
 
 export async function guildProfile({ region, realm, name }) {
   const reg = encodeURIComponent(String(region || "eu").toLowerCase());
@@ -58,7 +73,17 @@ export async function characters(items, { region, realm }) {
       // woechentlichen Reset. Nur weekly_highest_level_runs ist tatsaechlich
       // auf die aktuelle ID beschraenkt.
       const weeklyList = Array.isArray(c.mythic_plus_weekly_highest_level_runs) ? c.mythic_plus_weekly_highest_level_runs : [];
-      const runCount = weeklyList.length;
+      let runCount = weeklyList.length;
+
+      // Wenn das Profil seit dem letzten woechentlichen Reset noch nicht neu
+      // gecrawlt wurde, zeigt Raider.IO hier noch die "weekly"-Liste der
+      // VORIGEN Woche (nur inhaltlich veraltet, aber als aktuell markiert) -
+      // fuehrte dazu, dass Spieler direkt nach dem Reset faelschlich mit
+      // voller alter Wochenzahl (z.B. 8/8) angezeigt wurden. Nur Laeufe
+      // zaehlen, die nachweislich aus der aktuellen Reset-Woche stammen.
+      if (crawledAt && resetWeekKey(crawledAt) !== resetWeekKey(new Date())) {
+        runCount = 0;
+      }
 
       const equippedIlvl = c.gear?.item_level_equipped ?? c.gear?.item_level_total ?? null;
 

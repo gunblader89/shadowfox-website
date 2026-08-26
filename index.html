@@ -1208,6 +1208,7 @@ tracker(){
         <th data-k="mp">M+ Score</th>
         <th data-k="mr">M+ Woche</th>
         <th data-k="v">Vault (1 / 4 / 8)</th>
+        <th data-k="sk">M+ Season</th>
       </tr></thead>
       <tbody id="trkb"></tbody>
     </table>
@@ -1384,6 +1385,7 @@ function renderTrk(){
       </td>
       <td class="num" style="${isGreenRuns ? 'color:var(--green);font-weight:700;' : ''}">${runsDisplay} / 8</td>
       <td><span class="vault">${[0,1,2].map(i => `<span class="vslot${i<(p.v||0)?' on':''}"></span>`).join("")}</span></td>
+      <td class="num" style="font-weight:600">${p.sk != null ? p.sk : '—'}</td>
     </tr>`;
   }).join("");
 
@@ -1808,7 +1810,11 @@ function applyData(d, c){
         const key = normName(bk.name);
         const p = charMap.get(key);
         if(p && bk.runsThisWeek != null){
-          p.mr = Math.max(p.mr || 0, bk.runsThisWeek);
+          // Blizzard liefert live abgefragte, garantiert aktuelle Werte -
+          // im Gegensatz zu Raider.IO (crawler-basiert, kann nach dem
+          // woechentlichen Reset noch veraltete Werte zeigen). Deshalb hier
+          // ueberschreiben statt Math.max zu bilden.
+          p.mr = bk.runsThisWeek;
           p.v = calcVault(p.mr);
         }
       }
@@ -1816,6 +1822,19 @@ function applyData(d, c){
 
     if(charMap.size > 0){
       KADER = Array.from(charMap.values());
+    }
+
+    if(d?.["season-keys"]?.players){
+      const skPlayers = d["season-keys"].players;
+      const skByNorm = new Map();
+      for(const key in skPlayers){
+        const entry = skPlayers[key];
+        skByNorm.set(normName(entry.name || key), entry.total);
+      }
+      for(const p of KADER){
+        const hit = skByNorm.get(normName(p.n));
+        p.sk = hit != null ? hit : null;
+      }
     }
 
     if(d?.events?.events?.length){

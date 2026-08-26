@@ -122,7 +122,12 @@ if (chars.length || blizzardKeys.length) {
     for (const k of blizzardKeys) {
       const key = k.name.toLowerCase();
       const prev = runsByName.get(key);
-      runsByName.set(key, { name: prev?.name || k.name, weeklyRuns: Math.max(prev?.weeklyRuns || 0, k.runsThisWeek || 0) });
+      // Blizzards API liefert live abgefragte, garantiert aktuelle Werte -
+      // im Gegensatz zu Raider.IO (crawler-basiert, kann nach dem
+      // woechentlichen Reset noch veraltete Werte zeigen). Deshalb hier
+      // ueberschreiben statt Math.max, sonst gewinnt immer der faelschlich
+      // hohe, veraltete Wert.
+      runsByName.set(key, { name: prev?.name || k.name, weeklyRuns: k.runsThisWeek || 0 });
     }
     const seasonId = chars.find(c => c.season)?.season || null;
     let existing = null;
