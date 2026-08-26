@@ -292,7 +292,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 309,
       "mplus": 2976,
       "weeklyRuns": 10,
       "season": "season-mn-2",
@@ -440,5 +440,5 @@
       "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-26T16:29:47.305Z"
+  "updatedAt": "2026-08-26T16:42:44.501Z"
 }
