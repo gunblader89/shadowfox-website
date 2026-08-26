@@ -118,10 +118,11 @@ if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
 if (chars.length || blizzardKeys.length) {
   try {
     const runsByName = new Map();
-    for (const c of chars) runsByName.set(c.name.toLowerCase(), c.weeklyRuns || 0);
+    for (const c of chars) runsByName.set(c.name.toLowerCase(), { name: c.name, weeklyRuns: c.weeklyRuns || 0 });
     for (const k of blizzardKeys) {
       const key = k.name.toLowerCase();
-      runsByName.set(key, Math.max(runsByName.get(key) || 0, k.runsThisWeek || 0));
+      const prev = runsByName.get(key);
+      runsByName.set(key, { name: prev?.name || k.name, weeklyRuns: Math.max(prev?.weeklyRuns || 0, k.runsThisWeek || 0) });
     }
     const seasonId = chars.find(c => c.season)?.season || null;
     let existing = null;
@@ -130,7 +131,7 @@ if (chars.length || blizzardKeys.length) {
     const result = seasontracker.updateSeasonTotals({
       existing,
       seasonId,
-      characters: [...runsByName].map(([name, weeklyRuns]) => ({ name, weeklyRuns }))
+      characters: [...runsByName.values()]
     });
     await write("season-keys.json", result);
     ok(`Season-Zaehler: ${result.totalThisSeason} Keys insgesamt (${seasonId || "Season unbekannt"})`);
