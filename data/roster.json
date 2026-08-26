@@ -6,8 +6,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 303,
-      "mplus": 2583,
+      "ilvl": 302,
+      "mplus": 2595,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -115,8 +115,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 289,
-      "mplus": 733,
-      "weeklyRuns": 6,
+      "mplus": 892,
+      "weeklyRuns": 7,
       "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
     },
@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 303,
+      "ilvl": 308,
       "mplus": 2579,
       "weeklyRuns": 10,
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
@@ -320,5 +320,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-26T03:33:10.723Z"
+  "updatedAt": "2026-08-26T07:58:15.930Z"
 }
