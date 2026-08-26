@@ -29,8 +29,15 @@ function resetWeekKey(now) {
  */
 export function updateSeasonTotals({ existing, characters, seasonId, now = new Date() }) {
   const weekKey = resetWeekKey(now);
-  const data = (existing && existing.season === seasonId)
-    ? { ...existing, players: { ...existing.players } }
+  // Nur bei zwei tatsaechlich bekannten, unterschiedlichen Season-IDs von
+  // einem echten Season-Wechsel ausgehen und die Historie verwerfen. Liefert
+  // ein Lauf mal keine Season-ID (z.B. weil kein Charakter gerade Score-Daten
+  // fuer die aktuelle Season zurueckgibt), soll das NICHT als Season-Wechsel
+  // gewertet werden - sonst geht bei jedem vereinzelten API-Aussetzer die
+  // komplette gebankte Historie verloren, obwohl es dieselbe Season ist.
+  const seasonChanged = Boolean(existing?.season) && Boolean(seasonId) && existing.season !== seasonId;
+  const data = (existing && !seasonChanged)
+    ? { ...existing, players: { ...existing.players }, season: existing.season || seasonId }
     : { season: seasonId, startedAt: now.toISOString(), players: {} };
 
   for (const c of characters) {

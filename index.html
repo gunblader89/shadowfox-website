@@ -1810,11 +1810,10 @@ function applyData(d, c){
         const key = normName(bk.name);
         const p = charMap.get(key);
         if(p && bk.runsThisWeek != null){
-          // Blizzard liefert live abgefragte, garantiert aktuelle Werte -
-          // im Gegensatz zu Raider.IO (crawler-basiert, kann nach dem
-          // woechentlichen Reset noch veraltete Werte zeigen). Deshalb hier
-          // ueberschreiben statt Math.max zu bilden.
-          p.mr = bk.runsThisWeek;
+          // Beide Quellen sind serverseitig einzeln gegen den aktuellen
+          // Reset-Zeitpunkt abgesichert (siehe raiderio.mjs/blizzard.mjs) -
+          // der hoehere Wert ist deshalb der vollstaendigere.
+          p.mr = Math.max(p.mr || 0, bk.runsThisWeek);
           p.v = calcVault(p.mr);
         }
       }

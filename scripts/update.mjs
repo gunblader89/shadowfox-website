@@ -122,12 +122,12 @@ if (chars.length || blizzardKeys.length) {
     for (const k of blizzardKeys) {
       const key = k.name.toLowerCase();
       const prev = runsByName.get(key);
-      // Blizzards API liefert live abgefragte, garantiert aktuelle Werte -
-      // im Gegensatz zu Raider.IO (crawler-basiert, kann nach dem
-      // woechentlichen Reset noch veraltete Werte zeigen). Deshalb hier
-      // ueberschreiben statt Math.max, sonst gewinnt immer der faelschlich
-      // hohe, veraltete Wert.
-      runsByName.set(key, { name: prev?.name || k.name, weeklyRuns: k.runsThisWeek || 0 });
+      // Beide Quellen sind inzwischen einzeln gegen den aktuellen Reset-
+      // Zeitpunkt abgesichert (raiderio.mjs prueft last_crawled_at,
+      // blizzard.mjs den Abschluss-Zeitstempel jedes Laufs) - keine der
+      // beiden kann mehr faelschlich eine veraltete Vorwochen-Zahl liefern.
+      // Der hoehere Wert ist deshalb wieder sicher der vollstaendigere.
+      runsByName.set(key, { name: prev?.name || k.name, weeklyRuns: Math.max(prev?.weeklyRuns || 0, k.runsThisWeek || 0) });
     }
     const seasonId = chars.find(c => c.season)?.season || null;
     let existing = null;
