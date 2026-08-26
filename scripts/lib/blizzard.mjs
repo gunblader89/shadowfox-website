@@ -6,8 +6,7 @@ const BASE_API = "https://eu.api.blizzard.com";
 const TIMEZONE = "Europe/Berlin";
 
 /** Reset-Wochen-Key (Mittwoch 03:00 Berliner Zeit) - gleiche Logik wie in
-    raiderio.mjs/seasontracker.mjs, hier separat gehalten damit dieses Modul
-    unabhaengig bleibt. */
+    raiderio.mjs, hier separat gehalten damit dieses Modul unabhaengig bleibt. */
 function resetWeekKey(now) {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: TIMEZONE, weekday: "short", hour: "numeric", hour12: false

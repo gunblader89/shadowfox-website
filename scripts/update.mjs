@@ -9,8 +9,7 @@ import * as raidhelp  from "./lib/raidhelper.mjs";
 import * as wcl       from "./lib/warcraftlogs.mjs";
 import * as audit     from "./lib/wowaudit.mjs";
 import * as bnet      from "./lib/blizzard.mjs";
-import * as seasontracker from "./lib/seasontracker.mjs";
-import { ok, skip, fail, log } from "./lib/util.mjs";
+import { skip, fail, log } from "./lib/util.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
@@ -111,37 +110,6 @@ if (env("BLIZZARD_CLIENT_ID") && env("BLIZZARD_CLIENT_SECRET")) {
     await write("blizzard.json", { ...roster, weeklyKeys: blizzardKeys });
   } catch (e) { errors++; fail(`Blizzard: ${e.message}`); }
 } else skip("Blizzard: kein Client gesetzt");
-
-/* 4b) Season-Key-Zaehler — kombiniert Raider.IO- und Blizzard-Wochenwerte
-   (das jeweils Hoehere je Charakter) und bankt sie dauerhaft, da keine der
-   beiden APIs eine echte Season-Gesamtzahl liefert. */
-if (chars.length || blizzardKeys.length) {
-  try {
-    const runsByName = new Map();
-    for (const c of chars) runsByName.set(c.name.toLowerCase(), { name: c.name, weeklyRuns: c.weeklyRuns || 0 });
-    for (const k of blizzardKeys) {
-      const key = k.name.toLowerCase();
-      const prev = runsByName.get(key);
-      // Beide Quellen sind inzwischen einzeln gegen den aktuellen Reset-
-      // Zeitpunkt abgesichert (raiderio.mjs prueft last_crawled_at,
-      // blizzard.mjs den Abschluss-Zeitstempel jedes Laufs) - keine der
-      // beiden kann mehr faelschlich eine veraltete Vorwochen-Zahl liefern.
-      // Der hoehere Wert ist deshalb wieder sicher der vollstaendigere.
-      runsByName.set(key, { name: prev?.name || k.name, weeklyRuns: Math.max(prev?.weeklyRuns || 0, k.runsThisWeek || 0) });
-    }
-    const seasonId = chars.find(c => c.season)?.season || null;
-    let existing = null;
-    try { existing = JSON.parse(await readFile(join(DATA, "season-keys.json"), "utf8")); } catch { /* erster Lauf */ }
-
-    const result = seasontracker.updateSeasonTotals({
-      existing,
-      seasonId,
-      characters: [...runsByName.values()]
-    });
-    await write("season-keys.json", result);
-    ok(`Season-Zaehler: ${result.totalThisSeason} Keys insgesamt (${seasonId || "Season unbekannt"})`);
-  } catch (e) { errors++; fail(`Season-Zaehler: ${e.message}`); }
-}
 
 /* 5) Raid-Helper */
 if (env("RAIDHELPER_API_KEY") && env("RAIDHELPER_SERVER_ID")) {

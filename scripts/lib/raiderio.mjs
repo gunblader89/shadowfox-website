@@ -5,7 +5,7 @@ const BASE = "https://raider.io/api/v1";
 const TIMEZONE = "Europe/Berlin";
 
 /** Reset-Wochen-Key (Mittwoch 03:00 Berliner Zeit) - gleiche Logik wie in
-    seasontracker.mjs, hier separat gehalten damit dieses Modul unabhaengig bleibt. */
+    blizzard.mjs, hier separat gehalten damit dieses Modul unabhaengig bleibt. */
 function resetWeekKey(now) {
   const parts = new Intl.DateTimeFormat("en-US", {
     timeZone: TIMEZONE, weekday: "short", hour: "numeric", hour12: false
@@ -96,7 +96,6 @@ export async function characters(items, { region, realm }) {
         ilvl: equippedIlvl ? Math.round(equippedIlvl) : null,
         mplus: Math.round(c.mythic_plus_scores_by_season?.[0]?.scores?.all ?? 0),
         weeklyRuns: runCount,
-        season: c.mythic_plus_scores_by_season?.[0]?.season ?? null,
         thumb: c.thumbnail_url ?? null,
         profileUrl: c.profile_url
       };
