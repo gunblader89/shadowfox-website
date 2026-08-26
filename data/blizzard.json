@@ -974,14 +974,8 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-26T17:48:41.430Z",
+  "updatedAt": "2026-08-26T18:02:43.933Z",
   "weeklyKeys": [
-    {
-      "name": "Mercrixxus",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
     {
       "name": "Garódash",
       "realm": "blackmoore",
@@ -1023,12 +1017,6 @@
           "timed": true
         }
       ]
-    },
-    {
-      "name": "Chantallè",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
     },
     {
       "name": "Thessaly",
@@ -1082,12 +1070,6 @@
           "timed": true
         }
       ]
-    },
-    {
-      "name": "Mönkitönk",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
     },
     {
       "name": "Raiox",
@@ -1160,18 +1142,6 @@
       ]
     },
     {
-      "name": "Amhairghin",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Yanalai",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
       "name": "Hunterchaos",
       "realm": "blackmoore",
       "runsThisWeek": 8,
@@ -1231,25 +1201,7 @@
       "runs": []
     },
     {
-      "name": "Hatto",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
       "name": "Miliim",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Doktorpöbel",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Askái",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
@@ -1261,61 +1213,7 @@
       "runs": []
     },
     {
-      "name": "Kiraja",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Günndk",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Shylmagognar",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Pepelim",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Holydivér",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Kitebrew",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Xsythia",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
       "name": "Corvisstab",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Toshichaos",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Seitenleiste",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
@@ -1333,31 +1231,7 @@
       "runs": []
     },
     {
-      "name": "Moonlord",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
       "name": "Hòbs",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Merccrixxus",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Sandino",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Thorelion",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
@@ -1375,25 +1249,7 @@
       ]
     },
     {
-      "name": "Chantallé",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
       "name": "Jisgarin",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Sweetschi",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Druith",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
