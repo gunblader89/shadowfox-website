@@ -458,6 +458,7 @@ const DEFAULT_ARTWORK = "https://wow.zamimg.com/optimized/guide-header-revamp/up
 let ACTIVE_DIFF = {};
 let CURRENT_TIER = "normal";
 let SELECTED_DUNGEON_IDX = 0;
+let SELECTED_VIDEO_IDX = 0;
 
 const CLASSES = [
   ["Dämonenjäger",19,"#A330C9"],["Druide",16,"#FF7C0A"],["Paladin",13,"#F48CBA"],
@@ -632,6 +633,7 @@ let KB = [
 let KADER = [];
 let REPORTS = [];
 let ATTENDANCE = [];
+let VIDEOS = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
 const EVENT = {
@@ -641,7 +643,7 @@ const EVENT = {
 
 const NAV = [
   ["start","Start"], ["raid","Raid"], ["dungeons","M+"],
-  ["tracker","Tracker"], ["logs","Logs"], ["termine","Termine"],
+  ["tracker","Tracker"], ["logs","Logs"], ["videos","Videos"], ["termine","Termine"],
   ["roster","Roster"], ["wissen","Wissen"]
 ];
 
@@ -952,6 +954,11 @@ function selectDungeon(idx) {
   route();
 }
 
+function selectVideo(idx) {
+  SELECTED_VIDEO_IDX = idx;
+  route();
+}
+
 const views = {
 start(){
   const r = G.raid, prog = BOSSES.find(b=>b.st==="prog") || BOSSES[6] || { n: "Der Gewundene Altar" };
@@ -982,6 +989,21 @@ start(){
     ${logCard(REPORTS[0])}
     <div id="rhEventHome"><div class="card"><div class="muted" style="font-size:12.5px">Lade Termine…</div></div></div>
   </div>
+  ${VIDEOS.length ? `
+  <div class="fade" style="margin-bottom:34px">
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="padding:16px 18px 0">
+        <div class="eyebrow">Neuestes Kill-Video</div>
+        <div style="font-size:15px;font-weight:650;margin-top:2px">${esc(VIDEOS[0].title)}</div>
+      </div>
+      <div style="position:relative;padding-top:42%;margin-top:12px">
+        <iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(VIDEOS[0].id)}" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy" title="${esc(VIDEOS[0].title)}"></iframe>
+      </div>
+      <div style="padding:12px 18px 16px;text-align:right">
+        <a href="#/videos" class="lchip">Alle Videos ansehen <span style="opacity:.5">↗</span></a>
+      </div>
+    </div>
+  </div>` : ''}
   <div class="tiles fade" style="margin-bottom:34px">
     <a class="tile" href="#/dungeons"><span class="ic">🗝️</span><b>M+ Guides (S2)</b><span>Alle 8 Dungeons &amp; Trash</span></a>
     <a class="tile" href="#/raid"><span class="ic">🎯</span><b>Raid-Guide</b><span>${esc(prog.n)}</span></a>
@@ -1270,6 +1292,37 @@ logs(){
   return `
   <div class="page-h fade"><h1>Raid-Logs</h1><p>Alle konsolidierten Raidabende von Warcraft Logs.</p></div>
   <div class="grid fade">${REPORTS.map(r=>logCard(r)).join("")}</div>`;
+},
+
+videos(){
+  if(!VIDEOS.length){
+    return `<div class="page-h fade"><h1>Kill-Videos</h1><p>Videos werden geladen…</p></div>`;
+  }
+  const v = VIDEOS[SELECTED_VIDEO_IDX] || VIDEOS[0];
+  return `
+  <div class="page-h fade"><h1>Kill-Videos</h1><p>Alle Boss-Kill-Videos unseres YouTube-Kanals, chronologisch.</p></div>
+  <div class="fade" style="margin-bottom:24px">
+    <div class="card" style="padding:0;overflow:hidden">
+      <div style="position:relative;padding-top:56.25%">
+        <iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}" style="position:absolute;inset:0;width:100%;height:100%;border:0" allowfullscreen loading="lazy" title="${esc(v.title)}"></iframe>
+      </div>
+      <div style="padding:14px 18px">
+        <div style="font-size:16px;font-weight:650">${esc(v.title)}</div>
+        <div class="soft" style="font-size:12.5px;margin-top:2px">${fmtDateShort(v.publishedAt)}</div>
+      </div>
+    </div>
+  </div>
+  <div class="d-selector fade">
+    ${VIDEOS.map((vid,idx) => `
+      <div class="d-btn ${idx === SELECTED_VIDEO_IDX ? 'active' : ''}" onclick="selectVideo(${idx})">
+        <img src="${esc(vid.thumbnail)}" alt="" loading="lazy" style="width:88px;height:50px;object-fit:cover;border-radius:6px;flex-shrink:0">
+        <div>
+          <b>${esc(vid.title)}</b>
+          <span>${fmtDateShort(vid.publishedAt)}</span>
+        </div>
+      </div>
+    `).join("")}
+  </div>`;
 },
 
 roster(){
@@ -1875,6 +1928,12 @@ function applyData(d, c){
       }).filter(a => a.total > 0);
     }
 
+    if(d?.youtube?.videos){
+      VIDEOS = Object.values(d.youtube.videos)
+        .filter(v => v && v.id)
+        .sort((a,b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+    }
+
     if(d?.events?.events?.length){
       const e = d.events.events[0];
       EVENT.id = e.id || EVENT.id;
@@ -2003,8 +2062,8 @@ addEventListener("keydown", e => {
 
   try {
     const [d, c] = await Promise.all([
-      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status","attendance"].map(n => load(`data/${n}.json`)))
-        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status","attendance"].map((n,i) => [n,a[i]]))),
+      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status","attendance","youtube"].map(n => load(`data/${n}.json`)))
+        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status","attendance","youtube"].map((n,i) => [n,a[i]]))),
       Promise.all(["bosses","wissen","raider","termine","dungeons"].map(n => load(`content/${n}.json`)))
         .then(a => Object.fromEntries(["bosses","wissen","raider","termine","dungeons"].map((n,i) => [n,a[i]])))
     ]);

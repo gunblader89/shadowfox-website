@@ -10,7 +10,8 @@ import * as wcl       from "./lib/warcraftlogs.mjs";
 import * as audit     from "./lib/wowaudit.mjs";
 import * as bnet      from "./lib/blizzard.mjs";
 import * as attendance from "./lib/attendance.mjs";
-import { skip, fail, log } from "./lib/util.mjs";
+import * as youtube    from "./lib/youtube.mjs";
+import { ok, skip, fail, log } from "./lib/util.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
@@ -142,6 +143,19 @@ if (env("WCL_CLIENT_ID") && env("WCL_CLIENT_SECRET")) {
   } catch (e) { errors++; fail(`Warcraft Logs: ${e.message}`); }
 }
 
+/* 7) YouTube — oeffentlicher RSS-Feed, kein API-Key noetig. Channel-ID ist
+   keine geheime Information, daher per Env konfigurierbar mit sinnvollem
+   Standardwert (der Kill-Video-Kanal der Gilde). */
+const YOUTUBE_CHANNEL_ID = env("YOUTUBE_CHANNEL_ID") || "UCyS--qgoP2FMaVEFm3VeXiw";
+try {
+  const fetched = await youtube.latestVideos({ channelId: YOUTUBE_CHANNEL_ID });
+  let existingVideos = null;
+  try { existingVideos = JSON.parse(await readFile(join(DATA, "youtube.json"), "utf8")); } catch { /* erster Lauf */ }
+  const videosResult = youtube.mergeVideos({ existing: existingVideos, fetched });
+  await write("youtube.json", videosResult);
+  ok(`YouTube: ${fetched.length} Videos im Feed, ${Object.keys(videosResult.videos).length} insgesamt archiviert`);
+} catch (e) { errors++; fail(`YouTube: ${e.message}`); }
+
 await write("status.json", {
   updatedAt: new Date().toISOString(),
   guild: GUILD,
@@ -150,7 +164,8 @@ await write("status.json", {
     raidhelper: Boolean(env("RAIDHELPER_API_KEY")),
     warcraftlogs: Boolean(env("WCL_CLIENT_ID")),
     wowaudit: Boolean(env("WOWAUDIT_API_KEY")),
-    blizzard: Boolean(env("BLIZZARD_CLIENT_ID"))
+    blizzard: Boolean(env("BLIZZARD_CLIENT_ID")),
+    youtube: true
   },
   errors
 });
