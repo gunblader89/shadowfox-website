@@ -3,14 +3,17 @@ import { req, pool, ok, sleep, log } from "./util.mjs";
 
 const BASE = "https://raider.io/api/v1";
 
-/* Ausruestungsplaetze, die in aktuellem Retail-WoW regulaer verzaubert werden
-   koennen. Sockel (gems) werden bewusst NICHT geprueft - Raider.IO liefert
-   dort nur "welche Sockel sind befuellt", nicht "welche Items haben ueberhaupt
-   einen Sockel", ein leeres gems-Array ist daher nicht zuverlaessig von "Item
-   hat keinen Sockel" zu unterscheiden. */
+/* Ausruestungsplaetze, die aktuell verzaubert werden koennen. Ruecken und
+   Handgelenk bewusst NICHT enthalten - fuer diese Slots gibt es in der
+   aktuellen Season/Erweiterung schlicht keine Verzauberungen, waeren also
+   immer faelschlich als "fehlend" geflaggt (vom Gildenleiter live bestaetigt).
+   Sockel (gems) werden bewusst NICHT geprueft - Raider.IO liefert dort nur
+   "welche Sockel sind befuellt", nicht "welche Items haben ueberhaupt einen
+   Sockel", ein leeres gems-Array ist daher nicht zuverlaessig von "Item hat
+   keinen Sockel" zu unterscheiden. */
 const ENCHANT_SLOTS = {
-  back: "Rücken", chest: "Brust", wrist: "Handgelenke", legs: "Beine",
-  feet: "Füße", finger1: "Ring 1", finger2: "Ring 2",
+  chest: "Brust", legs: "Beine", feet: "Füße",
+  finger1: "Ring 1", finger2: "Ring 2",
   mainhand: "Waffe", offhand: "Nebenhand"
 };
 const TIMEZONE = "Europe/Berlin";
