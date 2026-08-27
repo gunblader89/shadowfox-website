@@ -22,14 +22,14 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 96,
-            "boss": "The Coiled Altar"
+            "parse": 95,
+            "boss": "Ula'tek"
           },
           {
-            "name": "Askái",
-            "class": "DemonHunter",
-            "spec": "Devourer",
-            "parse": 93,
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 90,
             "boss": "The Coiled Altar"
           }
         ],
@@ -38,14 +38,14 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 96,
+            "parse": 95,
             "boss": "Ula'tek"
           },
           {
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 87,
+            "parse": 85,
             "boss": "Nymrissa Wavecaller"
           }
         ]
@@ -93,5 +93,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-26T20:10:28.460Z"
+  "updatedAt": "2026-08-27T16:48:35.272Z"
 }

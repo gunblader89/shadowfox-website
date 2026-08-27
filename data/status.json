@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T20:10:28.460Z",
+  "updatedAt": "2026-08-27T16:48:35.553Z",
   "guild": {
     "region": "eu",
     "realm": "blackmoore",
@@ -10,7 +10,8 @@
     "raidhelper": true,
     "warcraftlogs": true,
     "wowaudit": true,
-    "blizzard": true
+    "blizzard": true,
+    "youtube": true
   },
   "errors": 0
 }

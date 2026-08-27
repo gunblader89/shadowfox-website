@@ -6,13 +6,14 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 302,
+      "ilvl": 303,
       "mplus": 2595,
       "weeklyRuns": 0,
       "missingEnchants": [
         "Rücken",
         "Handgelenke",
-        "Füße"
+        "Füße",
+        "Ring 2"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -77,9 +78,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 301,
+      "ilvl": 302,
       "mplus": 1896,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Rücken",
         "Handgelenke"
@@ -93,9 +94,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 285,
+      "ilvl": 294,
       "mplus": 2420,
-      "weeklyRuns": 0,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Rücken",
         "Brust",
@@ -127,13 +128,12 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 312,
-      "mplus": 2626,
-      "weeklyRuns": 7,
+      "ilvl": 313,
+      "mplus": 2675,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Rücken",
-        "Handgelenke",
-        "Füße"
+        "Handgelenke"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -144,12 +144,13 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 288,
-      "mplus": 1340,
-      "weeklyRuns": 1,
+      "ilvl": 292,
+      "mplus": 1830,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Rücken",
-        "Handgelenke"
+        "Handgelenke",
+        "Ring 2"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Feire"
@@ -161,8 +162,8 @@
       "spec": "Balance",
       "role": "DPS",
       "ilvl": 298,
-      "mplus": 2468,
-      "weeklyRuns": 2,
+      "mplus": 2503,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Rücken",
         "Handgelenke"
@@ -176,12 +177,13 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 296,
+      "ilvl": 297,
       "mplus": 2374,
       "weeklyRuns": 1,
       "missingEnchants": [
         "Rücken",
-        "Handgelenke"
+        "Handgelenke",
+        "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -214,9 +216,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 302,
-      "mplus": 2460,
-      "weeklyRuns": 0,
+      "ilvl": 304,
+      "mplus": 2465,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Rücken",
         "Handgelenke"
@@ -286,8 +288,8 @@
       "spec": "Discipline",
       "role": "HEALING",
       "ilvl": 310,
-      "mplus": 2639,
-      "weeklyRuns": 7,
+      "mplus": 2680,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Rücken",
         "Brust",
@@ -306,7 +308,7 @@
       "role": "DPS",
       "ilvl": 305,
       "mplus": 2479,
-      "weeklyRuns": 0,
+      "weeklyRuns": 9,
       "missingEnchants": [
         "Rücken",
         "Brust",
@@ -341,8 +343,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2624,
-      "weeklyRuns": 8,
+      "mplus": 2662,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Rücken",
         "Handgelenke",
@@ -373,9 +375,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 307,
-      "mplus": 2608,
-      "weeklyRuns": 0,
+      "ilvl": 309,
+      "mplus": 2664,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Rücken",
         "Handgelenke",
@@ -471,9 +473,9 @@
       "class": "Warlock",
       "spec": "Affliction",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 311,
       "mplus": 2976,
-      "weeklyRuns": 4,
+      "weeklyRuns": 9,
       "missingEnchants": [
         "Rücken",
         "Handgelenke",
@@ -489,8 +491,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2648,
-      "weeklyRuns": 8,
+      "mplus": 2704,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Rücken",
         "Handgelenke"
@@ -529,8 +531,8 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 305,
-      "mplus": 2554,
-      "weeklyRuns": 4,
+      "mplus": 2616,
+      "weeklyRuns": 9,
       "missingEnchants": [
         "Rücken",
         "Brust",
@@ -587,8 +589,8 @@
       "spec": "Retribution",
       "role": "DPS",
       "ilvl": 292,
-      "mplus": 1270,
-      "weeklyRuns": 1,
+      "mplus": 1276,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Rücken",
         "Handgelenke"
@@ -634,5 +636,5 @@
       "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-26T20:10:07.617Z"
+  "updatedAt": "2026-08-27T16:48:08.693Z"
 }

@@ -528,7 +528,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "rank": 2,
+      "rank": 0,
       "level": 90,
       "classId": 3
     },
@@ -640,7 +640,7 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "rank": 0,
+      "rank": 6,
       "level": 90,
       "classId": 12
     },
@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-26T20:10:08.991Z",
+  "updatedAt": "2026-08-27T16:48:10.299Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1014,11 +1014,16 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 6,
       "runs": [
         {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": false
+        },
+        {
           "dungeon": "Das blendende Tal",
-          "level": 10,
+          "level": 11,
           "timed": true
         },
         {
@@ -1032,6 +1037,11 @@
           "timed": true
         },
         {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 12,
+          "timed": true
+        },
+        {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 10,
           "timed": true
@@ -1041,8 +1051,24 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 5,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 6,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 5,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Hunterchaos",
@@ -1059,8 +1085,14 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Scârlêtt",
@@ -1107,8 +1139,13 @@
     {
       "name": "Améthyst",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": true
+        },
         {
           "dungeon": "Mördergasse",
           "level": 10,
