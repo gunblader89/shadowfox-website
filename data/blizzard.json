@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-27T21:28:13.595Z",
+  "updatedAt": "2026-08-27T21:48:17.707Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1126,35 +1126,6 @@
     },
     {
       "name": "Tiskarian",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Hòbs",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Améthyst",
-      "realm": "blackmoore",
-      "runsThisWeek": 2,
-      "runs": [
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 10,
-          "timed": true
-        }
-      ]
-    },
-    {
-      "name": "Jisgarin",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []

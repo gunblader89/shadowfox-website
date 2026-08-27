@@ -9,12 +9,7 @@
       "ilvl": 303,
       "mplus": 2595,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
-        "Füße",
-        "Ring 2"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
@@ -24,14 +19,11 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 288,
+      "ilvl": 293,
       "mplus": 1692,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Rücken",
-        "Brust",
-        "Handgelenke",
-        "Füße"
+        "Ring 1"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -45,14 +37,7 @@
       "ilvl": 307,
       "mplus": 2464,
       "weeklyRuns": 2,
-      "missingEnchants": [
-        "Rücken",
-        "Brust",
-        "Handgelenke",
-        "Beine",
-        "Füße",
-        "Ring 1"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
@@ -65,10 +50,7 @@
       "ilvl": 288,
       "mplus": 0,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/189/109002685-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Thessaly"
     },
@@ -78,13 +60,10 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 301,
+      "ilvl": 303,
       "mplus": 1896,
       "weeklyRuns": 2,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
     },
@@ -98,9 +77,7 @@
       "mplus": 2420,
       "weeklyRuns": 4,
       "missingEnchants": [
-        "Rücken",
         "Brust",
-        "Handgelenke",
         "Beine"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
@@ -115,10 +92,7 @@
       "ilvl": 306,
       "mplus": 1689,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
     },
@@ -131,10 +105,7 @@
       "ilvl": 313,
       "mplus": 2675,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
     },
@@ -148,8 +119,6 @@
       "mplus": 1863,
       "weeklyRuns": 5,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Ring 2"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
@@ -161,13 +130,10 @@
       "class": "Druid",
       "spec": "Balance",
       "role": "DPS",
-      "ilvl": 298,
+      "ilvl": 305,
       "mplus": 2503,
       "weeklyRuns": 3,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
     },
@@ -180,10 +146,7 @@
       "ilvl": 298,
       "mplus": 2454,
       "weeklyRuns": 2,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
     },
@@ -193,19 +156,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 290,
+      "ilvl": 292,
       "mplus": 1484,
       "weeklyRuns": 1,
-      "missingEnchants": [
-        "Rücken",
-        "Brust",
-        "Handgelenke",
-        "Beine",
-        "Füße",
-        "Ring 1",
-        "Ring 2",
-        "Waffe"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -218,10 +172,7 @@
       "ilvl": 305,
       "mplus": 2465,
       "weeklyRuns": 1,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
     },
@@ -234,10 +185,7 @@
       "ilvl": 307,
       "mplus": 2597,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
     },
@@ -251,9 +199,7 @@
       "mplus": 923,
       "weeklyRuns": 2,
       "missingEnchants": [
-        "Rücken",
         "Brust",
-        "Handgelenke",
         "Füße",
         "Ring 1"
       ],
@@ -269,10 +215,7 @@
       "ilvl": 297,
       "mplus": 1227,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
     },
@@ -286,9 +229,7 @@
       "mplus": 2680,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Rücken",
         "Brust",
-        "Handgelenke",
         "Beine",
         "Füße",
         "Nebenhand"
@@ -305,10 +246,7 @@
       "ilvl": 311,
       "mplus": 2479,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
     },
@@ -322,9 +260,7 @@
       "mplus": 2470,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Rücken",
         "Brust",
-        "Handgelenke",
         "Beine",
         "Füße"
       ],
@@ -341,8 +277,6 @@
       "mplus": 2662,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -357,10 +291,7 @@
       "ilvl": 299,
       "mplus": 1526,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/198/178962886-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günndk"
     },
@@ -374,8 +305,6 @@
       "mplus": 2664,
       "weeklyRuns": 4,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Beine",
         "Füße",
         "Ring 2",
@@ -394,8 +323,6 @@
       "mplus": 1593,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Beine"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
@@ -418,10 +345,7 @@
       "ilvl": 305,
       "mplus": 2200,
       "weeklyRuns": 3,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
     },
@@ -435,8 +359,6 @@
       "mplus": 1958,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Ring 1",
         "Ring 2",
         "Nebenhand"
@@ -453,10 +375,7 @@
       "ilvl": 286,
       "mplus": 0,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/90/182661978-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
     },
@@ -470,8 +389,6 @@
       "mplus": 2976,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
@@ -486,10 +403,7 @@
       "ilvl": 306,
       "mplus": 2704,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
     },
@@ -503,8 +417,6 @@
       "mplus": 0,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -526,104 +438,10 @@
       "ilvl": 308,
       "mplus": 2616,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
-    },
-    {
-      "name": "Hòbs",
-      "realm": "blackmoore",
-      "class": "Druid",
-      "spec": "Balance",
-      "role": "DPS",
-      "ilvl": 292,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke",
-        "Füße"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/128/176149888-avatar.jpg?alt=/wow/static/images/2d/avatar/22-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Hòbs"
-    },
-    {
-      "name": "Merccrixxus",
-      "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
-    },
-    {
-      "name": "Sandino",
-      "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
-    },
-    {
-      "name": "Thorelion",
-      "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
-    },
-    {
-      "name": "Améthyst",
-      "realm": "blackmoore",
-      "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
-      "ilvl": 292,
-      "mplus": 1276,
-      "weeklyRuns": 2,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/92/184270428-avatar.jpg?alt=/wow/static/images/2d/avatar/11-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Améthyst"
-    },
-    {
-      "name": "Chantallé",
-      "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
-    },
-    {
-      "name": "Jisgarin",
-      "realm": "blackmoore",
-      "class": "Mage",
-      "spec": "Frost",
-      "role": "DPS",
-      "ilvl": 289,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Rücken",
-        "Handgelenke"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/143/170969231-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Jisgarin"
-    },
-    {
-      "name": "Sweetschi",
-      "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
-    },
-    {
-      "name": "Druith",
-      "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
     }
   ],
-  "updatedAt": "2026-08-27T21:28:12.098Z"
+  "updatedAt": "2026-08-27T21:48:16.195Z"
 }
