@@ -913,7 +913,7 @@
     {
       "name": "Rippchen",
       "realm": "nathrezim",
-      "rank": 6,
+      "rank": 5,
       "level": 90,
       "classId": 6
     },
@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-27T16:53:08.241Z",
+  "updatedAt": "2026-08-27T21:28:13.595Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1060,12 +1060,12 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
-          "level": 6,
+          "level": 7,
           "timed": true
         },
         {
           "dungeon": "Rubinlebensbecken",
-          "level": 5,
+          "level": 7,
           "timed": true
         }
       ]

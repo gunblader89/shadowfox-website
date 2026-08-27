@@ -1,6 +1,62 @@
 {
   "reports": [
     {
+      "code": "yjJwVcmCD2p9tPvK",
+      "url": "https://www.warcraftlogs.com/reports/yjJwVcmCD2p9tPvK",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1787853021627,
+      "endTime": 1787862921623,
+      "duration": "2h 44m",
+      "difficulty": "Heroisch",
+      "kills": 8,
+      "wipes": 6,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
+        "The Lost Explorers",
+        "Sszorak",
+        "The Twin Fangs",
+        "The Coiled Altar",
+        "Ula'tek"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 98,
+            "boss": "The Coiled Altar"
+          },
+          {
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 97,
+            "boss": "Nek'zali the Soulcoiler"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 97,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Doktorpöbel",
+            "class": "Priest",
+            "spec": "Discipline",
+            "parse": 90,
+            "boss": "The Lost Explorers"
+          }
+        ]
+      }
+    },
+    {
       "code": "QJfZMDVC1kBzgxL7",
       "url": "https://www.warcraftlogs.com/reports/QJfZMDVC1kBzgxL7",
       "title": "The Venomous Abyss",
@@ -17,38 +73,8 @@
         "Nymrissa Wavecaller"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 95,
-            "boss": "Ula'tek"
-          },
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 90,
-            "boss": "The Coiled Altar"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 95,
-            "boss": "Ula'tek"
-          },
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 85,
-            "boss": "Nymrissa Wavecaller"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -93,5 +119,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-27T16:53:28.675Z"
+  "updatedAt": "2026-08-27T21:28:39.717Z"
 }
