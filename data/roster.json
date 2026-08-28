@@ -8,7 +8,7 @@
       "role": "DPS",
       "ilvl": 304,
       "mplus": 2629,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -102,7 +102,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 315,
       "mplus": 2725,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -389,7 +389,7 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 312,
-      "mplus": 3046,
+      "mplus": 3061,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -446,5 +446,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-28T21:59:49.964Z"
+  "updatedAt": "2026-08-28T23:42:59.810Z"
 }

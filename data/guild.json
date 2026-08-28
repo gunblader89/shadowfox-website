@@ -104,9 +104,9 @@
       }
     }
   },
-  "memberCount": 138,
+  "memberCount": 139,
   "classCount": {
-    "undefined": 138
+    "undefined": 139
   },
   "members": [
     {
@@ -168,6 +168,9 @@
     },
     {
       "rank": 2
+    },
+    {
+      "rank": 5
     },
     {
       "rank": 3
@@ -248,7 +251,7 @@
       "rank": 3
     },
     {
-      "rank": 6
+      "rank": 3
     },
     {
       "rank": 5
@@ -278,7 +281,7 @@
       "rank": 3
     },
     {
-      "rank": 5
+      "rank": 2
     },
     {
       "rank": 6
@@ -524,5 +527,5 @@
       "rank": 6
     }
   ],
-  "updatedAt": "2026-08-28T21:59:14.699Z"
+  "updatedAt": "2026-08-28T23:42:25.958Z"
 }
