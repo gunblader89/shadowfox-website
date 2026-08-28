@@ -190,6 +190,13 @@
       "classId": 2
     },
     {
+      "name": "Terrathil",
+      "realm": "antonidas",
+      "rank": 5,
+      "level": 83,
+      "classId": 11
+    },
+    {
       "name": "Askái",
       "realm": "blackhand",
       "rank": 3,
@@ -199,7 +206,7 @@
     {
       "name": "Kitebone",
       "realm": "antonidas",
-      "rank": 5,
+      "rank": 2,
       "level": 87,
       "classId": 6
     },
@@ -570,7 +577,7 @@
     {
       "name": "Günndk",
       "realm": "thrall",
-      "rank": 6,
+      "rank": 3,
       "level": 90,
       "classId": 6
     },
@@ -972,22 +979,31 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Terrathil",
-      "realm": "antonidas",
-      "rank": 6,
-      "level": 83,
-      "classId": 11
     }
   ],
-  "updatedAt": "2026-08-28T06:14:34.008Z",
+  "updatedAt": "2026-08-28T21:27:49.441Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 9,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": false
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Thessaly",
@@ -998,11 +1014,16 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
           "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
           "timed": true
         },
         {
@@ -1021,7 +1042,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 7,
+      "runsThisWeek": 8,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1035,8 +1056,13 @@
         },
         {
           "dungeon": "Altar der Fänge",
-          "level": 11,
+          "level": 12,
           "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": false
         },
         {
           "dungeon": "Die Königsruh",
@@ -1055,7 +1081,7 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
-          "level": 10,
+          "level": 11,
           "timed": true
         }
       ]
@@ -1085,20 +1111,55 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 6,
       "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 9,
+          "timed": true
+        },
         {
           "dungeon": "Die Königsruh",
           "level": 8,
           "timed": false
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": false
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": true
         }
       ]
     },
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 3,
       "runs": [
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 11,
+          "timed": false
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": false
+        },
         {
           "dungeon": "Mördergasse",
           "level": 10,
