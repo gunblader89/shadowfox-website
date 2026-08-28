@@ -972,9 +972,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Terrathil",
+      "realm": "antonidas",
+      "rank": 6,
+      "level": 83,
+      "classId": 11
     }
   ],
-  "updatedAt": "2026-08-27T21:50:42.249Z",
+  "updatedAt": "2026-08-28T01:33:40.035Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1014,7 +1021,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 6,
+      "runsThisWeek": 7,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1040,6 +1047,11 @@
           "dungeon": "Arena der Leerennarbe",
           "level": 12,
           "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": false
         },
         {
           "dungeon": "Der Tempel von Sethraliss",

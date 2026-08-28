@@ -302,12 +302,10 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 313,
-      "mplus": 2664,
-      "weeklyRuns": 4,
+      "mplus": 2670,
+      "weeklyRuns": 8,
       "missingEnchants": [
-        "Beine",
-        "Füße",
-        "Ring 2",
+        "Waffe",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -443,5 +441,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-27T21:50:40.850Z"
+  "updatedAt": "2026-08-28T01:33:38.307Z"
 }
