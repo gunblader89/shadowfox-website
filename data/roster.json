@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 306,
-      "mplus": 2645,
-      "weeklyRuns": 4,
+      "ilvl": 305,
+      "mplus": 2679,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -103,7 +103,7 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 315,
-      "mplus": 2725,
+      "mplus": 2767,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -115,11 +115,12 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 299,
-      "mplus": 1875,
-      "weeklyRuns": 6,
+      "ilvl": 300,
+      "mplus": 1948,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Brust",
+        "Beine",
         "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
@@ -144,9 +145,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 305,
-      "mplus": 2540,
-      "weeklyRuns": 4,
+      "ilvl": 307,
+      "mplus": 2634,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -250,7 +251,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 311,
-      "mplus": 2552,
+      "mplus": 2641,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
@@ -263,12 +264,13 @@
       "spec": "Elemental",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2470,
-      "weeklyRuns": 0,
+      "mplus": 2564,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Brust",
         "Beine",
-        "Füße"
+        "Füße",
+        "Waffe"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
@@ -277,10 +279,10 @@
       "name": "Kiraja",
       "realm": "garrosh",
       "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
+      "spec": "Vengeance",
+      "role": "TANK",
       "ilvl": 312,
-      "mplus": 2665,
+      "mplus": 2707,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Füße"
@@ -389,8 +391,8 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 312,
-      "mplus": 3086,
+      "ilvl": 313,
+      "mplus": 3116,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -404,8 +406,8 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 307,
-      "mplus": 2746,
+      "ilvl": 309,
+      "mplus": 2789,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -440,12 +442,12 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 308,
-      "mplus": 2671,
+      "mplus": 2777,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-29T11:22:11.054Z"
+  "updatedAt": "2026-08-29T17:26:54.584Z"
 }
