@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 304,
-      "mplus": 2629,
-      "weeklyRuns": 3,
+      "ilvl": 306,
+      "mplus": 2645,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -115,11 +115,12 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 292,
-      "mplus": 1863,
-      "weeklyRuns": 5,
+      "ilvl": 299,
+      "mplus": 1875,
+      "weeklyRuns": 6,
       "missingEnchants": [
-        "Ring 2"
+        "Brust",
+        "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Feire"
@@ -143,9 +144,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 298,
-      "mplus": 2487,
-      "weeklyRuns": 3,
+      "ilvl": 305,
+      "mplus": 2540,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -249,7 +250,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 311,
-      "mplus": 2479,
+      "mplus": 2552,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
@@ -404,7 +405,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2704,
+      "mplus": 2746,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -446,5 +447,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-29T05:22:56.013Z"
+  "updatedAt": "2026-08-29T11:22:11.054Z"
 }

@@ -802,7 +802,7 @@
       "name": "Lókqur",
       "realm": "blackrock",
       "rank": 6,
-      "level": 88,
+      "level": 89,
       "classId": 1
     },
     {
@@ -981,7 +981,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-29T05:22:57.614Z",
+  "updatedAt": "2026-08-29T11:22:12.775Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1089,12 +1089,22 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
           "level": 5,
           "timed": true
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 6,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 8,
+          "timed": false
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
@@ -1103,6 +1113,11 @@
         },
         {
           "dungeon": "Rubinlebensbecken",
+          "level": 7,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
           "level": 7,
           "timed": true
         }
