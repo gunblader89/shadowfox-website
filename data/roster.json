@@ -8,7 +8,7 @@
       "role": "DPS",
       "ilvl": 305,
       "mplus": 2679,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -102,8 +102,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 315,
-      "mplus": 2767,
+      "ilvl": 316,
+      "mplus": 2781,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -133,8 +133,8 @@
       "spec": "Guardian",
       "role": "TANK",
       "ilvl": 305,
-      "mplus": 2503,
-      "weeklyRuns": 6,
+      "mplus": 2507,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -175,8 +175,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 308,
-      "mplus": 2490,
-      "weeklyRuns": 4,
+      "mplus": 2549,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Brust"
       ],
@@ -250,8 +250,8 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 311,
-      "mplus": 2641,
+      "ilvl": 313,
+      "mplus": 2691,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
@@ -296,9 +296,9 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 299,
-      "mplus": 1526,
-      "weeklyRuns": 0,
+      "ilvl": 301,
+      "mplus": 1863,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/198/178962886-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günndk"
@@ -348,7 +348,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 306,
+      "ilvl": 305,
       "mplus": 2200,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -392,7 +392,7 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 313,
-      "mplus": 3116,
+      "mplus": 3164,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -407,7 +407,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 2789,
+      "mplus": 2795,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -449,5 +449,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-29T17:26:54.584Z"
+  "updatedAt": "2026-08-29T23:42:57.936Z"
 }
