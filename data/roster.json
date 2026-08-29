@@ -389,7 +389,7 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 312,
-      "mplus": 3061,
+      "mplus": 3086,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -446,5 +446,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-28T23:42:59.810Z"
+  "updatedAt": "2026-08-29T05:22:56.013Z"
 }
