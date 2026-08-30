@@ -43,15 +43,15 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 97,
+            "parse": 96,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
             "name": "Doktorpöbel",
             "class": "Priest",
             "spec": "Discipline",
-            "parse": 89,
-            "boss": "The Lost Explorers"
+            "parse": 88,
+            "boss": "Entombed Sentinels"
           }
         ]
       }
@@ -119,5 +119,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-30T11:22:33.091Z"
+  "updatedAt": "2026-08-30T17:27:19.627Z"
 }
