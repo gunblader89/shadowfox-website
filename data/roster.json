@@ -89,9 +89,9 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 306,
-      "mplus": 1689,
-      "weeklyRuns": 0,
+      "ilvl": 307,
+      "mplus": 2349,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -102,8 +102,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 316,
-      "mplus": 2781,
+      "ilvl": 315,
+      "mplus": 2809,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -147,7 +147,7 @@
       "role": "HEALING",
       "ilvl": 307,
       "mplus": 2691,
-      "weeklyRuns": 8,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -174,12 +174,10 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 308,
-      "mplus": 2549,
-      "weeklyRuns": 6,
-      "missingEnchants": [
-        "Brust"
-      ],
+      "ilvl": 311,
+      "mplus": 2591,
+      "weeklyRuns": 9,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
     },
@@ -264,13 +262,12 @@
       "spec": "Elemental",
       "role": "DPS",
       "ilvl": 306,
-      "mplus": 2564,
-      "weeklyRuns": 2,
+      "mplus": 2625,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Brust",
         "Beine",
-        "Füße",
-        "Waffe"
+        "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
@@ -310,7 +307,7 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 313,
-      "mplus": 2727,
+      "mplus": 2755,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Waffe",
@@ -407,7 +404,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 2795,
+      "mplus": 2822,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -449,5 +446,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-30T05:22:51.931Z"
+  "updatedAt": "2026-08-30T11:22:06.747Z"
 }

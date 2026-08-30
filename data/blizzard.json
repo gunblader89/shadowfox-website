@@ -979,9 +979,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Veva",
+      "realm": "thrall",
+      "rank": 6,
+      "level": 90,
+      "classId": 8
     }
   ],
-  "updatedAt": "2026-08-30T05:22:53.377Z",
+  "updatedAt": "2026-08-30T11:22:08.410Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
