@@ -115,9 +115,9 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 300,
-      "mplus": 1948,
-      "weeklyRuns": 8,
+      "ilvl": 303,
+      "mplus": 2173,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -146,8 +146,8 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 307,
-      "mplus": 2634,
-      "weeklyRuns": 7,
+      "mplus": 2691,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -391,8 +391,8 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 313,
-      "mplus": 3164,
+      "ilvl": 312,
+      "mplus": 3207,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -449,5 +449,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-29T23:42:57.936Z"
+  "updatedAt": "2026-08-30T05:22:51.931Z"
 }
