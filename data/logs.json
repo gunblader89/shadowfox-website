@@ -43,7 +43,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 96,
+            "parse": 97,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
@@ -119,5 +119,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-30T17:27:19.627Z"
+  "updatedAt": "2026-08-30T23:43:24.669Z"
 }

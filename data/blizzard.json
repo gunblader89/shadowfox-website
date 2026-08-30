@@ -193,7 +193,7 @@
       "name": "Terrathil",
       "realm": "antonidas",
       "rank": 5,
-      "level": 86,
+      "level": 87,
       "classId": 11
     },
     {
@@ -988,7 +988,7 @@
       "classId": 8
     }
   ],
-  "updatedAt": "2026-08-30T17:26:56.271Z",
+  "updatedAt": "2026-08-30T23:43:02.055Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1031,7 +1031,7 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1044,9 +1044,19 @@
           "timed": true
         },
         {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 4,
+          "timed": true
+        },
+        {
           "dungeon": "Nalorakks Bau",
           "level": 11,
           "timed": false
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
         }
       ]
     },
@@ -1059,7 +1069,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 10,
+      "runsThisWeek": 11,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1083,7 +1093,7 @@
         },
         {
           "dungeon": "Die Königsruh",
-          "level": 11,
+          "level": 12,
           "timed": true
         },
         {
@@ -1110,13 +1120,18 @@
           "dungeon": "Altar der Fänge",
           "level": 12,
           "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": true
         }
       ]
     },
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 7,
+      "runsThisWeek": 8,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1144,8 +1159,13 @@
           "timed": true
         },
         {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        },
+        {
           "dungeon": "Rubinlebensbecken",
-          "level": 7,
+          "level": 10,
           "timed": true
         },
         {
@@ -1205,7 +1225,7 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 9,
+      "runsThisWeek": 10,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1231,6 +1251,11 @@
           "dungeon": "Der Tempel von Sethraliss",
           "level": 11,
           "timed": false
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 12,
+          "timed": true
         },
         {
           "dungeon": "Mördergasse",

@@ -6,7 +6,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 305,
+      "ilvl": 306,
       "mplus": 2679,
       "weeklyRuns": 7,
       "missingEnchants": [],
@@ -63,8 +63,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 303,
-      "mplus": 1945,
-      "weeklyRuns": 4,
+      "mplus": 1965,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -92,8 +92,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 308,
-      "mplus": 2610,
-      "weeklyRuns": 7,
+      "mplus": 2642,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -105,7 +105,7 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 316,
-      "mplus": 2809,
+      "mplus": 2856,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -176,8 +176,8 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 314,
-      "mplus": 2597,
+      "ilvl": 313,
+      "mplus": 2696,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -295,9 +295,9 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 301,
-      "mplus": 1863,
-      "weeklyRuns": 3,
+      "ilvl": 302,
+      "mplus": 2132,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/198/178962886-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günndk"
@@ -309,10 +309,10 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 313,
-      "mplus": 2755,
+      "mplus": 2797,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Waffe",
+        "Füße",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -349,7 +349,7 @@
       "role": "TANK",
       "ilvl": 312,
       "mplus": 2226,
-      "weeklyRuns": 8,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -406,7 +406,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 2822,
+      "mplus": 2865,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -418,7 +418,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 290,
+      "ilvl": 291,
       "mplus": 0,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -448,5 +448,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-30T17:26:54.775Z"
+  "updatedAt": "2026-08-30T23:43:00.726Z"
 }
