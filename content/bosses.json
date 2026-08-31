@@ -1,76 +1,73 @@
 {
   "bosses": [
     {
-      "name": "Nek'zali die Seelenwinderin",
-      "nameEn": "Nek'zali the Soulcoiler",
+      "name": "Nymrissa Wellenrufer",
+      "nameEn": "Nymrissa Wavecaller",
       "status": "down",
-      "slug": "nekzali-the-soulcoiler",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
-      "check": "Add-Kontrolle & Physischer Burst",
-      "lust": "Zu Pull (Phase 1)",
-      "intro": "Eine Schattenjägerin, die Ula'tek beschwört. Der gesamte Kampf steht und fällt mit der lückenlosen Add-Kontrolle am Seelenwinderbrunnen und dem schnellen Brechen des Magie-Absorbschilds.",
+      "slug": "nymrissa-wavecaller",
+      "image": "",
+      "check": "Add-Kontrolle & Bewegung",
+      "lust": "Zu Pull",
+      "intro": "Der Opener des Abgrunds: eine einzige, aber temporeiche Phase aus Add-Wellen, wandernden Strudeln und einem straffen Enrage-Timer. Wer die Adds von der Blase fernhält und den sicheren Bereich zwischen den Strudeln findet, hat den Kampf im Griff.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Boss mittig vor dem Brunnen tanken, um Laufwege der Adds sichtbar zu halten.",
-              "Taunt-Swap bei 5–6 Stacks 'Aushöhlende Stöße' (−5 % Heilung pro Stack).",
-              "In Phase 2 den Boss aktiv aus verbleibenden Void-Pfützen herausziehen."
+              "Boss mittig positionieren, damit alle Add-Wellen und Strudel gut sichtbar bleiben.",
+              "Bei 'Eisklingenwirbel' konsequent Defensives rotieren, die Verwundbarkeit staffelt sich sonst gefährlich."
             ],
             "heiler": [
-              "Massiver Gruppenschaden während 'Hungernder Scheiterhaufen' – Cooldowns rotieren.",
-              "Debuff-Träger von 'Essenzzerreißen' gegenheilen, bevor die Fläche am Rand abgelegt wird.",
-              "Tanks bei hohen Debuff-Stacks mit Einzelfokus-Heilung stabilisieren."
+              "'Abyssischer Regen' pulsiert regelmäßig Raidschaden mit langem Nachfolge-DoT – Cooldowns danach ausrichten.",
+              "Gesoakte Spieler tragen kurzzeitig einen zusätzlichen Frost-DoT, gezielt nachheilen."
             ],
             "melee": [
-              "Höchste Priorität: Ruhelose Amani verlangsamen, stunnen und wegbomben.",
-              "Physischer Burst auf den Schild 'Grabesvorstoß' – Magieschaden wird komplett absorbiert!",
-              "Immer im Rücken des Bosses stehen."
+              "Adds sofort fokussieren, bevor sie die Blase in der Raummitte erreichen.",
+              "Immer im Blick behalten, wo sich der strudelfreie sichere Bereich gerade befindet."
             ],
             "ranged": [
-              "Essenzzerreißen sofort nach außen an die Wand tragen und ablegen.",
-              "Adds auf dem Weg zum Brunnen mit Verlangsamungen und Knockbacks stoppen.",
-              "Verteilt stehen, um Kettenreaktionen durch Schattengeschosse zu verhindern."
+              "Frostkugeln aus 'Eiseskälte' aktiv soaken, damit sie sich nicht anhäufen.",
+              "Adds aus der Distanz mitverlangsamen, damit sie rechtzeitig gestoppt werden."
             ]
           },
           "phasen": [
             {
-              "titel": "Phase 1: Der Seelenwinderbrunnen",
-              "uebersicht": "Laufwege der Adds kontrollieren und Schilde durch physischen Schaden brechen.",
+              "titel": "Einzelphase: Wellen der Tiefe",
+              "uebersicht": "Adds von der zentralen Blase fernhalten, den wandernden sicheren Bereich zwischen den Strudeln finden und den Boss vor dem 6-Minuten-Enrage besiegen.",
               "mechaniken": [
                 {
-                  "name": "Ruhelose Amani & Brunnen",
+                  "name": "Verlockende Blase",
                   "stufe": "toedlich",
                   "ziel": "DPS",
-                  "erklaerung": "Adds marschieren auf den Brunnen zu. Erreicht ein Add den Brunnen, bufft es den Boss permanent.",
-                  "loesung": "Alle Slows, Stuns und Knockbacks nutzen. Adds dürfen den Brunnen unter keinen Umständen erreichen."
+                  "erklaerung": "Murloc-Adds laufen von mehreren Seiten des Raums auf eine Blase in der Mitte zu. Erreicht ein Add die Blase, wird es ermächtigt, und die daraufhin platzende Blase verursacht Raidschaden.",
+                  "loesung": "Alle Adds zuverlässig vor Erreichen der Blase eliminieren."
                 },
                 {
-                  "name": "Grabesvorstoß (Physischer Schild)",
+                  "name": "Wirbelnde Strudel",
                   "stufe": "prio",
-                  "ziel": "Melee / Physische DPS",
-                  "erklaerung": "Boss hüllt sich in einen 25 % HP-Schild, der jeglichen Magieschaden absorbiert und währenddessen Raidschaden pulsiert.",
-                  "loesung": "Physische Klassen zünden Burst-Cooldowns, um den Schild schnellstmöglich aufzubrechen."
+                  "ziel": "Alle",
+                  "erklaerung": "Strudel entstehen an den Rändern und wandern zur Mitte, wer getroffen wird nimmt schweren Schaden. Erreicht ein Strudel die Blase, platzt sie ebenfalls und stößt den Raid zurück.",
+                  "loesung": "Den strudelfreien sicheren Bereich finden und dorthin ausweichen, bevor die Strudel ankommen."
                 },
                 {
-                  "name": "Essenzzerreißen",
+                  "name": "Eiseskälte",
                   "stufe": "mechanik",
                   "ziel": "Alle",
-                  "erklaerung": "Markierte Spieler explodieren nach 6 Sekunden und hinterlassen eine permanente Voidzone.",
-                  "loesung": "Sofort an die äußere Wand rennen und die Voidzone am Rand platzieren."
-                }
-              ]
-            },
-            {
-              "titel": "Intermission (50 % HP): Echo von Jawae",
-              "uebersicht": "DPS-Check vor dem Übergang in die Burnphase.",
-              "mechaniken": [
+                  "erklaerung": "Betroffene Spieler hinterlassen mit jedem DoT-Tick eine Frostkugel zu ihren Füßen. Läuft jemand über eine Kugel, wird sie gesoakt – das verursacht Schaden, einen DoT und 15 % Lauftempo-Verlust, hinterlässt aber eine Eisfläche.",
+                  "loesung": "Kugeln zügig und koordiniert soaken, bevor sich zu viele gleichzeitig ansammeln."
+                },
                 {
-                  "name": "Echo von Jawae",
+                  "name": "Eisklingenwirbel",
                   "stufe": "prio",
-                  "ziel": "DPS",
-                  "erklaerung": "Nek'zali wird immun und Jawae kanalisiert 'Hungernder Scheiterhaufen'.",
-                  "loesung": "Gesamten Fokus auf das Echo richten, um die Kanalisierung schnell zu beenden."
+                  "ziel": "Tank",
+                  "erklaerung": "Tankbrecher mit schwerem DoT, der zusätzlich die Verwundbarkeit gegenüber dem nächsten Eisklingenwirbel um 20 % erhöht.",
+                  "loesung": "Defensive Cooldowns rotieren und bei hohen Stacks rechtzeitig taunt-swappen."
+                },
+                {
+                  "name": "Unendliche Fluten",
+                  "stufe": "toedlich",
+                  "ziel": "Alle",
+                  "erklaerung": "Nach 6 Minuten Kampfzeit beginnt Nymrissa, massiven pulsierenden Raidschaden zu verursachen.",
+                  "loesung": "Boss zuverlässig vor Ablauf des Enrage-Timers besiegen."
                 }
               ]
             }
@@ -78,22 +75,33 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Stacks bereits bei 4 wechseln.", "Zusätzliche Elite-Adds aktiv binden."],
-            "heiler": ["Essenzzerreißen hinterlässt einen bleibenden DoT auf 3 Spielern gleichzeitig."],
-            "melee": ["Adds haben mehr HP – koordinierte Betäubungs-Ketten ansagen."],
-            "ranged": ["Voidzonen wachsen mit der Zeit an, extrem platzsparend am Rand ablegen."]
+            "tanks": [],
+            "heiler": [
+              "Der Schaden aus 'Abyssischer Regen' steigt mit jedem weiteren Wirken um 5 % an – je länger der Pull dauert, desto heftiger die Spitzen."
+            ],
+            "melee": [],
+            "ranged": [
+              "Frostkugeln müssen jetzt zwingend innerhalb von 30 Sekunden gesoakt werden, sonst explodieren sie von selbst."
+            ]
           },
           "phasen": [
             {
-              "titel": "Heroisch: Verschärfte Add-Wellen",
-              "uebersicht": "Adds sind immun gegen Verlangsamungen, wenn sie unter 30 % HP fallen.",
+              "titel": "Heroisch: Steigender Druck",
+              "uebersicht": "Frostkugeln haben ein Zeitlimit und 'Abyssischer Regen' wird mit jedem Wirken staerker - Tempo wird zum entscheidenden Faktor.",
               "mechaniken": [
                 {
-                  "name": "Verstärkte Ruhelose Amani",
-                  "stufe": "toedlich",
-                  "ziel": "DPS",
-                  "erklaerung": "Adds erhalten Tempoboni. Hard-CCs und Single-Target-Stuns zwingend erforderlich.",
-                  "loesung": "Feste Stun-Reihenfolge einteilen."
+                  "name": "Verfallende Frostkugeln",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ungesoakte Frostkugeln explodieren nach 30 Sekunden von selbst und verursachen Schaden im Umkreis.",
+                  "loesung": "Kugeln priorisiert abarbeiten, keine liegen lassen."
+                },
+                {
+                  "name": "Eskalierender Abyssischer Regen",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Jedes Wirken erhöht den erlittenen Raidschaden dauerhaft um 5 % – die Heilanforderung steigt im Kampfverlauf spürbar an.",
+                  "loesung": "Heil-Cooldowns für die spätere Kampfhälfte aufsparen."
                 }
               ]
             }
@@ -101,22 +109,42 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Jeder Boss-Treffer erzeugt ein Add, falls nicht perfekt getauntet wird."],
-            "heiler": ["Heilungsreduktion auf dem gesamten Raid während des Schilds."],
-            "melee": ["Fokus-Kicks auf Zauberwirker-Adds."],
-            "ranged": ["Voidzonen müssen in Dreiecksformation am Rand abgelegt werden."]
+            "tanks": [
+              "Neue Frontalmechanik: den Boss so drehen, dass der Strahl liegende Eisflächen wegräumt, ohne den Raid zu treffen."
+            ],
+            "heiler": [
+              "Gesoakte Frostkugeln verursachen jetzt Raidschaden statt nur Einzelschaden – Cooldown-Timing entsprechend anpassen."
+            ],
+            "melee": [
+              "Neuer Add-Typ 'Blasenflossenfrostschuppen' erscheint mit den Wellen und reduziert den Schaden aller anderen Adds um 99 % – zuerst töten."
+            ],
+            "ranged": []
           },
           "phasen": [
             {
-              "titel": "Mythisch: Seelenverbindung",
-              "uebersicht": "Getötete Adds hinterlassen Seelensplitter, die aktiv gesoakt werden müssen.",
+              "titel": "Mythisch: Frostschuppen-Priorität",
+              "uebersicht": "Ein zusätzlicher Schild-Add zwingt zu strikter Zielpriorität, während Kugel-Soaks und eine neue Tankmechanik den Raum weiter verkleinern.",
               "mechaniken": [
                 {
-                  "name": "Seelensplitter",
+                  "name": "Blasenflossenfrostschuppen",
                   "stufe": "toedlich",
-                  "ziel": "Alle",
-                  "erklaerung": "Ungesoakte Splitter explodieren nach 5 Sekunden mit 100 % Raid-Schaden.",
-                  "loesung": "Mobile Spieler sammeln die Splitter sofort auf."
+                  "ziel": "DPS",
+                  "erklaerung": "Dieser Add-Typ reduziert erlittenen Schaden aller übrigen Adds um 99 %, solange er lebt.",
+                  "loesung": "Sofort bei Erscheinen fokussieren, bevor die restlichen Adds bearbeitet werden."
+                },
+                {
+                  "name": "Raidweite Kugelexplosion",
+                  "stufe": "prio",
+                  "ziel": "Heiler",
+                  "erklaerung": "Das Soaken einer Frostkugel verursacht nun zusätzlich Schaden am gesamten Raid statt nur am Soaker.",
+                  "loesung": "Soak-Reihenfolge absprechen, damit nicht mehrere Kugeln gleichzeitig platzen."
+                },
+                {
+                  "name": "Frontalstrahl",
+                  "stufe": "mechanik",
+                  "ziel": "Tank",
+                  "erklaerung": "Neue Tankmechanik: ein frontaler Strahl, der liegende Eisflächen im Raum entfernt.",
+                  "loesung": "Boss gezielt so ausrichten, dass der Strahl verstopfte Bereiche freiraeumt, ohne den Raid zu treffen."
                 }
               ]
             }
@@ -124,16 +152,258 @@
         }
       },
       "wipeGefahren": [
-        "Adds erreichen den Seelenwinderbrunnen und buffen den Boss.",
-        "Magieklassen vergeuden ihre Cooldowns am Grabesvorstoß-Schild.",
-        "Essenzzerreißen wird mitten im Raidcamp abgelegt."
+        "Adds erreichen die Blase und lösen eine Explosion mit massivem Raidschaden aus.",
+        "Niemand steht im sicheren Bereich, wenn die Strudel die Mitte erreichen.",
+        "Frostkugeln werden nicht rechtzeitig gesoakt und explodieren unkontrolliert (Heroisch/Mythisch).",
+        "Der Enrage-Timer wird durch zu langsames Add-Clearing erreicht."
       ],
       "faehigkeiten": [
-        { "name": "Seelenwinderbrunnen", "id": 432101 },
-        { "name": "Essenzzerreißen", "id": 432102 },
-        { "name": "Aushöhlende Stöße", "id": 432103 },
-        { "name": "Grabesvorstoß", "id": 432104 },
-        { "name": "Hungernder Scheiterhaufen", "id": 432105 }
+        {
+          "name": "Verlockende Blase",
+          "id": 432001
+        },
+        {
+          "name": "Wirbelnde Strudel",
+          "id": 432002
+        },
+        {
+          "name": "Eiseskälte",
+          "id": 432003
+        },
+        {
+          "name": "Eisklingenwirbel",
+          "id": 432004
+        },
+        {
+          "name": "Unendliche Fluten",
+          "id": 432005
+        }
+      ]
+    },
+    {
+      "name": "Nek'zali die Seelenwinderin",
+      "nameEn": "Nek'zali the Soulcoiler",
+      "status": "down",
+      "slug": "nekzali-the-soulcoiler",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
+      "check": "Energie-Management & Add-Kontrolle",
+      "lust": "Phase 2 (nach der Zwischenphase)",
+      "intro": "Zwei Phasen mit einer Zwischenphase, angetrieben von einer Energieleiste statt einem festen Enrage-Timer: Jeder verpasste Add am Brunnen und jede Kanalisierung von Nek'zali füllt die Leiste, bei voller Energie enraged sie. Wer die Amani-Skelette konsequent stoppt, hat die Kontrolle über den Kampf.",
+      "difficulties": {
+        "normal": {
+          "rollen": {
+            "tanks": [
+              "Bei 'Sperrfeuer der Besessenheit' weit vom Raid weggehen, Raid stellt sich hinter den Boss.",
+              "Bei 'Aushöhlende Stöße' rechtzeitig taunt-swappen, bevor die Heilungsreduktion zu hoch stapelt.",
+              "In der Zwischenphase den Kreis-Soak von 'Hungernder Scheiterhaufen' übernehmen."
+            ],
+            "heiler": [
+              "Regelmäßiger Raidschaden durch 'Seelenwinderzündung' – auf 5 DoT-Stapel Seelenwinderritual vorbereitet sein.",
+              "'Leichenseuche' auf allen Spielern, die ein sterbendes Skelett getroffen hat, gegenheilen.",
+              "In Phase 2 pulsiert durchgehend Raidschaden bis zum Kill – Cooldowns entsprechend einteilen."
+            ],
+            "melee": [
+              "Amani-Skelette am 'Seelenwinderbrunnen' fokussieren und ihren 25%-Schild brechen, bevor sie den Brunnen erreichen.",
+              "Bei 'Essenzzerreißen' den Debuff selbst zum Rand tragen und dort entzaubern."
+            ],
+            "ranged": [
+              "Adds aus der Distanz mitbekämpfen und CCs auf nachrückende Skelette nutzen.",
+              "Während 'Seelenwinderzündung' den erscheinenden Kreisen ausweichen."
+            ]
+          },
+          "phasen": [
+            {
+              "titel": "Phase 1: Initiation der Seelenwinder",
+              "uebersicht": "Amani-Skelette stoppen, bevor sie den Brunnen erreichen und Nek'zali dadurch Energie geben – bei voller Energieleiste enraged sie.",
+              "mechaniken": [
+                {
+                  "name": "Entschlungene Wut",
+                  "stufe": "toedlich",
+                  "ziel": "Alle",
+                  "erklaerung": "Kein fester Enrage-Timer, sondern eine Energieleiste: 'Seelenwinderzündung' gibt +25 Energie, jedes Skelett, das den Brunnen erreicht, +5 Energie. Bei voller Leiste enraged Nek'zali.",
+                  "loesung": "Adds konsequent stoppen und Kanalisierungen nicht unnötig verlängern, um die Energie niedrig zu halten."
+                },
+                {
+                  "name": "Seelenwinderzündung",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Nek'zali teleportiert sich in die Mitte und kanalisiert, bis der Raid 5 Stapel des DoTs Seelenwinderritual trägt, dabei erscheinen Kreise, denen ausgewichen werden muss.",
+                  "loesung": "Kreisen ausweichen und den DoT-Schaden wegheilen."
+                },
+                {
+                  "name": "Essenzzerreißen",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Spieler werden herangezogen, dann weggestoßen und tragen einen entzauberbaren Debuff. Läuft er aus statt entzaubert zu werden, hinterlässt der Spieler eine Pfütze, aus der ein umherschwebender 'Latenter Kultist' entsteht, der Schaden im Umkreis austeilt.",
+                  "loesung": "Betroffene Spieler bewegen sich zum Rand, dort wird der Debuff entzaubert."
+                },
+                {
+                  "name": "Seelenwinderbrunnen",
+                  "stufe": "toedlich",
+                  "ziel": "DPS",
+                  "erklaerung": "Amani-Skelette erscheinen regelmäßig im Raum (durch leuchtende Särge angekündigt), tragen einen 25%igen Absorptionsschild und laufen langsam zum Brunnen. Erreicht eines den Brunnen, erhält der Raid einen Seelenwinderritual-Stapel und der Boss 5 Energie.",
+                  "loesung": "Schild brechen und Add töten, bevor es den Brunnen erreicht."
+                },
+                {
+                  "name": "Sperrfeuer der Besessenheit",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Ein Sperrfeuer aus Echos schießt in einer Linie auf den Tank und explodiert beim Aufprall; der Schaden nimmt mit der Entfernung zum Raid ab.",
+                  "loesung": "Tank entfernt sich weit vom Raid, alle anderen stellen sich hinter den Boss, um nicht in der Schusslinie zu stehen."
+                },
+                {
+                  "name": "Leichenseuche",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Sterbende Skelette belegen den Verursacher des Kills mit einem 15-sekündigen DoT.",
+                  "loesung": "Wegheilen."
+                },
+                {
+                  "name": "Aushöhlende Stöße",
+                  "stufe": "mechanik",
+                  "ziel": "Tank",
+                  "erklaerung": "Nahkampftreffer stapeln einen DoT auf dem aktiven Tank sowie einen Debuff, der die erhaltene Heilung 15 Sekunden lang um 5 % reduziert.",
+                  "loesung": "Bei steigenden Stapeln rechtzeitig den Tank wechseln."
+                }
+              ]
+            },
+            {
+              "titel": "Zwischenphase (50 % HP): Ritual der Erweckung",
+              "uebersicht": "Nek'zali zieht sich zum Brunnen zurück und ist immun, bis beide Echos von Jawae getötet wurden.",
+              "mechaniken": [
+                {
+                  "name": "Echo von Jawae",
+                  "stufe": "toedlich",
+                  "ziel": "DPS",
+                  "erklaerung": "Zwei Adds erscheinen auf gegenüberliegenden Seiten des Raums. Nek'zali bleibt immun, bis beide getötet sind – das beendet die Zwischenphase.",
+                  "loesung": "Beide Echos zügig und möglichst gleichzeitig fokussieren."
+                },
+                {
+                  "name": "Seelenübertragung",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ein Echo kanalisiert 15 Sekunden, danach erscheint eine breite Schadenslinie am Boden.",
+                  "loesung": "Rechtzeitig aus der Linie bewegen."
+                },
+                {
+                  "name": "Hungernder Scheiterhaufen",
+                  "stufe": "mechanik",
+                  "ziel": "Tank",
+                  "erklaerung": "Kreisförmiger Soak auf dem aktiven Tank. Spieler, die nicht mitsoaken, werden mit dem DoT 'Schlängelnde Flamme' markiert.",
+                  "loesung": "Ausreichend Spieler zum Mitsoaken in den Kreis stellen."
+                }
+              ]
+            },
+            {
+              "titel": "Phase 2: Entschlingen",
+              "uebersicht": "Durchgehender Raid-DoT bis zum Kill – Nek'zali muss vor erneut voller Energie besiegt werden.",
+              "mechaniken": [
+                {
+                  "name": "Anrufen",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Belegt mit einem Stapel Seelenwinderritual und verschiebt alle Pfützen, aus denen Latente Kultisten entstehen, im Raum neu.",
+                  "loesung": "Nach dem Cast neu positionieren und den verschobenen Pfützen ausweichen."
+                }
+              ]
+            }
+          ]
+        },
+        "heroic": {
+          "rollen": {
+            "tanks": [],
+            "heiler": [
+              "Seelenwinderritual belegt zusätzlich mit 'Ritualbrand' (+15 % stapelnde Vulnerabilität) – DoT-Schaden eskaliert schneller."
+            ],
+            "melee": [
+              "Skelett-Leichen brennen: aktiv auf den Flammen von 'Gefäß des Erwachens' halten, sonst stehen sie wieder auf."
+            ],
+            "ranged": []
+          },
+          "phasen": [
+            {
+              "titel": "Heroisch: Leichen verbrennen",
+              "uebersicht": "Getötete Skelette müssen aktiv verbrannt werden, sonst erwachen sie erneut – zusätzlich zur ohnehin schon steigenden DoT-Belastung.",
+              "mechaniken": [
+                {
+                  "name": "Gefäß des Erwachens",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Getötete Skelette hinterlassen Leichen, die wiederbelebt werden, wenn sie nicht durch die Flammen der Gefäße verbrannt werden.",
+                  "loesung": "Leichen gezielt in die Flammen ziehen bzw. dort platzieren."
+                },
+                {
+                  "name": "Einäscherung",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Spieler, die 'Hungernder Scheiterhaufen' nicht mitsoaken, tragen einen DoT-Debuff, der beim Ablaufen explodiert und dabei Leichen im Umkreis verbrennt.",
+                  "loesung": "Nicht-Soaker gezielt in der Nähe liegender Leichen positionieren."
+                }
+              ]
+            }
+          ]
+        },
+        "mythic": {
+          "rollen": {
+            "tanks": [],
+            "heiler": [
+              "Spieler im Brunnen (Greifende Tiefen) erhalten eine Vulnerabilität – Heilpriorität entsprechend anpassen."
+            ],
+            "melee": [
+              "Rotierend Spieler in den Brunnen schicken, um das 'Ertrunkene Echo' zu töten, sobald es erwacht."
+            ],
+            "ranged": [
+              "Beim Wirken von 'Anrufen' werden alle Spieler 3 Sekunden lang unterbrochen – Casts entsprechend timen."
+            ]
+          },
+          "phasen": [
+            {
+              "titel": "Mythisch: Greifende Tiefen",
+              "uebersicht": "Ein periodisch erwachendes Add im Brunnen zieht Spieler hinein und muss dort aktiv erledigt werden.",
+              "mechaniken": [
+                {
+                  "name": "Greifende Tiefen",
+                  "stufe": "toedlich",
+                  "ziel": "DPS",
+                  "erklaerung": "In regelmäßigen Abständen erwacht im Brunnen ein 'Ertrunkenes Echo' in einer separaten Phase. Solange es lebt, werden Spieler zum Brunnen gezogen und der Raid erhält einen DoT. Das Betreten des Brunnens belegt mit einer Vulnerabilität.",
+                  "loesung": "Vorher eingeteilte Gruppen abwechselnd in den Brunnen schicken, um das Echo schnell zu töten."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "wipeGefahren": [
+        "Zu viele Skelette erreichen den Brunnen und die Energieleiste läuft vor dem Kill voll.",
+        "Essenzzerreißen wird nicht am Rand entzaubert, wodurch Latente Kultisten mitten im Raid entstehen.",
+        "Die Zwischenphase zieht sich zu lange, weil beide Echos nicht gleichzeitig fokussiert werden.",
+        "Skelett-Leichen werden auf Heroisch nicht verbrannt und stehen erneut auf (Heroisch/Mythisch)."
+      ],
+      "faehigkeiten": [
+        {
+          "name": "Entschlungene Wut",
+          "id": 432101
+        },
+        {
+          "name": "Seelenwinderzündung",
+          "id": 432102
+        },
+        {
+          "name": "Essenzzerreißen",
+          "id": 432103
+        },
+        {
+          "name": "Seelenwinderbrunnen",
+          "id": 432104
+        },
+        {
+          "name": "Sperrfeuer der Besessenheit",
+          "id": 432105
+        },
+        {
+          "name": "Aushöhlende Stöße",
+          "id": 432106
+        }
       ]
     },
     {
@@ -142,61 +412,97 @@
       "status": "down",
       "slug": "entombed-sentinels",
       "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg",
-      "check": "Camp-Aufteilung & Zahlenrätsel",
+      "check": "Camp-Trennung & Orb-Matching",
       "lust": "Zu Kampfbeginn",
-      "intro": "Zwei Schlangengolems, die getrennt gehalten und synchron herabgespielt werden müssen. Die Zwischenphase erfordert exakte Partnerfindung nach Zahlenwert.",
+      "intro": "Zwei Wächter, die Atem und Blut von Ula'tek kanalisieren, müssen strikt getrennt auf zwei Seiten des Raums gehalten werden. Die Zwischenphase verlangt ein ruhiges Orb-Matching-Puzzle, für das ihr euch Zeit lassen könnt.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Wächter 1 links (Atem), Wächter 2 rechts (Blut) tanken – Mindestabstand 40 Meter!",
-              "Nach jeder Zwischenphase die Seiten wechseln.",
-              "Frontals immer von den Camps wegdrehen."
+              "Wächter mindestens 40 Meter auseinander halten – zu nah beieinander reduziert den erlittenen Schaden um 99 %.",
+              "'Ermächtigendes Schmettern' (Atem) baut pro Treffer +10 % Schaden auf, bis ein anderes Ziel getroffen wird – Stacks im Blick behalten.",
+              "'Blutgiftinjektion' (Blut) stapelt einen DoT – Defensives entsprechend rotieren."
             ],
             "heiler": [
-              "Je 2 Heiler fest einem Schlangen-Camp zuweisen.",
-              "Während der Ätzenden Stasis dispellen und unvollständige Paare gegenheilen."
+              "Raid in zwei feste Gruppen aufteilen, jede Gruppe bleibt bei ihrem Wächter.",
+              "'Instabiles Miasma' gemeinsam soaken, um den Explosionsschaden zu splitten.",
+              "'Verseuchtes Blut' nach Möglichkeit entzaubern, sonst die Pfütze der Betroffenen im Blick behalten."
             ],
             "melee": [
-              "Fest einem Camp zugeordnet bleiben – niemals zwischen den Bossen pendeln.",
-              "DPS auf beiden Golems streng angleichen (max. 10 % HP-Differenz)."
+              "Fest der eigenen Camp-Seite zugeordnet bleiben, nicht zwischen den Wächtern pendeln.",
+              "Das periodisch erscheinende Schleim-Add ('Giftgerinnung') sofort zerstören."
             ],
             "ranged": [
-              "Camp-Abstand von 40m strikt einhalten.",
-              "Bei Zahlen-Debuff sofort Partner suchen."
+              "Toxintropfen aktiv zerlaufen, bevor sie explodieren.",
+              "Beim Puzzle in der Zwischenphase auf den eigenen Grünanteil achten und rechtzeitig Partner suchen."
             ]
           },
           "phasen": [
             {
-              "titel": "Hauptphase: Doppel-Schlangen-Management",
-              "uebersicht": "Raid in zwei gleich starke Camps aufteilen und synchron Schaden machen.",
+              "titel": "Hauptphase: Getrennte Camps",
+              "uebersicht": "Beide Wächter auf getrennten Seiten des Raums halten und laufend Adds sowie Bodenmechaniken abarbeiten.",
               "mechaniken": [
                 {
-                  "name": "Ula'teks Dominanz (40m Abstand)",
+                  "name": "40-Meter-Trennung",
                   "stufe": "toedlich",
                   "ziel": "Tanks",
-                  "erklaerung": "Kommen sich die Wächter auf unter 40m nahe, verdoppelt sich ihr Schaden und sie werden immun.",
-                  "loesung": "Beide Bosse fest auf ihren Markern tanken."
+                  "erklaerung": "Kommen sich die beiden Wächter zu nahe (unter 40 Meter), erleiden sie 99 % weniger Schaden.",
+                  "loesung": "Beide Bosse konsequent auf ihren Positionen weit auseinander halten."
                 },
                 {
-                  "name": "Symbiotische Lebensverbindung",
+                  "name": "Giftgerinnung",
                   "stufe": "prio",
                   "ziel": "DPS",
-                  "erklaerung": "Bei mehr als 10 % HP-Differenz heilt der stärkere Boss den geschwächten hoch.",
-                  "loesung": "Targets im Voice ansagen und Schaden ausgleichen."
+                  "erklaerung": "In regelmäßigen Abständen erscheint ein großes Schleim-Add, das raidweiten Schaden pulsiert.",
+                  "loesung": "Add sofort fokussieren und zerstören."
+                },
+                {
+                  "name": "Toxintropfen",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Zahlreiche kleine giftgrüne Tropfen erscheinen im Raum. Unbehandelt explodieren sie mit massivem Raidschaden.",
+                  "loesung": "Über die Tropfen laufen, um sie zu zerquetschen."
+                },
+                {
+                  "name": "Verseuchtes Blut",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Mehrere Spieler erhalten einen entzauberbaren DoT-Debuff, der bei Ablauf eine Pfütze hinterlässt.",
+                  "loesung": "Möglichst viele entzaubern, den Rest die Pfütze an den Rand tragen lassen."
+                },
+                {
+                  "name": "Instabiles Miasma",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ein Spieler wird mit einem Soak-Kreis markiert, der nach kurzer Zeit explodiert und dabei eine Pfütze hinterlässt.",
+                  "loesung": "Gemeinsam im Kreis soaken, um den Schaden zu splitten, danach Pfützen an den Rand tragen."
+                },
+                {
+                  "name": "Ermächtigendes Schmettern",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Tankbrecher des Atem-Wächters: hoher physischer Schaden, der Boss erhält zudem +10 % Schaden pro Treffer, bis er ein anderes Ziel trifft.",
+                  "loesung": "Defensivfähigkeiten nutzen."
+                },
+                {
+                  "name": "Blutgiftinjektion",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Tankbrecher des Blut-Wächters: physischer Schaden plus ein stapelbarer DoT.",
+                  "loesung": "Defensivfähigkeiten nutzen."
                 }
               ]
             },
             {
-              "titel": "Zwischenphase: Ätzende Stasis (Summe = 4)",
-              "uebersicht": "Zahlen-Debuffs abgleichen und Paare bilden.",
+              "titel": "Zwischenphase: Spiraltoxine",
+              "uebersicht": "Bei 100 Energie treffen sich beide Wächter in der Mitte und werden immun, bis das Orb-Puzzle gelöst ist.",
               "mechaniken": [
                 {
-                  "name": "Ätzende Stasis",
+                  "name": "Spiraltoxine",
                   "stufe": "toedlich",
                   "ziel": "Alle",
-                  "erklaerung": "Spieler erhalten Zahlen (1, 2, 3). Nach Ablauf explodiert jeder ohne passendes Paar.",
-                  "loesung": "1 sucht 3, 2 sucht 2. Ineinander laufen, sodass die Summe exakt 4 ergibt."
+                  "erklaerung": "Jeder Spieler erhält 4 Kugeln in zufälliger rot/grün-Kombination über dem Kopf. Der Debuff-Stapel entspricht der Anzahl grüner Kugeln. Zwei Spieler müssen sich finden, deren grüne Kugeln zusammen exakt 4 ergeben – bei falscher Kombination gibt es massiven Schaden gefolgt von einem schweren DoT.",
+                  "loesung": "Ruhig bleiben, eigenen Grünanteil ansagen und passenden Partner suchen (z. B. 1+3 oder 2+2)."
                 }
               ]
             }
@@ -204,22 +510,33 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Wächter pulsieren bei jedem Schritt zusätzlichen Naturschaden."],
-            "heiler": ["Doppelte Stapelhöhe bei Mal der Säure."],
-            "melee": ["Zahlenrätsel enthält zusätzlich die Zahl 4 (muss solo stehen bleiben)."],
-            "ranged": ["Kreise explodieren nach Partnerfindung mit 5m Umgebungsschaden."]
+            "tanks": [],
+            "heiler": [
+              "'Blutgift' hinterlässt zusätzliche Pfützen – konsequent an den Rand ablegen, damit der Platz nicht ausgeht."
+            ],
+            "melee": [],
+            "ranged": [
+              "Neue Mechanik 'Lebendiges Gift': Giftprojektile fliegen aus und kehren zum Boss zurück – nicht im Rückweg stehen."
+            ]
           },
           "phasen": [
             {
-              "titel": "Heroisch: Dynamische Zahlen",
-              "uebersicht": "Summe 4 muss unter Bewegung gebildet werden.",
+              "titel": "Heroisch: Mehr Bodenmüll",
+              "uebersicht": "Zusätzliche Blutpfützen und rückkehrende Giftprojektile verkleinern den nutzbaren Raum weiter.",
               "mechaniken": [
                 {
-                  "name": "Instabile Stasis",
-                  "stufe": "toedlich",
+                  "name": "Blutgift",
+                  "stufe": "mechanik",
                   "ziel": "Alle",
-                  "erklaerung": "Zahlenwerte verändern sich alle 3 Sekunden, falls kein Partner gefunden wurde.",
-                  "loesung": "Partner sofort in den ersten 2 Sekunden anlaufen."
+                  "erklaerung": "Ein Blut-Debuff hinterlässt eine Pfütze unter dem betroffenen Spieler.",
+                  "loesung": "Pfützen konsequent an den Rändern des Raums ablegen."
+                },
+                {
+                  "name": "Lebendiges Gift",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Giftprojektile werden ausgesandt und kehren anschließend zum Boss zurück – wer im Pfad steht, nimmt Schaden.",
+                  "loesung": "Flugbahn beobachten und rechtzeitig ausweichen."
                 }
               ]
             }
@@ -227,22 +544,24 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Taunt ist während der Hauptphase um 50 % verlangsamt."],
-            "heiler": ["Heilungs-Absorb auf allen ungeraden Zahlen."],
-            "melee": ["Bosse wechseln nach 60 Sekunden eigenständig die Plattform."],
-            "ranged": ["Zahlenwerte sind nur für den jeweiligen Partner sichtbar."]
+            "tanks": [],
+            "heiler": [],
+            "melee": [],
+            "ranged": [
+              "'Unstetes Protogift': markierte Spieler müssen sich gegenseitig finden, unmarkierte Spieler dabei strikt meiden."
+            ]
           },
           "phasen": [
             {
-              "titel": "Mythisch: Blind-Kopplung",
-              "uebersicht": "Kommunikation im Voice entscheidet über Wipe oder Kill.",
+              "titel": "Mythisch: Unstetes Protogift",
+              "uebersicht": "Markierte Spieler müssen einander berühren, ein Zusammenstoß mit unmarkierten Spielern kostet Schaden und Rückstoß.",
               "mechaniken": [
                 {
-                  "name": "Schattierte Zahlen",
-                  "stufe": "toedlich",
+                  "name": "Unstetes Protogift",
+                  "stufe": "prio",
                   "ziel": "Alle",
-                  "erklaerung": "Eigene Zahl ist unsichtbar – nur andere sehen sie.",
-                  "loesung": "Feste Ansagen im Discord für jeden Spieler."
+                  "erklaerung": "Einzelne Spieler werden mit einem Kreis markiert und müssen einen anderen markierten Spieler berühren. Die Kollision mit einem unmarkierten Spieler verursacht stattdessen Rückstoß und Schaden.",
+                  "loesung": "Als unmarkierter Spieler bewusst Abstand zu markierten Spielern halten, markierte Spieler laufen gezielt zueinander."
                 }
               ]
             }
@@ -250,16 +569,32 @@
         }
       },
       "wipeGefahren": [
-        "Bosse werden zusammengezogen.",
-        "Ungleicher Schaden führt zu permanenter Heilung.",
-        "Falsche Zahlenpaare bei Ätzende Stasis."
+        "Die Wächter kommen sich zu nahe und verlieren dadurch fast ihren gesamten erlittenen Schaden.",
+        "Toxintropfen oder Verseuchtes Blut werden ignoriert und explodieren im Camp.",
+        "Beim Spiraltoxine-Puzzle wird falsch gematcht (Summe der grünen Kugeln ≠ 4).",
+        "Auf Mythisch berühren markierte Spieler versehentlich unmarkierte Spieler."
       ],
       "faehigkeiten": [
-        { "name": "Ula'teks Dominanz", "id": 432201 },
-        { "name": "Mal der Säure", "id": 432202 },
-        { "name": "Mal des Blutes", "id": 432203 },
-        { "name": "Ätzende Stasis", "id": 432204 },
-        { "name": "Spiraltoxine", "id": 432205 }
+        {
+          "name": "Giftgerinnung",
+          "id": 432201
+        },
+        {
+          "name": "Toxintropfen",
+          "id": 432202
+        },
+        {
+          "name": "Verseuchtes Blut",
+          "id": 432203
+        },
+        {
+          "name": "Instabiles Miasma",
+          "id": 432204
+        },
+        {
+          "name": "Spiraltoxine",
+          "id": 432205
+        }
       ]
     },
     {
@@ -267,56 +602,97 @@
       "nameEn": "Vashnik the Malignant",
       "status": "down",
       "slug": "vashnik-the-malignant",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f9f43b4f5abb79d2c6cf8e0d885b95ac59fbd3b0.jpg",
-      "check": "Kessel-Steuerung & Add-Stopp",
-      "lust": "Nach dem 3. Kesselwechsel",
-      "intro": "In der Kammer der Virulenz destilliert Vashnik Ula'teks Gifte. Die Fähigkeiten des Bosses werden durch die Positionierung der Tanks an den Kesseln bestimmt.",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
+      "check": "Kessel-Reihenfolge & Add-Priorität",
+      "lust": "Zu Pull",
+      "intro": "Ein Kiting-Kampf mit nur einer Phase: Vashnik wird zwischen drei Brunnen (Feuer, Blut, Schatten) gezogen, trinkt regelmäßig aus den beiden nächststehenden und erhält dadurch neue Fähigkeiten und Adds. Die Reihenfolge Feuer – Blut – Schatten gilt als ideal.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Vashnik vor jedem 'Trinken'-Cast zur nächsten Kesselposition ziehen.",
-              "Taunt-Swap bei 2 Stacks 'Triefende Fangzähne'.",
-              "Boss mit dem Rücken zum Raid halten."
+              "Boss gezielt zwischen den drei Brunnen (Feuer/Blut/Schatten) hin- und herziehen, bevor er 'Trinken' castet.",
+              "Bei 'Triefende Fangzähne' rechtzeitig taunt-swappen, der Stapel-Debuff erhöht erlittenen Schaden um 100 %."
             ],
             "heiler": [
-              "Heilungsabsorb bei 'Entziehende Infektion' mit Einzelzielzaubern wegdrücken.",
-              "Pulsierenden Giftschaden beim Kesselwechsel stabilisieren."
+              "'Toxischer Dampf' tickt permanent und wird mit jedem Trinken stärker – Cooldowns entsprechend sparsam einsetzen.",
+              "Absorb-Schilde von 'Stygische Infektion' zügig runterheilen, solange Spieler von Swirlies umgeben sind."
             ],
             "melee": [
-              "Fokus auf Adds: Lebendes Gift sofort verlangsamen und vernichten.",
-              "Bei 'Entziehende Infektion' sofort in den Kreis stacken."
+              "'Spaltendes Gerinnsel'-Adds sterben lassen, wenn genug Zeit ist – sie spalten sich beim Tod, Zeitpunkt koordinieren.",
+              "'Miasmabeschichtung'-Adds nach Schildbruch zügig zerstören und deren Swirlies beim Sterben meiden."
             ],
             "ranged": [
-              "Kein Add darf die Mitte erreichen – Slows und CCs priorisieren.",
-              "Im Halbkreis hinter dem Boss verteilen."
+              "'Brennende Präsenz'-Adds nur mit Zeitabstand zueinander töten, sie pulsieren Raidschaden solange sie leben.",
+              "Bei 'Explodierende Infektion' als markierter Spieler weit vom Raid weggehen."
             ]
           },
           "phasen": [
             {
-              "titel": "Kessel-Zyklus & Gift-Management",
-              "uebersicht": "Kessel-Reihenfolge einhalten und Infektionen gemeinsam abfangen.",
+              "titel": "Einzelphase: Brunnenkreislauf",
+              "uebersicht": "Den Boss kontrolliert zwischen den Brunnen bewegen, laufend Adds abarbeiten und die verschiedenen Infektionsmechaniken sauber trennen.",
               "mechaniken": [
                 {
-                  "name": "Trinken (Kessel-Infusion)",
-                  "stufe": "prio",
-                  "ziel": "Tanks",
-                  "erklaerung": "Erreicht Vashnik 100 Energie, trinkt er aus den 2 nächsten Kesseln.",
-                  "loesung": "Boss exakt auf den Markern platzieren."
-                },
-                {
-                  "name": "Entziehende Infektion",
+                  "name": "Trinken",
                   "stufe": "toedlich",
-                  "ziel": "Alle",
-                  "erklaerung": "Ein Spieler erhält einen riesigen Heilungsabsorb-Schild.",
-                  "loesung": "Der gesamte Raid stackt im Kreis des Spielers, um den Absorb zu brechen."
+                  "ziel": "Tanks",
+                  "erklaerung": "Im Raum stehen drei Brunnen (Feuer, Blut, Schatten). Bei jedem Trinken wird Vashnik durch die zwei nächststehenden Brunnen ermächtigt, erhält neue Fähigkeiten, verursacht Raidschaden und aktivierte Brunnen erschaffen weitere Adds.",
+                  "loesung": "Boss rechtzeitig vor jedem Trinken zur gewünschten Brunnenkombination ziehen."
                 },
                 {
-                  "name": "Lebendes Gift (Adds)",
+                  "name": "Spaltendes Gerinnsel",
+                  "stufe": "mechanik",
+                  "ziel": "DPS",
+                  "erklaerung": "Sehr langsame, nicht CC-fähige Adds, die sich beim Zerstören in weitere Adds aufspalten.",
+                  "loesung": "Zerstörungszeitpunkt koordinieren, damit die gespaltenen Adds nicht überhandnehmen."
+                },
+                {
+                  "name": "Miasmabeschichtung",
                   "stufe": "prio",
                   "ziel": "DPS",
-                  "erklaerung": "Adds heilen den Boss bei Erreichen um 10 %.",
-                  "loesung": "Stuns, Slows und Burst nutzen."
+                  "erklaerung": "Verhüllte Toxin-Adds erscheinen mit massivem Absorptionsschild und hinterlassen beim Sterben Swirlies, denen ausgewichen werden muss.",
+                  "loesung": "Adds zerstören, sobald der Schild unten ist, danach aus der Explosion wegbewegen."
+                },
+                {
+                  "name": "Stygische Infektion",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Mehrere Spieler erhalten einen DoT mit heftigem Heilabsorb, um sie herum erscheinen Swirlies, bis der Schild weggeheilt ist.",
+                  "loesung": "Absorb-Schild priorisiert runterheilen."
+                },
+                {
+                  "name": "Brennende Präsenz",
+                  "stufe": "prio",
+                  "ziel": "DPS",
+                  "erklaerung": "Brennende-Gift-Adds pulsieren Raidschaden, solange sie leben, und verteilen beim Zerstören ebenfalls Raidschaden. Nach einer Minute werden sie CC-immun und 50 % schneller.",
+                  "loesung": "Adds mit zeitlichem Abstand zueinander zerstören, nicht alle gleichzeitig."
+                },
+                {
+                  "name": "Explodierende Infektion",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Spieler explodieren mit Raidschaden, der sich mit der Entfernung zum Raid reduziert.",
+                  "loesung": "Als markierter Spieler weit vom Raid weggehen."
+                },
+                {
+                  "name": "Seuchenschaum",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Spieler explodieren und senden Wellen entlang angezeigter Linien aus.",
+                  "loesung": "Verteilen und aus den angezeigten Linien bewegen."
+                },
+                {
+                  "name": "Toxischer Dampf",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Permanenter raidweiter Tick-Schaden, der sich mit jedem 'Trinken' erhöht.",
+                  "loesung": "Konstant wegheilen, Cooldowns auf die spätere Kampfhälfte einteilen."
+                },
+                {
+                  "name": "Triefende Fangzähne",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Tankbrecher mit physischem Schaden und DoT, der zusätzlich stapelbar den erlittenen Schaden um 100 % erhöht.",
+                  "loesung": "Bei steigenden Stapeln taunt-swappen."
                 }
               ]
             }
@@ -324,22 +700,26 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Kessel vergiften den Tank zusätzlich mit einem stapelbaren DoT."],
-            "heiler": ["Doppelte Heilungsabsorb-Menge bei Infektionen."],
-            "melee": ["Adds hinterlassen beim Tod Giftpfützen."],
-            "ranged": ["Kessel-Dämpfe verringern die Sichtweite."]
+            "tanks": [],
+            "heiler": [
+              "'Brennende Präsenz'-Adds belegen den Raid beim Sterben zusätzlich mit einem stapelbaren DoT."
+            ],
+            "melee": [],
+            "ranged": [
+              "Neue Kreise aus 'Bösartiger Katalysator' müssen gesoakt werden, sonst explodieren sie mit massivem Schaden."
+            ]
           },
           "phasen": [
             {
-              "titel": "Heroisch: Brennendes Gift",
-              "uebersicht": "Adds explodieren beim Tod.",
+              "titel": "Heroisch: Zusätzliche Soaks",
+              "uebersicht": "Ein raidweiter Schadensausbruch erzeugt zusätzliche Soak-Kreise, während sterbende Gift-Adds den Raid nachhaltiger belasten.",
               "mechaniken": [
                 {
-                  "name": "Toxische Eruption",
-                  "stufe": "toedlich",
-                  "ziel": "DPS",
-                  "erklaerung": "Getötete Adds fügen Spielern im Umkreis von 6m schweren Schaden zu.",
-                  "loesung": "Adds aus der Distanz töten oder defensiv absichern."
+                  "name": "Bösartiger Katalysator",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ein raidweiter Schadensausbruch erzeugt Kreise, die bei fehlendem Soak mit massivem Schaden explodieren.",
+                  "loesung": "Jeden Kreis von mindestens einem Spieler soaken lassen."
                 }
               ]
             }
@@ -347,22 +727,33 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["3 Kessel werden gleichzeitig aktiv."],
-            "heiler": ["Permanenter Schattenschaden im gesamten Raum."],
-            "melee": ["Infektion trifft 2 Spieler gleichzeitig an unterschiedlichen Positionen."],
-            "ranged": ["Adds teilen sich in 2 kleinere Schleime auf."]
+            "tanks": [],
+            "heiler": [
+              "'Entziehende Infektion' verursacht auf Mythisch 500 % mehr DoT-Schaden."
+            ],
+            "melee": [
+              "Bösartige Tumore nach jedem Trinken sofort mit Seuchenwogen zerstören, sonst wiped der Raid."
+            ],
+            "ranged": []
           },
           "phasen": [
             {
-              "titel": "Mythisch: Dreifache Virulenz",
-              "uebersicht": "Kesselkombinationen erfordern sekundengenaue Pulls.",
+              "titel": "Mythisch: Tumore & Lebensentzug",
+              "uebersicht": "Nach jedem Trinken müssen zusätzliche Tumore zerstört werden, während markierte Spieler durch Lebensentzug unterstützt werden müssen.",
               "mechaniken": [
                 {
-                  "name": "Mutation",
+                  "name": "Bösartiger Tumor",
                   "stufe": "toedlich",
+                  "ziel": "DPS",
+                  "erklaerung": "Nach jedem Trinken erscheinen überall im Raum bösartige Tumore, die durch Seuchenwogen zerstört werden müssen. Bleiben Tumore übrig, wiped der Raid.",
+                  "loesung": "Sofort nach jedem Trinken alle Tumore mit Wellen abräumen."
+                },
+                {
+                  "name": "Entziehende Infektion",
+                  "stufe": "prio",
                   "ziel": "Alle",
-                  "erklaerung": "Boss absorbiert alle 3 Kesselkräfte gleichzeitig.",
-                  "loesung": "Raid-Cooldown-Kette perfekt timen."
+                  "erklaerung": "Markierte Spieler erhalten einen DoT und einen heftigen Heilabsorb, erhalten dadurch 100 % weniger Heilung, entziehen aber nahestehenden Spielern Leben.",
+                  "loesung": "Sich in der Nähe der markierten Spieler aufhalten, bis der Schild abgebaut ist."
                 }
               ]
             }
@@ -370,15 +761,32 @@
         }
       },
       "wipeGefahren": [
-        "Boss trinkt aus den falschen Kesseln.",
-        "Raid stackt nicht bei Entziehende Infektion.",
-        "Lebendes Gift heilt den Boss hoch."
+        "Der Boss wird zur falschen Zeit an die falsche Brunnenkombination gezogen.",
+        "Adds erreichen unkontrolliert die Raidmitte oder werden zur falschen Zeit getötet.",
+        "Absorb-Schilde von Stygischer/Entziehender Infektion werden nicht rechtzeitig abgebaut.",
+        "Bösartige Tumore bleiben nach dem Trinken stehen (Mythisch – sofortiger Wipe)."
       ],
       "faehigkeiten": [
-        { "name": "Trinken", "id": 432301 },
-        { "name": "Toxischer Dampf", "id": 432302 },
-        { "name": "Triefende Fangzähne", "id": 432303 },
-        { "name": "Entziehende Infektion", "id": 432304 }
+        {
+          "name": "Trinken",
+          "id": 432301
+        },
+        {
+          "name": "Spaltendes Gerinnsel",
+          "id": 432302
+        },
+        {
+          "name": "Miasmabeschichtung",
+          "id": 432303
+        },
+        {
+          "name": "Toxischer Dampf",
+          "id": 432304
+        },
+        {
+          "name": "Triefende Fangzähne",
+          "id": 432305
+        }
       ]
     },
     {
@@ -386,55 +794,98 @@
       "nameEn": "The Lost Explorers",
       "status": "down",
       "slug": "lost-explorers",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/19bd46c0a77441577821e056dbd5cc5c09ae87b5.jpg",
-      "check": "Ratskampf & Fisch-Fütterung",
-      "lust": "Zu Pull für Doppel-Cleave",
-      "intro": "Drei besessene Tortollaner. Erfordert sauberen Cleave-Schaden, Kisten-Management und synchrones Töten aller drei Bosse.",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg",
+      "check": "Ultimate-Steuerung & Positionierung",
+      "lust": "Zu Pull",
+      "intro": "Ein Rat aus drei Tortollanern (Gebbo, Nama, Iku), die von Mor'zahi kontrolliert werden und der Reihe nach eine Ultimate erhalten. Über Fische aus zerstörten Kisten bestimmt ihr, wer als nächstes dran ist – die Reihenfolge Gebbo, dann Nama, dann Iku gilt als ideal.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Immer zwei Bosse für Cleave zusammenhalten, den dritten mind. 30 Meter isolieren.",
-              "Bosse rotieren, sobald der isolierte Boss Energie aufbaut."
+              "Gebbo wandert selbstständig durch den Raum und kann nicht bewegt werden – Nama und Iku aktiv positionieren.",
+              "Bei 'Beständige Schläge' (Nama) und 'Zerfetzende Splitter' (Iku) konsequent tanken bzw. wechseln, beide Debuffs stapeln erlittenen Schaden.",
+              "Alle drei Bosse möglichst gleichzeitig auf niedrige HP bringen, da jeder enraged, wenn ein anderer vor ihm stirbt."
             ],
             "heiler": [
-              "Massiver Raidschaden bei 'Reliktriss'.",
-              "Frost- und Feuer-Debuffs aktiv im Auge behalten."
+              "Raidschaden durch die Ultimates von Gebbo, Nama und Iku ist jeweils unterschiedlich – auf die aktive Ultimate reagieren.",
+              "'Eisgebundene Flammen' notfalls entzaubern, wenn der Interrupt verpasst wurde."
             ],
             "melee": [
-              "Cleave-Schaden auf die zusammenstehenden Bosse maximieren.",
-              "Kisten in der Nähe aufschlagen."
+              "Kisten aus 'Plunder werfen' übertreten, um den Fisch zu finden, dabei den stapelnden DoT im Blick behalten.",
+              "Bei 'Panzerwirbel' die angelockten Panzer von den Ranged weg zum Rand ziehen."
             ],
             "ranged": [
-              "Fische einsammeln und bei 90 % Energie den Bossen zuwerfen.",
-              "HP aller drei Bosse synchron halten."
+              "Fisch aufheben und rechtzeitig den gewünschten Tortollaner damit bewerfen, um 'Letzter Aufstieg' zu verhindern.",
+              "Bei 'Frostfeuersalve' die eigene Fläche ablegen und danach in eine entgegengesetzte Fläche laufen, um den DoT loszuwerden."
             ]
           },
           "phasen": [
             {
-              "titel": "Ratskampf: Cleave & Fütterung",
-              "uebersicht": "2 Bosse cleaven, Energie kontrollieren und alle 3 synchron finishen.",
+              "titel": "Einzelphase: Rat der Tortollaner",
+              "uebersicht": "Alle drei Bosse sind durchgehend aktiv und angreifbar. Über den Fisch steuert ihr, welcher Tortollaner als nächstes seine Ultimate erhält, während Positionsmechaniken und Tankbrecher parallel laufen.",
               "mechaniken": [
                 {
-                  "name": "Widerliche Fische (Fütterung bei 90 % Energie)",
+                  "name": "Dunkles Flüstern",
                   "stufe": "toedlich",
-                  "ziel": "Ranged / Utility",
-                  "erklaerung": "Erreicht ein Boss 100 Energie, folgt der Raidwipe.",
-                  "loesung": "Kisten zerschlagen, Fische aufsammeln und bei 90 % Boss-Energie auf den Boss werfen."
+                  "ziel": "Alle",
+                  "erklaerung": "Mor'zahi kontrolliert die Tortollaner und wirkt bei voller Energie 'Letzter Aufstieg', was den Raid wipen lässt. Ein Wurf mit dem Fisch unterbricht das und verleiht dem beworfenen Tortollaner seine Ultimate.",
+                  "loesung": "Rechtzeitig einen Fisch finden und in der Reihenfolge Gebbo – Nama – Iku werfen."
                 },
                 {
-                  "name": "Frostfeuersalve",
+                  "name": "Plunder werfen",
                   "stufe": "mechanik",
                   "ziel": "Alle",
-                  "erklaerung": "Gegensätzliche Debuffs ticken auf Spielern.",
-                  "loesung": "Frost-Debuff in Feuerzone löschen und umgekehrt."
+                  "erklaerung": "Kisten werden auf markierte Stellen geworfen und verursachen beim Einschlag Schaden. Übertreten zerstört sie (stapelbarer DoT), unberührte Kisten explodieren nach 25 Sekunden. Eine Kiste enthält den Fisch.",
+                  "loesung": "Kisten kontrolliert übertreten, bis der Fisch gefunden ist."
                 },
                 {
-                  "name": "Letzter Aufstieg (Enrage)",
+                  "name": "Explosive Überraschung (Gebbos Ultimate)",
                   "stufe": "prio",
-                  "ziel": "DPS",
-                  "erklaerung": "Stirbt ein Boss, erhalten die anderen +100 % Schaden.",
-                  "loesung": "Alle 3 Bosse synchron innerhalb von 5 Sekunden töten."
+                  "ziel": "Alle",
+                  "erklaerung": "Ein markierter Spieler wird mit einer Bombe beworfen, die nach kurzer Zeit explodiert, eine Feuerfläche hinterlässt und eine Schockwelle plus Sprungpilze erzeugt.",
+                  "loesung": "Bombe am Rand ablegen, Sprungpilze zum richtigen Zeitpunkt nutzen, um der Schockwelle zu entkommen."
+                },
+                {
+                  "name": "Gewaltiger Bums (Namas Ultimate)",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Drei Soak-Kreise entstehen gleichzeitig und stoßen zurück – nicht alle können gesoakt werden, der Rückstoß hinterlässt Pfützen.",
+                  "loesung": "Spieler vorab einteilen, wer welchen Kreis soakt."
+                },
+                {
+                  "name": "Frostfeuersalve (Ikus Ultimate)",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Spieler tragen Feuer- oder Frost-DoTs und hinterlassen beim Ablauf eine entsprechende Fläche. Berühren einer entgegengesetzten Fläche beim Ablegen verursacht tödlichen Raidschaden.",
+                  "loesung": "Eigene Fläche sauber trennen, danach in eine entgegengesetzte Fläche laufen, um den DoT zu entfernen."
+                },
+                {
+                  "name": "Panzerwirbel",
+                  "stufe": "mechanik",
+                  "ziel": "Melee",
+                  "erklaerung": "Nama wirbelt drei Panzer auf einen beliebigen Nahkämpfer.",
+                  "loesung": "Panzer von den Ranged weg zum Rand locken und ausweichen."
+                },
+                {
+                  "name": "Eisgebundene Flammen",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Iku bombardiert einen Spieler mit einem unterbrechbaren DoT-Bolzen.",
+                  "loesung": "Unterbrechen, alternativ den Debuff entzaubern."
+                },
+                {
+                  "name": "Beständige Schläge",
+                  "stufe": "mechanik",
+                  "ziel": "Tank",
+                  "erklaerung": "Nama erhöht mit jedem Treffer den erlittenen physischen Schaden des aktuellen Tanks um 4 %.",
+                  "loesung": "Stapel im Blick behalten, ggf. wechseln."
+                },
+                {
+                  "name": "Zerfetzende Splitter",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Iku belegt den Tank mit einem stapelbaren DoT und erhöht den dadurch erlittenen Schaden um 50 %.",
+                  "loesung": "Nach jedem Treffer den Tank wechseln."
                 }
               ]
             }
@@ -442,22 +893,24 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Frontalangriffe hinterlassen Brandflächen."],
-            "heiler": ["Fischwurf erzeugt einen kurzen Raid-Silence."],
-            "melee": ["Kisten erfordern 50 % mehr Schaden zum Öffnen."],
-            "ranged": ["Fische verfallen nach 10 Sekunden im Inventar."]
+            "tanks": [
+              "'Vereinte Verteidigung': Immer nur ein weiterer Boss darf sich in Namas Nähe aufhalten, sonst erleiden alle 99 % reduzierten Schaden."
+            ],
+            "heiler": [],
+            "melee": [],
+            "ranged": []
           },
           "phasen": [
             {
-              "titel": "Heroisch: Schnelle Fütterung",
-              "uebersicht": "Energie baut sich 25 % schneller auf.",
+              "titel": "Heroisch: Vereinte Verteidigung",
+              "uebersicht": "Die drei Bosse duerfen nicht beliebig zusammenstehen – Positionierung wird zum entscheidenden Faktor fuer gleichzeitige Kills.",
               "mechaniken": [
                 {
-                  "name": "Hastige Besessenheit",
+                  "name": "Vereinte Verteidigung",
                   "stufe": "toedlich",
-                  "ziel": "Alle",
-                  "erklaerung": "Boss-Energie steigt rapide an.",
-                  "loesung": "Zwei Spieler fest für Fisch-Rotation abstellen."
+                  "ziel": "Tank",
+                  "erklaerung": "Halten sich mehr als zwei Bosse gleichzeitig in Namas Nähe auf, erleiden alle drei 99 % reduzierten Schaden.",
+                  "loesung": "Nama gezielt zu Gebbo oder Iku ziehen, um alle drei möglichst gleichzeitig zu töten."
                 }
               ]
             }
@@ -465,22 +918,26 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Kein Boss darf länger als 20 Sekunden isoliert stehen."],
-            "heiler": ["Debuff-Löschung erzeugt Flächenschaden um den Spieler."],
-            "melee": ["Schildkröten reflektieren 20 % des Schadens bei falschem Winkel."],
-            "ranged": ["Fische müssen im Sprung geworfen werden."]
+            "tanks": [
+              "Die Beschränkung wird strenger: Von Gebbo und Iku darf immer nur einer gleichzeitig bei Nama stehen."
+            ],
+            "heiler": [
+              "Der Splitter-DoT beim Kisten-Zerstören trifft jetzt den gesamten Raid statt nur den Läufer."
+            ],
+            "melee": [],
+            "ranged": []
           },
           "phasen": [
             {
-              "titel": "Mythisch: Dreiecks-Rotation",
-              "uebersicht": "Permanente Positionswechsel der Tanks im Uhrzeigersinn.",
+              "titel": "Mythisch: Engere Positionsregeln",
+              "uebersicht": "Die Aufstellung der drei Bosse wird noch strikter, während das Kisten-Zerstören zusätzlichen Raidschaden verursacht.",
               "mechaniken": [
                 {
-                  "name": "Reliktschock",
+                  "name": "Strikte Trennung",
                   "stufe": "toedlich",
-                  "ziel": "Alle",
-                  "erklaerung": "Explodiert bei falscher Tank-Positionierung.",
-                  "loesung": "Feste Positions-Timer einhalten."
+                  "ziel": "Tank",
+                  "erklaerung": "Es darf immer nur entweder Iku oder Gebbo gleichzeitig in Namas Nähe sein.",
+                  "loesung": "Positionierung noch genauer timen als auf Heroisch."
                 }
               ]
             }
@@ -488,15 +945,28 @@
         }
       },
       "wipeGefahren": [
-        "Ein Boss erreicht 100 Energie.",
-        "Ein Boss stirbt zu früh.",
-        "Debuffs werden nicht an den Zonen neutralisiert."
+        "Mor'zahis 'Letzter Aufstieg' wird nicht rechtzeitig durch einen Fischwurf unterbrochen.",
+        "Ein Tortollaner stirbt vor den anderen und lässt sie enragen.",
+        "Bei Frostfeuersalve wird die falsche (gleichartige) Fläche berührt.",
+        "Zu viele Bosse stehen gleichzeitig bei Nama (Heroisch/Mythisch)."
       ],
       "faehigkeiten": [
-        { "name": "Vereinte Verteidigung", "id": 432401 },
-        { "name": "Widerliche Fische", "id": 432402 },
-        { "name": "Letzter Aufstieg", "id": 432403 },
-        { "name": "Reliktriss", "id": 432404 }
+        {
+          "name": "Dunkles Flüstern",
+          "id": 432401
+        },
+        {
+          "name": "Explosive Überraschung",
+          "id": 432402
+        },
+        {
+          "name": "Gewaltiger Bums",
+          "id": 432403
+        },
+        {
+          "name": "Frostfeuersalve",
+          "id": 432404
+        }
       ]
     },
     {
@@ -504,61 +974,97 @@
       "nameEn": "Sszorak",
       "status": "down",
       "slug": "sszorak",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/127fb15e24c99767521d3697f97ef6e98181357e.jpg",
-      "check": "Wind-Kopplung & Knockback-Kontrolle",
-      "lust": "In Phase 2 (Heulender Maelstrom)",
-      "intro": "Eine giftgetränkte Bestie auf einer offenen Plattform. Die Mechanik steht und fällt mit der paarweisen Auslöschung entgegengesetzter Windpfeile.",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
+      "check": "Wind-Timing & Tankbrecher-Sequenz",
+      "lust": "Während der Windböen",
+      "intro": "Ein Kampf mit nur einer Phase, aber klaren Schadensfenstern: Während der Windböen erleidet Sszorak 30 % erhöhten Schaden. Zysten aus 'Giftwoge' schützen euch vor den Böen, während eine zufällige Tankbrecher-Sequenz aus drei Fähigkeiten laufend Aufmerksamkeit fordert.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Apex-Raubtier: Tank 1 nimmt 'Verwüstung', Tank 2 spottet für 'Verstümmeln'.",
-              "Bei 'Verstümmeln' direkt am Boss stehen bleiben, damit der Raid stacken kann."
+              "'Eliteraubtier'-Sequenz beachten: 'Verheeren' aus dem Raid drehen, 'Verstümmeln' in den Raid drehen und nach dem ersten Treffer wechseln.",
+              "Bei 'Zersetzendes Gift' rechtzeitig bei hohem Stapel wechseln."
             ],
             "heiler": [
-              "Gruppenheilung nach dem Stack bei 'Verstümmeln' sofort hochziehen.",
-              "In Phase 2 (Maelstrom) alle großen Raid-CDs abrufen."
+              "'Ula'teks Präsenz' verursacht durchgehenden Raidschaden – Cooldowns gleichmäßig einteilen.",
+              "Spieler, die von 'Tobende Scherwinde' oder den Windböen erwischt werden, gezielt nachheilen."
             ],
             "melee": [
-              "Nach dem Tank-Schlag sofort in den markierten Kreis stacken.",
-              "Bei Windpfeil sofort den Partner mit entgegengesetzter Richtung anlaufen."
+              "Beim Tankbrecher 'Verstümmeln' mit soaken helfen (mindestens 3 Spieler pro Kegel).",
+              "'Sturmkämpfer'-Tornados rechtzeitig erkennen und ausweichen."
             ],
             "ranged": [
-              "Pfeil-Symbole im Voice callen: Links sucht Rechts!",
-              "In Phase 2 maximalen Schaden auf den Boss drücken."
+              "Zysten aus 'Giftwoge' gezielt gegenüber den markierten Windtunneln ablegen und für die Böen bereithalten.",
+              "Bei 'Tobende Scherwinde' einen Partner mit gegenüberliegender Linie finden, um den Rückstoß gegenseitig abzufangen."
             ]
           },
           "phasen": [
             {
-              "titel": "Phase 1: Wind-Paare & Tank-Kombos (100 % – 30 %)",
-              "uebersicht": "Entgegengesetzte Pfeile neutralisieren und Tank-Treffer gemeinsam abfangen.",
+              "titel": "Einzelphase: Winde & Tankbrecher-Rotation",
+              "uebersicht": "Zysten für die Windböen vorbereiten, die zufällige Tankbrecher-Sequenz sauber abarbeiten und die Schadensfenster während der Böen nutzen.",
               "mechaniken": [
                 {
-                  "name": "Zornige Winde (Gegenkopplung)",
-                  "stufe": "toedlich",
+                  "name": "Giftwoge",
+                  "stufe": "mechanik",
                   "ziel": "Alle",
-                  "erklaerung": "Spieler erhalten Pfeile (links/rechts). Nach Ablauf folgt ein massiver Knockback in Pfeilrichtung.",
-                  "loesung": "Partner mit Gegenrichtung suchen und ineinander laufen – hebt den Rückstoß auf."
+                  "erklaerung": "Markierte Spieler hinterlassen bei Ablauf ihres Debuffs eine zähflüssige Zyste. Bei Kontakt explodiert sie und stößt alle Spieler zurück und verlangsamt sie. Ungenutzte Zysten platzen nach 2 Minuten von selbst.",
+                  "loesung": "Zysten gegenüber den markierten Windtunneln ablegen und überzählige rechtzeitig zerstören."
                 },
                 {
-                  "name": "Apex-Raubtier & Verstümmeln",
+                  "name": "Heulender Mahlstrom",
                   "stufe": "prio",
-                  "ziel": "Tanks & Raid",
-                  "erklaerung": "Zweiter Tank nimmt Verstümmeln; Schaden muss geteilt werden.",
-                  "loesung": "Raid läuft in den Kreis des getroffenen Tanks."
-                }
-              ]
-            },
-            {
-              "titel": "Phase 2: Heulender Maelstrom (30 % – 0 %)",
-              "uebersicht": "Soft-Enrage: Reiner DPS- und Healing-Check.",
-              "mechaniken": [
+                  "ziel": "Alle",
+                  "erklaerung": "Eine Sequenz aus drei Windstößen schiebt den Raid in wechselnde Richtungen, angekündigt über die Tunnel am Rand. Während der Böen erleidet Sszorak 30 % erhöhten Schaden.",
+                  "loesung": "Über bereitgelegte Zysten auf der Plattform bleiben und Cooldowns für das Schadensfenster einplanen."
+                },
                 {
-                  "name": "Heulender Maelstrom",
+                  "name": "Eliteraubtier",
                   "stufe": "toedlich",
-                  "ziel": "DPS & Heiler",
-                  "erklaerung": "Plattform bricht weg, massiver Dauerschaden.",
-                  "loesung": "Kampfrausch zünden und Boss vor dem Wipe niederstrecken."
+                  "ziel": "Tank",
+                  "erklaerung": "Zufällige 5-teilige Sequenz aus den drei Fähigkeiten Verheeren, Verstümmeln und Sturmkämpfer. Kann bereits während des Castens gespottet werden.",
+                  "loesung": "Rollen vorher klar zuteilen, um schnell reagieren zu können."
+                },
+                {
+                  "name": "Verheeren",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Kegelfrontal mit hohem physischem Schaden, das den Tank zusätzlich mit einer Vulnerabilität (+600 % gegenüber Verheeren) belegt. Zweimal pro Sequenz.",
+                  "loesung": "Kegel konsequent aus dem Raid drehen."
+                },
+                {
+                  "name": "Verstümmeln",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Kegelfrontal, das von mindestens 3 Spielern gesoaked werden muss, um den Schaden zu splitten. Zweimal pro Sequenz, Tankwechsel nach dem ersten Treffer.",
+                  "loesung": "Raid in zwei Gruppen teilen und abwechselnd in den Raid drehen und soaken."
+                },
+                {
+                  "name": "Sturmkämpfer",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Tornados gehen vom Boss aus und fügen getroffenen Spielern schweren Schaden plus DoT zu.",
+                  "loesung": "Ausweichen."
+                },
+                {
+                  "name": "Tobende Scherwinde",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Spieler werden nach kurzer Zeit stark in Richtung einer angezeigten Linie gestoßen.",
+                  "loesung": "Zwei markierte Spieler mit aufeinanderzeigenden Linien gegenüberstellen, damit sich der Stoß gegenseitig aufhebt."
+                },
+                {
+                  "name": "Zersetzendes Gift",
+                  "stufe": "mechanik",
+                  "ziel": "Tank",
+                  "erklaerung": "Nahkampftreffer erhöhen den erlittenen Schaden des aktuellen Tanks stapelbar um 3 %.",
+                  "loesung": "Bei hohem Stapel wechseln."
+                },
+                {
+                  "name": "Ula'teks Präsenz",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Konstanter raidweiter Schaden über den gesamten Kampf.",
+                  "loesung": "Durchgehend wegheilen."
                 }
               ]
             }
@@ -566,22 +1072,26 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Apex-Raubtier erzeugt 3 aufeinanderfolgende Schläge."],
-            "heiler": ["Wind-Kopplung hinterlässt einen 8-Sekunden-Blutungseffekt."],
-            "melee": ["Plattformrand bricht bereits ab 40 % Boss-HP weg."],
-            "ranged": ["Windpfeile drehen sich während des Laufens um 90 Grad."]
+            "tanks": [],
+            "heiler": [
+              "'Verstümmeln' belegt zusätzlich mit 500 % Vulnerabilität – Soak-Gruppen konsequent abwechseln."
+            ],
+            "melee": [],
+            "ranged": [
+              "'Ätzende Klauen' hinterlässt zusätzliche Giftpfützen im Raum."
+            ]
           },
           "phasen": [
             {
-              "titel": "Heroisch: Instabile Winde",
-              "uebersicht": "Knockback-Stärke ist verdoppelt.",
+              "titel": "Heroisch: Mehr Bodenschaden",
+              "uebersicht": "Verstümmeln wird gefährlicher und zusätzliche Giftpfützen verkleinern den nutzbaren Raum.",
               "mechaniken": [
                 {
-                  "name": "Toxische Böe",
-                  "stufe": "toedlich",
+                  "name": "Ätzende Klauen",
+                  "stufe": "mechanik",
                   "ziel": "Alle",
-                  "erklaerung": "Fehlerhafte Kopplung wirft Spieler garantiert von der Plattform.",
-                  "loesung": "Exakt zentriert ineinander laufen."
+                  "erklaerung": "Gift landet in vorher markierten Kreisen und bleibt dort als Pfütze liegen.",
+                  "loesung": "Pfützen meiden."
                 }
               ]
             }
@@ -589,22 +1099,33 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Verstümmeln spaltet den Tank-Schaden auf 4 Gruppen auf."],
-            "heiler": ["Maelstrom in Phase 2 entzieht 50 % Heilungsleistung."],
-            "melee": ["Windpaare müssen innerhalb von 3 Sekunden gelöst werden."],
-            "ranged": ["3 Windpaare spawnen zeitgleich."]
+            "tanks": [],
+            "heiler": [
+              "Nach jedem Soak von 'Schlangenfuror' verteilen sich viele Virulenz-Pfützen im Raum – Bewegungsspielraum eng einplanen."
+            ],
+            "melee": [
+              "Bei 'Schlangenfuror' rechtzeitig mit 14 Spielern in den markierten Kreis gehen, sonst enraged der Boss."
+            ],
+            "ranged": []
           },
           "phasen": [
             {
-              "titel": "Mythisch: Wirbelsturm-Kollaps",
-              "uebersicht": "Permanente Wirbelstürme ziehen über die Plattform.",
+              "titel": "Mythisch: Schlangenfuror",
+              "uebersicht": "Eine neue Wut-Leiste muss regelmäßig durch eine große Gruppen-Soak-Mechanik entladen werden.",
               "mechaniken": [
                 {
-                  "name": "Auge des Maelstroms",
+                  "name": "Schlangenfuror",
                   "stufe": "toedlich",
                   "ziel": "Alle",
-                  "erklaerung": "Sicherer Bereich schrumpft alle 15 Sekunden.",
-                  "loesung": "Maximale DPS-Disziplin."
+                  "erklaerung": "Sszorak sammelt Wut, bis er bei voller Energie enraged. Ein markierter Kreis muss von 14 Spielern gleichzeitig betreten werden, um die Wut abzubauen.",
+                  "loesung": "Rechtzeitig genug Spieler in den Kreis schicken."
+                },
+                {
+                  "name": "Virulenz",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Nach dem Soak werden Spieler mit sich kreuzenden Linien markiert, ein Schadensausbruch steckt getroffene Spieler an und hinterlässt Pfützen.",
+                  "loesung": "Zum Rand gehen und beim Ablegen weit verteilen, um Ansteckung zu vermeiden."
                 }
               ]
             }
@@ -612,16 +1133,32 @@
         }
       },
       "wipeGefahren": [
-        "Spieler finden keinen Windpartner und fallen von der Plattform.",
-        "Verstümmeln wird nicht vom Raid gesoakt -> Tank stirbt.",
-        "DPS reicht in Phase 2 nicht aus."
+        "Keine bereite Zyste vorhanden, wenn die nächste Windböe kommt.",
+        "Verstümmeln wird nicht von genug Spielern gesoaked.",
+        "Tobende Scherwinde ohne passenden Partner – Spieler fällt von der Plattform.",
+        "Schlangenfuror wird nicht rechtzeitig mit 14 Spielern aktiviert (Mythisch – Enrage)."
       ],
       "faehigkeiten": [
-        { "name": "Raubzug des Apex-Raubtiers", "id": 432501 },
-        { "name": "Verwüstung", "id": 432502 },
-        { "name": "Verstümmeln", "id": 432503 },
-        { "name": "Zerfressenes Gift", "id": 432504 },
-        { "name": "Zornige Winde", "id": 432505 }
+        {
+          "name": "Giftwoge",
+          "id": 432501
+        },
+        {
+          "name": "Heulender Mahlstrom",
+          "id": 432502
+        },
+        {
+          "name": "Verheeren",
+          "id": 432503
+        },
+        {
+          "name": "Verstümmeln",
+          "id": 432504
+        },
+        {
+          "name": "Tobende Scherwinde",
+          "id": 432505
+        }
       ]
     },
     {
@@ -629,72 +1166,112 @@
       "nameEn": "The Twin Fangs",
       "status": "down",
       "slug": "twin-fangs",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/52e498e3108b56f88a49f5fe5afa33eb6578a713.jpg",
-      "check": "Stack-Disziplin & 3er-Soak-Rotation",
-      "lust": "In Phase 1 zu Pull oder Phase 3",
-      "intro": "Vexhul und Ithraz teilen sich eine Lebensleiste. Zentrale Mechanik: Ewiges Gift tötet bei 10 Stacks sofort. Die 3er-Gruppen-Rotation verhindert den Wipe.",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/efcce5e7e8f3b1804d19121260df8411338144ce.jpg",
+      "check": "Ewiges-Gift-Management & Soak-Koordination",
+      "lust": "Zu Pull",
+      "intro": "Zwei Bosse (Ithraz und Vexhul) gleichzeitig, nur eine Phase. Fast jede Mechanik verteilt Stapel des permanenten DoTs 'Ewiges Gift' – wer Soaks und Ausweich-Mechaniken sauber abarbeitet, hält die Stapelzahl unten. Eine Übergangssequenz mit rotierendem Strahl lässt die Bosse an neuer Stelle wieder auftauchen.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Vexhul & Ithraz 25 Meter voneinander entfernt halten.",
-              "Ätzende Flut (5s Kanalisierung) aktiv abschirmen.",
-              "Steinbrecher: Nach dem Tank-Treffer Schlangen tauschen."
+              "In Reichweite der Bosse bleiben, sonst schleudern sie Blitze ('Geronnener Blitz').",
+              "'Steinbrecher' in der angezeigten Reihenfolge soaken, sonst erleidet der Raid hohen Schaden.",
+              "Bei 'Vergiftet' auf den Stapel achten."
             ],
             "heiler": [
-              "Gefräßiges Schmausen erzeugt massiven Frontalschaden – Gruppe durchheilen.",
-              "Toxische Ranken sofort dispellen.",
-              "Spieler mit 7+ Stacks mit Schilden absichern."
+              "'Toxische Dämpfe' verursacht durchgehend Raidschaden – Cooldowns gleichmäßig verteilen.",
+              "Heilabsorb durch 'Blutstrom'-artige Effekte im Blick behalten."
             ],
             "melee": [
-              "Strikes strictly nach der zugewiesenen Soak-Gruppe (1, 2 oder 3) abfangen.",
-              "Bei 'Giftiges Erwachen' sofort auf die 3 Schlangen in der Mitte wechseln.",
-              "Beim Untertauchen gegen die Drehrichtung der Wellen mitlaufen."
+              "'Ätzende Kugeln' aus 'Ätzende Sintflut' zügig soaken, damit sie nicht explodieren und den ganzen Raid mit Ewiges Gift belegen.",
+              "Adds aus 'Giftiger Aufstieg' schnell töten, dabei den Speichel-Linien ausweichen."
             ],
             "ranged": [
-              "Soak-Gruppe 1/2/3 präzise nach Ansage anlaufen.",
-              "Adds in der Raummitte verlangsamen und fokussieren.",
-              "Verteilt stehen gegen Speikugeln."
+              "Bei 'Windendes Sekret' als markierter Spieler zum Rand gehen.",
+              "Bei der Übergangssequenz 'Abscheuliche Flut' dem rotierenden Strahl ausweichen und den Bossen zur neuen Position folgen."
             ]
           },
           "phasen": [
             {
-              "titel": "Phase 1: Soak-Rotation (100 % – 50 %)",
-              "uebersicht": "Gefräßiges Schmausen in 3 Camps nacheinander abfangen.",
+              "titel": "Einzelphase: Zwei Schlangen, ein Gift",
+              "uebersicht": "Ewiges Gift durch sauberes Soaken und Ausweichen niedrig halten, während beide Bosse möglichst gleichzeitig sterben.",
               "mechaniken": [
                 {
-                  "name": "Ewiges Gift (Tödlicher Stack-Timer)",
+                  "name": "Ewiges Gift",
                   "stufe": "toedlich",
                   "ziel": "Alle",
-                  "erklaerung": "Jeder Treffer gibt 1 Stack. Bei 10 Stacks stirbt der Spieler sofort.",
-                  "loesung": "Niemals mehr als 6–7 Stacks aufbauen. 3er-Rotation garantiert Resets."
+                  "erklaerung": "Permanenter DoT-Stapel, den fast jede Mechanik im Kampf verteilt. Auf Normal führen 11 Stapel zu massivem Schaden und Betäubung.",
+                  "loesung": "Vermeidbare Mechaniken sauber ausweichen und regelmäßig bei 'Unersättliches Schmausen' mitsoaken, um Stapel abzubauen."
                 },
                 {
-                  "name": "Gefräßiges Schmausen (3er-Soak)",
+                  "name": "Ätzende Sintflut",
                   "stufe": "prio",
-                  "ziel": "Alle (nach Gruppe)",
-                  "erklaerung": "Vexhul wirkt 3 aufeinanderfolgende Frontalschläge.",
-                  "loesung": "Cast 1 = Gruppe 1. Cast 2 = Gruppe 2. Cast 3 = Gruppe 3."
+                  "ziel": "Alle",
+                  "erklaerung": "Vexhul belegt den Tank mit einem DoT und verteilt Kugeln um sich, die nach 10 Sekunden platzen und den gesamten Raid mit Ewiges Gift belegen.",
+                  "loesung": "Alle Kugeln zügig übertreten (soaken), damit nur der Soaker den Stapel bekommt."
                 },
                 {
-                  "name": "Giftiges Erwachen (3 Adds)",
-                  "stufe": "prio",
+                  "name": "Giftiger Aufstieg",
+                  "stufe": "mechanik",
                   "ziel": "DPS",
-                  "erklaerung": "Drei giftige Schlangen erscheinen in der Raummitte.",
-                  "loesung": "Grip, Stuns und Burst-Cleave nutzen."
-                }
-              ]
-            },
-            {
-              "titel": "Zwischenphase: Verderbliche Flut",
-              "uebersicht": "Bosse tauchen ab – rotierenden Giftwellen ausweichen.",
-              "mechaniken": [
+                  "erklaerung": "Vexhul ruft drei Nachkommen herbei, die eine Speichel-Linie auf einen Spieler spucken.",
+                  "loesung": "Adds töten, alle anderen bleiben aus der Linie."
+                },
                 {
-                  "name": "Rotierende Flut",
+                  "name": "Unersättliches Schmausen",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ithraz markiert einen großen Kreis und schlägt dreimal darauf ein. Jeder Treffer verursacht Schaden, der unter Soakern aufgeteilt wird und ihnen einen Stapel Ewiges Gift entfernt.",
+                  "loesung": "Aktiv mitsoaken, um Stapel abzubauen und den Schaden zu splitten."
+                },
+                {
+                  "name": "Windendes Sekret",
                   "stufe": "mechanik",
                   "ziel": "Alle",
-                  "erklaerung": "Zwei Giftwellen drehen sich durch den Raum.",
-                  "loesung": "Gegen die Drehrichtung laufen und Steinen ausweichen."
+                  "erklaerung": "Markierte Spieler tragen einen DoT, dessen Schaden mit der Zeit steigt, und hinterlassen bei Ablauf eine Pfütze.",
+                  "loesung": "Sofort an den Rand gehen."
+                },
+                {
+                  "name": "Steinbrecher",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Tank-Soak: Ithraz markiert drei Flächen in fester Reihenfolge, die alle vom Tank gesoakt werden müssen, sonst erleidet der Raid hohen Schaden und wird weggestoßen.",
+                  "loesung": "Flächen in der angezeigten Reihenfolge soaken."
+                },
+                {
+                  "name": "Regung in der Tiefe",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Wellen ziehen durch den Raum, verursachen Schaden und Ewiges Gift bei Treffern.",
+                  "loesung": "Wellen ausweichen."
+                },
+                {
+                  "name": "Abscheuliche Flut & Blutsturm",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Beide Bosse tauchen unter und erscheinen an neuer Stelle im Raum. Vexhul kanalisiert dabei einen rotierenden Frontalstrahl, während um Ithraz Swirlies erscheinen.",
+                  "loesung": "Strahl und Swirlies ausweichen, dann den Bossen zur neuen Position folgen."
+                },
+                {
+                  "name": "Geronnener Blitz",
+                  "stufe": "mechanik",
+                  "ziel": "Tank",
+                  "erklaerung": "Beide Bosse schleudern Blitze auf die Tanks, wenn diese sich zu weit entfernen.",
+                  "loesung": "In Reichweite bleiben."
+                },
+                {
+                  "name": "Toxische Dämpfe",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Konstanter raidweiter DoT-Schaden über den gesamten Kampf.",
+                  "loesung": "Durchgehend wegheilen."
+                },
+                {
+                  "name": "Entschlungener Zorn",
+                  "stufe": "toedlich",
+                  "ziel": "Tank",
+                  "erklaerung": "Bleibt einer der beiden Bosse deutlich länger am Leben als der andere, steigt sein Schaden zunehmend an.",
+                  "loesung": "Beide Bosse möglichst zeitgleich auf niedrige HP bringen und gemeinsam töten."
                 }
               ]
             }
@@ -702,22 +1279,28 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Ätzende Flut hinterlässt eine permanente Pfütze am Tank-Standort."],
-            "heiler": ["Stacks ticken 40 % härter."],
-            "melee": ["Schlangen in der Mitte sind immun gegen Verlangsamung."],
-            "ranged": ["Gefräßiges Schmausen hat 4 statt 3 Casts (4er-Gruppe nötig)."]
+            "tanks": [],
+            "heiler": [
+              "Ewiges Gift tötet ab 10 Stapeln statt nur schwer zu schaden – Stapelmanagement wird kritischer."
+            ],
+            "melee": [
+              "'Unersättliches Schmausen' stößt jetzt zurück und belegt mit Vulnerabilität – nur einmal pro Sequenz mitsoaken, drei Gruppen einteilen."
+            ],
+            "ranged": [
+              "Swirlies aus 'Blutsturm' hinterlassen jetzt zusätzlich Flächen, die Schaden verursachen und verlangsamen."
+            ]
           },
           "phasen": [
             {
-              "titel": "Heroisch: 4er-Soak-Kette",
-              "uebersicht": "Einteilung in 4 getrennte Soak-Gruppen erforderlich.",
+              "titel": "Heroisch: Härtere Soaks",
+              "uebersicht": "Ewiges Gift wird toedlicher und die Soak-Mechaniken verzeihen weniger Fehler.",
               "mechaniken": [
                 {
-                  "name": "Erweitertes Schmausen",
-                  "stufe": "toedlich",
+                  "name": "Verschärftes Unersättliches Schmausen",
+                  "stufe": "prio",
                   "ziel": "Alle",
-                  "erklaerung": "4 Frontalschläge in schneller Folge.",
-                  "loesung": "Gruppe 4 fängt den letzten Treffer ab."
+                  "erklaerung": "Jeder Soak belegt mit einer 800%igen Vulnerabilität und stößt zurück, daher darf jeder Spieler nur einmal pro Sequenz soaken.",
+                  "loesung": "Drei feste Gruppen einteilen, die reihum soaken."
                 }
               ]
             }
@@ -725,22 +1308,42 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Bosse müssen bei jedem Steinbrecher punktgenau gekreuzt werden."],
-            "heiler": ["10 Stacks lösen eine Raid-Explosion aus."],
-            "melee": ["Schlangen explodieren beim Tod."],
-            "ranged": ["Wellen in der Zwischenphase ändern spontan die Richtung."]
+            "tanks": [],
+            "heiler": [
+              "Ewiges Gift tötet bereits ab 9 Stapeln – Fehlertoleranz ist minimal."
+            ],
+            "melee": [
+              "Neue Brutlinge bei 'Die Brut aufwecken' müssen alle einzeln unterbrochen werden."
+            ],
+            "ranged": [
+              "Neue rote Kugeln aus 'Unreines Blut' vollständig soaken, sonst wiped der Raid."
+            ]
           },
           "phasen": [
             {
-              "titel": "Mythisch: Giftkaskade",
-              "uebersicht": "Kein Fehler beim Gruppen-Wechsel verziehen.",
+              "titel": "Mythisch: Schilde, Brut und rote Kugeln",
+              "uebersicht": "Zusätzliche Schild- und Interrupt-Mechaniken sowie ein zweiter, wipe-kritischer Soak erhöhen die Komplexität deutlich.",
               "mechaniken": [
                 {
-                  "name": "Toxische Kaskade",
+                  "name": "Blutstrom",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ithraz kanalisiert eine massive Heilabsorption auf den Tank und verleiht entstehenden Ätzenden Kugeln einen Schild.",
+                  "loesung": "Schilde per CC entfernen, bevor die Kugeln wie gewohnt gesoaked werden."
+                },
+                {
+                  "name": "Die Brut aufwecken",
                   "stufe": "toedlich",
                   "ziel": "Alle",
-                  "erklaerung": "Fehlendes Soaken heilt beide Bosse um 20 %.",
-                  "loesung": "Lückenlose Zuweisung."
+                  "erklaerung": "Ithraz ruft massenhaft Brutlinge herbei, deren 'Innere Explosion' bei Durchgang massiven Raidschaden verursacht.",
+                  "loesung": "Feste Interrupt-Reihenfolge einteilen, damit wirklich jeder Brutling unterbrochen wird."
+                },
+                {
+                  "name": "Unreines Blut",
+                  "stufe": "toedlich",
+                  "ziel": "Alle",
+                  "erklaerung": "Nach 'Unersättliches Schmausen' entstehen rote Kugeln mit eigenem Soak-Kreis. Werden sie nicht vollständig gesoaked, explodieren sie und wipen den Raid.",
+                  "loesung": "Genug Spieler auf jede rote Kugel verteilen, trotz Heilabsorb durch den Soak."
                 }
               ]
             }
@@ -748,16 +1351,32 @@
         }
       },
       "wipeGefahren": [
-        "10 Stacks Ewiges Gift durch verpasste Soak-Rotation.",
-        "Adds in der Mitte überlasten die Heiler.",
-        "Tanks stehen zu nah beieinander."
+        "Ätzende Kugeln werden nicht rechtzeitig gesoaked und explodieren raidweit.",
+        "Die Stapelzahl von Ewiges Gift läuft unkontrolliert hoch.",
+        "Bei der Übergangssequenz wird der rotierende Strahl getroffen oder die neue Bossposition verpasst.",
+        "Rote Kugeln aus Unreines Blut werden nicht vollständig gesoaked (Mythisch – Wipe)."
       ],
       "faehigkeiten": [
-        { "name": "Ewiges Gift", "id": 432601 },
-        { "name": "Gefräßiges Schmausen", "id": 432602 },
-        { "name": "Ätzende Flut", "id": 432603 },
-        { "name": "Steinbrecher", "id": 432604 },
-        { "name": "Giftiges Erwachen", "id": 432605 }
+        {
+          "name": "Ätzende Sintflut",
+          "id": 432601
+        },
+        {
+          "name": "Unersättliches Schmausen",
+          "id": 432602
+        },
+        {
+          "name": "Steinbrecher",
+          "id": 432603
+        },
+        {
+          "name": "Abscheuliche Flut",
+          "id": 432604
+        },
+        {
+          "name": "Entschlungener Zorn",
+          "id": 432605
+        }
       ]
     },
     {
@@ -765,78 +1384,171 @@
       "nameEn": "The Coiled Altar",
       "status": "prog",
       "slug": "coiled-altar",
-      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/0b550745443dcd767f6cb4e4f8e23e14089dcd88.jpg",
-      "check": "Blickkontakt-Disziplin & Synchron-Burn",
-      "lust": "In Phase 3 (Doppel-Boss Burn)",
-      "intro": "Der Geist von Malacrass befiehlt Zul'jan. Ein Dreiphasenkampf mit Blickkontakt-Mechanik bei fixierenden Geistern und gleichzeitigem Boss-Finish.",
+      "image": "https://wow.zamimg.com/optimized/guide-header-revamp/uploads/guide/header/f2ae26185b3e0558f0a4e650b0c27d30380c9f99.jpg",
+      "check": "Multitasking: Kugeln, Geister & Tankwechsel",
+      "lust": "Zwischenphase (Seelenbindung)",
+      "intro": "Der komplexeste Kampf des Abgrunds: drei Phasen plus Zwischenphase, zunächst gegen Zul'jan (Kugeln sammeln & per Frontal zerstören), dann gegen Hexlord Malacrass (Geister einfangen, Gedankenkontrolle stoppen), gefolgt von einer Burst-Zwischenphase und einer dritten Phase, die beide Mechaniken-Sets gleichzeitig kombiniert.",
       "difficulties": {
         "normal": {
           "rollen": {
             "tanks": [
-              "Phase 1: 'Sever' gezielt in Giftkugeln richten, um sie zu zerschlagen.",
-              "Nach jedem Sever sofort abspotten.",
-              "Phase 3: Beide Bosse nebeneinander tanken für Cleave."
+              "'Abtrennen' und später 'Verseuchte Abtrennung'/'Seelentrennung' gezielt auf gesammelte Kugel- bzw. Geisterhaufen lenken.",
+              "In Phase 3 bei 'Entweihung des Gewundenen Altars' regelmäßig wechseln, um DoT-Stapel abzubauen."
             ],
             "heiler": [
-              "Guillotine erzeugt massiven Einschlag-Schaden – Schilde setzen.",
-              "Fixierte Spieler in Phase 2 stabilisieren.",
-              "Phase 3: Alle Heil-CDs bereithalten."
+              "'Fänge des Gewundenen Altars' und 'Grässliche Präsenz' verursachen durchgehenden Phasen-Schaden – Cooldowns entsprechend verteilen.",
+              "Heilabsorb während 'Ewiger Nachteinbruch' im Blick behalten, bis der Schild gebrochen ist."
             ],
             "melee": [
-              "In Phase 1 immer mit in die Guillotine stellen.",
-              "In Phase 2 den eigenen Geist IMMER direkt ansehen – er friert im Blickkontakt ein!",
-              "In Phase 3 Schaden auf beiden Bossen exakt angleichen."
+              "Verdichtetes-Gift-Kugeln aufnehmen und zu Haufen sammeln, statt sie einzeln liegen zu lassen.",
+              "In Phase 2 Geister sanft zusammenziehen, damit der Tank-Frontal mehrere auf einmal trifft."
             ],
             "ranged": [
-              "Mindestens 5 Spieler für jede Guillotine bereitstellen.",
-              "Eingefrorene Geister aus der Ferne fokussieren.",
-              "Niemals den Geistern den Rücken zudrehen!"
+              "Bei 'Guillotine' mit soaken helfen und danach sofort wegrennen.",
+              "Bei 'Schreckensmarsch' gedankenkontrollierte Spieler rechtzeitig vom Schild befreien, bevor sie über den Rand laufen."
             ]
           },
           "phasen": [
             {
-              "titel": "Phase 1: Guillotine & Giftkugeln (100 % – 60 %)",
-              "uebersicht": "Klingen-Schaden teilen und Kugeln mit Tank-Frontals zerstören.",
+              "titel": "Phase 1: Handel der Schlange (Zul'jan)",
+              "uebersicht": "Kugeln sammeln und per Tank-Frontal in Gruppen zerstören, während Äxte und Raidschaden im Hintergrund laufen.",
               "mechaniken": [
                 {
-                  "name": "Guillotine (5-Spieler-Soak)",
-                  "stufe": "prio",
-                  "ziel": "Raid",
-                  "erklaerung": "Riesige Klinge stürzt auf markierten Spieler herab.",
-                  "loesung": "Mindestens 5 Spieler müssen im Kreis stehen."
+                  "name": "Fänge des Gewundenen Altars",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Massiver pulsierender Raidschaden, dabei entstehen zwei große, mit der Zeit schrumpfende Giftpfützen auf der Plattform.",
+                  "loesung": "Auf hohen Raidschaden vorbereitet sein und die Pfützen meiden."
                 },
                 {
-                  "name": "Sever & Giftkugeln",
+                  "name": "Verdichtetes Gift",
                   "stufe": "mechanik",
-                  "ziel": "Tanks",
-                  "erklaerung": "Frontalkegel des Tanks zerschlägt Kugeln.",
-                  "loesung": "Kegel genau auf die Kugeln ausrichten."
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Kreise zeigen an, wo Giftkugeln landen. Darüberlaufen hebt eine Kugel für 5 Sekunden auf (mit DoT).",
+                  "loesung": "Kugeln aufnehmen und zu Haufen sammeln, statt sie einzeln liegen zu lassen."
+                },
+                {
+                  "name": "Abtrennen",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Frontalkegel auf den Tank, der gesammelte Kugelhaufen zerstört. Jede zerstörte Kugel verursacht Raidschaden, daher nicht zu viele auf einmal zerstören – am Phasenende werden übrige Kugeln automatisch vernichtet.",
+                  "loesung": "Kegel gezielt auf mittelgroße Kugelhaufen lenken."
+                },
+                {
+                  "name": "Guillotine",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Ein markierter Spieler wird mit einer Axt beworfen, mindestens 5 Spieler müssen den Aufprall gemeinsam soaken. Die Axt explodiert kurz danach in 50 Metern Umkreis.",
+                  "loesung": "Gemeinsam soaken, danach sofort wegrennen."
+                },
+                {
+                  "name": "Scharfaxt",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Mehrere Äxte wirbeln für eine Minute durch den Raum.",
+                  "loesung": "Äxten ausweichen."
+                },
+                {
+                  "name": "Giftzahn",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Zufällige Spieler erhalten einen entzauberbaren Gift-DoT.",
+                  "loesung": "Entzaubern."
                 }
               ]
             },
             {
-              "titel": "Phase 2: Zermürbende Fixierung (60 % – 30 %)",
-              "uebersicht": "Geister durch Blickkontakt einfrieren.",
+              "titel": "Phase 2: Die Vergeltung des Usurpators (Hexlord Malacrass)",
+              "uebersicht": "Nach Zul'jans Tod übernimmt Malacrass: Geister einfangen und per Tank-Frontal zerstören, gedankenkontrollierte Spieler retten und den Wipe-Schild rechtzeitig brechen.",
               "mechaniken": [
                 {
-                  "name": "Zermürbende Fixierung (Blickkontakt-Regel)",
+                  "name": "Schreckensmarsch",
                   "stufe": "toedlich",
                   "ziel": "Alle",
-                  "erklaerung": "Geister bewegen sich NUR, wenn man wegsieht.",
-                  "loesung": "Schau deinen Geist direkt an! Er bleibt versteinert stehen."
+                  "erklaerung": "Übernommene Spieler laufen auf den nächstgelegenen Plattformrand zu.",
+                  "loesung": "Schild auf ihnen brechen, bevor sie herunterfallen."
+                },
+                {
+                  "name": "Zermürbende Fixierung",
+                  "stufe": "mechanik",
+                  "ziel": "Alle",
+                  "erklaerung": "Geister fixieren Spieler und verfolgen sie, bleiben aber stehen, wenn man sie ansieht. Berührung bedeutet Gedankenkontrolle.",
+                  "loesung": "Geister sanft zusammenziehen und dann ansehen, bis der Tank sie per Frontal zerstören kann."
+                },
+                {
+                  "name": "Seelentrennung",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Frontalkegel, der gesammelte Geister zerstört, dabei schweren Schattenschaden verursacht und den Tank mit 'Auf dem Weg ins Grab' sowie einer Vulnerabilität belegt.",
+                  "loesung": "Kegel gezielt auf zusammengezogene Geister lenken."
+                },
+                {
+                  "name": "Ewiger Nachteinbruch",
+                  "stufe": "toedlich",
+                  "ziel": "Alle",
+                  "erklaerung": "Malacrass schildet sich und kanalisiert einen langen Wipe-Zauber, während Swirlies erscheinen und ein stapelbarer Heilabsorb anwächst.",
+                  "loesung": "Swirlies ausweichen und den Schild so schnell wie möglich brechen, um den Zauber zu unterbrechen."
+                },
+                {
+                  "name": "Düsterbombe",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Markierte Spieler explodieren mit Flächenschaden und hinterlassen Klone, die in ihrer Nähe herumlaufen.",
+                  "loesung": "Rausgehen und die eigenen Klone zügig einsammeln, sonst droht der Tod."
+                },
+                {
+                  "name": "Grässliche Präsenz",
+                  "stufe": "mechanik",
+                  "ziel": "Heiler",
+                  "erklaerung": "Konstanter raidweiter DoT-Schaden über die gesamte Phase.",
+                  "loesung": "Durchgehend wegheilen."
                 }
               ]
             },
             {
-              "titel": "Phase 3: Doppelter Geist-Burn (30 % – 0 %)",
-              "uebersicht": "Beide Bosse synchron legen – Kampfrausch zünden.",
+              "titel": "Zwischenphase: Das beanspruchte Gefäß",
+              "uebersicht": "Nach Malacrass' Tod bindet er seine Seele an Zul'jan – maximaler Fokus-Schaden auf Zul'jan, während heilende Seelen geblockt werden müssen.",
               "mechaniken": [
                 {
-                  "name": "Vereinte Windung",
+                  "name": "Seelenbindung",
                   "stufe": "toedlich",
                   "ziel": "DPS",
-                  "erklaerung": "Stirbt ein Boss, castet der andere einen 10s Raidwipe.",
-                  "loesung": "Beide Bosse gleichzeitig innerhalb von 8 Sekunden töten."
+                  "erklaerung": "Zul'jan erleidet 100 % erhöhten Schaden, Malacrass ist währenddessen immun.",
+                  "loesung": "Gesamten Schaden auf Zul'jan konzentrieren, ideal für Bloodlust/Heroism."
+                },
+                {
+                  "name": "Fragment von Malacrass",
+                  "stufe": "prio",
+                  "ziel": "Alle",
+                  "erklaerung": "Seelen laufen zu Zul'jan und heilen bei Ankunft beide Bosse. Blockieren verursacht Raidschaden.",
+                  "loesung": "Seelen dosiert blockieren, nicht zu viele gleichzeitig, um den Raid nicht zu überlasten."
+                }
+              ]
+            },
+            {
+              "titel": "Phase 3: Gewundene Vereinigung",
+              "uebersicht": "Kombiniert abgewandelte Mechaniken aus Phase 1 und 2 – Kugeln, Geister und Tankwechsel laufen jetzt parallel.",
+              "mechaniken": [
+                {
+                  "name": "Entweihung des Gewundenen Altars",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Wie Fänge des Gewundenen Altars aus Phase 1, zusätzlich stapelt ein DoT auf dem Tank durch Nahkampftreffer.",
+                  "loesung": "Tank regelmäßig wechseln, um Stapel abzubauen."
+                },
+                {
+                  "name": "Verseuchte Abtrennung",
+                  "stufe": "prio",
+                  "ziel": "Tank",
+                  "erklaerung": "Kombinierter Frontalkegel, der sowohl Kugelhaufen als auch Geister gleichzeitig zerstören kann.",
+                  "loesung": "Kegel so lenken, dass möglichst beide Mechaniken gleichzeitig getroffen werden."
+                },
+                {
+                  "name": "Seelengebunden",
+                  "stufe": "toedlich",
+                  "ziel": "Tank",
+                  "erklaerung": "Bleibt einer der beiden Bosse deutlich länger am Leben, enraged er.",
+                  "loesung": "Beide Bosse möglichst gleichzeitig töten."
                 }
               ]
             }
@@ -844,22 +1556,28 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Sever hinterlässt einen Heilungsabsorb auf dem aktiven Tank."],
-            "heiler": ["Guillotine erzeugt 3 aufeinanderfolgende Schockwellen."],
-            "melee": ["Geister in Phase 2 bewegen sich doppelt so schnell beim Wegsehen."],
-            "ranged": ["Giftkugeln explodieren nach 12 Sekunden, falls nicht zerstört."]
+            "tanks": [],
+            "heiler": [
+              "Zerstörte Kugeln belegen den Raid zusätzlich mit einem stapelbaren DoT."
+            ],
+            "melee": [
+              "Neue Adds 'Boshafte Seelenwinder' in P2/P3 rechtzeitig unterbrechen, bevor sie eine raidweite Furcht wirken."
+            ],
+            "ranged": [
+              "'Guillotine' belegt Soaker jetzt mit 500 % Vulnerabilität – zwei feste Gruppen abwechselnd soaken lassen."
+            ]
           },
           "phasen": [
             {
-              "titel": "Heroisch: Dunkle Verbindung",
-              "uebersicht": "Schadensdifferenz in Phase 3 darf maximal 5 % betragen.",
+              "titel": "Heroisch: Mehr Druck auf allen Mechaniken",
+              "uebersicht": "Äxte verschwinden nicht mehr, Kugeln hinterlassen einen DoT und ein neuer Furcht-Add fordert zusätzliche Interrupts.",
               "mechaniken": [
                 {
-                  "name": "Seelenüberladung",
-                  "stufe": "toedlich",
-                  "ziel": "DPS",
-                  "erklaerung": "Ungleicher Schaden bufft den Boss um 50 %.",
-                  "loesung": "Targets im Voice sekundengenau abgleichen."
+                  "name": "Geisterhäme",
+                  "stufe": "prio",
+                  "ziel": "Ranged",
+                  "erklaerung": "Boshafte Seelenwinder wirken fortwährend eine raidweite Furcht und schaden zufälligen Spielern, solange sie leben. Erreichen sie volle Energie, werden sie unterbrechungsimmun.",
+                  "loesung": "Add priorisiert unterbrechen und zügig töten, bevorzugt durch Ranged-Spieler."
                 }
               ]
             }
@@ -867,22 +1585,35 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Sever erfordert 3 Tanks in Rotation."],
-            "heiler": ["Geisterblick entzieht während des Ansehens Mana."],
-            "melee": ["Guillotine muss von 8 Spielern geteilt werden."],
-            "ranged": ["Geister wechseln alle 6 Sekunden ihr Fixate-Ziel."]
+            "tanks": [],
+            "heiler": [
+              "Das Blockieren der Seelen in der Zwischenphase belegt den ganzen Raid mit einer stapelbaren Vulnerabilität."
+            ],
+            "melee": [
+              "Boshafte Seelenwinder haben 99 % Schadensreduktion – mit Düsterbomben-Explosionen treffen, um sie zu schwächen."
+            ],
+            "ranged": [
+              "Neue violette Kugel darf keine anderen Kugeln berühren, sonst Wipe – vorsichtig einzeln transportieren."
+            ]
           },
           "phasen": [
             {
-              "titel": "Mythisch: Schattenillusion",
-              "uebersicht": "Phasen 1 und 2 laufen zeitgleich ab.",
+              "titel": "Mythisch: Violette Kugeln & unsichtbare Geister",
+              "uebersicht": "Eine zusätzliche, isoliert zu transportierende Kugel sowie nur für den Fixierten sichtbare Geister erhöhen die Fehleranfälligkeit deutlich.",
               "mechaniken": [
                 {
-                  "name": "Ewige Guillotine",
+                  "name": "Virulente Mutation",
+                  "stufe": "toedlich",
+                  "ziel": "DPS",
+                  "erklaerung": "Eine violette Kugel explodiert und wiped den Raid, sobald sie eine andere Kugel berührt. Bleiben am Phasenende noch violette Kugeln übrig, wiped der Raid ebenfalls.",
+                  "loesung": "Kugel isoliert von allen anderen Kugeln transportieren und rechtzeitig entfernen."
+                },
+                {
+                  "name": "Unsichtbare Fixierung",
                   "stufe": "toedlich",
                   "ziel": "Alle",
-                  "erklaerung": "Guillotine spawnt während Geister aktiv sind.",
-                  "loesung": "Blickkontakt halten während man in den Soak-Kreis läuft."
+                  "erklaerung": "Geister aus Zermürbende Fixierung sind nur für den fixierten Spieler sichtbar. Berühren sich zwei Geister, sterben beide fixierten Spieler.",
+                  "loesung": "Fixierte Spieler geben ihre Position klar durch, damit Kollisionen vermieden werden."
                 }
               ]
             }
@@ -890,16 +1621,32 @@
         }
       },
       "wipeGefahren": [
-        "Zu wenige Spieler in der Guillotine.",
-        "Spieler drehen den Geistern den Rücken zu.",
-        "Ein Boss stirbt in Phase 3 zu früh."
+        "Zu viele Kugeln oder Geister werden gleichzeitig zerstört und der Raidschaden häuft sich.",
+        "Schreckensmarsch-Opfer laufen unbemerkt über den Rand.",
+        "Ewiger Nachteinbruch läuft aus, bevor der Schild gebrochen wird – Raid-Wipe.",
+        "Violette Kugel berührt eine andere Kugel oder bleibt am Phasenende übrig (Mythisch)."
       ],
       "faehigkeiten": [
-        { "name": "Guillotine", "id": 432701 },
-        { "name": "Sever", "id": 432702 },
-        { "name": "Giftige Sturzflut", "id": 432703 },
-        { "name": "Zermürbende Fixierung", "id": 432704 },
-        { "name": "Vereinte Windung", "id": 432705 }
+        {
+          "name": "Fänge des Gewundenen Altars",
+          "id": 432701
+        },
+        {
+          "name": "Verdichtetes Gift",
+          "id": 432702
+        },
+        {
+          "name": "Abtrennen",
+          "id": 432703
+        },
+        {
+          "name": "Zermürbende Fixierung",
+          "id": 432704
+        },
+        {
+          "name": "Ewiger Nachteinbruch",
+          "id": 432705
+        }
       ]
     },
     {
@@ -980,10 +1727,18 @@
         },
         "heroic": {
           "rollen": {
-            "tanks": ["Boss hinterlässt eine Giftspur beim Bewegen."],
-            "heiler": ["Wellen hinterlassen einen 6-Sekunden-Heilungs-Debuff."],
-            "melee": ["Eier haben kürzere Cast-Zeiten (1.5s)."],
-            "ranged": ["2 Wellen rollen versetzt aus unterschiedlichen Winkeln."]
+            "tanks": [
+              "Boss hinterlässt eine Giftspur beim Bewegen."
+            ],
+            "heiler": [
+              "Wellen hinterlassen einen 6-Sekunden-Heilungs-Debuff."
+            ],
+            "melee": [
+              "Eier haben kürzere Cast-Zeiten (1.5s)."
+            ],
+            "ranged": [
+              "2 Wellen rollen versetzt aus unterschiedlichen Winkeln."
+            ]
           },
           "phasen": [
             {
@@ -1003,10 +1758,18 @@
         },
         "mythic": {
           "rollen": {
-            "tanks": ["Boss wirft Tanks alle 20 Sekunden über die halbe Plattform."],
-            "heiler": ["Plattformfrass verursacht 100 % mehr Schaden."],
-            "melee": ["Fehlender Kick lässt sofort ein Elite-Monster spawnen."],
-            "ranged": ["Eier müssen vor dem Schlüpfen mit Klick-Items deaktiviert werden."]
+            "tanks": [
+              "Boss wirft Tanks alle 20 Sekunden über die halbe Plattform."
+            ],
+            "heiler": [
+              "Plattformfrass verursacht 100 % mehr Schaden."
+            ],
+            "melee": [
+              "Fehlender Kick lässt sofort ein Elite-Monster spawnen."
+            ],
+            "ranged": [
+              "Eier müssen vor dem Schlüpfen mit Klick-Items deaktiviert werden."
+            ]
           },
           "phasen": [
             {
@@ -1031,10 +1794,22 @@
         "DPS reicht in Phase 3 nicht aus."
       ],
       "faehigkeiten": [
-        { "name": "Ätzende Wellen", "id": 432801 },
-        { "name": "Mutters Zorn", "id": 432802 },
-        { "name": "Spektrale Windungen", "id": 432803 },
-        { "name": "Zorn der Gefesselten", "id": 432804 }
+        {
+          "name": "Ätzende Wellen",
+          "id": 432801
+        },
+        {
+          "name": "Mutters Zorn",
+          "id": 432802
+        },
+        {
+          "name": "Spektrale Windungen",
+          "id": 432803
+        },
+        {
+          "name": "Zorn der Gefesselten",
+          "id": 432804
+        }
       ]
     }
   ]
