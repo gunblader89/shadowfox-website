@@ -104,8 +104,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 316,
-      "mplus": 2881,
+      "ilvl": 315,
+      "mplus": 2931,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -189,9 +189,9 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 307,
-      "mplus": 2597,
-      "weeklyRuns": 0,
+      "ilvl": 308,
+      "mplus": 2601,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
@@ -308,12 +308,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 313,
-      "mplus": 2841,
+      "ilvl": 315,
+      "mplus": 2888,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Füße",
-        "Waffe",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -444,5 +442,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-31T18:00:16.469Z"
+  "updatedAt": "2026-08-31T23:43:00.476Z"
 }

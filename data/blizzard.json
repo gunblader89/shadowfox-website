@@ -200,7 +200,7 @@
       "name": "Terrathil",
       "realm": "antonidas",
       "rank": 5,
-      "level": 88,
+      "level": 89,
       "classId": 11
     },
     {
@@ -981,7 +981,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-08-31T18:00:18.043Z",
+  "updatedAt": "2026-08-31T23:43:01.920Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1062,7 +1062,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 11,
+      "runsThisWeek": 12,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1102,6 +1102,11 @@
         {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 12,
           "timed": true
         },
         {
@@ -1124,12 +1129,12 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 8,
+      "runsThisWeek": 9,
       "runs": [
         {
-          "dungeon": "Altar der Fänge",
-          "level": 5,
-          "timed": true
+          "dungeon": "Das blendende Tal",
+          "level": 11,
+          "timed": false
         },
         {
           "dungeon": "Das blendende Tal",
@@ -1147,22 +1152,27 @@
           "timed": true
         },
         {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 7,
-          "timed": true
-        },
-        {
           "dungeon": "Nalorakks Bau",
           "level": 10,
           "timed": true
         },
         {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 7,
           "timed": true
         },
         {
           "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 5,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
           "level": 10,
           "timed": true
         }
@@ -1275,8 +1285,14 @@
     {
       "name": "Scârlêtt",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Miliim",

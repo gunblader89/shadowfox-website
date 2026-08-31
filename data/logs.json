@@ -6,13 +6,15 @@
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1788198563598,
-      "endTime": 1788198999292,
-      "duration": "7m",
+      "endTime": 1788208537240,
+      "duration": "2h 46m",
       "difficulty": "Heroisch",
-      "kills": 1,
-      "wipes": 0,
+      "kills": 3,
+      "wipes": 19,
       "killedBosses": [
-        "Nek'zali the Soulcoiler"
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
+        "Vashnik the Malignant"
       ],
       "vips": {
         "dps": [
@@ -20,31 +22,31 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 91,
-            "boss": "Nek'zali the Soulcoiler"
+            "parse": 92,
+            "boss": "Entombed Sentinels"
           },
           {
-            "name": "Askái",
-            "class": "DemonHunter",
-            "spec": "Devourer",
-            "parse": 81,
-            "boss": "Nek'zali the Soulcoiler"
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 89,
+            "boss": "Vashnik the Malignant"
           }
         ],
         "hps": [
           {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 82,
+            "boss": "Vashnik the Malignant"
+          },
+          {
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 72,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Doktorpöbel",
-            "class": "Priest",
-            "spec": "Discipline",
-            "parse": 71,
-            "boss": "Nek'zali the Soulcoiler"
+            "parse": 81,
+            "boss": "Vashnik the Malignant"
           }
         ]
       }
@@ -138,5 +140,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-31T18:00:36.238Z"
+  "updatedAt": "2026-08-31T23:43:26.381Z"
 }
