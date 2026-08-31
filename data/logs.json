@@ -1,6 +1,55 @@
 {
   "reports": [
     {
+      "code": "crKgnbDCmLZY7Fw2",
+      "url": "https://www.warcraftlogs.com/reports/crKgnbDCmLZY7Fw2",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1788198563598,
+      "endTime": 1788198999292,
+      "duration": "7m",
+      "difficulty": "Heroisch",
+      "kills": 1,
+      "wipes": 0,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 91,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Askái",
+            "class": "DemonHunter",
+            "spec": "Devourer",
+            "parse": 81,
+            "boss": "Nek'zali the Soulcoiler"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 72,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Doktorpöbel",
+            "class": "Priest",
+            "spec": "Discipline",
+            "parse": 71,
+            "boss": "Nek'zali the Soulcoiler"
+          }
+        ]
+      }
+    },
+    {
       "code": "yjJwVcmCD2p9tPvK",
       "url": "https://www.warcraftlogs.com/reports/yjJwVcmCD2p9tPvK",
       "title": "The Venomous Abyss",
@@ -22,38 +71,8 @@
         "Ula'tek"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 98,
-            "boss": "The Coiled Altar"
-          },
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 97,
-            "boss": "Nek'zali the Soulcoiler"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 96,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Doktorpöbel",
-            "class": "Priest",
-            "spec": "Discipline",
-            "parse": 88,
-            "boss": "Entombed Sentinels"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -119,5 +138,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-31T17:38:06.333Z"
+  "updatedAt": "2026-08-31T18:00:36.238Z"
 }
