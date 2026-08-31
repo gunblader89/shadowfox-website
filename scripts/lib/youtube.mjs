@@ -3,9 +3,9 @@
    Quota-Limit) - der Feed ist oeffentlich und liefert Titel, Datum und
    Thumbnail direkt. Einzige Einschraenkung: er zeigt nur die letzten ~15
    Videos - deshalb werden neue Funde in update.mjs dauerhaft in ein Archiv
-   gemerged (reines Append/Update, analog attendance.mjs), damit aeltere
-   Videos nicht aus der Historie verschwinden, sobald mehr als 15 hochgeladen
-   wurden. */
+   gemerged (reines Append/Update, nie ein kompletter Reset - siehe
+   mergeVideos() unten), damit aeltere Videos nicht aus der Historie
+   verschwinden, sobald mehr als 15 hochgeladen wurden. */
 import { req } from "./util.mjs";
 
 /** Deckt die in RSS-Feeds ueblichen Entity-Faelle ab, ohne einen vollen
@@ -29,8 +29,7 @@ function attr(chunk, name, attrName) {
 }
 
 /* Neu gefundene Videos in das dauerhafte Archiv einmergen - reines
-   Append/Update per Video-ID, nie ein kompletter Reset (siehe
-   attendance.mjs/seasontracker.mjs fuer die Begruendung dieses Musters). */
+   Append/Update per Video-ID, nie ein kompletter Reset. */
 export function mergeVideos({ existing, fetched, now = new Date() }) {
   const videos = (existing && typeof existing === "object" && existing.videos)
     ? { ...existing.videos }

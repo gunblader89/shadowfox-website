@@ -632,7 +632,6 @@ let KB = [
 
 let KADER = [];
 let REPORTS = [];
-let ATTENDANCE = [];
 let VIDEOS = [];
 
 const ROLLEN = {Tank:"#6b9ce8",Heal:"#5ec48f",Melee:"#eab54e",Ranged:"#8f7ce8"};
@@ -1264,28 +1263,7 @@ tracker(){
         <span class="mini"><i style="width:${Math.round(((p.mp||0)/Math.max(maxM,1))*100)}%;background:${scoreColor(p.mp)}"></i></span>
         <span class="vl" style="color:${scoreColor(p.mp)};font-weight:700">${p.mp||0}</span></div>`).join("")||'<div class="muted">Keine Scores</div>'}
     </div>
-  </div>
-  ${ATTENDANCE.length ? `
-  <div class="tw fade" style="margin-bottom:30px">
-    <h2 class="sec">Anwesenheit (letzte ${Math.max(...ATTENDANCE.map(a=>a.total))} erfasste Termine)</h2>
-    <table class="trk">
-      <thead><tr><th>Spieler</th><th>Dabei</th><th>Quote</th></tr></thead>
-      <tbody>
-        ${[...ATTENDANCE].sort((a,b)=>(a.present/a.total)-(b.present/b.total)).map(a=>{
-          const rate = Math.round((a.present/a.total)*100);
-          const rateColor = rate>=80?'var(--green)':(rate>=50?'var(--amber)':'var(--red)');
-          return `<tr>
-            <td><span class="pname"><span class="pdot" style="background:${col(a.c)}"></span><span><b>${esc(a.n)}</b></span></span></td>
-            <td class="num">${a.present} / ${a.total}</td>
-            <td>
-              <span class="mini"><i style="width:${rate}%;background:${rateColor}"></i></span>
-              <span class="num" style="color:${rateColor};font-weight:600">${rate}%</span>
-            </td>
-          </tr>`;
-        }).join("")}
-      </tbody>
-    </table>
-  </div>` : ''}`;
+  </div>`;
 },
 
 logs(){
@@ -1909,25 +1887,6 @@ function applyData(d, c){
       KADER = Array.from(charMap.values());
     }
 
-    if(d?.attendance?.events){
-      // Nur die letzten 15 erfassten (bereits vergangenen) Termine werten -
-      // aktuelle Zuverlaessigkeit zaehlt mehr als ein Ausrutscher vor Monaten.
-      const evList = Object.values(d.attendance.events)
-        .filter(e => e && e.unixtime)
-        .sort((a,b) => b.unixtime - a.unixtime)
-        .slice(0, 15);
-      const PRESENT = new Set(["primary","late"]);
-      ATTENDANCE = KADER.map(p => {
-        const key = normName(p.n);
-        let present = 0;
-        for(const e of evList){
-          const st = e.statusByName?.[key];
-          if(st && PRESENT.has(st)) present++;
-        }
-        return { n: p.n, c: p.c, present, total: evList.length };
-      }).filter(a => a.total > 0);
-    }
-
     if(d?.youtube?.videos){
       VIDEOS = Object.values(d.youtube.videos)
         .filter(v => v && v.id)
@@ -2062,8 +2021,8 @@ addEventListener("keydown", e => {
 
   try {
     const [d, c] = await Promise.all([
-      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status","attendance","youtube"].map(n => load(`data/${n}.json`)))
-        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status","attendance","youtube"].map((n,i) => [n,a[i]]))),
+      Promise.all(["guild","roster","events","logs","wowaudit","blizzard","status","youtube"].map(n => load(`data/${n}.json`)))
+        .then(a => Object.fromEntries(["guild","roster","events","logs","wowaudit","blizzard","status","youtube"].map((n,i) => [n,a[i]]))),
       Promise.all(["bosses","wissen","raider","termine","dungeons"].map(n => load(`content/${n}.json`)))
         .then(a => Object.fromEntries(["bosses","wissen","raider","termine","dungeons"].map((n,i) => [n,a[i]])))
     ]);
