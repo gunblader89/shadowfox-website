@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 306,
-      "mplus": 2679,
-      "weeklyRuns": 7,
+      "ilvl": 305,
+      "mplus": 2692,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -350,7 +350,7 @@
       "role": "TANK",
       "ilvl": 312,
       "mplus": 2226,
-      "weeklyRuns": 9,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -375,15 +375,10 @@
     {
       "name": "Corvisstab",
       "realm": "blackmoore",
-      "class": "Rogue",
-      "spec": "Subtlety",
-      "role": "DPS",
-      "ilvl": 286,
+      "ilvl": null,
       "mplus": 0,
       "weeklyRuns": 0,
-      "missingEnchants": [],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/90/182661978-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
+      "stale": true
     },
     {
       "name": "Toshichaos",
@@ -449,5 +444,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-31T05:23:00.850Z"
+  "updatedAt": "2026-08-31T11:22:30.147Z"
 }

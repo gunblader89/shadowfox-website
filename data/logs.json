@@ -50,8 +50,8 @@
             "name": "Doktorpöbel",
             "class": "Priest",
             "spec": "Discipline",
-            "parse": 89,
-            "boss": "The Lost Explorers"
+            "parse": 88,
+            "boss": "Entombed Sentinels"
           }
         ]
       }
@@ -119,5 +119,5 @@
       }
     }
   ],
-  "updatedAt": "2026-08-31T05:23:25.804Z"
+  "updatedAt": "2026-08-31T11:22:53.376Z"
 }
