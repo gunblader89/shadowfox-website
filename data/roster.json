@@ -62,7 +62,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 303,
+      "ilvl": 304,
       "mplus": 2165,
       "weeklyRuns": 6,
       "missingEnchants": [],
@@ -104,7 +104,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 315,
+      "ilvl": 316,
       "mplus": 2881,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -251,7 +251,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 313,
-      "mplus": 2743,
+      "mplus": 2789,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
@@ -387,7 +387,7 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 313,
-      "mplus": 3207,
+      "mplus": 3210,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -402,7 +402,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 2905,
+      "mplus": 3001,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -444,5 +444,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-31T11:22:30.147Z"
+  "updatedAt": "2026-08-31T17:27:19.382Z"
 }
