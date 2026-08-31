@@ -63,8 +63,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 303,
-      "mplus": 1965,
-      "weeklyRuns": 5,
+      "mplus": 2165,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -104,8 +104,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 316,
-      "mplus": 2856,
+      "ilvl": 315,
+      "mplus": 2881,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -118,7 +118,7 @@
       "spec": "Devastation",
       "role": "DPS",
       "ilvl": 303,
-      "mplus": 2173,
+      "mplus": 2361,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
@@ -309,10 +309,11 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 313,
-      "mplus": 2797,
+      "mplus": 2841,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Füße",
+        "Waffe",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -406,7 +407,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 2865,
+      "mplus": 2905,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -448,5 +449,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-30T23:43:00.726Z"
+  "updatedAt": "2026-08-31T05:23:00.850Z"
 }
