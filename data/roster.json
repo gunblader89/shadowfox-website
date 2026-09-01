@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 305,
-      "mplus": 2692,
-      "weeklyRuns": 8,
+      "ilvl": 307,
+      "mplus": 2714,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -34,12 +34,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 309,
+      "ilvl": 310,
       "mplus": 2499,
-      "weeklyRuns": 4,
-      "missingEnchants": [
-        "Ring 1"
-      ],
+      "weeklyRuns": 5,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
@@ -62,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 304,
+      "ilvl": 303,
       "mplus": 2165,
       "weeklyRuns": 6,
       "missingEnchants": [],
@@ -91,7 +89,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 308,
+      "ilvl": 310,
       "mplus": 2642,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -117,12 +115,10 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 303,
+      "ilvl": 308,
       "mplus": 2361,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Brust",
-        "Beine",
         "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
@@ -132,9 +128,9 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Restoration",
-      "role": "HEALING",
-      "ilvl": 303,
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 305,
       "mplus": 2527,
       "weeklyRuns": 9,
       "missingEnchants": [],
@@ -147,7 +143,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 307,
+      "ilvl": 309,
       "mplus": 2701,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -160,13 +156,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 296,
+      "ilvl": 297,
       "mplus": 2309,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Brust",
-        "Ring 1"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -236,9 +229,6 @@
       "mplus": 2688,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Brust",
-        "Beine",
-        "Füße",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
@@ -280,7 +270,7 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 312,
+      "ilvl": 313,
       "mplus": 2707,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -346,7 +336,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 312,
+      "ilvl": 313,
       "mplus": 2226,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -442,5 +432,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-08-31T23:43:00.476Z"
+  "updatedAt": "2026-09-01T05:27:42.747Z"
 }
