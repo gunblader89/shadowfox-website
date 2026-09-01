@@ -7,8 +7,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 307,
-      "mplus": 2714,
-      "weeklyRuns": 9,
+      "mplus": 2732,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -19,11 +19,11 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 294,
-      "mplus": 2280,
-      "weeklyRuns": 5,
+      "ilvl": 297,
+      "mplus": 2344,
+      "weeklyRuns": 7,
       "missingEnchants": [
-        "Ring 1"
+        "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -241,7 +241,7 @@
       "spec": "Devourer",
       "role": "DPS",
       "ilvl": 313,
-      "mplus": 2789,
+      "mplus": 2833,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
@@ -255,7 +255,7 @@
       "role": "DPS",
       "ilvl": 306,
       "mplus": 2625,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -432,5 +432,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-01T11:27:09.232Z"
+  "updatedAt": "2026-09-01T17:30:15.772Z"
 }
