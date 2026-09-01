@@ -981,12 +981,12 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-01T17:30:17.191Z",
+  "updatedAt": "2026-09-01T23:42:54.940Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 7,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1007,6 +1007,16 @@
           "dungeon": "Nalorakks Bau",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": false
         },
         {
           "dungeon": "Rubinlebensbecken",
@@ -1101,7 +1111,7 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
-          "level": 11,
+          "level": 12,
           "timed": true
         },
         {
@@ -1158,7 +1168,7 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
-          "level": 7,
+          "level": 10,
           "timed": true
         },
         {
@@ -1181,7 +1191,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 8,
+      "runsThisWeek": 9,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1189,9 +1199,9 @@
           "timed": false
         },
         {
-          "dungeon": "Altar der Fänge",
-          "level": 9,
-          "timed": true
+          "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": false
         },
         {
           "dungeon": "Die Königsruh",
@@ -1200,8 +1210,8 @@
         },
         {
           "dungeon": "Arena der Leerennarbe",
-          "level": 10,
-          "timed": false
+          "level": 7,
+          "timed": true
         },
         {
           "dungeon": "Die Königsruh",
@@ -1209,14 +1219,19 @@
           "timed": true
         },
         {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 7,
-          "timed": true
-        },
-        {
           "dungeon": "Nalorakks Bau",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 9,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": false
         },
         {
           "dungeon": "Rubinlebensbecken",

@@ -21,10 +21,8 @@
       "role": "HEALING",
       "ilvl": 297,
       "mplus": 2344,
-      "weeklyRuns": 7,
-      "missingEnchants": [
-        "Füße"
-      ],
+      "weeklyRuns": 8,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -102,8 +100,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 315,
-      "mplus": 2931,
+      "ilvl": 316,
+      "mplus": 2956,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -225,8 +223,8 @@
       "class": "Priest",
       "spec": "Discipline",
       "role": "HEALING",
-      "ilvl": 313,
-      "mplus": 2688,
+      "ilvl": 314,
+      "mplus": 2722,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -299,7 +297,7 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 315,
-      "mplus": 2888,
+      "mplus": 2956,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -432,5 +430,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-01T17:30:15.772Z"
+  "updatedAt": "2026-09-01T23:42:53.554Z"
 }
