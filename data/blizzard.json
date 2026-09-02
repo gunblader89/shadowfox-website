@@ -981,7 +981,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-02T05:31:10.963Z",
+  "updatedAt": "2026-09-02T11:27:39.217Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1016,8 +1016,14 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Hunterchaos",

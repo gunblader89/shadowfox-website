@@ -87,7 +87,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 310,
+      "ilvl": 311,
       "mplus": 2642,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -113,7 +113,7 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 311,
       "mplus": 2361,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -238,10 +238,12 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 313,
-      "mplus": 2833,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
+      "ilvl": 315,
+      "mplus": 2875,
+      "weeklyRuns": 7,
+      "missingEnchants": [
+        "Füße"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
     },
@@ -297,8 +299,8 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 315,
-      "mplus": 3007,
-      "weeklyRuns": 0,
+      "mplus": 3059,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -430,5 +432,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-02T05:31:09.249Z"
+  "updatedAt": "2026-09-02T11:27:37.650Z"
 }
