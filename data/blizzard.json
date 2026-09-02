@@ -388,7 +388,7 @@
     {
       "name": "Fruchtzwerg",
       "realm": "echsenkessel",
-      "rank": 3,
+      "rank": 5,
       "level": 90,
       "classId": 7
     },
@@ -563,7 +563,7 @@
     {
       "name": "Lureth",
       "realm": "antonidas",
-      "rank": 5,
+      "rank": 3,
       "level": 90,
       "classId": 8
     },
@@ -979,9 +979,23 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Günnfire",
+      "realm": "thrall",
+      "rank": 5,
+      "level": 90,
+      "classId": 8
+    },
+    {
+      "name": "Frokipala",
+      "realm": "blackrock",
+      "rank": 6,
+      "level": 90,
+      "classId": 2
     }
   ],
-  "updatedAt": "2026-09-02T17:30:07.928Z",
+  "updatedAt": "2026-09-02T23:44:05.240Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -998,8 +1012,14 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",
@@ -1010,14 +1030,65 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 7,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 14,
+          "timed": false
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 13,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 14,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": false
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 14,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 4,
       "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        },
         {
           "dungeon": "Rubinlebensbecken",
           "level": 10,
@@ -1034,8 +1105,19 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": false
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Scârlêtt",
