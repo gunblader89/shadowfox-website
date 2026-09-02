@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T23:43:18.373Z",
+  "updatedAt": "2026-09-02T05:31:37.061Z",
   "guild": {
     "region": "eu",
     "realm": "blackmoore",
@@ -13,5 +13,5 @@
     "blizzard": true,
     "youtube": true
   },
-  "errors": 0
+  "errors": 1
 }
