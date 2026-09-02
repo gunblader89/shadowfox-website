@@ -22,30 +22,30 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 92,
+            "parse": 91,
             "boss": "Entombed Sentinels"
           },
           {
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 88,
+            "parse": 84,
             "boss": "Vashnik the Malignant"
           }
         ],
         "hps": [
           {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 81,
-            "boss": "Vashnik the Malignant"
-          },
-          {
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 81,
+            "parse": 80,
+            "boss": "Vashnik the Malignant"
+          },
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 79,
             "boss": "Vashnik the Malignant"
           }
         ]
@@ -140,5 +140,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-02T11:28:01.005Z"
+  "updatedAt": "2026-09-02T17:30:33.579Z"
 }

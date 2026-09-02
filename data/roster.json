@@ -6,8 +6,8 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 307,
-      "mplus": 2732,
+      "ilvl": 310,
+      "mplus": 2760,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
@@ -32,7 +32,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 310,
+      "ilvl": 311,
       "mplus": 2499,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -238,12 +238,10 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 315,
+      "ilvl": 318,
       "mplus": 2875,
-      "weeklyRuns": 7,
-      "missingEnchants": [
-        "Füße"
-      ],
+      "weeklyRuns": 10,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
     },
@@ -372,11 +370,11 @@
       "name": "Toshichaos",
       "realm": "taerar",
       "class": "Warlock",
-      "spec": "Demonology",
+      "spec": "Destruction",
       "role": "DPS",
-      "ilvl": 313,
-      "mplus": 3221,
-      "weeklyRuns": 0,
+      "ilvl": 317,
+      "mplus": 3251,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -432,5 +430,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-02T11:27:37.650Z"
+  "updatedAt": "2026-09-02T17:30:06.472Z"
 }
