@@ -102,7 +102,7 @@
       "role": "DPS",
       "ilvl": 315,
       "mplus": 3067,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -169,7 +169,7 @@
       "role": "DPS",
       "ilvl": 314,
       "mplus": 2741,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -270,7 +270,7 @@
       "role": "DPS",
       "ilvl": 314,
       "mplus": 2920,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "missingEnchants": [
         "Füße"
       ],
@@ -311,9 +311,9 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 295,
-      "mplus": 1593,
-      "weeklyRuns": 0,
+      "ilvl": 294,
+      "mplus": 1763,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Beine",
         "Ring 1",
@@ -432,5 +432,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-02T23:44:03.793Z"
+  "updatedAt": "2026-09-03T05:46:27.267Z"
 }
