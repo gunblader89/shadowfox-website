@@ -34,7 +34,7 @@
       "role": "DPS",
       "ilvl": 315,
       "mplus": 2586,
-      "weeklyRuns": 5,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -100,7 +100,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 315,
+      "ilvl": 320,
       "mplus": 3067,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -297,8 +297,8 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 316,
-      "mplus": 3102,
-      "weeklyRuns": 9,
+      "mplus": 3114,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -311,9 +311,9 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 294,
-      "mplus": 1763,
-      "weeklyRuns": 3,
+      "ilvl": 296,
+      "mplus": 1823,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Beine",
         "Ring 1",
@@ -363,10 +363,18 @@
     {
       "name": "Corvisstab",
       "realm": "blackmoore",
-      "ilvl": null,
+      "class": "Rogue",
+      "spec": "Assassination",
+      "role": "DPS",
+      "ilvl": 290,
       "mplus": 0,
       "weeklyRuns": 0,
-      "stale": true
+      "missingEnchants": [
+        "Beine",
+        "Ring 1"
+      ],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/90/182661978-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
     },
     {
       "name": "Toshichaos",
@@ -376,7 +384,7 @@
       "role": "DPS",
       "ilvl": 317,
       "mplus": 3312,
-      "weeklyRuns": 9,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -432,5 +440,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-03T11:26:13.910Z"
+  "updatedAt": "2026-09-03T17:31:31.359Z"
 }

@@ -995,7 +995,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-03T11:26:15.581Z",
+  "updatedAt": "2026-09-03T17:31:33.297Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1072,7 +1072,7 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1083,6 +1083,11 @@
           "dungeon": "Arena der Leerennarbe",
           "level": 11,
           "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": false
         },
         {
           "dungeon": "Nalorakks Bau",
