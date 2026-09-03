@@ -1,6 +1,59 @@
 {
   "reports": [
     {
+      "code": "PLakh2TBqN31nWvd",
+      "url": "https://www.warcraftlogs.com/reports/PLakh2TBqN31nWvd",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1788457553350,
+      "endTime": 1788467565348,
+      "duration": "2h 46m",
+      "difficulty": "Heroisch",
+      "kills": 5,
+      "wipes": 16,
+      "killedBosses": [
+        "Nymrissa Wavecaller",
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
+        "The Lost Explorers"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Toshichaos",
+            "class": "Warlock",
+            "spec": "Demonology",
+            "parse": 96,
+            "boss": "Vashnik the Malignant"
+          },
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 94,
+            "boss": "The Lost Explorers"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 99,
+            "boss": "Vashnik the Malignant"
+          },
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 96,
+            "boss": "Vashnik the Malignant"
+          }
+        ]
+      }
+    },
+    {
       "code": "crKgnbDCmLZY7Fw2",
       "url": "https://www.warcraftlogs.com/reports/crKgnbDCmLZY7Fw2",
       "title": "The Venomous Abyss",
@@ -17,38 +70,8 @@
         "Vashnik the Malignant"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 89,
-            "boss": "Entombed Sentinels"
-          },
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 78,
-            "boss": "Vashnik the Malignant"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 76,
-            "boss": "Vashnik the Malignant"
-          },
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 76,
-            "boss": "Vashnik the Malignant"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -140,5 +163,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-03T17:31:59.247Z"
+  "updatedAt": "2026-09-03T23:44:13.591Z"
 }

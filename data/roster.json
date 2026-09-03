@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 310,
-      "mplus": 2831,
-      "weeklyRuns": 3,
+      "ilvl": 317,
+      "mplus": 2863,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -19,7 +19,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 297,
+      "ilvl": 300,
       "mplus": 2344,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -32,7 +32,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 315,
+      "ilvl": 316,
       "mplus": 2586,
       "weeklyRuns": 7,
       "missingEnchants": [],
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 294,
-      "mplus": 2420,
-      "weeklyRuns": 0,
+      "ilvl": 297,
+      "mplus": 2463,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Brust",
         "Beine"
@@ -87,7 +87,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 311,
+      "ilvl": 312,
       "mplus": 2642,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -113,11 +113,12 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 310,
+      "ilvl": 311,
       "mplus": 2530,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [
-        "Füße"
+        "Füße",
+        "Waffe"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Feire"
@@ -141,9 +142,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 314,
+      "ilvl": 319,
       "mplus": 2705,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -167,7 +168,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 314,
+      "ilvl": 315,
       "mplus": 2741,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -180,7 +181,7 @@
       "class": "Death Knight",
       "spec": "Unholy",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 307,
       "mplus": 2601,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -193,14 +194,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 294,
-      "mplus": 923,
+      "ilvl": 303,
+      "mplus": 991,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Brust",
-        "Füße",
-        "Ring 1"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
     },
@@ -296,12 +293,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 3114,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -312,8 +307,8 @@
       "spec": "Blood",
       "role": "TANK",
       "ilvl": 296,
-      "mplus": 1823,
-      "weeklyRuns": 6,
+      "mplus": 2123,
+      "weeklyRuns": 7,
       "missingEnchants": [
         "Beine",
         "Ring 1",
@@ -336,9 +331,9 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 314,
-      "mplus": 2309,
-      "weeklyRuns": 0,
+      "ilvl": 317,
+      "mplus": 2498,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -380,7 +375,7 @@
       "name": "Toshichaos",
       "realm": "taerar",
       "class": "Warlock",
-      "spec": "Demonology",
+      "spec": "Destruction",
       "role": "DPS",
       "ilvl": 317,
       "mplus": 3312,
@@ -410,10 +405,12 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 291,
+      "ilvl": 293,
       "mplus": 0,
       "weeklyRuns": 0,
       "missingEnchants": [
+        "Brust",
+        "Beine",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -432,13 +429,13 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 309,
       "mplus": 2781,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-03T17:31:31.359Z"
+  "updatedAt": "2026-09-03T23:43:49.375Z"
 }
