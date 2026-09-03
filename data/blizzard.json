@@ -575,6 +575,13 @@
       "classId": 12
     },
     {
+      "name": "Günnfire",
+      "realm": "thrall",
+      "rank": 5,
+      "level": 90,
+      "classId": 8
+    },
+    {
       "name": "Günndk",
       "realm": "thrall",
       "rank": 3,
@@ -622,6 +629,13 @@
       "rank": 3,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Frokipala",
+      "realm": "blackrock",
+      "rank": 6,
+      "level": 90,
+      "classId": 2
     },
     {
       "name": "Illaoi",
@@ -979,23 +993,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Günnfire",
-      "realm": "thrall",
-      "rank": 5,
-      "level": 90,
-      "classId": 8
-    },
-    {
-      "name": "Frokipala",
-      "realm": "blackrock",
-      "rank": 6,
-      "level": 90,
-      "classId": 2
     }
   ],
-  "updatedAt": "2026-09-03T05:46:28.790Z",
+  "updatedAt": "2026-09-03T11:26:15.581Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
