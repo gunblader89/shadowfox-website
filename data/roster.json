@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 317,
-      "mplus": 2863,
-      "weeklyRuns": 4,
+      "ilvl": 316,
+      "mplus": 2947,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -73,7 +73,7 @@
       "role": "HEALING",
       "ilvl": 297,
       "mplus": 2463,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Brust",
         "Beine"
@@ -156,7 +156,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 297,
-      "mplus": 2309,
+      "mplus": 2308,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
@@ -221,7 +221,7 @@
       "spec": "Discipline",
       "role": "HEALING",
       "ilvl": 314,
-      "mplus": 2781,
+      "mplus": 2780,
       "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
@@ -291,10 +291,10 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Protection",
-      "role": "TANK",
-      "ilvl": 317,
-      "mplus": 3114,
+      "spec": "Retribution",
+      "role": "DPS",
+      "ilvl": 316,
+      "mplus": 3129,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -306,10 +306,11 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 296,
-      "mplus": 2123,
-      "weeklyRuns": 7,
+      "ilvl": 300,
+      "mplus": 2222,
+      "weeklyRuns": 10,
       "missingEnchants": [
+        "Brust",
         "Beine",
         "Ring 1",
         "Ring 2"
@@ -437,5 +438,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-03T23:43:49.375Z"
+  "updatedAt": "2026-09-04T05:27:03.368Z"
 }
