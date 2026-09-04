@@ -995,7 +995,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-04T11:27:05.345Z",
+  "updatedAt": "2026-09-04T17:29:19.605Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1110,7 +1110,7 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1119,6 +1119,11 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
           "level": 12,
           "timed": true
         }

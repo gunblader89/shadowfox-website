@@ -7,8 +7,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 316,
-      "mplus": 3017,
-      "weeklyRuns": 8,
+      "mplus": 3032,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -58,9 +58,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 311,
-      "mplus": 2238,
-      "weeklyRuns": 1,
+      "ilvl": 312,
+      "mplus": 2264,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 297,
+      "ilvl": 300,
       "mplus": 2463,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Brust",
         "Beine"
@@ -166,9 +166,9 @@
       "name": "Iojaru",
       "realm": "blackmoore",
       "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
-      "ilvl": 317,
+      "spec": "Vengeance",
+      "role": "TANK",
+      "ilvl": 316,
       "mplus": 2799,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -378,7 +378,7 @@
       "class": "Warlock",
       "spec": "Destruction",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 3312,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -406,9 +406,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 293,
-      "mplus": 0,
-      "weeklyRuns": 0,
+      "ilvl": 295,
+      "mplus": 166,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -438,5 +438,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-04T11:27:03.667Z"
+  "updatedAt": "2026-09-04T17:29:18.061Z"
 }

@@ -31,7 +31,7 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 94,
+            "parse": 92,
             "boss": "The Lost Explorers"
           }
         ],
@@ -40,7 +40,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 99,
+            "parse": 98,
             "boss": "Vashnik the Malignant"
           },
           {
@@ -163,5 +163,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-04T11:27:29.988Z"
+  "updatedAt": "2026-09-04T17:29:46.038Z"
 }
