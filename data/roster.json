@@ -34,7 +34,7 @@
       "role": "DPS",
       "ilvl": 316,
       "mplus": 2586,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 312,
-      "mplus": 2264,
-      "weeklyRuns": 2,
+      "mplus": 2358,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -127,11 +127,11 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Balance",
-      "role": "DPS",
-      "ilvl": 305,
-      "mplus": 2527,
-      "weeklyRuns": 0,
+      "spec": "Guardian",
+      "role": "TANK",
+      "ilvl": 313,
+      "mplus": 2570,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -291,12 +291,14 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
-      "ilvl": 316,
+      "spec": "Protection",
+      "role": "TANK",
+      "ilvl": 317,
       "mplus": 3129,
       "weeklyRuns": 10,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -307,7 +309,7 @@
       "spec": "Blood",
       "role": "TANK",
       "ilvl": 300,
-      "mplus": 2222,
+      "mplus": 2251,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
@@ -430,13 +432,13 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 311,
-      "mplus": 2794,
-      "weeklyRuns": 3,
+      "ilvl": 313,
+      "mplus": 2808,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-04T17:29:18.061Z"
+  "updatedAt": "2026-09-04T23:42:53.845Z"
 }

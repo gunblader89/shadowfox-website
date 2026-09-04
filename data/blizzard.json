@@ -995,7 +995,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-04T17:29:19.605Z",
+  "updatedAt": "2026-09-04T23:42:55.414Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1012,8 +1012,18 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 3,
       "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        },
         {
           "dungeon": "Rubinlebensbecken",
           "level": 12,
