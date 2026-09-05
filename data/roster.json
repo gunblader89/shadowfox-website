@@ -87,9 +87,9 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 312,
+      "ilvl": 313,
       "mplus": 2642,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -113,9 +113,9 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 311,
-      "mplus": 2530,
-      "weeklyRuns": 6,
+      "ilvl": 312,
+      "mplus": 2534,
+      "weeklyRuns": 7,
       "missingEnchants": [
         "Füße",
         "Waffe"
@@ -131,7 +131,7 @@
       "role": "TANK",
       "ilvl": 313,
       "mplus": 2570,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -308,8 +308,8 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 300,
-      "mplus": 2251,
+      "ilvl": 302,
+      "mplus": 2364,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
@@ -433,12 +433,12 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 313,
-      "mplus": 2808,
+      "mplus": 2865,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-05T17:28:20.574Z"
+  "updatedAt": "2026-09-05T23:43:31.524Z"
 }
