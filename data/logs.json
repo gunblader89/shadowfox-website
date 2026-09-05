@@ -24,14 +24,14 @@
             "name": "Toshichaos",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 96,
+            "parse": 95,
             "boss": "Vashnik the Malignant"
           },
           {
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 92,
+            "parse": 91,
             "boss": "The Lost Explorers"
           }
         ],
@@ -47,7 +47,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 96,
+            "parse": 95,
             "boss": "Vashnik the Malignant"
           }
         ]
@@ -163,5 +163,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-05T11:25:13.483Z"
+  "updatedAt": "2026-09-05T17:28:45.058Z"
 }
