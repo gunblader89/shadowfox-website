@@ -235,7 +235,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -378,9 +378,9 @@
       "name": "Toshichaos",
       "realm": "taerar",
       "class": "Warlock",
-      "spec": "Destruction",
+      "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 3312,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -434,11 +434,11 @@
       "role": "DPS",
       "ilvl": 313,
       "mplus": 2808,
-      "weeklyRuns": 9,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-05T05:26:07.295Z"
+  "updatedAt": "2026-09-05T11:24:48.421Z"
 }

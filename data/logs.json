@@ -40,7 +40,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 99,
+            "parse": 98,
             "boss": "Vashnik the Malignant"
           },
           {
@@ -163,5 +163,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-05T05:26:31.512Z"
+  "updatedAt": "2026-09-05T11:25:13.483Z"
 }

@@ -416,7 +416,7 @@
     {
       "name": "Corvispriest",
       "realm": "blackmoore",
-      "rank": 6,
+      "rank": 3,
       "level": 90,
       "classId": 5
     },
@@ -995,7 +995,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-05T05:26:08.807Z",
+  "updatedAt": "2026-09-05T11:24:50.149Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
