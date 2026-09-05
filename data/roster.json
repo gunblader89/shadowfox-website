@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 312,
-      "mplus": 2358,
-      "weeklyRuns": 4,
+      "mplus": 2359,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -131,7 +131,7 @@
       "role": "TANK",
       "ilvl": 313,
       "mplus": 2570,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -434,11 +434,11 @@
       "role": "DPS",
       "ilvl": 313,
       "mplus": 2808,
-      "weeklyRuns": 8,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-04T23:42:53.845Z"
+  "updatedAt": "2026-09-05T05:26:07.295Z"
 }
