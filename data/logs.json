@@ -1,6 +1,63 @@
 {
   "reports": [
     {
+      "code": "LW2KAtVdR981zcfq",
+      "url": "https://www.warcraftlogs.com/reports/LW2KAtVdR981zcfq",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1788716949048,
+      "endTime": 1788725073033,
+      "duration": "2h 15m",
+      "difficulty": "Normal",
+      "kills": 9,
+      "wipes": 6,
+      "killedBosses": [
+        "Nymrissa Wavecaller",
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
+        "The Lost Explorers",
+        "Sszorak",
+        "The Twin Fangs",
+        "The Coiled Altar",
+        "Ula'tek"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 98,
+            "boss": "Sszorak"
+          },
+          {
+            "name": "Askái",
+            "class": "DemonHunter",
+            "spec": "Devourer",
+            "parse": 97,
+            "boss": "Vashnik the Malignant"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Raiox",
+            "class": "Shaman",
+            "spec": "Restoration",
+            "parse": 95,
+            "boss": "Entombed Sentinels"
+          },
+          {
+            "name": "Thorelion",
+            "class": "Paladin",
+            "spec": "Holy",
+            "parse": 64,
+            "boss": "Vashnik the Malignant"
+          }
+        ]
+      }
+    },
+    {
       "code": "PLakh2TBqN31nWvd",
       "url": "https://www.warcraftlogs.com/reports/PLakh2TBqN31nWvd",
       "title": "The Venomous Abyss",
@@ -19,38 +76,8 @@
         "The Lost Explorers"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Toshichaos",
-            "class": "Warlock",
-            "spec": "Demonology",
-            "parse": 95,
-            "boss": "Vashnik the Malignant"
-          },
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 91,
-            "boss": "The Lost Explorers"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 98,
-            "boss": "Vashnik the Malignant"
-          },
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 95,
-            "boss": "Vashnik the Malignant"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -139,29 +166,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "vZwFxpX6K1Qh4VAb",
-      "url": "https://www.warcraftlogs.com/reports/vZwFxpX6K1Qh4VAb",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787163511962,
-      "endTime": 1787171146232,
-      "duration": "2h 7m",
-      "difficulty": "Normal",
-      "kills": 4,
-      "wipes": 6,
-      "killedBosses": [
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-06T17:29:24.978Z"
+  "updatedAt": "2026-09-06T23:44:12.848Z"
 }

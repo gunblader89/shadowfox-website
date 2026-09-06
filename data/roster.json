@@ -32,7 +32,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 2586,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 313,
-      "mplus": 2492,
-      "weeklyRuns": 6,
+      "mplus": 2551,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 300,
+      "ilvl": 307,
       "mplus": 2463,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Brust",
         "Beine"
@@ -88,8 +88,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 313,
-      "mplus": 2642,
-      "weeklyRuns": 1,
+      "mplus": 2644,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -142,7 +142,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 319,
+      "ilvl": 320,
       "mplus": 2705,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -155,10 +155,13 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 297,
+      "ilvl": 302,
       "mplus": 2308,
       "weeklyRuns": 0,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Beine",
+        "Füße"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -235,7 +238,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -265,9 +268,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 314,
+      "ilvl": 315,
       "mplus": 2920,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Füße"
       ],
@@ -308,12 +311,13 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 301,
-      "mplus": 2392,
+      "ilvl": 303,
+      "mplus": 2476,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
         "Beine",
+        "Füße",
         "Ring 1",
         "Ring 2"
       ],
@@ -335,8 +339,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 318,
-      "mplus": 2592,
-      "weeklyRuns": 5,
+      "mplus": 2615,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -409,8 +413,8 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 295,
-      "mplus": 166,
-      "weeklyRuns": 1,
+      "mplus": 547,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -432,7 +436,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2964,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -442,5 +446,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-06T17:29:00.831Z"
+  "updatedAt": "2026-09-06T23:43:49.049Z"
 }

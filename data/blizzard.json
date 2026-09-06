@@ -402,7 +402,7 @@
     {
       "name": "Althara",
       "realm": "blackmoore",
-      "rank": 5,
+      "rank": 3,
       "level": 90,
       "classId": 4
     },
@@ -633,7 +633,7 @@
     {
       "name": "Frokipala",
       "realm": "blackrock",
-      "rank": 6,
+      "rank": 4,
       "level": 90,
       "classId": 2
     },
@@ -997,12 +997,12 @@
     {
       "name": "Gatil",
       "realm": "blackrock",
-      "rank": 6,
+      "rank": 4,
       "level": 90,
       "classId": 11
     }
   ],
-  "updatedAt": "2026-09-06T17:29:02.513Z",
+  "updatedAt": "2026-09-06T23:43:50.603Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1183,11 +1183,26 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 4,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
           "level": 2,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 3,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 3,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 4,
           "timed": true
         }
       ]
