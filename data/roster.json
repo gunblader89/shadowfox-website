@@ -308,8 +308,8 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 302,
-      "mplus": 2364,
+      "ilvl": 301,
+      "mplus": 2392,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
@@ -440,5 +440,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-05T23:43:31.524Z"
+  "updatedAt": "2026-09-06T05:26:18.525Z"
 }
