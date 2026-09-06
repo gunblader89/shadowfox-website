@@ -235,7 +235,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 318,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -432,7 +432,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2865,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -440,5 +440,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-06T05:26:18.525Z"
+  "updatedAt": "2026-09-06T11:25:35.169Z"
 }
