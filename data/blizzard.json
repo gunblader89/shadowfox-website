@@ -993,9 +993,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Gatil",
+      "realm": "blackrock",
+      "rank": 6,
+      "level": 90,
+      "classId": 11
     }
   ],
-  "updatedAt": "2026-09-06T11:25:36.642Z",
+  "updatedAt": "2026-09-06T17:29:02.513Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1012,10 +1019,15 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
           "level": 10,
           "timed": true
         },
@@ -1027,6 +1039,11 @@
         {
           "dungeon": "Rubinlebensbecken",
           "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
           "timed": true
         }
       ]

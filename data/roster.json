@@ -6,7 +6,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 3032,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -58,9 +58,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 312,
-      "mplus": 2359,
-      "weeklyRuns": 5,
+      "ilvl": 313,
+      "mplus": 2492,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -334,9 +334,9 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 317,
-      "mplus": 2498,
-      "weeklyRuns": 4,
+      "ilvl": 318,
+      "mplus": 2592,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -432,13 +432,15 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 314,
-      "mplus": 2865,
+      "ilvl": 313,
+      "mplus": 2964,
       "weeklyRuns": 10,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Ring 1"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-06T11:25:35.169Z"
+  "updatedAt": "2026-09-06T17:29:00.831Z"
 }
