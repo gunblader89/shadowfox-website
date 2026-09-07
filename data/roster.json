@@ -19,7 +19,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 300,
+      "ilvl": 301,
       "mplus": 2344,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -238,7 +238,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 318,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -401,7 +401,7 @@
       "role": "DPS",
       "ilvl": 316,
       "mplus": 3001,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -448,5 +448,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-07T11:29:13.636Z"
+  "updatedAt": "2026-09-07T17:31:14.355Z"
 }

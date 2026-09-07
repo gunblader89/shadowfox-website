@@ -28,7 +28,7 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 98,
+            "parse": 99,
             "boss": "Sszorak"
           },
           {
@@ -168,5 +168,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-07T11:29:38.915Z"
+  "updatedAt": "2026-09-07T17:31:40.244Z"
 }
