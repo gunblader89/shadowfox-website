@@ -1,6 +1,23 @@
 {
   "reports": [
     {
+      "code": "hKTmj6wYVq3ar7J1",
+      "url": "https://www.warcraftlogs.com/reports/hKTmj6wYVq3ar7J1",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1788803891746,
+      "endTime": 1788813087503,
+      "duration": "2h 33m",
+      "difficulty": "Heroisch",
+      "kills": 0,
+      "wipes": 29,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
       "code": "LW2KAtVdR981zcfq",
       "url": "https://www.warcraftlogs.com/reports/LW2KAtVdR981zcfq",
       "title": "The Venomous Abyss",
@@ -23,38 +40,8 @@
         "Ula'tek"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 99,
-            "boss": "Sszorak"
-          },
-          {
-            "name": "Askái",
-            "class": "DemonHunter",
-            "spec": "Devourer",
-            "parse": 97,
-            "boss": "Vashnik the Malignant"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Raiox",
-            "class": "Shaman",
-            "spec": "Restoration",
-            "parse": 95,
-            "boss": "Ula'tek"
-          },
-          {
-            "name": "Thorelion",
-            "class": "Paladin",
-            "spec": "Holy",
-            "parse": 64,
-            "boss": "Vashnik the Malignant"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -149,16 +136,16 @@
       }
     },
     {
-      "code": "KbyxpZWhNFnr2wAM",
-      "url": "https://www.warcraftlogs.com/reports/KbyxpZWhNFnr2wAM",
-      "title": "The Venomous Abyss",
+      "code": "gDHaGdxhM7Yvjq4Z",
+      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1787250214064,
-      "endTime": 1787257925349,
-      "duration": "2h 8m",
+      "startTime": 1787248825521,
+      "endTime": 1787257926826,
+      "duration": "2h 31m",
       "difficulty": "Normal",
       "kills": 1,
-      "wipes": 15,
+      "wipes": 19,
       "killedBosses": [
         "The Twin Fangs"
       ],
@@ -168,5 +155,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-07T17:31:40.244Z"
+  "updatedAt": "2026-09-07T23:44:13.440Z"
 }

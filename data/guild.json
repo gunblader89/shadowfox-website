@@ -71,7 +71,7 @@
     },
     "the-tidebound-grotto": {
       "normal": {
-        "world": 7090,
+        "world": 7091,
         "region": 2819,
         "realm": 91
       },
@@ -93,9 +93,9 @@
         "realm": 93
       },
       "heroic": {
-        "world": 8858,
-        "region": 3492,
-        "realm": 122
+        "world": 7655,
+        "region": 3144,
+        "realm": 119
       },
       "mythic": {
         "world": 0,
@@ -104,9 +104,9 @@
       }
     }
   },
-  "memberCount": 141,
+  "memberCount": 142,
   "classCount": {
-    "undefined": 141
+    "undefined": 142
   },
   "members": [
     {
@@ -123,6 +123,9 @@
     },
     {
       "rank": 6
+    },
+    {
+      "rank": 99
     },
     {
       "rank": 3
@@ -533,5 +536,5 @@
       "rank": 6
     }
   ],
-  "updatedAt": "2026-09-07T17:30:37.032Z"
+  "updatedAt": "2026-09-07T23:43:03.672Z"
 }

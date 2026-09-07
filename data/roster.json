@@ -74,10 +74,7 @@
       "ilvl": 307,
       "mplus": 2463,
       "weeklyRuns": 4,
-      "missingEnchants": [
-        "Brust",
-        "Beine"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
     },
@@ -115,10 +112,9 @@
       "role": "DPS",
       "ilvl": 312,
       "mplus": 2534,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [
-        "Füße",
-        "Waffe"
+        "Füße"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/65/179823169-avatar.jpg?alt=/wow/static/images/2d/avatar/70-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Feire"
@@ -155,13 +151,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 302,
+      "ilvl": 308,
       "mplus": 2308,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Beine",
-        "Füße"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -197,7 +190,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 303,
+      "ilvl": 305,
       "mplus": 991,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -238,7 +231,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -299,9 +292,7 @@
       "ilvl": 317,
       "mplus": 3129,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -339,8 +330,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 318,
-      "mplus": 2615,
-      "weeklyRuns": 6,
+      "mplus": 2662,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -399,9 +390,9 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 3001,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -412,9 +403,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 298,
-      "mplus": 731,
-      "weeklyRuns": 4,
+      "ilvl": 299,
+      "mplus": 1084,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -441,12 +432,10 @@
       "ilvl": 314,
       "mplus": 2964,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Ring 1"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-07T17:31:14.355Z"
+  "updatedAt": "2026-09-07T23:43:37.031Z"
 }

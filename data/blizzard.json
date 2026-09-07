@@ -1002,7 +1002,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-07T17:31:15.888Z",
+  "updatedAt": "2026-09-07T23:43:38.490Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1057,7 +1057,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 7,
+      "runsThisWeek": 9,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1075,7 +1075,22 @@
           "timed": true
         },
         {
+          "dungeon": "Nalorakks Bau",
+          "level": 15,
+          "timed": false
+        },
+        {
           "dungeon": "Der Tempel von Sethraliss",
+          "level": 14,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 14,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
           "level": 14,
           "timed": true
         },
@@ -1087,11 +1102,6 @@
         {
           "dungeon": "Rubinlebensbecken",
           "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 14,
           "timed": true
         }
       ]
