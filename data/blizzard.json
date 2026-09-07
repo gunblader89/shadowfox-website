@@ -92,6 +92,13 @@
       "classId": 11
     },
     {
+      "name": "Gatil",
+      "realm": "blackrock",
+      "rank": 4,
+      "level": 90,
+      "classId": 11
+    },
+    {
       "name": "Amhairghin",
       "realm": "thrall",
       "rank": 3,
@@ -993,16 +1000,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Gatil",
-      "realm": "blackrock",
-      "rank": 4,
-      "level": 90,
-      "classId": 11
     }
   ],
-  "updatedAt": "2026-09-07T05:28:23.658Z",
+  "updatedAt": "2026-09-07T11:29:15.158Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

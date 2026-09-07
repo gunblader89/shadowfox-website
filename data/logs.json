@@ -28,7 +28,7 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 99,
+            "parse": 98,
             "boss": "Sszorak"
           },
           {
@@ -51,7 +51,7 @@
             "name": "Thorelion",
             "class": "Paladin",
             "spec": "Holy",
-            "parse": 65,
+            "parse": 64,
             "boss": "Vashnik the Malignant"
           }
         ]
@@ -168,5 +168,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-07T05:28:47.881Z"
+  "updatedAt": "2026-09-07T11:29:38.915Z"
 }

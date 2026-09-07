@@ -144,7 +144,7 @@
       "role": "HEALING",
       "ilvl": 320,
       "mplus": 2705,
-      "weeklyRuns": 8,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -448,5 +448,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-07T05:28:22.262Z"
+  "updatedAt": "2026-09-07T11:29:13.636Z"
 }
