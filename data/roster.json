@@ -98,8 +98,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 320,
-      "mplus": 3067,
-      "weeklyRuns": 8,
+      "mplus": 3081,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -262,8 +262,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 315,
-      "mplus": 2920,
-      "weeklyRuns": 8,
+      "mplus": 2989,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Füße"
       ],
@@ -290,7 +290,7 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 317,
-      "mplus": 3129,
+      "mplus": 3143,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -429,13 +429,13 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 314,
-      "mplus": 2964,
+      "ilvl": 313,
+      "mplus": 2991,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-07T23:43:37.031Z"
+  "updatedAt": "2026-09-08T05:28:32.821Z"
 }

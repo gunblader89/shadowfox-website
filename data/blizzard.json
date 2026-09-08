@@ -1002,7 +1002,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-07T23:43:38.490Z",
+  "updatedAt": "2026-09-08T05:28:34.359Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1193,8 +1193,13 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 6,
       "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 8,
+          "timed": false
+        },
         {
           "dungeon": "Das blendende Tal",
           "level": 2,
@@ -1213,6 +1218,11 @@
         {
           "dungeon": "Rubinlebensbecken",
           "level": 4,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 7,
           "timed": true
         }
       ]
