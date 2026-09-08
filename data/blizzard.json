@@ -974,13 +974,29 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-08T17:32:39.167Z",
+  "updatedAt": "2026-09-08T23:45:20.333Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Thessaly",
@@ -991,7 +1007,7 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 7,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1004,7 +1020,17 @@
           "timed": true
         },
         {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": true
+        },
+        {
           "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
           "level": 10,
           "timed": true
         },
@@ -1029,7 +1055,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 9,
+      "runsThisWeek": 11,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1040,6 +1066,11 @@
           "dungeon": "Das blendende Tal",
           "level": 13,
           "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 14,
+          "timed": false
         },
         {
           "dungeon": "Arena der Leerennarbe",
@@ -1053,6 +1084,11 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
+          "level": 14,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
           "level": 14,
           "timed": true
         },
@@ -1113,8 +1149,19 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Iojaru",

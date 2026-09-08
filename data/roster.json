@@ -7,7 +7,7 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 3032,
+      "mplus": 3041,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
@@ -19,9 +19,9 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 301,
-      "mplus": 2371,
-      "weeklyRuns": 1,
+      "ilvl": 302,
+      "mplus": 2493,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -58,9 +58,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 313,
-      "mplus": 2551,
-      "weeklyRuns": 7,
+      "ilvl": 316,
+      "mplus": 2671,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -98,7 +98,7 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 320,
-      "mplus": 3081,
+      "mplus": 3107,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
@@ -138,8 +138,8 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 320,
-      "mplus": 2712,
+      "ilvl": 319,
+      "mplus": 2723,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -152,8 +152,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 308,
-      "mplus": 2308,
-      "weeklyRuns": 0,
+      "mplus": 2434,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
@@ -262,7 +262,7 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 315,
-      "mplus": 2989,
+      "mplus": 3014,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Füße"
@@ -290,7 +290,7 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 317,
-      "mplus": 3143,
+      "mplus": 3154,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -338,8 +338,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 318,
-      "mplus": 2662,
-      "weeklyRuns": 8,
+      "mplus": 2702,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -411,14 +411,14 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 299,
-      "mplus": 1084,
-      "weeklyRuns": 6,
+      "ilvl": 300,
+      "mplus": 1583,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Brust",
         "Beine",
         "Füße",
-        "Ring 1",
+        "Ring 2",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -445,5 +445,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-08T17:32:37.576Z"
+  "updatedAt": "2026-09-08T23:45:18.795Z"
 }
