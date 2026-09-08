@@ -84,9 +84,9 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 313,
-      "mplus": 2644,
-      "weeklyRuns": 2,
+      "ilvl": 315,
+      "mplus": 2649,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -125,7 +125,7 @@
       "class": "Druid",
       "spec": "Guardian",
       "role": "TANK",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2570,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -139,8 +139,8 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 320,
-      "mplus": 2705,
-      "weeklyRuns": 9,
+      "mplus": 2712,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -318,10 +318,18 @@
     {
       "name": "Holydivér",
       "realm": "aegwynn",
-      "ilvl": null,
+      "class": "Paladin",
+      "spec": "Holy",
+      "role": "HEALING",
+      "ilvl": 279,
       "mplus": 0,
       "weeklyRuns": 0,
-      "stale": true
+      "missingEnchants": [
+        "Waffe",
+        "Nebenhand"
+      ],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/121/183185273-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/aegwynn/Holydivér"
     },
     {
       "name": "Kitebrew",
@@ -373,7 +381,7 @@
       "name": "Toshichaos",
       "realm": "taerar",
       "class": "Warlock",
-      "spec": "Demonology",
+      "spec": "Affliction",
       "role": "DPS",
       "ilvl": 318,
       "mplus": 3355,
@@ -437,5 +445,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-08T05:28:32.821Z"
+  "updatedAt": "2026-09-08T11:28:06.223Z"
 }
