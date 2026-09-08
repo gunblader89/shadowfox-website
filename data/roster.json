@@ -20,10 +20,10 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 301,
-      "mplus": 2344,
-      "weeklyRuns": 0,
+      "mplus": 2371,
+      "weeklyRuns": 1,
       "missingEnchants": [],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/86-0.jpg",
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
     {
@@ -123,11 +123,11 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Guardian",
-      "role": "TANK",
-      "ilvl": 314,
-      "mplus": 2570,
-      "weeklyRuns": 4,
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 313,
+      "mplus": 2613,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -231,7 +231,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 318,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -339,7 +339,7 @@
       "role": "TANK",
       "ilvl": 318,
       "mplus": 2662,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -384,7 +384,7 @@
       "spec": "Affliction",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 3355,
+      "mplus": 3370,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -437,7 +437,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2991,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -445,5 +445,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-08T11:28:06.223Z"
+  "updatedAt": "2026-09-08T17:32:37.576Z"
 }

@@ -134,13 +134,6 @@
       "classId": 9
     },
     {
-      "name": "Jirakila",
-      "realm": "blackhand",
-      "rank": 5,
-      "level": 90,
-      "classId": 12
-    },
-    {
       "name": "Blackbeardt",
       "realm": "blackhand",
       "rank": 2,
@@ -251,13 +244,6 @@
       "rank": 5,
       "level": 90,
       "classId": 1
-    },
-    {
-      "name": "Thorelion",
-      "realm": "antonidas",
-      "rank": 5,
-      "level": 90,
-      "classId": 2
     },
     {
       "name": "Jirawl",
@@ -393,13 +379,6 @@
       "classId": 2
     },
     {
-      "name": "Fruchtzwerg",
-      "realm": "echsenkessel",
-      "rank": 5,
-      "level": 90,
-      "classId": 7
-    },
-    {
       "name": "Nez",
       "realm": "kelthuzad",
       "rank": 6,
@@ -458,7 +437,7 @@
     {
       "name": "Vay",
       "realm": "frostwolf",
-      "rank": 3,
+      "rank": 5,
       "level": 90,
       "classId": 6
     },
@@ -566,13 +545,6 @@
       "rank": 2,
       "level": 90,
       "classId": 12
-    },
-    {
-      "name": "Lureth",
-      "realm": "antonidas",
-      "rank": 3,
-      "level": 90,
-      "classId": 8
     },
     {
       "name": "Bennimaru",
@@ -1002,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-08T11:28:07.711Z",
+  "updatedAt": "2026-09-08T17:32:39.167Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
