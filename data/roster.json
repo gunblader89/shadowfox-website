@@ -84,9 +84,9 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 315,
-      "mplus": 2649,
-      "weeklyRuns": 0,
+      "ilvl": 317,
+      "mplus": 2650,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -98,8 +98,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 320,
-      "mplus": 3107,
-      "weeklyRuns": 0,
+      "mplus": 3135,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -231,9 +231,9 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 318,
-      "mplus": 2875,
-      "weeklyRuns": 0,
+      "ilvl": 319,
+      "mplus": 2898,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -261,9 +261,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 315,
-      "mplus": 3014,
-      "weeklyRuns": 0,
+      "ilvl": 316,
+      "mplus": 3081,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Füße"
       ],
@@ -291,7 +291,7 @@
       "role": "TANK",
       "ilvl": 318,
       "mplus": 3167,
-      "weeklyRuns": 1,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -339,9 +339,9 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 317,
+      "ilvl": 319,
       "mplus": 2702,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -383,11 +383,11 @@
       "name": "Toshichaos",
       "realm": "taerar",
       "class": "Warlock",
-      "spec": "Affliction",
+      "spec": "Demonology",
       "role": "DPS",
       "ilvl": 321,
-      "mplus": 3398,
-      "weeklyRuns": 0,
+      "mplus": 3410,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -413,15 +413,14 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 301,
-      "mplus": 1953,
-      "weeklyRuns": 3,
+      "ilvl": 302,
+      "mplus": 2082,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Brust",
         "Beine",
         "Füße",
         "Ring 2",
-        "Waffe",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -440,13 +439,13 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 314,
-      "mplus": 2991,
-      "weeklyRuns": 0,
+      "ilvl": 313,
+      "mplus": 3015,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-09T19:27:42.739Z"
+  "updatedAt": "2026-09-09T23:44:43.158Z"
 }

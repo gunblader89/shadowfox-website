@@ -134,26 +134,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "gDHaGdxhM7Yvjq4Z",
-      "url": "https://www.warcraftlogs.com/reports/gDHaGdxhM7Yvjq4Z",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787248825521,
-      "endTime": 1787257926826,
-      "duration": "2h 31m",
-      "difficulty": "Normal",
-      "kills": 1,
-      "wipes": 19,
-      "killedBosses": [
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-09T19:28:07.752Z"
+  "updatedAt": "2026-09-09T23:45:07.976Z"
 }

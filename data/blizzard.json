@@ -960,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-09T19:27:44.344Z",
+  "updatedAt": "2026-09-09T23:44:44.649Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -989,8 +989,14 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 14,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
@@ -1048,10 +1054,20 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Die Königsruh",
+          "level": 8,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 6,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
           "level": 8,
           "timed": true
         },
