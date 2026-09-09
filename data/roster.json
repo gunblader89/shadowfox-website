@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 319,
+      "ilvl": 321,
       "mplus": 2723,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -337,7 +337,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 2702,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -383,7 +383,7 @@
       "class": "Warlock",
       "spec": "Affliction",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 320,
       "mplus": 3387,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -445,5 +445,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-09T05:28:40.805Z"
+  "updatedAt": "2026-09-09T11:28:53.515Z"
 }
