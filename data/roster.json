@@ -19,7 +19,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 302,
+      "ilvl": 301,
       "mplus": 2493,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -138,9 +138,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 2723,
-      "weeklyRuns": 0,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -383,8 +383,8 @@
       "class": "Warlock",
       "spec": "Affliction",
       "role": "DPS",
-      "ilvl": 320,
-      "mplus": 3387,
+      "ilvl": 321,
+      "mplus": 3398,
       "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
@@ -411,14 +411,15 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 300,
-      "mplus": 1784,
-      "weeklyRuns": 0,
+      "ilvl": 301,
+      "mplus": 1953,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Brust",
         "Beine",
         "Füße",
         "Ring 2",
+        "Waffe",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -445,5 +446,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-09T11:28:53.515Z"
+  "updatedAt": "2026-09-09T17:32:34.984Z"
 }

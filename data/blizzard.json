@@ -533,13 +533,6 @@
       "classId": 10
     },
     {
-      "name": "Toshichaos",
-      "realm": "taerar",
-      "rank": 3,
-      "level": 90,
-      "classId": 9
-    },
-    {
       "name": "Merccrixey",
       "realm": "blackhand",
       "rank": 2,
@@ -608,13 +601,6 @@
       "rank": 3,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Frokipala",
-      "realm": "blackrock",
-      "rank": 4,
-      "level": 90,
-      "classId": 2
     },
     {
       "name": "Illaoi",
@@ -974,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-09T11:28:54.959Z",
+  "updatedAt": "2026-09-09T17:32:36.534Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1051,8 +1037,24 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 8,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 9,
+          "timed": false
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 8,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Tiskarian",
