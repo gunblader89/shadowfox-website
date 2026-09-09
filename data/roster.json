@@ -110,9 +110,9 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 312,
-      "mplus": 2534,
-      "weeklyRuns": 0,
+      "ilvl": 313,
+      "mplus": 2645,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Füße"
       ],
@@ -289,10 +289,12 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 317,
-      "mplus": 3154,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
+      "ilvl": 318,
+      "mplus": 3167,
+      "weeklyRuns": 1,
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -446,5 +448,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-09T17:32:34.984Z"
+  "updatedAt": "2026-09-09T19:27:42.739Z"
 }

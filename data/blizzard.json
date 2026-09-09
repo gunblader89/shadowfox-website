@@ -960,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-09T17:32:36.534Z",
+  "updatedAt": "2026-09-09T19:27:44.344Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -995,8 +995,19 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Hunterchaos",
