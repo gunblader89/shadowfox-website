@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 3041,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -71,8 +71,8 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 307,
-      "mplus": 2463,
+      "ilvl": 308,
+      "mplus": 2530,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
@@ -140,7 +140,7 @@
       "role": "HEALING",
       "ilvl": 322,
       "mplus": 2723,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -304,8 +304,8 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 303,
-      "mplus": 2476,
+      "ilvl": 305,
+      "mplus": 2549,
       "weeklyRuns": 0,
       "missingEnchants": [
         "Brust",
@@ -413,7 +413,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 302,
+      "ilvl": 301,
       "mplus": 2082,
       "weeklyRuns": 5,
       "missingEnchants": [
@@ -439,7 +439,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 3015,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -447,5 +447,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-09T23:44:43.158Z"
+  "updatedAt": "2026-09-10T05:28:05.911Z"
 }
