@@ -413,9 +413,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 301,
-      "mplus": 2082,
-      "weeklyRuns": 5,
+      "ilvl": 302,
+      "mplus": 2131,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -447,5 +447,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-10T05:28:05.911Z"
+  "updatedAt": "2026-09-10T11:29:00.717Z"
 }

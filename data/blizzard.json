@@ -372,13 +372,6 @@
       "classId": 11
     },
     {
-      "name": "Corvispala",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 2
-    },
-    {
       "name": "Nez",
       "realm": "kelthuzad",
       "rank": 6,
@@ -398,13 +391,6 @@
       "rank": 1,
       "level": 90,
       "classId": 1
-    },
-    {
-      "name": "Corvispriest",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 5
     },
     {
       "name": "Charmzzdh",
@@ -636,13 +622,6 @@
       "rank": 3,
       "level": 90,
       "classId": 11
-    },
-    {
-      "name": "Corvisstab",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 4
     },
     {
       "name": "Doktorpöbel",
@@ -960,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-10T05:28:07.309Z",
+  "updatedAt": "2026-09-10T11:29:02.156Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
