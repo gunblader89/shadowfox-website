@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 317,
-      "mplus": 3052,
-      "weeklyRuns": 2,
+      "ilvl": 318,
+      "mplus": 3067,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -19,7 +19,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 306,
+      "ilvl": 305,
       "mplus": 2493,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -60,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 316,
       "mplus": 2671,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -99,7 +99,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 3135,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -153,7 +153,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 308,
+      "ilvl": 309,
       "mplus": 2434,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -192,7 +192,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 305,
+      "ilvl": 306,
       "mplus": 991,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -389,7 +389,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 3410,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -449,5 +449,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-10T17:31:12.499Z"
+  "updatedAt": "2026-09-10T18:02:51.809Z"
 }

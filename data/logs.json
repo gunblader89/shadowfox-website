@@ -1,6 +1,55 @@
 {
   "reports": [
     {
+      "code": "PD6nGTjf8qyRpbth",
+      "url": "https://www.warcraftlogs.com/reports/PD6nGTjf8qyRpbth",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1789062536057,
+      "endTime": 1789062911350,
+      "duration": "6m",
+      "difficulty": "Heroisch",
+      "kills": 1,
+      "wipes": 0,
+      "killedBosses": [
+        "Nymrissa Wavecaller"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Askái",
+            "class": "DemonHunter",
+            "spec": "Devourer",
+            "parse": 71,
+            "boss": "Nymrissa Wavecaller"
+          },
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 63,
+            "boss": "Nymrissa Wavecaller"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 93,
+            "boss": "Nymrissa Wavecaller"
+          },
+          {
+            "name": "Mönkitönk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 71,
+            "boss": "Nymrissa Wavecaller"
+          }
+        ]
+      }
+    },
+    {
       "code": "hKTmj6wYVq3ar7J1",
       "url": "https://www.warcraftlogs.com/reports/hKTmj6wYVq3ar7J1",
       "title": "The Venomous Abyss",
@@ -136,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-10T17:31:36.875Z"
+  "updatedAt": "2026-09-10T18:03:11.818Z"
 }
