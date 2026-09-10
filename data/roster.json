@@ -7,8 +7,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 3067,
-      "weeklyRuns": 3,
+      "mplus": 3076,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -19,9 +19,9 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 305,
-      "mplus": 2493,
-      "weeklyRuns": 1,
+      "ilvl": 306,
+      "mplus": 2545,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -33,8 +33,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 2586,
-      "weeklyRuns": 1,
+      "mplus": 2632,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Ring 1"
       ],
@@ -60,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 2671,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -74,8 +74,8 @@
       "spec": "Mistweaver",
       "role": "HEALING",
       "ilvl": 308,
-      "mplus": 2530,
-      "weeklyRuns": 0,
+      "mplus": 2580,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -112,7 +112,7 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 315,
       "mplus": 2646,
       "weeklyRuns": 4,
       "missingEnchants": [
@@ -140,7 +140,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2723,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -192,10 +192,12 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 306,
+      "ilvl": 309,
       "mplus": 991,
       "weeklyRuns": 0,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Füße"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
     },
@@ -263,9 +265,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 3081,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Füße"
       ],
@@ -291,9 +293,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 318,
+      "ilvl": 320,
       "mplus": 3167,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -341,7 +343,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 319,
+      "ilvl": 320,
       "mplus": 2702,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -389,7 +391,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 3410,
-      "weeklyRuns": 5,
+      "weeklyRuns": 7,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -404,7 +406,7 @@
       "role": "DPS",
       "ilvl": 317,
       "mplus": 3001,
-      "weeklyRuns": 1,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -415,9 +417,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 301,
-      "mplus": 2177,
-      "weeklyRuns": 7,
+      "ilvl": 304,
+      "mplus": 2356,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -449,5 +451,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-10T18:02:51.809Z"
+  "updatedAt": "2026-09-10T23:44:23.357Z"
 }

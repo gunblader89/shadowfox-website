@@ -939,13 +939,24 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-10T18:02:53.330Z",
+  "updatedAt": "2026-09-10T23:44:24.752Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 14,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Thessaly",
@@ -1054,7 +1065,7 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 6,
+      "runsThisWeek": 8,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1062,8 +1073,13 @@
           "timed": true
         },
         {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
+        {
           "dungeon": "Die Königsruh",
-          "level": 8,
+          "level": 11,
           "timed": true
         },
         {
@@ -1083,7 +1099,12 @@
         },
         {
           "dungeon": "Rubinlebensbecken",
-          "level": 8,
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
           "timed": true
         }
       ]

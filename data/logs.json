@@ -1,18 +1,20 @@
 {
   "reports": [
     {
-      "code": "PD6nGTjf8qyRpbth",
-      "url": "https://www.warcraftlogs.com/reports/PD6nGTjf8qyRpbth",
-      "title": "Raid",
+      "code": "YxrRbckGPvVTgJaH",
+      "url": "https://www.warcraftlogs.com/reports/YxrRbckGPvVTgJaH",
+      "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1789062536057,
-      "endTime": 1789062911350,
-      "duration": "6m",
+      "startTime": 1789067640029,
+      "endTime": 1789072569583,
+      "duration": "1h 22m",
       "difficulty": "Heroisch",
-      "kills": 1,
-      "wipes": 0,
+      "kills": 3,
+      "wipes": 7,
       "killedBosses": [
-        "Nymrissa Wavecaller"
+        "Vashnik the Malignant",
+        "The Lost Explorers",
+        "Sszorak"
       ],
       "vips": {
         "dps": [
@@ -20,31 +22,31 @@
             "name": "Askái",
             "class": "DemonHunter",
             "spec": "Devourer",
-            "parse": 71,
-            "boss": "Nymrissa Wavecaller"
+            "parse": 98,
+            "boss": "Vashnik the Malignant"
           },
           {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 63,
-            "boss": "Nymrissa Wavecaller"
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
+            "parse": 87,
+            "boss": "Vashnik the Malignant"
           }
         ],
         "hps": [
           {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 88,
+            "boss": "The Lost Explorers"
+          },
+          {
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 93,
-            "boss": "Nymrissa Wavecaller"
-          },
-          {
-            "name": "Mönkitönk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 71,
-            "boss": "Nymrissa Wavecaller"
+            "parse": 51,
+            "boss": "Sszorak"
           }
         ]
       }
@@ -164,12 +166,12 @@
       }
     },
     {
-      "code": "QJfZMDVC1kBzgxL7",
-      "url": "https://www.warcraftlogs.com/reports/QJfZMDVC1kBzgxL7",
-      "title": "The Venomous Abyss",
+      "code": "kgtHzV6TGX7hMbCd",
+      "url": "https://www.warcraftlogs.com/reports/kgtHzV6TGX7hMbCd",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1787594211527,
-      "endTime": 1787601865234,
+      "startTime": 1787594213646,
+      "endTime": 1787601867371,
       "duration": "2h 7m",
       "difficulty": "Normal",
       "kills": 3,
@@ -185,5 +187,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-10T18:03:11.818Z"
+  "updatedAt": "2026-09-10T23:44:46.932Z"
 }
