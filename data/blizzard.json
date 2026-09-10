@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-10T11:29:02.156Z",
+  "updatedAt": "2026-09-10T17:31:13.822Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -956,8 +956,14 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 14,
+          "timed": false
+        }
+      ]
     },
     {
       "name": "Raiox",
@@ -968,8 +974,18 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 3,
       "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 14,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 14,
+          "timed": false
+        },
         {
           "dungeon": "Rubinlebensbecken",
           "level": 14,
@@ -980,11 +996,16 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
           "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
           "timed": true
         },
         {
@@ -1033,8 +1054,13 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 6,
       "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 6,
+          "timed": true
+        },
         {
           "dungeon": "Die Königsruh",
           "level": 8,
@@ -1047,7 +1073,7 @@
         },
         {
           "dungeon": "Nalorakks Bau",
-          "level": 8,
+          "level": 10,
           "timed": true
         },
         {
