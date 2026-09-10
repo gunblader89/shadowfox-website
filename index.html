@@ -44,14 +44,14 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
 /* Header & Navigation */
 .top-wrap{position:sticky;top:10px;z-index:60;max-width:1160px;margin:10px auto 0;padding:0 20px}
 .top{background:rgba(15,17,22,.94);backdrop-filter:blur(20px) saturate(160%);border:1px solid var(--line2);border-radius:14px;box-shadow:0 12px 34px rgba(0,0,0,.55)}
-.top-in{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:8px 12px}
+.top-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;min-height:56px;padding:8px 12px}
 .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
 .brand .mark{width:36px;height:36px;flex-shrink:0;border-radius:8px;object-fit:contain}
 .brand b{display:block;font-size:15.5px;font-weight:800;letter-spacing:-.4px;line-height:1.1}
 .brand b span.brand-gold{color:var(--amber)}
 .brand span.brand-sub{display:block;font-size:10px;color:var(--tx3);letter-spacing:.6px;font-weight:600;margin-top:1px}
 
-nav{display:flex;gap:3px;align-items:center;flex-shrink:1;min-width:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+nav{display:flex;gap:3px;align-items:center;order:3;width:100%;justify-content:flex-start;padding-top:8px;border-top:1px solid var(--line);overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
 nav::-webkit-scrollbar{display:none}
 nav a{padding:6px 10px;border-radius:8px;font-size:13px;font-weight:600;color:var(--tx2);white-space:nowrap;transition:.14s}
 nav a:hover{color:var(--tx);background:var(--panel2)}
@@ -356,9 +356,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--tx3);font-siz
 }
 @media(max-width:960px){
   .start-grid,.g4,.g3,.tiles,.roles-grid{grid-template-columns:repeat(2,1fr)}
-  .top-in{min-height:auto;flex-wrap:wrap;padding:10px 12px;gap:8px}
-  nav{order:3;width:100%;justify-content:flex-start;overflow-x:auto;padding-top:6px;border-top:1px solid var(--line);scrollbar-width:none;-ms-overflow-style:none}
-  nav::-webkit-scrollbar{display:none}
+  .top-in{min-height:auto;padding:10px 12px;gap:8px}
   .hero h1{font-size:42px}.hero-in{padding:28px;gap:24px}.hero-mark{width:96px;height:96px}
   .wrap,.top-wrap,.notice-bar{padding:0 14px}
   .bbody{padding:14px 16px 20px}
