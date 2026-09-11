@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-11T11:27:33.734Z",
+  "updatedAt": "2026-09-11T17:33:54.648Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -967,8 +967,13 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
         {
           "dungeon": "Nalorakks Bau",
           "level": 14,
