@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 3076,
-      "weeklyRuns": 7,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -19,9 +19,9 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 306,
-      "mplus": 2545,
-      "weeklyRuns": 2,
+      "ilvl": 307,
+      "mplus": 2549,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -32,12 +32,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 318,
-      "mplus": 2702,
-      "weeklyRuns": 3,
-      "missingEnchants": [
-        "Ring 1"
-      ],
+      "ilvl": 321,
+      "mplus": 2749,
+      "weeklyRuns": 4,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
@@ -60,9 +58,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 317,
-      "mplus": 2671,
-      "weeklyRuns": 1,
+      "ilvl": 318,
+      "mplus": 2675,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -116,7 +114,7 @@
       "role": "DPS",
       "ilvl": 315,
       "mplus": 2646,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Füße"
       ],
@@ -156,8 +154,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 2434,
-      "weeklyRuns": 0,
+      "mplus": 2465,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
@@ -271,7 +269,7 @@
       "role": "DPS",
       "ilvl": 316,
       "mplus": 3086,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Füße"
       ],
@@ -312,9 +310,9 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 305,
-      "mplus": 2549,
-      "weeklyRuns": 0,
+      "ilvl": 306,
+      "mplus": 2551,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Brust",
         "Beine",
@@ -395,7 +393,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 3426,
-      "weeklyRuns": 8,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -455,5 +453,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-11T17:33:53.098Z"
+  "updatedAt": "2026-09-11T23:43:43.621Z"
 }
