@@ -6,9 +6,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 3076,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 308,
+      "ilvl": 313,
       "mplus": 2580,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -266,8 +266,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 317,
-      "mplus": 3081,
-      "weeklyRuns": 3,
+      "mplus": 3086,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Füße"
       ],
@@ -295,7 +295,7 @@
       "role": "TANK",
       "ilvl": 320,
       "mplus": 3167,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -417,8 +417,8 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 304,
-      "mplus": 2356,
+      "ilvl": 294,
+      "mplus": 2435,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Brust",
@@ -451,5 +451,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-10T23:44:23.357Z"
+  "updatedAt": "2026-09-11T05:27:51.704Z"
 }
