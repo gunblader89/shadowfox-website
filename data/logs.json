@@ -29,7 +29,7 @@
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 87,
+            "parse": 89,
             "boss": "Vashnik the Malignant"
           }
         ],
@@ -38,7 +38,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 88,
+            "parse": 91,
             "boss": "The Lost Explorers"
           },
           {
@@ -164,28 +164,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "kgtHzV6TGX7hMbCd",
-      "url": "https://www.warcraftlogs.com/reports/kgtHzV6TGX7hMbCd",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787594213646,
-      "endTime": 1787601867371,
-      "duration": "2h 7m",
-      "difficulty": "Normal",
-      "kills": 3,
-      "wipes": 10,
-      "killedBosses": [
-        "The Coiled Altar",
-        "Ula'tek",
-        "Nymrissa Wavecaller"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-11T05:28:16.990Z"
+  "updatedAt": "2026-09-11T11:27:56.508Z"
 }

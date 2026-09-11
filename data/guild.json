@@ -93,8 +93,8 @@
         "realm": 93
       },
       "heroic": {
-        "world": 7785,
-        "region": 3121,
+        "world": 7833,
+        "region": 3124,
         "realm": 109
       },
       "mythic": {
@@ -104,9 +104,9 @@
       }
     }
   },
-  "memberCount": 136,
+  "memberCount": 133,
   "classCount": {
-    "undefined": 136
+    "undefined": 133
   },
   "members": [
     {
@@ -125,7 +125,7 @@
       "rank": 6
     },
     {
-      "rank": 99
+      "rank": 4
     },
     {
       "rank": 3
@@ -239,9 +239,6 @@
       "rank": 0
     },
     {
-      "rank": 5
-    },
-    {
       "rank": 3
     },
     {
@@ -300,9 +297,6 @@
     },
     {
       "rank": 3
-    },
-    {
-      "rank": 5
     },
     {
       "rank": 3
@@ -347,16 +341,13 @@
       "rank": 5
     },
     {
-      "rank": 5
-    },
-    {
-      "rank": 5
-    },
-    {
-      "rank": 5
-    },
-    {
       "rank": 3
+    },
+    {
+      "rank": 5
+    },
+    {
+      "rank": 5
     },
     {
       "rank": 5
@@ -369,12 +360,6 @@
     },
     {
       "rank": 5
-    },
-    {
-      "rank": 3
-    },
-    {
-      "rank": 2
     },
     {
       "rank": 3
@@ -383,16 +368,22 @@
       "rank": 2
     },
     {
-      "rank": 6
-    },
-    {
-      "rank": 6
-    },
-    {
-      "rank": 6
-    },
-    {
       "rank": 3
+    },
+    {
+      "rank": 2
+    },
+    {
+      "rank": 6
+    },
+    {
+      "rank": 6
+    },
+    {
+      "rank": 6
+    },
+    {
+      "rank": 5
     },
     {
       "rank": 2
@@ -518,5 +509,5 @@
       "rank": 6
     }
   ],
-  "updatedAt": "2026-09-11T05:27:12.685Z"
+  "updatedAt": "2026-09-11T11:26:54.372Z"
 }

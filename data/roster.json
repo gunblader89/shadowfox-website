@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2580,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -87,8 +87,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 317,
-      "mplus": 2650,
-      "weeklyRuns": 1,
+      "mplus": 2680,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -99,10 +99,12 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 322,
-      "mplus": 3135,
-      "weeklyRuns": 2,
-      "missingEnchants": [],
+      "ilvl": 321,
+      "mplus": 3151,
+      "weeklyRuns": 3,
+      "missingEnchants": [
+        "Brust"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
     },
@@ -140,7 +142,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 323,
+      "ilvl": 322,
       "mplus": 2723,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -182,7 +184,9 @@
       "ilvl": 307,
       "mplus": 2601,
       "weeklyRuns": 0,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Brust"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
     },
@@ -218,13 +222,13 @@
       "name": "Doktorpöbel",
       "realm": "dalvengyr",
       "class": "Priest",
-      "spec": "Discipline",
-      "role": "HEALING",
-      "ilvl": 314,
+      "spec": "Shadow",
+      "role": "DPS",
+      "ilvl": 292,
       "mplus": 2780,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Nebenhand"
+        "Beine"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/dalvengyr/Doktorpöbel"
@@ -265,7 +269,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 316,
       "mplus": 3086,
       "weeklyRuns": 4,
       "missingEnchants": [
@@ -343,7 +347,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 2702,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -443,7 +447,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 314,
+      "ilvl": 313,
       "mplus": 3015,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -451,5 +455,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-11T05:27:51.704Z"
+  "updatedAt": "2026-09-11T11:27:32.137Z"
 }
