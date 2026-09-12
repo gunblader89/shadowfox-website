@@ -1,6 +1,19 @@
 {
   "characters": [
     {
+      "name": "Günnfire",
+      "realm": "thrall",
+      "class": "Mage",
+      "spec": "Arcane",
+      "role": "DPS",
+      "ilvl": 314,
+      "mplus": 2553,
+      "weeklyRuns": 3,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
+    },
+    {
       "name": "Mercrixxus",
       "realm": "blackhand",
       "class": "Warrior",
@@ -33,24 +46,11 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 321,
-      "mplus": 2749,
-      "weeklyRuns": 4,
+      "mplus": 2828,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
-    },
-    {
-      "name": "Thessaly",
-      "realm": "blackmoore",
-      "class": "Rogue",
-      "spec": "Subtlety",
-      "role": "DPS",
-      "ilvl": 288,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/189/109002685-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Thessaly"
     },
     {
       "name": "Narrwên",
@@ -112,7 +112,7 @@
       "role": "DPS",
       "ilvl": 316,
       "mplus": 2647,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Füße",
         "Ring 1"
@@ -173,21 +173,6 @@
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
     },
     {
-      "name": "Scârlêtt",
-      "realm": "blackmoore",
-      "class": "Death Knight",
-      "spec": "Unholy",
-      "role": "DPS",
-      "ilvl": 307,
-      "mplus": 2601,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Brust"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/174/168226990-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Scârlêtt"
-    },
-    {
       "name": "Hatto",
       "realm": "aegwynn",
       "class": "Hunter",
@@ -236,29 +221,12 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 320,
       "mplus": 2898,
       "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
-    },
-    {
-      "name": "Fruchtzwerg",
-      "realm": "echsenkessel",
-      "class": "Shaman",
-      "spec": "Elemental",
-      "role": "DPS",
-      "ilvl": 312,
-      "mplus": 2661,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Brust",
-        "Beine",
-        "Füße"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/echsenkessel/140/174712460-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/echsenkessel/Fruchtzwerg"
     },
     {
       "name": "Kiraja",
@@ -276,19 +244,6 @@
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
     },
     {
-      "name": "Günndk",
-      "realm": "thrall",
-      "class": "Death Knight",
-      "spec": "Unholy",
-      "role": "DPS",
-      "ilvl": 302,
-      "mplus": 2132,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/198/178962886-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/thrall/Günndk"
-    },
-    {
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
@@ -302,41 +257,6 @@
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
-    },
-    {
-      "name": "Pepelim",
-      "realm": "thrall",
-      "class": "Death Knight",
-      "spec": "Blood",
-      "role": "TANK",
-      "ilvl": 312,
-      "mplus": 2566,
-      "weeklyRuns": 3,
-      "missingEnchants": [
-        "Brust",
-        "Beine",
-        "Füße",
-        "Ring 1",
-        "Ring 2"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/201/172497353-avatar.jpg?alt=/wow/static/images/2d/avatar/9-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/thrall/Pepelim"
-    },
-    {
-      "name": "Holydivér",
-      "realm": "aegwynn",
-      "class": "Paladin",
-      "spec": "Holy",
-      "role": "HEALING",
-      "ilvl": 279,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Waffe",
-        "Nebenhand"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/121/183185273-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/aegwynn/Holydivér"
     },
     {
       "name": "Kitebrew",
@@ -367,37 +287,6 @@
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/alexstrasza/2/122775042-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/alexstrasza/Xsythia"
-    },
-    {
-      "name": "Corvisstab",
-      "realm": "blackmoore",
-      "class": "Rogue",
-      "spec": "Assassination",
-      "role": "DPS",
-      "ilvl": 290,
-      "mplus": 0,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Beine",
-        "Ring 1"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/90/182661978-avatar.jpg?alt=/wow/static/images/2d/avatar/34-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Corvisstab"
-    },
-    {
-      "name": "Toshichaos",
-      "realm": "taerar",
-      "class": "Warlock",
-      "spec": "Demonology",
-      "role": "DPS",
-      "ilvl": 320,
-      "mplus": 3426,
-      "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/taerar/44/177437996-avatar.jpg?alt=/wow/static/images/2d/avatar/2-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/taerar/Toshichaos"
     },
     {
       "name": "Seitenleiste",
@@ -452,5 +341,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-12T17:32:05.176Z"
+  "updatedAt": "2026-09-12T23:43:20.408Z"
 }

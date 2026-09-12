@@ -1,6 +1,19 @@
 {
   "characters": [
     {
+      "id": 20595960,
+      "name": "Günnfire",
+      "realm": "Thrall",
+      "cls": "Mage",
+      "role": "Ranged",
+      "rank": "Main",
+      "status": "tracking",
+      "blizzardId": "604-178734823",
+      "ilvl": null,
+      "vault": null,
+      "wishlist": null
+    },
+    {
       "id": 4808364,
       "name": "Mercrixxus",
       "realm": "Blackhand",
@@ -35,19 +48,6 @@
       "rank": "Main",
       "status": "tracking",
       "blizzardId": "566-163643876",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 4853408,
-      "name": "Thessaly",
-      "realm": "Blackmoore",
-      "cls": "Rogue",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "580-109002685",
       "ilvl": null,
       "vault": null,
       "wishlist": null
@@ -97,7 +97,7 @@
       "realm": "Blackmoore",
       "cls": "Warrior",
       "role": "Melee",
-      "rank": "Alt",
+      "rank": "Main",
       "status": "tracking",
       "blizzardId": "580-169868528",
       "ilvl": null,
@@ -170,19 +170,6 @@
       "wishlist": null
     },
     {
-      "id": 5108291,
-      "name": "Scârlêtt",
-      "realm": "Blackmoore",
-      "cls": "Death Knight",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "580-168226990",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 18191088,
       "name": "Hatto",
       "realm": "Aegwynn",
@@ -235,19 +222,6 @@
       "wishlist": null
     },
     {
-      "id": 6832470,
-      "name": "Fruchtzwerg",
-      "realm": "Echsenkessel",
-      "cls": "Shaman",
-      "role": "Ranged",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "1612-174712460",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 18191153,
       "name": "Kiraja",
       "realm": "Garrosh",
@@ -261,19 +235,6 @@
       "wishlist": null
     },
     {
-      "id": 20363839,
-      "name": "Günndk",
-      "realm": "Thrall",
-      "cls": "Death Knight",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "604-178962886",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
       "id": 20021060,
       "name": "Shylmagognar",
       "realm": "Thrall",
@@ -282,32 +243,6 @@
       "rank": "Main",
       "status": "tracking",
       "blizzardId": "604-122135415",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 5110230,
-      "name": "Pepelim",
-      "realm": "Thrall",
-      "cls": "Death Knight",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "604-172497353",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 4907941,
-      "name": "Holydivér",
-      "realm": "Aegwynn",
-      "cls": "Paladin",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "577-183185273",
       "ilvl": null,
       "vault": null,
       "wishlist": null
@@ -334,32 +269,6 @@
       "rank": "Main",
       "status": "tracking",
       "blizzardId": "562-122775042",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 4926517,
-      "name": "Corvisstab",
-      "realm": "Blackmoore",
-      "cls": "Rogue",
-      "role": "Melee",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "580-182661978",
-      "ilvl": null,
-      "vault": null,
-      "wishlist": null
-    },
-    {
-      "id": 18191122,
-      "name": "Toshichaos",
-      "realm": "Taerar",
-      "cls": "Warlock",
-      "role": "Ranged",
-      "rank": "Main",
-      "status": "tracking",
-      "blizzardId": "1320-177437996",
       "ilvl": null,
       "vault": null,
       "wishlist": null
@@ -470,30 +379,6 @@
         "selected_percentage": 0
       },
       {
-        "id": 18191122,
-        "name": "Toshichaos",
-        "class": "Warlock",
-        "role": "Ranged",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 4926517,
-        "name": "Corvisstab",
-        "class": "Rogue",
-        "role": "Melee",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
         "id": 5087860,
         "name": "Xsythia",
         "class": "Priest",
@@ -518,45 +403,9 @@
         "selected_percentage": 0
       },
       {
-        "id": 4907941,
-        "name": "Holydivér",
-        "class": "Paladin",
-        "role": "Melee",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 5110230,
-        "name": "Pepelim",
-        "class": "Death Knight",
-        "role": "Melee",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
         "id": 20021060,
         "name": "Shylmagognar",
         "class": "Paladin",
-        "role": "Melee",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 20363839,
-        "name": "Günndk",
-        "class": "Death Knight",
         "role": "Melee",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
@@ -570,18 +419,6 @@
         "name": "Kiraja",
         "class": "Demon Hunter",
         "role": "Tank",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 6832470,
-        "name": "Fruchtzwerg",
-        "class": "Shaman",
-        "role": "Ranged",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
         "attended_percentage": 0,
@@ -630,18 +467,6 @@
         "name": "Hatto",
         "class": "Hunter",
         "role": "Ranged",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 5108291,
-        "name": "Scârlêtt",
-        "class": "Death Knight",
-        "role": "Melee",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
         "attended_percentage": 0,
@@ -710,6 +535,18 @@
         "selected_percentage": 0
       },
       {
+        "id": 5559877,
+        "name": "Oionil",
+        "class": "Warrior",
+        "role": "Melee",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
+      },
+      {
         "id": 5030491,
         "name": "Raiox",
         "class": "Druid",
@@ -738,18 +575,6 @@
         "name": "Narrwên",
         "class": "Warlock",
         "role": "Ranged",
-        "attended_amount_of_raids": null,
-        "total_amount_of_raids": null,
-        "attended_percentage": 0,
-        "selected_amount_of_encounters": null,
-        "total_amount_of_encounters": null,
-        "selected_percentage": 0
-      },
-      {
-        "id": 4853408,
-        "name": "Thessaly",
-        "class": "Rogue",
-        "role": "Melee",
         "attended_amount_of_raids": null,
         "total_amount_of_raids": null,
         "attended_percentage": 0,
@@ -792,8 +617,20 @@
         "selected_amount_of_encounters": null,
         "total_amount_of_encounters": null,
         "selected_percentage": 0
+      },
+      {
+        "id": 20595960,
+        "name": "Günnfire",
+        "class": "Mage",
+        "role": "Ranged",
+        "attended_amount_of_raids": null,
+        "total_amount_of_raids": null,
+        "attended_percentage": 0,
+        "selected_amount_of_encounters": null,
+        "total_amount_of_encounters": null,
+        "selected_percentage": 0
       }
     ]
   },
-  "updatedAt": "2026-09-12T17:29:14.802Z"
+  "updatedAt": "2026-09-12T23:42:50.585Z"
 }

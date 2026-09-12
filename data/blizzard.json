@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-12T17:32:06.679Z",
+  "updatedAt": "2026-09-12T23:43:22.053Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -967,12 +967,6 @@
           "timed": true
         }
       ]
-    },
-    {
-      "name": "Thessaly",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
     },
     {
       "name": "Narrwên",
@@ -1100,25 +1094,7 @@
       "runs": []
     },
     {
-      "name": "Scârlêtt",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
       "name": "Miliim",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Fruchtzwerg",
-      "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
-    },
-    {
-      "name": "Corvisstab",
       "realm": "blackmoore",
       "runsThisWeek": 0,
       "runs": []
