@@ -58,7 +58,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 2686,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 314,
-      "mplus": 2587,
-      "weeklyRuns": 3,
+      "ilvl": 313,
+      "mplus": 2854,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -98,8 +98,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 322,
-      "mplus": 3151,
-      "weeklyRuns": 3,
+      "mplus": 3182,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -139,7 +139,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2723,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -194,8 +194,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 309,
-      "mplus": 991,
-      "weeklyRuns": 0,
+      "mplus": 1090,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Füße"
       ],
@@ -266,9 +266,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 318,
-      "mplus": 3086,
-      "weeklyRuns": 7,
+      "ilvl": 317,
+      "mplus": 3181,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Füße"
       ],
@@ -295,8 +295,8 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 320,
-      "mplus": 3167,
-      "weeklyRuns": 6,
+      "mplus": 3185,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -309,7 +309,7 @@
       "class": "Death Knight",
       "spec": "Blood",
       "role": "TANK",
-      "ilvl": 309,
+      "ilvl": 312,
       "mplus": 2566,
       "weeklyRuns": 3,
       "missingEnchants": [
@@ -390,7 +390,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 3426,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -406,8 +406,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 3001,
-      "weeklyRuns": 4,
+      "mplus": 3049,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -452,5 +452,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-12T05:26:45.932Z"
+  "updatedAt": "2026-09-12T11:25:42.820Z"
 }
