@@ -444,7 +444,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 3015,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -452,5 +452,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-12T11:25:42.820Z"
+  "updatedAt": "2026-09-12T17:32:05.176Z"
 }

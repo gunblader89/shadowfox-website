@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-12T11:25:44.340Z",
+  "updatedAt": "2026-09-12T17:32:06.679Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1042,7 +1042,7 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1063,6 +1063,11 @@
           "dungeon": "Die Königsruh",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 11,
+          "timed": false
         },
         {
           "dungeon": "Rubinlebensbecken",
