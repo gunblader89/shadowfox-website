@@ -45,7 +45,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 51,
+            "parse": 53,
             "boss": "Sszorak"
           }
         ]
@@ -166,5 +166,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-13T17:30:35.514Z"
+  "updatedAt": "2026-09-13T23:44:09.404Z"
 }
