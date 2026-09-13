@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 2828,
       "weeklyRuns": 5,
       "missingEnchants": [],
@@ -141,7 +141,7 @@
       "role": "HEALING",
       "ilvl": 323,
       "mplus": 2723,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -223,7 +223,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 2898,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -337,5 +337,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-13T05:26:31.813Z"
+  "updatedAt": "2026-09-13T11:26:09.363Z"
 }
