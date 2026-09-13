@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 2828,
       "weeklyRuns": 5,
       "missingEnchants": [],
@@ -60,7 +60,7 @@
       "role": "DPS",
       "ilvl": 319,
       "mplus": 2686,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -152,10 +152,12 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 309,
-      "mplus": 2465,
-      "weeklyRuns": 2,
-      "missingEnchants": [],
+      "ilvl": 312,
+      "mplus": 2558,
+      "weeklyRuns": 6,
+      "missingEnchants": [
+        "Ring 2"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -223,7 +225,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 2898,
-      "weeklyRuns": 2,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -331,11 +333,11 @@
       "role": "DPS",
       "ilvl": 314,
       "mplus": 3015,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-13T11:26:09.363Z"
+  "updatedAt": "2026-09-13T17:30:10.905Z"
 }

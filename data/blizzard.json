@@ -937,9 +937,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Baalhadar",
+      "realm": "blackmoore",
+      "rank": 3,
+      "level": 90,
+      "classId": 11
     }
   ],
-  "updatedAt": "2026-09-13T11:26:11.066Z",
+  "updatedAt": "2026-09-13T17:30:12.561Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -971,7 +978,7 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -987,6 +994,16 @@
           "dungeon": "Nalorakks Bau",
           "level": 14,
           "timed": false
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": true
         }
       ]
     },
@@ -1073,7 +1090,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1082,6 +1099,21 @@
         },
         {
           "dungeon": "Altar der Fänge",
+          "level": 11,
+          "timed": false
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": false
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
           "level": 10,
           "timed": true
         }
