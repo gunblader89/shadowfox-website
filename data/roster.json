@@ -110,7 +110,7 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 2647,
       "weeklyRuns": 8,
       "missingEnchants": [
@@ -307,14 +307,10 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 294,
-      "mplus": 2435,
+      "ilvl": 314,
+      "mplus": 2667,
       "weeklyRuns": 10,
       "missingEnchants": [
-        "Brust",
-        "Beine",
-        "Füße",
-        "Ring 2",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -335,11 +331,11 @@
       "role": "DPS",
       "ilvl": 314,
       "mplus": 3015,
-      "weeklyRuns": 3,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-12T23:43:20.408Z"
+  "updatedAt": "2026-09-13T05:26:31.813Z"
 }

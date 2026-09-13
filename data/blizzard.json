@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-12T23:43:22.053Z",
+  "updatedAt": "2026-09-13T05:26:33.320Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1102,15 +1102,15 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 8,
+      "runsThisWeek": 9,
       "runs": [
         {
-          "dungeon": "Altar der Fänge",
-          "level": 6,
+          "dungeon": "Das blendende Tal",
+          "level": 10,
           "timed": true
         },
         {
-          "dungeon": "Das blendende Tal",
+          "dungeon": "Arena der Leerennarbe",
           "level": 10,
           "timed": true
         },
@@ -1120,12 +1120,12 @@
           "timed": true
         },
         {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 6,
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
           "timed": true
         },
         {
-          "dungeon": "Nalorakks Bau",
+          "dungeon": "Der Tempel von Sethraliss",
           "level": 10,
           "timed": true
         },
@@ -1135,13 +1135,18 @@
           "timed": false
         },
         {
-          "dungeon": "Rubinlebensbecken",
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
           "level": 11,
           "timed": true
         },
         {
-          "dungeon": "Mördergasse",
-          "level": 10,
+          "dungeon": "Rubinlebensbecken",
+          "level": 11,
           "timed": true
         }
       ]

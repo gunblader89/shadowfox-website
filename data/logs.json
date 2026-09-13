@@ -29,7 +29,7 @@
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 89,
+            "parse": 85,
             "boss": "Vashnik the Malignant"
           }
         ],
@@ -166,5 +166,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-12T23:43:44.547Z"
+  "updatedAt": "2026-09-13T05:26:54.577Z"
 }
