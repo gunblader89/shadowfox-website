@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 3076,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 307,
+      "ilvl": 309,
       "mplus": 2549,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -58,7 +58,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 320,
       "mplus": 2686,
       "weeklyRuns": 6,
       "missingEnchants": [],
@@ -110,7 +110,7 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 2647,
       "weeklyRuns": 8,
       "missingEnchants": [
@@ -126,7 +126,7 @@
       "class": "Druid",
       "spec": "Guardian",
       "role": "TANK",
-      "ilvl": 314,
+      "ilvl": 317,
       "mplus": 2693,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -236,7 +236,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 319,
       "mplus": 3181,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -268,7 +268,7 @@
       "role": "TANK",
       "ilvl": 321,
       "mplus": 2702,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -298,7 +298,7 @@
       "role": "DPS",
       "ilvl": 319,
       "mplus": 3049,
-      "weeklyRuns": 8,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -309,7 +309,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2667,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -339,5 +339,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-14T17:32:14.969Z"
+  "updatedAt": "2026-09-14T23:45:21.652Z"
 }
