@@ -19,9 +19,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 3076,
-      "weeklyRuns": 9,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -47,7 +47,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 2828,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -126,7 +126,7 @@
       "class": "Druid",
       "spec": "Guardian",
       "role": "TANK",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 2693,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -141,7 +141,7 @@
       "role": "HEALING",
       "ilvl": 323,
       "mplus": 2723,
-      "weeklyRuns": 5,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -225,7 +225,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 2898,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -296,9 +296,9 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 3049,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -309,7 +309,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 314,
+      "ilvl": 313,
       "mplus": 2667,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -339,5 +339,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-14T11:29:19.180Z"
+  "updatedAt": "2026-09-14T17:32:14.969Z"
 }

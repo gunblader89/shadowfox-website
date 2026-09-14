@@ -148,13 +148,6 @@
       "classId": 10
     },
     {
-      "name": "Mooni",
-      "realm": "taerar",
-      "rank": 5,
-      "level": 90,
-      "classId": 1
-    },
-    {
       "name": "Biillbo",
       "realm": "nethersturm",
       "rank": 6,
@@ -503,6 +496,13 @@
       "rank": 3,
       "level": 90,
       "classId": 10
+    },
+    {
+      "name": "Baalhadar",
+      "realm": "blackmoore",
+      "rank": 3,
+      "level": 90,
+      "classId": 11
     },
     {
       "name": "Hunterchaos",
@@ -937,16 +937,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Baalhadar",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 11
     }
   ],
-  "updatedAt": "2026-09-14T11:29:20.687Z",
+  "updatedAt": "2026-09-14T17:32:16.510Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

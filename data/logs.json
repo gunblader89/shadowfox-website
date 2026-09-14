@@ -29,7 +29,7 @@
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 85,
+            "parse": 89,
             "boss": "Vashnik the Malignant"
           }
         ],
@@ -38,14 +38,14 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 86,
+            "parse": 85,
             "boss": "The Lost Explorers"
           },
           {
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 51,
+            "parse": 52,
             "boss": "Sszorak"
           }
         ]
@@ -166,5 +166,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-14T11:29:42.404Z"
+  "updatedAt": "2026-09-14T17:32:38.561Z"
 }
