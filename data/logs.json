@@ -22,7 +22,7 @@
             "name": "Askái",
             "class": "DemonHunter",
             "spec": "Devourer",
-            "parse": 98,
+            "parse": 97,
             "boss": "Vashnik the Malignant"
           },
           {
@@ -166,5 +166,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-14T05:28:40.372Z"
+  "updatedAt": "2026-09-14T11:29:42.404Z"
 }

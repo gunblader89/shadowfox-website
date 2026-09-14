@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 315,
+      "ilvl": 314,
       "mplus": 2579,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -223,9 +223,9 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 2898,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -339,5 +339,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-14T05:28:16.513Z"
+  "updatedAt": "2026-09-14T11:29:19.180Z"
 }
