@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 3076,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 319,
-      "mplus": 2686,
-      "weeklyRuns": 6,
+      "mplus": 2700,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -337,5 +337,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-15T17:30:04.473Z"
+  "updatedAt": "2026-09-15T23:43:46.712Z"
 }

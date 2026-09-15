@@ -36,7 +36,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 95,
+            "parse": 98,
             "boss": "The Twin Fangs"
           },
           {
@@ -185,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-15T17:30:29.429Z"
+  "updatedAt": "2026-09-15T23:44:09.788Z"
 }

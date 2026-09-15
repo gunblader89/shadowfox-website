@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-15T17:30:05.897Z",
+  "updatedAt": "2026-09-15T23:43:48.102Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -975,7 +975,7 @@
       "runs": [
         {
           "dungeon": "Das blendende Tal",
-          "level": 10,
+          "level": 11,
           "timed": true
         },
         {
