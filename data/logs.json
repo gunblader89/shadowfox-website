@@ -40,11 +40,11 @@
             "boss": "The Twin Fangs"
           },
           {
-            "name": "Oprainpriest",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 51,
-            "boss": "Nek'zali the Soulcoiler"
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 49,
+            "boss": "The Twin Fangs"
           }
         ]
       }
@@ -185,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-14T23:45:45.942Z"
+  "updatedAt": "2026-09-15T05:33:22.780Z"
 }

@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 3076,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -55,28 +55,16 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "class": "Warlock",
-      "spec": "Demonology",
-      "role": "DPS",
-      "ilvl": 320,
-      "mplus": 2686,
-      "weeklyRuns": 6,
-      "missingEnchants": [],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
+      "ilvl": null,
+      "mplus": 0,
+      "weeklyRuns": 0
     },
     {
       "name": "Mönkitönk",
       "realm": "thrall",
-      "class": "Monk",
-      "spec": "Mistweaver",
-      "role": "HEALING",
-      "ilvl": 316,
-      "mplus": 2888,
-      "weeklyRuns": 10,
-      "missingEnchants": [],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
+      "ilvl": null,
+      "mplus": 0,
+      "weeklyRuns": 0
     },
     {
       "name": "Raiox",
@@ -110,7 +98,7 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 317,
       "mplus": 2647,
       "weeklyRuns": 8,
       "missingEnchants": [
@@ -124,11 +112,11 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Guardian",
-      "role": "TANK",
-      "ilvl": 317,
-      "mplus": 2693,
-      "weeklyRuns": 3,
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 316,
+      "mplus": 2696,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/135539617-avatar.jpg?alt=/wow/static/images/2d/avatar/91-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Amhairghin"
@@ -139,9 +127,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 323,
+      "ilvl": 322,
       "mplus": 2723,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -152,12 +140,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 312,
+      "ilvl": 313,
       "mplus": 2558,
       "weeklyRuns": 7,
-      "missingEnchants": [
-        "Ring 2"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -167,7 +153,7 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 2799,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -177,17 +163,9 @@
     {
       "name": "Hatto",
       "realm": "aegwynn",
-      "class": "Hunter",
-      "spec": "Beast Mastery",
-      "role": "DPS",
-      "ilvl": 309,
-      "mplus": 1090,
-      "weeklyRuns": 1,
-      "missingEnchants": [
-        "Füße"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
-      "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
+      "ilvl": null,
+      "mplus": 0,
+      "weeklyRuns": 0
     },
     {
       "name": "Miliim",
@@ -233,17 +211,9 @@
     {
       "name": "Kiraja",
       "realm": "garrosh",
-      "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
-      "ilvl": 319,
-      "mplus": 3181,
-      "weeklyRuns": 10,
-      "missingEnchants": [
-        "Füße"
-      ],
-      "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
-      "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
+      "ilvl": null,
+      "mplus": 0,
+      "weeklyRuns": 0
     },
     {
       "name": "Shylmagognar",
@@ -331,7 +301,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 314,
+      "ilvl": 313,
       "mplus": 3015,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -339,5 +309,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-14T23:45:21.652Z"
+  "updatedAt": "2026-09-15T05:32:58.983Z"
 }
