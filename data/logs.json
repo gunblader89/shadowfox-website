@@ -43,7 +43,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 49,
+            "parse": 48,
             "boss": "The Twin Fangs"
           }
         ]
@@ -185,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-15T05:33:22.780Z"
+  "updatedAt": "2026-09-15T11:32:13.224Z"
 }
