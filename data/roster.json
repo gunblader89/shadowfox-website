@@ -3,30 +3,54 @@
     {
       "name": "Günnfire",
       "realm": "thrall",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Mage",
+      "spec": "Arcane",
+      "role": "DPS",
+      "ilvl": 314,
+      "mplus": 2579,
+      "weeklyRuns": 8,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
     },
     {
       "name": "Mercrixxus",
       "realm": "blackhand",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Warrior",
+      "spec": "Arms",
+      "role": "DPS",
+      "ilvl": 318,
+      "mplus": 3076,
+      "weeklyRuns": 10,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
     },
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Shaman",
+      "spec": "Restoration",
+      "role": "HEALING",
+      "ilvl": 312,
+      "mplus": 2549,
+      "weeklyRuns": 4,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
     {
       "name": "Chantallè",
       "realm": "blackhand",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Hunter",
+      "spec": "Beast Mastery",
+      "role": "DPS",
+      "ilvl": 321,
+      "mplus": 2828,
+      "weeklyRuns": 6,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
     },
     {
       "name": "Narrwên",
@@ -151,9 +175,17 @@
     {
       "name": "Hatto",
       "realm": "aegwynn",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Hunter",
+      "spec": "Beast Mastery",
+      "role": "DPS",
+      "ilvl": 309,
+      "mplus": 1090,
+      "weeklyRuns": 1,
+      "missingEnchants": [
+        "Füße"
+      ],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/aegwynn/65/121415745-avatar.jpg?alt=/wow/static/images/2d/avatar/1-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/aegwynn/Hatto"
     },
     {
       "name": "Miliim",
@@ -191,7 +223,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 2898,
-      "weeklyRuns": 6,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/157/167888285-avatar.jpg?alt=/wow/static/images/2d/avatar/10-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Askái"
@@ -199,16 +231,32 @@
     {
       "name": "Kiraja",
       "realm": "garrosh",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Demon Hunter",
+      "spec": "Vengeance",
+      "role": "TANK",
+      "ilvl": 319,
+      "mplus": 3181,
+      "weeklyRuns": 10,
+      "missingEnchants": [
+        "Füße"
+      ],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
     },
     {
       "name": "Shylmagognar",
       "realm": "thrall",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Paladin",
+      "spec": "Protection",
+      "role": "TANK",
+      "ilvl": 320,
+      "mplus": 3185,
+      "weeklyRuns": 10,
+      "missingEnchants": [
+        "Nebenhand"
+      ],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
     {
       "name": "Kitebrew",
@@ -243,16 +291,30 @@
     {
       "name": "Seitenleiste",
       "realm": "blackhand",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Mage",
+      "spec": "Fire",
+      "role": "DPS",
+      "ilvl": 319,
+      "mplus": 3049,
+      "weeklyRuns": 10,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
     },
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Mage",
+      "spec": "Arcane",
+      "role": "DPS",
+      "ilvl": 313,
+      "mplus": 2667,
+      "weeklyRuns": 10,
+      "missingEnchants": [
+        "Nebenhand"
+      ],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
+      "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
     },
     {
       "name": "Tiskarian",
@@ -264,10 +326,16 @@
     {
       "name": "Moonlord",
       "realm": "thrall",
-      "ilvl": null,
-      "mplus": 0,
-      "weeklyRuns": 0
+      "class": "Druid",
+      "spec": "Feral",
+      "role": "DPS",
+      "ilvl": 314,
+      "mplus": 3015,
+      "weeklyRuns": 10,
+      "missingEnchants": [],
+      "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
+      "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-15T11:31:50.304Z"
+  "updatedAt": "2026-09-15T17:30:04.473Z"
 }
