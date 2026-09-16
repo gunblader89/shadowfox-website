@@ -24,11 +24,11 @@
             "boss": "Nek'zali the Soulcoiler"
           },
           {
-            "name": "Fawnii",
-            "class": "Hunter",
-            "spec": "BeastMastery",
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
             "parse": 91,
-            "boss": "Nek'zali the Soulcoiler"
+            "boss": "The Twin Fangs"
           }
         ],
         "hps": [
@@ -43,7 +43,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 48,
+            "parse": 49,
             "boss": "The Twin Fangs"
           }
         ]
@@ -185,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-16T11:28:35.016Z"
+  "updatedAt": "2026-09-16T17:31:34.112Z"
 }

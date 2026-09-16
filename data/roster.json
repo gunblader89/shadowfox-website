@@ -47,9 +47,9 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 321,
-      "mplus": 2828,
-      "weeklyRuns": 0,
+      "ilvl": 322,
+      "mplus": 2855,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -126,9 +126,9 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Balance",
-      "role": "DPS",
-      "ilvl": 316,
+      "spec": "Guardian",
+      "role": "TANK",
+      "ilvl": 318,
       "mplus": 2696,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -141,9 +141,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 322,
+      "ilvl": 324,
       "mplus": 2723,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -331,7 +331,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 313,
+      "ilvl": 314,
       "mplus": 3015,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -339,5 +339,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-16T11:28:11.708Z"
+  "updatedAt": "2026-09-16T17:31:10.591Z"
 }
