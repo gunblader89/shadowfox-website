@@ -71,7 +71,7 @@
     },
     "the-tidebound-grotto": {
       "normal": {
-        "world": 7095,
+        "world": 7096,
         "region": 2820,
         "realm": 91
       },
@@ -93,9 +93,9 @@
         "realm": 93
       },
       "heroic": {
-        "world": 7528,
-        "region": 3051,
-        "realm": 107
+        "world": 7654,
+        "region": 3160,
+        "realm": 112
       },
       "mythic": {
         "world": 0,
@@ -509,5 +509,5 @@
       "rank": 3
     }
   ],
-  "updatedAt": "2026-09-17T17:30:00.134Z"
+  "updatedAt": "2026-09-17T23:42:29.031Z"
 }

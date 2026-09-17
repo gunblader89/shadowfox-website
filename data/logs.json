@@ -1,6 +1,58 @@
 {
   "reports": [
     {
+      "code": "gBXMG84P9jpwzVn6",
+      "url": "https://www.warcraftlogs.com/reports/gBXMG84P9jpwzVn6",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1789672993894,
+      "endTime": 1789676878762,
+      "duration": "1h 4m",
+      "difficulty": "Heroisch",
+      "kills": 4,
+      "wipes": 3,
+      "killedBosses": [
+        "The Lost Explorers",
+        "Sszorak",
+        "The Twin Fangs",
+        "Nymrissa Wavecaller"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 87,
+            "boss": "Nymrissa Wavecaller"
+          },
+          {
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
+            "parse": 86,
+            "boss": "The Twin Fangs"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 95,
+            "boss": "The Lost Explorers"
+          },
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 79,
+            "boss": "The Lost Explorers"
+          }
+        ]
+      }
+    },
+    {
       "code": "QCmFZrhBLjz2kVnH",
       "url": "https://www.warcraftlogs.com/reports/QCmFZrhBLjz2kVnH",
       "title": "The Venomous Abyss",
@@ -15,38 +67,8 @@
         "The Twin Fangs"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Revver",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 99,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 90,
-            "boss": "The Twin Fangs"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 94,
-            "boss": "The Twin Fangs"
-          },
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 47,
-            "boss": "The Twin Fangs"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -157,33 +179,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "yjJwVcmCD2p9tPvK",
-      "url": "https://www.warcraftlogs.com/reports/yjJwVcmCD2p9tPvK",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1787853021627,
-      "endTime": 1787862921623,
-      "duration": "2h 44m",
-      "difficulty": "Heroisch",
-      "kills": 8,
-      "wipes": 6,
-      "killedBosses": [
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak",
-        "The Twin Fangs",
-        "The Coiled Altar",
-        "Ula'tek"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-17T17:30:51.309Z"
+  "updatedAt": "2026-09-17T23:43:16.972Z"
 }

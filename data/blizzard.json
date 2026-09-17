@@ -185,7 +185,7 @@
     {
       "name": "Chantallè",
       "realm": "blackhand",
-      "rank": 3,
+      "rank": 1,
       "level": 90,
       "classId": 3
     },
@@ -241,7 +241,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "rank": 5,
+      "rank": 1,
       "level": 90,
       "classId": 1
     },
@@ -507,7 +507,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "rank": 6,
+      "rank": 0,
       "level": 90,
       "classId": 3
     },
@@ -612,7 +612,7 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "rank": 0,
+      "rank": 6,
       "level": 90,
       "classId": 12
     },
@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-17T17:30:28.481Z",
+  "updatedAt": "2026-09-17T23:42:56.260Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -994,14 +994,26 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Hunterchaos",
@@ -1066,8 +1078,24 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Tiskarian",
