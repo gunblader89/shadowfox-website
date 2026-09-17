@@ -268,8 +268,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 321,
-      "mplus": 2702,
-      "weeklyRuns": 0,
+      "mplus": 2724,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -299,7 +299,7 @@
       "role": "DPS",
       "ilvl": 319,
       "mplus": 3049,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-17T11:27:24.868Z"
+  "updatedAt": "2026-09-17T17:30:27.043Z"
 }

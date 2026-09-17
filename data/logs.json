@@ -27,7 +27,7 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 91,
+            "parse": 90,
             "boss": "The Twin Fangs"
           }
         ],
@@ -36,7 +36,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 95,
+            "parse": 94,
             "boss": "The Twin Fangs"
           },
           {
@@ -185,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-17T11:27:47.480Z"
+  "updatedAt": "2026-09-17T17:30:51.309Z"
 }

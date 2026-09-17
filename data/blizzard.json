@@ -106,6 +106,13 @@
       "classId": 11
     },
     {
+      "name": "Amedeus",
+      "realm": "thrall",
+      "rank": 6,
+      "level": 90,
+      "classId": 9
+    },
+    {
       "name": "Veva",
       "realm": "thrall",
       "rank": 5,
@@ -930,16 +937,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Amedeus",
-      "realm": "thrall",
-      "rank": 6,
-      "level": 90,
-      "classId": 9
     }
   ],
-  "updatedAt": "2026-09-17T11:27:26.365Z",
+  "updatedAt": "2026-09-17T17:30:28.481Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
