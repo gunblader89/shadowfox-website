@@ -8,7 +8,7 @@
       "role": "DPS",
       "ilvl": 315,
       "mplus": 2736,
-      "weeklyRuns": 0,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -152,7 +152,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 314,
+      "ilvl": 315,
       "mplus": 2572,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -193,7 +193,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 298,
+      "ilvl": 302,
       "mplus": 2231,
       "weeklyRuns": 4,
       "missingEnchants": [
@@ -224,7 +224,7 @@
       "class": "Demon Hunter",
       "spec": "Devourer",
       "role": "DPS",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 2898,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -235,11 +235,11 @@
       "name": "Kiraja",
       "realm": "garrosh",
       "class": "Demon Hunter",
-      "spec": "Vengeance",
-      "role": "TANK",
+      "spec": "Havoc",
+      "role": "DPS",
       "ilvl": 320,
       "mplus": 3181,
-      "weeklyRuns": 0,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Füße"
       ],
@@ -299,7 +299,7 @@
       "role": "DPS",
       "ilvl": 319,
       "mplus": 3049,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-16T23:44:32.530Z"
+  "updatedAt": "2026-09-17T05:28:22.536Z"
 }
