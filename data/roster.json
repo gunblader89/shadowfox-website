@@ -84,7 +84,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 2680,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -124,9 +124,9 @@
       "name": "Amhairghin",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Guardian",
-      "role": "TANK",
-      "ilvl": 319,
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 318,
       "mplus": 2696,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-17T05:28:22.536Z"
+  "updatedAt": "2026-09-17T11:27:24.868Z"
 }
