@@ -7,8 +7,8 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 319,
-      "mplus": 2736,
-      "weeklyRuns": 3,
+      "mplus": 2777,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 312,
+      "ilvl": 313,
       "mplus": 2549,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -111,8 +111,8 @@
       "spec": "Devastation",
       "role": "DPS",
       "ilvl": 320,
-      "mplus": 2647,
-      "weeklyRuns": 1,
+      "mplus": 2649,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Füße"
       ],
@@ -166,7 +166,7 @@
       "role": "DPS",
       "ilvl": 316,
       "mplus": 2799,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -248,12 +248,14 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
-      "ilvl": 319,
+      "spec": "Protection",
+      "role": "TANK",
+      "ilvl": 320,
       "mplus": 3185,
-      "weeklyRuns": 4,
-      "missingEnchants": [],
+      "weeklyRuns": 8,
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -295,7 +297,7 @@
       "role": "DPS",
       "ilvl": 319,
       "mplus": 3049,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -307,8 +309,8 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 317,
-      "mplus": 2766,
-      "weeklyRuns": 3,
+      "mplus": 2808,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -336,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-18T17:28:58.928Z"
+  "updatedAt": "2026-09-18T23:43:15.815Z"
 }
