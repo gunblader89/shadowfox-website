@@ -27,11 +27,11 @@
             "boss": "Nymrissa Wavecaller"
           },
           {
-            "name": "Narrwên",
-            "class": "Warlock",
-            "spec": "Demonology",
+            "name": "Moonlord",
+            "class": "Druid",
+            "spec": "Feral",
             "parse": 86,
-            "boss": "The Twin Fangs"
+            "boss": "Nymrissa Wavecaller"
           }
         ],
         "hps": [
@@ -46,7 +46,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 79,
+            "parse": 78,
             "boss": "The Lost Explorers"
           }
         ]
@@ -181,5 +181,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-18T11:26:54.929Z"
+  "updatedAt": "2026-09-18T17:29:23.278Z"
 }

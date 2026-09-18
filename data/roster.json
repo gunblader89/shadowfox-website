@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 319,
       "mplus": 2736,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 313,
+      "ilvl": 312,
       "mplus": 2549,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-18T11:26:31.517Z"
+  "updatedAt": "2026-09-18T17:28:58.928Z"
 }
