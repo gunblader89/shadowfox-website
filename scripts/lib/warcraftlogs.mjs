@@ -103,7 +103,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     const w = r.raidFights.filter(f => !f.kill).length;
     const perBoss = {};
     for (const f of r.raidFights) perBoss[f.name] = (perBoss[f.name] || 0) + 1;
-    log(`  [Diagnose] Report ${r.code}: ${r.raidFights.length} Raidkaempfe roh (${k} Kills, ${w} Wipes) — ${JSON.stringify(perBoss)}`);
+    log(`  [Diagnose] Report ${r.code} (Owner: ${r.owner?.name ?? "?"}): ${r.raidFights.length} Raidkaempfe roh (${k} Kills, ${w} Wipes) — ${JSON.stringify(perBoss)}`);
   }
 
   // Besetzungs-Check: nur auf die Teilnehmer der tatsaechlichen Raidkaempfe
@@ -151,9 +151,12 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     // (Verbindungsabbruch am Anfang vs. Log-Artefakte durch Lag) das
     // vollstaendigere Ergebnis sein, keine reine Zahl ist dafuer verlaesslich),
     // zaehlt pro Abend nur EIN Report. Bevorzugt wird der von einem bekannt
-    // zuverlaessigen Logger (preferredLoggers, z.B. Jisgarin); ist keiner der
-    // Kandidaten von so jemandem, entscheiden die meisten Kills, dann die
-    // wenigsten Kaempfe als letzter (unsicherer) Tiebreak.
+    // zuverlaessigen Logger (preferredLoggers, aktuell nur Jisgarin - bewusst
+    // kein automatisches "wer loggt am meisten", das liesse sich leicht durch
+    // gezieltes Mitloggen fremder Inhalte als "Gildenlog" fuer bessere
+    // Gilden-Rankings ausnutzen). Ist keiner der Kandidaten eines Clusters
+    // von so jemandem, entscheiden die meisten Kills, dann die wenigsten
+    // Kaempfe als letzter (unsicherer) Tiebreak.
     let byReport = new Map();
     for (const f of c.fights) {
       if (!byReport.has(f.reportCode)) byReport.set(f.reportCode, []);
@@ -177,7 +180,8 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     const uniqueKilled = [...new Set(kills.map(f => f.name))];
     const master = reportByCode.get(allFights[0].reportCode);
     const otherCodes = [...byReport.keys()].filter(code => code !== master.code);
-    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Report ${master.code} gewaehlt (Owner: ${master.owner?.name ?? "?"}, ${allFights.length} Fights, ${kills.length} Kills)${otherCodes.length ? `, verworfen: ${otherCodes.join(", ")}` : ""}`);
+    const otherDesc = otherCodes.map(code => `${code} (${reportByCode.get(code)?.owner?.name ?? "?"})`);
+    log(`  [Diagnose] Cluster @ ${new Date(c.anchor).toISOString()}: Report ${master.code} gewaehlt (Owner: ${master.owner?.name ?? "?"}, ${allFights.length} Fights, ${kills.length} Kills)${otherDesc.length ? `, verworfen: ${otherDesc.join(", ")}` : ""}`);
 
     const firstPull = Math.min(...allFights.map(f => f.absStart));
     const lastPull = Math.max(...allFights.map(f => f.absEnd));
@@ -190,6 +194,7 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     return {
       code: master.code,
       url: `https://www.warcraftlogs.com/reports/${master.code}`,
+      loggedBy: master.owner?.name || null,
       title: master.title || master.zone?.name || "Der Giftige Abgrund",
       zone: master.zone?.name || "Der Giftige Abgrund",
       startTime: firstPull,
