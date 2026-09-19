@@ -3,6 +3,7 @@
     {
       "code": "gBXMG84P9jpwzVn6",
       "url": "https://www.warcraftlogs.com/reports/gBXMG84P9jpwzVn6",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1789672993894,
@@ -27,11 +28,11 @@
             "boss": "Nymrissa Wavecaller"
           },
           {
-            "name": "Moonlord",
-            "class": "Druid",
-            "spec": "Feral",
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
             "parse": 86,
-            "boss": "Nymrissa Wavecaller"
+            "boss": "The Twin Fangs"
           }
         ],
         "hps": [
@@ -55,6 +56,7 @@
     {
       "code": "QCmFZrhBLjz2kVnH",
       "url": "https://www.warcraftlogs.com/reports/QCmFZrhBLjz2kVnH",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1789408549680,
@@ -74,6 +76,7 @@
     {
       "code": "YxrRbckGPvVTgJaH",
       "url": "https://www.warcraftlogs.com/reports/YxrRbckGPvVTgJaH",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1789067640029,
@@ -95,6 +98,7 @@
     {
       "code": "hKTmj6wYVq3ar7J1",
       "url": "https://www.warcraftlogs.com/reports/hKTmj6wYVq3ar7J1",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1788803891746,
@@ -112,6 +116,7 @@
     {
       "code": "LW2KAtVdR981zcfq",
       "url": "https://www.warcraftlogs.com/reports/LW2KAtVdR981zcfq",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1788716949048,
@@ -139,6 +144,7 @@
     {
       "code": "PLakh2TBqN31nWvd",
       "url": "https://www.warcraftlogs.com/reports/PLakh2TBqN31nWvd",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1788457553350,
@@ -162,6 +168,7 @@
     {
       "code": "crKgnbDCmLZY7Fw2",
       "url": "https://www.warcraftlogs.com/reports/crKgnbDCmLZY7Fw2",
+      "loggedBy": "Jisgarin",
       "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
       "startTime": 1788198563598,
@@ -181,5 +188,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-19T05:26:26.366Z"
+  "updatedAt": "2026-09-19T08:36:05.118Z"
 }
