@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-19T17:28:43.996Z",
+  "updatedAt": "2026-09-19T23:44:24.272Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -994,8 +994,13 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        },
         {
           "dungeon": "Mördergasse",
           "level": 10,
@@ -1089,10 +1094,20 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 7,
       "runs": [
         {
+          "dungeon": "Das blendende Tal",
+          "level": 12,
+          "timed": true
+        },
+        {
           "dungeon": "Die Königsruh",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Arena der Leerennarbe",
           "level": 12,
           "timed": true
         },
