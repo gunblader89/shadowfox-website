@@ -35,10 +35,37 @@ function hourInTimezone(ts, timeZone) {
   return Number(new Intl.DateTimeFormat("en-US", { timeZone, hour: "numeric", hour12: false }).format(ts));
 }
 
-export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, bossNames = DEFAULT_BOSS_NAMES, rosterNames = [], raidHours = [18, 23], timeZone = "Europe/Berlin", preferredLoggers = ["Jisgarin"] }) {
+/** Minuten seit Mitternacht (0-1439) eines Zeitstempels in der Gilden-
+    Zeitzone — fuer Zeitfenster-Checks mit Minutenpraezision (z.B. 19:45). */
+function minutesInTimezone(ts, timeZone) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone, hour: "numeric", minute: "numeric", hour12: false
+  }).formatToParts(ts).reduce((o, p) => (o[p.type] = p.value, o), {});
+  return (Number(parts.hour) % 24) * 60 + Number(parts.minute);
+}
+
+/** Wochentag (0=So .. 6=Sa) eines Zeitstempels in der Gilden-Zeitzone. */
+function weekdayInTimezone(ts, timeZone) {
+  const wd = new Intl.DateTimeFormat("en-US", { timeZone, weekday: "short" }).format(ts);
+  return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(wd);
+}
+
+/* preferredLoggers: Liste von { name, days?, startMinute?, endMinute? }.
+   Ohne days/startMinute/endMinute ist die Person uneingeschraenkt bevorzugt
+   (z.B. Jisgarin). Mit diesen Feldern zaehlt die Person nur innerhalb des
+   angegebenen Wochentags-/Uhrzeitfensters als bevorzugt (z.B. Sherra, der
+   auch viele gildenfremde Inhalte oeffentlich als "Gildenlog" mitschneidet -
+   nur sein Log waehrend der tatsaechlichen Raidzeit soll bevorzugt werden,
+   nicht alles was von ihm kommt). */
+const DEFAULT_PREFERRED_LOGGERS = [
+  { name: "Jisgarin" },
+  { name: "Sherra", days: [1, 4], startMinute: 19 * 60 + 45, endMinute: 22 * 60 + 45 }
+];
+
+export async function reports({ clientId, clientSecret, region = "eu", realm = "blackmoore", name = "ShadowFox", limit = 25, bossNames = DEFAULT_BOSS_NAMES, rosterNames = [], raidHours = [18, 23], timeZone = "Europe/Berlin", preferredLoggers = DEFAULT_PREFERRED_LOGGERS }) {
   const bossNameSet = new Set(bossNames.map(n => n.toLowerCase().trim()));
   const rosterSet = new Set(rosterNames.map(normalizeName));
-  const preferredLoggerSet = new Set(preferredLoggers.map(normalizeName));
+  const preferredLoggerMap = new Map(preferredLoggers.map(p => [normalizeName(p.name), p]));
   const tok = await token(clientId, clientSecret);
 
   // Alle Berichte der Gilde abfragen
@@ -151,21 +178,36 @@ export async function reports({ clientId, clientSecret, region = "eu", realm = "
     // (Verbindungsabbruch am Anfang vs. Log-Artefakte durch Lag) das
     // vollstaendigere Ergebnis sein, keine reine Zahl ist dafuer verlaesslich),
     // zaehlt pro Abend nur EIN Report. Bevorzugt wird der von einem bekannt
-    // zuverlaessigen Logger (preferredLoggers, aktuell nur Jisgarin - bewusst
+    // zuverlaessigen Logger (DEFAULT_PREFERRED_LOGGERS oben: Jisgarin
+    // uneingeschraenkt, Sherra nur montags/donnerstags 19:45-22:45 - bewusst
     // kein automatisches "wer loggt am meisten", das liesse sich leicht durch
     // gezieltes Mitloggen fremder Inhalte als "Gildenlog" fuer bessere
     // Gilden-Rankings ausnutzen). Ist keiner der Kandidaten eines Clusters
-    // von so jemandem, entscheiden die meisten Kills, dann die wenigsten
-    // Kaempfe als letzter (unsicherer) Tiebreak.
+    // von so jemandem (bzw. ausserhalb seines Zeitfensters), entscheiden die
+    // meisten Kills, dann die wenigsten Kaempfe als letzter (unsicherer)
+    // Tiebreak.
     let byReport = new Map();
     for (const f of c.fights) {
       if (!byReport.has(f.reportCode)) byReport.set(f.reportCode, []);
       byReport.get(f.reportCode).push(f);
     }
-    if (preferredLoggerSet.size > 0) {
-      const preferred = new Map([...byReport].filter(([code]) => {
+    if (preferredLoggerMap.size > 0) {
+      const preferred = new Map([...byReport].filter(([code, fights]) => {
         const owner = reportByCode.get(code)?.owner?.name;
-        return owner && preferredLoggerSet.has(normalizeName(owner));
+        if (!owner) return false;
+        const rule = preferredLoggerMap.get(normalizeName(owner));
+        if (!rule) return false;
+        if (!rule.days) return true; // uneingeschraenkt bevorzugt (z.B. Jisgarin)
+        // Eingeschraenkt bevorzugt (z.B. Sherra): nur wenn DIESER Kampfblock
+        // tatsaechlich am richtigen Wochentag zur richtigen Uhrzeit begann -
+        // sonst koennte gildenfremder, nur als "Gildenlog" markierter Inhalt
+        // faelschlich als vertrauenswuerdig gelten.
+        const earliest = Math.min(...fights.map(f => f.absStart));
+        const weekday = weekdayInTimezone(earliest, timeZone);
+        const minutes = minutesInTimezone(earliest, timeZone);
+        const inWindow = rule.days.includes(weekday) && minutes >= rule.startMinute && minutes <= rule.endMinute;
+        log(`  [Diagnose] Eingeschraenkter Logger ${owner} (Report ${code}): Kampfbeginn ${new Date(earliest).toISOString()} -> ${inWindow ? "im Zeitfenster, bevorzugt" : "AUSSERHALB Zeitfenster, nicht bevorzugt"}`);
+        return inWindow;
       }));
       if (preferred.size > 0) byReport = preferred;
     }
