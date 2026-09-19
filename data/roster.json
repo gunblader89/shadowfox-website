@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 3076,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -297,7 +297,7 @@
       "role": "DPS",
       "ilvl": 319,
       "mplus": 3049,
-      "weeklyRuns": 8,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -329,8 +329,8 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 319,
-      "mplus": 3015,
-      "weeklyRuns": 1,
+      "mplus": 3035,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Beine"
       ],
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-19T08:38:27.254Z"
+  "updatedAt": "2026-09-19T11:25:22.364Z"
 }
