@@ -1,18 +1,21 @@
 {
   "reports": [
     {
-      "code": "gBXMG84P9jpwzVn6",
-      "url": "https://www.warcraftlogs.com/reports/gBXMG84P9jpwzVn6",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "vYGaDcAqyQT6jRPr",
+      "url": "https://www.warcraftlogs.com/reports/vYGaDcAqyQT6jRPr",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1789672993894,
-      "endTime": 1789676878762,
-      "duration": "1h 4m",
+      "startTime": 1789667434069,
+      "endTime": 1789676879705,
+      "duration": "2h 37m",
       "difficulty": "Heroisch",
-      "kills": 4,
-      "wipes": 3,
+      "kills": 7,
+      "wipes": 10,
       "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
         "The Lost Explorers",
         "Sszorak",
         "The Twin Fangs",
@@ -24,47 +27,47 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 87,
-            "boss": "Nymrissa Wavecaller"
+            "parse": 97,
+            "boss": "Entombed Sentinels"
           },
           {
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 86,
-            "boss": "The Twin Fangs"
+            "parse": 87,
+            "boss": "Entombed Sentinels"
           }
         ],
         "hps": [
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 97,
+            "boss": "Entombed Sentinels"
+          },
           {
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
             "parse": 95,
             "boss": "The Lost Explorers"
-          },
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 78,
-            "boss": "The Lost Explorers"
           }
         ]
       }
     },
     {
-      "code": "QCmFZrhBLjz2kVnH",
-      "url": "https://www.warcraftlogs.com/reports/QCmFZrhBLjz2kVnH",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "mngvacyjtkJfXTQR",
+      "url": "https://www.warcraftlogs.com/reports/mngvacyjtkJfXTQR",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1789408549680,
-      "endTime": 1789417767913,
-      "duration": "2h 33m",
+      "startTime": 1789413159889,
+      "endTime": 1789417767557,
+      "duration": "1h 16m",
       "difficulty": "Heroisch",
       "kills": 1,
-      "wipes": 21,
+      "wipes": 12,
       "killedBosses": [
         "The Twin Fangs"
       ],
@@ -74,18 +77,21 @@
       }
     },
     {
-      "code": "YxrRbckGPvVTgJaH",
-      "url": "https://www.warcraftlogs.com/reports/YxrRbckGPvVTgJaH",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "PD6nGTjf8qyRpbth",
+      "url": "https://www.warcraftlogs.com/reports/PD6nGTjf8qyRpbth",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1789067640029,
-      "endTime": 1789072569583,
-      "duration": "1h 22m",
+      "startTime": 1789062536057,
+      "endTime": 1789072571657,
+      "duration": "2h 47m",
       "difficulty": "Heroisch",
-      "kills": 3,
-      "wipes": 7,
+      "kills": 6,
+      "wipes": 12,
       "killedBosses": [
+        "Nymrissa Wavecaller",
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
         "Vashnik the Malignant",
         "The Lost Explorers",
         "Sszorak"
@@ -96,17 +102,17 @@
       }
     },
     {
-      "code": "hKTmj6wYVq3ar7J1",
-      "url": "https://www.warcraftlogs.com/reports/hKTmj6wYVq3ar7J1",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "c1vCjHF7tdaDgBVG",
+      "url": "https://www.warcraftlogs.com/reports/c1vCjHF7tdaDgBVG",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1788803891746,
-      "endTime": 1788813087503,
-      "duration": "2h 33m",
+      "startTime": 1788808197990,
+      "endTime": 1788813088126,
+      "duration": "1h 21m",
       "difficulty": "Heroisch",
       "kills": 0,
-      "wipes": 29,
+      "wipes": 14,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -188,5 +194,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-19T08:36:05.118Z"
+  "updatedAt": "2026-09-19T08:38:45.881Z"
 }
