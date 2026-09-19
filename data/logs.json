@@ -34,7 +34,7 @@
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 87,
+            "parse": 86,
             "boss": "Entombed Sentinels"
           }
         ],
@@ -194,5 +194,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-19T11:25:43.343Z"
+  "updatedAt": "2026-09-19T17:29:05.186Z"
 }
