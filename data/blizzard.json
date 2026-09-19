@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-18T23:43:17.652Z",
+  "updatedAt": "2026-09-19T05:26:05.271Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1089,7 +1089,7 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Die Königsruh",
@@ -1097,7 +1097,17 @@
           "timed": true
         },
         {
+          "dungeon": "Nalorakks Bau",
+          "level": 12,
+          "timed": false
+        },
+        {
           "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
           "level": 12,
           "timed": true
         },
