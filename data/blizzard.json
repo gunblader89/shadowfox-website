@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-20T11:25:39.145Z",
+  "updatedAt": "2026-09-20T19:32:12.900Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -975,7 +975,7 @@
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
-          "level": 10,
+          "level": 12,
           "timed": true
         },
         {
@@ -1011,12 +1011,17 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Nalorakks Bau",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 11,
+          "timed": false
         },
         {
           "dungeon": "Rubinlebensbecken",

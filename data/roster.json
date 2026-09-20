@@ -6,9 +6,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 319,
-      "mplus": 2777,
-      "weeklyRuns": 7,
+      "ilvl": 320,
+      "mplus": 2778,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 3076,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -58,9 +58,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 322,
-      "mplus": 2700,
-      "weeklyRuns": 4,
+      "ilvl": 323,
+      "mplus": 2742,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -139,8 +139,8 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 326,
-      "mplus": 2723,
-      "weeklyRuns": 6,
+      "mplus": 2727,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -309,8 +309,8 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 2886,
-      "weeklyRuns": 7,
+      "mplus": 2929,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -330,7 +330,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 3035,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "missingEnchants": [
         "Beine"
       ],
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-20T11:25:37.590Z"
+  "updatedAt": "2026-09-20T19:32:11.399Z"
 }

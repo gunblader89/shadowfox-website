@@ -27,7 +27,7 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 97,
+            "parse": 96,
             "boss": "Entombed Sentinels"
           },
           {
@@ -194,5 +194,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-20T11:26:01.018Z"
+  "updatedAt": "2026-09-20T19:32:35.507Z"
 }
