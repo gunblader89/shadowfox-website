@@ -58,7 +58,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 2700,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -97,9 +97,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 322,
       "mplus": 3182,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -330,7 +330,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 3035,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Beine"
       ],
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-20T05:26:26.470Z"
+  "updatedAt": "2026-09-20T11:25:37.590Z"
 }
