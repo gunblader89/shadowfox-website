@@ -60,7 +60,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 2700,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -328,9 +328,9 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 321,
       "mplus": 3035,
-      "weeklyRuns": 3,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Beine"
       ],
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-19T23:44:22.875Z"
+  "updatedAt": "2026-09-20T05:26:26.470Z"
 }
