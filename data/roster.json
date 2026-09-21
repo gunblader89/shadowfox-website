@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 2859,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 324,
       "mplus": 3076,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2855,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -58,7 +58,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 2742,
       "weeklyRuns": 8,
       "missingEnchants": [],
@@ -164,7 +164,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 316,
+      "ilvl": 317,
       "mplus": 2799,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -192,11 +192,12 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 303,
+      "ilvl": 302,
       "mplus": 2231,
       "weeklyRuns": 4,
       "missingEnchants": [
-        "Beine"
+        "Beine",
+        "Waffe"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
@@ -250,7 +251,7 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 3201,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -265,7 +266,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2741,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -308,7 +309,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 319,
+      "ilvl": 318,
       "mplus": 2944,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -328,15 +329,13 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 3035,
       "weeklyRuns": 7,
-      "missingEnchants": [
-        "Beine"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-21T17:04:35.444Z"
+  "updatedAt": "2026-09-21T21:08:11.012Z"
 }

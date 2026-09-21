@@ -108,7 +108,7 @@
     {
       "name": "Amedeus",
       "realm": "thrall",
-      "rank": 6,
+      "rank": 5,
       "level": 90,
       "classId": 9
     },
@@ -255,7 +255,7 @@
     {
       "name": "Jisgarin",
       "realm": "blackmoore",
-      "rank": 3,
+      "rank": 5,
       "level": 90,
       "classId": 8
     },
@@ -339,7 +339,7 @@
     {
       "name": "Sweetschi",
       "realm": "thrall",
-      "rank": 3,
+      "rank": 5,
       "level": 90,
       "classId": 8
     },
@@ -416,7 +416,7 @@
     {
       "name": "Yanalaira",
       "realm": "blackmoore",
-      "rank": 5,
+      "rank": 3,
       "level": 90,
       "classId": 10
     },
@@ -612,7 +612,7 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "rank": 6,
+      "rank": 3,
       "level": 90,
       "classId": 12
     },
@@ -829,7 +829,7 @@
     {
       "name": "Améthyst",
       "realm": "blackmoore",
-      "rank": 3,
+      "rank": 2,
       "level": 90,
       "classId": 2
     },
@@ -937,9 +937,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Saftig",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 90,
+      "classId": 2
     }
   ],
-  "updatedAt": "2026-09-21T17:04:36.806Z",
+  "updatedAt": "2026-09-21T21:08:12.566Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

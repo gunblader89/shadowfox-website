@@ -1,6 +1,56 @@
 {
   "reports": [
     {
+      "code": "Ngm6QTYapnAfbWP4",
+      "url": "https://www.warcraftlogs.com/reports/Ngm6QTYapnAfbWP4",
+      "loggedBy": "Jisgarin",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1790013324022,
+      "endTime": 1790022475303,
+      "duration": "2h 32m",
+      "difficulty": "Heroisch",
+      "kills": 1,
+      "wipes": 22,
+      "killedBosses": [
+        "The Coiled Altar"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 95,
+            "boss": "The Coiled Altar"
+          },
+          {
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 91,
+            "boss": "The Coiled Altar"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 33,
+            "boss": "The Coiled Altar"
+          },
+          {
+            "name": "Mönkitönk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 23,
+            "boss": "The Coiled Altar"
+          }
+        ]
+      }
+    },
+    {
       "code": "vYGaDcAqyQT6jRPr",
       "url": "https://www.warcraftlogs.com/reports/vYGaDcAqyQT6jRPr",
       "loggedBy": "Sherra",
@@ -22,38 +72,8 @@
         "Nymrissa Wavecaller"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 96,
-            "boss": "Entombed Sentinels"
-          },
-          {
-            "name": "Narrwên",
-            "class": "Warlock",
-            "spec": "Demonology",
-            "parse": 86,
-            "boss": "Entombed Sentinels"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 96,
-            "boss": "Entombed Sentinels"
-          },
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 95,
-            "boss": "The Lost Explorers"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -172,13 +192,13 @@
       }
     },
     {
-      "code": "crKgnbDCmLZY7Fw2",
-      "url": "https://www.warcraftlogs.com/reports/crKgnbDCmLZY7Fw2",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "Z23WCDk6NqbPwmMf",
+      "url": "https://www.warcraftlogs.com/reports/Z23WCDk6NqbPwmMf",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1788198563598,
-      "endTime": 1788208537240,
+      "startTime": 1788198563954,
+      "endTime": 1788208537585,
       "duration": "2h 46m",
       "difficulty": "Heroisch",
       "kills": 3,
@@ -194,5 +214,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-21T17:04:58.266Z"
+  "updatedAt": "2026-09-21T21:09:05.460Z"
 }
