@@ -85,8 +85,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 319,
-      "mplus": 2680,
-      "weeklyRuns": 0,
+      "mplus": 2681,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-21T10:46:10.664Z"
+  "updatedAt": "2026-09-21T17:04:35.444Z"
 }

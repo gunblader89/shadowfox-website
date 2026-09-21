@@ -43,7 +43,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 97,
+            "parse": 96,
             "boss": "Entombed Sentinels"
           },
           {
@@ -194,5 +194,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-21T10:46:35.473Z"
+  "updatedAt": "2026-09-21T17:04:58.266Z"
 }
