@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 2859,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -60,7 +60,7 @@
       "role": "DPS",
       "ilvl": 323,
       "mplus": 2742,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-21T01:34:35.887Z"
+  "updatedAt": "2026-09-21T10:46:10.664Z"
 }
