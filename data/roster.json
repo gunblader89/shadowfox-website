@@ -6,9 +6,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 320,
-      "mplus": 2778,
-      "weeklyRuns": 9,
+      "ilvl": 321,
+      "mplus": 2859,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -19,9 +19,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 3076,
-      "weeklyRuns": 6,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -112,7 +112,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 2649,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Füße"
       ],
@@ -250,9 +250,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 320,
-      "mplus": 3185,
-      "weeklyRuns": 9,
+      "ilvl": 321,
+      "mplus": 3201,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -295,8 +295,8 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 321,
-      "mplus": 3049,
+      "ilvl": 323,
+      "mplus": 3064,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -308,9 +308,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 318,
-      "mplus": 2929,
-      "weeklyRuns": 8,
+      "ilvl": 319,
+      "mplus": 2944,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -338,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-20T19:32:11.399Z"
+  "updatedAt": "2026-09-21T01:34:35.887Z"
 }
