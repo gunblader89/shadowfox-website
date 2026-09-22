@@ -37,7 +37,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 33,
+            "parse": 34,
             "boss": "The Coiled Altar"
           },
           {
@@ -214,5 +214,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-22T15:32:11.903Z"
+  "updatedAt": "2026-09-22T20:15:13.526Z"
 }

@@ -946,12 +946,12 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-22T15:31:49.032Z",
+  "updatedAt": "2026-09-22T20:14:51.529Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -967,6 +967,16 @@
           "dungeon": "Mördergasse",
           "level": 11,
           "timed": false
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 11,
+          "timed": true
         }
       ]
     },
@@ -1045,7 +1055,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1066,6 +1076,16 @@
           "dungeon": "Mördergasse",
           "level": 11,
           "timed": false
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 11,
+          "timed": true
         }
       ]
     },
@@ -1084,7 +1104,7 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1105,6 +1125,16 @@
           "dungeon": "Mördergasse",
           "level": 11,
           "timed": false
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 11,
+          "timed": true
         }
       ]
     },
@@ -1130,7 +1160,7 @@
         },
         {
           "dungeon": "Die Königsruh",
-          "level": 12,
+          "level": 13,
           "timed": true
         },
         {
@@ -1140,7 +1170,7 @@
         },
         {
           "dungeon": "Nalorakks Bau",
-          "level": 12,
+          "level": 13,
           "timed": true
         },
         {
