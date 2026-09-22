@@ -97,9 +97,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 322,
+      "ilvl": 324,
       "mplus": 3182,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -192,13 +192,10 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 302,
+      "ilvl": 310,
       "mplus": 2231,
       "weeklyRuns": 4,
-      "missingEnchants": [
-        "Beine",
-        "Waffe"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
     },
@@ -251,7 +248,7 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 320,
+      "ilvl": 323,
       "mplus": 3201,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -310,7 +307,7 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 2944,
+      "mplus": 2977,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -337,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-21T21:08:11.012Z"
+  "updatedAt": "2026-09-22T01:49:13.530Z"
 }

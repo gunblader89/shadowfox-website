@@ -946,7 +946,7 @@
       "classId": 2
     }
   ],
-  "updatedAt": "2026-09-21T21:08:12.566Z",
+  "updatedAt": "2026-09-22T01:49:14.887Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1001,12 +1001,17 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 15,
+          "timed": false
         },
         {
           "dungeon": "Mördergasse",
@@ -1106,12 +1111,17 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 9,
+      "runsThisWeek": 11,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
           "level": 13,
           "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 13,
+          "timed": false
         },
         {
           "dungeon": "Arena der Leerennarbe",
@@ -1147,6 +1157,11 @@
           "dungeon": "Altar der Fänge",
           "level": 12,
           "timed": false
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": true
         },
         {
           "dungeon": "Rubinlebensbecken",
