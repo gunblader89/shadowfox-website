@@ -246,6 +246,13 @@
       "classId": 1
     },
     {
+      "name": "Saftig",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 90,
+      "classId": 2
+    },
+    {
       "name": "Jirawl",
       "realm": "blackhand",
       "rank": 3,
@@ -937,16 +944,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Saftig",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 2
     }
   ],
-  "updatedAt": "2026-09-22T09:59:50.861Z",
+  "updatedAt": "2026-09-22T15:31:49.032Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

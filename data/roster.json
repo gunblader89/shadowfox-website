@@ -46,8 +46,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 323,
-      "mplus": 2855,
-      "weeklyRuns": 2,
+      "mplus": 2899,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -112,7 +112,7 @@
       "role": "DPS",
       "ilvl": 320,
       "mplus": 2649,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Füße"
       ],
@@ -307,7 +307,7 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 319,
-      "mplus": 2977,
+      "mplus": 2986,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-22T09:59:49.406Z"
+  "updatedAt": "2026-09-22T15:31:47.474Z"
 }
