@@ -46,7 +46,7 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 323,
-      "mplus": 2899,
+      "mplus": 2912,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
@@ -59,7 +59,7 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 323,
-      "mplus": 2742,
+      "mplus": 2887,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
@@ -167,7 +167,7 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 318,
-      "mplus": 2799,
+      "mplus": 2821,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -252,7 +252,7 @@
       "role": "TANK",
       "ilvl": 322,
       "mplus": 3219,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -266,7 +266,7 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 323,
-      "mplus": 2741,
+      "mplus": 2855,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-23T15:27:32.303Z"
+  "updatedAt": "2026-09-23T20:29:34.291Z"
 }

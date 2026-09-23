@@ -946,7 +946,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-23T15:27:33.702Z",
+  "updatedAt": "2026-09-23T20:29:35.838Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -957,8 +957,24 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 13,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",
@@ -987,8 +1003,14 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Miliim",

@@ -25,10 +25,10 @@
             "boss": "The Coiled Altar"
           },
           {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 88,
+            "name": "Moonlord",
+            "class": "Druid",
+            "spec": "Feral",
+            "parse": 86,
             "boss": "The Coiled Altar"
           }
         ],
@@ -190,29 +190,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "Z23WCDk6NqbPwmMf",
-      "url": "https://www.warcraftlogs.com/reports/Z23WCDk6NqbPwmMf",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1788198563954,
-      "endTime": 1788208537585,
-      "duration": "2h 46m",
-      "difficulty": "Heroisch",
-      "kills": 3,
-      "wipes": 19,
-      "killedBosses": [
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-23T15:27:56.625Z"
+  "updatedAt": "2026-09-23T20:30:00.030Z"
 }
