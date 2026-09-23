@@ -28,7 +28,7 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 91,
+            "parse": 89,
             "boss": "The Coiled Altar"
           }
         ],
@@ -214,5 +214,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-22T20:15:13.526Z"
+  "updatedAt": "2026-09-23T01:44:21.070Z"
 }
