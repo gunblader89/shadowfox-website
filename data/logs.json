@@ -21,14 +21,14 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 95,
+            "parse": 94,
             "boss": "The Coiled Altar"
           },
           {
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 89,
+            "parse": 88,
             "boss": "The Coiled Altar"
           }
         ],
@@ -214,5 +214,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-23T10:01:34.332Z"
+  "updatedAt": "2026-09-23T15:27:56.625Z"
 }

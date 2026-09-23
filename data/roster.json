@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 2982,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -297,7 +297,7 @@
       "role": "DPS",
       "ilvl": 324,
       "mplus": 3064,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-23T10:01:09.437Z"
+  "updatedAt": "2026-09-23T15:27:32.303Z"
 }
