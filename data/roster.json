@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 2982,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 314,
+      "ilvl": 317,
       "mplus": 2549,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 325,
       "mplus": 2912,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -58,7 +58,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 325,
       "mplus": 2887,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -97,7 +97,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 325,
       "mplus": 3201,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Shadow",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 2727,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -154,9 +154,7 @@
       "ilvl": 316,
       "mplus": 2589,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Beine"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -166,7 +164,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 2821,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -251,9 +249,7 @@
       "ilvl": 322,
       "mplus": 3277,
       "weeklyRuns": 6,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -263,7 +259,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 322,
+      "ilvl": 325,
       "mplus": 2855,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -306,7 +302,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 3000,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -326,7 +322,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 3035,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -334,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-24T15:49:40.348Z"
+  "updatedAt": "2026-09-24T20:33:04.694Z"
 }

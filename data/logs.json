@@ -1,6 +1,61 @@
 {
   "reports": [
     {
+      "code": "dj8XB72cmVNTGJkL",
+      "url": "https://www.warcraftlogs.com/reports/dj8XB72cmVNTGJkL",
+      "loggedBy": "Jisgarin",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1790272030791,
+      "endTime": 1790281474117,
+      "duration": "2h 37m",
+      "difficulty": "Heroisch",
+      "kills": 6,
+      "wipes": 12,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
+        "The Lost Explorers",
+        "Sszorak",
+        "The Twin Fangs"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Moonlord",
+            "class": "Druid",
+            "spec": "Feral",
+            "parse": 96,
+            "boss": "Entombed Sentinels"
+          },
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 94,
+            "boss": "Entombed Sentinels"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Mönkitönk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 94,
+            "boss": "Vashnik the Malignant"
+          },
+          {
+            "name": "Garódash",
+            "class": "Shaman",
+            "spec": "Restoration",
+            "parse": 85,
+            "boss": "Vashnik the Malignant"
+          }
+        ]
+      }
+    },
+    {
       "code": "Ngm6QTYapnAfbWP4",
       "url": "https://www.warcraftlogs.com/reports/Ngm6QTYapnAfbWP4",
       "loggedBy": "Jisgarin",
@@ -16,38 +71,8 @@
         "The Coiled Altar"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 92,
-            "boss": "The Coiled Altar"
-          },
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 86,
-            "boss": "The Coiled Altar"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 33,
-            "boss": "The Coiled Altar"
-          },
-          {
-            "name": "Mönkitönk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 23,
-            "boss": "The Coiled Altar"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -166,31 +191,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "PLakh2TBqN31nWvd",
-      "url": "https://www.warcraftlogs.com/reports/PLakh2TBqN31nWvd",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1788457553350,
-      "endTime": 1788467565348,
-      "duration": "2h 46m",
-      "difficulty": "Heroisch",
-      "kills": 5,
-      "wipes": 16,
-      "killedBosses": [
-        "Nymrissa Wavecaller",
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-24T15:50:05.267Z"
+  "updatedAt": "2026-09-24T20:33:30.068Z"
 }

@@ -253,13 +253,6 @@
       "classId": 2
     },
     {
-      "name": "Jirawl",
-      "realm": "blackhand",
-      "rank": 3,
-      "level": 90,
-      "classId": 9
-    },
-    {
       "name": "Jisgarin",
       "realm": "blackmoore",
       "rank": 5,
@@ -946,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-24T15:49:41.976Z",
+  "updatedAt": "2026-09-24T20:33:06.316Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
