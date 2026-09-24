@@ -946,7 +946,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-23T20:29:35.838Z",
+  "updatedAt": "2026-09-24T01:37:56.534Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1015,8 +1015,14 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Mardyn",
