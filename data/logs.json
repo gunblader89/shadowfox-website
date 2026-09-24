@@ -21,13 +21,13 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 94,
+            "parse": 92,
             "boss": "The Coiled Altar"
           },
           {
-            "name": "Moonlord",
-            "class": "Druid",
-            "spec": "Feral",
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
             "parse": 86,
             "boss": "The Coiled Altar"
           }
@@ -37,7 +37,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 34,
+            "parse": 33,
             "boss": "The Coiled Altar"
           },
           {
@@ -192,5 +192,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-24T10:04:30.191Z"
+  "updatedAt": "2026-09-24T15:50:05.267Z"
 }
