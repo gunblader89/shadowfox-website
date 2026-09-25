@@ -20,8 +20,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 324,
-      "mplus": 3101,
-      "weeklyRuns": 2,
+      "mplus": 3131,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Shadow",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 2727,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -289,9 +289,9 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 324,
-      "mplus": 3126,
-      "weeklyRuns": 4,
+      "ilvl": 325,
+      "mplus": 3146,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -302,7 +302,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 323,
       "mplus": 3000,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -330,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-25T10:13:25.801Z"
+  "updatedAt": "2026-09-25T15:50:17.183Z"
 }
