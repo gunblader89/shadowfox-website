@@ -20,8 +20,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 324,
-      "mplus": 3085,
-      "weeklyRuns": 1,
+      "mplus": 3101,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -97,7 +97,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 325,
       "mplus": 3201,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -154,9 +154,7 @@
       "ilvl": 316,
       "mplus": 2589,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Beine"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -332,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-25T01:52:04.560Z"
+  "updatedAt": "2026-09-25T10:13:25.801Z"
 }
