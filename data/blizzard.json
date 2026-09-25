@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-24T20:33:06.316Z",
+  "updatedAt": "2026-09-25T01:52:06.027Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1020,8 +1020,14 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 5,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Tiskarian",

@@ -97,7 +97,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 323,
       "mplus": 3201,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -154,7 +154,9 @@
       "ilvl": 316,
       "mplus": 2589,
       "weeklyRuns": 0,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Beine"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -304,7 +306,7 @@
       "role": "DPS",
       "ilvl": 324,
       "mplus": 3000,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -330,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-24T20:33:04.694Z"
+  "updatedAt": "2026-09-25T01:52:04.560Z"
 }

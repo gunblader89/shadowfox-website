@@ -49,7 +49,7 @@
             "name": "Garódash",
             "class": "Shaman",
             "spec": "Restoration",
-            "parse": 85,
+            "parse": 86,
             "boss": "Vashnik the Malignant"
           }
         ]
@@ -193,5 +193,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-24T20:33:30.068Z"
+  "updatedAt": "2026-09-25T01:52:27.543Z"
 }
