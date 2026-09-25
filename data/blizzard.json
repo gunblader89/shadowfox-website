@@ -937,9 +937,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Bokono",
+      "realm": "antonidas",
+      "rank": 3,
+      "level": 90,
+      "classId": 5
     }
   ],
-  "updatedAt": "2026-09-25T15:50:18.611Z",
+  "updatedAt": "2026-09-25T20:32:39.320Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -996,11 +1003,16 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
         {
           "dungeon": "Die Königsruh",
           "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 13,
           "timed": true
         }
       ]

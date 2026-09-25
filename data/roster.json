@@ -60,7 +60,7 @@
       "role": "DPS",
       "ilvl": 325,
       "mplus": 2887,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -164,9 +164,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 318,
-      "mplus": 2821,
-      "weeklyRuns": 1,
+      "ilvl": 319,
+      "mplus": 2837,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -260,8 +260,8 @@
       "spec": "Brewmaster",
       "role": "TANK",
       "ilvl": 325,
-      "mplus": 2855,
-      "weeklyRuns": 3,
+      "mplus": 2893,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -323,12 +323,12 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 323,
-      "mplus": 3035,
-      "weeklyRuns": 0,
+      "mplus": 3048,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-25T15:50:17.183Z"
+  "updatedAt": "2026-09-25T20:32:37.772Z"
 }
