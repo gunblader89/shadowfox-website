@@ -526,6 +526,13 @@
       "classId": 12
     },
     {
+      "name": "Bokono",
+      "realm": "antonidas",
+      "rank": 3,
+      "level": 90,
+      "classId": 5
+    },
+    {
       "name": "Bennimaru",
       "realm": "blackmoore",
       "rank": 5,
@@ -937,16 +944,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Bokono",
-      "realm": "antonidas",
-      "rank": 3,
-      "level": 90,
-      "classId": 5
     }
   ],
-  "updatedAt": "2026-09-26T09:53:51.214Z",
+  "updatedAt": "2026-09-26T14:59:09.878Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
