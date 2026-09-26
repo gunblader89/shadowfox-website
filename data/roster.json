@@ -110,7 +110,7 @@
       "class": "Evoker",
       "spec": "Devastation",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 2649,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -235,7 +235,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 3245,
-      "weeklyRuns": 3,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -248,7 +248,7 @@
       "role": "TANK",
       "ilvl": 322,
       "mplus": 3277,
-      "weeklyRuns": 6,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -291,7 +291,7 @@
       "role": "DPS",
       "ilvl": 325,
       "mplus": 3146,
-      "weeklyRuns": 5,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -330,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-25T20:32:37.772Z"
+  "updatedAt": "2026-09-26T01:55:30.535Z"
 }
