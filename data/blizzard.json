@@ -937,9 +937,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Baalroq",
+      "realm": "blackmoore",
+      "rank": 6,
+      "level": 80,
+      "classId": 6
     }
   ],
-  "updatedAt": "2026-09-27T10:35:20.330Z",
+  "updatedAt": "2026-09-27T15:40:23.573Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1039,10 +1046,15 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
         {
           "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
           "level": 10,
           "timed": true
         }
