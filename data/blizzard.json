@@ -941,18 +941,36 @@
     {
       "name": "Baalroq",
       "realm": "blackmoore",
-      "rank": 6,
-      "level": 80,
+      "rank": 5,
+      "level": 82,
+      "classId": 6
+    },
+    {
+      "name": "Rindersteak",
+      "realm": "thrall",
+      "rank": 5,
+      "level": 69,
       "classId": 6
     }
   ],
-  "updatedAt": "2026-09-27T15:40:23.573Z",
+  "updatedAt": "2026-09-27T20:13:23.160Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Mördergasse",
+          "level": 13,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Narrwên",
@@ -997,7 +1015,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1007,6 +1025,26 @@
         {
           "dungeon": "Die Königsruh",
           "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 14,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 13,
+          "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 12,
           "timed": true
         }
       ]
@@ -1046,12 +1084,17 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Die Königsruh",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 13,
+          "timed": false
         },
         {
           "dungeon": "Mördergasse",
