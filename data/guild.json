@@ -93,8 +93,8 @@
         "realm": 93
       },
       "heroic": {
-        "world": 7320,
-        "region": 2980,
+        "world": 7350,
+        "region": 2987,
         "realm": 101
       },
       "mythic": {
@@ -104,9 +104,9 @@
       }
     }
   },
-  "memberCount": 135,
+  "memberCount": 134,
   "classCount": {
-    "undefined": 135
+    "undefined": 134
   },
   "members": [
     {
@@ -510,10 +510,7 @@
     },
     {
       "rank": 3
-    },
-    {
-      "rank": 99
     }
   ],
-  "updatedAt": "2026-09-26T19:55:58.753Z"
+  "updatedAt": "2026-09-27T01:43:56.624Z"
 }

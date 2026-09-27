@@ -939,7 +939,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-26T19:56:52.016Z",
+  "updatedAt": "2026-09-27T01:44:32.053Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -990,8 +990,19 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Iojaru",
