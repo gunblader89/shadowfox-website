@@ -7,15 +7,47 @@
       "title": "Raid",
       "zone": "The Venomous Abyss",
       "startTime": 1790619436847,
-      "endTime": 1790620236696,
-      "duration": "13m",
+      "endTime": 1790627164252,
+      "duration": "2h 8m",
       "difficulty": "Heroisch",
-      "kills": 0,
-      "wipes": 3,
-      "killedBosses": [],
+      "kills": 1,
+      "wipes": 16,
+      "killedBosses": [
+        "Nymrissa Wavecaller"
+      ],
       "vips": {
-        "dps": [],
-        "hps": []
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 93,
+            "boss": "Nymrissa Wavecaller"
+          },
+          {
+            "name": "Moonlord",
+            "class": "Druid",
+            "spec": "Feral",
+            "parse": 90,
+            "boss": "Nymrissa Wavecaller"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Thutankamon",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 79,
+            "boss": "Altar of Fangs"
+          },
+          {
+            "name": "Lyk",
+            "class": "Paladin",
+            "spec": "Holy",
+            "parse": 53,
+            "boss": "Nymrissa Wavecaller"
+          }
+        ]
       }
     },
     {
@@ -153,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T18:37:01.775Z"
+  "updatedAt": "2026-09-28T22:35:10.081Z"
 }
