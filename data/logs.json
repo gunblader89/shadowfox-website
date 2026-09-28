@@ -1,6 +1,24 @@
 {
   "reports": [
     {
+      "code": "hPzfcQCkHL4jwpqN",
+      "url": "https://www.warcraftlogs.com/reports/hPzfcQCkHL4jwpqN",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1790619436847,
+      "endTime": 1790620236696,
+      "duration": "13m",
+      "difficulty": "Heroisch",
+      "kills": 0,
+      "wipes": 3,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
       "code": "dj8XB72cmVNTGJkL",
       "url": "https://www.warcraftlogs.com/reports/dj8XB72cmVNTGJkL",
       "loggedBy": "Jisgarin",
@@ -21,38 +39,8 @@
         "The Twin Fangs"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Moonlord",
-            "class": "Druid",
-            "spec": "Feral",
-            "parse": 96,
-            "boss": "Entombed Sentinels"
-          },
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 92,
-            "boss": "Entombed Sentinels"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Mönkitönk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 94,
-            "boss": "Vashnik the Malignant"
-          },
-          {
-            "name": "Garódash",
-            "class": "Shaman",
-            "spec": "Restoration",
-            "parse": 84,
-            "boss": "Vashnik the Malignant"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -163,35 +151,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "LW2KAtVdR981zcfq",
-      "url": "https://www.warcraftlogs.com/reports/LW2KAtVdR981zcfq",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1788716949048,
-      "endTime": 1788725073033,
-      "duration": "2h 15m",
-      "difficulty": "Normal",
-      "kills": 9,
-      "wipes": 6,
-      "killedBosses": [
-        "Nymrissa Wavecaller",
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak",
-        "The Twin Fangs",
-        "The Coiled Altar",
-        "Ula'tek"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-09-28T11:43:59.114Z"
+  "updatedAt": "2026-09-28T18:37:01.775Z"
 }

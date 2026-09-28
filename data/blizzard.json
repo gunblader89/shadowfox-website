@@ -526,6 +526,13 @@
       "classId": 12
     },
     {
+      "name": "Baalroq",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 83,
+      "classId": 6
+    },
+    {
       "name": "Bennimaru",
       "realm": "blackmoore",
       "rank": 5,
@@ -657,6 +664,13 @@
       "rank": 5,
       "level": 80,
       "classId": 1
+    },
+    {
+      "name": "Rindersteak",
+      "realm": "thrall",
+      "rank": 5,
+      "level": 69,
+      "classId": 6
     },
     {
       "name": "Antikrizt",
@@ -937,23 +951,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Baalroq",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 82,
-      "classId": 6
-    },
-    {
-      "name": "Rindersteak",
-      "realm": "thrall",
-      "rank": 5,
-      "level": 69,
-      "classId": 6
     }
   ],
-  "updatedAt": "2026-09-28T11:43:36.355Z",
+  "updatedAt": "2026-09-28T18:36:39.666Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

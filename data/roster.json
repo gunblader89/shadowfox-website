@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 319,
+      "ilvl": 320,
       "mplus": 2549,
       "weeklyRuns": 6,
       "missingEnchants": [],
@@ -97,7 +97,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 327,
       "mplus": 3201,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -125,7 +125,7 @@
       "class": "Druid",
       "spec": "Balance",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 2699,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -151,12 +151,10 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 320,
       "mplus": 2676,
       "weeklyRuns": 8,
-      "missingEnchants": [
-        "Ring 1"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -166,7 +164,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 2837,
       "weeklyRuns": 5,
       "missingEnchants": [],
@@ -235,7 +233,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 3276,
       "weeklyRuns": 9,
       "missingEnchants": [],
@@ -248,12 +246,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 323,
+      "ilvl": 325,
       "mplus": 3310,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -293,8 +289,8 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 324,
-      "mplus": 3194,
+      "ilvl": 326,
+      "mplus": 3205,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -308,7 +304,7 @@
       "role": "DPS",
       "ilvl": 324,
       "mplus": 3000,
-      "weeklyRuns": 4,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -326,7 +322,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 3076,
       "weeklyRuns": 9,
       "missingEnchants": [],
@@ -334,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-28T11:43:34.861Z"
+  "updatedAt": "2026-09-28T18:36:38.217Z"
 }
