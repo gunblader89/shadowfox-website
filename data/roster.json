@@ -6,9 +6,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 321,
-      "mplus": 2982,
-      "weeklyRuns": 0,
+      "ilvl": 322,
+      "mplus": 3028,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -72,8 +72,8 @@
       "spec": "Mistweaver",
       "role": "HEALING",
       "ilvl": 320,
-      "mplus": 3042,
-      "weeklyRuns": 4,
+      "mplus": 3075,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -153,7 +153,7 @@
       "role": "DPS",
       "ilvl": 318,
       "mplus": 2676,
-      "weeklyRuns": 6,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Ring 1"
       ],
@@ -293,9 +293,9 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 325,
-      "mplus": 3146,
-      "weeklyRuns": 9,
+      "ilvl": 324,
+      "mplus": 3194,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -306,9 +306,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 3000,
-      "weeklyRuns": 1,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -326,13 +326,13 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 323,
       "mplus": 3076,
-      "weeklyRuns": 7,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-27T20:13:21.644Z"
+  "updatedAt": "2026-09-28T01:57:24.745Z"
 }
