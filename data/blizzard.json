@@ -529,7 +529,7 @@
       "name": "Baalroq",
       "realm": "blackmoore",
       "rank": 5,
-      "level": 84,
+      "level": 87,
       "classId": 6
     },
     {
@@ -951,9 +951,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Snirks",
+      "realm": "blackrock",
+      "rank": 5,
+      "level": 90,
+      "classId": 9
     }
   ],
-  "updatedAt": "2026-09-29T16:54:07.260Z",
+  "updatedAt": "2026-09-29T21:27:15.212Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1127,7 +1134,7 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1141,17 +1148,22 @@
         },
         {
           "dungeon": "Nalorakks Bau",
-          "level": 7,
+          "level": 10,
           "timed": true
         },
         {
           "dungeon": "Der Tempel von Sethraliss",
-          "level": 9,
+          "level": 10,
           "timed": true
         },
         {
           "dungeon": "Rubinlebensbecken",
-          "level": 7,
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 8,
           "timed": true
         }
       ]
