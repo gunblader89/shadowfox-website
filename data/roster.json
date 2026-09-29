@@ -190,11 +190,11 @@
       "name": "Miliim",
       "realm": "blackmoore",
       "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
-      "ilvl": 317,
+      "spec": "Vengeance",
+      "role": "TANK",
+      "ilvl": 316,
       "mplus": 2469,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
@@ -330,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-28T22:34:45.058Z"
+  "updatedAt": "2026-09-29T02:42:34.149Z"
 }
