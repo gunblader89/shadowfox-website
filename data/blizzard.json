@@ -953,7 +953,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-29T11:23:41.069Z",
+  "updatedAt": "2026-09-29T16:54:07.260Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -975,11 +975,16 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 4,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
           "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
           "timed": true
         },
         {
@@ -1003,7 +1008,7 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1012,6 +1017,11 @@
         },
         {
           "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
           "level": 10,
           "timed": true
         }

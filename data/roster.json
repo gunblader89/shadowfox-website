@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 325,
       "mplus": 2912,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -58,9 +58,9 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 325,
       "mplus": 2887,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -71,7 +71,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 320,
+      "ilvl": 321,
       "mplus": 3075,
       "weeklyRuns": 7,
       "missingEnchants": [],
@@ -304,7 +304,7 @@
       "role": "DPS",
       "ilvl": 324,
       "mplus": 3000,
-      "weeklyRuns": 7,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -322,7 +322,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 324,
       "mplus": 3076,
       "weeklyRuns": 9,
       "missingEnchants": [],
@@ -330,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-29T11:23:39.400Z"
+  "updatedAt": "2026-09-29T16:54:05.806Z"
 }

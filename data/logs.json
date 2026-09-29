@@ -28,7 +28,7 @@
             "name": "Moonlord",
             "class": "Druid",
             "spec": "Feral",
-            "parse": 90,
+            "parse": 89,
             "boss": "Nymrissa Wavecaller"
           }
         ],
@@ -185,5 +185,5 @@
       }
     }
   ],
-  "updatedAt": "2026-09-29T11:24:03.562Z"
+  "updatedAt": "2026-09-29T16:54:29.324Z"
 }
