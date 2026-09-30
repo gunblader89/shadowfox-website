@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 326,
-      "mplus": 2890,
-      "weeklyRuns": 0,
+      "mplus": 2893,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -165,7 +165,7 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 319,
-      "mplus": 2837,
+      "mplus": 2896,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -193,8 +193,8 @@
       "spec": "Vengeance",
       "role": "TANK",
       "ilvl": 317,
-      "mplus": 2514,
-      "weeklyRuns": 0,
+      "mplus": 2517,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
@@ -205,9 +205,9 @@
       "class": "Priest",
       "spec": "Shadow",
       "role": "DPS",
-      "ilvl": 315,
+      "ilvl": 316,
       "mplus": 2790,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -233,9 +233,9 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 323,
+      "ilvl": 325,
       "mplus": 3276,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -248,8 +248,10 @@
       "role": "DPS",
       "ilvl": 324,
       "mplus": 3310,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
+      "weeklyRuns": 1,
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -330,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-09-30T16:49:56.248Z"
+  "updatedAt": "2026-09-30T21:28:00.464Z"
 }

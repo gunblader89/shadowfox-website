@@ -676,7 +676,7 @@
       "name": "Rindersteak",
       "realm": "thrall",
       "rank": 5,
-      "level": 75,
+      "level": 80,
       "classId": 6
     },
     {
@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-09-30T16:49:57.785Z",
+  "updatedAt": "2026-09-30T21:28:01.890Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -978,8 +978,19 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 11,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",
@@ -1008,14 +1019,36 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Mördergasse",
+          "level": 13,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 3,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 13,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Mardyn",
