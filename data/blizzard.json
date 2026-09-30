@@ -512,6 +512,13 @@
       "classId": 3
     },
     {
+      "name": "Snirks",
+      "realm": "blackrock",
+      "rank": 5,
+      "level": 90,
+      "classId": 9
+    },
+    {
       "name": "Spintowinlol",
       "realm": "eredar",
       "rank": 5,
@@ -911,6 +918,13 @@
       "classId": 11
     },
     {
+      "name": "Myrîx",
+      "realm": "blackmoore",
+      "rank": 3,
+      "level": 90,
+      "classId": 7
+    },
+    {
       "name": "Tsuyuko",
       "realm": "garrosh",
       "rank": 6,
@@ -951,23 +965,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Snirks",
-      "realm": "blackrock",
-      "rank": 5,
-      "level": 90,
-      "classId": 9
-    },
-    {
-      "name": "Myrîx",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 7
     }
   ],
-  "updatedAt": "2026-09-30T11:11:29.694Z",
+  "updatedAt": "2026-09-30T16:49:57.785Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
