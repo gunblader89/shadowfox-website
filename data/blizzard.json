@@ -204,13 +204,6 @@
       "classId": 11
     },
     {
-      "name": "Askái",
-      "realm": "blackhand",
-      "rank": 3,
-      "level": 90,
-      "classId": 12
-    },
-    {
       "name": "Kitebone",
       "realm": "antonidas",
       "rank": 2,
@@ -967,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-01T11:38:36.683Z",
+  "updatedAt": "2026-10-01T17:23:03.815Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1006,8 +999,14 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
