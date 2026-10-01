@@ -1,6 +1,63 @@
 {
   "reports": [
     {
+      "code": "zX2p1vTDgC4Bmtn3",
+      "url": "https://www.warcraftlogs.com/reports/zX2p1vTDgC4Bmtn3",
+      "loggedBy": "Jisgarin",
+      "title": "The Venomous Abyss",
+      "zone": "The Venomous Abyss",
+      "startTime": 1790876590367,
+      "endTime": 1790886249357,
+      "duration": "2h 40m",
+      "difficulty": "Heroisch",
+      "kills": 8,
+      "wipes": 10,
+      "killedBosses": [
+        "Nymrissa Wavecaller",
+        "Nek'zali the Soulcoiler",
+        "The Lost Explorers",
+        "Sszorak",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
+        "The Twin Fangs",
+        "The Coiled Altar"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Jisgarin",
+            "class": "Mage",
+            "spec": "Frost",
+            "parse": 98,
+            "boss": "Sszorak"
+          },
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 98,
+            "boss": "Entombed Sentinels"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Lyk",
+            "class": "Paladin",
+            "spec": "Holy",
+            "parse": 74,
+            "boss": "The Lost Explorers"
+          },
+          {
+            "name": "Mönkitönk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 68,
+            "boss": "Entombed Sentinels"
+          }
+        ]
+      }
+    },
+    {
       "code": "hPzfcQCkHL4jwpqN",
       "url": "https://www.warcraftlogs.com/reports/hPzfcQCkHL4jwpqN",
       "loggedBy": "Sherra",
@@ -16,38 +73,8 @@
         "Nymrissa Wavecaller"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 93,
-            "boss": "Nymrissa Wavecaller"
-          },
-          {
-            "name": "Moonlord",
-            "class": "Druid",
-            "spec": "Feral",
-            "parse": 89,
-            "boss": "Nymrissa Wavecaller"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Thutankamon",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 78,
-            "boss": "Altar of Fangs"
-          },
-          {
-            "name": "Lyk",
-            "class": "Paladin",
-            "spec": "Holy",
-            "parse": 53,
-            "boss": "Nymrissa Wavecaller"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -165,25 +192,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "c1vCjHF7tdaDgBVG",
-      "url": "https://www.warcraftlogs.com/reports/c1vCjHF7tdaDgBVG",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1788808197990,
-      "endTime": 1788813088126,
-      "duration": "1h 21m",
-      "difficulty": "Heroisch",
-      "kills": 0,
-      "wipes": 14,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-01T17:23:26.092Z"
+  "updatedAt": "2026-10-01T21:52:37.735Z"
 }
