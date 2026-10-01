@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-01T02:21:35.330Z",
+  "updatedAt": "2026-10-01T11:38:36.683Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -978,7 +978,7 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -987,7 +987,12 @@
         },
         {
           "dungeon": "Das blendende Tal",
-          "level": 11,
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
           "timed": true
         }
       ]
