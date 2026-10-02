@@ -84,9 +84,9 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 319,
-      "mplus": 2681,
-      "weeklyRuns": 0,
+      "ilvl": 322,
+      "mplus": 2691,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/161/182275233-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Raiox"
@@ -293,7 +293,7 @@
       "role": "DPS",
       "ilvl": 326,
       "mplus": 3257,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -304,7 +304,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 324,
       "mplus": 3000,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -332,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-02T11:07:59.365Z"
+  "updatedAt": "2026-10-02T16:39:01.518Z"
 }
