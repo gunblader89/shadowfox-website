@@ -85,7 +85,7 @@
       "cls": "Druid",
       "role": "Heal",
       "rank": "Main",
-      "status": "temporarily_unavailable",
+      "status": "tracking",
       "blizzardId": "604-182275233",
       "ilvl": null,
       "vault": null,
@@ -228,7 +228,7 @@
       "cls": "Demon Hunter",
       "role": "Tank",
       "rank": "Main",
-      "status": "temporarily_unavailable",
+      "status": "tracking",
       "blizzardId": "1401-185748346",
       "ilvl": null,
       "vault": null,
@@ -632,5 +632,5 @@
       }
     ]
   },
-  "updatedAt": "2026-10-02T02:32:28.263Z"
+  "updatedAt": "2026-10-02T11:07:32.137Z"
 }
