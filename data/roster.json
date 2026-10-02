@@ -60,7 +60,7 @@
       "role": "DPS",
       "ilvl": 327,
       "mplus": 2920,
-      "weeklyRuns": 8,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -84,7 +84,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2691,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -152,9 +152,12 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 320,
-      "mplus": 2676,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
+      "mplus": 2830,
+      "weeklyRuns": 4,
+      "missingEnchants": [
+        "Ring 1",
+        "Ring 2"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/255/177199615-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Hunterchaos"
     },
@@ -246,7 +249,7 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 325,
+      "ilvl": 324,
       "mplus": 3350,
       "weeklyRuns": 4,
       "missingEnchants": [
@@ -261,8 +264,8 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 325,
-      "mplus": 2893,
+      "ilvl": 326,
+      "mplus": 2992,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -291,9 +294,9 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 3257,
-      "weeklyRuns": 6,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -326,11 +329,11 @@
       "role": "DPS",
       "ilvl": 326,
       "mplus": 3077,
-      "weeklyRuns": 2,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-02T16:39:01.518Z"
+  "updatedAt": "2026-10-02T21:21:27.302Z"
 }
