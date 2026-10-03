@@ -25,18 +25,18 @@
       "vips": {
         "dps": [
           {
-            "name": "Jisgarin",
-            "class": "Mage",
-            "spec": "Frost",
-            "parse": 98,
-            "boss": "Sszorak"
-          },
-          {
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
             "parse": 98,
             "boss": "Entombed Sentinels"
+          },
+          {
+            "name": "Jisgarin",
+            "class": "Mage",
+            "spec": "Frost",
+            "parse": 97,
+            "boss": "Sszorak"
           }
         ],
         "hps": [
@@ -51,7 +51,7 @@
             "name": "Mönkitönk",
             "class": "Monk",
             "spec": "Mistweaver",
-            "parse": 68,
+            "parse": 67,
             "boss": "Entombed Sentinels"
           }
         ]
@@ -194,5 +194,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-03T10:26:28.862Z"
+  "updatedAt": "2026-10-03T15:09:41.662Z"
 }

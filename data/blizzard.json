@@ -207,7 +207,7 @@
       "name": "Kitebone",
       "realm": "antonidas",
       "rank": 2,
-      "level": 87,
+      "level": 89,
       "classId": 6
     },
     {
@@ -500,7 +500,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "rank": 6,
+      "rank": 2,
       "level": 90,
       "classId": 3
     },
@@ -669,7 +669,7 @@
       "name": "Rindersteak",
       "realm": "thrall",
       "rank": 5,
-      "level": 81,
+      "level": 85,
       "classId": 6
     },
     {
@@ -960,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-03T10:26:07.742Z",
+  "updatedAt": "2026-10-03T15:09:19.632Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
