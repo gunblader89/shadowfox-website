@@ -960,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-02T21:21:28.756Z",
+  "updatedAt": "2026-10-03T02:17:56.401Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1044,8 +1044,13 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 12,
+          "timed": true
+        },
         {
           "dungeon": "Mördergasse",
           "level": 13,
