@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 326,
       "mplus": 3145,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 2549,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -71,7 +71,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 322,
+      "ilvl": 321,
       "mplus": 3109,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -97,7 +97,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 327,
       "mplus": 3201,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -236,7 +236,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 324,
       "mplus": 3276,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -266,7 +266,7 @@
       "role": "TANK",
       "ilvl": 326,
       "mplus": 2992,
-      "weeklyRuns": 0,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -335,5 +335,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-03T02:17:54.763Z"
+  "updatedAt": "2026-10-03T10:26:06.407Z"
 }
