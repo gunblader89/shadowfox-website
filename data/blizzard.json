@@ -624,6 +624,13 @@
       "classId": 12
     },
     {
+      "name": "Ld",
+      "realm": "ambossar",
+      "rank": 6,
+      "level": 90,
+      "classId": 10
+    },
+    {
       "name": "Raiox",
       "realm": "thrall",
       "rank": 3,
@@ -918,6 +925,13 @@
       "classId": 7
     },
     {
+      "name": "Baalhadaar",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 90,
+      "classId": 7
+    },
+    {
       "name": "Tsuyuko",
       "realm": "garrosh",
       "rank": 6,
@@ -958,34 +972,46 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Ld",
-      "realm": "ambossar",
-      "rank": 6,
-      "level": 90,
-      "classId": 10
-    },
-    {
-      "name": "Baalhadaar",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 7
     }
   ],
-  "updatedAt": "2026-10-04T15:48:52.600Z",
+  "updatedAt": "2026-10-04T20:14:06.013Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 5,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 11,
+          "timed": true
+        },
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -999,6 +1025,11 @@
         },
         {
           "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
           "level": 10,
           "timed": true
         },
@@ -1051,7 +1082,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 7,
+      "runsThisWeek": 8,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1060,7 +1091,7 @@
         },
         {
           "dungeon": "Altar der Fänge",
-          "level": 10,
+          "level": 11,
           "timed": true
         },
         {
@@ -1087,6 +1118,11 @@
           "dungeon": "Rubinlebensbecken",
           "level": 10,
           "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
         }
       ]
     },
@@ -1110,7 +1146,7 @@
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 5,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1118,13 +1154,23 @@
           "timed": true
         },
         {
+          "dungeon": "Altar der Fänge",
+          "level": 11,
+          "timed": true
+        },
+        {
           "dungeon": "Die Königsruh",
-          "level": 10,
+          "level": 12,
           "timed": true
         },
         {
           "dungeon": "Mördergasse",
           "level": 13,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
           "timed": true
         }
       ]
@@ -1132,7 +1178,7 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 4,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1140,7 +1186,17 @@
           "timed": true
         },
         {
+          "dungeon": "Nalorakks Bau",
+          "level": 10,
+          "timed": true
+        },
+        {
           "dungeon": "Mördergasse",
+          "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
           "level": 10,
           "timed": true
         }

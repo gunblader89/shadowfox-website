@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 326,
       "mplus": 3145,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -32,9 +32,9 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 322,
-      "mplus": 2686,
-      "weeklyRuns": 4,
+      "ilvl": 323,
+      "mplus": 2696,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -45,9 +45,9 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 327,
-      "mplus": 3038,
-      "weeklyRuns": 8,
+      "ilvl": 328,
+      "mplus": 3041,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -58,7 +58,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 2920,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -153,7 +153,7 @@
       "role": "DPS",
       "ilvl": 321,
       "mplus": 2875,
-      "weeklyRuns": 8,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Ring 1",
         "Ring 2"
@@ -196,8 +196,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 319,
-      "mplus": 2723,
-      "weeklyRuns": 7,
+      "mplus": 2735,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
@@ -309,7 +309,7 @@
       "role": "DPS",
       "ilvl": 325,
       "mplus": 3000,
-      "weeklyRuns": 2,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -329,11 +329,11 @@
       "role": "DPS",
       "ilvl": 326,
       "mplus": 3077,
-      "weeklyRuns": 5,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-04T15:48:51.103Z"
+  "updatedAt": "2026-10-04T20:14:04.632Z"
 }
