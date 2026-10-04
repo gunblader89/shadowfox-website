@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 2727,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -195,7 +195,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 2643,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -206,9 +206,9 @@
       "name": "Doktorpöbel",
       "realm": "dalvengyr",
       "class": "Priest",
-      "spec": "Discipline",
+      "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 317,
+      "ilvl": 318,
       "mplus": 2790,
       "weeklyRuns": 2,
       "missingEnchants": [
@@ -249,9 +249,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 325,
-      "mplus": 3350,
-      "weeklyRuns": 7,
+      "ilvl": 324,
+      "mplus": 3412,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -264,7 +264,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 3060,
       "weeklyRuns": 7,
       "missingEnchants": [],
@@ -307,9 +307,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 325,
       "mplus": 3000,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/61/183530301-avatar.jpg?alt=/wow/static/images/2d/avatar/4-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Mardyn"
@@ -335,5 +335,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-03T19:59:34.060Z"
+  "updatedAt": "2026-10-04T02:51:21.139Z"
 }
