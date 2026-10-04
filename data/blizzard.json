@@ -669,7 +669,7 @@
       "name": "Rindersteak",
       "realm": "thrall",
       "rank": 5,
-      "level": 86,
+      "level": 87,
       "classId": 6
     },
     {
@@ -958,9 +958,23 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Ld",
+      "realm": "ambossar",
+      "rank": 6,
+      "level": 90,
+      "classId": 10
+    },
+    {
+      "name": "Baalhadaar",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 90,
+      "classId": 7
     }
   ],
-  "updatedAt": "2026-10-04T11:08:25.098Z",
+  "updatedAt": "2026-10-04T15:48:52.600Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1037,7 +1051,7 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
+      "runsThisWeek": 7,
       "runs": [
         {
           "dungeon": "Das blendende Tal",
@@ -1045,8 +1059,18 @@
           "timed": true
         },
         {
+          "dungeon": "Altar der Fänge",
+          "level": 10,
+          "timed": true
+        },
+        {
           "dungeon": "Arena der Leerennarbe",
           "level": 13,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 12,
           "timed": true
         },
         {
@@ -1057,6 +1081,11 @@
         {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 10,
           "timed": true
         }
       ]

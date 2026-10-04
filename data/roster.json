@@ -33,8 +33,8 @@
       "spec": "Restoration",
       "role": "HEALING",
       "ilvl": 322,
-      "mplus": 2549,
-      "weeklyRuns": 0,
+      "mplus": 2686,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -151,9 +151,9 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 320,
-      "mplus": 2830,
-      "weeklyRuns": 4,
+      "ilvl": 321,
+      "mplus": 2875,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Ring 1",
         "Ring 2"
@@ -195,9 +195,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 318,
-      "mplus": 2643,
-      "weeklyRuns": 3,
+      "ilvl": 319,
+      "mplus": 2723,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/192/181166784-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Miliim"
@@ -335,5 +335,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-04T11:08:23.740Z"
+  "updatedAt": "2026-10-04T15:48:51.103Z"
 }
