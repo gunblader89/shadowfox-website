@@ -7,11 +7,11 @@
       "title": "Raid",
       "zone": "The Venomous Abyss",
       "startTime": 1791224319839,
-      "endTime": 1791229119681,
-      "duration": "1h 19m",
+      "endTime": 1791232107945,
+      "duration": "2h 9m",
       "difficulty": "Heroisch",
       "kills": 0,
-      "wipes": 8,
+      "wipes": 16,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -157,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-05T19:48:38.184Z"
+  "updatedAt": "2026-10-05T23:13:01.274Z"
 }
