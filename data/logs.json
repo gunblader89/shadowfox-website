@@ -44,7 +44,7 @@
             "name": "Lyk",
             "class": "Paladin",
             "spec": "Holy",
-            "parse": 73,
+            "parse": 74,
             "boss": "The Lost Explorers"
           },
           {
@@ -194,5 +194,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-04T20:14:39.263Z"
+  "updatedAt": "2026-10-05T02:21:13.509Z"
 }
