@@ -64,14 +64,14 @@
         "realm": 0
       },
       "mythic": {
-        "world": 6923,
+        "world": 6924,
         "region": 2798,
         "realm": 105
       }
     },
     "the-tidebound-grotto": {
       "normal": {
-        "world": 7102,
+        "world": 7103,
         "region": 2820,
         "realm": 91
       },
@@ -88,13 +88,13 @@
     },
     "the-venomous-abyss": {
       "normal": {
-        "world": 6127,
+        "world": 6128,
         "region": 2539,
         "realm": 93
       },
       "heroic": {
-        "world": 7739,
-        "region": 3131,
+        "world": 7778,
+        "region": 3132,
         "realm": 110
       },
       "mythic": {
@@ -524,5 +524,5 @@
       "rank": 5
     }
   ],
-  "updatedAt": "2026-10-05T02:20:22.251Z"
+  "updatedAt": "2026-10-05T12:18:07.731Z"
 }
