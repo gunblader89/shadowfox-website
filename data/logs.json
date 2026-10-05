@@ -1,6 +1,24 @@
 {
   "reports": [
     {
+      "code": "MTVna6pcKr1jDdHw",
+      "url": "https://www.warcraftlogs.com/reports/MTVna6pcKr1jDdHw",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1791224319839,
+      "endTime": 1791229119681,
+      "duration": "1h 19m",
+      "difficulty": "Heroisch",
+      "kills": 0,
+      "wipes": 8,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
       "code": "zX2p1vTDgC4Bmtn3",
       "url": "https://www.warcraftlogs.com/reports/zX2p1vTDgC4Bmtn3",
       "loggedBy": "Jisgarin",
@@ -23,38 +41,8 @@
         "The Coiled Altar"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 98,
-            "boss": "Entombed Sentinels"
-          },
-          {
-            "name": "Jisgarin",
-            "class": "Mage",
-            "spec": "Frost",
-            "parse": 97,
-            "boss": "Sszorak"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Lyk",
-            "class": "Paladin",
-            "spec": "Holy",
-            "parse": 73,
-            "boss": "The Lost Explorers"
-          },
-          {
-            "name": "Mönkitönk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 67,
-            "boss": "Entombed Sentinels"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -167,32 +155,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "PD6nGTjf8qyRpbth",
-      "url": "https://www.warcraftlogs.com/reports/PD6nGTjf8qyRpbth",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1789062536057,
-      "endTime": 1789072571657,
-      "duration": "2h 47m",
-      "difficulty": "Heroisch",
-      "kills": 6,
-      "wipes": 12,
-      "killedBosses": [
-        "Nymrissa Wavecaller",
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-05T12:19:05.455Z"
+  "updatedAt": "2026-10-05T19:48:38.184Z"
 }
