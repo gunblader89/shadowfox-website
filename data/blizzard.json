@@ -624,13 +624,6 @@
       "classId": 12
     },
     {
-      "name": "Ld",
-      "realm": "ambossar",
-      "rank": 6,
-      "level": 90,
-      "classId": 10
-    },
-    {
       "name": "Raiox",
       "realm": "thrall",
       "rank": 3,
@@ -974,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-06T17:12:32.269Z",
+  "updatedAt": "2026-10-06T21:42:41.881Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1011,7 +1004,7 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
+      "runsThisWeek": 6,
       "runs": [
         {
           "dungeon": "Altar der Fänge",
@@ -1036,6 +1029,11 @@
         {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 10,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 11,
           "timed": true
         }
       ]

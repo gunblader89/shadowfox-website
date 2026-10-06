@@ -8,7 +8,7 @@
       "role": "DPS",
       "ilvl": 326,
       "mplus": 3028,
-      "weeklyRuns": 1,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -59,7 +59,7 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 328,
-      "mplus": 2920,
+      "mplus": 2924,
       "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 3109,
-      "weeklyRuns": 6,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -138,9 +138,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 2727,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -206,9 +206,10 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 318,
-      "mplus": 2790,
-      "weeklyRuns": 2,
+      "mplus": 2831,
+      "weeklyRuns": 3,
       "missingEnchants": [
+        "Ring 2",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
@@ -330,5 +331,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-06T17:12:30.951Z"
+  "updatedAt": "2026-10-06T21:42:40.418Z"
 }
