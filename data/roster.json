@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 326,
       "mplus": 3145,
-      "weeklyRuns": 1,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -82,9 +82,9 @@
       "name": "Raiox",
       "realm": "thrall",
       "class": "Druid",
-      "spec": "Restoration",
-      "role": "HEALING",
-      "ilvl": 323,
+      "spec": "Balance",
+      "role": "DPS",
+      "ilvl": 322,
       "mplus": 2691,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -151,7 +151,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 321,
+      "ilvl": 320,
       "mplus": 2875,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -330,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-06T12:03:52.570Z"
+  "updatedAt": "2026-10-06T17:12:30.951Z"
 }
