@@ -192,7 +192,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 318,
+      "ilvl": 319,
       "mplus": 2735,
       "weeklyRuns": 9,
       "missingEnchants": [],
@@ -244,9 +244,9 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Protection",
-      "role": "TANK",
-      "ilvl": 326,
+      "spec": "Retribution",
+      "role": "DPS",
+      "ilvl": 325,
       "mplus": 3412,
       "weeklyRuns": 10,
       "missingEnchants": [],
@@ -330,5 +330,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-05T23:12:38.287Z"
+  "updatedAt": "2026-10-06T03:18:16.604Z"
 }
