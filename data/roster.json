@@ -205,11 +205,10 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 318,
-      "mplus": 2831,
-      "weeklyRuns": 0,
+      "ilvl": 321,
+      "mplus": 2944,
+      "weeklyRuns": 4,
       "missingEnchants": [
-        "Ring 2",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
@@ -290,7 +289,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3258,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -333,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-07T17:49:53.053Z"
+  "updatedAt": "2026-10-07T22:04:38.774Z"
 }
