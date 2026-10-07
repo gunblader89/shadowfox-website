@@ -135,27 +135,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "mngvacyjtkJfXTQR",
-      "url": "https://www.warcraftlogs.com/reports/mngvacyjtkJfXTQR",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1789413159889,
-      "endTime": 1789417767557,
-      "duration": "1h 16m",
-      "difficulty": "Heroisch",
-      "kills": 1,
-      "wipes": 12,
-      "killedBosses": [
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-07T11:49:16.897Z"
+  "updatedAt": "2026-10-07T17:50:23.279Z"
 }
