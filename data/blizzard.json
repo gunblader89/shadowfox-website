@@ -967,76 +967,19 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-06T21:42:41.881Z",
+  "updatedAt": "2026-10-07T02:40:53.181Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
-      "runs": [
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 11,
-          "timed": true
-        },
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 10,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 6,
-      "runs": [
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 11,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Raiox",
@@ -1047,29 +990,8 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 10,
-          "timed": false
-        },
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 12,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Feire",
@@ -1080,140 +1002,26 @@
     {
       "name": "Hunterchaos",
       "realm": "blackmoore",
-      "runsThisWeek": 8,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 11,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 13,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 10,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
-      "runs": [
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 13,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Miliim",
       "realm": "blackmoore",
-      "runsThisWeek": 5,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 11,
-          "timed": true
-        },
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 11,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 13,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 7,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 11,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Tiskarian",
