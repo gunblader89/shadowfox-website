@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 2820,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -47,7 +47,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3041,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Beine"
       ],
@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 325,
+      "ilvl": 326,
       "mplus": 3109,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -99,7 +99,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 327,
       "mplus": 3201,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -166,7 +166,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2934,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -248,12 +248,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 324,
+      "ilvl": 327,
       "mplus": 3412,
       "weeklyRuns": 1,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -263,7 +261,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 3060,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -336,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-08T17:53:12.504Z"
+  "updatedAt": "2026-10-08T22:11:37.858Z"
 }

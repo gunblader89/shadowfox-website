@@ -1,6 +1,57 @@
 {
   "reports": [
     {
+      "code": "B1R2wJ3tAPXqGgj9",
+      "url": "https://www.warcraftlogs.com/reports/B1R2wJ3tAPXqGgj9",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1791481880730,
+      "endTime": 1791491561279,
+      "duration": "2h 41m",
+      "difficulty": "Heroisch",
+      "kills": 2,
+      "wipes": 17,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "The Coiled Altar"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Jisgarin",
+            "class": "Mage",
+            "spec": "Frost",
+            "parse": 94,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 91,
+            "boss": "Nek'zali the Soulcoiler"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Mönkitönk",
+            "class": "Monk",
+            "spec": "Mistweaver",
+            "parse": 74,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Garódash",
+            "class": "Shaman",
+            "spec": "Restoration",
+            "parse": 46,
+            "boss": "The Coiled Altar"
+          }
+        ]
+      }
+    },
+    {
       "code": "MTVna6pcKr1jDdHw",
       "url": "https://www.warcraftlogs.com/reports/MTVna6pcKr1jDdHw",
       "loggedBy": "Sherra",
@@ -137,5 +188,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-08T17:53:38.645Z"
+  "updatedAt": "2026-10-08T22:12:01.527Z"
 }

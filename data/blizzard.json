@@ -967,16 +967,26 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-08T17:53:13.938Z",
+  "updatedAt": "2026-10-08T22:11:39.121Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 3,
       "runs": [
         {
+          "dungeon": "Das blendende Tal",
+          "level": 12,
+          "timed": false
+        },
+        {
           "dungeon": "Arena der Leerennarbe",
-          "level": 10,
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 13,
           "timed": true
         }
       ]
