@@ -731,7 +731,7 @@
     {
       "name": "Mönkitönk",
       "realm": "thrall",
-      "rank": 5,
+      "rank": 3,
       "level": 90,
       "classId": 10
     },
@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-08T12:04:04.672Z",
+  "updatedAt": "2026-10-08T17:53:13.938Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
