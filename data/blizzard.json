@@ -967,13 +967,19 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-08T02:53:05.523Z",
+  "updatedAt": "2026-10-08T12:04:04.672Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Narrwên",
