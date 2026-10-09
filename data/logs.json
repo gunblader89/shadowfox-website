@@ -29,7 +29,7 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 91,
+            "parse": 90,
             "boss": "Nek'zali the Soulcoiler"
           }
         ],
@@ -38,14 +38,14 @@
             "name": "Mönkitönk",
             "class": "Monk",
             "spec": "Mistweaver",
-            "parse": 74,
+            "parse": 73,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
             "name": "Garódash",
             "class": "Shaman",
             "spec": "Restoration",
-            "parse": 46,
+            "parse": 45,
             "boss": "The Coiled Altar"
           }
         ]
@@ -188,5 +188,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-09T11:56:05.365Z"
+  "updatedAt": "2026-10-09T17:27:57.608Z"
 }

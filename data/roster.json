@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 3028,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 326,
+      "ilvl": 325,
       "mplus": 3109,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -140,9 +140,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 2727,
-      "weeklyRuns": 0,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -233,9 +233,9 @@
       "name": "Kiraja",
       "realm": "garrosh",
       "class": "Demon Hunter",
-      "spec": "Vengeance",
-      "role": "TANK",
-      "ilvl": 326,
+      "spec": "Havoc",
+      "role": "DPS",
+      "ilvl": 327,
       "mplus": 3276,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -248,10 +248,12 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 325,
       "mplus": 3412,
       "weeklyRuns": 2,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -334,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-09T11:55:40.996Z"
+  "updatedAt": "2026-10-09T17:27:32.391Z"
 }
