@@ -965,9 +965,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Lyk",
+      "realm": "thrall",
+      "rank": 3,
+      "level": 90,
+      "classId": 2
     }
   ],
-  "updatedAt": "2026-10-08T22:11:39.121Z",
+  "updatedAt": "2026-10-09T03:03:47.016Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

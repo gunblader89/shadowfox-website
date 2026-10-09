@@ -237,7 +237,7 @@
       "role": "TANK",
       "ilvl": 326,
       "mplus": 3276,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -250,7 +250,7 @@
       "role": "TANK",
       "ilvl": 327,
       "mplus": 3412,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-08T22:11:37.858Z"
+  "updatedAt": "2026-10-09T03:03:45.502Z"
 }
