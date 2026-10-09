@@ -36,6 +36,13 @@
       "classId": 4
     },
     {
+      "name": "Lyk",
+      "realm": "thrall",
+      "rank": 3,
+      "level": 90,
+      "classId": 2
+    },
+    {
       "name": "Yanalai",
       "realm": "blackhand",
       "rank": 3,
@@ -965,16 +972,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Lyk",
-      "realm": "thrall",
-      "rank": 3,
-      "level": 90,
-      "classId": 2
     }
   ],
-  "updatedAt": "2026-10-09T03:03:47.016Z",
+  "updatedAt": "2026-10-09T11:55:42.421Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

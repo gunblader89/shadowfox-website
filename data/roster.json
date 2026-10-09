@@ -6,9 +6,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 3028,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -140,7 +140,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 2727,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -166,7 +166,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 322,
       "mplus": 2934,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -261,7 +261,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 3060,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-09T03:03:45.502Z"
+  "updatedAt": "2026-10-09T11:55:40.996Z"
 }
