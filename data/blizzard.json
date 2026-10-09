@@ -925,13 +925,6 @@
       "classId": 7
     },
     {
-      "name": "Baalhadaar",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 7
-    },
-    {
       "name": "Tsuyuko",
       "realm": "garrosh",
       "rank": 6,
@@ -972,9 +965,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Baalhadaar",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 90,
+      "classId": 7
     }
   ],
-  "updatedAt": "2026-10-09T17:27:33.796Z",
+  "updatedAt": "2026-10-09T21:46:04.669Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1031,8 +1031,14 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 13,
+          "timed": false
+        }
+      ]
     },
     {
       "name": "Miliim",
