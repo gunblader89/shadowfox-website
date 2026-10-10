@@ -974,7 +974,7 @@
       "classId": 7
     }
   ],
-  "updatedAt": "2026-10-09T21:46:04.669Z",
+  "updatedAt": "2026-10-10T02:41:40.642Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1013,8 +1013,29 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 4,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 16,
+          "timed": false
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 15,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 15,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 14,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
@@ -1049,8 +1070,14 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 14,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Tiskarian",

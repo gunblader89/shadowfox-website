@@ -100,8 +100,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 327,
-      "mplus": 3215,
-      "weeklyRuns": 1,
+      "mplus": 3239,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -166,9 +166,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 323,
-      "mplus": 2935,
-      "weeklyRuns": 1,
+      "ilvl": 322,
+      "mplus": 2936,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -205,11 +205,11 @@
       "name": "Doktorpöbel",
       "realm": "dalvengyr",
       "class": "Priest",
-      "spec": "Shadow",
-      "role": "DPS",
+      "spec": "Holy",
+      "role": "HEALING",
       "ilvl": 321,
-      "mplus": 3006,
-      "weeklyRuns": 6,
+      "mplus": 3161,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -236,8 +236,8 @@
       "spec": "Havoc",
       "role": "DPS",
       "ilvl": 327,
-      "mplus": 3276,
-      "weeklyRuns": 2,
+      "mplus": 3324,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -249,8 +249,8 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 325,
-      "mplus": 3412,
-      "weeklyRuns": 3,
+      "mplus": 3429,
+      "weeklyRuns": 7,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -306,9 +306,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 324,
-      "mplus": 3000,
-      "weeklyRuns": 0,
+      "ilvl": 325,
+      "mplus": 3016,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-09T21:46:03.200Z"
+  "updatedAt": "2026-10-10T02:41:39.177Z"
 }
