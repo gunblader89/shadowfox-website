@@ -62,7 +62,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 2924,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -142,7 +142,7 @@
       "role": "HEALING",
       "ilvl": 328,
       "mplus": 2727,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -306,7 +306,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 324,
       "mplus": 3016,
       "weeklyRuns": 1,
       "missingEnchants": [
@@ -329,12 +329,12 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 327,
-      "mplus": 3077,
-      "weeklyRuns": 0,
+      "mplus": 3091,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-10T11:12:34.292Z"
+  "updatedAt": "2026-10-10T16:15:00.931Z"
 }

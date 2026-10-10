@@ -925,6 +925,13 @@
       "classId": 7
     },
     {
+      "name": "Baalhadaar",
+      "realm": "blackmoore",
+      "rank": 5,
+      "level": 90,
+      "classId": 7
+    },
+    {
       "name": "Tsuyuko",
       "realm": "garrosh",
       "rank": 6,
@@ -965,16 +972,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Baalhadaar",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 7
     }
   ],
-  "updatedAt": "2026-10-10T11:12:35.603Z",
+  "updatedAt": "2026-10-10T16:15:02.329Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1001,8 +1001,14 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 12,
+          "timed": false
+        }
+      ]
     },
     {
       "name": "Raiox",
