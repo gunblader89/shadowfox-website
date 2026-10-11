@@ -45,9 +45,9 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 328,
-      "mplus": 3046,
-      "weeklyRuns": 2,
+      "ilvl": 329,
+      "mplus": 3047,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Beine"
       ],
@@ -73,9 +73,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 326,
-      "mplus": 3109,
-      "weeklyRuns": 0,
+      "ilvl": 325,
+      "mplus": 3115,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -138,11 +138,11 @@
       "name": "Yanalai",
       "realm": "blackhand",
       "class": "Priest",
-      "spec": "Holy",
-      "role": "HEALING",
+      "spec": "Shadow",
+      "role": "DPS",
       "ilvl": 328,
-      "mplus": 2727,
-      "weeklyRuns": 4,
+      "mplus": 2807,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -265,7 +265,7 @@
       "role": "TANK",
       "ilvl": 327,
       "mplus": 3065,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -329,12 +329,12 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 327,
-      "mplus": 3091,
-      "weeklyRuns": 2,
+      "mplus": 3118,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-11T16:39:35.722Z"
+  "updatedAt": "2026-10-11T20:59:41.913Z"
 }

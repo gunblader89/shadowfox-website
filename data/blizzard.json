@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-11T16:39:37.193Z",
+  "updatedAt": "2026-10-11T20:59:43.410Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1001,7 +1001,7 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 4,
       "runs": [
         {
           "dungeon": "Die Königsruh",
@@ -1009,9 +1009,19 @@
           "timed": true
         },
         {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 12,
+          "timed": true
+        },
+        {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 12,
           "timed": false
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 13,
+          "timed": true
         }
       ]
     },

@@ -38,7 +38,7 @@
             "name": "Mönkitönk",
             "class": "Monk",
             "spec": "Mistweaver",
-            "parse": 73,
+            "parse": 72,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
@@ -160,33 +160,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "vYGaDcAqyQT6jRPr",
-      "url": "https://www.warcraftlogs.com/reports/vYGaDcAqyQT6jRPr",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1789667434069,
-      "endTime": 1789676879705,
-      "duration": "2h 37m",
-      "difficulty": "Heroisch",
-      "kills": 7,
-      "wipes": 10,
-      "killedBosses": [
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak",
-        "The Twin Fangs",
-        "Nymrissa Wavecaller"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-11T16:39:57.891Z"
+  "updatedAt": "2026-10-11T21:00:07.757Z"
 }
