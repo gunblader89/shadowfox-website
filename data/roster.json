@@ -46,8 +46,8 @@
       "spec": "Beast Mastery",
       "role": "DPS",
       "ilvl": 328,
-      "mplus": 3041,
-      "weeklyRuns": 1,
+      "mplus": 3046,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Beine"
       ],
@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 325,
+      "ilvl": 326,
       "mplus": 3109,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -263,9 +263,9 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 326,
-      "mplus": 3060,
-      "weeklyRuns": 0,
+      "ilvl": 327,
+      "mplus": 3065,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-11T02:08:54.011Z"
+  "updatedAt": "2026-10-11T11:25:54.982Z"
 }
