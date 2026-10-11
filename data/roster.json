@@ -265,7 +265,7 @@
       "role": "TANK",
       "ilvl": 327,
       "mplus": 3065,
-      "weeklyRuns": 1,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-11T11:25:54.982Z"
+  "updatedAt": "2026-10-11T16:39:35.722Z"
 }

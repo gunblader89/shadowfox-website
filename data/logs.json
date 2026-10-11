@@ -22,14 +22,14 @@
             "name": "Jisgarin",
             "class": "Mage",
             "spec": "Frost",
-            "parse": 94,
+            "parse": 93,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 90,
+            "parse": 89,
             "boss": "Nek'zali the Soulcoiler"
           }
         ],
@@ -188,5 +188,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-11T11:26:18.216Z"
+  "updatedAt": "2026-10-11T16:39:57.891Z"
 }
