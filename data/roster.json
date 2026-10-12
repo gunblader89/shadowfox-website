@@ -6,9 +6,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 326,
-      "mplus": 3028,
-      "weeklyRuns": 2,
+      "ilvl": 328,
+      "mplus": 3030,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -62,7 +62,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3022,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -99,7 +99,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3239,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -138,11 +138,11 @@
       "name": "Yanalai",
       "realm": "blackhand",
       "class": "Priest",
-      "spec": "Shadow",
-      "role": "DPS",
+      "spec": "Holy",
+      "role": "HEALING",
       "ilvl": 328,
-      "mplus": 2807,
-      "weeklyRuns": 6,
+      "mplus": 2837,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -207,7 +207,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 321,
+      "ilvl": 322,
       "mplus": 3161,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -248,10 +248,12 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 325,
       "mplus": 3429,
       "weeklyRuns": 8,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -334,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-12T02:38:10.403Z"
+  "updatedAt": "2026-10-12T13:12:40.174Z"
 }
