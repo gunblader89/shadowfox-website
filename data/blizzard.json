@@ -750,13 +750,6 @@
       "classId": 5
     },
     {
-      "name": "Mardyn",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 8
-    },
-    {
       "name": "Mercganicus",
       "realm": "blackmoore",
       "rank": 2,
@@ -974,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-12T20:18:22.560Z",
+  "updatedAt": "2026-10-12T23:39:27.117Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1091,11 +1084,16 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
         {
           "dungeon": "Nalorakks Bau",
           "level": 14,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 10,
           "timed": true
         }
       ]

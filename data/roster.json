@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 328,
       "mplus": 3030,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -47,7 +47,7 @@
       "role": "DPS",
       "ilvl": 329,
       "mplus": 3047,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -71,7 +71,7 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 325,
+      "ilvl": 326,
       "mplus": 3115,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -99,7 +99,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3239,
-      "weeklyRuns": 4,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -164,7 +164,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 2936,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -246,12 +246,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 325,
+      "ilvl": 327,
       "mplus": 3429,
       "weeklyRuns": 8,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -261,7 +259,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3065,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -326,7 +324,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3118,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -334,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-12T20:18:21.134Z"
+  "updatedAt": "2026-10-12T23:39:25.741Z"
 }

@@ -7,11 +7,11 @@
       "title": "Raid",
       "zone": "The Venomous Abyss",
       "startTime": 1791828039620,
-      "endTime": 1791835757977,
-      "duration": "2h 8m",
+      "endTime": 1791842623098,
+      "duration": "4h 3m",
       "difficulty": "Heroisch",
       "kills": 0,
-      "wipes": 12,
+      "wipes": 17,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -130,13 +130,13 @@
       }
     },
     {
-      "code": "bRfm6Th412HKzFXD",
-      "url": "https://www.warcraftlogs.com/reports/bRfm6Th412HKzFXD",
-      "loggedBy": "Sherra",
-      "title": "Raid",
+      "code": "Ngm6QTYapnAfbWP4",
+      "url": "https://www.warcraftlogs.com/reports/Ngm6QTYapnAfbWP4",
+      "loggedBy": "Jisgarin",
+      "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1790013324781,
-      "endTime": 1790022476096,
+      "startTime": 1790013324022,
+      "endTime": 1790022475303,
       "duration": "2h 32m",
       "difficulty": "Heroisch",
       "kills": 1,
@@ -150,5 +150,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-12T20:19:30.922Z"
+  "updatedAt": "2026-10-12T23:39:49.128Z"
 }
