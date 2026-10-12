@@ -61,8 +61,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 328,
-      "mplus": 2924,
-      "weeklyRuns": 2,
+      "mplus": 3022,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -248,12 +248,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 325,
+      "ilvl": 327,
       "mplus": 3429,
-      "weeklyRuns": 7,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "weeklyRuns": 8,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -336,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-11T20:59:41.913Z"
+  "updatedAt": "2026-10-12T02:38:10.403Z"
 }
