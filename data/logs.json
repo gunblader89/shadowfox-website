@@ -1,6 +1,24 @@
 {
   "reports": [
     {
+      "code": "Qr82kxKWwmvL1JFN",
+      "url": "https://www.warcraftlogs.com/reports/Qr82kxKWwmvL1JFN",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1791828039620,
+      "endTime": 1791835757977,
+      "duration": "2h 8m",
+      "difficulty": "Heroisch",
+      "kills": 0,
+      "wipes": 12,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
       "code": "B1R2wJ3tAPXqGgj9",
       "url": "https://www.warcraftlogs.com/reports/B1R2wJ3tAPXqGgj9",
       "loggedBy": "Sherra",
@@ -17,38 +35,8 @@
         "The Coiled Altar"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Jisgarin",
-            "class": "Mage",
-            "spec": "Frost",
-            "parse": 93,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 89,
-            "boss": "Nek'zali the Soulcoiler"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Mönkitönk",
-            "class": "Monk",
-            "spec": "Mistweaver",
-            "parse": 72,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Garódash",
-            "class": "Shaman",
-            "spec": "Restoration",
-            "parse": 45,
-            "boss": "The Coiled Altar"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -142,13 +130,13 @@
       }
     },
     {
-      "code": "Ngm6QTYapnAfbWP4",
-      "url": "https://www.warcraftlogs.com/reports/Ngm6QTYapnAfbWP4",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "bRfm6Th412HKzFXD",
+      "url": "https://www.warcraftlogs.com/reports/bRfm6Th412HKzFXD",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1790013324022,
-      "endTime": 1790022475303,
+      "startTime": 1790013324781,
+      "endTime": 1790022476096,
       "duration": "2h 32m",
       "difficulty": "Heroisch",
       "kills": 1,
@@ -162,5 +150,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-12T13:13:06.860Z"
+  "updatedAt": "2026-10-12T20:19:30.922Z"
 }

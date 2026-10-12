@@ -117,9 +117,9 @@
         "realm": 93
       },
       "heroic": {
-        "world": 8610,
-        "region": 3338,
-        "realm": 115
+        "world": 8249,
+        "region": 3177,
+        "realm": 109
       },
       "mythic": {
         "world": 0,
@@ -548,5 +548,5 @@
       "rank": 5
     }
   ],
-  "updatedAt": "2026-10-12T13:12:08.510Z"
+  "updatedAt": "2026-10-12T20:17:53.436Z"
 }
