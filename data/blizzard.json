@@ -59,7 +59,7 @@
     {
       "name": "Hatto",
       "realm": "aegwynn",
-      "rank": 3,
+      "rank": 6,
       "level": 90,
       "classId": 3
     },
@@ -577,7 +577,7 @@
     {
       "name": "Feire",
       "realm": "blackmoore",
-      "rank": 3,
+      "rank": 6,
       "level": 90,
       "classId": 13
     },
@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-13T12:44:26.367Z",
+  "updatedAt": "2026-10-13T18:19:36.092Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
