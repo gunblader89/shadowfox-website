@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 3145,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -332,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-12T23:39:25.741Z"
+  "updatedAt": "2026-10-13T03:49:03.944Z"
 }
