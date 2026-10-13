@@ -19,9 +19,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3145,
-      "weeklyRuns": 2,
+      "weeklyRuns": 5,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Mistweaver",
       "role": "HEALING",
-      "ilvl": 326,
-      "mplus": 3115,
-      "weeklyRuns": 3,
+      "ilvl": 327,
+      "mplus": 3156,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -205,7 +205,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 322,
+      "ilvl": 323,
       "mplus": 3161,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -233,9 +233,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 327,
-      "mplus": 3324,
-      "weeklyRuns": 6,
+      "ilvl": 328,
+      "mplus": 3338,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -246,9 +246,9 @@
       "class": "Paladin",
       "spec": "Retribution",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 3429,
-      "weeklyRuns": 9,
+      "weeklyRuns": 10,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -289,7 +289,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3271,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -302,9 +302,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 325,
+      "ilvl": 326,
       "mplus": 3016,
-      "weeklyRuns": 2,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -332,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-13T18:19:34.301Z"
+  "updatedAt": "2026-10-13T21:53:40.537Z"
 }

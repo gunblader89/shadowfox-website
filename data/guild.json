@@ -34,10 +34,10 @@
       "mythic_bosses_killed": 0
     },
     "the-venomous-abyss": {
-      "summary": "7/8 H",
+      "summary": "8/8 H",
       "total_bosses": 8,
       "normal_bosses_killed": 8,
-      "heroic_bosses_killed": 7,
+      "heroic_bosses_killed": 8,
       "mythic_bosses_killed": 0
     }
   },
@@ -117,9 +117,9 @@
         "realm": 93
       },
       "heroic": {
-        "world": 8348,
-        "region": 3217,
-        "realm": 109
+        "world": 8074,
+        "region": 3086,
+        "realm": 105
       },
       "mythic": {
         "world": 0,
@@ -128,9 +128,9 @@
       }
     }
   },
-  "memberCount": 138,
+  "memberCount": 137,
   "classCount": {
-    "undefined": 138
+    "undefined": 137
   },
   "members": [
     {
@@ -392,9 +392,6 @@
       "rank": 5
     },
     {
-      "rank": 3
-    },
-    {
       "rank": 2
     },
     {
@@ -548,5 +545,5 @@
       "rank": 5
     }
   ],
-  "updatedAt": "2026-10-13T18:19:05.099Z"
+  "updatedAt": "2026-10-13T21:53:05.639Z"
 }
