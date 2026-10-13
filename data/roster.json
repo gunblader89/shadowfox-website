@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 3145,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -205,7 +205,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 323,
+      "ilvl": 322,
       "mplus": 3161,
       "weeklyRuns": 10,
       "missingEnchants": [
@@ -248,7 +248,7 @@
       "role": "TANK",
       "ilvl": 327,
       "mplus": 3429,
-      "weeklyRuns": 8,
+      "weeklyRuns": 9,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
@@ -289,7 +289,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 327,
       "mplus": 3271,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -332,5 +332,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-13T03:49:03.944Z"
+  "updatedAt": "2026-10-13T12:44:24.757Z"
 }
