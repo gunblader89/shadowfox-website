@@ -967,56 +967,19 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-13T21:53:42.003Z",
+  "updatedAt": "2026-10-14T02:08:05.440Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 12,
-          "timed": false
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 13,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
-      "runs": [
-        {
-          "dungeon": "Die Königsruh",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Arena der Leerennarbe",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 12,
-          "timed": false
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 13,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Raiox",
@@ -1027,29 +990,8 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 16,
-          "timed": false
-        },
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 15,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 15,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 14,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Feire",
@@ -1066,14 +1008,8 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
-      "runs": [
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 13,
-          "timed": false
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Miliim",
@@ -1084,24 +1020,8 @@
     {
       "name": "Mardyn",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
-      "runs": [
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 14,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 10,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 10,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Tiskarian",
