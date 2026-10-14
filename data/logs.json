@@ -128,27 +128,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "bRfm6Th412HKzFXD",
-      "url": "https://www.warcraftlogs.com/reports/bRfm6Th412HKzFXD",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1790013324781,
-      "endTime": 1790022476096,
-      "duration": "2h 32m",
-      "difficulty": "Heroisch",
-      "kills": 1,
-      "wipes": 22,
-      "killedBosses": [
-        "The Coiled Altar"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-14T02:08:29.265Z"
+  "updatedAt": "2026-10-14T10:16:42.043Z"
 }

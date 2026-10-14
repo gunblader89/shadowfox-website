@@ -138,7 +138,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 328,
+      "ilvl": 329,
       "mplus": 2837,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-14T02:08:04.168Z"
+  "updatedAt": "2026-10-14T10:16:18.874Z"
 }
