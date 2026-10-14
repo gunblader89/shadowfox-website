@@ -103,32 +103,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "dj8XB72cmVNTGJkL",
-      "url": "https://www.warcraftlogs.com/reports/dj8XB72cmVNTGJkL",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1790272030791,
-      "endTime": 1790281474117,
-      "duration": "2h 37m",
-      "difficulty": "Heroisch",
-      "kills": 6,
-      "wipes": 12,
-      "killedBosses": [
-        "Nek'zali the Soulcoiler",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Lost Explorers",
-        "Sszorak",
-        "The Twin Fangs"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-14T10:16:42.043Z"
+  "updatedAt": "2026-10-14T15:50:28.503Z"
 }
