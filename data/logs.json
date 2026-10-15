@@ -1,6 +1,62 @@
 {
   "reports": [
     {
+      "code": "anyLPcAVtJB2Mp6C",
+      "url": "https://www.warcraftlogs.com/reports/anyLPcAVtJB2Mp6C",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1792087098202,
+      "endTime": 1792094026015,
+      "duration": "1h 55m",
+      "difficulty": "Heroisch",
+      "kills": 7,
+      "wipes": 7,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "The Lost Explorers",
+        "Sszorak",
+        "Entombed Sentinels",
+        "Vashnik the Malignant",
+        "The Twin Fangs",
+        "The Coiled Altar"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 99,
+            "boss": "Sszorak"
+          },
+          {
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
+            "parse": 94,
+            "boss": "Vashnik the Malignant"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Lyk",
+            "class": "Paladin",
+            "spec": "Holy",
+            "parse": 97,
+            "boss": "The Lost Explorers"
+          },
+          {
+            "name": "Gatil",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 89,
+            "boss": "Sszorak"
+          }
+        ]
+      }
+    },
+    {
       "code": "Qr82kxKWwmvL1JFN",
       "url": "https://www.warcraftlogs.com/reports/Qr82kxKWwmvL1JFN",
       "loggedBy": "Sherra",
@@ -105,5 +161,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-15T15:36:36.010Z"
+  "updatedAt": "2026-10-15T20:24:24.136Z"
 }

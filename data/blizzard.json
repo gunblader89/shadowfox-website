@@ -965,9 +965,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Bakushai",
+      "realm": "blackhand",
+      "rank": 6,
+      "level": 90,
+      "classId": 6
     }
   ],
-  "updatedAt": "2026-10-15T15:36:13.183Z",
+  "updatedAt": "2026-10-15T20:24:02.044Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
