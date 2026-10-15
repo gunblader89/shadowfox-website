@@ -138,9 +138,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 329,
+      "ilvl": 330,
       "mplus": 2837,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -235,7 +235,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3338,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -248,7 +248,7 @@
       "role": "TANK",
       "ilvl": 325,
       "mplus": 3429,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -291,7 +291,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 327,
       "mplus": 3271,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-15T01:46:38.114Z"
+  "updatedAt": "2026-10-15T09:57:53.257Z"
 }
