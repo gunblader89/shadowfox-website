@@ -235,7 +235,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3338,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -246,9 +246,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 325,
-      "mplus": 3429,
-      "weeklyRuns": 1,
+      "ilvl": 326,
+      "mplus": 3441,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -291,9 +291,9 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 327,
-      "mplus": 3271,
-      "weeklyRuns": 1,
+      "ilvl": 328,
+      "mplus": 3312,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-15T20:24:00.686Z"
+  "updatedAt": "2026-10-16T01:37:46.400Z"
 }
