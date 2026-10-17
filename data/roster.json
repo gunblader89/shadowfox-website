@@ -19,9 +19,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 328,
       "mplus": 3145,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-17T09:24:31.527Z"
+  "updatedAt": "2026-10-17T14:13:44.634Z"
 }
