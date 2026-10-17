@@ -292,8 +292,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 328,
-      "mplus": 3312,
-      "weeklyRuns": 2,
+      "mplus": 3321,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-16T19:59:18.208Z"
+  "updatedAt": "2026-10-17T01:30:38.386Z"
 }
