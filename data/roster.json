@@ -72,8 +72,8 @@
       "spec": "Windwalker",
       "role": "DPS",
       "ilvl": 325,
-      "mplus": 3156,
-      "weeklyRuns": 3,
+      "mplus": 3157,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -84,7 +84,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 325,
+      "ilvl": 324,
       "mplus": 2705,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-18T14:35:58.479Z"
+  "updatedAt": "2026-10-18T19:28:21.371Z"
 }
