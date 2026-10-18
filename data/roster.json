@@ -293,7 +293,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 329,
       "mplus": 3337,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-18T09:39:54.124Z"
+  "updatedAt": "2026-10-18T14:35:58.479Z"
 }
