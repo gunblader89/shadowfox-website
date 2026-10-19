@@ -6,9 +6,9 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 327,
-      "mplus": 3030,
-      "weeklyRuns": 0,
+      "ilvl": 329,
+      "mplus": 3035,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 329,
       "mplus": 3145,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 331,
       "mplus": 3047,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -84,7 +84,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 324,
+      "ilvl": 326,
       "mplus": 2705,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -99,9 +99,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 330,
       "mplus": 3239,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -235,7 +235,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 330,
       "mplus": 3338,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -248,12 +248,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 325,
+      "ilvl": 327,
       "mplus": 3470,
       "weeklyRuns": 5,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -263,7 +261,7 @@
       "class": "Monk",
       "spec": "Brewmaster",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3065,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -293,7 +291,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 330,
       "mplus": 3337,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -336,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-19T17:29:25.045Z"
+  "updatedAt": "2026-10-19T21:35:52.342Z"
 }

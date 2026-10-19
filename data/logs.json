@@ -1,6 +1,56 @@
 {
   "reports": [
     {
+      "code": "qN64Py1wmtRYrv7z",
+      "url": "https://www.warcraftlogs.com/reports/qN64Py1wmtRYrv7z",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1792435804284,
+      "endTime": 1792439980362,
+      "duration": "1h 9m",
+      "difficulty": "Heroisch",
+      "kills": 1,
+      "wipes": 5,
+      "killedBosses": [
+        "Ula'tek"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 96,
+            "boss": "Ula'tek"
+          },
+          {
+            "name": "Chantallè",
+            "class": "Hunter",
+            "spec": "BeastMastery",
+            "parse": 84,
+            "boss": "Ula'tek"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 73,
+            "boss": "Ula'tek"
+          },
+          {
+            "name": "Garódash",
+            "class": "Shaman",
+            "spec": "Restoration",
+            "parse": 59,
+            "boss": "Ula'tek"
+          }
+        ]
+      }
+    },
+    {
       "code": "anyLPcAVtJB2Mp6C",
       "url": "https://www.warcraftlogs.com/reports/anyLPcAVtJB2Mp6C",
       "loggedBy": "Sherra",
@@ -22,38 +72,8 @@
         "The Coiled Altar"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 99,
-            "boss": "Sszorak"
-          },
-          {
-            "name": "Narrwên",
-            "class": "Warlock",
-            "spec": "Demonology",
-            "parse": 94,
-            "boss": "Vashnik the Malignant"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Lyk",
-            "class": "Paladin",
-            "spec": "Holy",
-            "parse": 97,
-            "boss": "The Lost Explorers"
-          },
-          {
-            "name": "Gatil",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 91,
-            "boss": "Entombed Sentinels"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -114,19 +134,18 @@
       }
     },
     {
-      "code": "zX2p1vTDgC4Bmtn3",
-      "url": "https://www.warcraftlogs.com/reports/zX2p1vTDgC4Bmtn3",
-      "loggedBy": "Jisgarin",
-      "title": "The Venomous Abyss",
+      "code": "28QJz4DVAjNLHxYR",
+      "url": "https://www.warcraftlogs.com/reports/28QJz4DVAjNLHxYR",
+      "loggedBy": "Sherra",
+      "title": "Raid",
       "zone": "The Venomous Abyss",
-      "startTime": 1790876590367,
-      "endTime": 1790886249357,
-      "duration": "2h 40m",
+      "startTime": 1790877512729,
+      "endTime": 1790886250500,
+      "duration": "2h 25m",
       "difficulty": "Heroisch",
-      "kills": 8,
+      "kills": 7,
       "wipes": 10,
       "killedBosses": [
-        "Nymrissa Wavecaller",
         "Nek'zali the Soulcoiler",
         "The Lost Explorers",
         "Sszorak",
@@ -139,27 +158,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "hPzfcQCkHL4jwpqN",
-      "url": "https://www.warcraftlogs.com/reports/hPzfcQCkHL4jwpqN",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1790619436847,
-      "endTime": 1790627164252,
-      "duration": "2h 8m",
-      "difficulty": "Heroisch",
-      "kills": 1,
-      "wipes": 16,
-      "killedBosses": [
-        "Nymrissa Wavecaller"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-19T17:29:48.807Z"
+  "updatedAt": "2026-10-19T21:36:15.111Z"
 }
