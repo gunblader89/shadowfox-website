@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-20T15:39:57.833Z",
+  "updatedAt": "2026-10-20T20:41:27.695Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -985,8 +985,19 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Das blendende Tal",
+          "level": 13,
+          "timed": true
+        },
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 13,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",
