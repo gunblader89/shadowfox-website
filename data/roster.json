@@ -207,9 +207,9 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 324,
+      "ilvl": 325,
       "mplus": 3169,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -246,8 +246,8 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Protection",
-      "role": "TANK",
+      "spec": "Retribution",
+      "role": "DPS",
       "ilvl": 328,
       "mplus": 3470,
       "weeklyRuns": 5,
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-20T10:06:57.943Z"
+  "updatedAt": "2026-10-20T15:39:56.337Z"
 }

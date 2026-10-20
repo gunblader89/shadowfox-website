@@ -28,7 +28,7 @@
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 84,
+            "parse": 85,
             "boss": "Ula'tek"
           }
         ],
@@ -160,5 +160,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-20T10:07:22.799Z"
+  "updatedAt": "2026-10-20T15:40:20.847Z"
 }
