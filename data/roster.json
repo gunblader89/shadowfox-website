@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 328,
       "mplus": 3035,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 328,
       "mplus": 3145,
       "weeklyRuns": 4,
       "missingEnchants": [],
@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 331,
+      "ilvl": 330,
       "mplus": 3047,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -84,7 +84,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 326,
+      "ilvl": 325,
       "mplus": 2705,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -166,7 +166,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 324,
+      "ilvl": 323,
       "mplus": 2936,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -235,7 +235,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 329,
       "mplus": 3338,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -248,7 +248,7 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 327,
+      "ilvl": 328,
       "mplus": 3470,
       "weeklyRuns": 5,
       "missingEnchants": [],
@@ -334,5 +334,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-20T02:02:44.759Z"
+  "updatedAt": "2026-10-20T10:06:57.943Z"
 }
