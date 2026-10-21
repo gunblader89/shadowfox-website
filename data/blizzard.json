@@ -974,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-20T20:41:27.695Z",
+  "updatedAt": "2026-10-21T01:58:11.672Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -985,19 +985,8 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
-      "runs": [
-        {
-          "dungeon": "Das blendende Tal",
-          "level": 13,
-          "timed": true
-        },
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 13,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Raiox",
@@ -1008,14 +997,8 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
-      "runs": [
-        {
-          "dungeon": "Die Königsruh",
-          "level": 12,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Feire",

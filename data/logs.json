@@ -21,7 +21,7 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 95,
+            "parse": 96,
             "boss": "Ula'tek"
           },
           {
@@ -160,5 +160,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-20T20:41:48.224Z"
+  "updatedAt": "2026-10-21T01:58:34.174Z"
 }

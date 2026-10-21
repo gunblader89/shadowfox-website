@@ -8,7 +8,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3035,
-      "weeklyRuns": 2,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 328,
       "mplus": 3145,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -47,7 +47,7 @@
       "role": "DPS",
       "ilvl": 330,
       "mplus": 3047,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/228/163643876-avatar.jpg?alt=/wow/static/images/2d/avatar/2-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Chantallè"
@@ -60,7 +60,7 @@
       "role": "DPS",
       "ilvl": 330,
       "mplus": 3043,
-      "weeklyRuns": 2,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -73,7 +73,7 @@
       "role": "DPS",
       "ilvl": 325,
       "mplus": 3157,
-      "weeklyRuns": 6,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -101,7 +101,7 @@
       "role": "DPS",
       "ilvl": 330,
       "mplus": 3239,
-      "weeklyRuns": 2,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -142,7 +142,7 @@
       "role": "HEALING",
       "ilvl": 330,
       "mplus": 2837,
-      "weeklyRuns": 2,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
@@ -209,7 +209,7 @@
       "role": "HEALING",
       "ilvl": 324,
       "mplus": 3169,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -237,7 +237,7 @@
       "role": "DPS",
       "ilvl": 329,
       "mplus": 3338,
-      "weeklyRuns": 3,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -250,7 +250,7 @@
       "role": "DPS",
       "ilvl": 327,
       "mplus": 3470,
-      "weeklyRuns": 6,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -295,7 +295,7 @@
       "role": "DPS",
       "ilvl": 330,
       "mplus": 3337,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-20T20:41:26.352Z"
+  "updatedAt": "2026-10-21T01:58:10.005Z"
 }
