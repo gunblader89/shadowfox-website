@@ -249,7 +249,7 @@
       "spec": "Retribution",
       "role": "DPS",
       "ilvl": 327,
-      "mplus": 3470,
+      "mplus": 3497,
       "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
@@ -294,7 +294,7 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 330,
-      "mplus": 3337,
+      "mplus": 3364,
       "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-21T10:12:29.099Z"
+  "updatedAt": "2026-10-21T15:58:14.667Z"
 }
