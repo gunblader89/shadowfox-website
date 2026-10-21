@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 329,
       "mplus": 3145,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -32,7 +32,7 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 325,
+      "ilvl": 326,
       "mplus": 2820,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 331,
       "mplus": 3047,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -84,7 +84,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 325,
+      "ilvl": 326,
       "mplus": 2705,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -246,11 +246,11 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
-      "ilvl": 327,
+      "spec": "Protection",
+      "role": "TANK",
+      "ilvl": 328,
       "mplus": 3497,
-      "weeklyRuns": 0,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -328,7 +328,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 330,
       "mplus": 3118,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-21T15:58:14.667Z"
+  "updatedAt": "2026-10-21T20:42:04.583Z"
 }
