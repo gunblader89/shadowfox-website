@@ -1,6 +1,59 @@
 {
   "reports": [
     {
+      "code": "xNaAB7GjCHgKFDJm",
+      "url": "https://www.warcraftlogs.com/reports/xNaAB7GjCHgKFDJm",
+      "loggedBy": "Sherra",
+      "title": "Raid",
+      "zone": "The Venomous Abyss",
+      "startTime": 1792696415547,
+      "endTime": 1792699408810,
+      "duration": "49m",
+      "difficulty": "Heroisch",
+      "kills": 4,
+      "wipes": 1,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "The Lost Explorers",
+        "Sszorak",
+        "Entombed Sentinels"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Oionil",
+            "class": "Warrior",
+            "spec": "Arms",
+            "parse": 79,
+            "boss": "Entombed Sentinels"
+          },
+          {
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
+            "parse": 78,
+            "boss": "Entombed Sentinels"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Doktorpöbel",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 91,
+            "boss": "The Lost Explorers"
+          },
+          {
+            "name": "Raiox",
+            "class": "Druid",
+            "spec": "Restoration",
+            "parse": 81,
+            "boss": "Entombed Sentinels"
+          }
+        ]
+      }
+    },
+    {
       "code": "qN64Py1wmtRYrv7z",
       "url": "https://www.warcraftlogs.com/reports/qN64Py1wmtRYrv7z",
       "loggedBy": "Sherra",
@@ -16,38 +69,8 @@
         "Ula'tek"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 95,
-            "boss": "Ula'tek"
-          },
-          {
-            "name": "Chantallè",
-            "class": "Hunter",
-            "spec": "BeastMastery",
-            "parse": 83,
-            "boss": "Ula'tek"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 72,
-            "boss": "Ula'tek"
-          },
-          {
-            "name": "Garódash",
-            "class": "Shaman",
-            "spec": "Restoration",
-            "parse": 58,
-            "boss": "Ula'tek"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -134,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-22T15:53:55.213Z"
+  "updatedAt": "2026-10-22T20:36:56.583Z"
 }

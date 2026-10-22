@@ -540,13 +540,6 @@
       "classId": 6
     },
     {
-      "name": "Bakushai",
-      "realm": "blackhand",
-      "rank": 3,
-      "level": 90,
-      "classId": 6
-    },
-    {
       "name": "Bennimaru",
       "realm": "blackmoore",
       "rank": 5,
@@ -974,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-22T15:53:33.863Z",
+  "updatedAt": "2026-10-22T20:36:27.776Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

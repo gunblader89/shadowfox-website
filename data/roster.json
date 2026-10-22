@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 329,
       "mplus": 3145,
       "weeklyRuns": 1,
       "missingEnchants": [],
@@ -32,10 +32,12 @@
       "class": "Shaman",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 326,
+      "ilvl": 327,
       "mplus": 2820,
       "weeklyRuns": 0,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -58,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 332,
       "mplus": 3043,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -166,7 +168,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 323,
+      "ilvl": 324,
       "mplus": 2936,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -207,7 +209,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 324,
+      "ilvl": 326,
       "mplus": 3169,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -235,7 +237,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 331,
       "mplus": 3338,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -248,12 +250,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 329,
+      "ilvl": 331,
       "mplus": 3497,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-22T15:53:32.450Z"
+  "updatedAt": "2026-10-22T20:36:26.223Z"
 }
