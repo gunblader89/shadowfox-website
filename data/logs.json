@@ -21,14 +21,14 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 96,
+            "parse": 95,
             "boss": "Ula'tek"
           },
           {
             "name": "Chantallè",
             "class": "Hunter",
             "spec": "BeastMastery",
-            "parse": 85,
+            "parse": 83,
             "boss": "Ula'tek"
           }
         ],
@@ -37,14 +37,14 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 73,
+            "parse": 72,
             "boss": "Ula'tek"
           },
           {
             "name": "Garódash",
             "class": "Shaman",
             "spec": "Restoration",
-            "parse": 59,
+            "parse": 58,
             "boss": "Ula'tek"
           }
         ]
@@ -132,33 +132,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "28QJz4DVAjNLHxYR",
-      "url": "https://www.warcraftlogs.com/reports/28QJz4DVAjNLHxYR",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1790877512729,
-      "endTime": 1790886250500,
-      "duration": "2h 25m",
-      "difficulty": "Heroisch",
-      "kills": 7,
-      "wipes": 10,
-      "killedBosses": [
-        "Nek'zali the Soulcoiler",
-        "The Lost Explorers",
-        "Sszorak",
-        "Entombed Sentinels",
-        "Vashnik the Malignant",
-        "The Twin Fangs",
-        "The Coiled Altar"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-21T10:12:52.881Z"
+  "updatedAt": "2026-10-22T15:53:55.213Z"
 }
