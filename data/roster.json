@@ -250,10 +250,12 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 331,
+      "ilvl": 330,
       "mplus": 3497,
       "weeklyRuns": 10,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -293,7 +295,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 332,
       "mplus": 3364,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -336,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-22T20:36:26.223Z"
+  "updatedAt": "2026-10-23T01:52:49.887Z"
 }
