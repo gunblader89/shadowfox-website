@@ -21,17 +21,17 @@
       "vips": {
         "dps": [
           {
-            "name": "Oionil",
-            "class": "Warrior",
-            "spec": "Arms",
-            "parse": 79,
-            "boss": "Entombed Sentinels"
-          },
-          {
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 78,
+            "parse": 73,
+            "boss": "Entombed Sentinels"
+          },
+          {
+            "name": "Oionil",
+            "class": "Warrior",
+            "spec": "Arms",
+            "parse": 73,
             "boss": "Entombed Sentinels"
           }
         ],
@@ -40,14 +40,14 @@
             "name": "Doktorpöbel",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 91,
+            "parse": 90,
             "boss": "The Lost Explorers"
           },
           {
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 81,
+            "parse": 80,
             "boss": "Entombed Sentinels"
           }
         ]
@@ -157,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-23T10:07:16.627Z"
+  "updatedAt": "2026-10-23T15:45:53.923Z"
 }
