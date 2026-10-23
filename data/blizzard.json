@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-23T15:45:31.434Z",
+  "updatedAt": "2026-10-23T20:31:00.344Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -1008,8 +1008,19 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 2,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Die Königsruh",
+          "level": 14,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Miliim",

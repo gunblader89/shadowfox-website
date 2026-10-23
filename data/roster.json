@@ -101,7 +101,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 331,
       "mplus": 3239,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -142,10 +142,12 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 330,
+      "ilvl": 331,
       "mplus": 2837,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
+      "weeklyRuns": 1,
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/66/118657090-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Yanalai"
     },
@@ -211,7 +213,7 @@
       "role": "HEALING",
       "ilvl": 326,
       "mplus": 3169,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -338,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-23T15:45:29.951Z"
+  "updatedAt": "2026-10-23T20:30:58.890Z"
 }

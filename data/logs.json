@@ -139,17 +139,17 @@
       }
     },
     {
-      "code": "MTVna6pcKr1jDdHw",
-      "url": "https://www.warcraftlogs.com/reports/MTVna6pcKr1jDdHw",
-      "loggedBy": "Sherra",
-      "title": "Raid",
+      "code": "X4mczhJVFv26Hagf",
+      "url": "https://www.warcraftlogs.com/reports/X4mczhJVFv26Hagf",
+      "loggedBy": "Langhaloth",
+      "title": "The Venomous Abyss",
       "zone": "The Venomous Abyss",
-      "startTime": 1791224319839,
-      "endTime": 1791232107945,
-      "duration": "2h 9m",
+      "startTime": 1791222548922,
+      "endTime": 1791232107912,
+      "duration": "2h 39m",
       "difficulty": "Heroisch",
       "kills": 0,
-      "wipes": 16,
+      "wipes": 20,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -157,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-23T15:45:53.923Z"
+  "updatedAt": "2026-10-23T20:31:21.631Z"
 }
