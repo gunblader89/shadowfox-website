@@ -101,9 +101,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 332,
+      "ilvl": 331,
       "mplus": 3239,
-      "weeklyRuns": 5,
+      "weeklyRuns": 8,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -144,7 +144,7 @@
       "role": "HEALING",
       "ilvl": 331,
       "mplus": 2837,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -250,14 +250,12 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Protection",
-      "role": "TANK",
-      "ilvl": 330,
+      "spec": "Retribution",
+      "role": "DPS",
+      "ilvl": 331,
       "mplus": 3497,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -340,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-24T01:55:54.096Z"
+  "updatedAt": "2026-10-24T09:34:02.550Z"
 }
