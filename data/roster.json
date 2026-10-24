@@ -213,7 +213,7 @@
       "role": "HEALING",
       "ilvl": 327,
       "mplus": 3176,
-      "weeklyRuns": 3,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -255,7 +255,9 @@
       "ilvl": 331,
       "mplus": 3497,
       "weeklyRuns": 10,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -338,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-24T09:34:02.550Z"
+  "updatedAt": "2026-10-24T14:34:26.849Z"
 }
