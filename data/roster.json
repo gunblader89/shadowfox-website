@@ -6,7 +6,7 @@
       "class": "Mage",
       "spec": "Arcane",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 329,
       "mplus": 3035,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -73,9 +73,9 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 326,
+      "ilvl": 328,
       "mplus": 3157,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -213,7 +213,7 @@
       "role": "HEALING",
       "ilvl": 327,
       "mplus": 3176,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -252,12 +252,10 @@
       "class": "Paladin",
       "spec": "Retribution",
       "role": "DPS",
-      "ilvl": 331,
+      "ilvl": 332,
       "mplus": 3497,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -340,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-24T14:34:26.849Z"
+  "updatedAt": "2026-10-24T19:34:00.332Z"
 }

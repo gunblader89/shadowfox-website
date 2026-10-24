@@ -44,7 +44,7 @@
   "raidRankings": {
     "tier-mn-1": {
       "normal": {
-        "world": 12440,
+        "world": 12441,
         "region": 5500,
         "realm": 185
       },
@@ -100,13 +100,13 @@
         "realm": 0
       },
       "heroic": {
-        "world": 8455,
+        "world": 8461,
         "region": 3118,
         "realm": 101
       },
       "mythic": {
-        "world": 459,
-        "region": 247,
+        "world": 461,
+        "region": 248,
         "realm": 7
       }
     },
@@ -545,5 +545,5 @@
       "rank": 5
     }
   ],
-  "updatedAt": "2026-10-24T14:34:00.332Z"
+  "updatedAt": "2026-10-24T19:33:32.012Z"
 }
