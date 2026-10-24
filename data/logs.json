@@ -21,16 +21,16 @@
       "vips": {
         "dps": [
           {
-            "name": "Narrwên",
-            "class": "Warlock",
-            "spec": "Demonology",
-            "parse": 73,
-            "boss": "Entombed Sentinels"
-          },
-          {
             "name": "Oionil",
             "class": "Warrior",
             "spec": "Arms",
+            "parse": 76,
+            "boss": "Sszorak"
+          },
+          {
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
             "parse": 73,
             "boss": "Entombed Sentinels"
           }
@@ -157,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-23T20:31:21.631Z"
+  "updatedAt": "2026-10-24T01:56:17.954Z"
 }

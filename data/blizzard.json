@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-23T20:31:00.344Z",
+  "updatedAt": "2026-10-24T01:55:55.670Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -990,8 +990,29 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 4,
+      "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Mördergasse",
+          "level": 12,
+          "timed": true
+        },
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
