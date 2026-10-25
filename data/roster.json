@@ -71,9 +71,9 @@
       "name": "Mönkitönk",
       "realm": "thrall",
       "class": "Monk",
-      "spec": "Windwalker",
-      "role": "DPS",
-      "ilvl": 329,
+      "spec": "Mistweaver",
+      "role": "HEALING",
+      "ilvl": 330,
       "mplus": 3157,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-25T01:32:44.454Z"
+  "updatedAt": "2026-10-25T09:50:20.924Z"
 }
