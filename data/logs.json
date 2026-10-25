@@ -21,16 +21,16 @@
       "vips": {
         "dps": [
           {
-            "name": "Narrwên",
-            "class": "Warlock",
-            "spec": "Demonology",
-            "parse": 72,
+            "name": "Jisgarin",
+            "class": "Mage",
+            "spec": "Frost",
+            "parse": 74,
             "boss": "Entombed Sentinels"
           },
           {
-            "name": "Oionil",
-            "class": "Warrior",
-            "spec": "Arms",
+            "name": "Narrwên",
+            "class": "Warlock",
+            "spec": "Demonology",
             "parse": 72,
             "boss": "Entombed Sentinels"
           }
@@ -47,7 +47,7 @@
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 81,
+            "parse": 79,
             "boss": "Entombed Sentinels"
           }
         ]
@@ -157,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-24T19:34:23.761Z"
+  "updatedAt": "2026-10-25T01:33:05.414Z"
 }
