@@ -24,7 +24,7 @@
             "name": "Jisgarin",
             "class": "Mage",
             "spec": "Frost",
-            "parse": 80,
+            "parse": 71,
             "boss": "Sszorak"
           },
           {
@@ -137,25 +137,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "X4mczhJVFv26Hagf",
-      "url": "https://www.warcraftlogs.com/reports/X4mczhJVFv26Hagf",
-      "loggedBy": "Langhaloth",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1791222548922,
-      "endTime": 1791232107912,
-      "duration": "2h 39m",
-      "difficulty": "Heroisch",
-      "kills": 0,
-      "wipes": 20,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-25T14:57:56.890Z"
+  "updatedAt": "2026-10-25T19:45:20.891Z"
 }

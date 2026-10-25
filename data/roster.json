@@ -61,8 +61,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 332,
-      "mplus": 3043,
-      "weeklyRuns": 0,
+      "mplus": 3054,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -241,7 +241,7 @@
       "role": "TANK",
       "ilvl": 331,
       "mplus": 3338,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-25T14:57:36.093Z"
+  "updatedAt": "2026-10-25T19:44:58.347Z"
 }
