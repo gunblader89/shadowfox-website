@@ -967,7 +967,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-25T09:50:22.249Z",
+  "updatedAt": "2026-10-25T14:57:37.528Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -978,8 +978,14 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",

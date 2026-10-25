@@ -21,17 +21,17 @@
       "vips": {
         "dps": [
           {
+            "name": "Jisgarin",
+            "class": "Mage",
+            "spec": "Frost",
+            "parse": 80,
+            "boss": "Sszorak"
+          },
+          {
             "name": "Narrwên",
             "class": "Warlock",
             "spec": "Demonology",
-            "parse": 80,
-            "boss": "Entombed Sentinels"
-          },
-          {
-            "name": "Oionil",
-            "class": "Warrior",
-            "spec": "Arms",
-            "parse": 72,
+            "parse": 71,
             "boss": "Entombed Sentinels"
           }
         ],
@@ -40,14 +40,14 @@
             "name": "Doktorpöbel",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 91,
+            "parse": 90,
             "boss": "The Lost Explorers"
           },
           {
             "name": "Raiox",
             "class": "Druid",
             "spec": "Restoration",
-            "parse": 81,
+            "parse": 79,
             "boss": "Entombed Sentinels"
           }
         ]
@@ -157,5 +157,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-25T09:50:42.622Z"
+  "updatedAt": "2026-10-25T14:57:56.890Z"
 }
