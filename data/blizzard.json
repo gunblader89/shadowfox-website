@@ -603,13 +603,6 @@
       "classId": 9
     },
     {
-      "name": "Illaoi",
-      "realm": "blackrock",
-      "rank": 6,
-      "level": 81,
-      "classId": 12
-    },
-    {
       "name": "Raiox",
       "realm": "blackrock",
       "rank": 4,
@@ -967,7 +960,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-26T01:37:26.021Z",
+  "updatedAt": "2026-10-26T11:09:29.697Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
