@@ -7,8 +7,8 @@
       "spec": "Arcane",
       "role": "DPS",
       "ilvl": 329,
-      "mplus": 3035,
-      "weeklyRuns": 0,
+      "mplus": 3036,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -61,8 +61,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 332,
-      "mplus": 3054,
-      "weeklyRuns": 2,
+      "mplus": 3057,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -86,7 +86,7 @@
       "class": "Druid",
       "spec": "Restoration",
       "role": "HEALING",
-      "ilvl": 326,
+      "ilvl": 328,
       "mplus": 2705,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -213,7 +213,7 @@
       "role": "HEALING",
       "ilvl": 328,
       "mplus": 3176,
-      "weeklyRuns": 8,
+      "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-25T19:44:58.347Z"
+  "updatedAt": "2026-10-26T01:37:24.347Z"
 }
