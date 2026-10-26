@@ -958,9 +958,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Eshaedra",
+      "realm": "thrall",
+      "rank": 6,
+      "level": 74,
+      "classId": 13
     }
   ],
-  "updatedAt": "2026-10-26T17:23:46.567Z",
+  "updatedAt": "2026-10-26T21:40:41.106Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

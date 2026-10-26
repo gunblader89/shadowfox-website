@@ -1,6 +1,57 @@
 {
   "reports": [
     {
+      "code": "J963qpLVD4an7fHg",
+      "url": "https://www.warcraftlogs.com/reports/J963qpLVD4an7fHg",
+      "loggedBy": "Sherra",
+      "title": "Raid Amethyst",
+      "zone": "The Venomous Abyss",
+      "startTime": 1793039397584,
+      "endTime": 1793048425164,
+      "duration": "2h 30m",
+      "difficulty": "Mythisch",
+      "kills": 2,
+      "wipes": 24,
+      "killedBosses": [
+        "Nek'zali the Soulcoiler",
+        "The Lost Explorers"
+      ],
+      "vips": {
+        "dps": [
+          {
+            "name": "Seitenleiste",
+            "class": "Mage",
+            "spec": "Fire",
+            "parse": 93,
+            "boss": "Nek'zali the Soulcoiler"
+          },
+          {
+            "name": "Siegfired",
+            "class": "Mage",
+            "spec": "Frost",
+            "parse": 81,
+            "boss": "The Lost Explorers"
+          }
+        ],
+        "hps": [
+          {
+            "name": "Yanalai",
+            "class": "Priest",
+            "spec": "Holy",
+            "parse": 86,
+            "boss": "The Lost Explorers"
+          },
+          {
+            "name": "Lyk",
+            "class": "Paladin",
+            "spec": "Holy",
+            "parse": 59,
+            "boss": "The Lost Explorers"
+          }
+        ]
+      }
+    },
+    {
       "code": "xNaAB7GjCHgKFDJm",
       "url": "https://www.warcraftlogs.com/reports/xNaAB7GjCHgKFDJm",
       "loggedBy": "Sherra",
@@ -19,38 +70,8 @@
         "Entombed Sentinels"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Jisgarin",
-            "class": "Mage",
-            "spec": "Frost",
-            "parse": 71,
-            "boss": "Sszorak"
-          },
-          {
-            "name": "Narrwên",
-            "class": "Warlock",
-            "spec": "Demonology",
-            "parse": 71,
-            "boss": "Entombed Sentinels"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Doktorpöbel",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 90,
-            "boss": "The Lost Explorers"
-          },
-          {
-            "name": "Raiox",
-            "class": "Druid",
-            "spec": "Restoration",
-            "parse": 79,
-            "boss": "Entombed Sentinels"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -139,5 +160,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-26T17:24:08.451Z"
+  "updatedAt": "2026-10-26T21:41:03.834Z"
 }

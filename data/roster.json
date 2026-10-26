@@ -47,7 +47,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 331,
+      "ilvl": 332,
       "mplus": 3047,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -71,9 +71,9 @@
       "name": "Mönkitönk",
       "realm": "thrall",
       "class": "Monk",
-      "spec": "Mistweaver",
-      "role": "HEALING",
-      "ilvl": 330,
+      "spec": "Windwalker",
+      "role": "DPS",
+      "ilvl": 327,
       "mplus": 3157,
       "weeklyRuns": 2,
       "missingEnchants": [],
@@ -142,7 +142,7 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 331,
+      "ilvl": 332,
       "mplus": 2837,
       "weeklyRuns": 2,
       "missingEnchants": [
@@ -211,8 +211,8 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 328,
-      "mplus": 3176,
+      "ilvl": 329,
+      "mplus": 3184,
       "weeklyRuns": 10,
       "missingEnchants": [
         "Nebenhand"
@@ -239,7 +239,7 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 331,
+      "ilvl": 332,
       "mplus": 3338,
       "weeklyRuns": 6,
       "missingEnchants": [],
@@ -252,12 +252,10 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 329,
+      "ilvl": 332,
       "mplus": 3526,
       "weeklyRuns": 10,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -297,7 +295,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 333,
+      "ilvl": 334,
       "mplus": 3364,
       "weeklyRuns": 3,
       "missingEnchants": [],
@@ -332,7 +330,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 331,
       "mplus": 3118,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -340,5 +338,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-26T17:23:45.022Z"
+  "updatedAt": "2026-10-26T21:40:39.616Z"
 }
