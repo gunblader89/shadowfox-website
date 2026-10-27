@@ -19,9 +19,9 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 329,
+      "ilvl": 330,
       "mplus": 3145,
-      "weeklyRuns": 3,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -34,10 +34,8 @@
       "role": "HEALING",
       "ilvl": 327,
       "mplus": 2820,
-      "weeklyRuns": 0,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "weeklyRuns": 1,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
     },
@@ -62,7 +60,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3059,
-      "weeklyRuns": 5,
+      "weeklyRuns": 6,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -75,7 +73,7 @@
       "role": "DPS",
       "ilvl": 327,
       "mplus": 3157,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -338,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-27T16:40:44.798Z"
+  "updatedAt": "2026-10-27T21:23:31.976Z"
 }

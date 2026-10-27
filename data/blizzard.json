@@ -561,6 +561,13 @@
       "classId": 6
     },
     {
+      "name": "Eshaedra",
+      "realm": "thrall",
+      "rank": 5,
+      "level": 78,
+      "classId": 13
+    },
+    {
       "name": "Günnsham",
       "realm": "thrall",
       "rank": 3,
@@ -958,31 +965,35 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Eshaedra",
-      "realm": "thrall",
-      "rank": 6,
-      "level": 74,
-      "classId": 13
     }
   ],
-  "updatedAt": "2026-10-27T16:40:46.158Z",
+  "updatedAt": "2026-10-27T21:23:33.469Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Rubinlebensbecken",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 3,
+      "runsThisWeek": 4,
       "runs": [
         {
           "dungeon": "Der Tempel von Sethraliss",
           "level": 13,
+          "timed": true
+        },
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 12,
           "timed": true
         },
         {
