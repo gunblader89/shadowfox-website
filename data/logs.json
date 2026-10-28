@@ -29,7 +29,7 @@
             "name": "Siegfired",
             "class": "Mage",
             "spec": "Frost",
-            "parse": 81,
+            "parse": 80,
             "boss": "The Lost Explorers"
           }
         ],
@@ -38,7 +38,7 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 86,
+            "parse": 85,
             "boss": "The Lost Explorers"
           },
           {
@@ -160,5 +160,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-28T11:22:38.779Z"
+  "updatedAt": "2026-10-28T17:11:14.180Z"
 }

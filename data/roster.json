@@ -20,8 +20,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 331,
-      "mplus": 3170,
-      "weeklyRuns": 2,
+      "mplus": 3205,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -99,7 +99,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 332,
+      "ilvl": 333,
       "mplus": 3239,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -330,13 +330,15 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 331,
+      "ilvl": 332,
       "mplus": 3118,
-      "weeklyRuns": 0,
-      "missingEnchants": [],
+      "weeklyRuns": 2,
+      "missingEnchants": [
+        "Brust"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-28T11:22:15.275Z"
+  "updatedAt": "2026-10-28T17:10:43.038Z"
 }
