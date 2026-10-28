@@ -967,46 +967,19 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-27T21:23:33.469Z",
+  "updatedAt": "2026-10-28T02:33:30.128Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
-      "runs": [
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 12,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
-      "runs": [
-        {
-          "dungeon": "Der Tempel von Sethraliss",
-          "level": 13,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 13,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Raiox",
@@ -1017,29 +990,8 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 4,
-      "runs": [
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Mördergasse",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Rubinlebensbecken",
-          "level": 12,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Feire",
@@ -1056,19 +1008,8 @@
     {
       "name": "Iojaru",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
-      "runs": [
-        {
-          "dungeon": "Altar der Fänge",
-          "level": 12,
-          "timed": true
-        },
-        {
-          "dungeon": "Die Königsruh",
-          "level": 14,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Miliim",

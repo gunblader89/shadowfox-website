@@ -8,7 +8,7 @@
       "role": "DPS",
       "ilvl": 329,
       "mplus": 3036,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/231/178734823-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Günnfire"
@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 330,
       "mplus": 3145,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -34,7 +34,7 @@
       "role": "HEALING",
       "ilvl": 327,
       "mplus": 2820,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/191/176407487-avatar.jpg?alt=/wow/static/images/2d/avatar/3-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Garódash"
@@ -59,8 +59,8 @@
       "spec": "Demonology",
       "role": "DPS",
       "ilvl": 332,
-      "mplus": 3059,
-      "weeklyRuns": 6,
+      "mplus": 3062,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/120/180406904-avatar.jpg?alt=/wow/static/images/2d/avatar/27-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Narrwên"
@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 327,
+      "ilvl": 326,
       "mplus": 3157,
-      "weeklyRuns": 3,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -101,7 +101,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3239,
-      "weeklyRuns": 8,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -141,8 +141,8 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 331,
-      "mplus": 2837,
-      "weeklyRuns": 2,
+      "mplus": 2881,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -170,7 +170,7 @@
       "role": "TANK",
       "ilvl": 325,
       "mplus": 3033,
-      "weeklyRuns": 2,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/241/123578353-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Iojaru"
@@ -211,7 +211,7 @@
       "role": "HEALING",
       "ilvl": 329,
       "mplus": 3184,
-      "weeklyRuns": 10,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -239,7 +239,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3400,
-      "weeklyRuns": 9,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -295,7 +295,7 @@
       "role": "DPS",
       "ilvl": 333,
       "mplus": 3454,
-      "weeklyRuns": 6,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -336,5 +336,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-27T21:23:31.976Z"
+  "updatedAt": "2026-10-28T02:33:28.800Z"
 }
