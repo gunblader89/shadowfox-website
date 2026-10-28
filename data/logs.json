@@ -137,28 +137,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "B1R2wJ3tAPXqGgj9",
-      "url": "https://www.warcraftlogs.com/reports/B1R2wJ3tAPXqGgj9",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1791481880730,
-      "endTime": 1791491561279,
-      "duration": "2h 41m",
-      "difficulty": "Heroisch",
-      "kills": 2,
-      "wipes": 17,
-      "killedBosses": [
-        "Nek'zali the Soulcoiler",
-        "The Coiled Altar"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-10-28T17:11:14.180Z"
+  "updatedAt": "2026-10-28T21:44:11.659Z"
 }
