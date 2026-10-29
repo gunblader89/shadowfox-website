@@ -22,7 +22,7 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 93,
+            "parse": 89,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
@@ -45,7 +45,7 @@
             "name": "Lyk",
             "class": "Paladin",
             "spec": "Holy",
-            "parse": 59,
+            "parse": 58,
             "boss": "The Lost Explorers"
           }
         ]
@@ -139,5 +139,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-29T11:33:11.826Z"
+  "updatedAt": "2026-10-29T17:27:00.895Z"
 }

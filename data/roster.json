@@ -138,11 +138,11 @@
       "name": "Yanalai",
       "realm": "blackhand",
       "class": "Priest",
-      "spec": "Holy",
-      "role": "HEALING",
+      "spec": "Shadow",
+      "role": "DPS",
       "ilvl": 334,
-      "mplus": 2881,
-      "weeklyRuns": 0,
+      "mplus": 2986,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -340,5 +340,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-29T11:32:50.608Z"
+  "updatedAt": "2026-10-29T17:26:37.746Z"
 }
