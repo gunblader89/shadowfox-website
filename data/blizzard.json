@@ -260,6 +260,13 @@
       "classId": 8
     },
     {
+      "name": "Noellee",
+      "realm": "blackmoore",
+      "rank": 6,
+      "level": 88,
+      "classId": 4
+    },
+    {
       "name": "Nêzúko",
       "realm": "blackmoore",
       "rank": 2,
@@ -564,7 +571,7 @@
       "name": "Eshaedra",
       "realm": "thrall",
       "rank": 5,
-      "level": 78,
+      "level": 82,
       "classId": 13
     },
     {
@@ -967,7 +974,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-10-29T17:26:39.135Z",
+  "updatedAt": "2026-10-29T21:52:11.583Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

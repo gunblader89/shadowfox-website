@@ -71,9 +71,9 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 328,
+      "ilvl": 330,
       "mplus": 3157,
-      "weeklyRuns": 0,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -99,10 +99,12 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 333,
+      "ilvl": 334,
       "mplus": 3239,
       "weeklyRuns": 0,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Beine"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
     },
@@ -138,11 +140,11 @@
       "name": "Yanalai",
       "realm": "blackhand",
       "class": "Priest",
-      "spec": "Shadow",
-      "role": "DPS",
+      "spec": "Holy",
+      "role": "HEALING",
       "ilvl": 334,
-      "mplus": 2986,
-      "weeklyRuns": 3,
+      "mplus": 3013,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -209,10 +211,11 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 330,
-      "mplus": 3184,
-      "weeklyRuns": 0,
+      "ilvl": 331,
+      "mplus": 3201,
+      "weeklyRuns": 3,
       "missingEnchants": [
+        "Füße",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/dalvengyr/96/182719072-avatar.jpg?alt=/wow/static/images/2d/avatar/11-0.jpg",
@@ -267,7 +270,7 @@
       "role": "TANK",
       "ilvl": 328,
       "mplus": 3065,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -332,7 +335,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3118,
-      "weeklyRuns": 2,
+      "weeklyRuns": 4,
       "missingEnchants": [
         "Brust"
       ],
@@ -340,5 +343,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-29T17:26:37.746Z"
+  "updatedAt": "2026-10-29T21:52:10.173Z"
 }
