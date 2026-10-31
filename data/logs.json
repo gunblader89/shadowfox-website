@@ -30,7 +30,7 @@
             "class": "Mage",
             "spec": "Frost",
             "parse": 78,
-            "boss": "The Lost Explorers"
+            "boss": "Nek'zali the Soulcoiler"
           }
         ],
         "hps": [
@@ -139,5 +139,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T02:41:46.495Z"
+  "updatedAt": "2026-10-31T10:57:06.463Z"
 }
