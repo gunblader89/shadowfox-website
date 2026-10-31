@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 333,
+      "ilvl": 332,
       "mplus": 3047,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -74,8 +74,8 @@
       "spec": "Windwalker",
       "role": "DPS",
       "ilvl": 330,
-      "mplus": 3157,
-      "weeklyRuns": 2,
+      "mplus": 3158,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -240,9 +240,9 @@
       "name": "Kiraja",
       "realm": "garrosh",
       "class": "Demon Hunter",
-      "spec": "Havoc",
-      "role": "DPS",
-      "ilvl": 334,
+      "spec": "Vengeance",
+      "role": "TANK",
+      "ilvl": 333,
       "mplus": 3400,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -345,5 +345,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-31T10:56:45.457Z"
+  "updatedAt": "2026-10-31T16:06:35.120Z"
 }

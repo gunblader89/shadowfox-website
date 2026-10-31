@@ -29,8 +29,8 @@
             "name": "Siegfired",
             "class": "Mage",
             "spec": "Frost",
-            "parse": 78,
-            "boss": "Nek'zali the Soulcoiler"
+            "parse": 77,
+            "boss": "The Lost Explorers"
           }
         ],
         "hps": [
@@ -139,5 +139,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-31T10:57:06.463Z"
+  "updatedAt": "2026-10-31T16:06:58.991Z"
 }
