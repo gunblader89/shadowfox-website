@@ -309,6 +309,13 @@
       "classId": 6
     },
     {
+      "name": "Nalathia",
+      "realm": "blackmoore",
+      "rank": 6,
+      "level": 81,
+      "classId": 2
+    },
+    {
       "name": "Yoruíchí",
       "realm": "blackmoore",
       "rank": 5,
@@ -571,7 +578,7 @@
       "name": "Eshaedra",
       "realm": "thrall",
       "rank": 5,
-      "level": 89,
+      "level": 90,
       "classId": 13
     },
     {
@@ -972,16 +979,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Nalathia",
-      "realm": "blackmoore",
-      "rank": 6,
-      "level": 81,
-      "classId": 2
     }
   ],
-  "updatedAt": "2026-11-01T17:07:52.200Z",
+  "updatedAt": "2026-11-01T21:15:36.615Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -992,8 +992,14 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Nalorakks Bau",
+          "level": 11,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",
