@@ -22,15 +22,15 @@
             "name": "Seitenleiste",
             "class": "Mage",
             "spec": "Fire",
-            "parse": 86,
+            "parse": 85,
             "boss": "Nek'zali the Soulcoiler"
           },
           {
             "name": "Siegfired",
             "class": "Mage",
             "spec": "Frost",
-            "parse": 77,
-            "boss": "The Lost Explorers"
+            "parse": 76,
+            "boss": "Nek'zali the Soulcoiler"
           }
         ],
         "hps": [
@@ -38,14 +38,14 @@
             "name": "Yanalai",
             "class": "Priest",
             "spec": "Holy",
-            "parse": 84,
+            "parse": 83,
             "boss": "The Lost Explorers"
           },
           {
             "name": "Lyk",
             "class": "Paladin",
             "spec": "Holy",
-            "parse": 57,
+            "parse": 56,
             "boss": "The Lost Explorers"
           }
         ]
@@ -139,5 +139,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-01T11:52:06.438Z"
+  "updatedAt": "2026-11-01T17:08:13.420Z"
 }
