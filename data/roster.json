@@ -257,9 +257,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 331,
-      "mplus": 3618,
-      "weeklyRuns": 3,
+      "ilvl": 332,
+      "mplus": 3633,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -303,8 +303,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 335,
-      "mplus": 3515,
-      "weeklyRuns": 2,
+      "mplus": 3558,
+      "weeklyRuns": 4,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-10-31T20:29:31.280Z"
+  "updatedAt": "2026-11-01T02:31:00.558Z"
 }

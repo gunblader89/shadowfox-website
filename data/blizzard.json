@@ -571,7 +571,7 @@
       "name": "Eshaedra",
       "realm": "thrall",
       "rank": 5,
-      "level": 84,
+      "level": 89,
       "classId": 13
     },
     {
@@ -972,9 +972,16 @@
       "rank": 5,
       "level": 90,
       "classId": 9
+    },
+    {
+      "name": "Nalathia",
+      "realm": "blackmoore",
+      "rank": 6,
+      "level": 81,
+      "classId": 2
     }
   ],
-  "updatedAt": "2026-10-31T20:29:32.794Z",
+  "updatedAt": "2026-11-01T02:31:01.990Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
