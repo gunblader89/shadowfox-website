@@ -62,7 +62,7 @@
       "role": "DPS",
       "ilvl": 334,
       "mplus": 3062,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -217,7 +217,7 @@
       "role": "HEALING",
       "ilvl": 332,
       "mplus": 3271,
-      "weeklyRuns": 6,
+      "weeklyRuns": 8,
       "missingEnchants": [
         "Füße",
         "Nebenhand"
@@ -303,8 +303,8 @@
       "spec": "Fire",
       "role": "DPS",
       "ilvl": 335,
-      "mplus": 3558,
-      "weeklyRuns": 5,
+      "mplus": 3614,
+      "weeklyRuns": 7,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-01T21:15:35.242Z"
+  "updatedAt": "2026-11-02T02:43:04.683Z"
 }
