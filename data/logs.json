@@ -1,6 +1,24 @@
 {
   "reports": [
     {
+      "code": "bAaLrWnm64yfQv72",
+      "url": "https://www.warcraftlogs.com/reports/bAaLrWnm64yfQv72",
+      "loggedBy": "Sherra",
+      "title": "Raid Amethyst",
+      "zone": "The Venomous Abyss",
+      "startTime": 1793645755036,
+      "endTime": 1793652267392,
+      "duration": "1h 48m",
+      "difficulty": "Mythisch",
+      "kills": 0,
+      "wipes": 23,
+      "killedBosses": [],
+      "vips": {
+        "dps": [],
+        "hps": []
+      }
+    },
+    {
       "code": "J963qpLVD4an7fHg",
       "url": "https://www.warcraftlogs.com/reports/J963qpLVD4an7fHg",
       "loggedBy": "Sherra",
@@ -17,38 +35,8 @@
         "The Lost Explorers"
       ],
       "vips": {
-        "dps": [
-          {
-            "name": "Seitenleiste",
-            "class": "Mage",
-            "spec": "Fire",
-            "parse": 84,
-            "boss": "Nek'zali the Soulcoiler"
-          },
-          {
-            "name": "Siegfired",
-            "class": "Mage",
-            "spec": "Frost",
-            "parse": 76,
-            "boss": "The Lost Explorers"
-          }
-        ],
-        "hps": [
-          {
-            "name": "Yanalai",
-            "class": "Priest",
-            "spec": "Holy",
-            "parse": 83,
-            "boss": "The Lost Explorers"
-          },
-          {
-            "name": "Lyk",
-            "class": "Paladin",
-            "spec": "Holy",
-            "parse": 57,
-            "boss": "The Lost Explorers"
-          }
-        ]
+        "dps": [],
+        "hps": []
       }
     },
     {
@@ -119,25 +107,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "Qr82kxKWwmvL1JFN",
-      "url": "https://www.warcraftlogs.com/reports/Qr82kxKWwmvL1JFN",
-      "loggedBy": "Sherra",
-      "title": "Raid",
-      "zone": "The Venomous Abyss",
-      "startTime": 1791828039620,
-      "endTime": 1791842623098,
-      "duration": "4h 3m",
-      "difficulty": "Heroisch",
-      "kills": 0,
-      "wipes": 17,
-      "killedBosses": [],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-11-02T13:32:55.539Z"
+  "updatedAt": "2026-11-02T20:47:48.951Z"
 }
