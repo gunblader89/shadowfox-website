@@ -7,11 +7,11 @@
       "title": "Raid Amethyst",
       "zone": "The Venomous Abyss",
       "startTime": 1793645755036,
-      "endTime": 1793652267392,
-      "duration": "1h 48m",
+      "endTime": 1793654252735,
+      "duration": "2h 21m",
       "difficulty": "Mythisch",
       "kills": 0,
-      "wipes": 23,
+      "wipes": 30,
       "killedBosses": [],
       "vips": {
         "dps": [],
@@ -109,5 +109,5 @@
       }
     }
   ],
-  "updatedAt": "2026-11-02T20:47:48.951Z"
+  "updatedAt": "2026-11-02T23:56:06.664Z"
 }

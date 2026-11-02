@@ -78,7 +78,7 @@
     },
     "the-tidebound-grotto": {
       "normal": {
-        "world": 7109,
+        "world": 7110,
         "region": 2820,
         "realm": 91
       },
@@ -105,14 +105,14 @@
         "realm": 101
       },
       "mythic": {
-        "world": 653,
-        "region": 359,
+        "world": 658,
+        "region": 363,
         "realm": 10
       }
     },
     "the-venomous-abyss": {
       "normal": {
-        "world": 6131,
+        "world": 6132,
         "region": 2539,
         "realm": 93
       },
@@ -122,15 +122,15 @@
         "realm": 105
       },
       "mythic": {
-        "world": 4564,
-        "region": 1989,
-        "realm": 68
+        "world": 4570,
+        "region": 1994,
+        "realm": 69
       }
     }
   },
-  "memberCount": 139,
+  "memberCount": 137,
   "classCount": {
-    "undefined": 139
+    "undefined": 137
   },
   "members": [
     {
@@ -195,9 +195,6 @@
     },
     {
       "rank": 5
-    },
-    {
-      "rank": 2
     },
     {
       "rank": 2
@@ -398,9 +395,6 @@
       "rank": 5
     },
     {
-      "rank": 2
-    },
-    {
       "rank": 3
     },
     {
@@ -551,5 +545,5 @@
       "rank": 99
     }
   ],
-  "updatedAt": "2026-11-02T20:47:03.976Z"
+  "updatedAt": "2026-11-02T23:55:18.717Z"
 }
