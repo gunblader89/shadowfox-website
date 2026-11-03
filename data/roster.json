@@ -172,8 +172,8 @@
       "name": "Iojaru",
       "realm": "blackmoore",
       "class": "Demon Hunter",
-      "spec": "Vengeance",
-      "role": "TANK",
+      "spec": "Havoc",
+      "role": "DPS",
       "ilvl": 325,
       "mplus": 3033,
       "weeklyRuns": 0,
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-02T23:55:45.121Z"
+  "updatedAt": "2026-11-03T04:00:17.481Z"
 }

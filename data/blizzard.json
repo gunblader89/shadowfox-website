@@ -148,13 +148,6 @@
       "classId": 9
     },
     {
-      "name": "Blackbeardt",
-      "realm": "blackhand",
-      "rank": 2,
-      "level": 90,
-      "classId": 10
-    },
-    {
       "name": "Anzu",
       "realm": "aegwynn",
       "rank": 5,
@@ -267,13 +260,6 @@
       "classId": 4
     },
     {
-      "name": "Nêzúko",
-      "realm": "blackmoore",
-      "rank": 2,
-      "level": 90,
-      "classId": 2
-    },
-    {
       "name": "Shalakittena",
       "realm": "blackmoore",
       "rank": 5,
@@ -286,20 +272,6 @@
       "rank": 5,
       "level": 85,
       "classId": 4
-    },
-    {
-      "name": "Aszunâ",
-      "realm": "blackmoore",
-      "rank": 2,
-      "level": 90,
-      "classId": 6
-    },
-    {
-      "name": "Tanjírô",
-      "realm": "blackmoore",
-      "rank": 2,
-      "level": 90,
-      "classId": 1
     },
     {
       "name": "Pepelim",
@@ -540,13 +512,6 @@
       "classId": 10
     },
     {
-      "name": "Merccrixey",
-      "realm": "blackhand",
-      "rank": 2,
-      "level": 90,
-      "classId": 12
-    },
-    {
       "name": "Baalroq",
       "realm": "blackmoore",
       "rank": 5,
@@ -764,25 +729,11 @@
       "classId": 5
     },
     {
-      "name": "Mercganicus",
-      "realm": "blackmoore",
-      "rank": 2,
-      "level": 80,
-      "classId": 10
-    },
-    {
       "name": "Hippipippi",
       "realm": "blackrock",
       "rank": 6,
       "level": 80,
       "classId": 4
-    },
-    {
-      "name": "Merctanker",
-      "realm": "blackmoore",
-      "rank": 2,
-      "level": 80,
-      "classId": 1
     },
     {
       "name": "Lókqur",
@@ -804,13 +755,6 @@
       "rank": 6,
       "level": 80,
       "classId": 10
-    },
-    {
-      "name": "Mercmilla",
-      "realm": "blackmoore",
-      "rank": 2,
-      "level": 80,
-      "classId": 13
     },
     {
       "name": "Drdurstig",
@@ -981,7 +925,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-02T23:55:46.570Z",
+  "updatedAt": "2026-11-03T04:00:19.073Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
