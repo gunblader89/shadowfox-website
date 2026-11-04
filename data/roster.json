@@ -21,7 +21,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3205,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/182/174956982-avatar.jpg?alt=/wow/static/images/2d/avatar/84-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Mercrixxus"
@@ -62,7 +62,7 @@
       "role": "DPS",
       "ilvl": 334,
       "mplus": 3062,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -77,7 +77,7 @@
       "role": "DPS",
       "ilvl": 330,
       "mplus": 3158,
-      "weeklyRuns": 5,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/71/183442503-avatar.jpg?alt=/wow/static/images/2d/avatar/28-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Mönkitönk"
@@ -148,7 +148,7 @@
       "role": "HEALING",
       "ilvl": 334,
       "mplus": 3013,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -217,7 +217,7 @@
       "role": "HEALING",
       "ilvl": 332,
       "mplus": 3372,
-      "weeklyRuns": 10,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -245,7 +245,7 @@
       "role": "TANK",
       "ilvl": 333,
       "mplus": 3414,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -258,7 +258,7 @@
       "role": "TANK",
       "ilvl": 331,
       "mplus": 3647,
-      "weeklyRuns": 6,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -273,7 +273,7 @@
       "role": "TANK",
       "ilvl": 328,
       "mplus": 3065,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackrock/215/176657367-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackrock/Kitebrew"
@@ -303,7 +303,7 @@
       "role": "DPS",
       "ilvl": 335,
       "mplus": 3628,
-      "weeklyRuns": 8,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackhand/125/97461373-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackhand/Seitenleiste"
@@ -338,7 +338,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3118,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Brust"
       ],
@@ -346,5 +346,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-03T22:22:19.610Z"
+  "updatedAt": "2026-11-04T03:10:56.422Z"
 }

@@ -925,7 +925,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-03T22:22:20.861Z",
+  "updatedAt": "2026-11-04T03:10:57.780Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -936,14 +936,8 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
-      "runs": [
-        {
-          "dungeon": "Nalorakks Bau",
-          "level": 11,
-          "timed": true
-        }
-      ]
+      "runsThisWeek": 0,
+      "runs": []
     },
     {
       "name": "Raiox",
