@@ -47,7 +47,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 333,
+      "ilvl": 334,
       "mplus": 3047,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -215,8 +215,8 @@
       "class": "Priest",
       "spec": "Holy",
       "role": "HEALING",
-      "ilvl": 332,
-      "mplus": 3372,
+      "ilvl": 333,
+      "mplus": 3407,
       "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
@@ -243,7 +243,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 333,
+      "ilvl": 334,
       "mplus": 3414,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -256,9 +256,9 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 331,
-      "mplus": 3647,
-      "weeklyRuns": 0,
+      "ilvl": 332,
+      "mplus": 3659,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -301,7 +301,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3628,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -336,15 +336,16 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 332,
+      "ilvl": 334,
       "mplus": 3118,
       "weeklyRuns": 0,
       "missingEnchants": [
-        "Brust"
+        "Brust",
+        "Beine"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/217/127583705-avatar.jpg?alt=/wow/static/images/2d/avatar/8-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-04T18:39:18.743Z"
+  "updatedAt": "2026-11-04T22:41:14.148Z"
 }
