@@ -19,7 +19,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 332,
+      "ilvl": 331,
       "mplus": 3205,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -60,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3062,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -241,8 +241,8 @@
       "name": "Kiraja",
       "realm": "garrosh",
       "class": "Demon Hunter",
-      "spec": "Vengeance",
-      "role": "TANK",
+      "spec": "Havoc",
+      "role": "DPS",
       "ilvl": 333,
       "mplus": 3414,
       "weeklyRuns": 0,
@@ -301,7 +301,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 335,
+      "ilvl": 334,
       "mplus": 3628,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -346,5 +346,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-04T03:10:56.422Z"
+  "updatedAt": "2026-11-04T13:00:38.446Z"
 }
