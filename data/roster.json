@@ -103,7 +103,7 @@
       "class": "Warrior",
       "spec": "Arms",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3239,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -254,8 +254,8 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Protection",
-      "role": "TANK",
+      "spec": "Retribution",
+      "role": "DPS",
       "ilvl": 332,
       "mplus": 3659,
       "weeklyRuns": 1,
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-05T18:45:44.762Z"
+  "updatedAt": "2026-11-05T22:43:12.967Z"
 }

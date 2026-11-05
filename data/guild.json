@@ -83,7 +83,7 @@
         "realm": 91
       },
       "heroic": {
-        "world": 7880,
+        "world": 7881,
         "region": 3117,
         "realm": 113
       },
@@ -105,8 +105,8 @@
         "realm": 101
       },
       "mythic": {
-        "world": 692,
-        "region": 379,
+        "world": 694,
+        "region": 381,
         "realm": 11
       }
     },
@@ -122,15 +122,15 @@
         "realm": 105
       },
       "mythic": {
-        "world": 4630,
-        "region": 2008,
+        "world": 4633,
+        "region": 2011,
         "realm": 69
       }
     }
   },
-  "memberCount": 131,
+  "memberCount": 130,
   "classCount": {
-    "undefined": 131
+    "undefined": 130
   },
   "members": [
     {
@@ -180,9 +180,6 @@
     },
     {
       "rank": 5
-    },
-    {
-      "rank": 6
     },
     {
       "rank": 1
@@ -527,5 +524,5 @@
       "rank": 5
     }
   ],
-  "updatedAt": "2026-11-05T18:45:18.847Z"
+  "updatedAt": "2026-11-05T22:42:42.495Z"
 }
