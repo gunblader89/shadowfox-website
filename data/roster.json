@@ -216,8 +216,8 @@
       "spec": "Holy",
       "role": "HEALING",
       "ilvl": 333,
-      "mplus": 3407,
-      "weeklyRuns": 0,
+      "mplus": 3443,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-04T22:41:14.148Z"
+  "updatedAt": "2026-11-05T03:41:39.546Z"
 }
