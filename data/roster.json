@@ -104,8 +104,8 @@
       "spec": "Arms",
       "role": "DPS",
       "ilvl": 335,
-      "mplus": 3239,
-      "weeklyRuns": 0,
+      "mplus": 3285,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Beine"
       ],
@@ -258,7 +258,7 @@
       "role": "DPS",
       "ilvl": 332,
       "mplus": 3659,
-      "weeklyRuns": 1,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-05T22:43:12.967Z"
+  "updatedAt": "2026-11-06T03:37:50.293Z"
 }
