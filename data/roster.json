@@ -337,8 +337,8 @@
       "spec": "Feral",
       "role": "DPS",
       "ilvl": 334,
-      "mplus": 3118,
-      "weeklyRuns": 0,
+      "mplus": 3177,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Brust",
         "Beine"
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-06T22:10:26.734Z"
+  "updatedAt": "2026-11-07T03:09:49.076Z"
 }
