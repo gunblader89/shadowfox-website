@@ -105,9 +105,9 @@
         "realm": 101
       },
       "mythic": {
-        "world": 708,
-        "region": 389,
-        "realm": 11
+        "world": 710,
+        "region": 391,
+        "realm": 12
       }
     },
     "the-venomous-abyss": {
@@ -122,8 +122,8 @@
         "realm": 105
       },
       "mythic": {
-        "world": 4667,
-        "region": 2016,
+        "world": 4670,
+        "region": 2017,
         "realm": 69
       }
     }
@@ -518,5 +518,5 @@
       "rank": 5
     }
   ],
-  "updatedAt": "2026-11-07T16:50:26.747Z"
+  "updatedAt": "2026-11-07T20:57:56.089Z"
 }
