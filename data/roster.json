@@ -105,10 +105,8 @@
       "role": "DPS",
       "ilvl": 335,
       "mplus": 3285,
-      "weeklyRuns": 1,
-      "missingEnchants": [
-        "Beine"
-      ],
+      "weeklyRuns": 2,
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
     },
@@ -254,11 +252,11 @@
       "name": "Shylmagognar",
       "realm": "thrall",
       "class": "Paladin",
-      "spec": "Retribution",
-      "role": "DPS",
+      "spec": "Protection",
+      "role": "TANK",
       "ilvl": 332,
       "mplus": 3659,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -349,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-08T17:04:34.636Z"
+  "updatedAt": "2026-11-08T21:14:33.924Z"
 }

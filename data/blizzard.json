@@ -904,7 +904,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-08T17:04:36.040Z",
+  "updatedAt": "2026-11-08T21:14:35.359Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -927,8 +927,13 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 1,
+      "runsThisWeek": 2,
       "runs": [
+        {
+          "dungeon": "Arena der Leerennarbe",
+          "level": 12,
+          "timed": true
+        },
         {
           "dungeon": "Nalorakks Bau",
           "level": 18,
