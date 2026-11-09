@@ -60,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 335,
+      "ilvl": 336,
       "mplus": 3062,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -75,7 +75,7 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 330,
+      "ilvl": 331,
       "mplus": 3158,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -257,9 +257,7 @@
       "ilvl": 333,
       "mplus": 3659,
       "weeklyRuns": 3,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -336,7 +334,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3177,
       "weeklyRuns": 6,
       "missingEnchants": [
@@ -347,5 +345,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-09T13:56:24.097Z"
+  "updatedAt": "2026-11-09T21:27:13.579Z"
 }
