@@ -43,13 +43,6 @@
       "classId": 2
     },
     {
-      "name": "Yanalai",
-      "realm": "blackhand",
-      "rank": 3,
-      "level": 90,
-      "classId": 5
-    },
-    {
       "name": "Gevattertod",
       "realm": "thrall",
       "rank": 6,
@@ -246,13 +239,6 @@
       "classId": 2
     },
     {
-      "name": "Jisgarin",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 8
-    },
-    {
       "name": "Shalakittena",
       "realm": "blackmoore",
       "rank": 5,
@@ -272,13 +258,6 @@
       "rank": 3,
       "level": 90,
       "classId": 6
-    },
-    {
-      "name": "Nalathia",
-      "realm": "blackmoore",
-      "rank": 6,
-      "level": 81,
-      "classId": 2
     },
     {
       "name": "Yoruíchí",
@@ -384,13 +363,6 @@
       "rank": 6,
       "level": 80,
       "classId": 5
-    },
-    {
-      "name": "Yanalaira",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 10
     },
     {
       "name": "Vay",
@@ -568,13 +540,6 @@
       "classId": 12
     },
     {
-      "name": "Narrwên",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 9
-    },
-    {
       "name": "Raiox",
       "realm": "blackrock",
       "rank": 4,
@@ -615,13 +580,6 @@
       "rank": 4,
       "level": 90,
       "classId": 8
-    },
-    {
-      "name": "Nâarwi",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 1
     },
     {
       "name": "Sandino",
@@ -708,13 +666,6 @@
       "classId": 10
     },
     {
-      "name": "Zeitvertreîp",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 82,
-      "classId": 5
-    },
-    {
       "name": "Hippipippi",
       "realm": "blackrock",
       "rank": 6,
@@ -775,13 +726,6 @@
       "realm": "blackrock",
       "rank": 6,
       "level": 11,
-      "classId": 12
-    },
-    {
-      "name": "Narvu",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 83,
       "classId": 12
     },
     {
@@ -904,7 +848,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-10T04:46:14.527Z",
+  "updatedAt": "2026-11-10T13:29:46.863Z",
   "weeklyKeys": [
     {
       "name": "Garódash",

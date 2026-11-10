@@ -241,7 +241,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 333,
       "mplus": 3414,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -254,10 +254,12 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 333,
+      "ilvl": 334,
       "mplus": 3659,
       "weeklyRuns": 3,
-      "missingEnchants": [],
+      "missingEnchants": [
+        "Nebenhand"
+      ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -297,7 +299,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 335,
+      "ilvl": 334,
       "mplus": 3628,
       "weeklyRuns": 1,
       "missingEnchants": [
@@ -334,7 +336,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 335,
+      "ilvl": 334,
       "mplus": 3177,
       "weeklyRuns": 6,
       "missingEnchants": [
@@ -345,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-10T04:46:12.897Z"
+  "updatedAt": "2026-11-10T13:29:45.490Z"
 }
