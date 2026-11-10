@@ -105,7 +105,7 @@
       "role": "DPS",
       "ilvl": 335,
       "mplus": 3285,
-      "weeklyRuns": 2,
+      "weeklyRuns": 3,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -241,9 +241,9 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 333,
-      "mplus": 3414,
-      "weeklyRuns": 0,
+      "ilvl": 334,
+      "mplus": 3460,
+      "weeklyRuns": 2,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -255,8 +255,8 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 334,
-      "mplus": 3659,
-      "weeklyRuns": 3,
+      "mplus": 3663,
+      "weeklyRuns": 5,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -299,7 +299,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3628,
       "weeklyRuns": 1,
       "missingEnchants": [
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-10T18:41:02.925Z"
+  "updatedAt": "2026-11-10T22:25:54.958Z"
 }

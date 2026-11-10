@@ -848,7 +848,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-10T18:41:04.285Z",
+  "updatedAt": "2026-11-10T22:25:56.471Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -871,8 +871,13 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 2,
+      "runsThisWeek": 3,
       "runs": [
+        {
+          "dungeon": "Altar der Fänge",
+          "level": 12,
+          "timed": true
+        },
         {
           "dungeon": "Arena der Leerennarbe",
           "level": 12,
