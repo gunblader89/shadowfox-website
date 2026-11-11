@@ -105,7 +105,7 @@
       "role": "DPS",
       "ilvl": 335,
       "mplus": 3285,
-      "weeklyRuns": 3,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/blackmoore/240/169868528-avatar.jpg?alt=/wow/static/images/2d/avatar/29-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/blackmoore/Oionil"
@@ -215,7 +215,7 @@
       "role": "HEALING",
       "ilvl": 333,
       "mplus": 3472,
-      "weeklyRuns": 4,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -243,7 +243,7 @@
       "role": "DPS",
       "ilvl": 334,
       "mplus": 3460,
-      "weeklyRuns": 2,
+      "weeklyRuns": 0,
       "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/garrosh/122/185748346-avatar.jpg?alt=/wow/static/images/2d/avatar/10-1.jpg",
       "profileUrl": "https://raider.io/characters/eu/garrosh/Kiraja"
@@ -256,7 +256,7 @@
       "role": "TANK",
       "ilvl": 334,
       "mplus": 3663,
-      "weeklyRuns": 5,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -301,7 +301,7 @@
       "role": "DPS",
       "ilvl": 335,
       "mplus": 3628,
-      "weeklyRuns": 1,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -338,7 +338,7 @@
       "role": "DPS",
       "ilvl": 334,
       "mplus": 3177,
-      "weeklyRuns": 6,
+      "weeklyRuns": 0,
       "missingEnchants": [
         "Brust",
         "Beine"
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-10T22:25:54.958Z"
+  "updatedAt": "2026-11-11T02:58:16.890Z"
 }
