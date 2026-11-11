@@ -241,7 +241,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 333,
       "mplus": 3460,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-11T12:44:39.654Z"
+  "updatedAt": "2026-11-11T18:42:50.260Z"
 }
