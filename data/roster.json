@@ -75,7 +75,7 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 331,
+      "ilvl": 333,
       "mplus": 3158,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -241,7 +241,7 @@
       "class": "Demon Hunter",
       "spec": "Havoc",
       "role": "DPS",
-      "ilvl": 333,
+      "ilvl": 335,
       "mplus": 3460,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -336,7 +336,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3177,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-11T18:42:50.260Z"
+  "updatedAt": "2026-11-11T23:30:28.259Z"
 }
