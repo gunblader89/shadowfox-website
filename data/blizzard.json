@@ -855,7 +855,7 @@
       "classId": 3
     }
   ],
-  "updatedAt": "2026-11-12T18:57:06.044Z",
+  "updatedAt": "2026-11-12T22:46:14.621Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -866,8 +866,14 @@
     {
       "name": "Narrwên",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Der Tempel von Sethraliss",
+          "level": 10,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Raiox",
