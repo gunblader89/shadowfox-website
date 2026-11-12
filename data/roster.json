@@ -60,7 +60,7 @@
       "class": "Warlock",
       "spec": "Demonology",
       "role": "DPS",
-      "ilvl": 336,
+      "ilvl": 335,
       "mplus": 3062,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -336,7 +336,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 335,
+      "ilvl": 334,
       "mplus": 3177,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-11T23:30:28.259Z"
+  "updatedAt": "2026-11-12T04:07:59.102Z"
 }
