@@ -62,7 +62,7 @@
       "role": "DPS",
       "ilvl": 335,
       "mplus": 3062,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -146,7 +146,7 @@
       "role": "HEALING",
       "ilvl": 334,
       "mplus": 3013,
-      "weeklyRuns": 0,
+      "weeklyRuns": 1,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -347,5 +347,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-13T13:08:54.937Z"
+  "updatedAt": "2026-11-13T18:31:49.055Z"
 }
