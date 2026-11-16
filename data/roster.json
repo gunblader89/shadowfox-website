@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 332,
+      "ilvl": 333,
       "mplus": 3158,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -252,10 +252,11 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 334,
+      "ilvl": 331,
       "mplus": 3675,
       "weeklyRuns": 1,
       "missingEnchants": [
+        "Waffe",
         "Nebenhand"
       ],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
@@ -297,7 +298,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3628,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -345,5 +346,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-16T13:43:11.574Z"
+  "updatedAt": "2026-11-16T21:02:34.168Z"
 }
