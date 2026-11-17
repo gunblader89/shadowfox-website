@@ -855,7 +855,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-17T19:52:12.192Z",
+  "updatedAt": "2026-11-17T23:52:51.546Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
@@ -884,8 +884,14 @@
     {
       "name": "Oionil",
       "realm": "blackmoore",
-      "runsThisWeek": 0,
-      "runs": []
+      "runsThisWeek": 1,
+      "runs": [
+        {
+          "dungeon": "Mördergasse",
+          "level": 12,
+          "timed": true
+        }
+      ]
     },
     {
       "name": "Feire",
