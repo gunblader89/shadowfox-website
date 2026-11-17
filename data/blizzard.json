@@ -344,6 +344,13 @@
       "classId": 4
     },
     {
+      "name": "Zooyaa",
+      "realm": "blackmoore",
+      "rank": 3,
+      "level": 90,
+      "classId": 3
+    },
+    {
       "name": "Charmzzdh",
       "realm": "blackhand",
       "rank": 6,
@@ -846,16 +853,9 @@
       "rank": 5,
       "level": 90,
       "classId": 9
-    },
-    {
-      "name": "Zooyaa",
-      "realm": "blackmoore",
-      "rank": 3,
-      "level": 90,
-      "classId": 3
     }
   ],
-  "updatedAt": "2026-11-16T21:02:35.626Z",
+  "updatedAt": "2026-11-17T00:51:56.383Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
