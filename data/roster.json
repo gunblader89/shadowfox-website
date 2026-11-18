@@ -252,7 +252,7 @@
       "class": "Paladin",
       "spec": "Protection",
       "role": "TANK",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3675,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -297,7 +297,7 @@
       "class": "Mage",
       "spec": "Fire",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3628,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -345,5 +345,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-18T19:24:35.599Z"
+  "updatedAt": "2026-11-18T23:26:08.490Z"
 }
