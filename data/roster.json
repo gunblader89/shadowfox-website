@@ -253,8 +253,8 @@
       "spec": "Protection",
       "role": "TANK",
       "ilvl": 335,
-      "mplus": 3675,
-      "weeklyRuns": 0,
+      "mplus": 3689,
+      "weeklyRuns": 2,
       "missingEnchants": [
         "Nebenhand"
       ],
@@ -345,5 +345,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-19T19:29:43.502Z"
+  "updatedAt": "2026-11-19T23:38:01.883Z"
 }
