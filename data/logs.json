@@ -61,27 +61,7 @@
         "dps": [],
         "hps": []
       }
-    },
-    {
-      "code": "vV46Lc7jT1kr9ZFt",
-      "url": "https://www.warcraftlogs.com/reports/vV46Lc7jT1kr9ZFt",
-      "loggedBy": "Langhaloth",
-      "title": "The Venomous Abyss",
-      "zone": "The Venomous Abyss",
-      "startTime": 1792435803862,
-      "endTime": 1792439979931,
-      "duration": "1h 9m",
-      "difficulty": "Heroisch",
-      "kills": 1,
-      "wipes": 5,
-      "killedBosses": [
-        "Ula'tek"
-      ],
-      "vips": {
-        "dps": [],
-        "hps": []
-      }
     }
   ],
-  "updatedAt": "2026-11-25T15:38:49.457Z"
+  "updatedAt": "2026-11-25T20:29:20.586Z"
 }

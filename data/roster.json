@@ -45,7 +45,7 @@
       "class": "Hunter",
       "spec": "Beast Mastery",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3047,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -73,7 +73,7 @@
       "class": "Monk",
       "spec": "Windwalker",
       "role": "DPS",
-      "ilvl": 332,
+      "ilvl": 333,
       "mplus": 3158,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -239,7 +239,7 @@
       "class": "Demon Hunter",
       "spec": "Vengeance",
       "role": "TANK",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3460,
       "weeklyRuns": 0,
       "missingEnchants": [],
@@ -255,9 +255,7 @@
       "ilvl": 335,
       "mplus": 3689,
       "weeklyRuns": 0,
-      "missingEnchants": [
-        "Nebenhand"
-      ],
+      "missingEnchants": [],
       "thumb": "https://render.worldofwarcraft.com/eu/character/thrall/119/122135415-avatar.jpg?alt=/wow/static/images/2d/avatar/6-0.jpg",
       "profileUrl": "https://raider.io/characters/eu/thrall/Shylmagognar"
     },
@@ -334,7 +332,7 @@
       "class": "Druid",
       "spec": "Feral",
       "role": "DPS",
-      "ilvl": 334,
+      "ilvl": 335,
       "mplus": 3177,
       "weeklyRuns": 0,
       "missingEnchants": [
@@ -345,5 +343,5 @@
       "profileUrl": "https://raider.io/characters/eu/thrall/Moonlord"
     }
   ],
-  "updatedAt": "2026-11-25T15:38:27.317Z"
+  "updatedAt": "2026-11-25T20:28:58.092Z"
 }
