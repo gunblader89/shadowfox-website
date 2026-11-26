@@ -260,13 +260,6 @@
       "classId": 6
     },
     {
-      "name": "Yoruíchí",
-      "realm": "blackmoore",
-      "rank": 5,
-      "level": 90,
-      "classId": 11
-    },
-    {
       "name": "Luzaría",
       "realm": "blackmoore",
       "rank": 5,
@@ -855,7 +848,7 @@
       "classId": 9
     }
   ],
-  "updatedAt": "2026-11-25T20:28:59.420Z",
+  "updatedAt": "2026-11-26T01:01:51.788Z",
   "weeklyKeys": [
     {
       "name": "Garódash",
